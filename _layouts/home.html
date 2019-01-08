@@ -5,7 +5,7 @@ layout: default
 {{ content }}
 <ul class="ul-reset">
 {% for post in site.posts %}
-    <li><a href="{{ post.url }}">{{ post.title}}</a>
+    <li><a href="{{ site.baseurl}}{{ post.url }}">{{ post.title}}</a>
     <span class="postDate">{{ post.date | date: "%b %-d, %Y" }}</span>
     </li>
 {% endfor %}
