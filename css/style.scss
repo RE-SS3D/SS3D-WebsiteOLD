@@ -13,28 +13,55 @@
   @return unquote($stars);
 }
 
+* {
+  box-sizing: border-box;
+}
+
+a {
+  white-space: pre-wrap; /* css-3 */    
+  white-space: -moz-pre-wrap; /* Mozilla, since 1999 */
+  white-space: -pre-wrap; /* Opera 4-6 */    
+  white-space: -o-pre-wrap; /* Opera 7 */    
+  word-wrap: break-word; /* Internet Explorer 5.5+ */
+}
+
 body {
   //background: radial-gradient(ellipse at bottom, #1C2837 0%, #050608 100%);
   background-attachment:fixed;
 }
 
 .space-background {
-    &:after{
+    &:before{
     content:"";
     position:absolute;
     height:2px;
     width:2px;
     top:-2px;
     background:white;
-    box-shadow: stars(500, 1800);
+    box-shadow: stars(2000, 3000);
     border-radius:100px;
+    z-index: -1;
   }
-  margin:0 auto;
-  width:100%;
-  height:100%;
-  position:relative;
 }
 
+video {
+  width: 100%;
+}
+
+.youtubeEmbed {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+  height: 0;
+  margin-bottom: 15px;
+}
+.youtubeEmbed iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
 
 
 header {
@@ -54,7 +81,8 @@ header {
     margin-right: 20px;
     float: left;
   }
-  h2 {
+  h1 {
+    font-size: 1.5em;
     margin: 5px 0;
     margin-top: 0;
   }
@@ -91,7 +119,9 @@ nav {
     }
   }
 }
-
+footer {
+  padding: 0 15px;
+}
 body {
   //background-color: rgb(37, 37, 37);
   background: linear-gradient(180deg, #1C2837 0%, #050608 100%);
@@ -156,28 +186,70 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @media (max-width: 700px) {
-
   main, nav {
-    grid-column: 1 / span 4;
   }
   .contact ul {
     text-align: center;
   }
-  header h1 {
-    font-size: 1.5em;
-    text-align: center;
-    margin: 0 0;
+  header {
+    img {
+      height: 45px;
+      //margin-right: 20px;
+      //float: left;
+      position: absolute;
+      right: 0;
+      top: 15;
+    }
+    h1 {
+      font-size: 0.8em;
+      text-align: center;
+      margin: 0 0;
+    }
+    p {
+      font-size: 0.48em;
+    }
+    div {
+      width: 100%;
+      padding: 0 15px;
+    }
   }
 }
 
 @media (max-width: 400px) {
-  header h1 {
-    font-size: 1.2em;
+  main {
+    background-color: yellow;
+  }
+  header {
+    img {
+      height: 70px;
+    }
+    h1 {
+      font-size: 0.8em;
+    }
+    img {
+      float: none;
+      margin-right: 0;
+      position: relative;
+      top: 0;
+    }
   }
 }
 
 @media (max-width: 330px) {
-  header h1 {
-    font-size: 1.1em;
+  main {
+    background-color: red;
+  }
+  nav {
+    li {
+      float: none;
+    }
+  }
+  header {
+    h1 {
+      font-size: 0.6em;
+    }
+    p {
+      font-size: 0.4em;
+    }
   }
 }
