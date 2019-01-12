@@ -216,9 +216,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @media (max-width: 400px) {
-  main {
-    background-color: yellow;
-  }
   header {
     img {
       height: 70px;
@@ -236,9 +233,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @media (max-width: 330px) {
-  main {
-    background-color: red;
-  }
   nav {
     li {
       float: none;
