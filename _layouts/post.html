@@ -2,8 +2,8 @@
 layout: default
 ---
 
-<h2>{{ page.title }}</h2>
-
-{{ content }}
-
-<small><i>Created: {{ page.date | date_to_long_string }}</i></small>
+<h1>{{ page.title }}</h1>
+<h5><i>on {{ page.date | date: "%A, %B %-d, %Y" }}</i></h5>
+<div class="post">
+    {{ content }}
+</div>

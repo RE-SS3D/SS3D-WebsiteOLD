@@ -6,16 +6,18 @@
         <link rel="stylesheet" type="text/css" href="{{ site.baseurl}}/css/style.css">
         <link rel="shortcut icon" type="image/x-icon" href="{{ site.baseurl}}/favicon.ico">
     </head>
-    <body></body>
-        <nav>
-            {% include navbar.html %}
-        </nav>
-        {% include header.html %}
-        <main>
-            {{ content }}
-        </main>
-        <footer>
-            {% include footer.html %}
-        </footer>
+    <body>
+        <div class="body-content">
+            <nav>
+                {% include navbar.html %}
+            </nav>
+            {% include header.html %}
+            <main>
+                {{ content }}
+            </main>
+            <footer>
+                {% include footer.html %}
+            </footer>
+        </div>
     </body>
 </html>

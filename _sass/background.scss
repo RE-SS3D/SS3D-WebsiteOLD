@@ -1,0 +1,53 @@
+/* Background stars from https://codepen.io/bmrtnz32/pen/GqpLdO */
+
+@function alphaRandom() {
+    @return random(500)*.001;
+}
+
+@function stars($s, $max-area, $min-area: 0, $star-size: 0) {
+    $stars: #{$min-area + random($max-area)}px #{$min-area + random($max-area)}px 0 #{$star-size}px rgba(255, 255, 255, alphaRandom());
+    @for $i from 1 to $s {
+        $stars: '#{$stars} , #{$min-area + random($max-area)}px #{$min-area + random($max-area)}px 0 #{$star-size}px rgba(255,255,255, #{alphaRandom()})'
+    }
+    @return unquote($stars);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+a {
+    white-space: pre-wrap;
+    /* css-3 */
+    white-space: -moz-pre-wrap;
+    /* Mozilla, since 1999 */
+    white-space: -pre-wrap;
+    /* Opera 4-6 */
+    white-space: -o-pre-wrap;
+    /* Opera 7 */
+    word-wrap: break-word;
+    /* Internet Explorer 5.5+ */
+}
+
+body {
+    //background: radial-gradient(ellipse at bottom, #1C2837 0%, #050608 100%);
+    background-attachment: fixed;
+    background-color: rgb(37, 37, 37);
+    background: linear-gradient(180deg, #1C2837 0%, #050608 100%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.space-background {
+    &:before {
+        content: "";
+        position: absolute;
+        height: 2px;
+        width: 2px;
+        top: -2px;
+        background: white;
+        box-shadow: stars(2000, 3000);
+        border-radius: 100px;
+        z-index: -1;
+    }
+}

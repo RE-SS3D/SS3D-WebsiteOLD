@@ -1,0 +1,31 @@
+nav {
+    display: inline-block;
+    width: 100%;
+    margin-left: -$pad;
+    ul {
+        width: 100%;
+        margin: 0 auto;
+    }
+    li {
+        float: left;
+        a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: $pad;
+            text-decoration: none;
+            &:hover {
+                background-color: #111111;
+            }
+        }
+    }
+    h2 {
+        padding: $pad 0 0 0;
+    }
+    a {
+        text-decoration: none;
+        &.active {
+            color: $color-link;
+        }
+    }
+}

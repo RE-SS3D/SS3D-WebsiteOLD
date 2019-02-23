@@ -1,0 +1,11 @@
+.contact {
+    ul {
+        text-align: center;
+        @include respond-to(desktop) {
+            text-align: right;
+        }
+    }
+    li {
+        display: inline-block;
+    }
+}

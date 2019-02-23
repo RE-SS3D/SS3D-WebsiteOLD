@@ -1,0 +1,10 @@
+/* Used with @mixin respond-to($name) mixin */
+
+$breakpoints: ( // 700px 400px 330px
+//'desktop'  : ( min-width: 43.75em ),
+'desktop': ( min-width: 43.75em), );
+$color-link : rgb(184, 61, 50);
+$color-link-hover: #fd7970;
+$color-link-active: darken($color-link, 20);
+$color-text: #dadada;
+$pad: 1em;

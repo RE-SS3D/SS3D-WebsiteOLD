@@ -1,0 +1,37 @@
+header {
+    text-align: center;
+    h1 {
+        font-size: 16px;
+        font-size: 8vw;
+    }
+    p {
+        font-size: 13px;
+        font-size: 4.5vw;
+    }
+    div {
+        width: 100%;
+    }
+    img {
+        height: #{$pad * 2}; //45px;
+        position: absolute;
+        right: $pad;
+        top: #{$pad * 0.8};
+    }
+    @include respond-to(desktop) {
+        h1 {
+            font-size: 48px; 
+            margin-top: 0.2em;
+        }
+        p {
+            font-size: 32px;
+        }
+        div {
+            display: inline-block;
+            width: 600px;
+        }
+        img {
+            position: relative;
+            height: 100px;
+        }
+    }
+}
