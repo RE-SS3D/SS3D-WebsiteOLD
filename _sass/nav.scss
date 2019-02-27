@@ -1,13 +1,19 @@
 nav {
     display: inline-block;
+    @include respond-to(tablet) {
+        margin-left: -$pad;
+    }
+    
     width: 100%;
-    margin-left: -$pad;
     ul {
         width: 100%;
         margin: 0 auto;
     }
     li {
-        float: left;
+        float: none;
+        @include respond-to(tablet) {
+            float: left;
+        }
         a {
             display: block;
             color: white;

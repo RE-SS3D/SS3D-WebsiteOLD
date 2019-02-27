@@ -1,10 +1,16 @@
 /* Used with @mixin respond-to($name) mixin */
 
-$breakpoints: ( // 700px 400px 330px
-//'desktop'  : ( min-width: 43.75em ),
-'desktop': ( min-width: 43.75em), );
 $color-link : rgb(184, 61, 50);
 $color-link-hover: #fd7970;
 $color-link-active: darken($color-link, 20);
 $color-text: #dadada;
+$color-button: $color-link;
+$color-button-hover: darken($color-button, 5);
+$color-button-active: darken($color-button, 10);
 $pad: 1em;
+
+$breakpoints: ( // 700px 400px 330px
+//'desktop'  : ( min-width: 43.75em ),
+    'tablet': ( min-width: 400px  ),
+    'desktop': ( min-width: #{600 - (16)}px )
+);

@@ -2,6 +2,7 @@ body, h1, h2, h3, h4, h5, h6 {
     font-size-adjust: 0.58; // Keep font size same regardless of font family.
     padding: 0;
     margin: 0;
+    margin-top: 0.65em;
     margin-bottom: 1.3em;
     vertical-align: baseline;
     line-height: 1em;
@@ -58,11 +59,7 @@ a {
 .body-content {
     margin: 0 $pad;
     @include respond-to(desktop) {
-        max-width: 41.75em; //45em;//672px;//45em;
+        max-width: 560px; //45em;//672px;//45em;
         margin: 0 auto;
     }
-}
-
-.post {
-    text-align:justify;
 }

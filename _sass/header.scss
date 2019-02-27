@@ -3,10 +3,14 @@ header {
     h1 {
         font-size: 16px;
         font-size: 8vw;
+        white-space: nowrap;
+        overflow: visible;
     }
     p {
         font-size: 13px;
         font-size: 4.5vw;
+        white-space: nowrap;
+        overflow: visible;
     }
     div {
         width: 100%;
@@ -19,11 +23,11 @@ header {
     }
     @include respond-to(desktop) {
         h1 {
-            font-size: 48px; 
+            font-size: 46px; 
             margin-top: 0.2em;
         }
         p {
-            font-size: 32px;
+            font-size: 28px;
         }
         div {
             display: inline-block;

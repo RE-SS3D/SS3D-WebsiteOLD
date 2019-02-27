@@ -1,0 +1,43 @@
+.button {
+    display: flex;
+    box-sizing: border-box;
+    background-color: $color-button;
+    padding: 2px 16px;
+    border-radius: 3px;
+    height: 44px;
+    min-height: 44px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    transition: background-color .17s ease,color .17s ease;
+    color: #fff;
+    &:hover {
+        background-color: $color-button-hover;
+        text-decoration: none;
+        color: #fff;
+    }
+    &:active {
+        background-color: $color-button-active; 
+        color: #fff;
+    }
+}
+
+.trello-colors {
+    background-color: #5aac44;
+    &:hover {
+        background-color: #519839;
+    }
+    &:active {
+        background-color: #3f6f21;
+    }
+}
+
+.discord-colors {
+    background-color: #7289da;
+    &:hover {
+        background-color: #677bc4;
+    }
+    &:active {
+        background-color: #5b6eae;
+    }
+}

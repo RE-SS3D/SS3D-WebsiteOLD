@@ -36,18 +36,25 @@ body {
     background: linear-gradient(180deg, #1C2837 0%, #050608 100%);
     background-repeat: no-repeat;
     background-attachment: fixed;
+    position: relative;
 }
 
-.space-background {
-    &:before {
-        content: "";
+.body-content {
+    &::before {
+        content: " ";
+        display: block;
+        background: url("/ss3d-website/assets/stars.jpg");
+        opacity: 0.1;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
         position: absolute;
-        height: 2px;
-        width: 2px;
-        top: -2px;
-        background: white;
-        box-shadow: stars(2000, 3000);
-        border-radius: 100px;
         z-index: -1;
+        width: 100%;
+        min-height: 100vh;
+        height: 100%;
+        float: left;
+        
     }
 }
