@@ -6,6 +6,31 @@
         <link rel="stylesheet" type="text/css" href="{{ site.baseurl}}/css/style.css">
         <link rel="shortcut icon" type="image/x-icon" href="{{ site.baseurl}}/favicon.ico">
         <meta name="theme-color" content="#1e4684">
+        <script>
+            // Function to keep the navigation bars scroll offset when changing pages.
+            setScroll = function(url, scroll) {
+                if(scroll != 0) {
+                    window.location.href = url + '?scroll=' + scroll;
+                    return;
+                }
+                window.location.href = url;
+            }
+            // Set navigation bar scroll offset, if it exists.
+            getScroll = function() {
+                var url = new URL(window.location.href);
+                var scroll = url.searchParams.get("scroll");
+                if (scroll != 0) {
+                    var el = document.getElementById('scroll');
+                    el.scrollLeft = scroll;
+                }
+            }
+            if (window.addEventListener) {
+                window.addEventListener('load', getScroll, false);
+            }
+            else if (window.attachEvent) {
+                window.attachEvent('onload', getScroll);
+            }
+        </script>
     </head>
     <body class="preload">
         <div class="nav-background">
@@ -23,10 +48,11 @@
             </footer>
         </div>
         <script>
+            
             // Fix flashing buttons by only allowing the css animations to play after a slight delay.
             setTimeout(function() {
                 document.getElementsByTagName('body')[0].classList.remove('preload');
-            }, 50);            
+            }, 50);
         </script>
     </body>
 </html>

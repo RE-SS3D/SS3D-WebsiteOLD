@@ -1,7 +1,7 @@
-<div class="ul-container">
+<div id="scroll" class="ul-container">
     <ul class="ul-reset">
         {% for link in site.data.navigation %}
-        <li><a class="{% if link.url == page.url %}active{% endif %}" href="{{ site.baseurl}}{{ link.url }}">{{ link.title }}</a></li>
+        <li><a onclick="setScroll('{{ site.baseurl}}{{ link.url }}',parentNode.parentNode.parentNode.scrollLeft); return false;" class="{% if link.url == page.url %}active{% endif %}" href="{{ site.baseurl}}{{ link.url }}">{{ link.title }}</a></li>
         {% endfor %}
     </ul>
 </div>
