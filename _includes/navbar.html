@@ -1,5 +1,7 @@
-<ul class="ul-reset">
-    {% for link in site.data.navigation %}
-    <li><a class="{% if link.url == page.url %}active{% endif %}" href="{{ site.baseurl}}{{ link.url }}">{{ link.title }}</a></li>
-    {% endfor %}
-</ul>
+<div class="ul-container">
+    <ul class="ul-reset">
+        {% for link in site.data.navigation %}
+        <li><a class="{% if link.url == page.url %}active{% endif %}" href="{{ site.baseurl}}{{ link.url }}">{{ link.title }}</a></li>
+        {% endfor %}
+    </ul>
+</div>

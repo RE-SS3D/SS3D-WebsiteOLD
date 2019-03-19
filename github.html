@@ -1,0 +1,38 @@
+---
+layout: default
+title: GitHub
+permalink: /github/
+---
+Github links and notes.
+
+Integration? /shrug
+
+<h2>Develop branch commits</h2>
+<ul class="ul-reset" id="commits"></ul>
+<a href="#" id="more-commits" class="button" style="visibility: hidden;">Older commits</a>
+<script src="{{ site.baseurl}}/assets/js/gh.min.js"></script>
+<script>
+(function () {
+    var gh = new GitHub();
+    gh.get("repos/RE-SS3D/Client/commits?sha=develop", function (err, commits) {
+        console.log(err || commits);
+        var counter = 0;
+        commits.forEach(function(commit) {
+            console.log(commit.commit);
+            var li = document.createElement("li");
+            var a = document.createElement('a');
+            var div = document.createElement('div');
+            a.href = "https://github.com/RE-SS3D/Client/commit/" + commit.commit.url.split("/").slice(-1)[0];
+            var textnode = document.createTextNode(commit.commit.message.split("\n")[0]);
+            var textnode2 = document.createTextNode(commit.commit.committer.date);
+            a.appendChild(textnode);
+            div.appendChild(textnode2);
+            li.appendChild(a);
+            li.appendChild(div);
+            document.getElementById("commits").appendChild(li);
+        })
+        document.getElementById("more-commits").href = "https://github.com/RE-SS3D/Client/commits/develop?after=" + commits[0].commit.url.split("/").slice(-1)[0] + "+" + (commits.length - 1);
+        document.getElementById("more-commits").style.visibility = "visible";
+    });
+})();
+</script>

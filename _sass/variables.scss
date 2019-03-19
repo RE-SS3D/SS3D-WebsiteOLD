@@ -2,15 +2,18 @@
 
 $color-link : rgb(184, 61, 50);
 $color-link-hover: #fd7970;
-$color-link-active: darken($color-link, 20);
+$color-link-active: lighten($color-link, 10);
 $color-text: #dadada;
 $color-button: $color-link;
 $color-button-hover: darken($color-button, 5);
 $color-button-active: darken($color-button, 10);
+$color-navbar: #1e4684;//rgb(53, 13, 9);
+$color-navbar-scroll-shadow: darken($color-link, 25);
+$color-navbar-active: #9f90ce;
 $pad: 1em;
 
 $breakpoints: ( // 700px 400px 330px
 //'desktop'  : ( min-width: 43.75em ),
-    'tablet': ( min-width: 400px  ),
+   // 'tablet': ( min-width: 522px  ),
     'desktop': ( min-width: #{600 - (16)}px )
 );

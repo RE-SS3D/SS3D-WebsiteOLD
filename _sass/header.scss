@@ -5,6 +5,7 @@ header {
         font-size: 8vw;
         white-space: nowrap;
         overflow: visible;
+        margin-top: $pad;
     }
     p {
         font-size: 13px;
@@ -16,10 +17,13 @@ header {
         width: 100%;
     }
     img {
-        height: #{$pad * 2}; //45px;
+        height: 52px;
         position: absolute;
-        right: $pad;
-        top: #{$pad * 0.8};
+        right: 0;
+        top: 0;
+        padding: $pad;
+        padding-top: 10px;
+        padding-bottom: 5px;
     }
     @include respond-to(desktop) {
         h1 {
@@ -31,11 +35,12 @@ header {
         }
         div {
             display: inline-block;
-            width: 600px;
+            width: 560px;
         }
         img {
             position: relative;
             height: 100px;
+            padding-top: 18px;
         }
     }
 }

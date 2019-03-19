@@ -2,7 +2,10 @@
 layout: post
 title:  "A ping from space"
 date:   2019-01-08 22:41:00 +0100
-level: 3
+description: |
+  Introduction to the SS3D project.
+  Good read, can recommend.
+image: /assets/img/posts/350x150.png
 ---
 
 <!--<video autoplay="autoplay" muted controls loop="loop" poster="{{ site.baseurl }}/media/2019-01-08-RE-SS3D/teaser-animation.png">
@@ -33,9 +36,9 @@ All team members have access to the GitHub repo with the source code, so in the 
 
 ### 2019 buttons
 
-[Join our Discord](https://discord.gg/eYmY4bW){: .button .discord-colors}
+[Join our Discord]({{ site.discord_url }}){: .button .discord-colors}
 
-[Trello Roadmap](https://trello.com/b/B5DGBbKs/main){: .button .trello-colors}
+[Trello Roadmap]({{ site.trello_url }}){: .button .trello-colors}
 
 &#x200B;
 

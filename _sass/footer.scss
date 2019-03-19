@@ -1,11 +1,18 @@
 .contact {
+    padding-top: 15px;
     ul {
         text-align: center;
-        @include respond-to(desktop) {
-            text-align: right;
-        }
     }
     li {
-        display: inline-block;
+        margin-top: 16px;
+        margin-left: 0;
+        @include respond-to(desktop) {
+            display: inline-block;
+            margin-top: 0;
+            margin-left: 16px;
+            &:first-child {
+                margin-left: 0;
+            }
+        }
     }
 }

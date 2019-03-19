@@ -22,6 +22,9 @@ baseurl: "/ss3d-website" # the subpath of your site, e.g. /blog
 url: "http://www.ss3d.space" # the base hostname & protocol for your site, e.g. http://example.com
 #twitter_username: jekyllrb
 #github_username:  jekyll
+discord_url: https://discord.gg/94HwaZW
+trello_url: https://trello.com/b/B5DGBbKs/main
+github_url: https://github.com/RE-SS3D
 
 # Build settings
 markdown: kramdown

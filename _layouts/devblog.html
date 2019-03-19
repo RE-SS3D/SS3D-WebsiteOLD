@@ -1,0 +1,21 @@
+---
+layout: default
+---
+
+{{ content }}
+<ul class="ul-reset">
+{% for post in site.posts %}
+<li class="post-row">
+    <div>
+        <a href="{{ site.baseurl}}{{ post.url }}"><img class="post-image" src="{{ post.image | prepend: site.baseurl }}" alt="{{ post.title }}" title="{{ post.title }}"></a>
+    </div>
+    <div>
+        <h2><a href="{{ site.baseurl}}{{ post.url }}">{{ post.title}}</a></h2>
+        <a class="a-reset" href="{{ site.baseurl}}{{ post.url }}"><span class="postDate">{{ post.date | date: "%b %-d, %Y" }}</span></a>
+    </div>
+    <div class="post-description">
+        <a class="a-reset" href="{{ site.baseurl}}{{ post.url }}"><p>{{ post.description }}</p></a>
+    </div>
+</li>
+{% endfor %}
+</ul>

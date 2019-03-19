@@ -44,6 +44,23 @@ body {
     margin-top: 0;
 }
 
+.a-reset {
+    color: inherit;
+    text-decoration: inherit;
+    &:hover {
+        color: inherit;
+        text-decoration: inherit;
+    }
+    &:active {
+        color: inherit;
+        text-decoration: inherit;
+    }
+    &:focus {
+        color: inherit;
+        text-decoration: inherit;
+    }
+}
+
 a {
     color: $color-link;
     text-decoration: none;
@@ -63,3 +80,10 @@ a {
         margin: 0 auto;
     }
 }
+
+.preload * {
+    -webkit-transition: none !important;
+    -moz-transition: none !important;
+    -ms-transition: none !important;
+    -o-transition: none !important;
+  }

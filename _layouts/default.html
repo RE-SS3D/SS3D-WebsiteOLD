@@ -5,12 +5,15 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="{{ site.baseurl}}/css/style.css">
         <link rel="shortcut icon" type="image/x-icon" href="{{ site.baseurl}}/favicon.ico">
+        <meta name="theme-color" content="#1e4684">
     </head>
-    <body>
-        <div class="body-content">
+    <body class="preload">
+        <div class="nav-background">
             <nav>
                 {% include navbar.html %}
             </nav>
+        </div>
+        <div class="body-content">
             {% include header.html %}
             <main>
                 {{ content }}
@@ -19,5 +22,11 @@
                 {% include footer.html %}
             </footer>
         </div>
+        <script>
+            // Fix flashing buttons by only allowing the css animations to play after a slight delay.
+            setTimeout(function() {
+                document.getElementsByTagName('body')[0].classList.remove('preload');
+            }, 50);            
+        </script>
     </body>
 </html>
