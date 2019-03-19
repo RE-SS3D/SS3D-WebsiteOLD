@@ -3,12 +3,12 @@
     width: calc(100vw - 69px); //#{$pad * 3} - 32px);
     height: 50px;
     @include respond-to(desktop) {
-        width: 100vw;
+        width: 560px;
     }
 }
 
 .nav-background {
-    width: 100vw;
+    width: 100%;
     background-color: $color-navbar;
     @include respond-to(desktop) {
         text-align: center;
