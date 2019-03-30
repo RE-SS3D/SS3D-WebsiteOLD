@@ -1,6 +1,10 @@
 <header class="header">
     <div>
-        <img class="logo" alt="" src="{{ site.baseurl}}/logo.png">
+        <picture class="logo" >
+            <source srcset="{{ site.baseurl}}/assets/img/logo.webp" type="image/webp">
+            <source srcset="{{ site.baseurl}}/assets/img/logo.png" type="image/png"> 
+            <img alt="" src="{{ site.baseurl}}/assets/img/logo.png">
+        </picture>
         <h1>RE: Space Station 3D</h1>
         <p>A 3D recreation of Space Station 13</p>
     </div>
