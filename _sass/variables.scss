@@ -15,5 +15,5 @@ $pad: 1em;
 $breakpoints: ( // 700px 400px 330px
 //'desktop'  : ( min-width: 43.75em ),
    // 'tablet': ( min-width: 522px  ),
-    'desktop': ( min-width: #{600 - (16)}px )
+    'desktop': ( min-width: 624px )
 );
