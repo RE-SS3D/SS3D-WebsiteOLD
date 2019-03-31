@@ -1,19 +1,45 @@
 .horizontal-3 {
     p {
-        display: flex;
+        &::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
         img {
-            flex: 33.33%;
-            margin: 0 0 8px 8px;
+            float: left;
+            width: 33.33%;
+            padding: 5px;
+            &:first-child {
+                padding-left: 0;
+            }
+            &:last-child {
+                padding-right: 0;
+            }
         }
     }
 }
 
 .horizontal-2 {
     p {
-        display: flex;
-        img {
-            flex: 50%;
-            margin: 0 0 8px 8px;
+        &::after {
+            content: "";
+            clear: both;
+            display: table;
         }
+        img {
+            float: left;
+            width: 50%;
+            padding: 5px;
+            padding-left: 0;
+            &:last-child {
+                padding-right: 0;
+            }
+        }
+    }
+}
+
+p{
+    img {
+        max-width: 100%;
     }
 }
