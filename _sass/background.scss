@@ -29,17 +29,20 @@ a {
     /* Internet Explorer 5.5+ */
 }
 
+html {
+    height: 100%;
+    background: #050608;
+}
+
 body {
-    //background: radial-gradient(ellipse at bottom, #1C2837 0%, #050608 100%);
-    background-attachment: fixed;
     background-color: rgb(37, 37, 37);
-    background: linear-gradient(180deg, #1C2837 0%, #050608 100%);
+    background: linear-gradient(180deg, #71A2E033 0%, #05060833 100%);
     background-repeat: no-repeat;
     background-attachment: fixed;
     position: relative;
 }
 
-.body-content {
+body {
     &::before {
         content: " ";
         display: block;
