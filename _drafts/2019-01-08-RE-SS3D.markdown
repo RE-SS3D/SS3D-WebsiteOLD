@@ -38,7 +38,7 @@ All team members have access to the GitHub repo with the source code, so in the 
 
 [Join our Discord]({{ site.discord_url }}){: .button .discord-colors}
 
-[Trello Roadmap]({{ site.trello_url }}){: .button .trello-colors}
+[GitHub Roadmap]({{ site.github_project_url }}){: .button .github-colors}
 
 &#x200B;
 

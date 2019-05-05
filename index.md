@@ -9,6 +9,6 @@ RE:SS3D is a resurrection of the SS3D project, which has the goal of recreating 
 
 [Join our Discord]({{ site.discord_url }}){: .button .discord-colors}
 
-[Trello Roadmap]({{ site.trello_url }}){: .button .trello-colors}
+[GitHub Roadmap]({{ site.github_project_url }}){: .button .github-colors}
 
 ## Our latest blog post
