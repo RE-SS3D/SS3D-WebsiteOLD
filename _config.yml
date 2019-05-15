@@ -25,6 +25,7 @@ url: "https://www.ss3d.space" # the base hostname & protocol for your site, e.g.
 discord_url: https://discord.gg/94HwaZW
 github_project_url: https://github.com/orgs/RE-SS3D/projects/2
 github_url: https://github.com/RE-SS3D
+google_analytics: UA-140169746-1
 
 # Build settings
 markdown: kramdown
