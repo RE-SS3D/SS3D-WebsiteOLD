@@ -10,6 +10,7 @@
 .nav-background {
     width: 100%;
     background-color: $color-navbar;
+    background-color: var(--color-navbar);
     height: 50px;
     @include respond-to(desktop) {
         text-align: center;
@@ -36,12 +37,28 @@ nav {
         /* Shadow covers */
         linear-gradient(to right, rgba($color-navbar-scroll-shadow, 0.25), rgba($color-navbar, 0)),
         linear-gradient(to left, rgba($color-navbar-scroll-shadow, 0.25), rgba($color-navbar, 0));
+        
+        @media (prefers-color-scheme: light) {
+            background-image :/* Shadows */
+            linear-gradient(to right, $color-navbar-light, $color-navbar-light),
+            linear-gradient(to right, $color-navbar-light, $color-navbar-light),
+            /* Shadow covers */
+            linear-gradient(to right, rgba($color-navbar-scroll-shadow, 0.25), rgba($color-navbar-light, 0)),
+            linear-gradient(to left, rgba($color-navbar-scroll-shadow, 0.25), rgba($color-navbar-light, 0));
+        }
+        //background-image :/* Shadows */
+        //linear-gradient(to right, var(--color-navbar), var(--color-navbar)),
+        //linear-gradient(to right, var(--color-navbar), var(--color-navbar)),
+        ///* Shadow covers */
+        //linear-gradient(to right, rgba(var(--color-navbar-scroll-shadow), 0.25), rgba(var(--color-navbar), 0)),
+        //linear-gradient(to left, rgba(var(--color-navbar-scroll-shadow), 0.25), rgba(var(--color-navbar), 0));
         background-position: left center,
         right center,
         left center,
         right center;
         background-repeat: no-repeat;
         background-color: $color-navbar;
+        background-color: var(--color-navbar);
         background-size: 20px 100%,
         20px 100%,
         10px 100%,
@@ -62,20 +79,24 @@ nav {
         display: inline-block;
         margin-top: 16px;
         a {
-            color: white;
+            color: $color-navbar-text;
+            color: var(--color-navbar-text);
             text-align: center;
             padding: 16px;
             text-decoration: none;
             transition: background-color .17s ease,color .17s ease;
             font-size: 16px;
             &:hover {
-                background-color: #111111;
+                background-color: $color-navbar-hover;
+                background-color: var(--color-navbar-hover);
                 text-decoration: none;
                 transition: background-color .17s ease,color .17s ease;
             }
             &.active {
                 color: $color-navbar-active;
+                color: var(--color-navbar-active);
                 text-shadow:1px 0px 0px $color-navbar-active;
+                text-shadow:1px 0px 0px var(--color-navbar-active);
                 @supports not (text-shadow:1px 0px 0px $color-navbar-active) {
                     font-weight: bold;
                 }
