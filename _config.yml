@@ -19,7 +19,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   This is a 3D recreation of Space Station 13, on the Unity engine,
   which will come with its own set of gameplay/graphical improvements. 
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://www.ss3d.space" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://ss3d.space" # the base hostname & protocol for your site, e.g. http://example.com
 #twitter_username: jekyllrb
 #github_username:  jekyll
 discord_url: https://discord.gg/94HwaZW
