@@ -1,0 +1,540 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://ss3d.space/feed.xml" rel="self" type="application/atom+xml" /><link href="https://ss3d.space/" rel="alternate" type="text/html" /><updated>2019-08-19T15:58:41+00:00</updated><id>https://ss3d.space/feed.xml</id><title type="html">RE:SS3D</title><subtitle>This is a 3D recreation of Space Station 13, on the Unity engine, which will come with its own set of gameplay/graphical improvements. </subtitle><entry><title type="html">19.07: July Recap</title><link href="https://ss3d.space/2019/08/06/19.07.html" rel="alternate" type="text/html" title="19.07: July Recap" /><published>2019-08-06T14:30:00+00:00</published><updated>2019-08-06T14:30:00+00:00</updated><id>https://ss3d.space/2019/08/06/19.07</id><content type="html" xml:base="https://ss3d.space/2019/08/06/19.07.html">&lt;p&gt;Models, models, models models…&lt;/p&gt;
+
+&lt;p&gt;Our model game continues to improve.&lt;/p&gt;
+
+&lt;h1 id=&quot;july-recap&quot;&gt;July Recap&lt;/h1&gt;
+
+&lt;h2 id=&quot;modelers-kit&quot;&gt;Modeler’s Kit&lt;/h2&gt;
+
+&lt;p&gt;Courtesy of the diligent Eiko, we now have a modeller’s kit, making contributing models literally easier than ever! Contains a Blender 2.8 template file with materials and settings properly set up so that people stop making models with backface culling disabled and sending stuff in with their normals facing the wrong way, &lt;a href=&quot;https://ss3d.space/assets/pdf/BeepStyleGuide.pdf&quot;&gt;*beep’s original SS3D Style Guide&lt;/a&gt;, a &lt;strong&gt;brand new&lt;/strong&gt; &lt;a href=&quot;https://ss3d.space/assets/pdf/SS3DModelFormattingGuide.pdf&quot;&gt;Model Formatting Guide&lt;/a&gt;, a simple character turnaround for planning clothes and equipables, and the original Items-18-2-22b to serve as a collection of example models.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/posts/19.07.01/ModelersKit.png&quot; alt=&quot;ModelersKit&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;shape-key-magic&quot;&gt;SHAPE KEY MAGIC&lt;/h2&gt;
+
+&lt;p&gt;Somewhere between the artistic and technical means of character representations is some beautiful use of a magical thing called shapekeys, which can change aspects of models as the shapekey variables are changed.
+Here we have two examples of shapekey use: player eye states, and hair/headpiece compatibility.&lt;/p&gt;
+
+&lt;div class=&quot;horizontal-2&quot;&gt;
+  &lt;p&gt;&lt;img src=&quot;/assets/img/posts/19.07.01/EikoHatShapeKeys.gif&quot; alt=&quot;EikoHatShapeKeys&quot; /&gt;
+&lt;img src=&quot;/assets/img/posts/19.07.01/EikoExpressions.gif&quot; alt=&quot;EikoExpressions&quot; /&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;Not groundbreaking, but a bit of insight on how character customization will work. Not pictured is how shapekeys are used for player body proportion sliders.&lt;/p&gt;
+
+&lt;h1 id=&quot;eye-candy&quot;&gt;EYE CANDY&lt;/h1&gt;
+
+&lt;p&gt;Eiko continues to provide significant model contributions despite his other efforts on the project, and I am still certain I don’t have all his contributions for the month.&lt;/p&gt;
+
+&lt;div class=&quot;horizontal-2&quot;&gt;
+  &lt;p&gt;&lt;img src=&quot;/assets/img/posts/19.07.01/EikoOrgans1.png&quot; alt=&quot;EikoOrgans1&quot; /&gt;
+&lt;img src=&quot;/assets/img/posts/19.07.01/EikoOrgans2.png&quot; alt=&quot;EikoOrgans2&quot; /&gt;&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;horizontal-2&quot;&gt;
+  &lt;p&gt;&lt;img src=&quot;/assets/img/posts/19.07.01/EikoSpiralbound1.png&quot; alt=&quot;EikoSpiralbound1&quot; /&gt;
+&lt;img src=&quot;/assets/img/posts/19.07.01/EikoSpiralbound2.png&quot; alt=&quot;EikoSpiralbound2&quot; /&gt;&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;horizontal-2&quot;&gt;
+  &lt;p&gt;&lt;img src=&quot;/assets/img/posts/19.07.01/EikoCrates1.png&quot; alt=&quot;EikoCrates1&quot; /&gt;
+&lt;img src=&quot;/assets/img/posts/19.07.01/EikoCrates2.png&quot; alt=&quot;EikoCrates2&quot; /&gt;&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;horizontal-2&quot;&gt;
+  &lt;p&gt;&lt;img src=&quot;/assets/img/posts/19.07.01/EikoBed1.png&quot; alt=&quot;EikoBed1&quot; /&gt;
+&lt;img src=&quot;/assets/img/posts/19.07.01/EikoBed2.png&quot; alt=&quot;EikoBed2&quot; /&gt;&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;horizontal-2&quot;&gt;
+  &lt;p&gt;&lt;img src=&quot;/assets/img/posts/19.07.01/EikoGrass2.png&quot; alt=&quot;EikoGrass2&quot; /&gt;
+&lt;img src=&quot;/assets/img/posts/19.07.01/EikoGrass1.png&quot; alt=&quot;EikoGrass1&quot; /&gt;&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;horizontal-2&quot;&gt;
+  &lt;p&gt;&lt;img src=&quot;/assets/img/posts/19.07.01/EikoSlime.png&quot; alt=&quot;EikoSlime&quot; /&gt;
+&lt;img src=&quot;/assets/img/posts/19.07.01/EikoFireExtinguisher.png&quot; alt=&quot;EikoFireExtinguisher&quot; /&gt;&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;horizontal-2&quot;&gt;
+  &lt;p&gt;&lt;img src=&quot;/assets/img/posts/19.07.01/EikoPenguins.png&quot; alt=&quot;EikoPenguins&quot; /&gt;
+&lt;img src=&quot;/assets/img/posts/19.07.01/EikoWashingMachine.png&quot; alt=&quot;EikoWashingMachine&quot; /&gt;&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;horizontal-2&quot;&gt;
+  &lt;p&gt;&lt;img src=&quot;/assets/img/posts/19.07.01/EikoWebbed1.png&quot; alt=&quot;EikoWebbed1&quot; /&gt;
+&lt;img src=&quot;/assets/img/posts/19.07.01/EikoWebbed2.png&quot; alt=&quot;EikoWebbed2&quot; /&gt;&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;horizontal-2&quot;&gt;
+  &lt;p&gt;&lt;img src=&quot;/assets/img/posts/19.07.01/EikoArcade1.png&quot; alt=&quot;EikoArcade1&quot; /&gt;
+&lt;img src=&quot;/assets/img/posts/19.07.01/EikoArcade2.png&quot; alt=&quot;EikoArcade2&quot; /&gt;&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Enclave was inspired to make some of the cultist items this month, as well as some wizard staffs and other miscellaneous station items.&lt;/p&gt;
+
+&lt;div class=&quot;horizontal-2&quot;&gt;
+  &lt;p&gt;&lt;img src=&quot;/assets/img/posts/19.07.01/EnclaveCultistAlter.png&quot; alt=&quot;EnclaveCultistAlter&quot; /&gt;
+&lt;img src=&quot;/assets/img/posts/19.07.01/EnclaveForge.png&quot; alt=&quot;EnclaveForge&quot; /&gt;&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;horizontal-2&quot;&gt;
+  &lt;p&gt;&lt;img src=&quot;/assets/img/posts/19.07.01/EnclavePylon.png&quot; alt=&quot;EnclavePylon&quot; /&gt;
+&lt;img src=&quot;/assets/img/posts/19.07.01/EnclaveAngerSword.png&quot; alt=&quot;EnclaveAngerSword&quot; /&gt;&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;horizontal-2&quot;&gt;
+  &lt;p&gt;&lt;img src=&quot;/assets/img/posts/19.07.01/EnclaveMjolnir.png&quot; alt=&quot;EnclaveMjolnir&quot; /&gt;
+&lt;img src=&quot;/assets/img/posts/19.07.01/EnclaverWarmesser.png&quot; alt=&quot;EnclaveWarmesser&quot; /&gt;&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;horizontal-2&quot;&gt;
+  &lt;p&gt;&lt;img src=&quot;/assets/img/posts/19.07.01/EnclaveHandLabeler.png&quot; alt=&quot;EnclaveHandLabeler&quot; /&gt;
+&lt;img src=&quot;/assets/img/posts/19.07.01/EnclaveMatchbox.png&quot; alt=&quot;EnclaveMatchbox&quot; /&gt;&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;horizontal-2&quot;&gt;
+  &lt;p&gt;&lt;img src=&quot;/assets/img/posts/19.07.01/EnclaveShovel.png&quot; alt=&quot;EnclaveShovel&quot; /&gt;
+&lt;img src=&quot;/assets/img/posts/19.07.01/EnclaveRailgun.png&quot; alt=&quot;EnclaveRailgun&quot; /&gt;&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/posts/19.07.01/EnclaveStaves.png&quot; alt=&quot;EnclaveStaves&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;From deBARBA, some birds and a blender, all animated, but not to imply those things should categorically mix.&lt;/p&gt;
+
+&lt;div class=&quot;horizontal-2-direct-children-desktop&quot;&gt;
+  &lt;div class=&quot;sketchfab-embed-wrapper&quot;&gt;
+    &lt;p&gt;
+      &lt;iframe width=&quot;320&quot; height=&quot;200&quot; src=&quot;https://sketchfab.com/models/1ac51f5f691a4986a5ac1e415da0c7d9/embed&quot; frameborder=&quot;0&quot; allow=&quot;autoplay; fullscreen; vr&quot; mozallowfullscreen=&quot;true&quot; webkitallowfullscreen=&quot;true&quot; style=&quot;width:100%&quot;&gt;&lt;/iframe&gt;
+    &lt;/p&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;sketchfab-embed-wrapper&quot;&gt;
+    &lt;p&gt;
+      &lt;iframe width=&quot;320&quot; height=&quot;200&quot; src=&quot;https://sketchfab.com/models/2434dc57e8594e80b80cd28c1b19a24e/embed&quot; frameborder=&quot;0&quot; allow=&quot;autoplay; fullscreen; vr&quot; mozallowfullscreen=&quot;true&quot; webkitallowfullscreen=&quot;true&quot; style=&quot;width:100%&quot;&gt;&lt;/iframe&gt;
+    &lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;horizontal-2-direct-children-desktop&quot;&gt;
+  &lt;div class=&quot;sketchfab-embed-wrapper&quot;&gt;
+    &lt;p&gt;
+      &lt;iframe width=&quot;320&quot; height=&quot;200&quot; src=&quot;https://sketchfab.com/models/19ccdf5f26a243f3bd3b47ccbe00e0ea/embed&quot; frameborder=&quot;0&quot; allow=&quot;autoplay; fullscreen; vr&quot; mozallowfullscreen=&quot;true&quot; webkitallowfullscreen=&quot;true&quot; style=&quot;width:100%&quot;&gt;&lt;/iframe&gt;
+    &lt;/p&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;sketchfab-embed-wrapper&quot;&gt;
+    &lt;p&gt;
+      &lt;iframe width=&quot;320&quot; height=&quot;200&quot; src=&quot;https://sketchfab.com/models/15567352b4a44d739e5c2dc966202b29/embed&quot; frameborder=&quot;0&quot; allow=&quot;autoplay; fullscreen; vr&quot; mozallowfullscreen=&quot;true&quot; webkitallowfullscreen=&quot;true&quot; style=&quot;width:100%&quot;&gt;&lt;/iframe&gt;
+    &lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;From goao this month, a particular interest in instruments, and more.&lt;/p&gt;
+
+&lt;div class=&quot;horizontal-2&quot;&gt;
+  &lt;p&gt;&lt;img src=&quot;/assets/img/posts/19.07.01/GoaoAcousticGuitar.png&quot; alt=&quot;GoaoAcousticGuitar&quot; /&gt;
+&lt;img src=&quot;/assets/img/posts/19.07.01/GoaoElectricGuitar.png&quot; alt=&quot;GoaoElectricGuitar&quot; /&gt;&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;horizontal-2&quot;&gt;
+  &lt;p&gt;&lt;img src=&quot;/assets/img/posts/19.07.01/GoaoMinimoog.png&quot; alt=&quot;GoaoMinimoog&quot; /&gt;
+&lt;img src=&quot;/assets/img/posts/19.07.01/GoaoHarmonica.png&quot; alt=&quot;GoaoHarmonica&quot; /&gt;&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;horizontal-2&quot;&gt;
+  &lt;p&gt;&lt;img src=&quot;/assets/img/posts/19.07.01/GoaoFiddle.png&quot; alt=&quot;GoaoFiddle&quot; /&gt;
+&lt;img src=&quot;/assets/img/posts/19.07.01/GoaoXylophone.png&quot; alt=&quot;GoaoXylophone&quot; /&gt;&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;horizontal-2&quot;&gt;
+  &lt;p&gt;&lt;img src=&quot;/assets/img/posts/19.07.01/GoaoCleaver.png&quot; alt=&quot;GoaoCleaver&quot; /&gt;
+&lt;img src=&quot;/assets/img/posts/19.07.01/GoaoShakers.png&quot; alt=&quot;GoaoShakers&quot; /&gt;&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;horizontal-2&quot;&gt;
+  &lt;p&gt;&lt;img src=&quot;/assets/img/posts/19.07.01/GoaoStamp.png&quot; alt=&quot;GoaoStamp&quot; /&gt;
+&lt;img src=&quot;/assets/img/posts/19.07.01/GoaoIceCreamStand.png&quot; alt=&quot;GoaoIceCreamStand&quot; /&gt;&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Finally, we have a grinder and conveyer belts from Milly, and reinforced tiles from Chanoc.&lt;/p&gt;
+
+&lt;div class=&quot;horizontal-2&quot;&gt;
+  &lt;p&gt;&lt;img src=&quot;/assets/img/posts/19.07.01/MillyGrinder.png&quot; alt=&quot;MillyGrinder&quot; /&gt;
+&lt;img src=&quot;/assets/img/posts/19.07.01/ChanocReinforcedTiles.png&quot; alt=&quot;ChanocReinforcedTiles&quot; /&gt;&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&quot;notes&quot;&gt;NOTES&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&quot;https://ss3d.space/assets/txt/BoneHurtingAssassin.txt&quot; target=&quot;_blank&quot;&gt;Somebody&lt;/a&gt; replaced all the fluids in my residence with bone hurting juice, and it took me out of commission for a while. Special thanks to Eiko this month, who did half my job for me while I tried not to writhe in pain.&lt;/p&gt;
+
+&lt;p&gt;This is our monthly devblog, standing as proof that we’re still here, even if I’m not.
+Come visit us on &lt;a href=&quot;https://discord.gg/3ny9tdH&quot; target=&quot;_blank&quot;&gt;Discord&lt;/a&gt; and get a special toolbox welcoming gift.&lt;/p&gt;</content><author><name></name></author><summary type="html">Models, models, models models…</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://ss3d.space/assets/img/posts/19.07.01/PromoGibber.png" /></entry><entry><title type="html">19.06: June Recap</title><link href="https://ss3d.space/2019/07/04/19.06.html" rel="alternate" type="text/html" title="19.06: June Recap" /><published>2019-07-04T14:30:00+00:00</published><updated>2019-07-04T14:30:00+00:00</updated><id>https://ss3d.space/2019/07/04/19.06</id><content type="html" xml:base="https://ss3d.space/2019/07/04/19.06.html">&lt;p&gt;A new face appears. An old face vanishes. Gears start to turn again.&lt;/p&gt;
+
+&lt;h1 id=&quot;june-recap&quot;&gt;June Recap&lt;/h1&gt;
+
+&lt;h2 id=&quot;newer-taller-more-modular-walls&quot;&gt;NEWER, TALLER, MORE MODULAR WALLS&lt;/h2&gt;
+&lt;p&gt;Foreground is example of old walls, background is example of new walls.
+&lt;img src=&quot;/assets/img/posts/19.06.01/EikoOldWallsNewWalls.png&quot; alt=&quot;EikoOldWallsNewWalls&quot; /&gt;
+Now, these taller walls &lt;em&gt;may or may not&lt;/em&gt; be the first step down a slippery slope that might land us in a place with vertical orientation, and they are overall possibly still very much subject to change, but they solve some problems with how certain especially larger entities will navigate the station. Their careful construction as a joint project between PlayerOne and our newly ordained Eiko has ensured their flexibility to function as proper building blocks of any station design.&lt;/p&gt;
+
+&lt;p&gt;The flexibility is enough to produce  some curiously revolting structures, were an individual motivated enough to make some:&lt;/p&gt;
+
+&lt;div class=&quot;horizontal-2&quot;&gt;
+  &lt;p&gt;&lt;img src=&quot;/assets/img/posts/19.06.01/EikoRevoltingStructures1.png&quot; alt=&quot;EikoRevoltingStructures1&quot; /&gt;
+&lt;img src=&quot;/assets/img/posts/19.06.01/EikoRevoltingStructures2.png&quot; alt=&quot;EikoRevoltingStructures2&quot; /&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;horizontal-2&quot;&gt;
+  &lt;p&gt;&lt;img src=&quot;/assets/img/posts/19.06.01/EikoRevoltingStructures3.png&quot; alt=&quot;EikoRevoltingStructures3&quot; /&gt;
+&lt;img src=&quot;/assets/img/posts/19.06.01/EikoRevoltingStructures4.png&quot; alt=&quot;EikoRevoltingStructures4&quot; /&gt;&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;limbs&quot;&gt;LIMBS&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/posts/19.06.01/Limbs.png&quot; alt=&quot;Limbs&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Though the cartoony style of our spessman might be deceiving, RE:SS3D is still based off of SS13, and as such, spessmen will be expected to inevitably die in incredibly brutal ways. Chopped limbs and cauterized wounds have been designed and do well to fit that perfect balance between being cartoony and appropriately depicting the horribly injury they are intended to represent.&lt;/p&gt;
+
+&lt;div class=&quot;horizontal-2&quot;&gt;
+  &lt;p&gt;&lt;img src=&quot;/assets/img/posts/19.06.01/Severed.png&quot; alt=&quot;Severed&quot; /&gt;
+&lt;img src=&quot;/assets/img/posts/19.06.01/Cauterized.png&quot; alt=&quot;Cauterized&quot; /&gt;&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Examples of severed and cauterized limbs, courtesy of Eiko, who also made the &lt;a href=&quot;https://ss3d.space/assets/img/posts/19.06.01/SS3DDressCodeProblemSolving.PNG&quot; target=&quot;_blank&quot;&gt;definitely-violates-station-dresscode&lt;/a&gt; sundress pictured here.&lt;/p&gt;
+
+&lt;h2 id=&quot;skeletons&quot;&gt;SKELETONS&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/img/posts/19.06.01/SpookyScary.png&quot; alt=&quot;SpookyScary&quot; /&gt;
+Alongside our preparations for the dismemberment of our spessmen, we now also have a skeleton (again, courtesy of Eiko.) For the skeleton enthusiasts out there, like myself, let me assure you that the male and female skeletons can be properly differentiated by an informed inspection of the hips. Structurally, they also fit perfectly inside the base human model, allowing for fun effects like the cartoony “electrocution X-ray.”&lt;/p&gt;
+
+&lt;h2 id=&quot;critters&quot;&gt;CRITTERS&lt;/h2&gt;
+&lt;p&gt;Three new critters join the station. Blame Eiko. You’ll have to take my word for it when I say that they’re all adorably animated, though, because I’m not competent enough to display that properly right now.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/posts/19.06.01/EikoSpaceCarp.png&quot; alt=&quot;EikoSpaceCarp&quot; /&gt;&lt;/p&gt;
+&lt;div class=&quot;horizontal-2&quot;&gt;
+  &lt;p&gt;&lt;img src=&quot;/assets/img/posts/19.06.01/EikoCockroach.png&quot; alt=&quot;EikoCockroach&quot; /&gt;
+&lt;img src=&quot;/assets/img/posts/19.06.01/EikoLizard.png&quot; alt=&quot;EikoLizard&quot; /&gt;&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;h1 id=&quot;eye-candy&quot;&gt;EYE CANDY&lt;/h1&gt;
+&lt;p&gt;Various other models from Eiko this month, beginning with a new update on door design to include panels, and ending with some various foodstuffs.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/posts/19.06.01/EikoDoorPanel.gif&quot; alt=&quot;EikoDoorPanel&quot; /&gt;&lt;/p&gt;
+&lt;div class=&quot;horizontal-2&quot;&gt;
+  &lt;p&gt;&lt;img src=&quot;/assets/img/posts/19.06.01/EikoDeskLamp.png&quot; alt=&quot;EikoDeskLamp&quot; /&gt;
+&lt;img src=&quot;/assets/img/posts/19.06.01/EikoHolopad.png&quot; alt=&quot;EikoHolopad&quot; /&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;horizontal-2&quot;&gt;
+  &lt;p&gt;&lt;img src=&quot;/assets/img/posts/19.06.01/EikoPianoAndStool.png&quot; alt=&quot;EikoPianoAndStool&quot; /&gt;
+&lt;img src=&quot;/assets/img/posts/19.06.01/EikoPottedPlant.png&quot; alt=&quot;EikoPottedPlant&quot; /&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;horizontal-2&quot;&gt;
+  &lt;p&gt;&lt;img src=&quot;/assets/img/posts/19.06.01/EikoSpaceHeaterOff.png&quot; alt=&quot;EikoSpaceHeaterOff&quot; /&gt;
+&lt;img src=&quot;/assets/img/posts/19.06.01/EikoTowel.png&quot; alt=&quot;EikoTowel&quot; /&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/img/posts/19.06.01/EikoFoods.png&quot; alt=&quot;EikoFoods&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Some splendid machinery and furniture brought to us by deBARBA, some within some Sketchfab embeds. Click on the embeds, because they look way better than my lousy Blender screenshots, and the two machines have amazing animations.&lt;/p&gt;
+
+&lt;div class=&quot;sketchfab-embed-wrapper&quot;&gt;&lt;iframe width=&quot;600&quot; height=&quot;400&quot; src=&quot;https://sketchfab.com/models/a7f210103cf14821ac1a22624357cd18/embed?camera=0&quot; frameborder=&quot;0&quot; allow=&quot;autoplay; fullscreen; vr&quot; mozallowfullscreen=&quot;true&quot; webkitallowfullscreen=&quot;true&quot; style=&quot;width:100%&quot;&gt;&lt;/iframe&gt;
+&lt;p style=&quot;font-size: 13px; font-weight: normal; margin: 5px; color: #4A4A4A;&quot;&gt;
+&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;horizontal-2-direct-children-desktop&quot;&gt;
+  &lt;p&gt;&lt;img src=&quot;/assets/img/posts/19.06.01/deBARBAGibber.png&quot; alt=&quot;deBARBAGibber&quot; /&gt;&lt;/p&gt;
+
+  &lt;div class=&quot;sketchfab-embed-wrapper&quot;&gt;
+    &lt;p&gt;
+      &lt;iframe width=&quot;320&quot; height=&quot;200&quot; src=&quot;https://sketchfab.com/models/35c1a18000e648019bf66803e9c49b98/embed&quot; frameborder=&quot;0&quot; allow=&quot;autoplay; fullscreen; vr&quot; mozallowfullscreen=&quot;true&quot; webkitallowfullscreen=&quot;true&quot; style=&quot;width:100%&quot;&gt;&lt;/iframe&gt;
+    &lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;horizontal-2-direct-children-desktop&quot;&gt;
+  &lt;p&gt;&lt;img src=&quot;/assets/img/posts/19.06.01/deBARBAComfyChair.png&quot; alt=&quot;deBARBAComfyChair&quot; /&gt;&lt;/p&gt;
+  &lt;div class=&quot;sketchfab-embed-wrapper&quot;&gt;
+    &lt;p&gt;
+      &lt;iframe width=&quot;320&quot; height=&quot;200&quot; src=&quot;https://sketchfab.com/models/374d59cc92b440d089a9152cf07c6f50/embed&quot; frameborder=&quot;0&quot; allow=&quot;autoplay; fullscreen; vr&quot; mozallowfullscreen=&quot;true&quot; webkitallowfullscreen=&quot;true&quot; style=&quot;width:100%&quot;&gt;&lt;/iframe&gt;
+    &lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;horizontal-2&quot;&gt;
+  &lt;p&gt;&lt;img src=&quot;/assets/img/posts/19.06.01/deBARBAShuttleChair.png&quot; alt=&quot;deBARBAShuttleChair&quot; /&gt;
+&lt;img src=&quot;/assets/img/posts/19.06.01/deBARBAStationBouncedRadio.png&quot; alt=&quot;deBARBAStationBouncedRadio&quot; /&gt;&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Capacitors, brought to us by goao, in standard, advanced, and super capacities.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/posts/19.06.01/goaoCapacitorSuper.png&quot; alt=&quot;goaoCapacitorSuper&quot; /&gt;&lt;/p&gt;
+
+&lt;div class=&quot;horizontal-2&quot;&gt;
+  &lt;p&gt;&lt;img src=&quot;/assets/img/posts/19.06.01/goaoCapacitor.png&quot; alt=&quot;goaoCapacitor&quot; /&gt;
+&lt;img src=&quot;/assets/img/posts/19.06.01/goaoCapacitorAdvanced.png&quot; alt=&quot;goaoCapacitorAdvanced&quot; /&gt;&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&quot;notes&quot;&gt;NOTES&lt;/h3&gt;
+
+&lt;p&gt;This one came out a few days late, because I am the weak link of the devblogs, and &lt;a href=&quot;https://cdn.discordapp.com/attachments/483819148825067521/590007716655661080/2019-06-16_22-39-31.mp4&quot; target=&quot;blank&quot;&gt;some&lt;/a&gt; things may’ve not gotten the proper mention they deserve, including new hairstyles and new expressions for the playermodel.&lt;/p&gt;
+
+&lt;p&gt;This is our monthly devblog, standing as proof that we’re still here breathing and working, even when only one of us is pulling all the weight.
+Come visit us on &lt;a href=&quot;https://discord.gg/3ny9tdH&quot; target=&quot;_blank&quot;&gt;Discord&lt;/a&gt;, if you’re into that.
+Fun things happen on the Discord, sometimes.&lt;/p&gt;</content><author><name></name></author><summary type="html">A new face appears. An old face vanishes. Gears start to turn again.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://ss3d.space/assets/img/posts/19.06.01/EikoEmptyVoid.png" /></entry><entry><title type="html">19.05: May Recap</title><link href="https://ss3d.space/2019/05/30/19.05.html" rel="alternate" type="text/html" title="19.05: May Recap" /><published>2019-05-30T14:30:00+00:00</published><updated>2019-05-30T14:30:00+00:00</updated><id>https://ss3d.space/2019/05/30/19.05</id><content type="html" xml:base="https://ss3d.space/2019/05/30/19.05.html">&lt;p&gt;Despite being another slow month, progress continues.&lt;/p&gt;
+
+&lt;h1 id=&quot;may-recap&quot;&gt;May Recap&lt;/h1&gt;
+
+&lt;h3 id=&quot;injured-animations&quot;&gt;INJURED ANIMATIONS&lt;/h3&gt;
+&lt;p&gt;Some injured animations from our new animator, Venom:&lt;/p&gt;
+
+&lt;video autoplay=&quot;autoplay&quot; muted=&quot;&quot; loop=&quot;loop&quot; poster=&quot;/assets/img/posts/19.05.1/InjuredWalk.jpg&quot;&gt;
+  &lt;source src=&quot;/assets/img/posts/19.05.1/InjuredWalk.webm&quot; type=&quot;video/webm&quot; /&gt;
+  &lt;source src=&quot;/assets/img/posts/19.05.1/InjuredWalk.mp4&quot; type=&quot;video/mp4&quot; /&gt;
+&lt;/video&gt;
+
+&lt;video autoplay=&quot;autoplay&quot; muted=&quot;&quot; loop=&quot;loop&quot; poster=&quot;/assets/img/posts/19.05.1/InjuredIdle.jpg&quot;&gt;
+  &lt;source src=&quot;/assets/img/posts/19.05.1/InjuredIdle.webm&quot; type=&quot;video/webm&quot; /&gt;
+  &lt;source src=&quot;/assets/img/posts/19.05.1/InjuredIdle.mp4&quot; type=&quot;video/mp4&quot; /&gt;
+&lt;/video&gt;
+
+&lt;p&gt;Injured walk and injured idle, specifically. The idea of injured idle is still something generally novel and uncommon in most games, I feel, but it definitely has a place in SS3D, where noticing somebody’s obvious abdominal discomfort or limp can be vitally telling clues of some greater problem.&lt;/p&gt;
+
+&lt;h3 id=&quot;model-pipeline&quot;&gt;MODEL PIPELINE&lt;/h3&gt;
+&lt;p&gt;Continuing off last month’s mention of making a system for intaking model community submissions, our “&lt;a href=&quot;https://docs.google.com/document/d/1oz9qOsgDMaTaa3VagsiW9OdbJJvw3AvG6XR97ZZfLU8/edit?usp=sharing&quot; target=&quot;_blank&quot;&gt;Model Pipeline&lt;/a&gt;” is now prepared. This document is intended to outline the contribution process altogether, and also act as sort of an information hub for model documents, with some links scattered thoroughly throughout it. I didn’t get around to finishing up the technical guide, planned to accompany this, as my laptop shattered, but that mostly only inhibits instruction regarding more complicated models.&lt;/p&gt;
+
+&lt;p&gt;The objective of the model pipeline was to put a method of order and review to the way that models are adopted into the project. We’ve prior ended up with a jumbled mess of modelss that were not-quite-ready for deployment into the game standing alongside models that &lt;em&gt;were&lt;/em&gt;, and it was something of a confusing, directionless mess. Models are now reviewed two times for two categories of inspection, not including the general “peer-review” that models contributions tend to be subjected to in the RE:SS3D Discord, and their storage reflects these states. Further elaboration can be found in the &lt;a href=&quot;https://docs.google.com/document/d/1oz9qOsgDMaTaa3VagsiW9OdbJJvw3AvG6XR97ZZfLU8/edit?usp=sharing&quot; target=&quot;_blank&quot;&gt;document itself&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h1 id=&quot;eye-candy&quot;&gt;EYE CANDY&lt;/h1&gt;
+&lt;p&gt;Brought to you (mostly) in stunning, 800x600 standard-definition, LightVelox has provided some rather bountiful contributions this month:&lt;/p&gt;
+
+&lt;div class=&quot;horizontal-2&quot;&gt;
+  &lt;p&gt;&lt;img src=&quot;/assets/img/posts/19.05.1/LightVeloxHealthAnalyzer.jpg&quot; alt=&quot;HealthAnalyzer&quot; /&gt;
+&lt;img src=&quot;/assets/img/posts/19.05.1/LightVeloxHealthAnalyzerAdvanced.jpg&quot; alt=&quot;HealthAnalyzerAdvanced&quot; /&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;horizontal-2&quot;&gt;
+  &lt;p&gt;&lt;img src=&quot;/assets/img/posts/19.05.1/LightVeloxAnestheticTank.jpg&quot; alt=&quot;AnestheticTank&quot; /&gt;
+&lt;img src=&quot;/assets/img/posts/19.05.1/LightVeloxEmergencyO2Tank.jpg&quot; alt=&quot;EmergencyO2&quot; /&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;horizontal-2&quot;&gt;
+  &lt;p&gt;&lt;img src=&quot;/assets/img/posts/19.05.1/LightVeloxAirlockPainter.jpg&quot; alt=&quot;AirlockPainter&quot; /&gt;
+&lt;img src=&quot;/assets/img/posts/19.05.1/LightVeloxAnitBreachShielding.jpg&quot; alt=&quot;AntiBreachShielding&quot; /&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;horizontal-2&quot;&gt;
+  &lt;p&gt;&lt;img src=&quot;/assets/img/posts/19.05.1/LightVeloxCanister.jpg&quot; alt=&quot;Canister&quot; /&gt;
+&lt;img src=&quot;/assets/img/posts/19.05.1/LightVeloxCartridge.jpg&quot; alt=&quot;Cartridge&quot; /&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;horizontal-2&quot;&gt;
+  &lt;p&gt;&lt;img src=&quot;/assets/img/posts/19.05.1/LightVeloxChemMaster.jpg&quot; alt=&quot;ChemMaster&quot; /&gt;
+&lt;img src=&quot;/assets/img/posts/19.05.1/LightVeloxChemDispenser.jpg&quot; alt=&quot;ChemDispenser&quot; /&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;horizontal-2&quot;&gt;
+  &lt;p&gt;&lt;img src=&quot;/assets/img/posts/19.05.1/LightVeloxCircuitImprinter.jpg&quot; alt=&quot;CircuitImprinter&quot; /&gt;
+&lt;img src=&quot;/assets/img/posts/19.05.1/LightVeloxEnergyGun.jpg&quot; alt=&quot;EnergyGun&quot; /&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;horizontal-2&quot;&gt;
+  &lt;p&gt;&lt;img src=&quot;/assets/img/posts/19.05.1/LightVeloxHandLabeler.jpg&quot; alt=&quot;HandLabeler&quot; /&gt;
+&lt;img src=&quot;/assets/img/posts/19.05.1/LightVeloxMultitool.jpg&quot; alt=&quot;Multitool&quot; /&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;horizontal-2&quot;&gt;
+  &lt;p&gt;&lt;img src=&quot;/assets/img/posts/19.05.1/LightVeloxGenerator.jpg&quot; alt=&quot;Generator&quot; /&gt;
+&lt;img src=&quot;/assets/img/posts/19.05.1/LightVeloxPAI.jpg&quot; alt=&quot;PAI&quot; /&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;horizontal-2&quot;&gt;
+  &lt;p&gt;&lt;img src=&quot;/assets/img/posts/19.05.1/LightVeloxPipeDispenser.jpg&quot; alt=&quot;PipeDispenser&quot; /&gt;
+&lt;img src=&quot;/assets/img/posts/19.05.1/LightVeloxRCD.jpg&quot; alt=&quot;RCD&quot; /&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;horizontal-2&quot;&gt;
+  &lt;p&gt;&lt;img src=&quot;/assets/img/posts/19.05.1/LightVeloxSignalJammer.jpg&quot; alt=&quot;SignalJammer&quot; /&gt;
+&lt;img src=&quot;/assets/img/posts/19.05.1/LightVeloxPlasmaTank.jpg&quot; alt=&quot;PlasmaTank&quot; /&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;horizontal-2&quot;&gt;
+  &lt;p&gt;&lt;img src=&quot;/assets/img/posts/19.05.1/LightVeloxWirecutters.jpg&quot; alt=&quot;Wirecutters&quot; /&gt;
+&lt;img src=&quot;/assets/img/posts/19.05.1/LightVeloxStamp.jpg&quot; alt=&quot;Stamp&quot; /&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;horizontal-2&quot;&gt;
+  &lt;p&gt;&lt;img src=&quot;/assets/img/posts/19.05.1/LightVeloxProtolathe.jpg&quot; alt=&quot;Protolathe&quot; /&gt;
+&lt;img src=&quot;/assets/img/posts/19.05.1/LightVeloxSpade.jpg&quot; alt=&quot;Spade&quot; /&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;horizontal-2&quot;&gt;
+  &lt;p&gt;&lt;img src=&quot;/assets/img/posts/19.05.1/LightVeloxMiningSachel.jpg&quot; alt=&quot;MiningSachel&quot; /&gt;
+&lt;img src=&quot;/assets/img/posts/19.05.1/LightVeloxOres.jpg&quot; alt=&quot;Ores&quot; /&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;horizontal-3&quot;&gt;
+  &lt;p&gt;&lt;img src=&quot;/assets/img/posts/19.05.1/LightVeloxClipboard.jpg&quot; alt=&quot;Clipboard&quot; /&gt;
+&lt;img src=&quot;/assets/img/posts/19.05.1/LightVeloxCircularSaw.jpg&quot; alt=&quot;CircularSaw&quot; /&gt;
+&lt;img src=&quot;/assets/img/posts/19.05.1/LightVeloxRetractors.jpg&quot; alt=&quot;Retractors&quot; /&gt;&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;-and some items from Blackout, &lt;em&gt;not&lt;/em&gt; in glorious 800x600 resolution.&lt;/p&gt;
+
+&lt;div class=&quot;horizontal-2&quot;&gt;
+  &lt;p&gt;&lt;img src=&quot;/assets/img/posts/19.05.1/BlackoutIgniter.jpg&quot; alt=&quot;Igniter&quot; /&gt;
+&lt;img src=&quot;/assets/img/posts/19.05.1/BlackoutTimer.jpg&quot; alt=&quot;Timer&quot; /&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;horizontal-3&quot;&gt;
+  &lt;p&gt;&lt;img src=&quot;/assets/img/posts/19.05.1/BlackoutDwarfvenTankard.jpg&quot; alt=&quot;DwarvenTankard&quot; /&gt;
+&lt;img src=&quot;/assets/img/posts/19.05.1/BlackoutPillBottlePills.jpg&quot; alt=&quot;Pills&quot; /&gt;
+&lt;img src=&quot;/assets/img/posts/19.05.1/BlackoutProximitySensor.jpg&quot; alt=&quot;ProxSensor&quot; /&gt;&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&quot;notes&quot;&gt;NOTES&lt;/h3&gt;
+&lt;p&gt;As you’ve hopefully noticed so long as you still have at least one eye, &lt;em&gt;most&lt;/em&gt; of the Eye Candy section should look &lt;em&gt;generally&lt;/em&gt; cleaner and better, with the later portions being obvious exceptions. Sometimes the site resizes two side-by-side image of the same resolution into &lt;em&gt;different resolutions&lt;/em&gt;, so it still might need a bit of work. Hopefully this more uniform presentation will become the new standard.&lt;/p&gt;
+
+&lt;p&gt;We also have a new application form, which can be found &lt;a href=&quot;https://docs.google.com/forms/d/1Y1H7KdFwHZCKxM-fWGiSXjiUfypKQ1eGPtuqhalnoAY&quot; target=&quot;_blank&quot;&gt;here&lt;/a&gt;, because the last one was kinda atrocious.&lt;/p&gt;
+
+&lt;p&gt;If you’ve been patient, you might’ve been expecting something involving cameras this month. It was put aside for some other things. Apologies.&lt;/p&gt;
+
+&lt;p&gt;This is our monthly devblog, standing as proof that we’re still here breathing and working, despite the borderline malevolent forces that would have it otherwise.
+Come visit us on &lt;a href=&quot;https://discord.gg/3ny9tdH&quot; target=&quot;_blank&quot;&gt;Discord&lt;/a&gt;, if you’re into that.&lt;/p&gt;</content><author><name>Sunberry</name></author><summary type="html">Despite being another slow month, progress continues.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://ss3d.space/assets/img/posts/19.05.1/InjuredRender.jpg" /></entry><entry><title type="html">19.04: April Recap</title><link href="https://ss3d.space/2019/04/30/19.04.html" rel="alternate" type="text/html" title="19.04: April Recap" /><published>2019-04-30T14:30:00+00:00</published><updated>2019-04-30T14:30:00+00:00</updated><id>https://ss3d.space/2019/04/30/19.04</id><content type="html" xml:base="https://ss3d.space/2019/04/30/19.04.html">&lt;p&gt;Despite being a slow month, continued evidence of our accomplishments continues to prove that we are not dead.&lt;/p&gt;
+
+&lt;h1 id=&quot;april-recap&quot;&gt;April Recap&lt;/h1&gt;
+
+&lt;h3 id=&quot;singularity&quot;&gt;SINGULARITY&lt;/h3&gt;
+&lt;p&gt;Ol’ Singulo is here, complete with containment fields, courtesy of PlayerOne. Experience the horror of a containing an erratic and malevolent force of destruction to power basic utilities.&lt;/p&gt;
+
+&lt;video autoplay=&quot;autoplay&quot; muted=&quot;&quot; loop=&quot;loop&quot; poster=&quot;/assets/img/posts/19.04.1/SinguloTest.jpg&quot;&gt;
+  &lt;source src=&quot;/assets/img/posts/19.04.1/SinguloTest.webm&quot; type=&quot;video/webm&quot; /&gt;
+  &lt;source src=&quot;/assets/img/posts/19.04.1/SinguloTest.mp4&quot; type=&quot;video/mp4&quot; /&gt;
+&lt;/video&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/img/posts/19.04.1/SinguloTestBirdseye.jpg&quot; alt=&quot;Singlarity bird's eye&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;atmos&quot;&gt;ATMOS&lt;/h3&gt;
+&lt;p&gt;After the mantle had been left sitting on the floor in a half-finished state months ago, Dyhr has picked up Atmos this month and is bringing it into a state of completion. While it hasn’t reached that completion yet, we’re still inclined to share our progress. Pictured here is nitrogen and oxygen.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/posts/19.04.1/AtmosTestApril19.gif&quot; alt=&quot;Atmos Test&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;model-list&quot;&gt;MODEL LIST&lt;/h3&gt;
+&lt;p&gt;As one of the first steps to properly creating a good system for intaking model community submissions, we now have a big list of what models have and haven’t been explicitly accepted into the project. Most of the credit for this one goes to White Eagle, who made the majority of this twenty-something page document of items.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/posts/19.04.1/ModelListWIP.gif&quot; alt=&quot;A terrifyingly long gif of a scrolling model list&quot; /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;eye-candy&quot;&gt;EYE CANDY&lt;/h1&gt;
+
+&lt;p&gt;From White Eagle, we have cameras. These cameras were going to be for something special, but you will have to wait for the next devblog post for that detail.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/posts/19.04.1/WhiteEagleCameras.jpg&quot; alt=&quot;Two pretty, fully rigged cameras.&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;From the combined efforts of Konstantin and Sunberry, we have Ian flying into the sun.&lt;/p&gt;
+&lt;div class=&quot;horizontal-2&quot;&gt;
+  &lt;p&gt;&lt;img src=&quot;/assets/img/posts/19.04.1/KonstantinIanSunsetPoster.jpg&quot; alt=&quot;Ian into the sunset&quot; /&gt;
+&lt;img src=&quot;/assets/img/posts/19.04.1/SunberryIanSunsetPoster.jpg&quot; alt=&quot;Ian into the sun&quot; /&gt;&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Also from Konstantin, our first horizontal poster. You can use it as a desktop background, if you feel so inclined.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/posts/19.04.1/KonstantinCultistPoster.jpg&quot; alt=&quot;Cultist poster&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;mutiny&quot;&gt;MUTINY&lt;/h3&gt;
+&lt;p&gt;We have also very recently changed our leadership in the project, complete with a total restructuring of internal management into a system of teams, with our most competent members at the lead of them.&lt;/p&gt;
+
+&lt;p&gt;This is our monthly devblog, here to assure you that we have yet to die.
+Come visit us on Discord, if you’re into that.&lt;/p&gt;</content><author><name>Sunberry</name></author><summary type="html">Despite being a slow month, continued evidence of our accomplishments continues to prove that we are not dead.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://ss3d.space/assets/img/posts/19.04.1/SinguloTestThumbnail.jpg" /></entry><entry><title type="html">19.03: The First March Recap</title><link href="https://ss3d.space/2019/03/29/19.03.html" rel="alternate" type="text/html" title="19.03: The First March Recap" /><published>2019-03-29T14:30:00+00:00</published><updated>2019-03-29T14:30:00+00:00</updated><id>https://ss3d.space/2019/03/29/19.03</id><content type="html" xml:base="https://ss3d.space/2019/03/29/19.03.html">&lt;p&gt;“Welcome to the Station crew…”&lt;/p&gt;
+
+&lt;h1 id=&quot;foreward&quot;&gt;FOREWARD&lt;/h1&gt;
+
+&lt;p&gt;If you just got here, then proper introductions are probably in order. That said, proper introductions can be found on our “About” page.&lt;/p&gt;
+
+&lt;p&gt;For now, we’ll settle for brief introductions, gloss over the highlights, and then move on to the main event.&lt;/p&gt;
+
+&lt;p&gt;In the early months of the prior year, an absurdly talented individual known only as *beep announced their plans for a project called SS3D. Their work was inspiring, ingenious, and magnificent, and whenever they spoke their plans, it was clear that they had spent many a commute and night mulling over their ideas until they were refined into brilliance. Almost effortlessly, they hammered into shape their dream of 3D spessmen, making bounds of progress week by week. The project was their passion, and they would see it to its end.&lt;/p&gt;
+
+&lt;p&gt;One day, a few months into glorious, fruitful development of SS3D, *beep went quiet, never to be heard from again. With him we lost everything but that faraway dream, mere glimpses of a master plan, and a handful of assets.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/posts/19.03.1/BeepsMaterialOffering.jpg&quot; alt=&quot;*beep's parting gift&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Months later, in the fall of the same year, this project was started, in its infantile form. Over the course of this winter, we’ve been working to get our legs beneath us and present ourselves to the world. Now it is spring, and here we are.&lt;/p&gt;
+
+&lt;h1 id=&quot;march-recap&quot;&gt;March Recap&lt;/h1&gt;
+
+&lt;h3 id=&quot;networking&quot;&gt;NETWORKING&lt;/h3&gt;
+&lt;p&gt;Networking is set up now, thanks to Dyhr. Players are networked, physics is networked. A person is able to host a game and another person is able to join it. Both cause and means of celebration are presented here.&lt;/p&gt;
+
+&lt;h3 id=&quot;website&quot;&gt;WEBSITE&lt;/h3&gt;
+&lt;p&gt;Also on the list of things accomplished within this month: this very website. Stubenhocker and I (read: entirely Stubenhocker) worked on putting it together, and it has turned out very well. Now released for your very own viewing pleasure.&lt;/p&gt;
+
+&lt;h3 id=&quot;weblogger&quot;&gt;WEBLOGGER&lt;/h3&gt;
+&lt;p&gt;Also from Stubenhocker, we now have a neat remote logger for the server.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/posts/19.03.1/19.03.1StubenhockerWebconsole.gif&quot; alt=&quot;Web console&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;inventory-interface&quot;&gt;INVENTORY INTERFACE&lt;/h3&gt;
+&lt;p&gt;The newest member of our team, HotDog, has been working on the Inventory UI this month.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/posts/19.03.1/19.03.1HotDogUI.jpg&quot; alt=&quot;New UI&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;construction-automation&quot;&gt;CONSTRUCTION AUTOMATION&lt;/h3&gt;
+&lt;p&gt;Milly has created a tool for automatically selecting the proper model/orientation for environmental pieces. This is used to ensure that things like adjacent walls or tables use the proper models so that they are connected, and that things like light fixtures are attached to walls.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/posts/19.03.1/19.03.1MillyConstruction.gif&quot; alt=&quot;Automated construction selection&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;fov&quot;&gt;FOV&lt;/h3&gt;
+&lt;p&gt;Also from Milly this month: FoV. Please pardon the T-pose.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/posts/19.03.1/19.03.1MillyFoVTpose.gif&quot; alt=&quot;If a spaceman T-poses into a T-junction, but can't see around the corners, what do they do?&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;boxstation&quot;&gt;BOXSTATION&lt;/h3&gt;
+&lt;p&gt;PlayerOne has been working on setting up the automatic import of maps from SS13, with some help from the prior mentioned construction tool. Though we’ve yet to produce the content needed to really fill out these areas with functional systems and whatnot, these familiar spaces remain comforting to see in a 3D environment. Here’s some of the faithful BoxStation in its transition to 3D:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/posts/19.03.1/19.03.1PlayerOneMapGenLightsAligned.jpg&quot; alt=&quot;Box Station in infantile, 3D glory&quot; /&gt;&lt;/p&gt;
+&lt;div class=&quot;horizontal-2&quot;&gt;
+  &lt;p&gt;&lt;img src=&quot;/assets/img/posts/19.03.1/19.03.1PlayerOneMapGenLightsAndDoors.jpg&quot; alt=&quot;Box Station bridge&quot; /&gt;
+&lt;img src=&quot;/assets/img/posts/19.03.1/19.03.1PlayerOneBridgeAvatar.jpg&quot; alt=&quot;PlayerOne Bridge Avatar&quot; /&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;horizontal-2&quot;&gt;
+  &lt;p&gt;&lt;img src=&quot;/assets/img/posts/19.03.1/19.03.1PlayerOneMapGenTables1.jpg&quot; alt=&quot;Tables one&quot; /&gt;
+&lt;img src=&quot;/assets/img/posts/19.03.1/19.03.1PlayerOneMapGenTables2.jpg&quot; alt=&quot;Tables two&quot; /&gt;&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;PlayerOne also did a ton of work &lt;a href=&quot;https://www.twitch.tv/xammurapi&quot; target=&quot;_blank&quot;&gt;over livestream&lt;/a&gt; fixing up our models, readying them up for animation and customization and UV unwrapping them.&lt;/p&gt;
+
+&lt;h1 id=&quot;eye-candy&quot;&gt;EYE CANDY&lt;/h1&gt;
+
+&lt;p&gt;Taking the lead for highest resolution texture on the station, &lt;a href=&quot;https://www.deviantart.com/konstantin3001&quot; target=&quot;_blank&quot;&gt;Konstantin3001&lt;/a&gt; has been brought back, and has brought with them brand new posters.&lt;/p&gt;
+&lt;div class=&quot;horizontal-2&quot;&gt;
+  &lt;p&gt;&lt;img src=&quot;/assets/img/posts/19.03.1EyeCandy/PosterKonstantin3001UnkownSubstances.jpg&quot; alt=&quot;Do not consume unkown substances&quot; /&gt;
+&lt;img src=&quot;/assets/img/posts/19.03.1EyeCandy/PosterKonstantin3001GAUSS.jpg&quot; alt=&quot;GAUSS rifle poster&quot; /&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;horizontal-2&quot;&gt;
+  &lt;p&gt;&lt;img src=&quot;/assets/img/posts/19.03.1EyeCandy/PosterKonstantin3001JoinSyndie.jpg&quot; alt=&quot;Join the Syndicate&quot; /&gt;
+&lt;img src=&quot;/assets/img/posts/19.03.1EyeCandy/PosterKonstantin3001NASAAirlock.jpg&quot; alt=&quot;Outdated NASA airlock&quot; /&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;Enclave
+“Main station jobs almost finished.”&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/posts/19.03.1/19.03.1Enclave1and2.jpg&quot; alt=&quot;one and one makes&quot; /&gt;
+&lt;img src=&quot;/assets/img/posts/19.03.1/19.03.1EnclaveCasualCosmonaut.gif&quot; alt=&quot;Casual Cosmonaut&quot; /&gt;&lt;/p&gt;
+&lt;div class=&quot;horizontal-3&quot;&gt;
+  &lt;p&gt;&lt;img src=&quot;/assets/img/posts/19.03.1/19.03.1EnclaveBartender.jpg&quot; alt=&quot;Bartender model&quot; /&gt;
+&lt;img src=&quot;/assets/img/posts/19.03.1/19.03.1EnclavePriestRobes.jpg&quot; alt=&quot;Chaplain robes model&quot; /&gt;
+&lt;img src=&quot;/assets/img/posts/19.03.1/19.03.1EnclaveSpaceCowboy.jpg&quot; alt=&quot;Space Cowboy model&quot; /&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;horizontal-3&quot;&gt;
+  &lt;p&gt;&lt;img src=&quot;/assets/img/posts/19.03.1/19.03.1EnclaveChef.gif&quot; alt=&quot;Chef model&quot; /&gt;
+&lt;img src=&quot;/assets/img/posts/19.03.1/19.03.1EnclaveChaplainArmor.gif&quot; alt=&quot;Chaplain armor model&quot; /&gt;
+&lt;img src=&quot;/assets/img/posts/19.03.1/19.03.1EnclaveSpaceBear.gif&quot; alt=&quot;SpaceBear&quot; /&gt;&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Fuu&lt;/p&gt;
+&lt;div class=&quot;horizontal-3&quot;&gt;
+  &lt;p&gt;&lt;img src=&quot;/assets/img/posts/19.03.1EyeCandy/FuuShieldGenerator.jpg&quot; alt=&quot;Shield generator&quot; /&gt;
+&lt;img src=&quot;/assets/img/posts/19.03.1EyeCandy/FuuParticleAccellorationationator.jpg&quot; alt=&quot;Particle accelerator&quot; /&gt;
+&lt;img src=&quot;/assets/img/posts/19.03.1EyeCandy/FuuFieldProjector1.jpg&quot; alt=&quot;Shield rojector&quot; /&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;horizontal-2&quot;&gt;
+  &lt;p&gt;&lt;img src=&quot;/assets/img/posts/19.03.1EyeCandy/FuuEmitter1.jpg&quot; alt=&quot;Emitter1&quot; /&gt;
+&lt;img src=&quot;/assets/img/posts/19.03.1EyeCandy/FuuEmitter2.jpg&quot; alt=&quot;Emitter2&quot; /&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;horizontal-3&quot;&gt;
+  &lt;p&gt;&lt;img src=&quot;/assets/img/posts/19.03.1EyeCandy/FuuSmokes.jpg&quot; alt=&quot;Smokes&quot; /&gt;
+&lt;img src=&quot;/assets/img/posts/19.03.1EyeCandy/FuuMopSquirtDisk.jpg&quot; alt=&quot;MopSquirtDisk&quot; /&gt;
+&lt;img src=&quot;/assets/img/posts/19.03.1EyeCandy/FuuEyeDropper.jpg&quot; alt=&quot;Eyedrops&quot; /&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/img/posts/19.03.1EyeCandy/FuuJanitorCart.jpg&quot; alt=&quot;Stacking janitor cart&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;White Eagle&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/posts/19.03.1EyeCandy/WhiteEagleJanitorSet1.jpg&quot; alt=&quot;Paint remover, light replacer, bear trap, janitor cart, mop&quot; /&gt;&lt;/p&gt;
+&lt;div class=&quot;horizontal-2&quot;&gt;
+  &lt;p&gt;&lt;img src=&quot;/assets/img/posts/19.03.1EyeCandy/WhiteEagleHoloProjector.jpg&quot; alt=&quot;Janitor's Holo-projector&quot; /&gt;
+&lt;img src=&quot;/assets/img/posts/19.03.1EyeCandy/WhiteEagleTrapBoxSmokeBomb.jpg&quot; alt=&quot;A box of mousetraps and a foamgrenade&quot; /&gt;&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Fuu and White Eagle both posted their janitor carts within minutes of one another, so now we have two janitor carts.&lt;/p&gt;
+
+&lt;p&gt;As this is a monthly Devblog, you can expect another next month. Until then, you can follow our development and interact with us on Discord.&lt;/p&gt;
+
+&lt;p&gt;“… enjoy your stay.”&lt;/p&gt;</content><author><name>Sunberry</name></author><summary type="html">“Welcome to the Station crew…”</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://ss3d.space/assets/img/posts/19.03.1/19.03.1PlayerOneMapGenLightsAligned.jpg" /></entry></feed>
