@@ -29,6 +29,11 @@ google_analytics: UA-140169746-1
 
 # Build settings
 markdown: kramdown
+plugins_dir: ./_plugins
+jekyll_get:
+  - data: github
+    json: 'https://api.github.com/orgs/RE-SS3D/repos'
+    cache: false
 #theme: minima
 plugins:
   - jekyll-feed
