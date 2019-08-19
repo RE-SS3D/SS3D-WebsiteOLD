@@ -1,3 +1,3 @@
 # RE:SS3D Website
 
-[![Build Status](https://travis-ci.org/Stubenhocker1399/ss3d-website.svg?branch=master)](https://travis-ci.org/Stubenhocker1399/ss3d-website)
+[![Build Status](https://travis-ci.org/RE-SS3D/Website.svg?branch=release)](https://travis-ci.org/RE-SS3D/Website)
