@@ -1,3 +1,6 @@
 _site
 .sass-cache
 .jekyll-metadata
+vendor
+node_modules
+assets/js/main-bundle.js
