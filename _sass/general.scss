@@ -63,7 +63,7 @@ body {
     }
 }
 
-a {
+a, .link {
     color: $color-link;
     color: var(--color-link);
     text-decoration: none;

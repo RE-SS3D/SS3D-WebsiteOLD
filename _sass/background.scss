@@ -64,3 +64,26 @@ body {
         }
     }
 }
+
+[data-theme="light"] {
+    body::before {
+        display: none;
+        background: none;
+    }
+    .no-webp body::before {
+        background: none;
+    }
+}
+[data-theme="dark"] {
+    body {
+        background-color: rgb(37, 37, 37);
+        background: linear-gradient(180deg, #71A2E033 0%, #05060833 100%);
+    }
+    body::before {
+        background: url("/assets/img/stars.webp");
+        display: block;
+    }
+    body .no-webp body::before {
+        background: url("/assets/img/stars.jpg");
+    }
+}

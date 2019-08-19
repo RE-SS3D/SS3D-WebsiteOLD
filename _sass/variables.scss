@@ -73,6 +73,53 @@ $color-navbar-light: lighten($color-navbar, 15);
     }
 }
 
+[data-theme="dark"] {
+    --color-link: #{$color-link};
+    --color-link-hover: #{$color-link-hover};
+    --color-link-active: #{$color-link-active};
+    --color-text: #{$color-text};
+    --color-text-h5: #{$color-text-h5};
+    --color-button-text: #{$color-button-text};
+    --color-button: #{$color-button};
+    --color-button-github: #{$color-button-github};
+    --color-button-github-hover: #{$color-button-github-hover};
+    --color-button-github-active: #{$color-button-github-active};
+    --color-button-discord: #{$color-button-discord};
+    --color-button-discord-hover: #{$color-button-discord-hover};
+    --color-button-discord-active: #{$color-button-discord-active};
+    --color-button-hover: #{$color-button-hover};
+    --color-button-active: #{$color-button-active};
+    --color-navbar: #{$color-navbar};
+    --color-navbar-hover: #{$color-navbar-hover};
+    --color-navbar-scroll-shadow: #{$color-navbar-scroll-shadow};
+    --color-navbar-active: #{$color-navbar-active};
+    --color-navbar-text: #{$color-navbar-text};
+    --color-background: #{$color-background};
+}
+[data-theme="light"] {
+    --color-link: #dd1d0c;
+    --color-link-hover: #{darken($color-link-hover, 10)};
+    --color-link-active: #{$color-link-active};
+    --color-text: #2a2a2e;
+    --color-text-h5: #464646;
+    --color-button-text: #{$color-button-text};
+    --color-button: #{lighten($color-button, 10)};
+    --color-button-github: #{$color-button-github};
+    --color-button-github-hover: #{$color-button-github-hover};
+    --color-button-github-active: #{$color-button-github-active};
+    --color-button-discord: #{$color-button-discord};
+    --color-button-discord-hover: #{$color-button-discord-hover};
+    --color-button-discord-active: #{$color-button-discord-active};
+    --color-button-hover: #{$color-button-hover};
+    --color-button-active: #{$color-button-active};
+    --color-navbar: #{$color-navbar-light};
+    --color-navbar-hover: #{$color-navbar};
+    --color-navbar-scroll-shadow: #{$color-navbar-scroll-shadow};
+    --color-navbar-active: #d6bbe7;
+    --color-navbar-text: #{$color-navbar-text};
+    --color-background: #ffffff;
+}
+
 $pad: 1em;
 
 /* Used with @mixin respond-to($name) mixin */
