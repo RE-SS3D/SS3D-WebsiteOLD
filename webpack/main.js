@@ -26,7 +26,7 @@ function init() {
     container = document.createElement( 'div' );
     document.body.appendChild( container );
     camera = new THREE.PerspectiveCamera( 45, window.innerWidth / window.innerHeight, 1, 2000 );
-    camera.position.set( 100, 200, 300 );
+    camera.position.set( 1, 2, 3 );
     scene = new THREE.Scene();
     scene.background = new THREE.Color( 0xa0a0a0 );
     scene.fog = new THREE.Fog( 0xa0a0a0, 200, 1000 );
@@ -47,7 +47,7 @@ function init() {
     mesh.rotation.x = - Math.PI / 2;
     mesh.receiveShadow = true;
     scene.add( mesh );
-    var grid = new THREE.GridHelper( 2000, 20, 0x000000, 0x000000 );
+    var grid = new THREE.GridHelper( 10, 20, 0x000000, 0x000000 );
     grid.material.opacity = 0.2;
     grid.material.transparent = true;
     scene.add( grid );
@@ -68,7 +68,7 @@ function init() {
     renderer.shadowMap.enabled = true;
     container.appendChild( renderer.domElement );
     controls = new OrbitControls( camera, renderer.domElement );
-    controls.target.set( 0, 100, 0 );
+    controls.target.set( 0, 0, 0 );
     controls.update();
     window.addEventListener( 'resize', onWindowResize, false );
     // stats
