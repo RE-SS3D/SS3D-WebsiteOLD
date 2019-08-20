@@ -1,20 +1,40 @@
-- file: console.fbx
-  authors:
-    - name: Goao
-    - name: Eiko
+authors:
+   # - &Reference
+   #     name: required
+   #     discord: optional
+   #     github: optional
+   #     email: optional
+    - &Eiko
+        name: Eiko
+        discord: 3434#asdasdas
 
-- file: DisposalOutletHummus.fbx
-  authors: 
-    - name: Hummus
+    - &Goao
+        name: Goao 
+        discord: "8788#nnono"
 
-- file: drill-v5.fbx
-  authors:
-    - name: Goao
-  
-- file: scalpel-v3.fbx
-  authors:
-    - name: Goao
-  
-- file: twintail_extensions.fbx
-  authors:
-    - name: Eiko
+    - &Hummus
+        name: Hummus
+files:
+    # - file: required
+    #   authors:
+    #     - *Reference - minimum one required
+    - file: console.fbx
+      authors:
+        - *Goao
+        - *Eiko
+
+    - file: DisposalOutletHummus.fbx
+      authors: 
+        - *Hummus
+
+    - file: drill-v5.fbx
+      authors:
+        - *Goao
+    
+    - file: scalpel-v3.fbx
+      authors:
+        - *Goao
+    
+    - file: twintail_extensions.fbx
+      authors:
+        - *Eiko

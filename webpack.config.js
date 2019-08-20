@@ -1,4 +1,4 @@
-const path = require("path");
+path = require("path");
 
 module.exports = {
   mode: "production",
@@ -18,7 +18,7 @@ module.exports = {
         ],
         loader: "babel-loader",
         query: {
-          presets: ["env"],
+          presets: ["@babel/preset-env"],
         },
       },
     ],
