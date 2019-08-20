@@ -1,7 +1,12 @@
 ---
 layout: default
 ---
-<img class="post-image" src="{{ page.image | prepend: site.baseurl }}" alt="{{ post.title }}" title="{{ post.title }}">
+{% responsive_image_block %}
+  path: {{ page.image | prepend: site.baseurl |  remove_first: "/" }}
+  alt: {{ post.title }}
+  template: "_includes/srcset.html" 
+  title: {{ post.title }}
+{% endresponsive_image_block %}
 <h1>{{ page.title }}</h1>
 <h5><i>on {{ page.date | date: "%A, %B %-d, %Y" }}</i></h5>
 {{ content }}

@@ -33,6 +33,9 @@ GEM
       safe_yaml (~> 1.0)
     jekyll-feed (0.12.1)
       jekyll (>= 3.7, < 5.0)
+    jekyll-responsive-image (1.5.2)
+      jekyll (>= 2.0, < 4.0)
+      rmagick (>= 2.0, < 3.0)
     jekyll-sass-converter (1.5.2)
       sass (~> 3.4)
     jekyll-seo-tag (2.6.1)
@@ -57,6 +60,7 @@ GEM
     rb-fsevent (0.10.3)
     rb-inotify (0.10.0)
       ffi (~> 1.0)
+    rmagick (2.16.0)
     rouge (3.3.0)
     ruby_dep (1.5.0)
     safe_yaml (1.0.5)
@@ -78,6 +82,7 @@ DEPENDENCIES
   hash-joiner
   jekyll (~> 3.8.4)
   jekyll-feed (~> 0.6)
+  jekyll-responsive-image
   json
   minima (~> 2.0)
   tzinfo-data
