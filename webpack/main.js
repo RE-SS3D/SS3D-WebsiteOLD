@@ -1,27 +1,26 @@
-console.log("HELLO WORLD");
-//var webpack = require('webpack');
 var THREE = require('three');
-
-//import * as THREE from '../assets/js/threejs/three.module.js';
-//import Stats from './threejs/stats.module.js';
-//import { OrbitControls } from './threejs/OrbitControls.js';
-//import  FBXLoader  from './threejs/FBXLoader.js';
-//var FBXLoader = require('./threejs/FBXLoader.js');
-//import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
-//import { FBXLoader } from 'three/examples/jsm/loader/FBXLoader.js';
-
-//var OrbitControls = require('three/OrbitControls');
-//var FBXLoader = require('three/FBXLoader');
 import Stats from 'three/examples/jsm/libs/stats.module.js';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
-
 import { FBXLoader } from 'three/examples/jsm/loaders/FBXLoader.js';
+
 var container, stats, controls;
 var camera, scene, renderer, light;
 var clock = new THREE.Clock();
 var mixer;
 init();
 animate();
+function loadObject(loader, path, castShadow = true) {
+    loader.load( path, function ( object ) {
+        console.log("Loading fbx file " + path);
+        object.traverse( function ( child ) {
+            if ( child.isMesh ) {
+                child.castShadow = castShadow;
+                child.receiveShadow = true;
+            }
+        } );
+        scene.add( object );
+    } );
+}
 function init() {
     container = document.createElement( 'div' );
     document.body.appendChild( container );
@@ -31,17 +30,22 @@ function init() {
     scene.background = new THREE.Color( 0xa0a0a0 );
     scene.fog = new THREE.Fog( 0xa0a0a0, 200, 1000 );
     light = new THREE.HemisphereLight( 0xffffff, 0x444444 );
-    light.position.set( 0, 200, 0 );
+    light.position.set( 0, 2, 0 );
+    //light.intensity = 1;
     scene.add( light );
     light = new THREE.DirectionalLight( 0xffffff );
-    light.position.set( 0, 200, 100 );
+    light.position.set( 0, 20, 10 );
     light.castShadow = true;
-    light.shadow.camera.top = 180;
-    light.shadow.camera.bottom = - 100;
-    light.shadow.camera.left = - 120;
-    light.shadow.camera.right = 120;
+    light.intensity = 0.1;
+    light.shadow.camera.top = 18;
+    light.shadow.camera.bottom = - 10;
+    light.shadow.camera.left = - 12;
+    light.shadow.camera.right = 12;
     scene.add( light );
-    // scene.add( new CameraHelper( light.shadow.camera ) );
+    scene.add( new THREE.CameraHelper( light.shadow.camera ) );
+    var light = new THREE.AmbientLight( 0x404040 ); // soft white light
+    scene.add( light );
+    //scene.add( new THREE.CameraHelper( light.shadow.camera ) );
     // ground
     var mesh = new THREE.Mesh( new THREE.PlaneBufferGeometry( 2000, 2000 ), new THREE.MeshPhongMaterial( { color: 0x999999, depthWrite: false } ) );
     mesh.rotation.x = - Math.PI / 2;
@@ -52,16 +56,28 @@ function init() {
     grid.material.transparent = true;
     scene.add( grid );
     // model
-    var loader = new FBXLoader();
-    loader.load( '/assets/fbx/console.fbx', function ( object ) {
-        object.traverse( function ( child ) {
-            if ( child.isMesh ) {
-                child.castShadow = true;
-                child.receiveShadow = true;
-            }
-        } );
-        scene.add( object );
+    const loadingManager = new THREE.LoadingManager();
+    loadingManager.setURLModifier( function( url ) {
+        // this function is called for each asset request
+        if(url.endsWith('.png')) {
+            console.log(url);
+            return url;
+            //return '/assets/fbx' + url.substring(url.lastIndexOf('/'));
+        } else {
+            return url;
+        }
     } );
+
+    var loader = new FBXLoader(loadingManager);
+    loader.setPath('/assets/fbx/');
+    //loadObject(loader, 'default_cube.fbx'
+    loadObject(loader, 'template-2.8.fbx', false);
+    loadObject(loader, 'console.fbx');
+    loadObject(loader, 'scalpel-v3.fbx');
+    loadObject(loader, 'drill-v5.fbx');
+    loadObject(loader, 'DisposalOutletHummus.fbx');
+    loadObject(loader, 'twintail_extensions.fbx');
+    loadObject(loader, 'microwave oven.fbx');
     renderer = new THREE.WebGLRenderer( { antialias: true } );
     renderer.setPixelRatio( window.devicePixelRatio );
     renderer.setSize( window.innerWidth, window.innerHeight );
