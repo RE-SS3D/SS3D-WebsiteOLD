@@ -2,14 +2,15 @@ var THREE = require('three');
 import Stats from 'three/examples/jsm/libs/stats.module.js';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
 import { FBXLoader } from 'three/examples/jsm/loaders/FBXLoader.js';
-
+import { DragControls } from 'three/examples/jsm/controls/DragControls.js';
+var objects = [];
 var container, stats, controls;
 var camera, scene, renderer, light;
 var clock = new THREE.Clock();
 var mixer;
 init();
 animate();
-function loadObject(loader, path, castShadow = true) {
+function loadObject(loader, path, castShadow = true, draggable = true) {
     loader.load( path, function ( object ) {
         console.log("Loading fbx file " + path);
         object.traverse( function ( child ) {
@@ -19,6 +20,9 @@ function loadObject(loader, path, castShadow = true) {
             }
         } );
         scene.add( object );
+        if (draggable) {
+            objects.push( object );
+        }
     } );
 }
 function init() {
@@ -71,7 +75,7 @@ function init() {
     var loader = new FBXLoader(loadingManager);
     loader.setPath('/assets/fbx/');
     //loadObject(loader, 'default_cube.fbx'
-    loadObject(loader, 'template-2.8.fbx', false);
+    loadObject(loader, 'template-2.8.fbx', false, false);
     loadObject(loader, 'console.fbx');
     loadObject(loader, 'scalpel-v3.fbx');
     loadObject(loader, 'drill-v5.fbx');
@@ -87,6 +91,17 @@ function init() {
     controls.target.set( 0, 0, 0 );
     controls.update();
     window.addEventListener( 'resize', onWindowResize, false );
+
+    // drag
+
+    var dragControls = new DragControls( objects, camera, renderer.domElement );
+    dragControls.addEventListener( 'dragstart', function () {
+        controls.enabled = false;
+    } );
+    dragControls.addEventListener( 'dragend', function () {
+        controls.enabled = true;
+    } );
+
     // stats
     stats = new Stats();
     container.appendChild( stats.dom );
