@@ -66,6 +66,10 @@ body {
 }
 
 [data-theme="light"] {
+    body {
+        background: var(--color-background);
+        background-color: var(--color-background);
+    }
     body::before {
         display: none;
         background: none;
