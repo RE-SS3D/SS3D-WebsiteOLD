@@ -39,7 +39,15 @@ plugins:
   - jekyll-feed
   - jekyll-seo-tag
   - jekyll-feed
-
+  - jekyll-responsive-image
+responsive_image:
+  #template: _includes/responsive-image.html
+  template: _includes/srcset-split.html
+  sizes:
+    - width: 580  # [Required] How wide the resized image will be.
+    - width: 290
+    - width: 170
+    - width: 145
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.

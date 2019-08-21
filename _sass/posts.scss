@@ -1,13 +1,18 @@
 .horizontal-3 {
+    overflow: hidden;
+    white-space:nowrap;
     p {
+        display: inline-block;
+        width: 33.33%;
+        margin: 0;
         &::after {
             content: "";
             clear: both;
             display: table;
         }
-        img {
+        a {
             float: left;
-            width: 33.33%;
+            //width: 33.33%;
             padding: 5px;
             &:first-child {
                 padding-left: 0;
@@ -20,15 +25,20 @@
 }
 
 .horizontal-2 {
+    overflow: hidden;
+    white-space:nowrap;
     p {
+        display: inline-block;
+        width: 50%;
+        margin: 0;
         &::after {
             content: "";
             clear: both;
             display: table;
         }
-        img {
+        a {
             float: left;
-            width: 50%;
+            //width: 50%;
             padding: 5px;
             padding-left: 0;
             &:last-child {

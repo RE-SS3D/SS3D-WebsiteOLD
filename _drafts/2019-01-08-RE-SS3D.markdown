@@ -5,10 +5,10 @@ date:   2019-01-08 22:41:00 +0100
 description: |
   Introduction to the SS3D project.
   Good read, can recommend.
-image: /assets/img/posts/350x150.jpg
+image: /assets/img/posts/350x150.png
 ---
 
-<!--<video autoplay="autoplay" muted controls loop="loop" poster="{{ site.baseurl }}/media/2019-01-08-RE-SS3D/teaser-animation.jpg">
+<!--<video autoplay="autoplay" muted controls loop="loop" poster="{{ site.baseurl }}/media/2019-01-08-RE-SS3D/teaser-animation.png">
   <source src="{{ site.baseurl }}/media/2019-01-08-RE-SS3D/teaser-animation.webm" type="video/mp4">
   <source src="{{ site.baseurl }}/media/2019-01-08-RE-SS3D/teaser-animation.webm" type="video/webm">
 </video>-->
