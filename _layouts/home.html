@@ -7,7 +7,9 @@ layout: default
 {% for post in site.posts limit:1 %}
 <li class="post-row">
         <div>
-            <a href="{{ site.baseurl}}{{ post.url }}"><img class="post-image" src="{{ post.image | prepend: site.baseurl }}" alt="{{ post.title }}" title="{{ post.title }}"></a>
+            <a style="white-space: nowrap;" href="{{ site.baseurl}}{{ post.url }}">{% responsive_image_block %}
+path: {{ post.image | prepend: site.baseurl |  remove_first: "/" }}
+template: "_includes/srcset-post.html" {% endresponsive_image_block %}</a>
         </div>
         <div>
             <h2><a href="{{ site.baseurl}}{{ post.url }}">{{ post.title}}</a></h2>
