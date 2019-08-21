@@ -147,6 +147,9 @@ body::before {
   .no-webp body::before {
     background: none; } }
 
+[data-theme="light"] body {
+  background: var(--color-background);
+  background-color: var(--color-background); }
 [data-theme="light"] body::before {
   display: none;
   background: none; }
