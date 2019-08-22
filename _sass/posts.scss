@@ -1,75 +1,57 @@
-.horizontal-3 {
+.horizontal {
     overflow: hidden;
     white-space:nowrap;
+    align-items: center;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
     p {
-        display: inline-block;
-        width: 33.33%;
-        margin: 0;
-        &::after {
-            content: "";
-            clear: both;
-            display: table;
-        }
+        flex-grow: 1;
         a {
-            float: left;
-            //width: 33.33%;
-            padding: 5px;
-            &:first-child {
-                padding-left: 0;
+            flex-grow: 1;
+            img {
+                max-width: 100%;
             }
-            &:last-child {
-                padding-right: 0;
-            }
+        }
+        padding: 5px;
+        padding-left: 0;
+        &:last-child {
+            padding-right: 0;
         }
     }
 }
 
-.horizontal-2 {
-    overflow: hidden;
-    white-space:nowrap;
-    p {
-        display: inline-block;
-        width: 50%;
-        margin: 0;
-        &::after {
-            content: "";
-            clear: both;
-            display: table;
-        }
-        a {
-            float: left;
-            //width: 50%;
-            padding: 5px;
-            padding-left: 0;
-            &:last-child {
-                padding-right: 0;
-            }
-        }
-    }
-}
-
-.horizontal-2-direct-children-desktop {
+.horizontal-direct-children-desktop {
     @include respond-to(desktop) { 
-        &::after {
-            content: "";
-            clear: both;
-            display: table;
-        }
+        margin-right: auto;
+        margin-left: auto;
+        display: flex;
         & > p, & > div {
-            float: left;
-            width: 50%;
+            flex-grow: 1;
             padding: 5px;
             padding-left: 0;
+            width: 100%;
             &:last-child {
                 padding-right: 0;
             }
         }
+        & > img {
+            max-width: 100%;
+        }
     }
 }
 
-p{
+a.post-image {
     img {
-        max-width: 100%;
+        //max-width: 580px;
+        max-width: 850px;
         width: 100%;
     }
+}
+.sketchfab-embed-wrapper {
+    max-width: 850px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: 100%;
 }

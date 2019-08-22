@@ -44,7 +44,9 @@ responsive_image:
   #template: _includes/responsive-image.html
   template: _includes/srcset-split.html
   sizes:
+    - width: 850
     - width: 580  # [Required] How wide the resized image will be.
+    - width: 423
     - width: 290
     - width: 170
     - width: 145

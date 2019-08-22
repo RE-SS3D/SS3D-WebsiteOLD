@@ -24,10 +24,21 @@ h5 {
     }
 }
 
-h1, h2, h3, h4, h5, h6, a, p, .post-image {
+h1, h2, h3, h4, h5, h6, a, p, .post-image, .horizontal-direct-children-desktop {
     max-width: 580px;
     margin-left: auto;
     margin-right: auto;
+}
+
+.post-image, .horizontal-direct-children-desktop, .horizontal {
+    width: 100%;
+    max-width: 850px;
+}
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
 }
 
 body {

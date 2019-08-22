@@ -18,14 +18,16 @@ permalink: /github/
             console.log(commit.commit);
             var li = document.createElement("li");
             var a = document.createElement('a');
-            var div = document.createElement('div');
+            var p = document.createElement('p');
             a.href = "https://github.com/RE-SS3D/Client/commit/" + commit.commit.url.split("/").slice(-1)[0];
+            a.classList = "center";
+            p.classList = "center";
             var textnode = document.createTextNode(commit.commit.message.split("\n")[0]);
             var textnode2 = document.createTextNode(commit.commit.committer.date);
             a.appendChild(textnode);
-            div.appendChild(textnode2);
+            p.appendChild(textnode2);
             li.appendChild(a);
-            li.appendChild(div);
+            li.appendChild(p);
             document.getElementById("commits").appendChild(li);
         })
         document.getElementById("more-commits").href = "https://github.com/RE-SS3D/Client/commits/develop?after=" + commits[0].commit.url.split("/").slice(-1)[0] + "+" + (commits.length - 1);
