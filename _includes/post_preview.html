@@ -1,0 +1,18 @@
+
+<li class="post-row">
+    <div class="post-image center">
+        <a style="white-space: nowrap;" href="{{ site.baseurl}}{{ post.url }}">{% responsive_image_block %}
+                path: {{ include.image | prepend: site.baseurl |  remove_first: "/" }}
+                alt: "{{include.title}}"
+                template: "_includes/srcset-post.html"
+                title: "{{include.title}}"
+            {% endresponsive_image_block %}</a>
+    </div>
+    <div>
+        <h2><a href="{{ site.baseurl}}{{ post.url }}">{{ include.title}}</a></h2>
+        <a class="a-reset center" href="{{ site.baseurl}}{{ post.url }}"><span class="postDate">{{ include.date | date: "%b %-d, %Y" }}</span></a>
+    </div>
+    <div class="post-description">
+        <a class="a-reset" href="{{ site.baseurl}}{{ post.url }}"><p>{{ include.description }}</p></a>
+    </div>
+</li>
