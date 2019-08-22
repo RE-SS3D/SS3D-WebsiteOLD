@@ -22,13 +22,24 @@ function loadObject(loader, path, castShadow = true, draggable = true) {
                 child.castShadow = castShadow;
                 child.receiveShadow = true;
             }
+            if (child.material !== undefined ) {
+                child.material.specular = new THREE.Color(0x000000);
+                child.material.shininess = 0.0;
+                if (child.material.length !== undefined ) {
+                    for(var i = 0; i < child.material.length; i++) {
+                        child.material[i].specular = new THREE.Color(0x000000);
+                        child.material[i].shininess = 0.0;
+                    }
+                }
+            }   
+            //if ( child instanceof THREE.Mesh ) {
+            //    child.material.envMap =  new THREE.TextureLoader().load( '/assets/fbx/forest.exr' ); 
+            //}            
         } );
         scene.add( object );
         fileDict[path] = object;
         if (draggable) {
-            console.log("DRAG");
             draggables.push( object );
-            console.log(draggables);
         }
     } );
 }
@@ -76,7 +87,6 @@ var checkboxes = document.querySelectorAll("input[name=models]");
 var fileDict = {};
 let params = new URLSearchParams(location.search.substring(1));
 params.getAll("f").forEach(function(element) {
-    console.log(element);
     if(document.getElementById(element)) {
         document.getElementById(element).checked = true;
     } else {
@@ -85,7 +95,6 @@ params.getAll("f").forEach(function(element) {
     loadObject(loader,element);
 });
 for (var i = 0; i < checkboxes.length; i++) {
-    console.log(checkboxes[i]);
     checkboxes[i].addEventListener( 'change', onModelCheckboxChange);
 }
 function init() {
@@ -100,35 +109,47 @@ function init() {
         }
     }
     scene.background = backgroundColor;
-    scene.fog = new THREE.Fog( backgroundColor, 4, 20 );
+    //scene.fog = new THREE.Fog( backgroundColor, 4, 20 );
     light = new THREE.HemisphereLight( 0xffffff, 0x444444 );
-    light.position.set( 0, 2, 0 );
+    light.position.set( 0, 1, 0 );
     //light.intensity = 1;
     scene.add( light );
-    light = new THREE.DirectionalLight( 0xffffff );
-    light.position.set( 0, 20, 10 );
-    light.castShadow = true;
-    light.intensity = 0.1;
-    light.shadow.camera.top = 18;
-    light.shadow.camera.bottom = - 10;
-    light.shadow.camera.left = - 12;
-    light.shadow.camera.right = 12;
-    scene.add( light );
+    //light = new THREE.DirectionalLight( 0xffffff );
+    //light.position.set( 0, 20, 10 );
+    //light.castShadow = true;
+    //light.intensity = 0.1;
+    //light.shadow.camera.top = 18;
+    //light.shadow.camera.bottom = - 10;
+    //light.shadow.camera.left = - 12;
+    //light.shadow.camera.right = 12;
+    //scene.add( light );
     //scene.add( new THREE.CameraHelper( light.shadow.camera ) );
     var light = new THREE.AmbientLight( 0x404040 ); // soft white light
+    //light.intensity = 1;
     scene.add( light );
-    // ground
-    var groundColor = new THREE.Color( 0x666666);
-    if(localStorage.getItem("theme")) {
-        if(localStorage.getItem("theme") == "light") { 
-            groundColor = new THREE.Color( 0x999999 );
-        }
-    }
-    var mesh = new THREE.Mesh( new THREE.PlaneBufferGeometry( 2000, 2000 ), new THREE.MeshPhongMaterial( { color: groundColor, depthWrite: false } ) );
-    mesh.rotation.x = - Math.PI / 2;
-    mesh.receiveShadow = true;
-    scene.add( mesh );
-    var grid = new THREE.GridHelper( 10, 20, 0x000000, 0x000000 );
+    var directionalLight = new THREE.DirectionalLight( 0xffffff, 0.5 );
+    scene.add( directionalLight );
+    var spotLight = new THREE.SpotLight( 0xffffff, 0.5, 50, 1, 0, 1 );
+    spotLight.position.set( -8, 15, 8 );
+    spotLight.castShadow = true;
+    spotLight.shadow.mapSize.width = 1024;
+    spotLight.shadow.mapSize.height = 1024;
+    scene.add( spotLight );
+    //var spotLightHelper = new THREE.SpotLightHelper( spotLight );
+    //scene.add( spotLightHelper );
+    var spotLight = new THREE.SpotLight( 0xffffff, 0.25, 50, 1, 0, 1 );
+    spotLight.position.set( 8, 5, 8 );
+    spotLight.castShadow = false;
+    scene.add( spotLight );
+    //var spotLightHelper = new THREE.SpotLightHelper( spotLight );
+    //scene.add( spotLightHelper );
+    var spotLight = new THREE.SpotLight( 0xffffff, 0.1, 50, 1, 0, 1 );
+    spotLight.position.set( -8, 15, -8 );
+    spotLight.castShadow = false;
+    scene.add( spotLight );
+    //var spotLightHelper = new THREE.SpotLightHelper( spotLight );
+    //scene.add( spotLightHelper );
+    var grid = new THREE.GridHelper( 20, 20, 0x000000, 0x000000 );
     grid.material.opacity = 0.2;
     grid.material.transparent = true;
     scene.add( grid );
@@ -146,6 +167,8 @@ function init() {
     loader.setPath('/assets/fbx/');
     //loadObject(loader, 'default_cube.fbx'
     //loadObject(loader, 'template-2.8.fbx', false, false);
+    loadObject(loader, 'gridbox.fbx', false, false);
+    loadObject(loader, 'human-dummy.fbx', false, true);
     //loadObject(loader, 'microwave oven.fbx');
     renderer = new THREE.WebGLRenderer( { antialias: true } );
     renderer.setPixelRatio( window.devicePixelRatio );
