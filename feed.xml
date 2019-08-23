@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://ss3d.space/feed.xml" rel="self" type="application/atom+xml" /><link href="https://ss3d.space/" rel="alternate" type="text/html" /><updated>2019-08-23T09:06:08+00:00</updated><id>https://ss3d.space/feed.xml</id><title type="html">RE:SS3D</title><subtitle>This is a 3D recreation of Space Station 13, on the Unity engine, which will come with its own set of gameplay/graphical improvements. </subtitle><entry><title type="html">19.07: July Recap</title><link href="https://ss3d.space/2019/08/06/19.07.html" rel="alternate" type="text/html" title="19.07: July Recap" /><published>2019-08-06T14:30:00+00:00</published><updated>2019-08-06T14:30:00+00:00</updated><id>https://ss3d.space/2019/08/06/19.07</id><content type="html" xml:base="https://ss3d.space/2019/08/06/19.07.html">&lt;p&gt;Models, models, models models…&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://ss3d.space/feed.xml" rel="self" type="application/atom+xml" /><link href="https://ss3d.space/" rel="alternate" type="text/html" /><updated>2019-08-23T09:24:58+00:00</updated><id>https://ss3d.space/feed.xml</id><title type="html">RE:SS3D</title><subtitle>This is a 3D recreation of Space Station 13, on the Unity engine, which will come with its own set of gameplay/graphical improvements. </subtitle><entry><title type="html">19.07: July Recap</title><link href="https://ss3d.space/2019/08/06/19.07.html" rel="alternate" type="text/html" title="19.07: July Recap" /><published>2019-08-06T14:30:00+00:00</published><updated>2019-08-06T14:30:00+00:00</updated><id>https://ss3d.space/2019/08/06/19.07</id><content type="html" xml:base="https://ss3d.space/2019/08/06/19.07.html">&lt;p&gt;Models, models, models models…&lt;/p&gt;
 
 &lt;p&gt;Our model game continues to improve.&lt;/p&gt;
 
@@ -17,9 +17,9 @@ Here we have two examples of shapekey use: player eye states, and hair/headpiece
 
 &lt;div class=&quot;horizontal-2&quot;&gt;
 
-  &lt;p&gt;&lt;a href=&quot;/assets/img/posts/19.07.01/EikoHatShapeKeys.gif&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/EikoHatShapeKeys-580x435.gif 580w,    /assets/resized/EikoHatShapeKeys-290x218.gif 290w,    /assets/resized/EikoHatShapeKeys-170x128.gif 170w,    /assets/resized/EikoHatShapeKeys-145x109.gif 145w, /assets/img/posts/19.07.01/EikoHatShapeKeys.gif 800w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+  &lt;p&gt;&lt;a href=&quot;/assets/img/posts/19.07.01/EikoHatShapeKeys.gif&quot;&gt;&lt;img src=&quot;/assets/img/posts/19.07.01/EikoHatShapeKeys.gif&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
-  &lt;p&gt;&lt;a href=&quot;/assets/img/posts/19.07.01/EikoExpressions.gif&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/EikoExpressions-580x435.gif 580w,    /assets/resized/EikoExpressions-290x218.gif 290w,    /assets/resized/EikoExpressions-170x128.gif 170w,    /assets/resized/EikoExpressions-145x109.gif 145w, /assets/img/posts/19.07.01/EikoExpressions.gif 800w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+  &lt;p&gt;&lt;a href=&quot;/assets/img/posts/19.07.01/EikoExpressions.gif&quot;&gt;&lt;img src=&quot;/assets/img/posts/19.07.01/EikoExpressions.gif&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;/div&gt;
 &lt;p&gt;Not groundbreaking, but a bit of insight on how character customization will work. Not pictured is how shapekeys are used for player body proportion sliders.&lt;/p&gt;
 
@@ -270,7 +270,7 @@ Alongside our preparations for the dismemberment of our spessmen, we now also ha
 
 &lt;p&gt;Various other models from Eiko this month, beginning with a new update on door design to include panels, and ending with some various foodstuffs.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;/assets/img/posts/19.06.01/EikoDoorPanel.gif&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/EikoDoorPanel-580x479.gif 580w,    /assets/resized/EikoDoorPanel-290x240.gif 290w,    /assets/resized/EikoDoorPanel-170x141.gif 170w,    /assets/resized/EikoDoorPanel-145x120.gif 145w, /assets/img/posts/19.06.01/EikoDoorPanel.gif 738w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;/assets/img/posts/19.06.01/EikoDoorPanel.gif&quot;&gt;&lt;img src=&quot;/assets/img/posts/19.06.01/EikoDoorPanel.gif&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;div class=&quot;horizontal-2&quot;&gt;
 
   &lt;p&gt;&lt;a href=&quot;/assets/img/posts/19.06.01/EikoDeskLamp.png&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/EikoDeskLamp-580x435.png 580w,    /assets/resized/EikoDeskLamp-290x218.png 290w,    /assets/resized/EikoDeskLamp-170x128.png 170w,    /assets/resized/EikoDeskLamp-145x109.png 145w, /assets/img/posts/19.06.01/EikoDeskLamp.png 800w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
@@ -504,13 +504,13 @@ Come visit us on &lt;a href=&quot;https://discord.gg/3ny9tdH&quot; target=&quot;
 
 &lt;p&gt;After the mantle had been left sitting on the floor in a half-finished state months ago, Dyhr has picked up Atmos this month and is bringing it into a state of completion. While it hasn’t reached that completion yet, we’re still inclined to share our progress. Pictured here is nitrogen and oxygen.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;/assets/img/posts/19.04.1/AtmosTestApril19.gif&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;Atmos Test&quot; srcset=&quot;    /assets/resized/AtmosTestApril19-290x162.gif 290w,    /assets/resized/AtmosTestApril19-170x95.gif 170w,    /assets/resized/AtmosTestApril19-145x81.gif 145w, /assets/img/posts/19.04.1/AtmosTestApril19.gif 565w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;/assets/img/posts/19.04.1/AtmosTestApril19.gif&quot;&gt;&lt;img src=&quot;/assets/img/posts/19.04.1/AtmosTestApril19.gif&quot; alt=&quot;Atmos Test&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;model-list&quot;&gt;MODEL LIST&lt;/h3&gt;
 
 &lt;p&gt;As one of the first steps to properly creating a good system for intaking model community submissions, we now have a big list of what models have and haven’t been explicitly accepted into the project. Most of the credit for this one goes to White Eagle, who made the majority of this twenty-something page document of items.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;/assets/img/posts/19.04.1/ModelListWIP.gif&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;A terrifyingly long gif of a scrolling model list&quot; srcset=&quot;    /assets/resized/ModelListWIP-170x478.gif 170w,    /assets/resized/ModelListWIP-145x408.gif 145w, /assets/img/posts/19.04.1/ModelListWIP.gif 276w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;/assets/img/posts/19.04.1/ModelListWIP.gif&quot;&gt;&lt;img src=&quot;/assets/img/posts/19.04.1/ModelListWIP.gif&quot; alt=&quot;A terrifyingly long gif of a scrolling model list&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;h1 id=&quot;eye-candy&quot;&gt;EYE CANDY&lt;/h1&gt;
 
@@ -547,7 +547,7 @@ Come visit us on Discord, if you’re into that.&lt;/p&gt;</content><author><nam
 
 &lt;p&gt;One day, a few months into glorious, fruitful development of SS3D, *beep went quiet, never to be heard from again. With him we lost everything but that faraway dream, mere glimpses of a master plan, and a handful of assets.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;/assets/img/posts/19.03.1/BeepsMaterialOffering.png&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;*beep's parting gift&quot; srcset=&quot;    /assets/resized/BeepsMaterialOffering-580x429.png 580w,    /assets/resized/BeepsMaterialOffering-290x214.png 290w,    /assets/resized/BeepsMaterialOffering-170x126.png 170w,    /assets/resized/BeepsMaterialOffering-145x107.png 145w, /assets/img/posts/19.03.1/BeepsMaterialOffering.png 1039w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;/assets/img/posts/19.03.1/BeepsMaterialOffering.png&quot;&gt;&lt;img src=&quot;/assets/img/posts/19.03.1/BeepsMaterialOffering.png&quot; alt=&quot;*beep's parting gift&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;Months later, in the fall of the same year, this project was started, in its infantile form. Over the course of this winter, we’ve been working to get our legs beneath us and present ourselves to the world. Now it is spring, and here we are.&lt;/p&gt;
 
@@ -565,7 +565,7 @@ Come visit us on Discord, if you’re into that.&lt;/p&gt;</content><author><nam
 
 &lt;p&gt;Also from Stubenhocker, we now have a neat remote logger for the server.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;/assets/img/posts/19.03.1/19.03.1StubenhockerWebconsole.gif&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;Web console&quot; srcset=&quot;    /assets/resized/19.03.1StubenhockerWebconsole-580x373.gif 580w,    /assets/resized/19.03.1StubenhockerWebconsole-290x187.gif 290w,    /assets/resized/19.03.1StubenhockerWebconsole-170x109.gif 170w,    /assets/resized/19.03.1StubenhockerWebconsole-145x93.gif 145w, /assets/img/posts/19.03.1/19.03.1StubenhockerWebconsole.gif 981w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;/assets/img/posts/19.03.1/19.03.1StubenhockerWebconsole.gif&quot;&gt;&lt;img src=&quot;/assets/img/posts/19.03.1/19.03.1StubenhockerWebconsole.gif&quot; alt=&quot;Web console&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;inventory-interface&quot;&gt;INVENTORY INTERFACE&lt;/h3&gt;
 
@@ -577,13 +577,13 @@ Come visit us on Discord, if you’re into that.&lt;/p&gt;</content><author><nam
 
 &lt;p&gt;Milly has created a tool for automatically selecting the proper model/orientation for environmental pieces. This is used to ensure that things like adjacent walls or tables use the proper models so that they are connected, and that things like light fixtures are attached to walls.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;/assets/img/posts/19.03.1/19.03.1MillyConstruction.gif&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;Automated construction selection&quot; srcset=&quot;    /assets/resized/19.03.1MillyConstruction-580x393.gif 580w,    /assets/resized/19.03.1MillyConstruction-290x197.gif 290w,    /assets/resized/19.03.1MillyConstruction-170x115.gif 170w,    /assets/resized/19.03.1MillyConstruction-145x98.gif 145w, /assets/img/posts/19.03.1/19.03.1MillyConstruction.gif 724w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;/assets/img/posts/19.03.1/19.03.1MillyConstruction.gif&quot;&gt;&lt;img src=&quot;/assets/img/posts/19.03.1/19.03.1MillyConstruction.gif&quot; alt=&quot;Automated construction selection&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;fov&quot;&gt;FOV&lt;/h3&gt;
 
 &lt;p&gt;Also from Milly this month: FoV. Please pardon the T-pose.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;/assets/img/posts/19.03.1/19.03.1MillyFoVTpose.gif&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;If a spaceman T-poses into a T-junction, but can't see around the corners, what do they do?&quot; srcset=&quot;    /assets/resized/19.03.1MillyFoVTpose-580x326.gif 580w,    /assets/resized/19.03.1MillyFoVTpose-290x163.gif 290w,    /assets/resized/19.03.1MillyFoVTpose-170x96.gif 170w,    /assets/resized/19.03.1MillyFoVTpose-145x81.gif 145w, /assets/img/posts/19.03.1/19.03.1MillyFoVTpose.gif 703w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;/assets/img/posts/19.03.1/19.03.1MillyFoVTpose.gif&quot;&gt;&lt;img src=&quot;/assets/img/posts/19.03.1/19.03.1MillyFoVTpose.gif&quot; alt=&quot;If a spaceman T-poses into a T-junction, but can't see around the corners, what do they do?&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;boxstation&quot;&gt;BOXSTATION&lt;/h3&gt;
 
@@ -625,7 +625,7 @@ Come visit us on Discord, if you’re into that.&lt;/p&gt;</content><author><nam
 
 &lt;p&gt;&lt;a href=&quot;/assets/img/posts/19.03.1/19.03.1Enclave1and2.png&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;one and one makes&quot; srcset=&quot;    /assets/resized/19.03.1Enclave1and2-580x340.png 580w,    /assets/resized/19.03.1Enclave1and2-290x170.png 290w,    /assets/resized/19.03.1Enclave1and2-170x100.png 170w,    /assets/resized/19.03.1Enclave1and2-145x85.png 145w, /assets/img/posts/19.03.1/19.03.1Enclave1and2.png 615w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;/assets/img/posts/19.03.1/19.03.1EnclaveCasualCosmonaut.gif&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;Casual Cosmonaut&quot; srcset=&quot;    /assets/resized/19.03.1EnclaveCasualCosmonaut-290x326.gif 290w,    /assets/resized/19.03.1EnclaveCasualCosmonaut-170x191.gif 170w,    /assets/resized/19.03.1EnclaveCasualCosmonaut-145x163.gif 145w, /assets/img/posts/19.03.1/19.03.1EnclaveCasualCosmonaut.gif 534w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;/assets/img/posts/19.03.1/19.03.1EnclaveCasualCosmonaut.gif&quot;&gt;&lt;img src=&quot;/assets/img/posts/19.03.1/19.03.1EnclaveCasualCosmonaut.gif&quot; alt=&quot;Casual Cosmonaut&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;div class=&quot;horizontal-3&quot;&gt;
 
   &lt;p&gt;&lt;a href=&quot;/assets/img/posts/19.03.1/19.03.1EnclaveBartender.png&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;Bartender model&quot; srcset=&quot;    /assets/resized/19.03.1EnclaveBartender-580x631.png 580w,    /assets/resized/19.03.1EnclaveBartender-290x316.png 290w,    /assets/resized/19.03.1EnclaveBartender-170x185.png 170w,    /assets/resized/19.03.1EnclaveBartender-145x158.png 145w, /assets/img/posts/19.03.1/19.03.1EnclaveBartender.png 620w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
@@ -640,7 +640,7 @@ Come visit us on Discord, if you’re into that.&lt;/p&gt;</content><author><nam
 
   &lt;p&gt;&lt;a href=&quot;/assets/img/posts/19.03.1/19.03.1EnclavePriestRobes.png&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;Chaplain armor model&quot; srcset=&quot;    /assets/resized/19.03.1EnclavePriestRobes-580x536.png 580w,    /assets/resized/19.03.1EnclavePriestRobes-290x268.png 290w,    /assets/resized/19.03.1EnclavePriestRobes-170x157.png 170w,    /assets/resized/19.03.1EnclavePriestRobes-145x134.png 145w, /assets/img/posts/19.03.1/19.03.1EnclavePriestRobes.png 635w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
-  &lt;p&gt;&lt;a href=&quot;/assets/img/posts/19.03.1/19.03.1EnclaveSpaceBear.gif&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;SpaceBear&quot; srcset=&quot;    /assets/resized/19.03.1EnclaveSpaceBear-580x447.gif 580w,    /assets/resized/19.03.1EnclaveSpaceBear-290x224.gif 290w,    /assets/resized/19.03.1EnclaveSpaceBear-170x131.gif 170w,    /assets/resized/19.03.1EnclaveSpaceBear-145x112.gif 145w, /assets/img/posts/19.03.1/19.03.1EnclaveSpaceBear.gif 778w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+  &lt;p&gt;&lt;a href=&quot;/assets/img/posts/19.03.1/19.03.1EnclaveSpaceBear.gif&quot;&gt;&lt;img src=&quot;/assets/img/posts/19.03.1/19.03.1EnclaveSpaceBear.gif&quot; alt=&quot;SpaceBear&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;/div&gt;
 
 &lt;p&gt;Fuu&lt;/p&gt;
