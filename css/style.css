@@ -453,30 +453,42 @@ video {
     .post-row h2 a {
       text-decoration: underline; }
 
-.horizontal-3 p::after {
-  content: "";
-  clear: both;
-  display: table; }
-.horizontal-3 p img {
-  float: left;
-  width: 33.33%;
-  padding: 5px; }
-  .horizontal-3 p img:first-child {
-    padding-left: 0; }
-  .horizontal-3 p img:last-child {
-    padding-right: 0; }
+.horizontal-3 {
+  overflow: hidden;
+  white-space: nowrap; }
+  .horizontal-3 p {
+    display: inline-block;
+    width: 33.33%;
+    margin: 0; }
+    .horizontal-3 p::after {
+      content: "";
+      clear: both;
+      display: table; }
+    .horizontal-3 p a {
+      float: left;
+      padding: 5px; }
+      .horizontal-3 p a:first-child {
+        padding-left: 0; }
+      .horizontal-3 p a:last-child {
+        padding-right: 0; }
 
-.horizontal-2 p::after {
-  content: "";
-  clear: both;
-  display: table; }
-.horizontal-2 p img {
-  float: left;
-  width: 50%;
-  padding: 5px;
-  padding-left: 0; }
-  .horizontal-2 p img:last-child {
-    padding-right: 0; }
+.horizontal-2 {
+  overflow: hidden;
+  white-space: nowrap; }
+  .horizontal-2 p {
+    display: inline-block;
+    width: 50%;
+    margin: 0; }
+    .horizontal-2 p::after {
+      content: "";
+      clear: both;
+      display: table; }
+    .horizontal-2 p a {
+      float: left;
+      padding: 5px;
+      padding-left: 0; }
+      .horizontal-2 p a:last-child {
+        padding-right: 0; }
 
 @media (min-width: 624px) {
   .horizontal-2-direct-children-desktop::after {
