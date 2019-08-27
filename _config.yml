@@ -14,7 +14,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: RE:SS3D
-#email: your-email@example.com
+#email: RESS3D@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   This is a 3D recreation of Space Station 13, on the Unity engine,
   which will come with its own set of gameplay/graphical improvements. 
@@ -22,8 +22,8 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://ss3d.space" # the base hostname & protocol for your site, e.g. http://example.com
 #twitter_username: jekyllrb
 #github_username:  jekyll
-discord_url: https://discord.gg/94HwaZW
-github_project_url: https://github.com/orgs/RE-SS3D/projects/2
+discord_url: https://discord.gg/3ny9tdH
+github_project_url: https://github.com/RE-SS3D/SS3D/projects/1
 github_url: https://github.com/RE-SS3D
 google_analytics: UA-140169746-1
 
