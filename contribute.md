@@ -4,10 +4,6 @@ title: Contribute
 permalink: /contribute/
 ---
 
-![RESS3DIn3D]
-
-[RESS3DIn3D]: /assets/img/RESS3DIn3D.png
-
 This page is dedicated as a reference for RE:SS3D contributors.
 
 If you came to this page purely to reference hyperlinks, cheers, they’re at the top of the page, just for you.
