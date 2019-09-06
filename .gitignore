@@ -2,3 +2,6 @@ _site
 .sass-cache
 .jekyll-metadata
 assets/resized/
+assets/fbx/
+vendor/
+node_modules
