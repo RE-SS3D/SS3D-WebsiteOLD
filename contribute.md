@@ -8,7 +8,7 @@ This page is dedicated as a reference for RE:SS3D contributors.
 
 If you came to this page purely to reference hyperlinks, cheers, they’re at the top of the page, just for you.
 
-[Model list Mk. III](https://trello.com/b/lvSd7cxY/ss3d-model-list-mk-iii)
+[Model list Mk. IV](https://trello.com/b/z0H4ci3u/ss3d-model-list-mkiv)
 
 [Model formatting guide]({{ site.baseurl }}/assets/pdf/RESS3DModelFormattingGuide.pdf)
 
@@ -35,4 +35,4 @@ For coloration models, a liberal use of UV mapping from palettes is used. The pa
 
 <a href="{{ site.baseurl }}/assets/fbx/Palette05.png">![Palette05](/assets/fbx/Palette05.png)</a>
 
-When contributing, one will obviously want to avoid creating assets that have already been created by another individual. For that purpose, individuals will want to consult the [Model list Mk. III](https://trello.com/b/lvSd7cxY/ss3d-model-list-mk-iii) to see what models have or have not been completed.
+When contributing, one will obviously want to avoid creating assets that have already been created by another individual. For that purpose, individuals will want to consult the [Model list Mk. IV](https://trello.com/b/z0H4ci3u/ss3d-model-list-mkiv) to see what models have or have not been completed.
