@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="/css/style.css">
+        <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+        <meta name="theme-color" content="#1e4684">
+        <script>
+            //theme toggle
+            //determines if the user has a set theme
+            function detectColorScheme(){
+                var theme="dark";    //default to dark
+
+                //local storage is used to override OS theme settings
+                if(localStorage.getItem("theme")){
+                    if(localStorage.getItem("theme") == "light"){
+                        var theme = "light";
+                    }
+                } else if(!window.matchMedia) {
+                    //matchMedia method not supported
+                    return false;
+                } else if(window.matchMedia("(prefers-color-scheme: light)").matches) {
+                    //OS theme setting detected as dark
+                    var theme = "light";
+                }
+
+                //dark theme preferred, set document with a `data-theme` attribute
+                if (theme=="light") {
+                    document.documentElement.setAttribute("data-theme", "light");
+                } else {
+                    document.documentElement.setAttribute("data-theme", "dark");
+                }
+            }
+            detectColorScheme();
+            
+            // Function to keep the navigation bars scroll offset when changing pages.
+            setScroll = function(url, scroll) {
+                if(scroll != 0) {
+                    window.location.href = url + '?scroll=' + scroll;
+                    return;
+                }
+                window.location.href = url;
+            }
+            // Set navigation bar scroll offset, if it exists.
+            getScroll = function() {
+                var url = new URL(window.location.href);
+                var scroll = url.searchParams.get("scroll");
+                if (scroll != 0) {
+                    var el = document.getElementById('scroll');
+                    el.scrollLeft = scroll;
+                }
+            }
+            if (window.addEventListener) {
+                window.addEventListener('load', getScroll, false);
+            }
+            else if (window.attachEvent) {
+                window.attachEvent('onload', getScroll);
+            }
+        </script>
+        <script>
+            /*! modernizr 3.6.0 (Custom Build) | MIT *
+            * https://modernizr.com/download/?-webp-setclasses !*/
+            !function(e,n,A){function o(e,n){return typeof e===n}function t(){var e,n,A,t,a,i,l;for(var f in r)if(r.hasOwnProperty(f)){if(e=[],n=r[f],n.name&&(e.push(n.name.toLowerCase()),n.options&&n.options.aliases&&n.options.aliases.length))for(A=0;A<n.options.aliases.length;A++)e.push(n.options.aliases[A].toLowerCase());for(t=o(n.fn,"function")?n.fn():n.fn,a=0;a<e.length;a++)i=e[a],l=i.split("."),1===l.length?Modernizr[l[0]]=t:(!Modernizr[l[0]]||Modernizr[l[0]]instanceof Boolean||(Modernizr[l[0]]=new Boolean(Modernizr[l[0]])),Modernizr[l[0]][l[1]]=t),s.push((t?"":"no-")+l.join("-"))}}function a(e){var n=u.className,A=Modernizr._config.classPrefix||"";if(c&&(n=n.baseVal),Modernizr._config.enableJSClass){var o=new RegExp("(^|\\s)"+A+"no-js(\\s|$)");n=n.replace(o,"$1"+A+"js$2")}Modernizr._config.enableClasses&&(n+=" "+A+e.join(" "+A),c?u.className.baseVal=n:u.className=n)}function i(e,n){if("object"==typeof e)for(var A in e)f(e,A)&&i(A,e[A]);else{e=e.toLowerCase();var o=e.split("."),t=Modernizr[o[0]];if(2==o.length&&(t=t[o[1]]),"undefined"!=typeof t)return Modernizr;n="function"==typeof n?n():n,1==o.length?Modernizr[o[0]]=n:(!Modernizr[o[0]]||Modernizr[o[0]]instanceof Boolean||(Modernizr[o[0]]=new Boolean(Modernizr[o[0]])),Modernizr[o[0]][o[1]]=n),a([(n&&0!=n?"":"no-")+o.join("-")]),Modernizr._trigger(e,n)}return Modernizr}var s=[],r=[],l={_version:"3.6.0",_config:{classPrefix:"",enableClasses:!0,enableJSClass:!0,usePrefixes:!0},_q:[],on:function(e,n){var A=this;setTimeout(function(){n(A[e])},0)},addTest:function(e,n,A){r.push({name:e,fn:n,options:A})},addAsyncTest:function(e){r.push({name:null,fn:e})}},Modernizr=function(){};Modernizr.prototype=l,Modernizr=new Modernizr;var f,u=n.documentElement,c="svg"===u.nodeName.toLowerCase();!function(){var e={}.hasOwnProperty;f=o(e,"undefined")||o(e.call,"undefined")?function(e,n){return n in e&&o(e.constructor.prototype[n],"undefined")}:function(n,A){return e.call(n,A)}}(),l._l={},l.on=function(e,n){this._l[e]||(this._l[e]=[]),this._l[e].push(n),Modernizr.hasOwnProperty(e)&&setTimeout(function(){Modernizr._trigger(e,Modernizr[e])},0)},l._trigger=function(e,n){if(this._l[e]){var A=this._l[e];setTimeout(function(){var e,o;for(e=0;e<A.length;e++)(o=A[e])(n)},0),delete this._l[e]}},Modernizr._q.push(function(){l.addTest=i}),Modernizr.addAsyncTest(function(){function e(e,n,A){function o(n){var o=n&&"load"===n.type?1==t.width:!1,a="webp"===e;i(e,a&&o?new Boolean(o):o),A&&A(n)}var t=new Image;t.onerror=o,t.onload=o,t.src=n}var n=[{uri:"data:image/webp;base64,UklGRiQAAABXRUJQVlA4IBgAAAAwAQCdASoBAAEAAwA0JaQAA3AA/vuUAAA=",name:"webp"},{uri:"data:image/webp;base64,UklGRkoAAABXRUJQVlA4WAoAAAAQAAAAAAAAAAAAQUxQSAwAAAABBxAR/Q9ERP8DAABWUDggGAAAADABAJ0BKgEAAQADADQlpAADcAD++/1QAA==",name:"webp.alpha"},{uri:"data:image/webp;base64,UklGRlIAAABXRUJQVlA4WAoAAAASAAAAAAAAAAAAQU5JTQYAAAD/////AABBTk1GJgAAAAAAAAAAAAAAAAAAAGQAAABWUDhMDQAAAC8AAAAQBxAREYiI/gcA",name:"webp.animation"},{uri:"data:image/webp;base64,UklGRh4AAABXRUJQVlA4TBEAAAAvAAAAAAfQ//73v/+BiOh/AAA=",name:"webp.lossless"}],A=n.shift();e(A.name,A.uri,function(A){if(A&&"load"===A.type)for(var o=0;o<n.length;o++)e(n[o].name,n[o].uri)})}),t(),a(s),delete l.addTest,delete l.addAsyncTest;for(var p=0;p<Modernizr._q.length;p++)Modernizr._q[p]();e.Modernizr=Modernizr}(window,document);
+        </script>
+        <!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>19.11: November Recap | RE:SS3D</title>
+<meta name="generator" content="Jekyll v3.8.5" />
+<meta property="og:title" content="19.11: November Recap" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="“A cornerstone is carefuly lowered into the foundation.”" />
+<meta property="og:description" content="“A cornerstone is carefuly lowered into the foundation.”" />
+<link rel="canonical" href="https://ss3d.space/2019/12/10/19.11.html" />
+<meta property="og:url" content="https://ss3d.space/2019/12/10/19.11.html" />
+<meta property="og:site_name" content="RE:SS3D" />
+<meta property="og:image" content="https://ss3d.space/assets/img/posts/19.11.01/November19Wallpaper.png" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2019-12-10T14:30:00+00:00" />
+<script type="application/ld+json">
+{"description":"“A cornerstone is carefuly lowered into the foundation.”","@type":"BlogPosting","url":"https://ss3d.space/2019/12/10/19.11.html","headline":"19.11: November Recap","dateModified":"2019-12-10T14:30:00+00:00","datePublished":"2019-12-10T14:30:00+00:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://ss3d.space/2019/12/10/19.11.html"},"image":"https://ss3d.space/assets/img/posts/19.11.01/November19Wallpaper.png","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+        <link type="application/atom+xml" rel="alternate" href="https://ss3d.space/feed.xml" title="RE:SS3D" />
+        <link rel="stylesheet" type="text/css" href="/assets/css/cookieconsent.min.css" />
+<script src="/assets/js/cookieconsent.min.js"></script>
+<script>
+window.addEventListener("load", function(){
+window.cookieconsent.initialise({
+"palette": {
+    "popup": {
+    "background": "#1e4684",
+    "text": "#dadada"
+    },
+    "button": {
+    "background": "#b83d32",
+    "text": "#ffffff"
+    }
+},
+"theme": "classic",
+"content": {
+    "message": "This website uses cookies for analytics.",
+    "dismiss": "Ok",
+    "href": "/privacy"
+}
+})});
+</script>
+        <!-- Analytics -->
+        
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-140169746-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-140169746-1');
+</script>
+
+        
+    </head>
+    <body class="preload">
+        <div class="nav-background">
+            <nav>
+                <div id="scroll" class="ul-container">
+    <ul class="ul-reset">
+        
+        <li><a onclick="setScroll('/',parentNode.parentNode.parentNode.scrollLeft); return false;" class="" href="/">Home</a></li>
+        
+        <li><a onclick="setScroll('/devblog/',parentNode.parentNode.parentNode.scrollLeft); return false;" class="" href="/devblog/">Devblog</a></li>
+        
+        <li><a onclick="setScroll('/faq/',parentNode.parentNode.parentNode.scrollLeft); return false;" class="" href="/faq/">FAQ</a></li>
+        
+        <li><a onclick="setScroll('/about/',parentNode.parentNode.parentNode.scrollLeft); return false;" class="" href="/about/">About</a></li>
+        
+        <li><a onclick="setScroll('/contribute/',parentNode.parentNode.parentNode.scrollLeft); return false;" class="" href="/contribute/">Contribute</a></li>
+        
+    </ul>
+</div>
+            </nav>
+        </div>
+        <div class="body-content">
+            <header class="header">
+    <div>
+        <picture class="logo" >
+            <source srcset="/assets/img/logo.webp" type="image/webp">
+            <source srcset="/assets/img/logo.png" type="image/png"> 
+            <img alt="" src="/assets/img/logo.png">
+        </picture>
+        <h1>RE: Space Station 3D</h1>
+        <p>A 3D recreation of Space Station 13</p>
+    </div>
+</header>
+            <main>
+                
+
+
+
+<a href="/assets/img/posts/19.11.01/November19Wallpaper.png"><img src="/" alt="" srcset="    /assets/resized/November19Wallpaper-580x326.png 580w,    /assets/resized/November19Wallpaper-290x163.png 290w,    /assets/resized/November19Wallpaper-170x96.png 170w,    /assets/resized/November19Wallpaper-145x82.png 145w, /assets/img/posts/19.11.01/November19Wallpaper.png 3840w" sizes="(max-width: 624px) 100vw, 578px, 580px"></a>
+<h1>19.11: November Recap</h1>
+<h5><i>on Tuesday, December 10, 2019</i></h5>
+<p>Clench your eyes shut and be gently woken up.<br />
+Close your eyes but be guided by the hand.</p>
+
+<h1 id="november-recap">November Recap</h1>
+
+<p>Another month comes and goes. New faces continue to trickle in, greeted with open arms. As the winter slowly approaches, a cornerstone is carefully lowered into the foundation.</p>
+
+<h2 id="inventory">Inventory</h2>
+
+<p>Courtesy of Nonanon, basic inventory is finally implemented! Currently, the system allows for picking up, placing, storing, and equipping of items. Objects can be placed on tables, on the floor, or even other objects. Switching hands can presently be done in the “I’m playing SS13 with a mouse and no hotkeys” method or the familiar /tg/station “x to swap hands.”</p>
+
+<p><em>Disclaimer: SS3D is a top down game but the camera here is zoomed in to show more detail. Also the airlocks here are NOT our most up-to-date version so ignore the obvious mistakes in them (see the models section below for the current version). And finally gravity is not implemented for the player yet, so just pretend you don’t notice the player floating in this first clip.</em></p>
+
+<video autoplay="autoplay" muted="" loop="loop" poster="/assets/img/posts/19.11.01/NonanonInventory1.png">
+  <source src="/assets/img/posts/19.11.01/NonanonInventory1.webm" type="video/webm" />
+  <source src="/assets/img/posts/19.11.01/NonanonInventory1.mp4" type="video/mp4" />
+</video>
+
+<p>Moving items around in inventories can be done via clicking your desired location or by clicking and then dragging your item to the location you want to move it. Players currently have access to all body slots (balance things on your head or embed them in your torso), but clothing slots (belts, pockets, suits, ect.) are yet to be implemented. Items and item slots have rudimentary restrictions so that you can’t equip meson goggles to your feet, for example, and slots will highlight if they are compatible with the item being equipped.</p>
+
+<video autoplay="autoplay" muted="" loop="loop" poster="/assets/img/posts/19.11.01/NonanonInventory2.png">
+  <source src="/assets/img/posts/19.11.01/NonanonInventory2.webm" type="video/webm" />
+  <source src="/assets/img/posts/19.11.01/NonanonInventory2.mp4" type="video/mp4" />
+</video>
+
+<p>Players can open a container’s inventory from a certain distance away, and interact with it within that distance. The container’s inventory window is also moveable.</p>
+
+<video autoplay="autoplay" muted="" loop="loop" poster="/assets/img/posts/19.11.01/NonanonInventory3.png">
+  <source src="/assets/img/posts/19.11.01/NonanonInventory3.webm" type="video/webm" />
+  <source src="/assets/img/posts/19.11.01/NonanonInventory3.mp4" type="video/mp4" />
+</video>
+
+<p>To top it all off, all is fully networked and tested.</p>
+
+<video autoplay="autoplay" muted="" loop="loop" poster="/assets/img/posts/19.11.01/NonanonInventory4.png">
+  <source src="/assets/img/posts/19.11.01/NonanonInventory4.webm" type="video/webm" />
+  <source src="/assets/img/posts/19.11.01/NonanonInventory4.mp4" type="video/mp4" />
+</video>
+
+<h2 id="shader-witchcraft">Shader Witchcraft</h2>
+
+<p>Erythro’s shader witchcraft continues to spit in the eyes of god and spark delight in the souls of spessmen, this month in the form of a beautiful hologram shader.</p>
+
+<video autoplay="autoplay" muted="" loop="loop" poster="/assets/img/posts/19.11.01/ErythroHologram.png">
+  <source src="/assets/img/posts/19.11.01/ErythroHologram.webm" type="video/webm" />
+  <source src="/assets/img/posts/19.11.01/ErythroHologram.mp4" type="video/mp4" />
+</video>
+
+<h2 id="textures">Textures</h2>
+
+<p>If you remember from our last blog post, we showcased a poster object using a custom poster texture which could easily be swapped out to create multiple poster variants. This month Eiko brought it back with bedsheets using custom textures as well as a <a href="/assets/img/posts/19.11.01/EikoBlanketTemplate.png" target="_blank">template</a> to ease the process for others to make their own blanket textures.</p>
+
+<p><a href="/assets/img/posts/19.11.01/EikoBlankets.png"><img src="/" alt="" srcset="    /assets/resized/EikoBlankets-580x435.png 580w,    /assets/resized/EikoBlankets-290x218.png 290w,    /assets/resized/EikoBlankets-170x128.png 170w,    /assets/resized/EikoBlankets-145x109.png 145w, /assets/img/posts/19.11.01/EikoBlankets.png 800w" sizes="(max-width: 624px) 100vw, 578px, 580px" /></a></p>
+
+<p>Milly decided to also play around with custom textures by doing a UV unwrap on our slime mob and adding a gradient texture to give some curious depth to the globular creature.</p>
+
+<p><a href="/assets/img/posts/19.11.01/MillySlimeGradient.png"><img src="/" alt="" srcset="    /assets/resized/MillySlimeGradient-580x435.png 580w,    /assets/resized/MillySlimeGradient-290x218.png 290w,    /assets/resized/MillySlimeGradient-170x128.png 170w,    /assets/resized/MillySlimeGradient-145x109.png 145w, /assets/img/posts/19.11.01/MillySlimeGradient.png 800w" sizes="(max-width: 624px) 100vw, 578px, 580px" /></a></p>
+
+<h2 id="player-model">Player Model</h2>
+
+<p>Last month when we said the playermodel had finally been finished, we were lying. This month, another issue was discovered: the player’s thumb and how it wraps around an object when an object is being held. Eiko has once again saved the day by painstakingly rebuilding the thumb.</p>
+
+<p><a href="/assets/img/posts/19.11.01/EikoThumb.png"><img src="/" alt="" srcset="    /assets/resized/EikoThumb-580x435.png 580w,    /assets/resized/EikoThumb-290x218.png 290w,    /assets/resized/EikoThumb-170x128.png 170w,    /assets/resized/EikoThumb-145x109.png 145w, /assets/img/posts/19.11.01/EikoThumb.png 800w" sizes="(max-width: 624px) 100vw, 578px, 580px" /></a></p>
+
+<p>Following this recent progression in the area of held items, Probably Not has made some new and intimidating combat poses.</p>
+
+<p><a href="/assets/img/posts/19.11.01/ProbablyNotCombatPoses.png"><img src="/" alt="" srcset="    /assets/resized/ProbablyNotCombatPoses-580x435.png 580w,    /assets/resized/ProbablyNotCombatPoses-290x218.png 290w,    /assets/resized/ProbablyNotCombatPoses-170x128.png 170w,    /assets/resized/ProbablyNotCombatPoses-145x109.png 145w, /assets/img/posts/19.11.01/ProbablyNotCombatPoses.png 800w" sizes="(max-width: 624px) 100vw, 578px, 580px" /></a></p>
+
+<h2 id="eye-candy">EYE CANDY</h2>
+
+<p>From Bwoink this month, we have the biogenerator and the ripley mech.</p>
+
+<div class="horizontal-2">
+
+  <p><a href="/assets/img/posts/19.11.01/BwoinkBiogenerator.png"><img src="/" alt="" srcset="    /assets/resized/BwoinkBiogenerator-580x435.png 580w,    /assets/resized/BwoinkBiogenerator-290x218.png 290w,    /assets/resized/BwoinkBiogenerator-170x128.png 170w,    /assets/resized/BwoinkBiogenerator-145x109.png 145w, /assets/img/posts/19.11.01/BwoinkBiogenerator.png 800w" sizes="(max-width: 624px) 50vw, 290px" /></a></p>
+
+  <p><a href="/assets/img/posts/19.11.01/BwoinkMiniMech.png"><img src="/" alt="" srcset="    /assets/resized/BwoinkMiniMech-580x435.png 580w,    /assets/resized/BwoinkMiniMech-290x218.png 290w,    /assets/resized/BwoinkMiniMech-170x128.png 170w,    /assets/resized/BwoinkMiniMech-145x109.png 145w, /assets/img/posts/19.11.01/BwoinkMiniMech.png 800w" sizes="(max-width: 624px) 50vw, 290px" /></a></p>
+</div>
+
+<p>From Eiko, a crab and walking mushroom.</p>
+
+<div class="horizontal-2">
+
+  <p><a href="/assets/img/posts/19.11.01/EikoCrab.png"><img src="/" alt="" srcset="    /assets/resized/EikoCrab-580x435.png 580w,    /assets/resized/EikoCrab-290x218.png 290w,    /assets/resized/EikoCrab-170x128.png 170w,    /assets/resized/EikoCrab-145x109.png 145w, /assets/img/posts/19.11.01/EikoCrab.png 800w" sizes="(max-width: 624px) 50vw, 290px" /></a></p>
+
+  <p><a href="/assets/img/posts/19.11.01/EikoWalkingMushroom.png"><img src="/" alt="" srcset="    /assets/resized/EikoWalkingMushroom-580x435.png 580w,    /assets/resized/EikoWalkingMushroom-290x218.png 290w,    /assets/resized/EikoWalkingMushroom-170x128.png 170w,    /assets/resized/EikoWalkingMushroom-145x109.png 145w, /assets/img/posts/19.11.01/EikoWalkingMushroom.png 800w" sizes="(max-width: 624px) 50vw, 290px" /></a></p>
+</div>
+
+<p>This month Cosmic decided to refurbish some of the station decorations with newer variations including, airlocks, tables, and walls panels. Also provided, a new potted plant and killer tomatoes.</p>
+
+<div class="horizontal-2">
+
+  <p><a href="/assets/img/posts/19.11.01/CosmicAirlocks1.png"><img src="/" alt="" srcset="    /assets/resized/CosmicAirlocks1-580x435.png 580w,    /assets/resized/CosmicAirlocks1-290x218.png 290w,    /assets/resized/CosmicAirlocks1-170x128.png 170w,    /assets/resized/CosmicAirlocks1-145x109.png 145w, /assets/img/posts/19.11.01/CosmicAirlocks1.png 800w" sizes="(max-width: 624px) 50vw, 290px" /></a></p>
+
+  <p><a href="/assets/img/posts/19.11.01/CosmicAirlocks2.png"><img src="/" alt="" srcset="    /assets/resized/CosmicAirlocks2-580x435.png 580w,    /assets/resized/CosmicAirlocks2-290x218.png 290w,    /assets/resized/CosmicAirlocks2-170x128.png 170w,    /assets/resized/CosmicAirlocks2-145x109.png 145w, /assets/img/posts/19.11.01/CosmicAirlocks2.png 800w" sizes="(max-width: 624px) 50vw, 290px" /></a></p>
+</div>
+
+<div class="horizontal-2">
+
+  <p><a href="/assets/img/posts/19.11.01/CosmicTables.png"><img src="/" alt="" srcset="    /assets/resized/CosmicTables-580x435.png 580w,    /assets/resized/CosmicTables-290x218.png 290w,    /assets/resized/CosmicTables-170x128.png 170w,    /assets/resized/CosmicTables-145x109.png 145w, /assets/img/posts/19.11.01/CosmicTables.png 800w" sizes="(max-width: 624px) 50vw, 290px" /></a></p>
+
+  <p><a href="/assets/img/posts/19.11.01/CosmicWallPanels.png"><img src="/" alt="" srcset="    /assets/resized/CosmicWallPanels-580x435.png 580w,    /assets/resized/CosmicWallPanels-290x218.png 290w,    /assets/resized/CosmicWallPanels-170x128.png 170w,    /assets/resized/CosmicWallPanels-145x109.png 145w, /assets/img/posts/19.11.01/CosmicWallPanels.png 800w" sizes="(max-width: 624px) 50vw, 290px" /></a></p>
+</div>
+
+<div class="horizontal-2">
+
+  <p><a href="/assets/img/posts/19.11.01/CosmicOrangePlant.png"><img src="/" alt="" srcset="    /assets/resized/CosmicOrangePlant-580x435.png 580w,    /assets/resized/CosmicOrangePlant-290x218.png 290w,    /assets/resized/CosmicOrangePlant-170x128.png 170w,    /assets/resized/CosmicOrangePlant-145x109.png 145w, /assets/img/posts/19.11.01/CosmicOrangePlant.png 800w" sizes="(max-width: 624px) 50vw, 290px" /></a></p>
+
+  <p><a href="/assets/img/posts/19.11.01/CosmicKillerTomato.png"><img src="/" alt="" srcset="    /assets/resized/CosmicKillerTomato-580x435.png 580w,    /assets/resized/CosmicKillerTomato-290x218.png 290w,    /assets/resized/CosmicKillerTomato-170x128.png 170w,    /assets/resized/CosmicKillerTomato-145x109.png 145w, /assets/img/posts/19.11.01/CosmicKillerTomato.png 800w" sizes="(max-width: 624px) 50vw, 290px" /></a></p>
+</div>
+
+<p>One of our new modelers, Divibee, has provided quite a collection this month including meson goggles, multitool, buttbot, the changeling’s armblade, glowshrooms, and a room full of weapons designed to make you feel apprehension.</p>
+
+<div class="horizontal-2">
+
+  <p><a href="/assets/img/posts/19.11.01/DiviMesonGoggles.png"><img src="/" alt="" srcset="    /assets/resized/DiviMesonGoggles-580x435.png 580w,    /assets/resized/DiviMesonGoggles-290x218.png 290w,    /assets/resized/DiviMesonGoggles-170x128.png 170w,    /assets/resized/DiviMesonGoggles-145x109.png 145w, /assets/img/posts/19.11.01/DiviMesonGoggles.png 800w" sizes="(max-width: 624px) 50vw, 290px" /></a></p>
+
+  <p><a href="/assets/img/posts/19.11.01/DiviMultitool.png"><img src="/" alt="" srcset="    /assets/resized/DiviMultitool-580x435.png 580w,    /assets/resized/DiviMultitool-290x218.png 290w,    /assets/resized/DiviMultitool-170x128.png 170w,    /assets/resized/DiviMultitool-145x109.png 145w, /assets/img/posts/19.11.01/DiviMultitool.png 800w" sizes="(max-width: 624px) 50vw, 290px" /></a></p>
+</div>
+
+<div class="horizontal-2">
+
+  <p><a href="/assets/img/posts/19.11.01/DiviButtbot.png"><img src="/" alt="" srcset="    /assets/resized/DiviButtbot-580x435.png 580w,    /assets/resized/DiviButtbot-290x218.png 290w,    /assets/resized/DiviButtbot-170x128.png 170w,    /assets/resized/DiviButtbot-145x109.png 145w, /assets/img/posts/19.11.01/DiviButtbot.png 800w" sizes="(max-width: 624px) 50vw, 290px" /></a></p>
+
+  <p><a href="/assets/img/posts/19.11.01/DiviArmblade.png"><img src="/" alt="" srcset="    /assets/resized/DiviArmblade-580x435.png 580w,    /assets/resized/DiviArmblade-290x218.png 290w,    /assets/resized/DiviArmblade-170x128.png 170w,    /assets/resized/DiviArmblade-145x109.png 145w, /assets/img/posts/19.11.01/DiviArmblade.png 800w" sizes="(max-width: 624px) 50vw, 290px" /></a></p>
+</div>
+
+<p><a href="/assets/img/posts/19.11.01/DiviNullSet.png"><img src="/" alt="" srcset="    /assets/resized/DiviNullSet-580x435.png 580w,    /assets/resized/DiviNullSet-290x218.png 290w,    /assets/resized/DiviNullSet-170x128.png 170w,    /assets/resized/DiviNullSet-145x109.png 145w, /assets/img/posts/19.11.01/DiviNullSet.png 800w" sizes="(max-width: 624px) 100vw, 578px, 580px" /></a></p>
+
+<p><a href="/assets/img/posts/19.11.01/DiviGlowshrooms.png"><img src="/" alt="" srcset="    /assets/resized/DiviGlowshrooms-580x435.png 580w,    /assets/resized/DiviGlowshrooms-290x218.png 290w,    /assets/resized/DiviGlowshrooms-170x128.png 170w,    /assets/resized/DiviGlowshrooms-145x109.png 145w, /assets/img/posts/19.11.01/DiviGlowshrooms.png 800w" sizes="(max-width: 624px) 100vw, 578px, 580px" /></a></p>
+
+<p>From Erythro, the portable air pump and chemical heater.</p>
+
+<p><a href="/assets/img/posts/19.11.01/ErythroMachines.png"><img src="/" alt="" srcset="    /assets/resized/ErythroMachines-580x435.png 580w,    /assets/resized/ErythroMachines-290x218.png 290w,    /assets/resized/ErythroMachines-170x128.png 170w,    /assets/resized/ErythroMachines-145x109.png 145w, /assets/img/posts/19.11.01/ErythroMachines.png 800w" sizes="(max-width: 624px) 100vw, 578px, 580px" /></a></p>
+
+<p>From FEB, that one Soviet soda machine.</p>
+
+<p><a href="/assets/img/posts/19.11.01/FEBVoda.png"><img src="/" alt="" srcset="    /assets/resized/FEBVoda-580x435.png 580w,    /assets/resized/FEBVoda-290x218.png 290w,    /assets/resized/FEBVoda-170x128.png 170w,    /assets/resized/FEBVoda-145x109.png 145w, /assets/img/posts/19.11.01/FEBVoda.png 800w" sizes="(max-width: 624px) 100vw, 578px, 580px" /></a></p>
+
+<p>From Fuu, body bags, raisins, ramen, and various frozen foodstuffs.</p>
+
+<p><a href="/assets/img/posts/19.11.01/FuuBodybag.png"><img src="/" alt="" srcset="    /assets/resized/FuuBodybag-580x435.png 580w,    /assets/resized/FuuBodybag-290x218.png 290w,    /assets/resized/FuuBodybag-170x128.png 170w,    /assets/resized/FuuBodybag-145x109.png 145w, /assets/img/posts/19.11.01/FuuBodybag.png 800w" sizes="(max-width: 624px) 100vw, 578px, 580px" /></a></p>
+
+<p><a href="/assets/img/posts/19.11.01/FuuFood.png"><img src="/" alt="" srcset="    /assets/resized/FuuFood-580x435.png 580w,    /assets/resized/FuuFood-290x218.png 290w,    /assets/resized/FuuFood-170x128.png 170w,    /assets/resized/FuuFood-145x109.png 145w, /assets/img/posts/19.11.01/FuuFood.png 800w" sizes="(max-width: 624px) 100vw, 578px, 580px" /></a></p>
+
+<p>From Goao, some borgs, bots, space carps, a frog, a goose, a golden wheel chair, and some new dispensers.</p>
+
+<p><a href="/assets/img/posts/19.11.01/GoaoBorgs.png"><img src="/" alt="" srcset="    /assets/resized/GoaoBorgs-580x435.png 580w,    /assets/resized/GoaoBorgs-290x218.png 290w,    /assets/resized/GoaoBorgs-170x128.png 170w,    /assets/resized/GoaoBorgs-145x109.png 145w, /assets/img/posts/19.11.01/GoaoBorgs.png 800w" sizes="(max-width: 624px) 100vw, 578px, 580px" /></a></p>
+
+<p><a href="/assets/img/posts/19.11.01/GoaoBots.png"><img src="/" alt="" srcset="    /assets/resized/GoaoBots-580x435.png 580w,    /assets/resized/GoaoBots-290x218.png 290w,    /assets/resized/GoaoBots-170x128.png 170w,    /assets/resized/GoaoBots-145x109.png 145w, /assets/img/posts/19.11.01/GoaoBots.png 800w" sizes="(max-width: 624px) 100vw, 578px, 580px" /></a></p>
+
+<div class="horizontal-2">
+
+  <p><a href="/assets/img/posts/19.11.01/GoaoSpacecarps.png"><img src="/" alt="" srcset="    /assets/resized/GoaoSpacecarps-580x435.png 580w,    /assets/resized/GoaoSpacecarps-290x218.png 290w,    /assets/resized/GoaoSpacecarps-170x128.png 170w,    /assets/resized/GoaoSpacecarps-145x109.png 145w, /assets/img/posts/19.11.01/GoaoSpacecarps.png 800w" sizes="(max-width: 624px) 50vw, 290px" /></a></p>
+
+  <p><a href="/assets/img/posts/19.11.01/GoaoAnimals.png"><img src="/" alt="" srcset="    /assets/resized/GoaoAnimals-580x435.png 580w,    /assets/resized/GoaoAnimals-290x218.png 290w,    /assets/resized/GoaoAnimals-170x128.png 170w,    /assets/resized/GoaoAnimals-145x109.png 145w, /assets/img/posts/19.11.01/GoaoAnimals.png 800w" sizes="(max-width: 624px) 50vw, 290px" /></a></p>
+</div>
+
+<div class="horizontal-2">
+
+  <p><a href="/assets/img/posts/19.11.01/GoaoGoldenWheelchair.png"><img src="/" alt="" srcset="    /assets/resized/GoaoGoldenWheelchair-580x435.png 580w,    /assets/resized/GoaoGoldenWheelchair-290x218.png 290w,    /assets/resized/GoaoGoldenWheelchair-170x128.png 170w,    /assets/resized/GoaoGoldenWheelchair-145x109.png 145w, /assets/img/posts/19.11.01/GoaoGoldenWheelchair.png 800w" sizes="(max-width: 624px) 50vw, 290px" /></a></p>
+
+  <p><a href="/assets/img/posts/19.11.01/GoaoDispensers.png"><img src="/" alt="" srcset="    /assets/resized/GoaoDispensers-580x435.png 580w,    /assets/resized/GoaoDispensers-290x218.png 290w,    /assets/resized/GoaoDispensers-170x128.png 170w,    /assets/resized/GoaoDispensers-145x109.png 145w, /assets/img/posts/19.11.01/GoaoDispensers.png 800w" sizes="(max-width: 624px) 50vw, 290px" /></a></p>
+</div>
+
+<p>Another new face, Liddius, has come along and joined us this month, contributing a jukebox, mulebot, chefbot, flamethrower, and ion rifle, as well as some pie cannons and pneumatic cannons fitted for various gas tanks.</p>
+
+<p><a href="/assets/img/posts/19.11.01/LiddiusJukebox.png"><img src="/" alt="" srcset="    /assets/resized/LiddiusJukebox-580x435.png 580w,    /assets/resized/LiddiusJukebox-290x218.png 290w,    /assets/resized/LiddiusJukebox-170x128.png 170w,    /assets/resized/LiddiusJukebox-145x109.png 145w, /assets/img/posts/19.11.01/LiddiusJukebox.png 800w" sizes="(max-width: 624px) 100vw, 578px, 580px" /></a></p>
+
+<div class="horizontal-2">
+
+  <p><a href="/assets/img/posts/19.11.01/LiddiusMULEBot.png"><img src="/" alt="" srcset="    /assets/resized/LiddiusMULEBot-580x435.png 580w,    /assets/resized/LiddiusMULEBot-290x218.png 290w,    /assets/resized/LiddiusMULEBot-170x128.png 170w,    /assets/resized/LiddiusMULEBot-145x109.png 145w, /assets/img/posts/19.11.01/LiddiusMULEBot.png 800w" sizes="(max-width: 624px) 50vw, 290px" /></a></p>
+
+  <p><a href="/assets/img/posts/19.11.01/LiddiusChefbot.png"><img src="/" alt="" srcset="    /assets/resized/LiddiusChefbot-580x435.png 580w,    /assets/resized/LiddiusChefbot-290x218.png 290w,    /assets/resized/LiddiusChefbot-170x128.png 170w,    /assets/resized/LiddiusChefbot-145x109.png 145w, /assets/img/posts/19.11.01/LiddiusChefbot.png 800w" sizes="(max-width: 624px) 50vw, 290px" /></a></p>
+</div>
+
+<div class="horizontal-2">
+
+  <p><a href="/assets/img/posts/19.11.01/LiddiusFlamethrower.png"><img src="/" alt="" srcset="    /assets/resized/LiddiusFlamethrower-580x435.png 580w,    /assets/resized/LiddiusFlamethrower-290x218.png 290w,    /assets/resized/LiddiusFlamethrower-170x128.png 170w,    /assets/resized/LiddiusFlamethrower-145x109.png 145w, /assets/img/posts/19.11.01/LiddiusFlamethrower.png 800w" sizes="(max-width: 624px) 50vw, 290px" /></a></p>
+
+  <p><a href="/assets/img/posts/19.11.01/LiddiusIonRifle.png"><img src="/" alt="" srcset="    /assets/resized/LiddiusIonRifle-580x435.png 580w,    /assets/resized/LiddiusIonRifle-290x218.png 290w,    /assets/resized/LiddiusIonRifle-170x128.png 170w,    /assets/resized/LiddiusIonRifle-145x109.png 145w, /assets/img/posts/19.11.01/LiddiusIonRifle.png 800w" sizes="(max-width: 624px) 50vw, 290px" /></a></p>
+</div>
+
+<p><a href="/assets/img/posts/19.11.01/LiddiusPieCannon.png"><img src="/" alt="" srcset="    /assets/resized/LiddiusPieCannon-580x435.png 580w,    /assets/resized/LiddiusPieCannon-290x218.png 290w,    /assets/resized/LiddiusPieCannon-170x128.png 170w,    /assets/resized/LiddiusPieCannon-145x109.png 145w, /assets/img/posts/19.11.01/LiddiusPieCannon.png 800w" sizes="(max-width: 624px) 100vw, 578px, 580px" /></a></p>
+
+<p><a href="/assets/img/posts/19.11.01/LiddiusPneumaticCannon.png"><img src="/" alt="" srcset="    /assets/resized/LiddiusPneumaticCannon-580x435.png 580w,    /assets/resized/LiddiusPneumaticCannon-290x218.png 290w,    /assets/resized/LiddiusPneumaticCannon-170x128.png 170w,    /assets/resized/LiddiusPneumaticCannon-145x109.png 145w, /assets/img/posts/19.11.01/LiddiusPneumaticCannon.png 800w" sizes="(max-width: 624px) 100vw, 578px, 580px" /></a></p>
+
+<p>Finally, a pulse pistol from LightVelox.</p>
+
+<p><a href="/assets/img/posts/19.11.01/LightVeloxPulsePistol.png"><img src="/" alt="" srcset="    /assets/resized/LightVeloxPulsePistol-580x435.png 580w,    /assets/resized/LightVeloxPulsePistol-290x218.png 290w,    /assets/resized/LightVeloxPulsePistol-170x128.png 170w,    /assets/resized/LightVeloxPulsePistol-145x109.png 145w, /assets/img/posts/19.11.01/LightVeloxPulsePistol.png 800w" sizes="(max-width: 624px) 100vw, 578px, 580px" /></a></p>
+
+<h3 id="notes">NOTES</h3>
+
+<p>This is our monthly devblog, for the purpose of legal evidence when we are inevitably sued for infringing on the idea of putting a station in space. CosmicCoincidence has pilfered Sunberry’s grave, put their body at a desk, and then puppeteered their stiff hands around until a devblog was made.</p>
+
+<p>Complementary (not optional) toolbox and floor pills can be found at our <a href="https://discord.gg/3ny9tdH" target="_blank">Discord</a>. Bring a friend and use them as a negotiating tool.</p>
+
+            </main>
+            <footer>
+                <div class="contact">
+    <ul class="ul-reset">
+    <li>
+        <a href="https://discord.gg/3ny9tdH">Discord</a>
+    </li>
+    <li>
+        <a href="https://github.com/RE-SS3D/SS3D/projects/1">Roadmap</a>
+    </li>
+    <li>
+        <a href="https://github.com/RE-SS3D">GitHub</a>
+    </li>
+    <li>
+        <a href="/privacy">Privacy policy</a>
+    </li>
+    <li>
+        <a type="application/atom+xml" href="/feed.xml">Atom (RSS)</a>
+    </li>
+    <li>
+        <label id="theme-switch" class="theme-switch" for="checkbox_theme">
+            <input type="checkbox" id="checkbox_theme" style="display:none"><span class="link">Toggle theme</span>
+        </label>
+    </li>
+</ul>
+</div>
+            </footer>
+        </div>
+        <script>
+            
+            // Fix flashing buttons by only allowing the css animations to play after a slight delay.
+            setTimeout(function() {
+                document.getElementsByTagName('body')[0].classList.remove('preload');
+            }, 50);
+
+            //theme toggle
+            //identify the toggle switch HTML element
+            const toggleSwitch = document.querySelector('#theme-switch input[type="checkbox"]');
+    
+            //function that changes the theme, and sets a localStorage variable to track the theme between page loads
+            function switchTheme(e) {
+                if (e.target.checked) {
+                    localStorage.setItem('theme', 'light');
+                    document.documentElement.setAttribute('data-theme', 'light');
+                    toggleSwitch.checked = true;
+                } else {
+                    localStorage.setItem('theme', 'dark');
+                    document.documentElement.setAttribute('data-theme', 'dark');
+                    toggleSwitch.checked = false;
+                }    
+            }
+    
+            //listener for changing themes
+            toggleSwitch.addEventListener('change', switchTheme, false);
+    
+            //pre-check the dark-theme checkbox if dark-theme is set
+            if (document.documentElement.getAttribute("data-theme") == "light"){
+                toggleSwitch.checked = true;
+            }
+        </script>
+    </body>
+</html>

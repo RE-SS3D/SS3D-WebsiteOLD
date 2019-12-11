@@ -1,4 +1,199 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://ss3d.space/feed.xml" rel="self" type="application/atom+xml" /><link href="https://ss3d.space/" rel="alternate" type="text/html" /><updated>2019-11-12T15:11:03+00:00</updated><id>https://ss3d.space/feed.xml</id><title type="html">RE:SS3D</title><subtitle>This is a 3D recreation of Space Station 13, on the Unity engine, which will come with its own set of gameplay/graphical improvements. </subtitle><entry><title type="html">19.10: Spooktober Recap</title><link href="https://ss3d.space/2019/11/11/19.10.html" rel="alternate" type="text/html" title="19.10: Spooktober Recap" /><published>2019-11-11T14:30:00+00:00</published><updated>2019-11-11T14:30:00+00:00</updated><id>https://ss3d.space/2019/11/11/19.10</id><content type="html" xml:base="https://ss3d.space/2019/11/11/19.10.html">&lt;p&gt;&lt;em&gt;I was a little afraid, myself, to be frank.&lt;/em&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://ss3d.space/feed.xml" rel="self" type="application/atom+xml" /><link href="https://ss3d.space/" rel="alternate" type="text/html" /><updated>2019-12-11T16:40:29+00:00</updated><id>https://ss3d.space/feed.xml</id><title type="html">RE:SS3D</title><subtitle>This is a 3D recreation of Space Station 13, on the Unity engine, which will come with its own set of gameplay/graphical improvements. </subtitle><entry><title type="html">19.11: November Recap</title><link href="https://ss3d.space/2019/12/10/19.11.html" rel="alternate" type="text/html" title="19.11: November Recap" /><published>2019-12-10T14:30:00+00:00</published><updated>2019-12-10T14:30:00+00:00</updated><id>https://ss3d.space/2019/12/10/19.11</id><content type="html" xml:base="https://ss3d.space/2019/12/10/19.11.html">&lt;p&gt;Clench your eyes shut and be gently woken up.&lt;br /&gt;
+Close your eyes but be guided by the hand.&lt;/p&gt;
+
+&lt;h1 id=&quot;november-recap&quot;&gt;November Recap&lt;/h1&gt;
+
+&lt;p&gt;Another month comes and goes. New faces continue to trickle in, greeted with open arms. As the winter slowly approaches, a cornerstone is carefully lowered into the foundation.&lt;/p&gt;
+
+&lt;h2 id=&quot;inventory&quot;&gt;Inventory&lt;/h2&gt;
+
+&lt;p&gt;Courtesy of Nonanon, basic inventory is finally implemented! Currently, the system allows for picking up, placing, storing, and equipping of items. Objects can be placed on tables, on the floor, or even other objects. Switching hands can presently be done in the “I’m playing SS13 with a mouse and no hotkeys” method or the familiar /tg/station “x to swap hands.”&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Disclaimer: SS3D is a top down game but the camera here is zoomed in to show more detail. Also the airlocks here are NOT our most up-to-date version so ignore the obvious mistakes in them (see the models section below for the current version). And finally gravity is not implemented for the player yet, so just pretend you don’t notice the player floating in this first clip.&lt;/em&gt;&lt;/p&gt;
+
+&lt;video autoplay=&quot;autoplay&quot; muted=&quot;&quot; loop=&quot;loop&quot; poster=&quot;/assets/img/posts/19.11.01/NonanonInventory1.png&quot;&gt;
+  &lt;source src=&quot;/assets/img/posts/19.11.01/NonanonInventory1.webm&quot; type=&quot;video/webm&quot; /&gt;
+  &lt;source src=&quot;/assets/img/posts/19.11.01/NonanonInventory1.mp4&quot; type=&quot;video/mp4&quot; /&gt;
+&lt;/video&gt;
+
+&lt;p&gt;Moving items around in inventories can be done via clicking your desired location or by clicking and then dragging your item to the location you want to move it. Players currently have access to all body slots (balance things on your head or embed them in your torso), but clothing slots (belts, pockets, suits, ect.) are yet to be implemented. Items and item slots have rudimentary restrictions so that you can’t equip meson goggles to your feet, for example, and slots will highlight if they are compatible with the item being equipped.&lt;/p&gt;
+
+&lt;video autoplay=&quot;autoplay&quot; muted=&quot;&quot; loop=&quot;loop&quot; poster=&quot;/assets/img/posts/19.11.01/NonanonInventory2.png&quot;&gt;
+  &lt;source src=&quot;/assets/img/posts/19.11.01/NonanonInventory2.webm&quot; type=&quot;video/webm&quot; /&gt;
+  &lt;source src=&quot;/assets/img/posts/19.11.01/NonanonInventory2.mp4&quot; type=&quot;video/mp4&quot; /&gt;
+&lt;/video&gt;
+
+&lt;p&gt;Players can open a container’s inventory from a certain distance away, and interact with it within that distance. The container’s inventory window is also moveable.&lt;/p&gt;
+
+&lt;video autoplay=&quot;autoplay&quot; muted=&quot;&quot; loop=&quot;loop&quot; poster=&quot;/assets/img/posts/19.11.01/NonanonInventory3.png&quot;&gt;
+  &lt;source src=&quot;/assets/img/posts/19.11.01/NonanonInventory3.webm&quot; type=&quot;video/webm&quot; /&gt;
+  &lt;source src=&quot;/assets/img/posts/19.11.01/NonanonInventory3.mp4&quot; type=&quot;video/mp4&quot; /&gt;
+&lt;/video&gt;
+
+&lt;p&gt;To top it all off, all is fully networked and tested.&lt;/p&gt;
+
+&lt;video autoplay=&quot;autoplay&quot; muted=&quot;&quot; loop=&quot;loop&quot; poster=&quot;/assets/img/posts/19.11.01/NonanonInventory4.png&quot;&gt;
+  &lt;source src=&quot;/assets/img/posts/19.11.01/NonanonInventory4.webm&quot; type=&quot;video/webm&quot; /&gt;
+  &lt;source src=&quot;/assets/img/posts/19.11.01/NonanonInventory4.mp4&quot; type=&quot;video/mp4&quot; /&gt;
+&lt;/video&gt;
+
+&lt;h2 id=&quot;shader-witchcraft&quot;&gt;Shader Witchcraft&lt;/h2&gt;
+
+&lt;p&gt;Erythro’s shader witchcraft continues to spit in the eyes of god and spark delight in the souls of spessmen, this month in the form of a beautiful hologram shader.&lt;/p&gt;
+
+&lt;video autoplay=&quot;autoplay&quot; muted=&quot;&quot; loop=&quot;loop&quot; poster=&quot;/assets/img/posts/19.11.01/ErythroHologram.png&quot;&gt;
+  &lt;source src=&quot;/assets/img/posts/19.11.01/ErythroHologram.webm&quot; type=&quot;video/webm&quot; /&gt;
+  &lt;source src=&quot;/assets/img/posts/19.11.01/ErythroHologram.mp4&quot; type=&quot;video/mp4&quot; /&gt;
+&lt;/video&gt;
+
+&lt;h2 id=&quot;textures&quot;&gt;Textures&lt;/h2&gt;
+
+&lt;p&gt;If you remember from our last blog post, we showcased a poster object using a custom poster texture which could easily be swapped out to create multiple poster variants. This month Eiko brought it back with bedsheets using custom textures as well as a &lt;a href=&quot;/assets/img/posts/19.11.01/EikoBlanketTemplate.png&quot; target=&quot;_blank&quot;&gt;template&lt;/a&gt; to ease the process for others to make their own blanket textures.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;/assets/img/posts/19.11.01/EikoBlankets.png&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/EikoBlankets-580x435.png 580w,    /assets/resized/EikoBlankets-290x218.png 290w,    /assets/resized/EikoBlankets-170x128.png 170w,    /assets/resized/EikoBlankets-145x109.png 145w, /assets/img/posts/19.11.01/EikoBlankets.png 800w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Milly decided to also play around with custom textures by doing a UV unwrap on our slime mob and adding a gradient texture to give some curious depth to the globular creature.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;/assets/img/posts/19.11.01/MillySlimeGradient.png&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/MillySlimeGradient-580x435.png 580w,    /assets/resized/MillySlimeGradient-290x218.png 290w,    /assets/resized/MillySlimeGradient-170x128.png 170w,    /assets/resized/MillySlimeGradient-145x109.png 145w, /assets/img/posts/19.11.01/MillySlimeGradient.png 800w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;player-model&quot;&gt;Player Model&lt;/h2&gt;
+
+&lt;p&gt;Last month when we said the playermodel had finally been finished, we were lying. This month, another issue was discovered: the player’s thumb and how it wraps around an object when an object is being held. Eiko has once again saved the day by painstakingly rebuilding the thumb.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;/assets/img/posts/19.11.01/EikoThumb.png&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/EikoThumb-580x435.png 580w,    /assets/resized/EikoThumb-290x218.png 290w,    /assets/resized/EikoThumb-170x128.png 170w,    /assets/resized/EikoThumb-145x109.png 145w, /assets/img/posts/19.11.01/EikoThumb.png 800w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Following this recent progression in the area of held items, Probably Not has made some new and intimidating combat poses.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;/assets/img/posts/19.11.01/ProbablyNotCombatPoses.png&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/ProbablyNotCombatPoses-580x435.png 580w,    /assets/resized/ProbablyNotCombatPoses-290x218.png 290w,    /assets/resized/ProbablyNotCombatPoses-170x128.png 170w,    /assets/resized/ProbablyNotCombatPoses-145x109.png 145w, /assets/img/posts/19.11.01/ProbablyNotCombatPoses.png 800w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;eye-candy&quot;&gt;EYE CANDY&lt;/h2&gt;
+
+&lt;p&gt;From Bwoink this month, we have the biogenerator and the ripley mech.&lt;/p&gt;
+
+&lt;div class=&quot;horizontal-2&quot;&gt;
+
+  &lt;p&gt;&lt;a href=&quot;/assets/img/posts/19.11.01/BwoinkBiogenerator.png&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/BwoinkBiogenerator-580x435.png 580w,    /assets/resized/BwoinkBiogenerator-290x218.png 290w,    /assets/resized/BwoinkBiogenerator-170x128.png 170w,    /assets/resized/BwoinkBiogenerator-145x109.png 145w, /assets/img/posts/19.11.01/BwoinkBiogenerator.png 800w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+  &lt;p&gt;&lt;a href=&quot;/assets/img/posts/19.11.01/BwoinkMiniMech.png&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/BwoinkMiniMech-580x435.png 580w,    /assets/resized/BwoinkMiniMech-290x218.png 290w,    /assets/resized/BwoinkMiniMech-170x128.png 170w,    /assets/resized/BwoinkMiniMech-145x109.png 145w, /assets/img/posts/19.11.01/BwoinkMiniMech.png 800w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;From Eiko, a crab and walking mushroom.&lt;/p&gt;
+
+&lt;div class=&quot;horizontal-2&quot;&gt;
+
+  &lt;p&gt;&lt;a href=&quot;/assets/img/posts/19.11.01/EikoCrab.png&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/EikoCrab-580x435.png 580w,    /assets/resized/EikoCrab-290x218.png 290w,    /assets/resized/EikoCrab-170x128.png 170w,    /assets/resized/EikoCrab-145x109.png 145w, /assets/img/posts/19.11.01/EikoCrab.png 800w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+  &lt;p&gt;&lt;a href=&quot;/assets/img/posts/19.11.01/EikoWalkingMushroom.png&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/EikoWalkingMushroom-580x435.png 580w,    /assets/resized/EikoWalkingMushroom-290x218.png 290w,    /assets/resized/EikoWalkingMushroom-170x128.png 170w,    /assets/resized/EikoWalkingMushroom-145x109.png 145w, /assets/img/posts/19.11.01/EikoWalkingMushroom.png 800w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;This month Cosmic decided to refurbish some of the station decorations with newer variations including, airlocks, tables, and walls panels. Also provided, a new potted plant and killer tomatoes.&lt;/p&gt;
+
+&lt;div class=&quot;horizontal-2&quot;&gt;
+
+  &lt;p&gt;&lt;a href=&quot;/assets/img/posts/19.11.01/CosmicAirlocks1.png&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/CosmicAirlocks1-580x435.png 580w,    /assets/resized/CosmicAirlocks1-290x218.png 290w,    /assets/resized/CosmicAirlocks1-170x128.png 170w,    /assets/resized/CosmicAirlocks1-145x109.png 145w, /assets/img/posts/19.11.01/CosmicAirlocks1.png 800w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+  &lt;p&gt;&lt;a href=&quot;/assets/img/posts/19.11.01/CosmicAirlocks2.png&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/CosmicAirlocks2-580x435.png 580w,    /assets/resized/CosmicAirlocks2-290x218.png 290w,    /assets/resized/CosmicAirlocks2-170x128.png 170w,    /assets/resized/CosmicAirlocks2-145x109.png 145w, /assets/img/posts/19.11.01/CosmicAirlocks2.png 800w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;horizontal-2&quot;&gt;
+
+  &lt;p&gt;&lt;a href=&quot;/assets/img/posts/19.11.01/CosmicTables.png&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/CosmicTables-580x435.png 580w,    /assets/resized/CosmicTables-290x218.png 290w,    /assets/resized/CosmicTables-170x128.png 170w,    /assets/resized/CosmicTables-145x109.png 145w, /assets/img/posts/19.11.01/CosmicTables.png 800w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+  &lt;p&gt;&lt;a href=&quot;/assets/img/posts/19.11.01/CosmicWallPanels.png&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/CosmicWallPanels-580x435.png 580w,    /assets/resized/CosmicWallPanels-290x218.png 290w,    /assets/resized/CosmicWallPanels-170x128.png 170w,    /assets/resized/CosmicWallPanels-145x109.png 145w, /assets/img/posts/19.11.01/CosmicWallPanels.png 800w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;horizontal-2&quot;&gt;
+
+  &lt;p&gt;&lt;a href=&quot;/assets/img/posts/19.11.01/CosmicOrangePlant.png&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/CosmicOrangePlant-580x435.png 580w,    /assets/resized/CosmicOrangePlant-290x218.png 290w,    /assets/resized/CosmicOrangePlant-170x128.png 170w,    /assets/resized/CosmicOrangePlant-145x109.png 145w, /assets/img/posts/19.11.01/CosmicOrangePlant.png 800w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+  &lt;p&gt;&lt;a href=&quot;/assets/img/posts/19.11.01/CosmicKillerTomato.png&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/CosmicKillerTomato-580x435.png 580w,    /assets/resized/CosmicKillerTomato-290x218.png 290w,    /assets/resized/CosmicKillerTomato-170x128.png 170w,    /assets/resized/CosmicKillerTomato-145x109.png 145w, /assets/img/posts/19.11.01/CosmicKillerTomato.png 800w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;One of our new modelers, Divibee, has provided quite a collection this month including meson goggles, multitool, buttbot, the changeling’s armblade, glowshrooms, and a room full of weapons designed to make you feel apprehension.&lt;/p&gt;
+
+&lt;div class=&quot;horizontal-2&quot;&gt;
+
+  &lt;p&gt;&lt;a href=&quot;/assets/img/posts/19.11.01/DiviMesonGoggles.png&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/DiviMesonGoggles-580x435.png 580w,    /assets/resized/DiviMesonGoggles-290x218.png 290w,    /assets/resized/DiviMesonGoggles-170x128.png 170w,    /assets/resized/DiviMesonGoggles-145x109.png 145w, /assets/img/posts/19.11.01/DiviMesonGoggles.png 800w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+  &lt;p&gt;&lt;a href=&quot;/assets/img/posts/19.11.01/DiviMultitool.png&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/DiviMultitool-580x435.png 580w,    /assets/resized/DiviMultitool-290x218.png 290w,    /assets/resized/DiviMultitool-170x128.png 170w,    /assets/resized/DiviMultitool-145x109.png 145w, /assets/img/posts/19.11.01/DiviMultitool.png 800w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;horizontal-2&quot;&gt;
+
+  &lt;p&gt;&lt;a href=&quot;/assets/img/posts/19.11.01/DiviButtbot.png&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/DiviButtbot-580x435.png 580w,    /assets/resized/DiviButtbot-290x218.png 290w,    /assets/resized/DiviButtbot-170x128.png 170w,    /assets/resized/DiviButtbot-145x109.png 145w, /assets/img/posts/19.11.01/DiviButtbot.png 800w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+  &lt;p&gt;&lt;a href=&quot;/assets/img/posts/19.11.01/DiviArmblade.png&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/DiviArmblade-580x435.png 580w,    /assets/resized/DiviArmblade-290x218.png 290w,    /assets/resized/DiviArmblade-170x128.png 170w,    /assets/resized/DiviArmblade-145x109.png 145w, /assets/img/posts/19.11.01/DiviArmblade.png 800w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;a href=&quot;/assets/img/posts/19.11.01/DiviNullSet.png&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/DiviNullSet-580x435.png 580w,    /assets/resized/DiviNullSet-290x218.png 290w,    /assets/resized/DiviNullSet-170x128.png 170w,    /assets/resized/DiviNullSet-145x109.png 145w, /assets/img/posts/19.11.01/DiviNullSet.png 800w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;/assets/img/posts/19.11.01/DiviGlowshrooms.png&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/DiviGlowshrooms-580x435.png 580w,    /assets/resized/DiviGlowshrooms-290x218.png 290w,    /assets/resized/DiviGlowshrooms-170x128.png 170w,    /assets/resized/DiviGlowshrooms-145x109.png 145w, /assets/img/posts/19.11.01/DiviGlowshrooms.png 800w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;From Erythro, the portable air pump and chemical heater.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;/assets/img/posts/19.11.01/ErythroMachines.png&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/ErythroMachines-580x435.png 580w,    /assets/resized/ErythroMachines-290x218.png 290w,    /assets/resized/ErythroMachines-170x128.png 170w,    /assets/resized/ErythroMachines-145x109.png 145w, /assets/img/posts/19.11.01/ErythroMachines.png 800w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;From FEB, that one Soviet soda machine.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;/assets/img/posts/19.11.01/FEBVoda.png&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/FEBVoda-580x435.png 580w,    /assets/resized/FEBVoda-290x218.png 290w,    /assets/resized/FEBVoda-170x128.png 170w,    /assets/resized/FEBVoda-145x109.png 145w, /assets/img/posts/19.11.01/FEBVoda.png 800w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;From Fuu, body bags, raisins, ramen, and various frozen foodstuffs.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;/assets/img/posts/19.11.01/FuuBodybag.png&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/FuuBodybag-580x435.png 580w,    /assets/resized/FuuBodybag-290x218.png 290w,    /assets/resized/FuuBodybag-170x128.png 170w,    /assets/resized/FuuBodybag-145x109.png 145w, /assets/img/posts/19.11.01/FuuBodybag.png 800w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;/assets/img/posts/19.11.01/FuuFood.png&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/FuuFood-580x435.png 580w,    /assets/resized/FuuFood-290x218.png 290w,    /assets/resized/FuuFood-170x128.png 170w,    /assets/resized/FuuFood-145x109.png 145w, /assets/img/posts/19.11.01/FuuFood.png 800w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;From Goao, some borgs, bots, space carps, a frog, a goose, a golden wheel chair, and some new dispensers.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;/assets/img/posts/19.11.01/GoaoBorgs.png&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/GoaoBorgs-580x435.png 580w,    /assets/resized/GoaoBorgs-290x218.png 290w,    /assets/resized/GoaoBorgs-170x128.png 170w,    /assets/resized/GoaoBorgs-145x109.png 145w, /assets/img/posts/19.11.01/GoaoBorgs.png 800w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;/assets/img/posts/19.11.01/GoaoBots.png&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/GoaoBots-580x435.png 580w,    /assets/resized/GoaoBots-290x218.png 290w,    /assets/resized/GoaoBots-170x128.png 170w,    /assets/resized/GoaoBots-145x109.png 145w, /assets/img/posts/19.11.01/GoaoBots.png 800w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;div class=&quot;horizontal-2&quot;&gt;
+
+  &lt;p&gt;&lt;a href=&quot;/assets/img/posts/19.11.01/GoaoSpacecarps.png&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/GoaoSpacecarps-580x435.png 580w,    /assets/resized/GoaoSpacecarps-290x218.png 290w,    /assets/resized/GoaoSpacecarps-170x128.png 170w,    /assets/resized/GoaoSpacecarps-145x109.png 145w, /assets/img/posts/19.11.01/GoaoSpacecarps.png 800w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+  &lt;p&gt;&lt;a href=&quot;/assets/img/posts/19.11.01/GoaoAnimals.png&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/GoaoAnimals-580x435.png 580w,    /assets/resized/GoaoAnimals-290x218.png 290w,    /assets/resized/GoaoAnimals-170x128.png 170w,    /assets/resized/GoaoAnimals-145x109.png 145w, /assets/img/posts/19.11.01/GoaoAnimals.png 800w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;horizontal-2&quot;&gt;
+
+  &lt;p&gt;&lt;a href=&quot;/assets/img/posts/19.11.01/GoaoGoldenWheelchair.png&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/GoaoGoldenWheelchair-580x435.png 580w,    /assets/resized/GoaoGoldenWheelchair-290x218.png 290w,    /assets/resized/GoaoGoldenWheelchair-170x128.png 170w,    /assets/resized/GoaoGoldenWheelchair-145x109.png 145w, /assets/img/posts/19.11.01/GoaoGoldenWheelchair.png 800w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+  &lt;p&gt;&lt;a href=&quot;/assets/img/posts/19.11.01/GoaoDispensers.png&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/GoaoDispensers-580x435.png 580w,    /assets/resized/GoaoDispensers-290x218.png 290w,    /assets/resized/GoaoDispensers-170x128.png 170w,    /assets/resized/GoaoDispensers-145x109.png 145w, /assets/img/posts/19.11.01/GoaoDispensers.png 800w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Another new face, Liddius, has come along and joined us this month, contributing a jukebox, mulebot, chefbot, flamethrower, and ion rifle, as well as some pie cannons and pneumatic cannons fitted for various gas tanks.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;/assets/img/posts/19.11.01/LiddiusJukebox.png&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/LiddiusJukebox-580x435.png 580w,    /assets/resized/LiddiusJukebox-290x218.png 290w,    /assets/resized/LiddiusJukebox-170x128.png 170w,    /assets/resized/LiddiusJukebox-145x109.png 145w, /assets/img/posts/19.11.01/LiddiusJukebox.png 800w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;div class=&quot;horizontal-2&quot;&gt;
+
+  &lt;p&gt;&lt;a href=&quot;/assets/img/posts/19.11.01/LiddiusMULEBot.png&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/LiddiusMULEBot-580x435.png 580w,    /assets/resized/LiddiusMULEBot-290x218.png 290w,    /assets/resized/LiddiusMULEBot-170x128.png 170w,    /assets/resized/LiddiusMULEBot-145x109.png 145w, /assets/img/posts/19.11.01/LiddiusMULEBot.png 800w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+  &lt;p&gt;&lt;a href=&quot;/assets/img/posts/19.11.01/LiddiusChefbot.png&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/LiddiusChefbot-580x435.png 580w,    /assets/resized/LiddiusChefbot-290x218.png 290w,    /assets/resized/LiddiusChefbot-170x128.png 170w,    /assets/resized/LiddiusChefbot-145x109.png 145w, /assets/img/posts/19.11.01/LiddiusChefbot.png 800w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;horizontal-2&quot;&gt;
+
+  &lt;p&gt;&lt;a href=&quot;/assets/img/posts/19.11.01/LiddiusFlamethrower.png&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/LiddiusFlamethrower-580x435.png 580w,    /assets/resized/LiddiusFlamethrower-290x218.png 290w,    /assets/resized/LiddiusFlamethrower-170x128.png 170w,    /assets/resized/LiddiusFlamethrower-145x109.png 145w, /assets/img/posts/19.11.01/LiddiusFlamethrower.png 800w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+  &lt;p&gt;&lt;a href=&quot;/assets/img/posts/19.11.01/LiddiusIonRifle.png&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/LiddiusIonRifle-580x435.png 580w,    /assets/resized/LiddiusIonRifle-290x218.png 290w,    /assets/resized/LiddiusIonRifle-170x128.png 170w,    /assets/resized/LiddiusIonRifle-145x109.png 145w, /assets/img/posts/19.11.01/LiddiusIonRifle.png 800w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;a href=&quot;/assets/img/posts/19.11.01/LiddiusPieCannon.png&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/LiddiusPieCannon-580x435.png 580w,    /assets/resized/LiddiusPieCannon-290x218.png 290w,    /assets/resized/LiddiusPieCannon-170x128.png 170w,    /assets/resized/LiddiusPieCannon-145x109.png 145w, /assets/img/posts/19.11.01/LiddiusPieCannon.png 800w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;/assets/img/posts/19.11.01/LiddiusPneumaticCannon.png&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/LiddiusPneumaticCannon-580x435.png 580w,    /assets/resized/LiddiusPneumaticCannon-290x218.png 290w,    /assets/resized/LiddiusPneumaticCannon-170x128.png 170w,    /assets/resized/LiddiusPneumaticCannon-145x109.png 145w, /assets/img/posts/19.11.01/LiddiusPneumaticCannon.png 800w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Finally, a pulse pistol from LightVelox.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;/assets/img/posts/19.11.01/LightVeloxPulsePistol.png&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/LightVeloxPulsePistol-580x435.png 580w,    /assets/resized/LightVeloxPulsePistol-290x218.png 290w,    /assets/resized/LightVeloxPulsePistol-170x128.png 170w,    /assets/resized/LightVeloxPulsePistol-145x109.png 145w, /assets/img/posts/19.11.01/LightVeloxPulsePistol.png 800w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;notes&quot;&gt;NOTES&lt;/h3&gt;
+
+&lt;p&gt;This is our monthly devblog, for the purpose of legal evidence when we are inevitably sued for infringing on the idea of putting a station in space. CosmicCoincidence has pilfered Sunberry’s grave, put their body at a desk, and then puppeteered their stiff hands around until a devblog was made.&lt;/p&gt;
+
+&lt;p&gt;Complementary (not optional) toolbox and floor pills can be found at our &lt;a href=&quot;https://discord.gg/3ny9tdH&quot; target=&quot;_blank&quot;&gt;Discord&lt;/a&gt;. Bring a friend and use them as a negotiating tool.&lt;/p&gt;</content><author><name></name></author><summary type="html">Clench your eyes shut and be gently woken up. Close your eyes but be guided by the hand.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://ss3d.space/assets/img/posts/19.11.01/November19Wallpaper.png" /></entry><entry><title type="html">19.10: Spooktober Recap</title><link href="https://ss3d.space/2019/11/11/19.10.html" rel="alternate" type="text/html" title="19.10: Spooktober Recap" /><published>2019-11-11T14:30:00+00:00</published><updated>2019-11-11T14:30:00+00:00</updated><id>https://ss3d.space/2019/11/11/19.10</id><content type="html" xml:base="https://ss3d.space/2019/11/11/19.10.html">&lt;p&gt;&lt;em&gt;I was a little afraid, myself, to be frank.&lt;/em&gt;&lt;/p&gt;
 
 &lt;h1 id=&quot;october-recap&quot;&gt;October Recap&lt;/h1&gt;
 
