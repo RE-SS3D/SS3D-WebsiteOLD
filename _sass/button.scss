@@ -53,3 +53,16 @@
         background-color: var(--color-button-discord-active);
     }
 }
+
+.reddit-colors {
+    background-color: $color-button-reddit;
+    background-color: var(--color-button-reddit);
+    &:hover {
+        background-color: $color-button-reddit-hover;
+        background-color: var(--color-button-reddit-hover);
+    }
+    &:active {
+        background-color: $color-button-reddit-active;
+        background-color: var(--color-button-reddit-active);
+    }
+}

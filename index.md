@@ -7,8 +7,10 @@ layout: home
 
 RE:SS3D is a resurrection of the SS3D project, which has the goal of recreating the SS13 game experience in a 3D setting.
 
-[Join our Discord]({{ site.discord_url }}){: .button .discord-colors}
+[Discord]({{ site.discord_url }}){: .button .discord-colors}
 
-[GitHub Roadmap]({{ site.github_project_url }}){: .button .github-colors}
+[GitHub]({{ site.github_url }}){: .button .github-colors}
+
+[Reddit]({{ site.reddit_url }}){: .button .reddit-colors}
 
 ## Our latest blog post
