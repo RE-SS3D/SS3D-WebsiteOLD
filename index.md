@@ -11,4 +11,6 @@ RE:SS3D is a resurrection of the SS3D project, which has the goal of recreating 
 
 [GitHub]({{ site.github_url }}){: .button .github-colors}
 
+[Reddit]({{ site.reddit_url }}){: .button .reddit-colors}
+
 ## Our latest blog post
