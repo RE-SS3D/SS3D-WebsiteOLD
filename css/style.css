@@ -12,6 +12,9 @@
   --color-button-discord: #7289da;
   --color-button-discord-hover: #677bc4;
   --color-button-discord-active: #5b6eae;
+  --color-button-reddit: #ff4500;
+  --color-button-reddit-hover: #ff6a33;
+  --color-button-reddit-active: #cc3700;
   --color-button-hover: #a4362d;
   --color-button-active: #903027;
   --color-navbar: #1e4684;
@@ -36,6 +39,9 @@
     --color-button-discord: #7289da;
     --color-button-discord-hover: #677bc4;
     --color-button-discord-active: #5b6eae;
+    --color-button-reddit: #ff4500;
+    --color-button-reddit-hover: #ff6a33;
+    --color-button-reddit-active: #cc3700;
     --color-button-hover: #a4362d;
     --color-button-active: #903027;
     --color-navbar: #2c67c2;
@@ -58,6 +64,9 @@
   --color-button-discord: #7289da;
   --color-button-discord-hover: #677bc4;
   --color-button-discord-active: #5b6eae;
+  --color-button-reddit: #ff4500;
+  --color-button-reddit-hover: #ff6a33;
+  --color-button-reddit-active: #cc3700;
   --color-button-hover: #a4362d;
   --color-button-active: #903027;
   --color-navbar: #1e4684;
@@ -81,6 +90,9 @@
   --color-button-discord: #7289da;
   --color-button-discord-hover: #677bc4;
   --color-button-discord-active: #5b6eae;
+  --color-button-reddit: #ff4500;
+  --color-button-reddit-hover: #ff6a33;
+  --color-button-reddit-active: #cc3700;
   --color-button-hover: #a4362d;
   --color-button-active: #903027;
   --color-navbar: #2c67c2;
@@ -438,6 +450,27 @@ video {
   .discord-colors:active {
     background-color: #5b6eae;
     background-color: var(--color-button-discord-active); }
+
+.reddit-colors {
+  background-color: #ff4500;
+  background-color: var(--color-button-reddit); }
+  .reddit-colors:hover {
+    background-color: #ff6a33;
+    background-color: var(--color-button-reddit-hover); }
+  .reddit-colors:active {
+    background-color: #cc3700;
+    background-color: var(--color-button-reddit-active); }
+
+.horizontal-buttons a {
+  margin-bottom: 1em; }
+@media (min-width: 624px) {
+  .horizontal-buttons p {
+    display: flex;
+    justify-content: space-between; }
+    .horizontal-buttons p a {
+      margin-right: 5px; }
+      .horizontal-buttons p a:last-child {
+        margin-right: 0; } }
 
 .post-description {
   white-space: pre-line; }
