@@ -66,3 +66,21 @@
         background-color: var(--color-button-reddit-active);
     }
 }
+
+.horizontal-buttons {
+    a {
+        margin-bottom: 1em;
+    }
+    @include respond-to(desktop) { 
+        p {
+            display: flex;
+            justify-content: space-between;
+            a {
+                margin-right: 5px;
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+}
