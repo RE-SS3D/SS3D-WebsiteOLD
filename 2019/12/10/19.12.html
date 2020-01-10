@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="/css/style.css">
+        <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+        <meta name="theme-color" content="#1e4684">
+        <script>
+            //theme toggle
+            //determines if the user has a set theme
+            function detectColorScheme(){
+                var theme="dark";    //default to dark
+
+                //local storage is used to override OS theme settings
+                if(localStorage.getItem("theme")){
+                    if(localStorage.getItem("theme") == "light"){
+                        var theme = "light";
+                    }
+                } else if(!window.matchMedia) {
+                    //matchMedia method not supported
+                    return false;
+                } else if(window.matchMedia("(prefers-color-scheme: light)").matches) {
+                    //OS theme setting detected as dark
+                    var theme = "light";
+                }
+
+                //dark theme preferred, set document with a `data-theme` attribute
+                if (theme=="light") {
+                    document.documentElement.setAttribute("data-theme", "light");
+                } else {
+                    document.documentElement.setAttribute("data-theme", "dark");
+                }
+            }
+            detectColorScheme();
+            
+            // Function to keep the navigation bars scroll offset when changing pages.
+            setScroll = function(url, scroll) {
+                if(scroll != 0) {
+                    window.location.href = url + '?scroll=' + scroll;
+                    return;
+                }
+                window.location.href = url;
+            }
+            // Set navigation bar scroll offset, if it exists.
+            getScroll = function() {
+                var url = new URL(window.location.href);
+                var scroll = url.searchParams.get("scroll");
+                if (scroll != 0) {
+                    var el = document.getElementById('scroll');
+                    el.scrollLeft = scroll;
+                }
+            }
+            if (window.addEventListener) {
+                window.addEventListener('load', getScroll, false);
+            }
+            else if (window.attachEvent) {
+                window.attachEvent('onload', getScroll);
+            }
+        </script>
+        <script>
+            /*! modernizr 3.6.0 (Custom Build) | MIT *
+            * https://modernizr.com/download/?-webp-setclasses !*/
+            !function(e,n,A){function o(e,n){return typeof e===n}function t(){var e,n,A,t,a,i,l;for(var f in r)if(r.hasOwnProperty(f)){if(e=[],n=r[f],n.name&&(e.push(n.name.toLowerCase()),n.options&&n.options.aliases&&n.options.aliases.length))for(A=0;A<n.options.aliases.length;A++)e.push(n.options.aliases[A].toLowerCase());for(t=o(n.fn,"function")?n.fn():n.fn,a=0;a<e.length;a++)i=e[a],l=i.split("."),1===l.length?Modernizr[l[0]]=t:(!Modernizr[l[0]]||Modernizr[l[0]]instanceof Boolean||(Modernizr[l[0]]=new Boolean(Modernizr[l[0]])),Modernizr[l[0]][l[1]]=t),s.push((t?"":"no-")+l.join("-"))}}function a(e){var n=u.className,A=Modernizr._config.classPrefix||"";if(c&&(n=n.baseVal),Modernizr._config.enableJSClass){var o=new RegExp("(^|\\s)"+A+"no-js(\\s|$)");n=n.replace(o,"$1"+A+"js$2")}Modernizr._config.enableClasses&&(n+=" "+A+e.join(" "+A),c?u.className.baseVal=n:u.className=n)}function i(e,n){if("object"==typeof e)for(var A in e)f(e,A)&&i(A,e[A]);else{e=e.toLowerCase();var o=e.split("."),t=Modernizr[o[0]];if(2==o.length&&(t=t[o[1]]),"undefined"!=typeof t)return Modernizr;n="function"==typeof n?n():n,1==o.length?Modernizr[o[0]]=n:(!Modernizr[o[0]]||Modernizr[o[0]]instanceof Boolean||(Modernizr[o[0]]=new Boolean(Modernizr[o[0]])),Modernizr[o[0]][o[1]]=n),a([(n&&0!=n?"":"no-")+o.join("-")]),Modernizr._trigger(e,n)}return Modernizr}var s=[],r=[],l={_version:"3.6.0",_config:{classPrefix:"",enableClasses:!0,enableJSClass:!0,usePrefixes:!0},_q:[],on:function(e,n){var A=this;setTimeout(function(){n(A[e])},0)},addTest:function(e,n,A){r.push({name:e,fn:n,options:A})},addAsyncTest:function(e){r.push({name:null,fn:e})}},Modernizr=function(){};Modernizr.prototype=l,Modernizr=new Modernizr;var f,u=n.documentElement,c="svg"===u.nodeName.toLowerCase();!function(){var e={}.hasOwnProperty;f=o(e,"undefined")||o(e.call,"undefined")?function(e,n){return n in e&&o(e.constructor.prototype[n],"undefined")}:function(n,A){return e.call(n,A)}}(),l._l={},l.on=function(e,n){this._l[e]||(this._l[e]=[]),this._l[e].push(n),Modernizr.hasOwnProperty(e)&&setTimeout(function(){Modernizr._trigger(e,Modernizr[e])},0)},l._trigger=function(e,n){if(this._l[e]){var A=this._l[e];setTimeout(function(){var e,o;for(e=0;e<A.length;e++)(o=A[e])(n)},0),delete this._l[e]}},Modernizr._q.push(function(){l.addTest=i}),Modernizr.addAsyncTest(function(){function e(e,n,A){function o(n){var o=n&&"load"===n.type?1==t.width:!1,a="webp"===e;i(e,a&&o?new Boolean(o):o),A&&A(n)}var t=new Image;t.onerror=o,t.onload=o,t.src=n}var n=[{uri:"data:image/webp;base64,UklGRiQAAABXRUJQVlA4IBgAAAAwAQCdASoBAAEAAwA0JaQAA3AA/vuUAAA=",name:"webp"},{uri:"data:image/webp;base64,UklGRkoAAABXRUJQVlA4WAoAAAAQAAAAAAAAAAAAQUxQSAwAAAABBxAR/Q9ERP8DAABWUDggGAAAADABAJ0BKgEAAQADADQlpAADcAD++/1QAA==",name:"webp.alpha"},{uri:"data:image/webp;base64,UklGRlIAAABXRUJQVlA4WAoAAAASAAAAAAAAAAAAQU5JTQYAAAD/////AABBTk1GJgAAAAAAAAAAAAAAAAAAAGQAAABWUDhMDQAAAC8AAAAQBxAREYiI/gcA",name:"webp.animation"},{uri:"data:image/webp;base64,UklGRh4AAABXRUJQVlA4TBEAAAAvAAAAAAfQ//73v/+BiOh/AAA=",name:"webp.lossless"}],A=n.shift();e(A.name,A.uri,function(A){if(A&&"load"===A.type)for(var o=0;o<n.length;o++)e(n[o].name,n[o].uri)})}),t(),a(s),delete l.addTest,delete l.addAsyncTest;for(var p=0;p<Modernizr._q.length;p++)Modernizr._q[p]();e.Modernizr=Modernizr}(window,document);
+        </script>
+        <!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>19.12: December Recap | RE:SS3D</title>
+<meta name="generator" content="Jekyll v3.8.5" />
+<meta property="og:title" content="19.12: December Recap" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="“A shift toward smoother progression.”" />
+<meta property="og:description" content="“A shift toward smoother progression.”" />
+<link rel="canonical" href="https://ss3d.space/2019/12/10/19.12.html" />
+<meta property="og:url" content="https://ss3d.space/2019/12/10/19.12.html" />
+<meta property="og:site_name" content="RE:SS3D" />
+<meta property="og:image" content="https://ss3d.space/assets/img/posts/19.12.01/BugWallpaper2.png" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2019-12-10T14:30:00+00:00" />
+<script type="application/ld+json">
+{"description":"“A shift toward smoother progression.”","@type":"BlogPosting","url":"https://ss3d.space/2019/12/10/19.12.html","headline":"19.12: December Recap","dateModified":"2019-12-10T14:30:00+00:00","datePublished":"2019-12-10T14:30:00+00:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://ss3d.space/2019/12/10/19.12.html"},"image":"https://ss3d.space/assets/img/posts/19.12.01/BugWallpaper2.png","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+        <link type="application/atom+xml" rel="alternate" href="https://ss3d.space/feed.xml" title="RE:SS3D" />
+        <link rel="stylesheet" type="text/css" href="/assets/css/cookieconsent.min.css" />
+<script src="/assets/js/cookieconsent.min.js"></script>
+<script>
+window.addEventListener("load", function(){
+window.cookieconsent.initialise({
+"palette": {
+    "popup": {
+    "background": "#1e4684",
+    "text": "#dadada"
+    },
+    "button": {
+    "background": "#b83d32",
+    "text": "#ffffff"
+    }
+},
+"theme": "classic",
+"content": {
+    "message": "This website uses cookies for analytics.",
+    "dismiss": "Ok",
+    "href": "/privacy"
+}
+})});
+</script>
+        <!-- Analytics -->
+        
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-140169746-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-140169746-1');
+</script>
+
+        
+    </head>
+    <body class="preload">
+        <div class="nav-background">
+            <nav>
+                <div id="scroll" class="ul-container">
+    <ul class="ul-reset">
+        
+        <li><a onclick="setScroll('/',parentNode.parentNode.parentNode.scrollLeft); return false;" class="" href="/">Home</a></li>
+        
+        <li><a onclick="setScroll('/devblog/',parentNode.parentNode.parentNode.scrollLeft); return false;" class="" href="/devblog/">Devblog</a></li>
+        
+        <li><a onclick="setScroll('/faq/',parentNode.parentNode.parentNode.scrollLeft); return false;" class="" href="/faq/">FAQ</a></li>
+        
+        <li><a onclick="setScroll('/about/',parentNode.parentNode.parentNode.scrollLeft); return false;" class="" href="/about/">About</a></li>
+        
+        <li><a onclick="setScroll('/contribute/',parentNode.parentNode.parentNode.scrollLeft); return false;" class="" href="/contribute/">Contribute</a></li>
+        
+    </ul>
+</div>
+            </nav>
+        </div>
+        <div class="body-content">
+            <header class="header">
+    <div>
+        <picture class="logo" >
+            <source srcset="/assets/img/logo.webp" type="image/webp">
+            <source srcset="/assets/img/logo.png" type="image/png"> 
+            <img alt="" src="/assets/img/logo.png">
+        </picture>
+        <h1>RE: Space Station 3D</h1>
+        <p>A 3D recreation of Space Station 13</p>
+    </div>
+</header>
+            <main>
+                
+
+
+
+<a href="/assets/img/posts/19.12.01/BugWallpaper2.png"><img src="/" alt="" srcset="    /assets/resized/BugWallpaper2-580x326.png 580w,    /assets/resized/BugWallpaper2-290x163.png 290w,    /assets/resized/BugWallpaper2-170x96.png 170w,    /assets/resized/BugWallpaper2-145x82.png 145w, /assets/img/posts/19.12.01/BugWallpaper2.png 1920w" sizes="(max-width: 624px) 100vw, 578px, 580px"></a>
+<h1>19.12: December Recap</h1>
+<h5><i>on Tuesday, December 10, 2019</i></h5>
+<p>“A good system shortens the road to the goal.”
+-Orison Swett Marden</p>
+
+<h1 id="december-recap">December Recap</h1>
+
+<p>The season of giving has brought more new faces interested in contributing both through art and code! Now with so many willing faces but little direction, we have been discussing for some time various logistical changes to increase documentation, organization, and direction, which should speed and ease the over-all work-flow. But hitting some roadblocks trying to get these changes rolling, has unfortunately prevented us from being as timely with them as we would like. That being said, changes are taking place and direction beginning to take hold.</p>
+
+<h2 id="animations">Animations</h2>
+
+<p><strong>Probably Not</strong>, who has been with us since beep’s SS3D days, continues to patiently craft character animations for us without loosing stride or getting discouraged when we are slow. This month he has provided 4 more unique animations (opening cig pack and removing a cig, placing cig in mouth, opening lighter, using lighter). These animations will be associated with indiviual actions, but will be smoothed together when the player queues several actions quickly.</p>
+
+<video autoplay="autoplay" muted="" loop="loop" poster="/assets/img/posts/19.12.01/ProbablyNotSmoke.png">
+  <source src="/assets/img/posts/19.12.01/ProbablyNotSmoke.webm" type="video/webm" />
+  <source src="/assets/img/posts/19.12.01/ProbablyNotSmoke.mp4" type="video/mp4" />
+</video>
+
+<h2 id="textures">Textures</h2>
+
+<p>Textures can be quite a lot of fun, and this martial arts scroll and several textures from <strong>Sanuki</strong> are no exception. Applying one of the custom <a href="/assets/img/posts/19.12.01/SanukiMartialArtsScrollTexture.png" target="_blank">texture</a> files adds elegance and character to this simple scroll.</p>
+
+<p><a href="/assets/img/posts/19.12.01/SanukiMartialArtsScrollTexture.png"><img src="/" alt="" srcset="    /assets/resized/SanukiMartialArtsScrollTexture-290x290.png 290w,    /assets/resized/SanukiMartialArtsScrollTexture-170x170.png 170w,    /assets/resized/SanukiMartialArtsScrollTexture-145x145.png 145w, /assets/img/posts/19.12.01/SanukiMartialArtsScrollTexture.png 512w" sizes="(max-width: 624px) 100vw, 578px, 580px" /></a></p>
+
+<p>Animated textures can be just as fun. Here is a positronic brain from <strong>CosmicCoincidence</strong> with an electrifying video texture!</p>
+
+<video autoplay="autoplay" muted="" loop="loop" poster="/assets/img/posts/19.12.01/CosmicPositronicBrain.png">
+  <source src="/assets/img/posts/19.12.01/CosmicPositronicBrain.webm" type="video/webm" />
+  <source src="/assets/img/posts/19.12.01/CosmicPositronicBrain.mp4" type="video/mp4" />
+</video>
+
+<h2 id="models">Models</h2>
+
+<p>To get some of us in the holiday mood, <strong>CosmicCoincidence</strong> has contributed several festive models, including some Christmas trees, lights, presents, stockings, candycanes, as well as a fireplace.</p>
+
+<p><a href="/assets/img/posts/19.12.01/CosmicChristmasDecor.png"><img src="/" alt="" srcset="    /assets/resized/CosmicChristmasDecor-580x435.png 580w,    /assets/resized/CosmicChristmasDecor-290x218.png 290w,    /assets/resized/CosmicChristmasDecor-170x128.png 170w,    /assets/resized/CosmicChristmasDecor-145x109.png 145w, /assets/img/posts/19.12.01/CosmicChristmasDecor.png 800w" sizes="(max-width: 624px) 100vw, 578px, 580px" /></a></p>
+
+<p><strong>Goao</strong> decided to join the festive fun by submitting a suspiciously robust looking snowman.</p>
+
+<p><a href="/assets/img/posts/19.12.01/GoaoSnowman.png"><img src="/" alt="" srcset="    /assets/resized/GoaoSnowman-580x435.png 580w,    /assets/resized/GoaoSnowman-290x218.png 290w,    /assets/resized/GoaoSnowman-170x128.png 170w,    /assets/resized/GoaoSnowman-145x109.png 145w, /assets/img/posts/19.12.01/GoaoSnowman.png 800w" sizes="(max-width: 624px) 100vw, 578px, 580px" /></a></p>
+
+<p>Contributing to both the holiday mood as well as our characters, <strong>Divibee</strong> has made some festive headwear and an IPC.</p>
+
+<div class="horizontal-2">
+
+  <p><a href="/assets/img/posts/19.12.01/DiviXmasHats.png"><img src="/" alt="" srcset="    /assets/resized/DiviXmasHats-580x431.png 580w,    /assets/resized/DiviXmasHats-290x215.png 290w,    /assets/resized/DiviXmasHats-170x126.png 170w,    /assets/resized/DiviXmasHats-145x108.png 145w, /assets/img/posts/19.12.01/DiviXmasHats.png 1093w" sizes="(max-width: 624px) 50vw, 290px" /></a></p>
+
+  <p><a href="/assets/img/posts/19.12.01/DiviIPC.png"><img src="/" alt="" srcset="    /assets/resized/DiviIPC-580x435.png 580w,    /assets/resized/DiviIPC-290x218.png 290w,    /assets/resized/DiviIPC-170x128.png 170w,    /assets/resized/DiviIPC-145x109.png 145w, /assets/img/posts/19.12.01/DiviIPC.png 800w" sizes="(max-width: 624px) 50vw, 290px" /></a></p>
+</div>
+
+<p><strong>Indor</strong> again does some fine work for us, by contributing an UZI sub-machine gun with foldable stock and detachable suppressor and magazine, as well as a katana, and some reall cool modular transit tubes!</p>
+
+<div class="horizontal-2">
+
+  <p><a href="/assets/img/posts/19.12.01/IndorUZI.png"><img src="/" alt="" srcset="    /assets/resized/IndorUZI-580x435.png 580w,    /assets/resized/IndorUZI-290x218.png 290w,    /assets/resized/IndorUZI-170x128.png 170w,    /assets/resized/IndorUZI-145x109.png 145w, /assets/img/posts/19.12.01/IndorUZI.png 800w" sizes="(max-width: 624px) 50vw, 290px" /></a></p>
+
+  <p><a href="/assets/img/posts/19.12.01/IndorKatana.png"><img src="/" alt="" srcset="    /assets/resized/IndorKatana-580x435.png 580w,    /assets/resized/IndorKatana-290x218.png 290w,    /assets/resized/IndorKatana-170x128.png 170w,    /assets/resized/IndorKatana-145x109.png 145w, /assets/img/posts/19.12.01/IndorKatana.png 800w" sizes="(max-width: 624px) 50vw, 290px" /></a></p>
+</div>
+
+<p><a href="/assets/img/posts/19.12.01/IndorTransitTubes.png"><img src="/" alt="" srcset="    /assets/resized/IndorTransitTubes-580x435.png 580w,    /assets/resized/IndorTransitTubes-290x218.png 290w,    /assets/resized/IndorTransitTubes-170x128.png 170w,    /assets/resized/IndorTransitTubes-145x109.png 145w, /assets/img/posts/19.12.01/IndorTransitTubes.png 800w" sizes="(max-width: 624px) 100vw, 578px, 580px" /></a></p>
+
+<p><strong>UnevenPrankster</strong> is back with some syndicate gear including, a mini-bomb, reinforced bola, X4 explosive, power sink, and telecrystal. Also from them this month, a cute spiderling and some tape.</p>
+
+<p><a href="/assets/img/posts/19.12.01/UnevenPranksterSyndicate.png"><img src="/" alt="" srcset="    /assets/resized/UnevenPranksterSyndicate-580x435.png 580w,    /assets/resized/UnevenPranksterSyndicate-290x218.png 290w,    /assets/resized/UnevenPranksterSyndicate-170x128.png 170w,    /assets/resized/UnevenPranksterSyndicate-145x109.png 145w, /assets/img/posts/19.12.01/UnevenPranksterSyndicate.png 800w" sizes="(max-width: 624px) 100vw, 578px, 580px" /></a></p>
+
+<div class="horizontal-2">
+
+  <p><a href="/assets/img/posts/19.12.01/UnevenPranksterSpiderling.png"><img src="/" alt="" srcset="    /assets/resized/UnevenPranksterSpiderling-580x435.png 580w,    /assets/resized/UnevenPranksterSpiderling-290x218.png 290w,    /assets/resized/UnevenPranksterSpiderling-170x128.png 170w,    /assets/resized/UnevenPranksterSpiderling-145x109.png 145w, /assets/img/posts/19.12.01/UnevenPranksterSpiderling.png 800w" sizes="(max-width: 624px) 50vw, 290px" /></a></p>
+
+  <p><a href="/assets/img/posts/19.12.01/UnevenPranksterTape.png"><img src="/" alt="" srcset="    /assets/resized/UnevenPranksterTape-580x435.png 580w,    /assets/resized/UnevenPranksterTape-290x218.png 290w,    /assets/resized/UnevenPranksterTape-170x128.png 170w,    /assets/resized/UnevenPranksterTape-145x109.png 145w, /assets/img/posts/19.12.01/UnevenPranksterTape.png 800w" sizes="(max-width: 624px) 50vw, 290px" /></a></p>
+</div>
+
+<p>From <strong>Liddius</strong> this month, a power-hammer and power-pickaxe.</p>
+
+<p><a href="/assets/img/posts/19.12.01/LiddiusPowerTools.png"><img src="/" alt="" srcset="    /assets/resized/LiddiusPowerTools-580x435.png 580w,    /assets/resized/LiddiusPowerTools-290x218.png 290w,    /assets/resized/LiddiusPowerTools-170x128.png 170w,    /assets/resized/LiddiusPowerTools-145x109.png 145w, /assets/img/posts/19.12.01/LiddiusPowerTools.png 800w" sizes="(max-width: 624px) 100vw, 578px, 580px" /></a></p>
+
+<p>New this month is <strong>GPTeles</strong>, who has submitted an ore machine, holo-projector, as well as several surgery-related items including updated blood bags, iv stand, bone gel, cautery tool, and surgical drapes.</p>
+
+<p><a href="/assets/img/posts/19.12.01/GPTelesOreMachineAndHoloProjector.png"><img src="/" alt="" srcset="    /assets/resized/GPTelesOreMachineAndHoloProjector-580x435.png 580w,    /assets/resized/GPTelesOreMachineAndHoloProjector-290x218.png 290w,    /assets/resized/GPTelesOreMachineAndHoloProjector-170x128.png 170w,    /assets/resized/GPTelesOreMachineAndHoloProjector-145x109.png 145w, /assets/img/posts/19.12.01/GPTelesOreMachineAndHoloProjector.png 800w" sizes="(max-width: 624px) 100vw, 578px, 580px" /></a></p>
+
+<p><a href="/assets/img/posts/19.12.01/GPTelesSurgery.png"><img src="/" alt="" srcset="    /assets/resized/GPTelesSurgery-580x435.png 580w,    /assets/resized/GPTelesSurgery-290x218.png 290w,    /assets/resized/GPTelesSurgery-170x128.png 170w,    /assets/resized/GPTelesSurgery-145x109.png 145w, /assets/img/posts/19.12.01/GPTelesSurgery.png 800w" sizes="(max-width: 624px) 100vw, 578px, 580px" /></a></p>
+
+<p>On the note of new modelers, <strong>Sanuki</strong> not only contributed the martial arts scroll above but also some tofu, a cultivator, a spade, and the x-ray gun.</p>
+
+<div class="horizontal-2">
+
+  <p><a href="/assets/img/posts/19.12.01/SanukiTofu.png"><img src="/" alt="" srcset="    /assets/resized/SanukiTofu-580x435.png 580w,    /assets/resized/SanukiTofu-290x218.png 290w,    /assets/resized/SanukiTofu-170x128.png 170w,    /assets/resized/SanukiTofu-145x109.png 145w, /assets/img/posts/19.12.01/SanukiTofu.png 800w" sizes="(max-width: 624px) 50vw, 290px" /></a></p>
+
+  <p><a href="/assets/img/posts/19.12.01/SanukiCultivatorSpade.png"><img src="/" alt="" srcset="    /assets/resized/SanukiCultivatorSpade-580x435.png 580w,    /assets/resized/SanukiCultivatorSpade-290x218.png 290w,    /assets/resized/SanukiCultivatorSpade-170x128.png 170w,    /assets/resized/SanukiCultivatorSpade-145x109.png 145w, /assets/img/posts/19.12.01/SanukiCultivatorSpade.png 800w" sizes="(max-width: 624px) 50vw, 290px" /></a></p>
+</div>
+
+<p><a href="/assets/img/posts/19.12.01/SanukiX-RayLaserGun.png"><img src="/" alt="" srcset="    /assets/resized/SanukiX-RayLaserGun-580x435.png 580w,    /assets/resized/SanukiX-RayLaserGun-290x218.png 290w,    /assets/resized/SanukiX-RayLaserGun-170x128.png 170w,    /assets/resized/SanukiX-RayLaserGun-145x109.png 145w, /assets/img/posts/19.12.01/SanukiX-RayLaserGun.png 800w" sizes="(max-width: 624px) 100vw, 578px, 580px" /></a></p>
+
+<p>Another new modeler, <strong>Nicola</strong> has provided a welding helmet, SMES, tesla coil, thermal electric generator, and some modular heat exchange pipes.</p>
+
+<p><a href="/assets/img/posts/19.12.01/NicolaWeldingHelmet.png"><img src="/" alt="" srcset="    /assets/resized/NicolaWeldingHelmet-580x435.png 580w,    /assets/resized/NicolaWeldingHelmet-290x218.png 290w,    /assets/resized/NicolaWeldingHelmet-170x128.png 170w,    /assets/resized/NicolaWeldingHelmet-145x109.png 145w, /assets/img/posts/19.12.01/NicolaWeldingHelmet.png 800w" sizes="(max-width: 624px) 100vw, 578px, 580px" /></a></p>
+
+<p><a href="/assets/img/posts/19.12.01/NicolaTeslaSMES.png"><img src="/" alt="" srcset="    /assets/resized/NicolaTeslaSMES-580x435.png 580w,    /assets/resized/NicolaTeslaSMES-290x218.png 290w,    /assets/resized/NicolaTeslaSMES-170x128.png 170w,    /assets/resized/NicolaTeslaSMES-145x109.png 145w, /assets/img/posts/19.12.01/NicolaTeslaSMES.png 800w" sizes="(max-width: 624px) 100vw, 578px, 580px" /></a></p>
+
+<p><a href="/assets/img/posts/19.12.01/NicolaTEG.png"><img src="/" alt="" srcset="    /assets/resized/NicolaTEG-580x435.png 580w,    /assets/resized/NicolaTEG-290x218.png 290w,    /assets/resized/NicolaTEG-170x128.png 170w,    /assets/resized/NicolaTEG-145x109.png 145w, /assets/img/posts/19.12.01/NicolaTEG.png 800w" sizes="(max-width: 624px) 100vw, 578px, 580px" /></a></p>
+
+<p><a href="/assets/img/posts/19.12.01/NicolaHEPipes.png"><img src="/" alt="" srcset="    /assets/resized/NicolaHEPipes-580x435.png 580w,    /assets/resized/NicolaHEPipes-290x218.png 290w,    /assets/resized/NicolaHEPipes-170x128.png 170w,    /assets/resized/NicolaHEPipes-145x109.png 145w, /assets/img/posts/19.12.01/NicolaHEPipes.png 800w" sizes="(max-width: 624px) 100vw, 578px, 580px" /></a></p>
+
+<p>Also some manual valves from both <strong>Nicola</strong> (left) and <strong>Cyke</strong> (right).</p>
+
+<p><a href="/assets/img/posts/19.12.01/NicolaPipeValves.png"><img src="/" alt="" srcset="    /assets/resized/NicolaPipeValves-580x435.png 580w,    /assets/resized/NicolaPipeValves-290x218.png 290w,    /assets/resized/NicolaPipeValves-170x128.png 170w,    /assets/resized/NicolaPipeValves-145x109.png 145w, /assets/img/posts/19.12.01/NicolaPipeValves.png 800w" sizes="(max-width: 624px) 100vw, 578px, 580px" /></a></p>
+
+<p>Also from <strong>Cyke</strong> this month, a petri dish and a vent cover.</p>
+
+<p><a href="/assets/img/posts/19.12.01/CykePetriDishVent.png"><img src="/" alt="" srcset="    /assets/resized/CykePetriDishVent-580x435.png 580w,    /assets/resized/CykePetriDishVent-290x218.png 290w,    /assets/resized/CykePetriDishVent-170x128.png 170w,    /assets/resized/CykePetriDishVent-145x109.png 145w, /assets/img/posts/19.12.01/CykePetriDishVent.png 800w" sizes="(max-width: 624px) 100vw, 578px, 580px" /></a></p>
+
+<p>We now also have cabbages thanks to <strong>Bug</strong>.</p>
+
+<p><a href="/assets/img/posts/19.12.01/BugCabbages.png"><img src="/" alt="" srcset="    /assets/resized/BugCabbages-580x435.png 580w,    /assets/resized/BugCabbages-290x218.png 290w,    /assets/resized/BugCabbages-170x128.png 170w,    /assets/resized/BugCabbages-145x109.png 145w, /assets/img/posts/19.12.01/BugCabbages.png 800w" sizes="(max-width: 624px) 100vw, 578px, 580px" /></a></p>
+
+<h2 id="graphics">Graphics</h2>
+
+<p>Another really neat contribution, which has been in works for some time, is these job and stamp graphics from <strong>Konstantin</strong>.</p>
+
+<p><a href="/assets/img/posts/19.12.01/KonstantinJobs.png"><img src="/" alt="" srcset="    /assets/resized/KonstantinJobs-580x435.png 580w,    /assets/resized/KonstantinJobs-290x218.png 290w,    /assets/resized/KonstantinJobs-170x128.png 170w,    /assets/resized/KonstantinJobs-145x109.png 145w, /assets/img/posts/19.12.01/KonstantinJobs.png 800w" sizes="(max-width: 624px) 100vw, 578px, 580px" /></a></p>
+
+<p><a href="/assets/img/posts/19.12.01/KonstantinStamps.png"><img src="/" alt="" srcset="    /assets/resized/KonstantinStamps-580x435.png 580w,    /assets/resized/KonstantinStamps-290x218.png 290w,    /assets/resized/KonstantinStamps-170x128.png 170w,    /assets/resized/KonstantinStamps-145x109.png 145w, /assets/img/posts/19.12.01/KonstantinStamps.png 800w" sizes="(max-width: 624px) 100vw, 578px, 580px" /></a></p>
+
+<h2 id="artwork">Artwork</h2>
+
+<p>This month, <strong>Bug</strong> has spent as much time making art as he has models. Here is an awesome looping animation form him, as well as a few wallpapers!</p>
+
+<video autoplay="autoplay" muted="" loop="loop" poster="/assets/img/posts/19.12.01/BugWallpaper2.png">
+  <source src="/assets/img/posts/19.12.01/BugAnimation.webm" type="video/webm" />
+  <source src="/assets/img/posts/19.12.01/BugAnimation.mp4" type="video/mp4" />
+</video>
+
+<div class="horizontal-2">
+
+  <p><a href="/assets/img/posts/19.12.01/BugWallpaper2.png"><img src="/" alt="" srcset="    /assets/resized/BugWallpaper2-580x326.png 580w,    /assets/resized/BugWallpaper2-290x163.png 290w,    /assets/resized/BugWallpaper2-170x96.png 170w,    /assets/resized/BugWallpaper2-145x82.png 145w, /assets/img/posts/19.12.01/BugWallpaper2.png 1920w" sizes="(max-width: 624px) 50vw, 290px" /></a></p>
+
+  <p><a href="/assets/img/posts/19.12.01/BugWallpaper3.png"><img src="/" alt="" srcset="    /assets/resized/BugWallpaper3-580x326.png 580w,    /assets/resized/BugWallpaper3-290x163.png 290w,    /assets/resized/BugWallpaper3-170x96.png 170w,    /assets/resized/BugWallpaper3-145x82.png 145w, /assets/img/posts/19.12.01/BugWallpaper3.png 1920w" sizes="(max-width: 624px) 50vw, 290px" /></a></p>
+</div>
+
+<p><a href="/assets/img/posts/19.12.01/BugWallpaper1.png"><img src="/" alt="" srcset="    /assets/resized/BugWallpaper1-580x318.png 580w,    /assets/resized/BugWallpaper1-290x159.png 290w,    /assets/resized/BugWallpaper1-170x93.png 170w,    /assets/resized/BugWallpaper1-145x79.png 145w, /assets/img/posts/19.12.01/BugWallpaper1.png 1920w" sizes="(max-width: 624px) 100vw, 578px, 580px" /></a></p>
+
+<p>And finally a warm and festive vertical wallpaper from <strong>CosmicCoincidence</strong>.</p>
+
+<p><a href="/assets/img/posts/19.12.01/CosmicChristmas.png"><img src="/" alt="" srcset="    /assets/resized/CosmicChristmas-580x870.png 580w,    /assets/resized/CosmicChristmas-290x435.png 290w,    /assets/resized/CosmicChristmas-170x255.png 170w,    /assets/resized/CosmicChristmas-145x218.png 145w, /assets/img/posts/19.12.01/CosmicChristmas.png 1200w" sizes="(max-width: 624px) 100vw, 578px, 580px" /></a></p>
+
+<h3 id="conclusion">Conclusion</h3>
+
+<p>This month has been a little slow as a result of both the logistical changes taking place as well as the holidays. Although the changes have put a temporary hold on programming tasks, the holidays are now over and said changes should be wrapped up soon and programming resumed.</p>
+
+<p>As always, come check out the <a href="https://discord.gg/3ny9tdH" target="_blank">discord</a> for more wip content, and community discussions. Hope you all enjoyed your holidays and see you next month!</p>
+
+            </main>
+            <footer>
+                <div class="contact">
+    <ul class="ul-reset">
+    <li>
+        <a href="https://discord.gg/3ny9tdH">Discord</a>
+    </li>
+    <li>
+        <a href="https://github.com/RE-SS3D">GitHub</a>
+    </li>
+    <li>
+        <a href="https://reddit.com/r/ress3d">Reddit</a>
+    </li>
+    <li>
+        <a href="/privacy">Privacy policy</a>
+    </li>
+    <li>
+        <a type="application/atom+xml" href="/feed.xml">Atom (RSS)</a>
+    </li>
+    <li>
+        <label id="theme-switch" class="theme-switch" for="checkbox_theme">
+            <input type="checkbox" id="checkbox_theme" style="display:none"><span class="link">Toggle theme</span>
+        </label>
+    </li>
+</ul>
+</div>
+            </footer>
+        </div>
+        <script>
+            
+            // Fix flashing buttons by only allowing the css animations to play after a slight delay.
+            setTimeout(function() {
+                document.getElementsByTagName('body')[0].classList.remove('preload');
+            }, 50);
+
+            //theme toggle
+            //identify the toggle switch HTML element
+            const toggleSwitch = document.querySelector('#theme-switch input[type="checkbox"]');
+    
+            //function that changes the theme, and sets a localStorage variable to track the theme between page loads
+            function switchTheme(e) {
+                if (e.target.checked) {
+                    localStorage.setItem('theme', 'light');
+                    document.documentElement.setAttribute('data-theme', 'light');
+                    toggleSwitch.checked = true;
+                } else {
+                    localStorage.setItem('theme', 'dark');
+                    document.documentElement.setAttribute('data-theme', 'dark');
+                    toggleSwitch.checked = false;
+                }    
+            }
+    
+            //listener for changing themes
+            toggleSwitch.addEventListener('change', switchTheme, false);
+    
+            //pre-check the dark-theme checkbox if dark-theme is set
+            if (document.documentElement.getAttribute("data-theme") == "light"){
+                toggleSwitch.checked = true;
+            }
+        </script>
+    </body>
+</html>
