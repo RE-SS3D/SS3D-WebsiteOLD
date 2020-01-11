@@ -1,0 +1,102 @@
+---
+layout: post
+title:  "00.00 (year.month) : [insert month] Recap"
+date:   2020-00-00 (year-month-day) 15:30:00 +0100
+description: |
+    "description goes here."
+image: /assets/img/posts/[insert folder]/Wallpaper.png
+image_credit: Credit goes to whoever
+---
+
+Cute phrase goes here.
+
+// The devblog for the most part is laid out in sections. With the titles of the sections going from large = # (recap section), to medium = ## (content sections), to small = ### (info sections). The order of the sections should be followed but there is some liberty in renaming (e.g. 'Models' --> 'Eye Candy') them, as well as deleting unneeded sections or combining multiple short sections into one (e.g. 'Core-Systems' and 'Sub-Systems' --> 'Systems').
+// Bold any **names** when referencing someone in a description or crediting them for an artpiece.
+// Use the lines below to include links.
+
+// Linking to internal file:
+[Text]({{ site.baseurl }}/[insert folder]/File.format){:target="_blank"}
+
+// Linking to external file:
+[Text](File.Link){:target="_blank"}
+
+# [Insert Month] Recap
+
+Vague summary of the month goes here.
+
+## Special
+
+// 'Special' is any content from other categories specifically intended to show first.
+
+Description goes here.
+
+[Insert Media]
+
+// Avoid gifs if possible and ensure reasonable file size.
+// Use the lines below to format your media by inserting file paths and names.
+
+// Displaying a video:
+<video autoplay="autoplay" muted loop="loop" poster="{{ site.baseurl }}/assets/img/posts/[insert folder]/VideoThumbnail.png">
+  <source src="{{ site.baseurl }}/assets/img/posts/[insert folder]/Video.webm" type="video/webm">
+  <source src="{{ site.baseurl }}/assets/img/posts/[insert folder]/Video.mp4" type="video/mp4">
+</video>
+
+// Displaying a gif:
+{% responsive_image path: assets/img/posts/[insert folder]/gif1.gif template: _includes/srcset-gif.html %}
+
+// Displaying an image:
+{% responsive_image path: assets/img/posts/[insert folder]/image1.png template: _includes/srcset.html %}
+
+// Displaying 2 images horizontally:
+<div class='horizontal-2' markdown='1'>
+{% responsive_image path: assets/img/posts/[insert folder]/Image1.png %}
+{% responsive_image path: assets/img/posts/[insert folder]/Image2.png %}
+</div>
+
+## Core-Systems
+
+## Sub-Systems
+
+## Animations
+
+## Shaders
+
+## Textures
+
+## Models
+
+## 2D
+
+// '2D' is logos, posters, decals, etc.
+
+## Sounds
+
+// 'Sounds' is sound effects, music, noises, etc.
+
+## Concepts
+
+// 'Concepts' are concept drawings, animations, systems, etc.
+
+## Artwork
+
+// 'Artwork' is artistic wallpapers, animations, etc. (not meant for in-game use).
+
+## Other
+
+// 'Other' is any assets not fit for another section.
+
+// In the future, when submissions are more abundent, consider adding a 'Upcoming' section below this.
+
+### Updates
+
+// 'Updates' is updates events or changes relating to management, systems, or other logistics.
+
+### Notes
+
+// 'Notes' is miscellaneous info that may be of interest (e.g. )
+
+### Conclusion
+
+// 'Conclusion' is the final wrap-up and goodbye, and include the discord link, as tradition.
+
+Goodbye summary goes here. [Discord link.](https://discord.gg/3ny9tdH){:target="_blank"}

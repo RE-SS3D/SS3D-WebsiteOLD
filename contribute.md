@@ -6,33 +6,52 @@ permalink: /contribute/
 
 This page is dedicated as a reference for RE:SS3D contributors.
 
-If you came to this page purely to reference hyperlinks, cheers, they’re at the top of the page, just for you.
+**Step by step guide at the top in case someone asks and you don't want to write a wall of text:**
 
-[Model list Mk. IV](https://trello.com/b/z0H4ci3u/ss3d-model-list-mkiv)
+1. Go to the appropriate board/list for your field and look for available tasks
+2. Pick a task, and request a @Centcom member to assign you to that task
+3. Work on that task, using the correct style and formatting
+4. Post in-progress screenshots or videos to #wip for extra praise
+5. Submit the task (as a PR for code, or by posting the asset to discord and notifying someone in @Centcom)
+6. They will review it, and may request changes
+7. Submit screenshots and/or videos to the #devblog channel along with a link for an asset or a summary for code
+8. Once accepted, pat yourself on the back for your glorious contribution to SS3D
 
-[Model formatting guide]({{ site.baseurl }}/assets/pdf/RESS3DModelFormattingGuide.pdf)
+### How to contribute
 
-[Rig formatting guide]({{ site.baseurl }}/assets/pdf/RESS3DRigFormatGuide.pdf)
+If you're a programmer, an artist, a soundcloud rapper, a programmer, none of the above, or *especially* a programmer, we need you!
+For coding and modelling tasks we have a [task board](https://github.com/RE-SS3D/SS3D/projects/2) (the ones in the available column are ones you can start on) and a [model list](https://trello.com/b/z0H4ci3u/ss3d-model-list-mkiv).
+To start on either just go to our discord and request an admin or moderator to assign you to a task you can see on there.
+**But before you do please check the style guide below**.
 
-[*beep style guide]({{ site.baseurl }}/assets/pdf/BeepStyleGuide.pdf)
+For any other kind of task, e.g. sounds, concept art, or emotional support (please help me) just ask around on the discord and someone
+can help you out.
 
-[Items18-2-22]({{ site.baseurl }}/assets/misc/Items18-2-22b.zip)
+### Style guide & Kits
 
-**Separate from this short list is the [Modeller’s Kit v1.3]({{ site.baseurl }}/assets/misc/RESS3DModelersKit1.3.zip) which includes all of the above and more.**
+**The code style guide** can be found on our [github](https://github.com/RE-SS3D/SS3D/blob/develop/StyleGuides/C_SHARP.md). It contains:
 
-Now for context:
+**The model style guide** is contained in our [Modeller’s Kit v1.3]({{ site.baseurl }}/assets/misc/RESS3DModelersKit1.3.zip) which will also help you getting started with models.
+It contains:
 
-A little bit about the history of SS3D, before we start.
-Once upon a time, in early twenty-eighteen, a brilliant soul by the name of *beep decided to make a game called SS3D. *beep had incredible foresight, and every design decision made had clearly been thoroughly thought-through. One day, *beep went silent, and was never heard from again.
+- Template file for Blender 2.8, complete with materials
+- Palettes 01, 03, and 05.
+- Rigged and non-rigged human .FBX files
+- A character turnaround for drawing designs over
+- SS3D Style Guide
+- SS3D Model Formatting Guide
 
-For the relevancy of this article, there were two things *beep left behind that stood for the cornerstones of our artistic design: [*beep style guide]({{ site.baseurl }}/assets/pdf/BeepStyleGuide.pdf), which highlights details of model creation and artistic design; and [Items18-2-22]({{ site.baseurl }}/assets/misc/Items18-2-22b.blend), a file containing several example models.
+### Links
 
-For individuals contributing to the project, reading the style guide is **essential**.
+- [GitHub](https://github.com/RE-SS3D/SS3D)
+- [Model list Mk. IV](https://trello.com/b/z0H4ci3u/ss3d-model-list-mkiv) - tracks what models are complete, available, and in-progress
+- [Code board](https://github.com/RE-SS3D/SS3D/projects/2) - tracks what coding is complete, available, and in-progress
+- [Design board](https://github.com/RE-SS3D/SS3D/projects/3) - tracks what features are up next for designing
+- [Modeller’s Kit v1.3]({{ site.baseurl }}/assets/misc/RESS3DModelersKit1.3.zip), which contains:
+  - [Model formatting guide]({{ site.baseurl }}/assets/pdf/RESS3DModelFormattingGuide.pdf)
+  - [Rig formatting guide]({{ site.baseurl }}/assets/pdf/RESS3DRigFormatGuide.pdf)
+  - [*beep style guide]({{ site.baseurl }}/assets/pdf/BeepStyleGuide.pdf)
+  - [Items18-2-22]({{ site.baseurl }}/assets/misc/Items18-2-22b.zip)
+- [Code style guide](https://github.com/RE-SS3D/SS3D/blob/develop/StyleGuides/C_SHARP.md)
 
-Since *beep left us with a job half-finished, we’ve had to fill in with our own documentation resources. Presently, this documentation consists of the [Model formatting guide]({{ site.baseurl }}/assets/pdf/RESS3DModelFormattingGuide.pdf) and the [Rig formatting guide]({{ site.baseurl }}/assets/pdf/RESS3DRigFormatGuide.pdf), the latter of which is mostly intended to be used with assets and materials inside the Modeller’s kit.
-
-For coloration models, a liberal use of UV mapping from palettes is used. The palette is designed so that it only explicitly needs to change when it is reconfigured, but not when updated with more colors. Color additions to the palette are made only as permitted by RE:SS3D leadership. At the present moment, there are three versions of the palette, Palette01, Palette03, and Palette05. **Only use the most up-to-date version of the Palette**, the other versions are for outdated models.
-
-<a href="{{ site.baseurl }}/assets/fbx/Palette05.png">![Palette05](/assets/fbx/Palette05.png)</a>
-
-When contributing, one will obviously want to avoid creating assets that have already been created by another individual. For that purpose, individuals will want to consult the [Model list Mk. IV](https://trello.com/b/z0H4ci3u/ss3d-model-list-mkiv) to see what models have or have not been completed.
+\- nonanon
