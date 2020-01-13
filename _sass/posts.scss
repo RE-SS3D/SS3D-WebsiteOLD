@@ -1,7 +1,9 @@
 .horizontal-3 {
     overflow: hidden;
     white-space:nowrap;
-    p {
+    align-self: center;
+
+    div {
         display: inline-block;
         width: 33.33%;
         margin: 0;
@@ -25,20 +27,21 @@
 }
 
 .horizontal-2 {
+    // TODO: Overflow should be removed, along with modifying width: 50% so that there is fixed spacing between the horizontal elements.
     overflow: hidden;
     white-space:nowrap;
-    p {
+    align-self: center;
+
+    div {
         display: inline-block;
         width: 50%;
-        margin: 0;
+        
         &::after {
             content: "";
             clear: both;
             display: table;
         }
         a {
-            float: left;
-            //width: 50%;
             padding: 5px;
             padding-left: 0;
             &:last-child {
@@ -56,7 +59,6 @@
             display: table;
         }
         & > p, & > div {
-            float: left;
             width: 50%;
             padding: 5px;
             padding-left: 0;
@@ -67,9 +69,14 @@
     }
 }
 
-p{
-    img {
-        max-width: 100%;
-        width: 100%;
-    }
+// Ensure that images and videos appear in the middle of the screen.
+// Add a bit of spacing at the bottom as if it was inline with a paragraph
+div.image, .post-content video {
+    align-self: center;
+    margin-top: 0.5em;
+}
+
+// Images and videos can't be bigger than the post-content area
+.post-content img, .post-content video {
+    max-width: 100%;
 }

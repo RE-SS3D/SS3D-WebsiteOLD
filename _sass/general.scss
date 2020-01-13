@@ -3,7 +3,7 @@ body, h1, h2, h3, h4, h5, h6 {
     padding: 0;
     margin: 0;
     margin-top: 0.65em;
-    margin-bottom: 1.3em;
+    margin-bottom: 0.3em;
     vertical-align: baseline;
     line-height: 1em;
 }
@@ -22,6 +22,11 @@ h5 {
     @include respond-to(desktop) {
         margin-bottom: 2.6em;
     }
+}
+
+p {
+    width: 100%;
+    margin-bottom: 0;
 }
 
 body {
@@ -63,8 +68,9 @@ body {
     }
 }
 
+// Links are coloured appropriately, so they don't look terrible
 a, .link {
-    color: $color-link;
+    color: $color-link; // CSS3 variable fallback
     color: var(--color-link);
     text-decoration: none;
     &:hover {
@@ -79,10 +85,17 @@ a, .link {
 }
 
 .body-content {
-    margin: 0 $pad;
+    padding: 0 $pad;
+}
+
+// All post content is centred. On larger screens there's 15% spacing either side.
+.post-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
     @include respond-to(desktop) {
-        max-width: 580px; //45em;//672px;//45em;
         margin: 0 auto;
+        width: 70%;
     }
 }
 
@@ -91,4 +104,5 @@ a, .link {
     -moz-transition: none !important;
     -ms-transition: none !important;
     -o-transition: none !important;
-  }
+    transition: none !important;
+}
