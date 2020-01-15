@@ -180,9 +180,7 @@ body::before {
 body, h1, h2, h3, h4, h5, h6 {
   font-size-adjust: 0.58;
   padding: 0;
-  margin: 0;
-  margin-top: 0.65em;
-  margin-bottom: 0.3em;
+  margin: 0.65em 0 0.3em 0;
   vertical-align: baseline;
   line-height: 1em; }
 
@@ -201,7 +199,6 @@ h5 {
       margin-bottom: 2.6em; } }
 
 p {
-  width: 100%;
   margin-bottom: 0; }
 
 body {
@@ -255,11 +252,13 @@ a, .link {
 .post-content {
   display: flex;
   flex-direction: column;
-  align-items: flex-start; }
+  align-items: center; }
   @media (min-width: 624px) {
     .post-content {
       margin: 0 auto;
       width: 70%; } }
+  .post-content h1, .post-content h2, .post-content h3, .post-content h4, .post-content h5, .post-content p {
+    align-self: flex-start; }
 
 .preload * {
   -webkit-transition: none !important;
