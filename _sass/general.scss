@@ -1,9 +1,8 @@
 body, h1, h2, h3, h4, h5, h6 {
     font-size-adjust: 0.58; // Keep font size same regardless of font family.
     padding: 0;
-    margin: 0;
-    margin-top: 0.65em;
-    margin-bottom: 0.3em;
+    margin: 0.65em 0 0.3em 0;
+
     vertical-align: baseline;
     line-height: 1em;
 }
@@ -25,7 +24,6 @@ h5 {
 }
 
 p {
-    width: 100%;
     margin-bottom: 0;
 }
 
@@ -88,14 +86,19 @@ a, .link {
     padding: 0 $pad;
 }
 
-// All post content is centred. On larger screens there's 15% spacing either side.
+// All post content is centred, except for text. On larger screens there's 15% spacing either side.
 .post-content {
     display: flex;
+
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     @include respond-to(desktop) {
         margin: 0 auto;
         width: 70%;
+    }
+
+    h1, h2, h3, h4, h5, p {
+        align-self: flex-start;
     }
 }
 
