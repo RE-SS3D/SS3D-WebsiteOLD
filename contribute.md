@@ -20,7 +20,7 @@ This page is dedicated as a reference for RE:SS3D contributors.
 ### How to contribute
 
 If you're a programmer, an artist, a soundcloud rapper, a programmer, none of the above, or *especially* a programmer, we need you!
-For coding and modelling tasks we have a [task board](https://github.com/RE-SS3D/SS3D/projects/2) (the ones in the available column are ones you can start on) and a [model list](https://trello.com/b/z0H4ci3u/ss3d-model-list-mkiv).
+For coding and modelling tasks we have a [task board](https://github.com/RE-SS3D/SS3D/projects/2) (the ones in the available column are ones you can start on) and a [model list](https://trello.com/b/ZVcDitv0/ss3d-model-list).
 To start on either just go to our discord and request an admin or moderator to assign you to a task you can see on there.
 **But before you do please check the style guide below**.
 
@@ -31,27 +31,27 @@ can help you out.
 
 **The code style guide** can be found on our [github](https://github.com/RE-SS3D/SS3D/blob/develop/StyleGuides/C_SHARP.md). It contains:
 
-**The model style guide** is contained in our [Modeller’s Kit v1.3]({{ site.baseurl }}/assets/misc/RESS3DModelersKit1.3.zip) which will also help you getting started with models.
+**The model style guide** is contained in our [Modeller’s Kit v1.4]({{ site.baseurl }}/assets/misc/SS3D Modeler's Kit 1.4.zip) which contains several files to aid you in making 3D models for SS3D.
 It contains:
 
-- Template file for Blender 2.8, complete with materials
-- Palettes 01, 03, and 05.
-- Rigged and non-rigged human .FBX files
-- A character turnaround for drawing designs over
-- SS3D Style Guide
-- SS3D Model Formatting Guide
+- A modeling template file for Blender 2.8, complete with materials and a character model
+- Our color palette (Palette05)
+- Templates for making poster or blanket textures
+- Our 'Spessman' font
+- Beep's style and formatting guides
+- Guides and exmple plants for hydroponics
 
 ### Links
 
 - [GitHub](https://github.com/RE-SS3D/SS3D)
-- [Model list Mk. IV](https://trello.com/b/z0H4ci3u/ss3d-model-list-mkiv) - tracks what models are complete, available, and in-progress
+- [Discord](https://discord.gg/3ny9tdH) - primary communication for the community and devs
+- [Model completion list](https://trello.com/b/ZVcDitv0/ss3d-model-list) - tracks the completion status of our models
 - [Code board](https://github.com/RE-SS3D/SS3D/projects/2) - tracks what coding is complete, available, and in-progress
 - [Design board](https://github.com/RE-SS3D/SS3D/projects/3) - tracks what features are up next for designing
-- [Modeller’s Kit v1.3]({{ site.baseurl }}/assets/misc/RESS3DModelersKit1.3.zip), which contains:
+- [Modeller’s Kit v1.4]({{ site.baseurl }}/assets/misc/SS3D Modeler's Kit 1.4.zip), which contains:
   - [Model formatting guide]({{ site.baseurl }}/assets/pdf/RESS3DModelFormattingGuide.pdf)
-  - [Rig formatting guide]({{ site.baseurl }}/assets/pdf/RESS3DRigFormatGuide.pdf)
-  - [*beep style guide]({{ site.baseurl }}/assets/pdf/BeepStyleGuide.pdf)
-  - [Items18-2-22]({{ site.baseurl }}/assets/misc/Items18-2-22b.zip)
+  - [*beep's style guide]({{ site.baseurl }}/assets/pdf/BeepStyleGuide.pdf)
+  - [Color palette]({{ site.baseurl }}/assets/fbx/Palette05.png)
 - [Code style guide](https://github.com/RE-SS3D/SS3D/blob/develop/StyleGuides/C_SHARP.md)
 
 \- nonanon
