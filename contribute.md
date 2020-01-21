@@ -20,7 +20,7 @@ This page is dedicated as a reference for RE:SS3D contributors.
 ### How to contribute
 
 If you're a programmer, an artist, a soundcloud rapper, a programmer, none of the above, or *especially* a programmer, we need you!
-For coding and modelling tasks we have a [task board](https://github.com/RE-SS3D/SS3D/projects/2) (the ones in the available column are ones you can start on) and a [model list](https://trello.com/b/ZVcDitv0/ss3d-model-list).
+For coding and modeling tasks we have a [task board](https://github.com/RE-SS3D/SS3D/projects/2) (the ones in the available column are ones you can start on) and a [model list](https://trello.com/b/ZVcDitv0/ss3d-model-list).
 To start on either just go to our discord and request an admin or moderator to assign you to a task you can see on there.
 **But before you do please check the style guide below**.
 
@@ -39,7 +39,7 @@ It contains:
 - Templates for making poster or blanket textures
 - Our 'Spessman' font
 - Beep's style and formatting guides
-- Guides and exmple plants for hydroponics
+- Guides and example plants for hydroponics
 
 ### Links
 
@@ -49,9 +49,9 @@ It contains:
 - [Code board](https://github.com/RE-SS3D/SS3D/projects/2) - tracks what coding is complete, available, and in-progress
 - [Design board](https://github.com/RE-SS3D/SS3D/projects/3) - tracks what features are up next for designing
 - [Modeller’s Kit v1.4]({{ site.baseurl }}/assets/misc/SS3D Modeler's Kit 1.4.zip), which contains:
+  - [Color palette]({{ site.baseurl }}/assets/fbx/Palette05.png)
   - [Model formatting guide]({{ site.baseurl }}/assets/pdf/RESS3DModelFormattingGuide.pdf)
   - [*beep's style guide]({{ site.baseurl }}/assets/pdf/BeepStyleGuide.pdf)
-  - [Color palette]({{ site.baseurl }}/assets/fbx/Palette05.png)
 - [Code style guide](https://github.com/RE-SS3D/SS3D/blob/develop/StyleGuides/C_SHARP.md)
 
 \- nonanon
