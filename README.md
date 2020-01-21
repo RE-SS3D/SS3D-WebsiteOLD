@@ -34,8 +34,9 @@ Once ubuntu is downloaded, open up powershell or command prompt, or directly ope
     sudo apt-add-repository ppa:brightbox/ruby-ng
     sudo apt-get update
     sudo apt install ruby2.5 ruby2.5-dev build-essential dh-autoreconf libmagickwand-dev
-    gem update
-    gem install jekyll bundler rmagick
+    sudo gem update
+    sudo gem install jekyll bundler rmagick
+    sudo bundle install
 
 Enter each line one by one, the whole process might take a while.
 You can confirm jekyll is installed by entering:
