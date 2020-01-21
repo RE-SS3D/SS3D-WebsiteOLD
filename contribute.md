@@ -19,7 +19,7 @@ This page is dedicated as a reference for RE:SS3D contributors.
 
 ### How to contribute
 
-If you're a programmer, an artist, a soundcloud rapper, a programmer, none of the above, or *especially* a programmer, we need you!
+If you're a programmer, 2D artist, 3D modeler, musician, programmer, animator, soundcloud rapper, or *especially* a programmer, we need you!
 For coding and modeling tasks we have a [task board](https://github.com/RE-SS3D/SS3D/projects/2) (the ones in the available column are ones you can start on) and a [model list](https://trello.com/b/ZVcDitv0/ss3d-model-list).
 To start on either just go to our discord and request an admin or moderator to assign you to a task you can see on there.
 **But before you do please check the style guide below**.
