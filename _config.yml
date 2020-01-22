@@ -23,9 +23,9 @@ url: "https://ss3d.space" # the base hostname & protocol for your site, e.g. htt
 #twitter_username: jekyllrb
 #github_username:  jekyll
 discord_url: https://discord.gg/3ny9tdH
-github_project_url: https://github.com/RE-SS3D/SS3D/projects/1
 github_url: https://github.com/RE-SS3D
-reddit_url: https://reddit.com/r/ress3d
+trello_url: https://trello.com/ress3d
+reddit_url: https://reddit.com/r/RESS3D
 google_analytics: UA-140169746-1
 
 # Build settings
