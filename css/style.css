@@ -256,9 +256,7 @@ a, .link {
   @media (min-width: 624px) {
     .post-content {
       margin: 0 auto;
-      width: 70%; } }
-  .post-content h1, .post-content h2, .post-content h3, .post-content h4, .post-content h5, .post-content p {
-    align-self: flex-start; }
+      width: 60%; } }
 
 .preload * {
   -webkit-transition: none !important;

@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="/css/style.css">
+        <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+        <meta name="theme-color" content="#1e4684">
+        <script>
+            //theme toggle
+            //determines if the user has a set theme
+            function detectColorScheme(){
+                var theme="dark";    //default to dark
+
+                //local storage is used to override OS theme settings
+                if(localStorage.getItem("theme")){
+                    if(localStorage.getItem("theme") == "light"){
+                        var theme = "light";
+                    }
+                } else if(!window.matchMedia) {
+                    //matchMedia method not supported
+                    return false;
+                } else if(window.matchMedia("(prefers-color-scheme: light)").matches) {
+                    //OS theme setting detected as dark
+                    var theme = "light";
+                }
+
+                //dark theme preferred, set document with a `data-theme` attribute
+                if (theme=="light") {
+                    document.documentElement.setAttribute("data-theme", "light");
+                } else {
+                    document.documentElement.setAttribute("data-theme", "dark");
+                }
+            }
+            detectColorScheme();
+            
+            // Function to keep the navigation bars scroll offset when changing pages.
+            setScroll = function(url, scroll) {
+                if(scroll != 0) {
+                    window.location.href = url + '?scroll=' + scroll;
+                    return;
+                }
+                window.location.href = url;
+            }
+            // Set navigation bar scroll offset, if it exists.
+            getScroll = function() {
+                var url = new URL(window.location.href);
+                var scroll = url.searchParams.get("scroll");
+                if (scroll != 0) {
+                    var el = document.getElementById('scroll');
+                    el.scrollLeft = scroll;
+                }
+            }
+            if (window.addEventListener) {
+                window.addEventListener('load', getScroll, false);
+            }
+            else if (window.attachEvent) {
+                window.attachEvent('onload', getScroll);
+            }
+        </script>
+        <script>
+            /*! modernizr 3.6.0 (Custom Build) | MIT *
+            * https://modernizr.com/download/?-webp-setclasses !*/
+            !function(e,n,A){function o(e,n){return typeof e===n}function t(){var e,n,A,t,a,i,l;for(var f in r)if(r.hasOwnProperty(f)){if(e=[],n=r[f],n.name&&(e.push(n.name.toLowerCase()),n.options&&n.options.aliases&&n.options.aliases.length))for(A=0;A<n.options.aliases.length;A++)e.push(n.options.aliases[A].toLowerCase());for(t=o(n.fn,"function")?n.fn():n.fn,a=0;a<e.length;a++)i=e[a],l=i.split("."),1===l.length?Modernizr[l[0]]=t:(!Modernizr[l[0]]||Modernizr[l[0]]instanceof Boolean||(Modernizr[l[0]]=new Boolean(Modernizr[l[0]])),Modernizr[l[0]][l[1]]=t),s.push((t?"":"no-")+l.join("-"))}}function a(e){var n=u.className,A=Modernizr._config.classPrefix||"";if(c&&(n=n.baseVal),Modernizr._config.enableJSClass){var o=new RegExp("(^|\\s)"+A+"no-js(\\s|$)");n=n.replace(o,"$1"+A+"js$2")}Modernizr._config.enableClasses&&(n+=" "+A+e.join(" "+A),c?u.className.baseVal=n:u.className=n)}function i(e,n){if("object"==typeof e)for(var A in e)f(e,A)&&i(A,e[A]);else{e=e.toLowerCase();var o=e.split("."),t=Modernizr[o[0]];if(2==o.length&&(t=t[o[1]]),"undefined"!=typeof t)return Modernizr;n="function"==typeof n?n():n,1==o.length?Modernizr[o[0]]=n:(!Modernizr[o[0]]||Modernizr[o[0]]instanceof Boolean||(Modernizr[o[0]]=new Boolean(Modernizr[o[0]])),Modernizr[o[0]][o[1]]=n),a([(n&&0!=n?"":"no-")+o.join("-")]),Modernizr._trigger(e,n)}return Modernizr}var s=[],r=[],l={_version:"3.6.0",_config:{classPrefix:"",enableClasses:!0,enableJSClass:!0,usePrefixes:!0},_q:[],on:function(e,n){var A=this;setTimeout(function(){n(A[e])},0)},addTest:function(e,n,A){r.push({name:e,fn:n,options:A})},addAsyncTest:function(e){r.push({name:null,fn:e})}},Modernizr=function(){};Modernizr.prototype=l,Modernizr=new Modernizr;var f,u=n.documentElement,c="svg"===u.nodeName.toLowerCase();!function(){var e={}.hasOwnProperty;f=o(e,"undefined")||o(e.call,"undefined")?function(e,n){return n in e&&o(e.constructor.prototype[n],"undefined")}:function(n,A){return e.call(n,A)}}(),l._l={},l.on=function(e,n){this._l[e]||(this._l[e]=[]),this._l[e].push(n),Modernizr.hasOwnProperty(e)&&setTimeout(function(){Modernizr._trigger(e,Modernizr[e])},0)},l._trigger=function(e,n){if(this._l[e]){var A=this._l[e];setTimeout(function(){var e,o;for(e=0;e<A.length;e++)(o=A[e])(n)},0),delete this._l[e]}},Modernizr._q.push(function(){l.addTest=i}),Modernizr.addAsyncTest(function(){function e(e,n,A){function o(n){var o=n&&"load"===n.type?1==t.width:!1,a="webp"===e;i(e,a&&o?new Boolean(o):o),A&&A(n)}var t=new Image;t.onerror=o,t.onload=o,t.src=n}var n=[{uri:"data:image/webp;base64,UklGRiQAAABXRUJQVlA4IBgAAAAwAQCdASoBAAEAAwA0JaQAA3AA/vuUAAA=",name:"webp"},{uri:"data:image/webp;base64,UklGRkoAAABXRUJQVlA4WAoAAAAQAAAAAAAAAAAAQUxQSAwAAAABBxAR/Q9ERP8DAABWUDggGAAAADABAJ0BKgEAAQADADQlpAADcAD++/1QAA==",name:"webp.alpha"},{uri:"data:image/webp;base64,UklGRlIAAABXRUJQVlA4WAoAAAASAAAAAAAAAAAAQU5JTQYAAAD/////AABBTk1GJgAAAAAAAAAAAAAAAAAAAGQAAABWUDhMDQAAAC8AAAAQBxAREYiI/gcA",name:"webp.animation"},{uri:"data:image/webp;base64,UklGRh4AAABXRUJQVlA4TBEAAAAvAAAAAAfQ//73v/+BiOh/AAA=",name:"webp.lossless"}],A=n.shift();e(A.name,A.uri,function(A){if(A&&"load"===A.type)for(var o=0;o<n.length;o++)e(n[o].name,n[o].uri)})}),t(),a(s),delete l.addTest,delete l.addAsyncTest;for(var p=0;p<Modernizr._q.length;p++)Modernizr._q[p]();e.Modernizr=Modernizr}(window,document);
+        </script>
+        <!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Artwork | RE:SS3D</title>
+<meta name="generator" content="Jekyll v3.8.5" />
+<meta property="og:title" content="Artwork" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="This is a 3D recreation of Space Station 13, on the Unity engine, which will come with its own set of gameplay/graphical improvements." />
+<meta property="og:description" content="This is a 3D recreation of Space Station 13, on the Unity engine, which will come with its own set of gameplay/graphical improvements." />
+<link rel="canonical" href="https://ss3d.space/artwork/" />
+<meta property="og:url" content="https://ss3d.space/artwork/" />
+<meta property="og:site_name" content="RE:SS3D" />
+<script type="application/ld+json">
+{"description":"This is a 3D recreation of Space Station 13, on the Unity engine, which will come with its own set of gameplay/graphical improvements.","@type":"WebPage","headline":"Artwork","url":"https://ss3d.space/artwork/","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+        <link type="application/atom+xml" rel="alternate" href="https://ss3d.space/feed.xml" title="RE:SS3D" />
+        <link rel="stylesheet" type="text/css" href="/assets/css/cookieconsent.min.css" />
+<script src="/assets/js/cookieconsent.min.js"></script>
+<script>
+window.addEventListener("load", function(){
+window.cookieconsent.initialise({
+"palette": {
+    "popup": {
+    "background": "#1e4684",
+    "text": "#dadada"
+    },
+    "button": {
+    "background": "#b83d32",
+    "text": "#ffffff"
+    }
+},
+"theme": "classic",
+"content": {
+    "message": "This website uses cookies for analytics.",
+    "dismiss": "Ok",
+    "href": "/privacy"
+}
+})});
+</script>
+        <!-- Analytics -->
+        
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-140169746-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-140169746-1');
+</script>
+
+        
+    </head>
+    <body class="preload">
+        <div class="nav-background">
+            <nav>
+                <div id="scroll" class="ul-container">
+    <ul class="ul-reset">
+        
+        <li><a onclick="setScroll('/',parentNode.parentNode.parentNode.scrollLeft); return false;" class="" href="/">Home</a></li>
+        
+        <li><a onclick="setScroll('/devblog/',parentNode.parentNode.parentNode.scrollLeft); return false;" class="" href="/devblog/">Devblog</a></li>
+        
+        <li><a onclick="setScroll('/artwork/',parentNode.parentNode.parentNode.scrollLeft); return false;" class="active" href="/artwork/">Artwork</a></li>
+        
+        <li><a onclick="setScroll('/faq/',parentNode.parentNode.parentNode.scrollLeft); return false;" class="" href="/faq/">FAQ</a></li>
+        
+        <li><a onclick="setScroll('/about/',parentNode.parentNode.parentNode.scrollLeft); return false;" class="" href="/about/">About</a></li>
+        
+        <li><a onclick="setScroll('/contribute/',parentNode.parentNode.parentNode.scrollLeft); return false;" class="" href="/contribute/">Contribute</a></li>
+        
+    </ul>
+</div>
+            </nav>
+        </div>
+        <div class="body-content">
+            <header class="header">
+    <div>
+        <picture class="logo" >
+            <source srcset="/assets/img/logo.webp" type="image/webp">
+            <source srcset="/assets/img/logo.png" type="image/png"> 
+            <img alt="" src="/assets/img/logo.png">
+        </picture>
+        <h1>RE: Space Station 3D</h1>
+        <p>A 3D recreation of Space Station 13</p>
+    </div>
+</header>
+            <main class="post-content">
+                <p>This Page is for displaying SS3D-related artworks such as wallpapers, animations and music created by artists of the community.</p>
+
+<h1 id="brukas">Brukas</h1>
+
+<div class="image"><a href="/assets/img/art/Brukas/BrukasBar.png" class="image-link"><img src="/" alt="" srcset="    /assets/resized/BrukasBar-580x326.png 580w,    /assets/resized/BrukasBar-290x163.png 290w,    /assets/resized/BrukasBar-170x96.png 170w,    /assets/resized/BrukasBar-145x82.png 145w, /assets/img/art/Brukas/BrukasBar.png 1920w" sizes="(max-width: 624px) 100vw, 578px, 580px" /></a></div>
+
+<h1 id="bug">Bug</h1>
+
+<video autoplay="autoplay" muted="" loop="loop" poster="/assets/img/art/Bug/BugWallpaper2.png" width="560px">
+  <source src="/assets/img/art/Bug/BugAnimation.webm" type="video/webm" />
+  <source src="/assets/img/art/Bug/BugAnimation.mp4" type="video/mp4" />
+</video>
+
+<div class="horizontal-2">
+
+  <div class="image"><a href="/assets/img/art/Bug/BugWallpaper2.png"><img src="/" alt="" srcset="    /assets/resized/BugWallpaper2-580x326.png 580w,    /assets/resized/BugWallpaper2-290x163.png 290w,    /assets/resized/BugWallpaper2-170x96.png 170w,    /assets/resized/BugWallpaper2-145x82.png 145w, /assets/img/art/Bug/BugWallpaper2.png 1920w" sizes="(max-width: 624px) 50vw, 290px" /></a></div>
+
+  <div class="image"><a href="/assets/img/art/Bug/BugWallpaper3.png"><img src="/" alt="" srcset="    /assets/resized/BugWallpaper3-580x326.png 580w,    /assets/resized/BugWallpaper3-290x163.png 290w,    /assets/resized/BugWallpaper3-170x96.png 170w,    /assets/resized/BugWallpaper3-145x82.png 145w, /assets/img/art/Bug/BugWallpaper3.png 1920w" sizes="(max-width: 624px) 50vw, 290px" /></a></div>
+</div>
+
+<div class="image"><a href="/assets/img/art/Bug/BugWallpaper1.png" class="image-link"><img src="/" alt="" srcset="    /assets/resized/BugWallpaper1-580x318.png 580w,    /assets/resized/BugWallpaper1-290x159.png 290w,    /assets/resized/BugWallpaper1-170x93.png 170w,    /assets/resized/BugWallpaper1-145x79.png 145w, /assets/img/art/Bug/BugWallpaper1.png 1920w" sizes="(max-width: 624px) 100vw, 578px, 580px" /></a></div>
+
+<h1 id="cosmiccoincidence">CosmicCoincidence</h1>
+
+<div class="image"><a href="/assets/img/art/CosmicCoincidence/CosmicHalloween.png" class="image-link"><img src="/" alt="" srcset="    /assets/resized/CosmicHalloween-580x306.png 580w,    /assets/resized/CosmicHalloween-290x153.png 290w,    /assets/resized/CosmicHalloween-170x90.png 170w,    /assets/resized/CosmicHalloween-145x76.png 145w, /assets/img/art/CosmicCoincidence/CosmicHalloween.png 4096w" sizes="(max-width: 624px) 100vw, 578px, 580px" /></a></div>
+
+<div class="image"><a href="/assets/img/art/CosmicCoincidence/CosmicChristmas.png" class="image-link"><img src="/" alt="" srcset="    /assets/resized/CosmicChristmas-580x870.png 580w,    /assets/resized/CosmicChristmas-290x435.png 290w,    /assets/resized/CosmicChristmas-170x255.png 170w,    /assets/resized/CosmicChristmas-145x218.png 145w, /assets/img/art/CosmicCoincidence/CosmicChristmas.png 1200w" sizes="(max-width: 624px) 100vw, 578px, 580px" /></a></div>
+
+<h1 id="eiko">Eiko</h1>
+
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/WCPqPVdn-Oc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+
+<div class="image"><a href="/assets/img/art/Eiko/EikoPromoGibber.png" class="image-link"><img src="/" alt="" srcset="    /assets/resized/EikoPromoGibber-580x326.png 580w,    /assets/resized/EikoPromoGibber-290x163.png 290w,    /assets/resized/EikoPromoGibber-170x96.png 170w,    /assets/resized/EikoPromoGibber-145x82.png 145w, /assets/img/art/Eiko/EikoPromoGibber.png 1920w" sizes="(max-width: 624px) 100vw, 578px, 580px" /></a></div>
+
+<h1 id="goao">Goao</h1>
+
+<p><strong><a href="https://soundcloud.com/joao-pedro-buratto/tin-tin-title3-mix-7-version-6">Title 3 - Tin Tin REMIX</a></strong></p>
+
+<p><strong><a href="https://soundcloud.com/joao-pedro-buratto/traitor-mix2">Traitor REMIX</a></strong></p>
+
+<div class="horizontal-2">
+
+  <div class="image"><a href="/assets/img/art/Goao/GoaoRender.png"><img src="/" alt="" srcset="    /assets/resized/GoaoRender-580x316.png 580w,    /assets/resized/GoaoRender-290x158.png 290w,    /assets/resized/GoaoRender-170x93.png 170w,    /assets/resized/GoaoRender-145x79.png 145w, /assets/img/art/Goao/GoaoRender.png 1207w" sizes="(max-width: 624px) 50vw, 290px" /></a></div>
+
+  <div class="image"><a href="/assets/img/art/Goao/GoaoSeptember19Diorama.png"><img src="/" alt="" srcset="    /assets/resized/GoaoSeptember19Diorama-580x326.png 580w,    /assets/resized/GoaoSeptember19Diorama-290x163.png 290w,    /assets/resized/GoaoSeptember19Diorama-170x96.png 170w,    /assets/resized/GoaoSeptember19Diorama-145x82.png 145w, /assets/img/art/Goao/GoaoSeptember19Diorama.png 1920w" sizes="(max-width: 624px) 50vw, 290px" /></a></div>
+</div>
+
+<div class="image"><a href="/assets/img/art/Goao/GoaoSpooktober.png" class="image-link"><img src="/" alt="" srcset="    /assets/resized/GoaoSpooktober-580x326.png 580w,    /assets/resized/GoaoSpooktober-290x163.png 290w,    /assets/resized/GoaoSpooktober-170x96.png 170w,    /assets/resized/GoaoSpooktober-145x82.png 145w, /assets/img/art/Goao/GoaoSpooktober.png 1920w" sizes="(max-width: 624px) 100vw, 578px, 580px" /></a></div>
+
+<div class="image"><a href="/assets/img/art/Goao/GoaoSpooktoberPoster.png" class="image-link"><img src="/" alt="" srcset="    /assets/resized/GoaoSpooktoberPoster-580x1044.png 580w,    /assets/resized/GoaoSpooktoberPoster-290x522.png 290w,    /assets/resized/GoaoSpooktoberPoster-170x306.png 170w,    /assets/resized/GoaoSpooktoberPoster-145x261.png 145w, /assets/img/art/Goao/GoaoSpooktoberPoster.png 767w" sizes="(max-width: 624px) 100vw, 578px, 580px" /></a></div>
+
+<h1 id="grimmie-judge-honkette">Grimmie (Judge Honkette)</h1>
+
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/kb7lTMorbWo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+
+<div class="horizontal-2">
+
+  <div class="image"><a href="/assets/img/art/Grimmie/GrimmieTimeAssassinLight.png"><img src="/" alt="" srcset="    /assets/resized/GrimmieTimeAssassinLight-580x326.png 580w,    /assets/resized/GrimmieTimeAssassinLight-290x163.png 290w,    /assets/resized/GrimmieTimeAssassinLight-170x96.png 170w,    /assets/resized/GrimmieTimeAssassinLight-145x82.png 145w, /assets/img/art/Grimmie/GrimmieTimeAssassinLight.png 1920w" sizes="(max-width: 624px) 50vw, 290px" /></a></div>
+
+  <div class="image"><a href="/assets/img/art/Grimmie/GrimmieTimeAssassinDark.png"><img src="/" alt="" srcset="    /assets/resized/GrimmieTimeAssassinDark-580x326.png 580w,    /assets/resized/GrimmieTimeAssassinDark-290x163.png 290w,    /assets/resized/GrimmieTimeAssassinDark-170x96.png 170w,    /assets/resized/GrimmieTimeAssassinDark-145x82.png 145w, /assets/img/art/Grimmie/GrimmieTimeAssassinDark.png 1920w" sizes="(max-width: 624px) 50vw, 290px" /></a></div>
+</div>
+
+<div class="image"><a href="/assets/img/art/Grimmie/GrimmieGravity.png" class="image-link"><img src="/" alt="" srcset="    /assets/resized/GrimmieGravity-580x348.png 580w,    /assets/resized/GrimmieGravity-290x174.png 290w,    /assets/resized/GrimmieGravity-170x102.png 170w,    /assets/resized/GrimmieGravity-145x87.png 145w, /assets/img/art/Grimmie/GrimmieGravity.png 1170w" sizes="(max-width: 624px) 100vw, 578px, 580px" /></a></div>
+
+<h1 id="konstantin3001"><a href="https://www.deviantart.com/konstantin3001">Konstantin3001</a></h1>
+
+<div class="image"><a href="/assets/img/art/Konstantin3001/KonstantinCultistPoster.png" class="image-link"><img src="/" alt="" srcset="    /assets/resized/KonstantinCultistPoster-580x387.png 580w,    /assets/resized/KonstantinCultistPoster-290x193.png 290w,    /assets/resized/KonstantinCultistPoster-170x113.png 170w,    /assets/resized/KonstantinCultistPoster-145x97.png 145w, /assets/img/art/Konstantin3001/KonstantinCultistPoster.png 1800w" sizes="(max-width: 624px) 100vw, 578px, 580px" /></a></div>
+
+<div class="image"><a href="/assets/img/art/Konstantin3001/KonstantinIanSunsetPoster.png" class="image-link"><img src="/" alt="" srcset="    /assets/resized/KonstantinIanSunsetPoster-580x870.png 580w,    /assets/resized/KonstantinIanSunsetPoster-290x435.png 290w,    /assets/resized/KonstantinIanSunsetPoster-170x255.png 170w,    /assets/resized/KonstantinIanSunsetPoster-145x218.png 145w, /assets/img/art/Konstantin3001/KonstantinIanSunsetPoster.png 600w" sizes="(max-width: 624px) 100vw, 578px, 580px" /></a></div>
+
+<div class="horizontal-3">
+
+  <div class="image"><a href="/assets/img/art/Konstantin3001/GLOVES_vandalized.png"><img src="/" alt="" srcset="    /assets/resized/GLOVES_vandalized-580x870.png 580w,    /assets/resized/GLOVES_vandalized-290x435.png 290w,    /assets/resized/GLOVES_vandalized-170x255.png 170w,    /assets/resized/GLOVES_vandalized-145x218.png 145w, /assets/img/art/Konstantin3001/GLOVES_vandalized.png 600w" sizes="(max-width: 624px) 50vw, 290px" /></a></div>
+
+  <div class="image"><a href="/assets/img/art/Konstantin3001/PosterKonstantin3001UnkownSubstances.png"><img src="/" alt="" srcset="    /assets/resized/PosterKonstantin3001UnkownSubstances-580x870.png 580w,    /assets/resized/PosterKonstantin3001UnkownSubstances-290x435.png 290w,    /assets/resized/PosterKonstantin3001UnkownSubstances-170x255.png 170w,    /assets/resized/PosterKonstantin3001UnkownSubstances-145x218.png 145w, /assets/img/art/Konstantin3001/PosterKonstantin3001UnkownSubstances.png 600w" sizes="(max-width: 624px) 50vw, 290px" /></a></div>
+
+  <div class="image"><a href="/assets/img/art/Konstantin3001/QUESTION.png"><img src="/" alt="" srcset="    /assets/resized/QUESTION-580x870.png 580w,    /assets/resized/QUESTION-290x435.png 290w,    /assets/resized/QUESTION-170x255.png 170w,    /assets/resized/QUESTION-145x218.png 145w, /assets/img/art/Konstantin3001/QUESTION.png 600w" sizes="(max-width: 624px) 50vw, 290px" /></a></div>
+</div>
+
+<div class="horizontal-3">
+
+  <div class="image"><a href="/assets/img/art/Konstantin3001/NT.png"><img src="/" alt="" srcset="    /assets/resized/NT-580x870.png 580w,    /assets/resized/NT-290x435.png 290w,    /assets/resized/NT-170x255.png 170w,    /assets/resized/NT-145x218.png 145w, /assets/img/art/Konstantin3001/NT.png 600w" sizes="(max-width: 624px) 50vw, 290px" /></a></div>
+
+  <div class="image"><a href="/assets/img/art/Konstantin3001/NT2.png"><img src="/" alt="" srcset="    /assets/resized/NT2-580x870.png 580w,    /assets/resized/NT2-290x435.png 290w,    /assets/resized/NT2-170x255.png 170w,    /assets/resized/NT2-145x218.png 145w, /assets/img/art/Konstantin3001/NT2.png 600w" sizes="(max-width: 624px) 50vw, 290px" /></a></div>
+
+  <div class="image"><a href="/assets/img/art/Konstantin3001/NT3.png"><img src="/" alt="" srcset="    /assets/resized/NT3-580x870.png 580w,    /assets/resized/NT3-290x435.png 290w,    /assets/resized/NT3-170x255.png 170w,    /assets/resized/NT3-145x218.png 145w, /assets/img/art/Konstantin3001/NT3.png 600w" sizes="(max-width: 624px) 50vw, 290px" /></a></div>
+</div>
+
+<h1 id="probably-not">Probably Not</h1>
+
+<div class="image"><a href="/assets/img/art/ProbablyNot/ProbablyNotDark.jpg" class="image-link"><img src="/" alt="" srcset="    /assets/resized/ProbablyNotDark-580x435.jpg 580w,    /assets/resized/ProbablyNotDark-290x218.jpg 290w,    /assets/resized/ProbablyNotDark-170x128.jpg 170w,    /assets/resized/ProbablyNotDark-145x109.jpg 145w, /assets/img/art/ProbablyNot/ProbablyNotDark.jpg 2048w" sizes="(max-width: 624px) 100vw, 578px, 580px" /></a></div>
+
+<div class="image"><a href="/assets/img/art/ProbablyNot/ProbablyNotClownHall.jpg" class="image-link"><img src="/" alt="" srcset="    /assets/resized/ProbablyNotClownHall-580x326.jpg 580w,    /assets/resized/ProbablyNotClownHall-290x163.jpg 290w,    /assets/resized/ProbablyNotClownHall-170x96.jpg 170w,    /assets/resized/ProbablyNotClownHall-145x82.jpg 145w, /assets/img/art/ProbablyNot/ProbablyNotClownHall.jpg 1920w" sizes="(max-width: 624px) 100vw, 578px, 580px" /></a></div>
+
+<div class="image"><a href="/assets/img/art/ProbablyNot/November19Wallpaper.png" class="image-link"><img src="/" alt="" srcset="    /assets/resized/November19Wallpaper-580x326.png 580w,    /assets/resized/November19Wallpaper-290x163.png 290w,    /assets/resized/November19Wallpaper-170x96.png 170w,    /assets/resized/November19Wallpaper-145x82.png 145w, /assets/img/art/ProbablyNot/November19Wallpaper.png 3840w" sizes="(max-width: 624px) 100vw, 578px, 580px" /></a></div>
+
+<h1 id="sunberry">Sunberry</h1>
+
+<div class="image"><a href="/assets/img/art/Sunberry/SunberryIanSunsetPoster.png" class="image-link"><img src="/" alt="" srcset="    /assets/resized/SunberryIanSunsetPoster-580x870.png 580w,    /assets/resized/SunberryIanSunsetPoster-290x435.png 290w,    /assets/resized/SunberryIanSunsetPoster-170x255.png 170w,    /assets/resized/SunberryIanSunsetPoster-145x218.png 145w, /assets/img/art/Sunberry/SunberryIanSunsetPoster.png 600w" sizes="(max-width: 624px) 100vw, 578px, 580px" /></a></div>
+
+            </main>
+            <footer>
+                <div class="contact">
+    <ul class="ul-reset">
+    <li>
+        <a href="https://discord.gg/3ny9tdH">Discord</a>
+    </li>
+    <li>
+        <a href="https://github.com/RE-SS3D">GitHub</a>
+    </li>
+    <li>
+        <a href="https://trello.com/ress3d">Trello</a>
+    </li>
+    <li>
+        <a href="https://reddit.com/r/RESS3D">Reddit</a>
+    </li>
+    <li>
+        <a href="/privacy">Privacy Policy</a>
+    </li>
+    <li>
+        <a type="application/atom+xml" href="/feed.xml">Atom (RSS)</a>
+    </li>
+    <li>
+        <label id="theme-switch" class="theme-switch" for="checkbox_theme">
+            <input type="checkbox" id="checkbox_theme" style="display:none"><span class="link">Toggle Theme</span>
+        </label>
+    </li>
+</ul>
+</div>
+            </footer>
+        </div>
+        <script>
+            
+            // Fix flashing buttons by only allowing the css animations to play after a slight delay.
+            setTimeout(function() {
+                document.getElementsByTagName('body')[0].classList.remove('preload');
+            }, 50);
+
+            //theme toggle
+            //identify the toggle switch HTML element
+            const toggleSwitch = document.querySelector('#theme-switch input[type="checkbox"]');
+    
+            //function that changes the theme, and sets a localStorage variable to track the theme between page loads
+            function switchTheme(e) {
+                if (e.target.checked) {
+                    localStorage.setItem('theme', 'light');
+                    document.documentElement.setAttribute('data-theme', 'light');
+                    toggleSwitch.checked = true;
+                } else {
+                    localStorage.setItem('theme', 'dark');
+                    document.documentElement.setAttribute('data-theme', 'dark');
+                    toggleSwitch.checked = false;
+                }    
+            }
+    
+            //listener for changing themes
+            toggleSwitch.addEventListener('change', switchTheme, false);
+    
+            //pre-check the dark-theme checkbox if dark-theme is set
+            if (document.documentElement.getAttribute("data-theme") == "light"){
+                toggleSwitch.checked = true;
+            }
+        </script>
+    </body>
+</html>
