@@ -5,7 +5,7 @@ date:   2020-00-00 (year-month-day) 15:30:00 +0100
 description: |
     "description goes here."
 image: /assets/img/posts/[insert folder]/Wallpaper.png
-image_credit: Image credit - **[insert name]**
+image_credit: Image credit - [insert name]
 ---
 
 Cute phrase goes here.

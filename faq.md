@@ -3,32 +3,35 @@ layout: default
 title: FAQ
 permalink: /faq/
 ---
-## FAQ
 
-### How much will the game cost?
+## Who's *beep?
+
+*beep is the SS3D in RE:SS3D.
+
+## How much will the game cost?
 
 It's free.
 
-### How do I know you're not gonna run off with the money?
+## How do I know you're not gonna run off with the money?
 
 It's free.
 
-### What engine is this?
+## What engine does it use?
 
 Unity.
 
-### Will there be "X" feature?
+## Will there be "X" feature?
 
-It's open source. You'll be free to add it yourself.
+It's open source. If we don't add it someone else likely will, even if only for their own codebase.
 
-### Curse?
+## Curse?
 
 Don't talk about that. If it becomes an issue, we've got this whole place rigged to explode.
 
-### Why isn't it released to the public already?
+## Where can I find the project?
 
-It's open source, though right now, in this stage of development, the game is primarily being developed by our team in a [space sweatshop](https://discord.gg/3ny9tdH).
+On our [SS3D repository](https://github.com/RE-SS3D/SS3D).
 
-### Who's *beep?
+## Can I help?
 
-*beep is the SS3D in RE:SS3D.
+Yes, the project is open source, just visit our [contribute]({{ site.baseurl }}/contribute/) page and come join our [space sweatshop](https://discord.gg/3ny9tdH).
