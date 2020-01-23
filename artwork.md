@@ -38,7 +38,9 @@ This Page is for displaying SS3D-related artworks such as wallpapers, animations
 
 # Goao
 
-[Title 3 - Tin Tin REMIX](https://soundcloud.com/joao-pedro-buratto/tin-tin-title3-mix-7-version-6) - [Traitor REMIX](https://soundcloud.com/joao-pedro-buratto/traitor-mix2)
+**[Title 3 - Tin Tin REMIX](https://soundcloud.com/joao-pedro-buratto/tin-tin-title3-mix-7-version-6)**
+
+**[Traitor REMIX](https://soundcloud.com/joao-pedro-buratto/traitor-mix2)**
 
 <div class='horizontal-2' markdown='1'>
 {% responsive_image path: assets/img/art/Goao/GoaoRender.png %}
