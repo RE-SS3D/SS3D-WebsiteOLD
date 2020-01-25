@@ -7,9 +7,9 @@ permalink: /contribute/
 ### Step by step guide:
 
 1. Go to the appropriate board/list for your field and look for available tasks.
-2. Pick a task, and request a @Centcom member to assign you to that task.
+2. Pick a task, and request a @Centcom member on discord to assign you to that task.
 3. Work on that task, using the correct style and formatting.
-4. Post in-progress screenshots or videos to #wip for extra praise.
+4. Request in-progress screenshots or videos to be posted in #wip for extra praise.
 5. Submit the task (as a PR for code, or by posting the asset to discord and notifying someone in @Centcom).
 6. They will review it, and may request changes.
 7. Submit screenshots and/or videos to the #devblog channel along with a link for an asset or a summary for code.

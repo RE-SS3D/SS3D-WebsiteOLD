@@ -4,34 +4,41 @@ title: FAQ
 permalink: /faq/
 ---
 
-## Who's *beep?
+## Is there a playable demo?
 
-*beep is the SS3D in RE:SS3D.
+Latest build can be found [here](https://github.com/RE-SS3D/SS3D/releases/latest). 
+But don't expect much yet, as we still have a lot of work to do.
 
 ## How much will the game cost?
 
-It's free.
+It's free and open source.
 
-## How do I know you're not gonna run off with the money?
+## When will the game be completed?
 
-It's free.
+The game likely won't be to the playable state SS13 has for a few years.
 
 ## What engine does it use?
 
-Unity.
+The game is made with Unity, with Mirror for networking. 
+For legal reasons we don't use assets from the Unity Asset Store, but open source assets are fine.
 
 ## Will there be "X" feature?
 
-It's open source. If we don't add it someone else likely will, even if only for their own codebase.
+Since the project is open source, if it's not already added someone else, you'll be free to add it yourself.
+We do however aim to have the lowest common denominator in terms of features carried over from SS13.
+The most significant changes to the formula will be redesigns of the shortcomings and limitations of SS13 and its engine.
 
-## Curse?
+## How can I help?
 
-Don't talk about that. If it becomes an issue, we've got this whole place rigged to explode.
+There are several ways you can help, from 2d art, 3d art, sfx, programming, website development and more, just visit our [contribute page]({{ site.baseurl }}/contribute/) and come join our [space sweatshop](https://discord.gg/3ny9tdH).
 
-## Where can I find the project?
+## What license is the project distributed under?
 
-On our [SS3D repository](https://github.com/RE-SS3D/SS3D).
+All code assets use the MIT license, only requiring attribution when used.
+All art assets use the CC BY-NC-SA 4.0 license, requiring attribution, same license, and only for non-commercial uses.
+Keep in mind that your contributions are not retractable. Once submitted, the project has the license to use your contribution indefinitely.
 
-## Can I help?
+## Who is *beep?
 
-Yes, the project is open source, just visit our [contribute]({{ site.baseurl }}/contribute/) page and come join our [space sweatshop](https://discord.gg/3ny9tdH).
+*beep is the original creator of SS3D, hence the name RE:SS3D. For more info on his tale check out our [about page]({{ site.baseurl }}/about/).
+His current status and whereabouts are still unknown. If only he had turned his damn suit sensors on...
