@@ -10,7 +10,7 @@ image_credit: Image credit - [insert name]
 
 Cute phrase goes here.
 
-// The devblog for the most part is laid out in sections. With the titles of the sections going from large = # (recap section), to medium = ## (content sections), to small = ### (info sections). The order of the sections should be followed but there is some liberty in renaming (e.g. 'Models' --> 'Eye Candy') them, as well as deleting unneeded sections or combining multiple short sections into one (e.g. 'Core-Systems' and 'Sub-Systems' --> 'Systems').
+// The devblog is mostly laid out in sections. With the titles of the sections going from large = # (recap section), to medium = ## (content sections), to small = ### (info sections). These are not rules but more like guidelines, take liberty in moving or renaming sections as well as deleting/merging unneeded sections.
 // Bold any **names** when referencing someone in a description or crediting them for an artpiece.
 // Use the lines below to include links.
 
