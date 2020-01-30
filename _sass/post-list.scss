@@ -1,18 +1,33 @@
-.post-description {
-    white-space: pre-line;
-}
 
-.post-image {
-    width: 100%;
+.post-content ul.post-list {
+    align-self: center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .post-row {
-    margin-top: 32px;
+    display: inline;
+
+    padding-top: 32px;
     align-items: center;
+
+    // Force the text to a maximum size so that the post-row's inline is to the size of the image.
+    // There could be better ways of doing this, maybe (put the title and text in a div below the
+    // image which takes the image's width)
+    .post-text {
+        width: 580px;
+    }
+
     h2 {
         margin-bottom: 0.325em;
         a {
             text-decoration: underline;
         }
     }
+}
+
+.post-description {
+    white-space: pre-line;
 }
