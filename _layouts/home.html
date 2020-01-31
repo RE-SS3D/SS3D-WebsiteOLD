@@ -5,18 +5,19 @@ layout: default
 {{ content }}
 <ul class="ul-reset post-list">
 {% for post in site.posts limit:1 %}
-<li class="post-row">
-        <div>
-            <a style="white-space: nowrap;" href="{{ site.baseurl}}{{ post.url }}">{% responsive_image_block %}
-path: {{ post.image | prepend: site.baseurl |  remove_first: "/" }}
-template: "_includes/srcset-post.html" {% endresponsive_image_block %}</a>
-        </div>
-        <div>
-            <h2><a href="{{ site.baseurl}}{{ post.url }}">{{ post.title}}</a></h2>
+    <li class="post-row">
+        <a style="white-space: nowrap;" href="{{ site.baseurl}}{{ post.url }}">
+            {% responsive_image_block %}
+            path: {{ post.image | prepend: site.baseurl |  remove_first: "/" }}
+            template: "_includes/srcset-post.html"
+            {% endresponsive_image_block %}
+        </a>
+        <div class="post-text">
+            <h2><a href="{{ site.baseurl}}{{ post.url }}">{{ post.title }}</a></h2>
             <a class="a-reset" href="{{ site.baseurl}}{{ post.url }}"><span class="postDate">{{ post.date | date: "%b %-d, %Y" }}</span></a>
-        </div>
-        <div class="post-description">
-            <a class="a-reset" href="{{ site.baseurl}}{{ post.url }}"><p>{{ post.description }}</p></a>
+            <div class="post-description">
+                <a class="a-reset" href="{{ site.baseurl}}{{ post.url }}"><p>{{ post.description }}</p></a>
+            </div>
         </div>
     </li>
 {% endfor %}

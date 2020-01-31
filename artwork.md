@@ -12,7 +12,7 @@ This Page is for displaying SS3D-related artworks such as wallpapers, animations
 
 # Bug
 
-<video autoplay="autoplay" muted loop="loop" poster="{{ site.baseurl }}/assets/img/art/Bug/BugWallpaper2.png" width="560px">
+<video width="560px" autoplay="autoplay" muted loop="loop" poster="{{ site.baseurl }}/assets/img/art/Bug/BugWallpaper2.png">
   <source src="{{ site.baseurl }}/assets/img/art/Bug/BugAnimation.webm" type="video/webm">
   <source src="{{ site.baseurl }}/assets/img/art/Bug/BugAnimation.mp4" type="video/mp4">
 </video>
@@ -32,7 +32,7 @@ This Page is for displaying SS3D-related artworks such as wallpapers, animations
 
 # Eiko
 
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/WCPqPVdn-Oc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/WCPqPVdn-Oc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 {% responsive_image path: assets/img/art/Eiko/EikoPromoGibber.png template: _includes/srcset.html %}
 
@@ -51,7 +51,7 @@ This Page is for displaying SS3D-related artworks such as wallpapers, animations
 
 # Grimmie (Judge Honkette)
 
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/kb7lTMorbWo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/kb7lTMorbWo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <div class='horizontal-2' markdown='1'>
 {% responsive_image path: assets/img/art/Grimmie/GrimmieTimeAssassinLight.png %}

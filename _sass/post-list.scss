@@ -8,16 +8,26 @@
 }
 
 .post-row {
-    display: inline;
+    @include respond-to(large-screen) {
+        max-width: none;
+        min-width: 800px;
+        width: 70%;
+    }
+    
+    max-width: 580px;
+    padding: 32px 0px;
 
-    padding-top: 32px;
-    align-items: center;
-
-    // Force the text to a maximum size so that the post-row's inline is to the size of the image.
-    // There could be better ways of doing this, maybe (put the title and text in a div below the
-    // image which takes the image's width)
+    img {
+        @include respond-to(large-screen) {
+            width: 52%;
+            float: left;
+        }
+    }
     .post-text {
-        width: 580px;
+        @include respond-to(large-screen) {
+            width: 44%;
+            float: right;
+        }
     }
 
     h2 {
@@ -26,8 +36,4 @@
             text-decoration: underline;
         }
     }
-}
-
-.post-description {
-    white-space: pre-line;
 }
