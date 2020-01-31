@@ -6,7 +6,7 @@ permalink: /about/
 
 ## What is RE:SS3D?
 
-RE:SS3D is a resurrection of *beep's SS3D (a 3D recreation of Space Station 13). If you go digging for SS3D, you might find bits and pieces, but you will ultimately find a trail that ends in silence. Here's the short story:
+RE:SS3D is a resurrection of *beep's SS3D (a 3D recreation of Space Station 13 using the Unity game engine). If you go digging for SS3D, you might find bits and pieces, but you will ultimately find a trail that ends in silence. Here's the short story:
 
 <iframe class="video" width="560" height="315" class="video" src="https://www.youtube.com/embed/4QnjxQwe7eg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 *video re-uploaded by Injazz*
