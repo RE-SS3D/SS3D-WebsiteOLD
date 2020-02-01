@@ -6,9 +6,10 @@ description: |
     "Description goes here."
 image: /assets/img/posts/[insert folder]/Wallpaper.png
 image_credit: Image credit - [insert name]
+post_credit: Written by - [insert name]
 ---
 
-Cute phrase goes here.
+Cute phrase/quote goes here.
 
 // The devblog is mostly laid out in sections. With the titles of the sections going from large = # (recap section), to medium = ## (content sections), to small = ### (info sections). These are not rules but more like guidelines, take liberty in moving or renaming sections as well as deleting/merging unneeded sections.
 // Bold any **names** when referencing someone in a description or crediting them for an artpiece.
