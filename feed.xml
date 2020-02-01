@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://ss3d.space/feed.xml" rel="self" type="application/atom+xml" /><link href="https://ss3d.space/" rel="alternate" type="text/html" /><updated>2020-01-28T17:44:02+00:00</updated><id>https://ss3d.space/feed.xml</id><title type="html">RE:SS3D</title><subtitle>This is a 3D recreation of Space Station 13, on the Unity engine, which will come with its own set of gameplay/graphical improvements. </subtitle><entry><title type="html">19.12: December Recap</title><link href="https://ss3d.space/2020/01/10/19.12.html" rel="alternate" type="text/html" title="19.12: December Recap" /><published>2020-01-10T14:30:00+00:00</published><updated>2020-01-10T14:30:00+00:00</updated><id>https://ss3d.space/2020/01/10/19.12</id><content type="html" xml:base="https://ss3d.space/2020/01/10/19.12.html">&lt;p&gt;“A good system shortens the road to the goal.”
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://ss3d.space/feed.xml" rel="self" type="application/atom+xml" /><link href="https://ss3d.space/" rel="alternate" type="text/html" /><updated>2020-02-01T15:18:31+00:00</updated><id>https://ss3d.space/feed.xml</id><title type="html">RE:SS3D</title><subtitle>This is a 3D recreation of Space Station 13, on the Unity engine, which will come with its own set of gameplay/graphical improvements. </subtitle><entry><title type="html">19.12: December Recap</title><link href="https://ss3d.space/2020/01/10/19.12.html" rel="alternate" type="text/html" title="19.12: December Recap" /><published>2020-01-10T14:30:00+00:00</published><updated>2020-01-10T14:30:00+00:00</updated><id>https://ss3d.space/2020/01/10/19.12</id><content type="html" xml:base="https://ss3d.space/2020/01/10/19.12.html">&lt;p&gt;“A good system shortens the road to the goal.”
 -Orison Swett Marden&lt;/p&gt;
 
 &lt;h1 id=&quot;december-recap&quot;&gt;December Recap&lt;/h1&gt;
@@ -572,7 +572,7 @@ Close your eyes but be guided by the hand.&lt;/p&gt;
 &lt;h1 id=&quot;auditory-arts&quot;&gt;AUDITORY ARTS&lt;/h1&gt;
 
 &lt;p&gt;For reasons completely beyond me, our humble music section has found itself quite busy over the past month. Courtesy of Eiko, here is this resulting product of musical dabbling:&lt;/p&gt;
-&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/WCPqPVdn-Oc&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+&lt;iframe class=&quot;video&quot; width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/WCPqPVdn-Oc&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
 
 &lt;h3 id=&quot;notes&quot;&gt;NOTES&lt;/h3&gt;
 
@@ -689,7 +689,7 @@ Come visit us on &lt;a href=&quot;https://discord.gg/3ny9tdH&quot; target=&quot;
 &lt;h2 id=&quot;teaser&quot;&gt;Teaser&lt;/h2&gt;
 
 &lt;p&gt;It doesn’t feel right to put this one anywhere besides the top.&lt;/p&gt;
-&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube-nocookie.com/embed/kb7lTMorbWo&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+&lt;iframe class=&quot;video&quot; width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube-nocookie.com/embed/kb7lTMorbWo&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
 &lt;p&gt;New teaser video courtesy of Grimmie. Please share it with your programmer friends and tell them to come help us build the project. Technically an older piece from when this project was younger.&lt;/p&gt;
 
 &lt;h2 id=&quot;re-networking&quot;&gt;Re-networking&lt;/h2&gt;
@@ -1325,7 +1325,7 @@ Come visit us on &lt;a href=&quot;https://discord.gg/3ny9tdH&quot; target=&quot;
 
 &lt;p&gt;Ol’ Singulo is here, complete with containment fields, courtesy of PlayerOne. Experience the horror of a containing an erratic and malevolent force of destruction to power basic utilities.&lt;/p&gt;
 
-&lt;video autoplay=&quot;autoplay&quot; muted=&quot;&quot; loop=&quot;loop&quot; poster=&quot;/assets/img/posts/19.04.1/SinguloTest.jpg&quot; width=&quot;580px&quot;&gt;
+&lt;video width=&quot;580px&quot; autoplay=&quot;autoplay&quot; muted=&quot;&quot; loop=&quot;loop&quot; poster=&quot;/assets/img/posts/19.04.1/SinguloTest.jpg&quot;&gt;
   &lt;source src=&quot;/assets/img/posts/19.04.1/SinguloTest.webm&quot; type=&quot;video/webm&quot; /&gt;
   &lt;source src=&quot;/assets/img/posts/19.04.1/SinguloTest.mp4&quot; type=&quot;video/mp4&quot; /&gt;
 &lt;/video&gt;
