@@ -139,5 +139,6 @@ $pad: 1em;
 
 /* Used with @mixin respond-to($name) mixin */
 $breakpoints: (
-    'desktop': ( min-width: 624px )
+    'desktop': ( min-width: 624px ),
+    'large-screen': ( min-width: 1024px )
 );

@@ -71,12 +71,12 @@
 
 // Ensure that images and videos appear in the middle of the screen.
 // Add a bit of spacing at the bottom as if it was inline with a paragraph
-div.image, .post-content video {
+div.image, .post-content video, .post-content .video {
     align-self: center;
     margin-top: 0.5em;
 }
 
 // Images and videos can't be bigger than the post-content area
-.post-content img, .post-content video {
+.post-content img, .post-content video, .post-content .video {
     max-width: 100%;
 }

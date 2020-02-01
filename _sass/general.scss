@@ -97,8 +97,11 @@ a, .link {
         width: 60%;
     }
 
-    h1, h2, h3, h4, h5, p {
+    h1, h2, h3, h4, h5, p, ul, ol {
         align-self: flex-start;
+    }
+    .centred {
+        align-self: center;
     }
 }
 
