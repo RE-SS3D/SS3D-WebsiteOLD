@@ -281,7 +281,12 @@ header {
     font-size: 13px;
     font-size: 4.5vw;
     white-space: nowrap;
-    overflow: visible; }
+    overflow: visible;
+    font-family: "Spessman", sans-serif; }
+@font-face {
+  header p {
+    font-family: "Spessman";
+    src: url("../assets/misc/spessmanfont.tff"); } }
   header div {
     width: 100%; }
   header img {
