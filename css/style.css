@@ -253,10 +253,10 @@ a, .link {
   display: flex;
   flex-direction: column;
   align-items: center; }
-  @media (min-width: 624px) {
+  @media (min-width: 1024px) {
     .post-content {
       margin: 0 auto;
-      width: 60%; } }
+      width: 45%; } }
   .post-content h1, .post-content h2, .post-content h3, .post-content h4, .post-content h5, .post-content p, .post-content ul, .post-content ol {
     align-self: flex-start; }
   .post-content .centred {

@@ -64,9 +64,9 @@
             !function(e,n,A){function o(e,n){return typeof e===n}function t(){var e,n,A,t,a,i,l;for(var f in r)if(r.hasOwnProperty(f)){if(e=[],n=r[f],n.name&&(e.push(n.name.toLowerCase()),n.options&&n.options.aliases&&n.options.aliases.length))for(A=0;A<n.options.aliases.length;A++)e.push(n.options.aliases[A].toLowerCase());for(t=o(n.fn,"function")?n.fn():n.fn,a=0;a<e.length;a++)i=e[a],l=i.split("."),1===l.length?Modernizr[l[0]]=t:(!Modernizr[l[0]]||Modernizr[l[0]]instanceof Boolean||(Modernizr[l[0]]=new Boolean(Modernizr[l[0]])),Modernizr[l[0]][l[1]]=t),s.push((t?"":"no-")+l.join("-"))}}function a(e){var n=u.className,A=Modernizr._config.classPrefix||"";if(c&&(n=n.baseVal),Modernizr._config.enableJSClass){var o=new RegExp("(^|\\s)"+A+"no-js(\\s|$)");n=n.replace(o,"$1"+A+"js$2")}Modernizr._config.enableClasses&&(n+=" "+A+e.join(" "+A),c?u.className.baseVal=n:u.className=n)}function i(e,n){if("object"==typeof e)for(var A in e)f(e,A)&&i(A,e[A]);else{e=e.toLowerCase();var o=e.split("."),t=Modernizr[o[0]];if(2==o.length&&(t=t[o[1]]),"undefined"!=typeof t)return Modernizr;n="function"==typeof n?n():n,1==o.length?Modernizr[o[0]]=n:(!Modernizr[o[0]]||Modernizr[o[0]]instanceof Boolean||(Modernizr[o[0]]=new Boolean(Modernizr[o[0]])),Modernizr[o[0]][o[1]]=n),a([(n&&0!=n?"":"no-")+o.join("-")]),Modernizr._trigger(e,n)}return Modernizr}var s=[],r=[],l={_version:"3.6.0",_config:{classPrefix:"",enableClasses:!0,enableJSClass:!0,usePrefixes:!0},_q:[],on:function(e,n){var A=this;setTimeout(function(){n(A[e])},0)},addTest:function(e,n,A){r.push({name:e,fn:n,options:A})},addAsyncTest:function(e){r.push({name:null,fn:e})}},Modernizr=function(){};Modernizr.prototype=l,Modernizr=new Modernizr;var f,u=n.documentElement,c="svg"===u.nodeName.toLowerCase();!function(){var e={}.hasOwnProperty;f=o(e,"undefined")||o(e.call,"undefined")?function(e,n){return n in e&&o(e.constructor.prototype[n],"undefined")}:function(n,A){return e.call(n,A)}}(),l._l={},l.on=function(e,n){this._l[e]||(this._l[e]=[]),this._l[e].push(n),Modernizr.hasOwnProperty(e)&&setTimeout(function(){Modernizr._trigger(e,Modernizr[e])},0)},l._trigger=function(e,n){if(this._l[e]){var A=this._l[e];setTimeout(function(){var e,o;for(e=0;e<A.length;e++)(o=A[e])(n)},0),delete this._l[e]}},Modernizr._q.push(function(){l.addTest=i}),Modernizr.addAsyncTest(function(){function e(e,n,A){function o(n){var o=n&&"load"===n.type?1==t.width:!1,a="webp"===e;i(e,a&&o?new Boolean(o):o),A&&A(n)}var t=new Image;t.onerror=o,t.onload=o,t.src=n}var n=[{uri:"data:image/webp;base64,UklGRiQAAABXRUJQVlA4IBgAAAAwAQCdASoBAAEAAwA0JaQAA3AA/vuUAAA=",name:"webp"},{uri:"data:image/webp;base64,UklGRkoAAABXRUJQVlA4WAoAAAAQAAAAAAAAAAAAQUxQSAwAAAABBxAR/Q9ERP8DAABWUDggGAAAADABAJ0BKgEAAQADADQlpAADcAD++/1QAA==",name:"webp.alpha"},{uri:"data:image/webp;base64,UklGRlIAAABXRUJQVlA4WAoAAAASAAAAAAAAAAAAQU5JTQYAAAD/////AABBTk1GJgAAAAAAAAAAAAAAAAAAAGQAAABWUDhMDQAAAC8AAAAQBxAREYiI/gcA",name:"webp.animation"},{uri:"data:image/webp;base64,UklGRh4AAABXRUJQVlA4TBEAAAAvAAAAAAfQ//73v/+BiOh/AAA=",name:"webp.lossless"}],A=n.shift();e(A.name,A.uri,function(A){if(A&&"load"===A.type)for(var o=0;o<n.length;o++)e(n[o].name,n[o].uri)})}),t(),a(s),delete l.addTest,delete l.addAsyncTest;for(var p=0;p<Modernizr._q.length;p++)Modernizr._q[p]();e.Modernizr=Modernizr}(window,document);
         </script>
         <!-- Begin Jekyll SEO tag v2.6.1 -->
-<title>19.10: Spooktober Recap | RE:SS3D</title>
+<title>19.10: Spooktober 2019 Devblog | RE:SS3D</title>
 <meta name="generator" content="Jekyll v3.8.5" />
-<meta property="og:title" content="19.10: Spooktober Recap" />
+<meta property="og:title" content="19.10: Spooktober 2019 Devblog" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="“Did I scare you?”" />
 <meta property="og:description" content="“Did I scare you?”" />
@@ -77,7 +77,7 @@
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2019-11-11T14:30:00+00:00" />
 <script type="application/ld+json">
-{"description":"“Did I scare you?”","@type":"BlogPosting","headline":"19.10: Spooktober Recap","dateModified":"2019-11-11T14:30:00+00:00","datePublished":"2019-11-11T14:30:00+00:00","url":"https://ss3d.space/2019/11/11/19.10.html","mainEntityOfPage":{"@type":"WebPage","@id":"https://ss3d.space/2019/11/11/19.10.html"},"image":"https://ss3d.space/assets/img/art/CosmicCoincidence/CosmicHalloween.png","@context":"https://schema.org"}</script>
+{"description":"“Did I scare you?”","@type":"BlogPosting","headline":"19.10: Spooktober 2019 Devblog","dateModified":"2019-11-11T14:30:00+00:00","datePublished":"2019-11-11T14:30:00+00:00","url":"https://ss3d.space/2019/11/11/19.10.html","mainEntityOfPage":{"@type":"WebPage","@id":"https://ss3d.space/2019/11/11/19.10.html"},"image":"https://ss3d.space/assets/img/art/CosmicCoincidence/CosmicHalloween.png","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
         <link type="application/atom+xml" rel="alternate" href="https://ss3d.space/feed.xml" title="RE:SS3D" />
@@ -164,8 +164,9 @@ window.cookieconsent.initialise({
   
 </div>
 
-<h1>19.10: Spooktober Recap</h1>
+<h1>19.10: Spooktober 2019 Devblog</h1>
 <h5><i>on Monday, November 11, 2019</i></h5>
+<h5><i>Written by - Sunberry</i></h5>
 <p><em>I was a little afraid, myself, to be frank.</em></p>
 
 <h1 id="october-recap">October Recap</h1>
@@ -272,7 +273,7 @@ window.cookieconsent.initialise({
 
 <p>Fitting of the theme of horror, description will be withheld.</p>
 
-<h1 id="eye-candy">EYE CANDY</h1>
+<h2 id="eye-candy">EYE CANDY</h2>
 
 <p>From Goao, a Spooktober poster, a lovely render, new beakers, <a href="/assets/img/posts/19.10.01/GoaoWhereTheDoot.png" target="_blank">and</a> some machines you might or might not recognize from medical.</p>
 
@@ -395,7 +396,7 @@ window.cookieconsent.initialise({
 
 <div class="image"><a href="/assets/img/posts/19.10.01/ProbablyNotYouDoneFuckedUpWide.png" class="image-link"><img src="/" alt="" srcset="    /assets/resized/ProbablyNotYouDoneFuckedUpWide-580x326.png 580w,    /assets/resized/ProbablyNotYouDoneFuckedUpWide-290x163.png 290w,    /assets/resized/ProbablyNotYouDoneFuckedUpWide-170x96.png 170w,    /assets/resized/ProbablyNotYouDoneFuckedUpWide-145x82.png 145w, /assets/img/posts/19.10.01/ProbablyNotYouDoneFuckedUpWide.png 960w" sizes="(max-width: 624px) 100vw, 578px, 580px" /></a></div>
 
-<h1 id="auditory-arts">AUDITORY ARTS</h1>
+<h2 id="auditory-arts">AUDITORY ARTS</h2>
 
 <p>For reasons completely beyond me, our humble music section has found itself quite busy over the past month. Courtesy of Eiko, here is this resulting product of musical dabbling:</p>
 <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/WCPqPVdn-Oc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
@@ -408,6 +409,7 @@ window.cookieconsent.initialise({
 Since literally just asking nicely for programmers worked so effectively last time, please send programmers.</p>
 
 <p>Remember, folks, Spooktober might be over, but skeletons last forever.</p>
+
 
             </main>
             <footer>

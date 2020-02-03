@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="/css/style.css">
+        <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+        <meta name="theme-color" content="#1e4684">
+        <script>
+            //theme toggle
+            //determines if the user has a set theme
+            function detectColorScheme(){
+                var theme="dark";    //default to dark
+
+                //local storage is used to override OS theme settings
+                if(localStorage.getItem("theme")){
+                    if(localStorage.getItem("theme") == "light"){
+                        var theme = "light";
+                    }
+                } else if(!window.matchMedia) {
+                    //matchMedia method not supported
+                    return false;
+                } else if(window.matchMedia("(prefers-color-scheme: light)").matches) {
+                    //OS theme setting detected as dark
+                    var theme = "light";
+                }
+
+                //dark theme preferred, set document with a `data-theme` attribute
+                if (theme=="light") {
+                    document.documentElement.setAttribute("data-theme", "light");
+                } else {
+                    document.documentElement.setAttribute("data-theme", "dark");
+                }
+            }
+            detectColorScheme();
+            
+            // Function to keep the navigation bars scroll offset when changing pages.
+            setScroll = function(url, scroll) {
+                if(scroll != 0) {
+                    window.location.href = url + '?scroll=' + scroll;
+                    return;
+                }
+                window.location.href = url;
+            }
+            // Set navigation bar scroll offset, if it exists.
+            getScroll = function() {
+                var url = new URL(window.location.href);
+                var scroll = url.searchParams.get("scroll");
+                if (scroll != 0) {
+                    var el = document.getElementById('scroll');
+                    el.scrollLeft = scroll;
+                }
+            }
+            if (window.addEventListener) {
+                window.addEventListener('load', getScroll, false);
+            }
+            else if (window.attachEvent) {
+                window.attachEvent('onload', getScroll);
+            }
+        </script>
+        <script>
+            /*! modernizr 3.6.0 (Custom Build) | MIT *
+            * https://modernizr.com/download/?-webp-setclasses !*/
+            !function(e,n,A){function o(e,n){return typeof e===n}function t(){var e,n,A,t,a,i,l;for(var f in r)if(r.hasOwnProperty(f)){if(e=[],n=r[f],n.name&&(e.push(n.name.toLowerCase()),n.options&&n.options.aliases&&n.options.aliases.length))for(A=0;A<n.options.aliases.length;A++)e.push(n.options.aliases[A].toLowerCase());for(t=o(n.fn,"function")?n.fn():n.fn,a=0;a<e.length;a++)i=e[a],l=i.split("."),1===l.length?Modernizr[l[0]]=t:(!Modernizr[l[0]]||Modernizr[l[0]]instanceof Boolean||(Modernizr[l[0]]=new Boolean(Modernizr[l[0]])),Modernizr[l[0]][l[1]]=t),s.push((t?"":"no-")+l.join("-"))}}function a(e){var n=u.className,A=Modernizr._config.classPrefix||"";if(c&&(n=n.baseVal),Modernizr._config.enableJSClass){var o=new RegExp("(^|\\s)"+A+"no-js(\\s|$)");n=n.replace(o,"$1"+A+"js$2")}Modernizr._config.enableClasses&&(n+=" "+A+e.join(" "+A),c?u.className.baseVal=n:u.className=n)}function i(e,n){if("object"==typeof e)for(var A in e)f(e,A)&&i(A,e[A]);else{e=e.toLowerCase();var o=e.split("."),t=Modernizr[o[0]];if(2==o.length&&(t=t[o[1]]),"undefined"!=typeof t)return Modernizr;n="function"==typeof n?n():n,1==o.length?Modernizr[o[0]]=n:(!Modernizr[o[0]]||Modernizr[o[0]]instanceof Boolean||(Modernizr[o[0]]=new Boolean(Modernizr[o[0]])),Modernizr[o[0]][o[1]]=n),a([(n&&0!=n?"":"no-")+o.join("-")]),Modernizr._trigger(e,n)}return Modernizr}var s=[],r=[],l={_version:"3.6.0",_config:{classPrefix:"",enableClasses:!0,enableJSClass:!0,usePrefixes:!0},_q:[],on:function(e,n){var A=this;setTimeout(function(){n(A[e])},0)},addTest:function(e,n,A){r.push({name:e,fn:n,options:A})},addAsyncTest:function(e){r.push({name:null,fn:e})}},Modernizr=function(){};Modernizr.prototype=l,Modernizr=new Modernizr;var f,u=n.documentElement,c="svg"===u.nodeName.toLowerCase();!function(){var e={}.hasOwnProperty;f=o(e,"undefined")||o(e.call,"undefined")?function(e,n){return n in e&&o(e.constructor.prototype[n],"undefined")}:function(n,A){return e.call(n,A)}}(),l._l={},l.on=function(e,n){this._l[e]||(this._l[e]=[]),this._l[e].push(n),Modernizr.hasOwnProperty(e)&&setTimeout(function(){Modernizr._trigger(e,Modernizr[e])},0)},l._trigger=function(e,n){if(this._l[e]){var A=this._l[e];setTimeout(function(){var e,o;for(e=0;e<A.length;e++)(o=A[e])(n)},0),delete this._l[e]}},Modernizr._q.push(function(){l.addTest=i}),Modernizr.addAsyncTest(function(){function e(e,n,A){function o(n){var o=n&&"load"===n.type?1==t.width:!1,a="webp"===e;i(e,a&&o?new Boolean(o):o),A&&A(n)}var t=new Image;t.onerror=o,t.onload=o,t.src=n}var n=[{uri:"data:image/webp;base64,UklGRiQAAABXRUJQVlA4IBgAAAAwAQCdASoBAAEAAwA0JaQAA3AA/vuUAAA=",name:"webp"},{uri:"data:image/webp;base64,UklGRkoAAABXRUJQVlA4WAoAAAAQAAAAAAAAAAAAQUxQSAwAAAABBxAR/Q9ERP8DAABWUDggGAAAADABAJ0BKgEAAQADADQlpAADcAD++/1QAA==",name:"webp.alpha"},{uri:"data:image/webp;base64,UklGRlIAAABXRUJQVlA4WAoAAAASAAAAAAAAAAAAQU5JTQYAAAD/////AABBTk1GJgAAAAAAAAAAAAAAAAAAAGQAAABWUDhMDQAAAC8AAAAQBxAREYiI/gcA",name:"webp.animation"},{uri:"data:image/webp;base64,UklGRh4AAABXRUJQVlA4TBEAAAAvAAAAAAfQ//73v/+BiOh/AAA=",name:"webp.lossless"}],A=n.shift();e(A.name,A.uri,function(A){if(A&&"load"===A.type)for(var o=0;o<n.length;o++)e(n[o].name,n[o].uri)})}),t(),a(s),delete l.addTest,delete l.addAsyncTest;for(var p=0;p<Modernizr._q.length;p++)Modernizr._q[p]();e.Modernizr=Modernizr}(window,document);
+        </script>
+        <!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>20.01: January 2020 Devblog | RE:SS3D</title>
+<meta name="generator" content="Jekyll v3.8.5" />
+<meta property="og:title" content="20.01: January 2020 Devblog" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="“Laying the foundation, one brick at a time.”" />
+<meta property="og:description" content="“Laying the foundation, one brick at a time.”" />
+<link rel="canonical" href="https://ss3d.space/2020/02/03/20.01.html" />
+<meta property="og:url" content="https://ss3d.space/2020/02/03/20.01.html" />
+<meta property="og:site_name" content="RE:SS3D" />
+<meta property="og:image" content="https://ss3d.space/assets/img/art/Bug/BugHydroponics.png" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2020-02-03T14:30:00+00:00" />
+<script type="application/ld+json">
+{"description":"“Laying the foundation, one brick at a time.”","@type":"BlogPosting","headline":"20.01: January 2020 Devblog","dateModified":"2020-02-03T14:30:00+00:00","datePublished":"2020-02-03T14:30:00+00:00","url":"https://ss3d.space/2020/02/03/20.01.html","mainEntityOfPage":{"@type":"WebPage","@id":"https://ss3d.space/2020/02/03/20.01.html"},"image":"https://ss3d.space/assets/img/art/Bug/BugHydroponics.png","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+        <link type="application/atom+xml" rel="alternate" href="https://ss3d.space/feed.xml" title="RE:SS3D" />
+        <link rel="stylesheet" type="text/css" href="/assets/css/cookieconsent.min.css" />
+<script src="/assets/js/cookieconsent.min.js"></script>
+<script>
+window.addEventListener("load", function(){
+window.cookieconsent.initialise({
+"palette": {
+    "popup": {
+    "background": "#1e4684",
+    "text": "#dadada"
+    },
+    "button": {
+    "background": "#b83d32",
+    "text": "#ffffff"
+    }
+},
+"theme": "classic",
+"content": {
+    "message": "This website uses cookies for analytics.",
+    "dismiss": "Ok",
+    "href": "/privacy"
+}
+})});
+</script>
+        <!-- Analytics -->
+        
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-140169746-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-140169746-1');
+</script>
+
+        
+    </head>
+    <body class="preload">
+        <div class="nav-background">
+            <nav>
+                <div id="scroll" class="ul-container">
+    <ul class="ul-reset">
+        
+        <li><a onclick="setScroll('/',parentNode.parentNode.parentNode.scrollLeft); return false;" class="" href="/">Home</a></li>
+        
+        <li><a onclick="setScroll('/devblog/',parentNode.parentNode.parentNode.scrollLeft); return false;" class="" href="/devblog/">Devblog</a></li>
+        
+        <li><a onclick="setScroll('/artwork/',parentNode.parentNode.parentNode.scrollLeft); return false;" class="" href="/artwork/">Artwork</a></li>
+        
+        <li><a onclick="setScroll('/faq/',parentNode.parentNode.parentNode.scrollLeft); return false;" class="" href="/faq/">FAQ</a></li>
+        
+        <li><a onclick="setScroll('/about/',parentNode.parentNode.parentNode.scrollLeft); return false;" class="" href="/about/">About</a></li>
+        
+        <li><a onclick="setScroll('/contribute/',parentNode.parentNode.parentNode.scrollLeft); return false;" class="" href="/contribute/">Contribute</a></li>
+        
+    </ul>
+</div>
+            </nav>
+        </div>
+        <div class="body-content">
+            <header class="header">
+    <div>
+        <picture class="logo" >
+            <source srcset="/assets/img/logo.webp" type="image/webp">
+            <source srcset="/assets/img/logo.png" type="image/png"> 
+            <img alt="" src="/assets/img/logo.png">
+        </picture>
+        <h1>RE: Space Station 3D</h1>
+        <p>A 3D recreation of Space Station 13</p>
+    </div>
+</header>
+            <main class="post-content">
+                <div class="image credit-wrapper">
+  
+
+
+
+<div class="image"><a href="/assets/img/art/Bug/BugHydroponics.png" class="image-link"><img src="/" alt="" srcset="    /assets/resized/BugHydroponics-580x326.png 580w,    /assets/resized/BugHydroponics-290x163.png 290w,    /assets/resized/BugHydroponics-170x96.png 170w,    /assets/resized/BugHydroponics-145x82.png 145w, /assets/img/art/Bug/BugHydroponics.png 1920w" sizes="(max-width: 624px) 100vw, 578px, 580px"></a></div>
+  
+    <h5><i>Image credit - Bug</i></h5>
+  
+</div>
+
+<h1>20.01: January 2020 Devblog</h1>
+<h5><i>on Monday, February 3, 2020</i></h5>
+<h5><i>Written by - CosmicCoincidence</i></h5>
+<p>“A new month, a new year, a new decade, a new hope.”</p>
+
+<h1 id="january-recap">January Recap</h1>
+
+<p>This month has been a leap in productivity for SS3D, and for multiple reasons (more information at the bottom). One of those reasons, not unlike other months, is the new contributors both big and small. Some manage to find the time to really put their passion to work here at SS3D, while others help out where they can, when they can. But, We’re just happy to longer to have to ask for programmers to come join and help us, but rather now, thank all our amazing programmers for their contributions, reviews, web-maintenance, issue reports, and fixes.</p>
+
+<p>One of our new contributors this month is <strong>Em3rgency</strong>, and he has really shown both work ethic and passion for our project, as well as trust and great development skills. As a result, within the same month he has joined as a contributor, he has also worked his way up to being a board member. I’m not sure if this has anything to do with his 6 years of software development experience and even more years prototyping things in Unity, or not. Maybe it’s just coincidental… and let’s not even mention his contributions to *cough <a href="https://unitystation.org/"><em>Unity Station</em></a>.</p>
+
+<h2 id="tilemaps">Tilemaps</h2>
+
+<p>Back again with progress on core systems, <strong>Nonanon</strong> has updated the tilemap system to auto-connect prefabs (like walls or tables) both in-game and in the editor in Unity. It works by correctly choosing the appropriate prefab variant and applying rotation. With accurate modeling, this system can be attributed to other connectables like pipes, multi-tile floor patterns, etc.</p>
+
+<video autoplay="autoplay" muted="" loop="loop" poster="/assets/img/posts/20.01.01/NonanonTilemap.png" width="560px">
+  <source src="/assets/img/posts/20.01.01/NonanonTilemap.webm" type="video/webm" />
+  <source src="/assets/img/posts/20.01.01/NonanonTilemap.mp4" type="video/mp4" />
+</video>
+
+<p>He also made improvements to the tile editor to allow for saving and editing innumerous tile configurations. Currently, a tile configuration supports a ‘turf’ (floors, windows, walls, etc.) and a ‘fixture’ (wall lights, airlocks, tables, etc.). Both the turf and the fixture are placed when placing a tile configuration. Placing tiles in the editor is smoother now too, with the added ability to be able to click and drag them to place multiple quickly. There is still some work to be done and bugs to flush out, but the system looks very promising.</p>
+
+<video autoplay="autoplay" muted="" loop="loop" poster="/assets/img/posts/20.01.01/NonanonTilemap2.png" width="560px">
+  <source src="/assets/img/posts/20.01.01/NonanonTilemap2.webm" type="video/webm" />
+  <source src="/assets/img/posts/20.01.01/NonanonTilemap2.mp4" type="video/mp4" />
+</video>
+
+<h2 id="interaction">Interaction</h2>
+
+<p><strong>Dyhr</strong> this month has begun experimenting more with the interactions system, by contributing a WIP event-based interaction system. The system includes both single event (like picking up or dropping an item) and continuous interactions (like drawing with a crayon or shooting an automatic weapon). Although, currently not everything has been tied to this new system yet, most notably the health/damage system mentioned lower down.</p>
+
+<h2 id="chat">Chat</h2>
+
+<p>If you remember our <a href="https://ss3d.space/2019/10/06/19.09.html">September devblog</a>, you may also remember the <a href="https://ss3d.space/assets/img/posts/19.09.01/MillyChatWIPSept.webm">WIP chat system made by <strong>Milly</strong></a>, which sadly got left behind and never merged. That is, until the beginning of January where <strong>Em3rgency</strong> picked it up, dusted it off, and slapped networking on it as well as a few quality of life things. It’s still incomplete as there are no channel permissions yet, but it’s a good start.</p>
+
+<h2 id="healthdamage">Health/Damage</h2>
+
+<p><strong>Em3rgency</strong>, unhappy to see stale merge requests for WIP systems, wanted to resurrect another, this one being for rudimentary player health and damage. After looking through it and deciding it should probably be redone from scratch, he went ahead and did just that!</p>
+
+<p>Limbs track their damage as well as track status effects like crippled, bruised, bleeding, etc. They will even detach given enough damage. Unfortunately, this cannot be tested currently as a result of the interaction system which merged shortly after this (mentioned above).</p>
+
+<video autoplay="autoplay" muted="" loop="loop" poster="/assets/img/posts/20.01.01/Em3rgencyDamage.png" width="560px">
+  <source src="/assets/img/posts/20.01.01/Em3rgencyDamage.webm" type="video/webm" />
+  <source src="/assets/img/posts/20.01.01/Em3rgencyDamage.mp4" type="video/mp4" />
+</video>
+
+<h2 id="central-communications-centcom-server">Central Communications (CentCom) Server</h2>
+
+<p>Happy with a place to put his talents to work, and with large goals in mind, <strong>Em3rgency</strong> added a new <a href="https://github.com/RE-SS3D/CentCom">Centcom repository</a> to our organization. This acts as a central server for managing user registration, authentication, and character storage, similar to what Byond is to SS13.</p>
+
+<p>Currently, although passwords are encrypted, you can simply use a fake email and it will remember it, but in the future, this will likely change to using actual usernames. At the moment, all clients connect to the same Centcom server but since the server is open-source like the game, each game server could, in theory, have it’s own Centcom server. But that’s something to build on in the future.</p>
+
+<p>With some help from <strong>Milly</strong> on making the UI, you can also create and save multiple characters in the character creator. Unfortunately, the only customization you can currently do to the character is changing the name, so better get creative!</p>
+
+<p>For now, you can host your own game server, join it, create and save characters, and then use your characters to run around in someone else’s game server! Which is absolutely amazing!</p>
+
+<p>If you don’t want to download Unity and build the most recent development changes yourself, you can instead <a href="https://github.com/RE-SS3D/SS3D/releases/latest"><strong>download our latest build here</strong></a>, which has been updated recently. And we also hope to update it frequently by integrating automated builds in the future for each minor release.</p>
+
+<video autoplay="autoplay" muted="" loop="loop" poster="/assets/img/posts/20.01.01/Em3rgencyLogin.png" width="560px">
+  <source src="/assets/img/posts/20.01.01/Em3rgencyLogin.webm" type="video/webm" />
+  <source src="/assets/img/posts/20.01.01/Em3rgencyLogin.mp4" type="video/mp4" />
+</video>
+
+<h2 id="drawing">Drawing</h2>
+
+<p>After developing a few of the core systems, <strong>Em3rgency</strong> wanted to take a break by implementing something fun to do in-game. So, with a little help from our artists, he made a simple drawing system and a fuel system. The drawing system currently only uses crayons, but this system can be expanded for use with other things, such as spray paint.</p>
+
+<p>The fuel system simply acts as the amount of what we’re calling “fuel”, but the system can be made to work with other objects such as crayons that will deplete over time, or even objects that store ammo, charge, propellent, etc. You can see how much remaining fuel your crayon has in the small progress bar in the hand its held in.</p>
+
+<video autoplay="autoplay" muted="" loop="loop" poster="/assets/img/posts/20.01.01/Em3rgencyDrawing1.png" width="560px">
+  <source src="/assets/img/posts/20.01.01/Em3rgencyDrawing1.webm" type="video/webm" />
+  <source src="/assets/img/posts/20.01.01/Em3rgencyDrawing1.mp4" type="video/mp4" />
+</video>
+
+<p>The system is fun to play with and in his own words, “drawing lets you, quite literally, leave a mark on the world”. Currently, only some major surfaces can be drawn on, like floors, walls, tables, and lockers, but we plan to significantly add to that list.</p>
+
+<video autoplay="autoplay" muted="" loop="loop" poster="/assets/img/posts/20.01.01/Em3rgencyDrawing2.png" width="560px">
+  <source src="/assets/img/posts/20.01.01/Em3rgencyDrawing2.webm" type="video/webm" />
+  <source src="/assets/img/posts/20.01.01/Em3rgencyDrawing2.mp4" type="video/mp4" />
+</video>
+
+<h2 id="textures">Textures</h2>
+
+<p><strong>Konstantin3001</strong> is back as always, this time with some cool Nanotrasen posters and a colorful skybox!</p>
+
+<div class="horizontal-3">
+
+  <div class="image"><a href="/assets/img/art/Konstantin3001/NT.png"><img src="/" alt="" srcset="    /assets/resized/NT-580x870.png 580w,    /assets/resized/NT-290x435.png 290w,    /assets/resized/NT-170x255.png 170w,    /assets/resized/NT-145x218.png 145w, /assets/img/art/Konstantin3001/NT.png 600w" sizes="(max-width: 624px) 50vw, 290px" /></a></div>
+
+  <div class="image"><a href="/assets/img/art/Konstantin3001/NT2.png"><img src="/" alt="" srcset="    /assets/resized/NT2-580x870.png 580w,    /assets/resized/NT2-290x435.png 290w,    /assets/resized/NT2-170x255.png 170w,    /assets/resized/NT2-145x218.png 145w, /assets/img/art/Konstantin3001/NT2.png 600w" sizes="(max-width: 624px) 50vw, 290px" /></a></div>
+
+  <div class="image"><a href="/assets/img/art/Konstantin3001/NT3.png"><img src="/" alt="" srcset="    /assets/resized/NT3-580x870.png 580w,    /assets/resized/NT3-290x435.png 290w,    /assets/resized/NT3-170x255.png 170w,    /assets/resized/NT3-145x218.png 145w, /assets/img/art/Konstantin3001/NT3.png 600w" sizes="(max-width: 624px) 50vw, 290px" /></a></div>
+</div>
+
+<div class="image"><a href="/assets/img/posts/20.01.01/KonstantinSpessbox.png" class="image-link"><img src="/" alt="" srcset="    /assets/resized/KonstantinSpessbox-580x435.png 580w,    /assets/resized/KonstantinSpessbox-290x218.png 290w,    /assets/resized/KonstantinSpessbox-170x128.png 170w,    /assets/resized/KonstantinSpessbox-145x109.png 145w, /assets/img/posts/20.01.01/KonstantinSpessbox.png 4096w" sizes="(max-width: 624px) 100vw, 578px, 580px" /></a></div>
+
+<p><strong>Nicola</strong> also made some posters this month, here are his pod and space posters.</p>
+
+<div class="horizontal-2">
+
+  <div class="image"><a href="/assets/img/posts/20.01.01/PODS_L.png"><img src="/" alt="" srcset="    /assets/resized/PODS_L-580x870.png 580w,    /assets/resized/PODS_L-290x435.png 290w,    /assets/resized/PODS_L-170x255.png 170w,    /assets/resized/PODS_L-145x218.png 145w, /assets/img/posts/20.01.01/PODS_L.png 600w" sizes="(max-width: 624px) 50vw, 290px" /></a></div>
+
+  <div class="image"><a href="/assets/img/posts/20.01.01/PODS_R.png"><img src="/" alt="" srcset="    /assets/resized/PODS_R-580x870.png 580w,    /assets/resized/PODS_R-290x435.png 290w,    /assets/resized/PODS_R-170x255.png 170w,    /assets/resized/PODS_R-145x218.png 145w, /assets/img/posts/20.01.01/PODS_R.png 600w" sizes="(max-width: 624px) 50vw, 290px" /></a></div>
+</div>
+
+<div class="horizontal-2">
+
+  <div class="image"><a href="/assets/img/posts/20.01.01/SPACE_L.png"><img src="/" alt="" srcset="    /assets/resized/SPACE_L-580x870.png 580w,    /assets/resized/SPACE_L-290x435.png 290w,    /assets/resized/SPACE_L-170x255.png 170w,    /assets/resized/SPACE_L-145x218.png 145w, /assets/img/posts/20.01.01/SPACE_L.png 600w" sizes="(max-width: 624px) 50vw, 290px" /></a></div>
+
+  <div class="image"><a href="/assets/img/posts/20.01.01/SPACE_R.png"><img src="/" alt="" srcset="    /assets/resized/SPACE_R-580x870.png 580w,    /assets/resized/SPACE_R-290x435.png 290w,    /assets/resized/SPACE_R-170x255.png 170w,    /assets/resized/SPACE_R-145x218.png 145w, /assets/img/posts/20.01.01/SPACE_R.png 600w" sizes="(max-width: 624px) 50vw, 290px" /></a></div>
+</div>
+
+<h2 id="models">Models</h2>
+
+<p>Again new modelers this month, one of which is <strong>ComradeCheekiBreeki</strong>, who has already contributed a set of bibles, a latte, and a few sauces (hot sauce, cold sauce, universal enzyme, and soy sauce).</p>
+
+<div class="image"><a href="/assets/img/posts/20.01.01/ComradeCheekiBibles.png" class="image-link"><img src="/" alt="" srcset="    /assets/resized/ComradeCheekiBibles-580x435.png 580w,    /assets/resized/ComradeCheekiBibles-290x218.png 290w,    /assets/resized/ComradeCheekiBibles-170x128.png 170w,    /assets/resized/ComradeCheekiBibles-145x109.png 145w, /assets/img/posts/20.01.01/ComradeCheekiBibles.png 800w" sizes="(max-width: 624px) 100vw, 578px, 580px" /></a></div>
+
+<div class="horizontal-2">
+
+  <div class="image"><a href="/assets/img/posts/20.01.01/ComradeCheekiLatte.png"><img src="/" alt="" srcset="    /assets/resized/ComradeCheekiLatte-580x435.png 580w,    /assets/resized/ComradeCheekiLatte-290x218.png 290w,    /assets/resized/ComradeCheekiLatte-170x128.png 170w,    /assets/resized/ComradeCheekiLatte-145x109.png 145w, /assets/img/posts/20.01.01/ComradeCheekiLatte.png 800w" sizes="(max-width: 624px) 50vw, 290px" /></a></div>
+
+  <div class="image"><a href="/assets/img/posts/20.01.01/ComradeCheekiSauces.png"><img src="/" alt="" srcset="    /assets/resized/ComradeCheekiSauces-580x435.png 580w,    /assets/resized/ComradeCheekiSauces-290x218.png 290w,    /assets/resized/ComradeCheekiSauces-170x128.png 170w,    /assets/resized/ComradeCheekiSauces-145x109.png 145w, /assets/img/posts/20.01.01/ComradeCheekiSauces.png 800w" sizes="(max-width: 624px) 50vw, 290px" /></a></div>
+</div>
+
+<p><strong>Nicola</strong> put a lot of focus on atmospheric parts and engineering machines this month, with some pumps, filters, and mixers, etc, that we were missing, as well as gravity generator and a shield generator.</p>
+
+<video autoplay="autoplay" muted="" loop="loop" poster="/assets/img/posts/20.01.01/NicolaAtmosParts.png" width="560px">
+  <source src="/assets/img/posts/20.01.01/NicolaAtmosParts.webm" type="video/webm" />
+  <source src="/assets/img/posts/20.01.01/NicolaAtmosParts.mp4" type="video/mp4" />
+</video>
+
+<div class="horizontal-2">
+
+  <div class="image"><a href="/assets/img/posts/20.01.01/NicolaGravityGenerator.png"><img src="/" alt="" srcset="    /assets/resized/NicolaGravityGenerator-580x435.png 580w,    /assets/resized/NicolaGravityGenerator-290x218.png 290w,    /assets/resized/NicolaGravityGenerator-170x128.png 170w,    /assets/resized/NicolaGravityGenerator-145x109.png 145w, /assets/img/posts/20.01.01/NicolaGravityGenerator.png 800w" sizes="(max-width: 624px) 50vw, 290px" /></a></div>
+
+  <div class="image"><a href="/assets/img/posts/20.01.01/NicolaShieldGenerator.png"><img src="/" alt="" srcset="    /assets/resized/NicolaShieldGenerator-580x435.png 580w,    /assets/resized/NicolaShieldGenerator-290x218.png 290w,    /assets/resized/NicolaShieldGenerator-170x128.png 170w,    /assets/resized/NicolaShieldGenerator-145x109.png 145w, /assets/img/posts/20.01.01/NicolaShieldGenerator.png 800w" sizes="(max-width: 624px) 50vw, 290px" /></a></div>
+</div>
+
+<p>He also made a mini fire extinguisher, some warning signs, and a small leather bag.</p>
+
+<div class="horizontal-3">
+
+  <div class="image"><a href="/assets/img/posts/20.01.01/NicolaFireExtinguisher.png"><img src="/" alt="" srcset="    /assets/resized/NicolaFireExtinguisher-580x435.png 580w,    /assets/resized/NicolaFireExtinguisher-290x218.png 290w,    /assets/resized/NicolaFireExtinguisher-170x128.png 170w,    /assets/resized/NicolaFireExtinguisher-145x109.png 145w, /assets/img/posts/20.01.01/NicolaFireExtinguisher.png 800w" sizes="(max-width: 624px) 50vw, 290px" /></a></div>
+
+  <div class="image"><a href="/assets/img/posts/20.01.01/NicolaSigns.png"><img src="/" alt="" srcset="    /assets/resized/NicolaSigns-580x435.png 580w,    /assets/resized/NicolaSigns-290x218.png 290w,    /assets/resized/NicolaSigns-170x128.png 170w,    /assets/resized/NicolaSigns-145x109.png 145w, /assets/img/posts/20.01.01/NicolaSigns.png 800w" sizes="(max-width: 624px) 50vw, 290px" /></a></div>
+
+  <div class="image"><a href="/assets/img/posts/20.01.01/NicolaLeatherBag.png"><img src="/" alt="" srcset="    /assets/resized/NicolaLeatherBag-580x435.png 580w,    /assets/resized/NicolaLeatherBag-290x218.png 290w,    /assets/resized/NicolaLeatherBag-170x128.png 170w,    /assets/resized/NicolaLeatherBag-145x109.png 145w, /assets/img/posts/20.01.01/NicolaLeatherBag.png 800w" sizes="(max-width: 624px) 50vw, 290px" /></a></div>
+</div>
+
+<p><strong>Sanuki</strong> is back this month as well, with this really cool decloner gun.</p>
+
+<div class="image"><a href="/assets/img/posts/20.01.01/SanukiDecloner.png" class="image-link"><img src="/" alt="" srcset="    /assets/resized/SanukiDecloner-580x399.png 580w,    /assets/resized/SanukiDecloner-290x199.png 290w,    /assets/resized/SanukiDecloner-170x117.png 170w,    /assets/resized/SanukiDecloner-145x100.png 145w, /assets/img/posts/20.01.01/SanukiDecloner.png 1088w" sizes="(max-width: 624px) 100vw, 578px, 580px" /></a></div>
+
+<p>A cute little portable scrubber from <strong>Goao</strong>.</p>
+
+<div class="image"><a href="/assets/img/posts/20.01.01/GoaoScrubber.png" class="image-link"><img src="/" alt="" srcset="    /assets/resized/GoaoScrubber-580x435.png 580w,    /assets/resized/GoaoScrubber-290x218.png 290w,    /assets/resized/GoaoScrubber-170x128.png 170w,    /assets/resized/GoaoScrubber-145x109.png 145w, /assets/img/posts/20.01.01/GoaoScrubber.png 800w" sizes="(max-width: 624px) 100vw, 578px, 580px" /></a></div>
+
+<p><strong>GPTeles</strong> is also back, with some creatively unique vending machines, completing our vending machines list!</p>
+
+<div class="image"><a href="/assets/img/posts/20.01.01/GPTVending.png" class="image-link"><img src="/" alt="" srcset="    /assets/resized/GPTVending-580x435.png 580w,    /assets/resized/GPTVending-290x218.png 290w,    /assets/resized/GPTVending-170x128.png 170w,    /assets/resized/GPTVending-145x109.png 145w, /assets/img/posts/20.01.01/GPTVending.png 800w" sizes="(max-width: 624px) 100vw, 578px, 580px" /></a></div>
+
+<p>A nice handheld holoprojector from <strong>Hummus</strong>.</p>
+
+<div class="image"><a href="/assets/img/posts/20.01.01/HummusHoloprojector.png" class="image-link"><img src="/" alt="" srcset="    /assets/resized/HummusHoloprojector-580x435.png 580w,    /assets/resized/HummusHoloprojector-290x218.png 290w,    /assets/resized/HummusHoloprojector-170x128.png 170w,    /assets/resized/HummusHoloprojector-145x109.png 145w, /assets/img/posts/20.01.01/HummusHoloprojector.png 800w" sizes="(max-width: 624px) 100vw, 578px, 580px" /></a></div>
+
+<p>And a little less interesting than some others, but <strong>CosmicCoincidence</strong> added a couple missing pieces to the wall and window sets, as well as a missing table piece which was crucial to have fully working connections in the new tilemap system.</p>
+
+<div class="image"><a href="/assets/img/posts/20.01.01/CosmicWalls.png" class="image-link"><img src="/" alt="" srcset="    /assets/resized/CosmicWalls-580x435.png 580w,    /assets/resized/CosmicWalls-290x218.png 290w,    /assets/resized/CosmicWalls-170x128.png 170w,    /assets/resized/CosmicWalls-145x109.png 145w, /assets/img/posts/20.01.01/CosmicWalls.png 800w" sizes="(max-width: 624px) 100vw, 578px, 580px" /></a></div>
+
+<p>Someone who is not new to the community but is contributing for the first time, <strong>SwankCookie</strong> has also made some crayons and a custom law mod for us.</p>
+
+<div class="horizontal-2">
+
+  <div class="image"><a href="/assets/img/posts/20.01.01/SwankCookieCrayons.png"><img src="/" alt="" srcset="    /assets/resized/SwankCookieCrayons-580x435.png 580w,    /assets/resized/SwankCookieCrayons-290x218.png 290w,    /assets/resized/SwankCookieCrayons-170x128.png 170w,    /assets/resized/SwankCookieCrayons-145x109.png 145w, /assets/img/posts/20.01.01/SwankCookieCrayons.png 800w" sizes="(max-width: 624px) 50vw, 290px" /></a></div>
+
+  <div class="image"><a href="/assets/img/posts/20.01.01/SwankCookieCustomLawMod.png"><img src="/" alt="" srcset="    /assets/resized/SwankCookieCustomLawMod-580x435.png 580w,    /assets/resized/SwankCookieCustomLawMod-290x218.png 290w,    /assets/resized/SwankCookieCustomLawMod-170x128.png 170w,    /assets/resized/SwankCookieCustomLawMod-145x109.png 145w, /assets/img/posts/20.01.01/SwankCookieCustomLawMod.png 800w" sizes="(max-width: 624px) 50vw, 290px" /></a></div>
+</div>
+
+<h2 id="artwork">Artwork</h2>
+
+<p>Again this month, <strong>Bug</strong> has made another curious animation to spark your curiosity!</p>
+
+<video autoplay="autoplay" muted="" loop="loop" poster="/assets/img/art/Bug/BugHydroponics.png" width="560px">
+  <source src="/assets/img/art/Bug/BugHydroponics.webm" type="video/webm" />
+  <source src="/assets/img/art/Bug/BugHydroponics.mp4" type="video/mp4" />
+</video>
+
+<p>And from <strong>CosmicCoincidence</strong> a couple of new logos using our iconic toolbox icon!</p>
+
+<div class="image"><a href="/assets/img/RESPACESTATION3D.png" class="image-link"><img src="/" alt="" srcset="    /assets/resized/RESPACESTATION3D-580x91.png 580w,    /assets/resized/RESPACESTATION3D-290x45.png 290w,    /assets/resized/RESPACESTATION3D-170x27.png 170w,    /assets/resized/RESPACESTATION3D-145x23.png 145w, /assets/img/RESPACESTATION3D.png 1920w" sizes="(max-width: 624px) 100vw, 578px, 580px" /></a></div>
+
+<div class="image"><a href="/assets/img/RESS3D.png" class="image-link"><img src="/" alt="" srcset="    /assets/resized/RESS3D-580x290.png 580w,    /assets/resized/RESS3D-290x145.png 290w,    /assets/resized/RESS3D-170x85.png 170w,    /assets/resized/RESS3D-145x73.png 145w, /assets/img/RESS3D.png 1280w" sizes="(max-width: 624px) 100vw, 578px, 580px" /></a></div>
+
+<h3 id="notes">Notes</h3>
+
+<p>You may recall us mentioning some in-progress management changes in our last devlog, these changes were decided upon in late 2019 by what is now the “Centcom” team. The primary reason for these changes being our technical stagnation, as well as other roadblocks in progress as a result of leaders going absent, which has been a recurring theme for us. The new leadership, the Centcom team, now has more <a href="https://github.com/RE-SS3D/SS3D/wiki/Council-Responsibilities">responsibilities</a> and functions more like a ‘leading team’ as opposed to individual ‘team leaders’.</p>
+
+<p>Over the last month, the team has put a lot of effort into updating links and guides, populating task boards, writing documents, and restructuring our discord, amongst other things. All of which is to help streamline the contribution process both for the average contributor as well as the managing staff. Admittedly there are still a few new guides to make and assets to organize, but the important stuff is mostly caught up and the rest hasn’t been forgotten.</p>
+
+<p>For more information on these recent changes, our progress, or how to contribute, come say hello in our <a href="https://discord.gg/3ny9tdH" target="_blank">discord</a>!</p>
+
+
+            </main>
+            <footer>
+                <div class="contact">
+    <ul class="ul-reset">
+    <li>
+        <a href="https://discord.gg/3ny9tdH">Discord</a>
+    </li>
+    <li>
+        <a href="https://github.com/RE-SS3D">GitHub</a>
+    </li>
+    <li>
+        <a href="https://trello.com/ress3d">Trello</a>
+    </li>
+    <li>
+        <a href="https://reddit.com/r/RESS3D">Reddit</a>
+    </li>
+    <li>
+        <a href="/privacy">Privacy Policy</a>
+    </li>
+    <li>
+        <a type="application/atom+xml" href="/feed.xml">Atom (RSS)</a>
+    </li>
+    <li>
+        <label id="theme-switch" class="theme-switch" for="checkbox_theme">
+            <input type="checkbox" id="checkbox_theme" style="display:none"><span class="link">Toggle Theme</span>
+        </label>
+    </li>
+</ul>
+</div>
+            </footer>
+        </div>
+        <script>
+            
+            // Fix flashing buttons by only allowing the css animations to play after a slight delay.
+            setTimeout(function() {
+                document.getElementsByTagName('body')[0].classList.remove('preload');
+            }, 50);
+
+            //theme toggle
+            //identify the toggle switch HTML element
+            const toggleSwitch = document.querySelector('#theme-switch input[type="checkbox"]');
+    
+            //function that changes the theme, and sets a localStorage variable to track the theme between page loads
+            function switchTheme(e) {
+                if (e.target.checked) {
+                    localStorage.setItem('theme', 'light');
+                    document.documentElement.setAttribute('data-theme', 'light');
+                    toggleSwitch.checked = true;
+                } else {
+                    localStorage.setItem('theme', 'dark');
+                    document.documentElement.setAttribute('data-theme', 'dark');
+                    toggleSwitch.checked = false;
+                }    
+            }
+    
+            //listener for changing themes
+            toggleSwitch.addEventListener('change', switchTheme, false);
+    
+            //pre-check the dark-theme checkbox if dark-theme is set
+            if (document.documentElement.getAttribute("data-theme") == "light"){
+                toggleSwitch.checked = true;
+            }
+        </script>
+    </body>
+</html>
