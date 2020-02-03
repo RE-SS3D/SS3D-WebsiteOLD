@@ -10,7 +10,9 @@ layout: home
 *"Welcome to the station crew. Enjoy your stay."*
 {: class="centred" }
 
-RE:SS3D is a resurrection of the SS3D project (a 3D remake of SS13). RE:SS3D is being developed in the Unity game engine and our **roadmap can be found [here](https://github.com/RE-SS3D/SS3D/projects)**. For information on contributing, see our [contribute]({{ site.baseurl }}/contribute/) page.
+RE:SS3D is a resurrection of the SS3D project (a 3D remake of SS13).
+It is being developed in the Unity game engine and our **[roadmap can be found here](https://github.com/RE-SS3D/SS3D/projects)** and our **[latest build can be found here](https://github.com/RE-SS3D/SS3D/releases/latest)**.
+For information on contributing, see our [contribute]({{ site.baseurl }}/contribute/) page.
 
-## Latest Blog Post:
+# Latest Blog Post:
 {: class="centred" }

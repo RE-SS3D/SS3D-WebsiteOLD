@@ -86,15 +86,15 @@ a, .link {
     padding: 0 $pad;
 }
 
-// All post content is centred, except for text. On larger screens there's 25% spacing either side.
+// All post content is centred, except for text. On larger screens there's 27.5% spacing either side.
 .post-content {
     display: flex;
 
     flex-direction: column;
     align-items: center;
-    @include respond-to(desktop) {
+    @include respond-to(large-screen) {
         margin: 0 auto;
-        width: 60%;
+        width: 45%;
     }
 
     h1, h2, h3, h4, h5, p, ul, ol {

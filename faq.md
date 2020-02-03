@@ -35,7 +35,7 @@ There are several ways you can help, from 2d art, 3d art, sfx, programming, webs
 ## What license is the project distributed under?
 
 All code assets use the MIT license, only requiring attribution when used.
-All art assets use the CC BY-NC-SA 4.0 license, requiring attribution, same license, and only for non-commercial uses.
+All art assets use the [**CC BY-NC-SA 4.0 license**](https://creativecommons.org/licenses/by-nc-sa/4.0/), requiring attribution, same license, and only for non-commercial uses.
 Keep in mind that your contributions are not retractable. Once submitted, the project has the license to use your contribution indefinitely.
 
 ## Who is *beep?
