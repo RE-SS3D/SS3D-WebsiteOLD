@@ -12,6 +12,11 @@ This Page is for displaying SS3D-related artworks such as wallpapers, animations
 
 # Bug
 
+<video autoplay="autoplay" muted loop="loop" poster="{{ site.baseurl }}/assets/img/art/Bug/BugHydroponics.png" width="560px">
+  <source src="{{ site.baseurl }}/assets/img/art/Bug/BugHydroponics.webm" type="video/webm">
+  <source src="{{ site.baseurl }}/assets/img/art/Bug/BugHydroponics.mp4" type="video/mp4">
+</video>
+
 <video width="560px" autoplay="autoplay" muted loop="loop" poster="{{ site.baseurl }}/assets/img/art/Bug/BugWallpaper2.png">
   <source src="{{ site.baseurl }}/assets/img/art/Bug/BugAnimation.webm" type="video/webm">
   <source src="{{ site.baseurl }}/assets/img/art/Bug/BugAnimation.mp4" type="video/mp4">
