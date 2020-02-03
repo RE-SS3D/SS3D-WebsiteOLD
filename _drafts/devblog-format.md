@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "00.00 (year.month) : [insert month] Recap"
-date:   2020-00-00 (year-month-day) 15:30:00 +0100 // The date should be the day the devblog is released.
+date:   2020-00-05 (year-month-day) 15:30:00 +0100    // The date should be the day the devblog is released and becomes part of the link to the post on the site.
 description: |
     "Description goes here."
 image: /assets/img/posts/[insert folder]/Wallpaper.png
@@ -12,14 +12,14 @@ post_credit: Written by - [insert name]
 Cute phrase/quote goes here.
 
 // The devblog is mostly laid out in sections. With the titles of the sections going from large = # (recap section), to medium = ## (content sections), to small = ### (info sections). These are not rules but more like guidelines, take liberty in moving or renaming sections as well as deleting/merging unneeded sections.
-// Bold any **names** when referencing someone in a description or crediting them for an artpiece.
+// Bold any **names** when referencing someone in a description.
 // Use the lines below to include links.
 
 // Linking to internal file:
-[Text]({{ site.baseurl }}/[insert folder]/File.format){:target="_blank"}
+[Text]({{ site.baseurl }}/[insert folder]/File.format)
 
 // Linking to external file:
-[Text](File.Link){:target="_blank"}
+[Text](File.Link)
 
 # [Insert Month] Recap
 
@@ -33,7 +33,7 @@ Description goes here.
 
 [Insert Media]
 
-// Avoid gifs if possible and ensure reasonable file size.
+// Avoid gifs if possible and ensure reasonable file size if you do.
 // Use the lines below to format your media by inserting file paths and names.
 
 // Displaying a video:
@@ -54,9 +54,20 @@ Description goes here.
 {% responsive_image path: assets/img/posts/[insert folder]/Image2.png %}
 </div>
 
+// Displaying 3 images horizontally:
+<div class='horizontal-3' markdown='1'>
+{% responsive_image path: assets/img/posts/[insert folder]/Image1.png %}
+{% responsive_image path: assets/img/posts/[insert folder]/Image2.png %}
+{% responsive_image path: assets/img/posts/[insert folder]/Image3.png %}
+</div>
+
 ## Core-Systems
 
+// 'Core-Systems' is what it sounds like, but I usually change the section name to the name of the system (interaction, atmospherics, tilemaps, chat, etc).
+
 ## Sub-Systems
+
+// 'Sub-Systems' is what it sounds like, but I usually change the section name to the name of the system (specific interactions, surgery, jobs, etc).
 
 ## Animations
 
