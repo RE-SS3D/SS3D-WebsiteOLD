@@ -7,10 +7,12 @@ permalink: /artwork/
 This Page is for displaying SS3D-related artworks such as wallpapers, animations and music created by artists of the community.
 
 # Brukas
+{: class="centred" }
 
 {% responsive_image path: assets/img/art/Brukas/BrukasBar.png template: _includes/srcset.html %}
 
 # Bug
+{: class="centred" }
 
 <video autoplay="autoplay" muted loop="loop" poster="{{ site.baseurl }}/assets/img/art/Bug/BugHydroponics.png" width="560px">
   <source src="{{ site.baseurl }}/assets/img/art/Bug/BugHydroponics.webm" type="video/webm">
@@ -30,22 +32,27 @@ This Page is for displaying SS3D-related artworks such as wallpapers, animations
 {% responsive_image path: assets/img/art/Bug/BugWallpaper1.png template: _includes/srcset.html %}
 
 # CosmicCoincidence
+{: class="centred" }
 
 {% responsive_image path: assets/img/art/CosmicCoincidence/CosmicHalloween.png template: _includes/srcset.html %}
 
 {% responsive_image path: assets/img/art/CosmicCoincidence/CosmicChristmas.png template: _includes/srcset.html %}
 
 # Eiko
+{: class="centred" }
 
 <iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/WCPqPVdn-Oc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 {% responsive_image path: assets/img/art/Eiko/EikoPromoGibber.png template: _includes/srcset.html %}
 
 # Goao
+{: class="centred" }
 
-**[Title 3 - Tin Tin REMIX](https://soundcloud.com/joao-pedro-buratto/tin-tin-title3-mix-7-version-6)**
+### **[Title 3 - Tin Tin REMIX](https://soundcloud.com/joao-pedro-buratto/tin-tin-title3-mix-7-version-6)**
+{: class="centred" }
 
-**[Traitor REMIX](https://soundcloud.com/joao-pedro-buratto/traitor-mix2)**
+### **[Traitor REMIX](https://soundcloud.com/joao-pedro-buratto/traitor-mix2)**
+{: class="centred" }
 
 <div class='horizontal-2' markdown='1'>
 {% responsive_image path: assets/img/art/Goao/GoaoRender.png %}
@@ -57,6 +64,7 @@ This Page is for displaying SS3D-related artworks such as wallpapers, animations
 {% responsive_image path: assets/img/art/Goao/GoaoSpooktoberPoster.png template: _includes/srcset.html %}
 
 # Grimmie (Judge Honkette)
+{: class="centred" }
 
 <iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/kb7lTMorbWo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -68,6 +76,7 @@ This Page is for displaying SS3D-related artworks such as wallpapers, animations
 {% responsive_image path: assets/img/art/Grimmie/GrimmieGravity.png template: _includes/srcset.html %}
 
 # [Konstantin3001](https://www.deviantart.com/konstantin3001)
+{: class="centred" }
 
 {% responsive_image path: assets/img/art/Konstantin3001/KonstantinCultistPoster.png template: _includes/srcset.html %}
 
@@ -86,6 +95,7 @@ This Page is for displaying SS3D-related artworks such as wallpapers, animations
 </div>
 
 # Probably Not
+{: class="centred" }
 
 {% responsive_image path: assets/img/art/ProbablyNot/ProbablyNotDark.jpg template: _includes/srcset.html %}
 
@@ -94,5 +104,6 @@ This Page is for displaying SS3D-related artworks such as wallpapers, animations
 {% responsive_image path: assets/img/art/ProbablyNot/November19Wallpaper.png template: _includes/srcset.html %}
 
 # Sunberry
+{: class="centred" }
 
 {% responsive_image path: assets/img/art/Sunberry/SunberryIanSunsetPoster.png template: _includes/srcset.html %}

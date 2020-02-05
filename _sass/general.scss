@@ -24,7 +24,7 @@ h5 {
 }
 
 p {
-    margin-bottom: 0;
+    margin-bottom: 12px;
 }
 
 body {
@@ -92,6 +92,10 @@ a, .link {
 
     flex-direction: column;
     align-items: center;
+    @include respond-to(desktop) {
+        margin: 0 auto;
+        width: 80%;
+    }
     @include respond-to(large-screen) {
         margin: 0 auto;
         width: 45%;
