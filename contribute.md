@@ -15,40 +15,44 @@ permalink: /contribute/
 7. Submit screenshots and/or videos to the #devblog channel along with a link for an asset or a summary for code.
 8. Once accepted, pat yourself on the back for your glorious contribution to SS3D.
 
-## How to contribute:
+# How to contribute:
 
 If you're a programmer, 2D artist, 3D modeler, musician, programmer, animator, soundcloud rapper, or *especially* a programmer, we need you! The game itself is being developed in the Unity game engine and can be download [here](https://github.com/RE-SS3D/SS3D) including instructions for setting up the project and what version of Unity we use.
 
-For coding tasks, we have a [task board](https://github.com/RE-SS3D/SS3D/projects/2) (the ones in the available column are ones you can start on). Information on pull requests or reporting bugs can be found [here](https://github.com/RE-SS3D/SS3D/blob/master/CONTRIBUTING.md).
+**To start on any of these, read the appropriate guide(s), check out the appropriate board, and contact a council member on our discord.**
 
-For modelers, they can choose a model from our [model board](https://trello.com/b/ZVcDitv0/ss3d-model-list), as well as assign the model to themselves using a custom bot in our discord. We recommend using [Blender v2.8](https://www.blender.org/download/releases/2-81/) or newer.
+For any other questions, concerns, or unsolicited advice, just ask around on the discord and someone will likely help you out.
 
-To start on either just go to our discord, check out the appropriate board, and contact a council member.
-**But before you do please check the style guides below**.
+### Coding tasks:
 
-For any other kind of tasks, e.g. sfx, concept art, animations, farting into microphones, or babysitting, just ask around on the discord and someone can help you out.
+Start by familarizing yourself with [our code style guide](https://github.com/RE-SS3D/SS3D/blob/master/StyleGuides/C_SHARP.md), then visit our [code board](https://github.com/RE-SS3D/SS3D/projects/2) for a task (the ones in the available column are ones you can start on), and information on pull requests or reporting bugs can be found [here](https://github.com/RE-SS3D/SS3D/blob/master/CONTRIBUTING.md).
 
-## Style guides & kits:
+### 3D modeling tasks:
 
-**The code style guide** can be found [here](https://github.com/RE-SS3D/SS3D/blob/master/StyleGuides/C_SHARP.md).
+Start by downloading our [Modeler’s Kit v1.4]({{ site.baseurl }}/assets/misc/SS3D Modeler's Kit 1.4.zip), and make sure to read [SS3D Style Guide.pdf]({{ site.baseurl }}/assets/pdf/SS3D Style Guide.pdf) and [SS3D Model Format Guide.pdf]({{ site.baseurl }}/assets/pdf/SS3D Model Format Guide.pdf) also contained within. Then visit our [models board](https://trello.com/b/ZVcDitv0/ss3d-model-list) to find a task to work on, and you can assign it to yourself via a custom bot in our discord (the channel #art-readme has more info on this). We recommend using [Blender v2.8](https://www.blender.org/download/releases/2-81/) or newer as it's free and open-soure like the game we are making and thus is easily accessible by most people and as a result our modeler's kit is mostly designed for use with Blender.
 
-**The model style guide** is contained in our [Modeler’s Kit v1.4]({{ site.baseurl }}/assets/misc/SS3D Modeler's Kit 1.4.zip) which contains several files to aid you in making 3D models for SS3D, including:
+### Animation tasks:
 
-- A modeling template file for Blender 2.8, complete with materials and a character model
-- Our color palette (Palette05)
-- Templates for making poster or blanket textures
-- Our 'Spessman' font
-- Beep's style and formatting guides
-- Guides and example plants for hydroponics
+Start by deciding on a task from our [animations board](https://trello.com/b/xZ5bhNWw/ss3d-animations). If it's related to the character rig, we have a [Character Animation Kit v1.0]({{ site.baseurl }}/assets/misc/Character Animation Kit 1.0.zip) but it's currently only set up for Maya users, although you can use Blender to animate too.
+
+### 2D art tasks:
+
+We currently do not have any guides for 2D art, but you can visit our [2D board](https://trello.com/b/XVZ95Hjq/ss3d-2d) to find a task to work on.
+
+### Sound tasks:
+
+We currently do not have any guides for sfx, but if you want to scream like psychopath or fart into a microphone, check out our [sounds board](https://trello.com/b/k6pWgJE0/ss3d-sound-design).
 
 ## Contribution links:
 
 - [GitHub](https://github.com/RE-SS3D)
 - [Discord](https://discord.gg/3ny9tdH) - primary communication for the community and devs
-- [Model board](https://trello.com/b/ZVcDitv0/ss3d-model-list) - tracks the completion status of our models
-- [Task board](https://github.com/RE-SS3D/SS3D/projects/2) - tracks what coding is complete, available, and in-progress
-- [Design board](https://github.com/RE-SS3D/SS3D/projects/3) - tracks what features are up next for designing
-- [Modeler’s Kit v1.4]({{ site.baseurl }}/assets/misc/SS3D Modeler's Kit 1.4.zip)
 - [Code style guide](https://github.com/RE-SS3D/SS3D/blob/master/StyleGuides/C_SHARP.md)
-
-\- nonanon
+- [Modeler’s Kit v1.4]({{ site.baseurl }}/assets/misc/SS3D Modeler's Kit 1.4.zip) - currently primarily set up for Blender users
+- [Character Animation Kit v1.0]({{ site.baseurl }}/assets/misc/Character Animation Kit 1.0.zip) - currently only set up for Maya users
+- [Code board](https://github.com/RE-SS3D/SS3D/projects/2) - tracks what coding is complete, available, and in-progress
+- [Design board](https://github.com/RE-SS3D/SS3D/projects/3) - tracks what features are up next for designing
+- [Models board](https://trello.com/b/ZVcDitv0/ss3d-model-list) - tracks the completion status of our 3D models
+- [Animations board](https://trello.com/b/xZ5bhNWw/ss3d-animations) - tracks the completion status of our animations
+- [2D board](https://trello.com/b/XVZ95Hjq/ss3d-2d) - tracks the completion status of our 2D art
+- [Sounds board](https://trello.com/b/k6pWgJE0/ss3d-sound-design) - tracks the completion status of our sound effects
