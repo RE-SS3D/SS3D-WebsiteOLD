@@ -86,7 +86,7 @@ a, .link {
     padding: 0 $pad;
 }
 
-// All post content is centred, except for text. On larger screens there's 27.5% spacing either side.
+// All post content is centred, except for text. On Desktops there is a 10% spacing on either side, and on large screens there's 27.5% spacing either side.
 .post-content {
     display: flex;
 
