@@ -8,6 +8,7 @@ header {
         margin-top: $pad;
     }
     p {
+        color: $color-header;
         font-size: 13px;
         font-size: 4.5vw;
         white-space: nowrap;
@@ -37,10 +38,10 @@ header {
         }
         p {
             font-size: 28px;
-            padding-bottom: 20px;
+            padding-bottom: 18px;
         }
         img {
-            height: 120px;
+            height: 112px;
         }
     }
 }

@@ -22,6 +22,7 @@ $color-navbar-scroll-shadow: darken($color-link, 25);
 $color-navbar-active: #9f90ce;
 $color-navbar-text: #ffffff;
 $color-background: #050608;
+$color-header: #b14335;
 
 
 :root {
@@ -49,6 +50,7 @@ $color-background: #050608;
     --color-navbar-active: #{$color-navbar-active};
     --color-navbar-text: #{$color-navbar-text};
     --color-background: #{$color-background};
+    --color-header: #{$color-header};
 }
 
 // Gradients don't seem to like css variables
@@ -79,6 +81,7 @@ $color-navbar-light: lighten($color-navbar, 15);
         --color-navbar-active: #d6bbe7;
         --color-navbar-text: #{$color-navbar-text};
         --color-background: #ffffff;
+        --color-header: #{$color-header};
     }
 }
 
@@ -107,6 +110,7 @@ $color-navbar-light: lighten($color-navbar, 15);
     --color-navbar-active: #{$color-navbar-active};
     --color-navbar-text: #{$color-navbar-text};
     --color-background: #{$color-background};
+    --color-header: #{$color-header};
 }
 [data-theme="light"] {
     --color-link: #dd1d0c;
@@ -133,6 +137,7 @@ $color-navbar-light: lighten($color-navbar, 15);
     --color-navbar-active: #d6bbe7;
     --color-navbar-text: #{$color-navbar-text};
     --color-background: #ffffff;
+    --color-header: #{$color-header};
 }
 
 $pad: 1em;
