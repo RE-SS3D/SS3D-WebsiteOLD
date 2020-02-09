@@ -6,7 +6,8 @@ layout: default
 <ul class="ul-reset post-list">
 {% for post in site.posts %}
 <li class="post-row">
-    <a style="white-space: nowrap;" href="{{ site.baseurl}}{{ post.url }}">{% responsive_image_block %}
+    <a style="white-space: nowrap;" href="{{ site.baseurl}}{{ post.url }}">
+        {% responsive_image_block %}
             path: {{ post.image | prepend: site.baseurl |  remove_first: "/" }}
             alt: "{{post.title}}"
             template: "_includes/srcset-post.html"
@@ -22,4 +23,3 @@ layout: default
 </li>
 {% endfor %}
 </ul>
-
