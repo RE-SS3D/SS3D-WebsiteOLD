@@ -22,7 +22,8 @@
   --color-navbar-scroll-shadow: #541c17;
   --color-navbar-active: #9f90ce;
   --color-navbar-text: #ffffff;
-  --color-background: #050608; }
+  --color-background: #050608;
+  --color-header: #b14335; }
 
 @media (prefers-color-scheme: light) {
   :root {
@@ -49,7 +50,8 @@
     --color-navbar-scroll-shadow: #541c17;
     --color-navbar-active: #d6bbe7;
     --color-navbar-text: #ffffff;
-    --color-background: #ffffff; } }
+    --color-background: #d8d4d8;
+    --color-header: #b14335; } }
 [data-theme="dark"] {
   --color-link: #b83d32;
   --color-link-hover: #fd7970;
@@ -74,7 +76,8 @@
   --color-navbar-scroll-shadow: #541c17;
   --color-navbar-active: #9f90ce;
   --color-navbar-text: #ffffff;
-  --color-background: #050608; }
+  --color-background: #050608;
+  --color-header: #b14335; }
 
 [data-theme="light"] {
   --color-link: #dd1d0c;
@@ -100,7 +103,8 @@
   --color-navbar-scroll-shadow: #541c17;
   --color-navbar-active: #d6bbe7;
   --color-navbar-text: #ffffff;
-  --color-background: #ffffff; }
+  --color-background: #d8d4d8;
+  --color-header: #b14335; }
 
 /* Used with @mixin respond-to($name) mixin */
 * {
@@ -199,7 +203,7 @@ h5 {
       margin-bottom: 2.6em; } }
 
 p {
-  margin-bottom: 0; }
+  margin-bottom: 12px; }
 
 body {
   color: #dadada;
@@ -253,6 +257,10 @@ a, .link {
   display: flex;
   flex-direction: column;
   align-items: center; }
+  @media (min-width: 624px) {
+    .post-content {
+      margin: 0 auto;
+      width: 80%; } }
   @media (min-width: 1024px) {
     .post-content {
       margin: 0 auto;
@@ -278,6 +286,7 @@ header {
     overflow: visible;
     margin-top: 1em; }
   header p {
+    color: #b14335;
     font-size: 13px;
     font-size: 4.5vw;
     white-space: nowrap;
@@ -290,26 +299,22 @@ header {
   header div {
     width: 100%; }
   header img {
-    height: 52px;
-    position: absolute;
-    right: 0;
-    top: 0;
+    height: 80px;
+    position: relative;
+    right: 5px;
+    top: 0px;
     padding: 1em;
     padding-top: 10px;
-    padding-bottom: 5px; }
+    padding-bottom: 0px; }
   @media (min-width: 624px) {
     header h1 {
       font-size: 46px;
       margin-top: 0.2em; }
     header p {
-      font-size: 28px; }
-    header div {
-      display: inline-block;
-      width: 560px; }
+      font-size: 28px;
+      padding-bottom: 18px; }
     header img {
-      position: relative;
-      height: 112px;
-      padding-top: 18px; } }
+      height: 112px; } }
 
 nav, nav ul {
   width: calc(100vw - 69px);
