@@ -8,9 +8,9 @@ permalink: /faq/
 
 Yet another Space Station 13 remake, but we added another dimension to this one. More info on our [about page]({{ site.baseurl }}/about/).
 
-## what SS13 codebase are you following?
+## What SS13 codebase are you following?
 
-Were following pre-cobby chem TG, but we are taking influence from all codebases to some degree.
+We are mostly following a simplified TG core, but we are taking some influence from all SS13 codebases.
 
 ## Is it top-down view still or will first person be an option and if so will VR be an option?
 
