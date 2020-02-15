@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://ss3d.space/feed.xml" rel="self" type="application/atom+xml" /><link href="https://ss3d.space/" rel="alternate" type="text/html" /><updated>2020-02-09T03:16:22+00:00</updated><id>https://ss3d.space/feed.xml</id><title type="html">RE:SS3D</title><subtitle>This is a 3D recreation of Space Station 13, on the Unity engine, which will come with its own set of gameplay/graphical improvements. </subtitle><entry><title type="html">20.01: January 2020 Devblog</title><link href="https://ss3d.space/2020/02/03/20.01.html" rel="alternate" type="text/html" title="20.01: January 2020 Devblog" /><published>2020-02-03T14:30:00+00:00</published><updated>2020-02-03T14:30:00+00:00</updated><id>https://ss3d.space/2020/02/03/20.01</id><content type="html" xml:base="https://ss3d.space/2020/02/03/20.01.html">&lt;p&gt;“A new month, a new year, a new decade, a new hope.”&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://ss3d.space/feed.xml" rel="self" type="application/atom+xml" /><link href="https://ss3d.space/" rel="alternate" type="text/html" /><updated>2020-02-15T06:52:25+00:00</updated><id>https://ss3d.space/feed.xml</id><title type="html">RE:SS3D</title><subtitle>This is a 3D recreation of Space Station 13, on the Unity engine, which will come with its own set of gameplay/graphical improvements. </subtitle><entry><title type="html">20.01: January 2020 Devblog</title><link href="https://ss3d.space/2020/02/03/20.01.html" rel="alternate" type="text/html" title="20.01: January 2020 Devblog" /><published>2020-02-03T14:30:00+00:00</published><updated>2020-02-03T14:30:00+00:00</updated><id>https://ss3d.space/2020/02/03/20.01</id><content type="html" xml:base="https://ss3d.space/2020/02/03/20.01.html">&lt;p&gt;“A new month, a new year, a new decade, a new hope.”&lt;/p&gt;
 
 &lt;h1 id=&quot;january-recap&quot;&gt;January Recap&lt;/h1&gt;
 
@@ -176,7 +176,7 @@
 
 &lt;h2 id=&quot;artwork&quot;&gt;Artwork&lt;/h2&gt;
 
-&lt;p&gt;Again this month, &lt;strong&gt;Bug&lt;/strong&gt; has made another curious animation to spark your curiosity!&lt;/p&gt;
+&lt;p&gt;Again this month, &lt;strong&gt;Bug&lt;/strong&gt; has made another interesting animation to spark your curiosity!&lt;/p&gt;
 
 &lt;video autoplay=&quot;autoplay&quot; muted=&quot;&quot; loop=&quot;loop&quot; poster=&quot;/assets/img/art/Bug/BugHydroponics.png&quot; width=&quot;560px&quot;&gt;
   &lt;source src=&quot;/assets/img/art/Bug/BugHydroponics.webm&quot; type=&quot;video/webm&quot; /&gt;
@@ -194,6 +194,8 @@
 &lt;p&gt;You may recall us mentioning some in-progress management changes in our last devlog, these changes were decided upon in late 2019 by what is now the “Centcom” team. The primary reason for these changes being our technical stagnation, as well as other roadblocks in progress as a result of leaders going absent, which has been a recurring theme for us. The new leadership, the Centcom team, now has more &lt;a href=&quot;https://github.com/RE-SS3D/SS3D/wiki/Council-Responsibilities&quot;&gt;responsibilities&lt;/a&gt; and functions more like a ‘leading team’ as opposed to individual ‘team leaders’.&lt;/p&gt;
 
 &lt;p&gt;Over the last month, the team has put a lot of effort into updating links and guides, populating task boards, writing documents, and restructuring our discord, amongst other things. All of which is to help streamline the contribution process both for the average contributor as well as the managing staff. Admittedly there are still a few new guides to make and assets to organize, but the important stuff is mostly caught up and the rest hasn’t been forgotten.&lt;/p&gt;
+
+&lt;p&gt;Also, in the past, we have showcased work in these blogs that was never submitted in one form or another. This has resulted in us not actually having some ‘progress’ despite us having previously displaying it in a blog post. From here on, we intend to only show progress that has been submitted and accepted to the project in our blog posts. More wip content can be found on our reddit and discord.&lt;/p&gt;
 
 &lt;p&gt;For more information on these recent changes, our progress, or how to contribute, come say hello in our &lt;a href=&quot;https://discord.gg/3ny9tdH&quot; target=&quot;_blank&quot;&gt;discord&lt;/a&gt;!&lt;/p&gt;</content><author><name></name></author><summary type="html">“A new month, a new year, a new decade, a new hope.”</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://ss3d.space/assets/img/art/Bug/BugHydroponics.png" /></entry><entry><title type="html">19.12: December 2019 Devblog</title><link href="https://ss3d.space/2020/01/10/19.12.html" rel="alternate" type="text/html" title="19.12: December 2019 Devblog" /><published>2020-01-10T14:30:00+00:00</published><updated>2020-01-10T14:30:00+00:00</updated><id>https://ss3d.space/2020/01/10/19.12</id><content type="html" xml:base="https://ss3d.space/2020/01/10/19.12.html">&lt;p&gt;“A good system shortens the road to the goal.”&lt;/p&gt;
 
@@ -244,16 +246,16 @@
   &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/19.12.01/DiviIPC.png&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/DiviIPC-580x435.png 580w,    /assets/resized/DiviIPC-290x218.png 290w,    /assets/resized/DiviIPC-170x128.png 170w,    /assets/resized/DiviIPC-145x109.png 145w, /assets/img/posts/19.12.01/DiviIPC.png 800w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
 &lt;/div&gt;
 
-&lt;p&gt;&lt;strong&gt;Indor&lt;/strong&gt; again does some fine work for us, by contributing an UZI sub-machine gun with foldable stock and detachable suppressor and magazine, as well as a katana, and some reall cool modular transit tubes!&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Kiwav&lt;/strong&gt; again does some fine work for us, by contributing an UZI sub-machine gun with foldable stock and detachable suppressor and magazine, as well as a katana, and some reall cool modular transit tubes!&lt;/p&gt;
 
 &lt;div class=&quot;horizontal-2&quot;&gt;
 
-  &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/19.12.01/IndorUZI.png&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/IndorUZI-580x435.png 580w,    /assets/resized/IndorUZI-290x218.png 290w,    /assets/resized/IndorUZI-170x128.png 170w,    /assets/resized/IndorUZI-145x109.png 145w, /assets/img/posts/19.12.01/IndorUZI.png 800w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+  &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/19.12.01/KiwavUZI.png&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/KiwavUZI-580x435.png 580w,    /assets/resized/KiwavUZI-290x218.png 290w,    /assets/resized/KiwavUZI-170x128.png 170w,    /assets/resized/KiwavUZI-145x109.png 145w, /assets/img/posts/19.12.01/KiwavUZI.png 800w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
 
-  &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/19.12.01/IndorKatana.png&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/IndorKatana-580x435.png 580w,    /assets/resized/IndorKatana-290x218.png 290w,    /assets/resized/IndorKatana-170x128.png 170w,    /assets/resized/IndorKatana-145x109.png 145w, /assets/img/posts/19.12.01/IndorKatana.png 800w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+  &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/19.12.01/KiwavKatana.png&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/KiwavKatana-580x435.png 580w,    /assets/resized/KiwavKatana-290x218.png 290w,    /assets/resized/KiwavKatana-170x128.png 170w,    /assets/resized/KiwavKatana-145x109.png 145w, /assets/img/posts/19.12.01/KiwavKatana.png 800w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/19.12.01/IndorTransitTubes.png&quot; class=&quot;image-link&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/IndorTransitTubes-580x435.png 580w,    /assets/resized/IndorTransitTubes-290x218.png 290w,    /assets/resized/IndorTransitTubes-170x128.png 170w,    /assets/resized/IndorTransitTubes-145x109.png 145w, /assets/img/posts/19.12.01/IndorTransitTubes.png 800w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/19.12.01/KiwavTransitTubes.png&quot; class=&quot;image-link&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/KiwavTransitTubes-580x435.png 580w,    /assets/resized/KiwavTransitTubes-290x218.png 290w,    /assets/resized/KiwavTransitTubes-170x128.png 170w,    /assets/resized/KiwavTransitTubes-145x109.png 145w, /assets/img/posts/19.12.01/KiwavTransitTubes.png 800w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
 
 &lt;p&gt;&lt;strong&gt;UnevenPrankster&lt;/strong&gt; is back with some syndicate gear including, a mini-bomb, reinforced bola, X4 explosive, power sink, and telecrystal. Also from them this month, a cute spiderling and some tape.&lt;/p&gt;
 
@@ -352,7 +354,7 @@ Close your eyes but be guided by the hand.&lt;/p&gt;
 
 &lt;h2 id=&quot;inventory&quot;&gt;Inventory&lt;/h2&gt;
 
-&lt;p&gt;Courtesy of Nonanon, basic inventory is finally implemented! Currently, the system allows for picking up, placing, storing, and equipping of items. Objects can be placed on tables, on the floor, or even other objects. Switching hands can presently be done in the “I’m playing SS13 with a mouse and no hotkeys” method or the familiar /tg/station “x to swap hands.”&lt;/p&gt;
+&lt;p&gt;Courtesy of &lt;strong&gt;Nonanon&lt;/strong&gt;, basic inventory is finally implemented! Currently, the system allows for picking up, placing, storing, and equipping of items. Objects can be placed on tables, on the floor, or even other objects. Switching hands can presently be done in the “I’m playing SS13 with a mouse and no hotkeys” method or the familiar /tg/station “x to swap hands.”&lt;/p&gt;
 
 &lt;p&gt;&lt;em&gt;Disclaimer: SS3D is a top down game but the camera here is zoomed in to show more detail. Also the airlocks here are NOT our most up-to-date version so ignore the obvious mistakes in them (see the models section below for the current version). And finally gravity is not implemented for the player yet, so just pretend you don’t notice the player floating in this first clip.&lt;/em&gt;&lt;/p&gt;
 
@@ -384,7 +386,7 @@ Close your eyes but be guided by the hand.&lt;/p&gt;
 
 &lt;h2 id=&quot;shader-witchcraft&quot;&gt;Shader Witchcraft&lt;/h2&gt;
 
-&lt;p&gt;Erythro’s shader witchcraft continues to spit in the eyes of god and spark delight in the souls of spessmen, this month in the form of a beautiful hologram shader.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Erythro’s&lt;/strong&gt; shader witchcraft continues to spit in the eyes of god and spark delight in the souls of spessmen, this month in the form of a beautiful hologram shader.&lt;/p&gt;
 
 &lt;video autoplay=&quot;autoplay&quot; muted=&quot;&quot; loop=&quot;loop&quot; poster=&quot;/assets/img/posts/19.11.01/ErythroHologram.png&quot;&gt;
   &lt;source src=&quot;/assets/img/posts/19.11.01/ErythroHologram.webm&quot; type=&quot;video/webm&quot; /&gt;
@@ -393,17 +395,17 @@ Close your eyes but be guided by the hand.&lt;/p&gt;
 
 &lt;h2 id=&quot;textures&quot;&gt;Textures&lt;/h2&gt;
 
-&lt;p&gt;If you remember from our last blog post, we showcased a poster object using a custom poster texture which could easily be swapped out to create multiple poster variants. This month Eiko brought it back with bedsheets using custom textures as well as a &lt;a href=&quot;/assets/img/posts/19.11.01/EikoBlanketTemplate.png&quot; target=&quot;_blank&quot;&gt;template&lt;/a&gt; to ease the process for others to make their own blanket textures.&lt;/p&gt;
+&lt;p&gt;If you remember from our last blog post, we showcased a poster object using a custom poster texture which could easily be swapped out to create multiple poster variants. This month &lt;strong&gt;Eiko&lt;/strong&gt; brought it back with bedsheets using custom textures as well as a &lt;a href=&quot;/assets/img/posts/19.11.01/EikoBlanketTemplate.png&quot; target=&quot;_blank&quot;&gt;template&lt;/a&gt; to ease the process for others to make their own blanket textures.&lt;/p&gt;
 
 &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/19.11.01/EikoBlankets.png&quot; class=&quot;image-link&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/EikoBlankets-580x435.png 580w,    /assets/resized/EikoBlankets-290x218.png 290w,    /assets/resized/EikoBlankets-170x128.png 170w,    /assets/resized/EikoBlankets-145x109.png 145w, /assets/img/posts/19.11.01/EikoBlankets.png 800w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
 
-&lt;p&gt;Milly decided to also play around with custom textures by doing a UV unwrap on our slime mob and adding a gradient texture to give some curious depth to the globular creature.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Milly&lt;/strong&gt; decided to also play around with custom textures by doing a UV unwrap on our slime mob and adding a gradient texture to give some curious depth to the globular creature.&lt;/p&gt;
 
 &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/19.11.01/MillySlimeGradient.png&quot; class=&quot;image-link&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/MillySlimeGradient-580x435.png 580w,    /assets/resized/MillySlimeGradient-290x218.png 290w,    /assets/resized/MillySlimeGradient-170x128.png 170w,    /assets/resized/MillySlimeGradient-145x109.png 145w, /assets/img/posts/19.11.01/MillySlimeGradient.png 800w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
 
 &lt;h2 id=&quot;player-model&quot;&gt;Player Model&lt;/h2&gt;
 
-&lt;p&gt;Last month when we said the playermodel had finally been finished, we were lying. This month, another issue was discovered: the player’s thumb and how it wraps around an object when an object is being held. Eiko has once again saved the day by painstakingly rebuilding the thumb.&lt;/p&gt;
+&lt;p&gt;Last month when we said the playermodel had finally been finished, we were lying. This month, another issue was discovered: the player’s thumb and how it wraps around an object when an object is being held. &lt;strong&gt;Eiko&lt;/strong&gt; has once again saved the day by painstakingly rebuilding the thumb.&lt;/p&gt;
 
 &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/19.11.01/EikoThumb.png&quot; class=&quot;image-link&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/EikoThumb-580x435.png 580w,    /assets/resized/EikoThumb-290x218.png 290w,    /assets/resized/EikoThumb-170x128.png 170w,    /assets/resized/EikoThumb-145x109.png 145w, /assets/img/posts/19.11.01/EikoThumb.png 800w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
 
@@ -413,7 +415,7 @@ Close your eyes but be guided by the hand.&lt;/p&gt;
 
 &lt;h2 id=&quot;models&quot;&gt;Models&lt;/h2&gt;
 
-&lt;p&gt;From Bwoink this month, we have the biogenerator and the ripley mech.&lt;/p&gt;
+&lt;p&gt;From &lt;strong&gt;Bwoink&lt;/strong&gt; this month, we have the biogenerator and the ripley mech.&lt;/p&gt;
 
 &lt;div class=&quot;horizontal-2&quot;&gt;
 
@@ -422,7 +424,7 @@ Close your eyes but be guided by the hand.&lt;/p&gt;
   &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/19.11.01/BwoinkMiniMech.png&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/BwoinkMiniMech-580x435.png 580w,    /assets/resized/BwoinkMiniMech-290x218.png 290w,    /assets/resized/BwoinkMiniMech-170x128.png 170w,    /assets/resized/BwoinkMiniMech-145x109.png 145w, /assets/img/posts/19.11.01/BwoinkMiniMech.png 800w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
 &lt;/div&gt;
 
-&lt;p&gt;From Eiko, a crab and walking mushroom.&lt;/p&gt;
+&lt;p&gt;From &lt;strong&gt;Eiko&lt;/strong&gt;, a crab and walking mushroom.&lt;/p&gt;
 
 &lt;div class=&quot;horizontal-2&quot;&gt;
 
@@ -431,7 +433,7 @@ Close your eyes but be guided by the hand.&lt;/p&gt;
   &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/19.11.01/EikoWalkingMushroom.png&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/EikoWalkingMushroom-580x435.png 580w,    /assets/resized/EikoWalkingMushroom-290x218.png 290w,    /assets/resized/EikoWalkingMushroom-170x128.png 170w,    /assets/resized/EikoWalkingMushroom-145x109.png 145w, /assets/img/posts/19.11.01/EikoWalkingMushroom.png 800w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
 &lt;/div&gt;
 
-&lt;p&gt;This month Cosmic decided to refurbish some of the station decorations with newer variations including, airlocks, tables, and walls panels. Also provided, a new potted plant and killer tomatoes.&lt;/p&gt;
+&lt;p&gt;This month &lt;strong&gt;CosmicCoincidence&lt;/strong&gt; decided to refurbish some of the station decorations with newer variations including, airlocks, tables, and walls panels. Also provided, a new potted plant and killer tomatoes.&lt;/p&gt;
 
 &lt;div class=&quot;horizontal-2&quot;&gt;
 
@@ -454,7 +456,7 @@ Close your eyes but be guided by the hand.&lt;/p&gt;
   &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/19.11.01/CosmicKillerTomato.png&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/CosmicKillerTomato-580x435.png 580w,    /assets/resized/CosmicKillerTomato-290x218.png 290w,    /assets/resized/CosmicKillerTomato-170x128.png 170w,    /assets/resized/CosmicKillerTomato-145x109.png 145w, /assets/img/posts/19.11.01/CosmicKillerTomato.png 800w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
 &lt;/div&gt;
 
-&lt;p&gt;One of our new modelers, Divibee, has provided quite a collection this month including meson goggles, multitool, buttbot, the changeling’s armblade, glowshrooms, and a room full of weapons designed to make you feel apprehension.&lt;/p&gt;
+&lt;p&gt;One of our new modelers, &lt;strong&gt;Divibee&lt;/strong&gt;, has provided quite a collection this month including meson goggles, multitool, buttbot, the changeling’s armblade, glowshrooms, and a room full of weapons designed to make you feel apprehension.&lt;/p&gt;
 
 &lt;div class=&quot;horizontal-2&quot;&gt;
 
@@ -478,17 +480,17 @@ Close your eyes but be guided by the hand.&lt;/p&gt;
 
 &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/19.11.01/ErythroMachines.png&quot; class=&quot;image-link&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/ErythroMachines-580x435.png 580w,    /assets/resized/ErythroMachines-290x218.png 290w,    /assets/resized/ErythroMachines-170x128.png 170w,    /assets/resized/ErythroMachines-145x109.png 145w, /assets/img/posts/19.11.01/ErythroMachines.png 800w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
 
-&lt;p&gt;From FEB, that one Soviet soda machine.&lt;/p&gt;
+&lt;p&gt;From &lt;strong&gt;FEB&lt;/strong&gt;, that one Soviet soda machine.&lt;/p&gt;
 
 &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/19.11.01/FEBVoda.png&quot; class=&quot;image-link&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/FEBVoda-580x435.png 580w,    /assets/resized/FEBVoda-290x218.png 290w,    /assets/resized/FEBVoda-170x128.png 170w,    /assets/resized/FEBVoda-145x109.png 145w, /assets/img/posts/19.11.01/FEBVoda.png 800w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
 
-&lt;p&gt;From Fuu, body bags, raisins, ramen, and various frozen foodstuffs.&lt;/p&gt;
+&lt;p&gt;From &lt;strong&gt;Fuu&lt;/strong&gt;, body bags, raisins, ramen, and various frozen foodstuffs.&lt;/p&gt;
 
 &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/19.11.01/FuuBodybag.png&quot; class=&quot;image-link&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/FuuBodybag-580x435.png 580w,    /assets/resized/FuuBodybag-290x218.png 290w,    /assets/resized/FuuBodybag-170x128.png 170w,    /assets/resized/FuuBodybag-145x109.png 145w, /assets/img/posts/19.11.01/FuuBodybag.png 800w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
 
 &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/19.11.01/FuuFood.png&quot; class=&quot;image-link&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/FuuFood-580x435.png 580w,    /assets/resized/FuuFood-290x218.png 290w,    /assets/resized/FuuFood-170x128.png 170w,    /assets/resized/FuuFood-145x109.png 145w, /assets/img/posts/19.11.01/FuuFood.png 800w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
 
-&lt;p&gt;From Goao, some borgs, bots, space carps, a frog, a goose, a golden wheel chair, and some new dispensers.&lt;/p&gt;
+&lt;p&gt;From &lt;strong&gt;Goao&lt;/strong&gt;, some borgs, bots, space carps, a frog, a goose, a golden wheel chair, and some new dispensers.&lt;/p&gt;
 
 &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/19.11.01/GoaoBorgs.png&quot; class=&quot;image-link&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/GoaoBorgs-580x435.png 580w,    /assets/resized/GoaoBorgs-290x218.png 290w,    /assets/resized/GoaoBorgs-170x128.png 170w,    /assets/resized/GoaoBorgs-145x109.png 145w, /assets/img/posts/19.11.01/GoaoBorgs.png 800w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
 
@@ -508,7 +510,7 @@ Close your eyes but be guided by the hand.&lt;/p&gt;
   &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/19.11.01/GoaoDispensers.png&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/GoaoDispensers-580x435.png 580w,    /assets/resized/GoaoDispensers-290x218.png 290w,    /assets/resized/GoaoDispensers-170x128.png 170w,    /assets/resized/GoaoDispensers-145x109.png 145w, /assets/img/posts/19.11.01/GoaoDispensers.png 800w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
 &lt;/div&gt;
 
-&lt;p&gt;Another new face, Liddius, has come along and joined us this month, contributing a jukebox, mulebot, chefbot, flamethrower, and ion rifle, as well as some pie cannons and pneumatic cannons fitted for various gas tanks.&lt;/p&gt;
+&lt;p&gt;Another new face, &lt;strong&gt;Liddius&lt;/strong&gt;, has come along and joined us this month, contributing a jukebox, mulebot, chefbot, flamethrower, and ion rifle, as well as some pie cannons and pneumatic cannons fitted for various gas tanks.&lt;/p&gt;
 
 &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/19.11.01/LiddiusJukebox.png&quot; class=&quot;image-link&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/LiddiusJukebox-580x435.png 580w,    /assets/resized/LiddiusJukebox-290x218.png 290w,    /assets/resized/LiddiusJukebox-170x128.png 170w,    /assets/resized/LiddiusJukebox-145x109.png 145w, /assets/img/posts/19.11.01/LiddiusJukebox.png 800w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
 
@@ -530,13 +532,13 @@ Close your eyes but be guided by the hand.&lt;/p&gt;
 
 &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/19.11.01/LiddiusPneumaticCannon.png&quot; class=&quot;image-link&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/LiddiusPneumaticCannon-580x435.png 580w,    /assets/resized/LiddiusPneumaticCannon-290x218.png 290w,    /assets/resized/LiddiusPneumaticCannon-170x128.png 170w,    /assets/resized/LiddiusPneumaticCannon-145x109.png 145w, /assets/img/posts/19.11.01/LiddiusPneumaticCannon.png 800w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
 
-&lt;p&gt;Finally, a pulse pistol from LightVelox.&lt;/p&gt;
+&lt;p&gt;Finally, a pulse pistol from &lt;strong&gt;LightVelox&lt;/strong&gt;.&lt;/p&gt;
 
 &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/19.11.01/LightVeloxPulsePistol.png&quot; class=&quot;image-link&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/LightVeloxPulsePistol-580x435.png 580w,    /assets/resized/LightVeloxPulsePistol-290x218.png 290w,    /assets/resized/LightVeloxPulsePistol-170x128.png 170w,    /assets/resized/LightVeloxPulsePistol-145x109.png 145w, /assets/img/posts/19.11.01/LightVeloxPulsePistol.png 800w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
 
 &lt;h3 id=&quot;notes&quot;&gt;Notes&lt;/h3&gt;
 
-&lt;p&gt;This is our monthly devblog, for the purpose of legal evidence when we are inevitably sued for infringing on the idea of putting a station in space. CosmicCoincidence has pilfered Sunberry’s grave, put their body at a desk, and then puppeteered their stiff hands around until a devblog was made.&lt;/p&gt;
+&lt;p&gt;This is our monthly devblog, for the purpose of legal evidence when we are inevitably sued for infringing on the idea of putting a station in space. &lt;strong&gt;CosmicCoincidence&lt;/strong&gt; has pilfered &lt;strong&gt;Sunberry’s&lt;/strong&gt; grave, put their body at a desk, and then puppeteered their stiff hands around until a devblog was made.&lt;/p&gt;
 
 &lt;p&gt;Complementary (not optional) toolbox and floor pills can be found at our &lt;a href=&quot;https://discord.gg/3ny9tdH&quot; target=&quot;_blank&quot;&gt;Discord&lt;/a&gt;. Bring a friend and use them as a negotiating tool.&lt;/p&gt;</content><author><name></name></author><summary type="html">Clench your eyes shut and be gently woken up. Close your eyes but be guided by the hand.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://ss3d.space/assets/img/art/ProbablyNot/November19Wallpaper.png" /></entry><entry><title type="html">19.10: Spooktober 2019 Devblog</title><link href="https://ss3d.space/2019/11/11/19.10.html" rel="alternate" type="text/html" title="19.10: Spooktober 2019 Devblog" /><published>2019-11-11T14:30:00+00:00</published><updated>2019-11-11T14:30:00+00:00</updated><id>https://ss3d.space/2019/11/11/19.10</id><content type="html" xml:base="https://ss3d.space/2019/11/11/19.10.html">&lt;p&gt;&lt;em&gt;I was a little afraid, myself, to be frank.&lt;/em&gt;&lt;/p&gt;
 
@@ -546,9 +548,9 @@ Close your eyes but be guided by the hand.&lt;/p&gt;
 
 &lt;h2 id=&quot;tiles&quot;&gt;Tiles&lt;/h2&gt;
 
-&lt;p&gt;&lt;a href=&quot;/assets/img/posts/19.10.01/EikoTileInfographic.png&quot; target=&quot;_blank&quot;&gt;Here’s an infographic courtesy of Eiko that describes how tiles are intended to work in RE:SS3D.&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;/assets/img/posts/19.10.01/EikoTileInfographic.png&quot; target=&quot;_blank&quot;&gt;Here’s an infographic courtesy of &lt;strong&gt;Eiko&lt;/strong&gt; that describes how tiles are intended to work in RE:SS3D.&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;Definitely Not Eric has sorted out the tile-based system and gotten tiles and tile changes networked, and prototyped tile serialization/deserialization. Autoconnect systems are working again, and are presently being used to autoconnect walls (even different types of walls) and individual layers of pipe, though autoconnecting pipe might probably change later on. Different types of floors and the states of said floors (see infographic) are networked.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Definitely Not Eric&lt;/strong&gt; has sorted out the tile-based system and gotten tiles and tile changes networked, and prototyped tile serialization/deserialization. Autoconnect systems are working again, and are presently being used to autoconnect walls (even different types of walls) and individual layers of pipe, though autoconnecting pipe might probably change later on. Different types of floors and the states of said floors (see infographic) are networked.&lt;/p&gt;
 
 &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/19.10.01/DNENetworkedTiles.png&quot; class=&quot;image-link&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/DNENetworkedTiles-580x364.png 580w,    /assets/resized/DNENetworkedTiles-290x182.png 290w,    /assets/resized/DNENetworkedTiles-170x107.png 170w,    /assets/resized/DNENetworkedTiles-145x91.png 145w, /assets/img/posts/19.10.01/DNENetworkedTiles.png 1602w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
 
@@ -558,7 +560,7 @@ Close your eyes but be guided by the hand.&lt;/p&gt;
 
 &lt;h2 id=&quot;ragdoll-controller&quot;&gt;Ragdoll controller&lt;/h2&gt;
 
-&lt;p&gt;Courtesy of Singulo, ragdolls are now implemented and synced between players. There are forwards and backwards slips.&lt;/p&gt;
+&lt;p&gt;Courtesy of &lt;strong&gt;Singulo&lt;/strong&gt;, ragdolls are now implemented and synced between players. There are forwards and backwards slips.&lt;/p&gt;
 
 &lt;div class=&quot;horizontal-2&quot;&gt;
 
@@ -569,11 +571,11 @@ Close your eyes but be guided by the hand.&lt;/p&gt;
 
 &lt;h2 id=&quot;human-model-finalizations&quot;&gt;Human Model Finalizations&lt;/h2&gt;
 
-&lt;p&gt;Throughout the history of the project, even in the times of *beep, the human model has been an items subject to frequent improvement and modification. As constant changes to something so fundamental and important tends to cause generally unwelcome ripples that disturb other systems using it, we are happy to say that this month, Eiko has accomplished the mission of transforming the human model into (hopefully) its final version.&lt;/p&gt;
+&lt;p&gt;Throughout the history of the project, even in the times of *beep, the human model has been an items subject to frequent improvement and modification. As constant changes to something so fundamental and important tends to cause generally unwelcome ripples that disturb other systems using it, we are happy to say that this month, &lt;strong&gt;Eiko&lt;/strong&gt; has accomplished the mission of transforming the human model into (hopefully) its final version.&lt;/p&gt;
 
 &lt;p&gt;The process for this was one that involved a measure of ripples within itself. Starting with scrapping the hands and starting over from scratch, it became apparent that the character rig had to be adjusted for the slightly different handshape.&lt;/p&gt;
 
-&lt;p&gt;At this point, recognizing that this would break the rig and stuff anyway, Eiko decided to go all-in and make a bunch of other adjustments to the rig and model. Geometry was added to polish aspects of the models that were in need of it, such as the hips, shoulders, knees, and elbows. Both the human model and the base jumpsuit model were entirely re-weighted. Finally, it was resized to the size of *beep’s original model before d32’s version (of which the current model is derived) was adopted, which stood a head taller and had always needed to be resized by a percentage to comfortably fit in the station environment.&lt;/p&gt;
+&lt;p&gt;At this point, recognizing that this would break the rig and stuff anyway, &lt;strong&gt;Eiko&lt;/strong&gt; decided to go all-in and make a bunch of other adjustments to the rig and model. Geometry was added to polish aspects of the models that were in need of it, such as the hips, shoulders, knees, and elbows. Both the human model and the base jumpsuit model were entirely re-weighted. Finally, it was resized to the size of *beep’s original model before d32’s version (of which the current model is derived) was adopted, which stood a head taller and had always needed to be resized by a percentage to comfortably fit in the station environment.&lt;/p&gt;
 
 &lt;p&gt;Also, we have a jawline slider, now.&lt;/p&gt;
 
@@ -589,7 +591,7 @@ Close your eyes but be guided by the hand.&lt;/p&gt;
   &lt;source src=&quot;/assets/img/posts/19.10.01/EikoZSwap.mp4&quot; type=&quot;video/mp4&quot; /&gt;
 &lt;/video&gt;
 
-&lt;p&gt;Also from Eiko this month, more dabbling into the dreams of having RE:SS3D but in 3D. Actually integrating Z-levels into the game continues to remain a serious issue for mostly the purely mechanical issues involving the camera perspective and how information is displayed or isn’t displayed to the player. At the time of writing, these problems have no adequate solution that doesn’t involve changing the player perspective entirely.&lt;/p&gt;
+&lt;p&gt;Also from &lt;strong&gt;Eiko&lt;/strong&gt; this month, more dabbling into the dreams of having RE:SS3D but in 3D. Actually integrating Z-levels into the game continues to remain a serious issue for mostly the purely mechanical issues involving the camera perspective and how information is displayed or isn’t displayed to the player. At the time of writing, these problems have no adequate solution that doesn’t involve changing the player perspective entirely.&lt;/p&gt;
 
 &lt;div class=&quot;horizontal-2&quot;&gt;
 
@@ -602,7 +604,7 @@ Close your eyes but be guided by the hand.&lt;/p&gt;
 
 &lt;h2 id=&quot;shader-magic&quot;&gt;Shader Magic&lt;/h2&gt;
 
-&lt;p&gt;Amongst our new faces is one Erythro, who has proven themselves capable of some rather jarring shader witchcraftery. Product of this shader witchcraftery is some new fire WIP. Last month’s fire from Eiko, if you may remember, was good and fit the artstyle extremely well, but wasn’t quite appropriate for “object on fire” and “hallway engulfed in flames” types of fire. This month, Erythro appeared and provided a solution in the form of a procedural fire shader, made with vertex displacement and perlin noise for the flame effect, and fresnel and emissive to fake the volumetric aspect.&lt;/p&gt;
+&lt;p&gt;Amongst our new faces is one &lt;strong&gt;Erythro&lt;/strong&gt;, who has proven themselves capable of some rather jarring shader witchcraftery. Product of this shader witchcraftery is some new fire WIP. Last month’s fire from &lt;strong&gt;Eiko&lt;/strong&gt;, if you may remember, was good and fit the artstyle extremely well, but wasn’t quite appropriate for “object on fire” and “hallway engulfed in flames” types of fire. This month, &lt;strong&gt;Erythro&lt;/strong&gt; appeared and provided a solution in the form of a procedural fire shader, made with vertex displacement and perlin noise for the flame effect, and fresnel and emissive to fake the volumetric aspect.&lt;/p&gt;
 
 &lt;video autoplay=&quot;autoplay&quot; muted=&quot;&quot; loop=&quot;loop&quot; poster=&quot;/assets/img/posts/19.10.01/ErythroFireWipThumbnail.PNG&quot;&gt;
   &lt;source src=&quot;/assets/img/posts/19.10.01/ErythroFireWip.webm&quot; type=&quot;video/webm&quot; /&gt;
@@ -614,7 +616,7 @@ Close your eyes but be guided by the hand.&lt;/p&gt;
   &lt;source src=&quot;/assets/img/posts/19.10.01/ErythroFireballWIP.mp4&quot; type=&quot;video/mp4&quot; /&gt;
 &lt;/video&gt;
 
-&lt;p&gt;Also courtesy of Erythro, some WIP singulo and some WIP bloodied item shaders:&lt;/p&gt;
+&lt;p&gt;Also courtesy of &lt;strong&gt;Erythro&lt;/strong&gt;, some WIP singulo and some WIP bloodied item shaders:&lt;/p&gt;
 
 &lt;video autoplay=&quot;autoplay&quot; muted=&quot;&quot; loop=&quot;loop&quot; poster=&quot;/assets/img/posts/19.10.01/ErythroSingularityWIPThumbnail.PNG&quot;&gt;
   &lt;source src=&quot;/assets/img/posts/19.10.01/ErythroSingularityWIP.webm&quot; type=&quot;video/webm&quot; /&gt;
@@ -627,7 +629,7 @@ Close your eyes but be guided by the hand.&lt;/p&gt;
 
 &lt;h2 id=&quot;ghosts-wip&quot;&gt;Ghosts WIP&lt;/h2&gt;
 
-&lt;p&gt;While we don’t have networked dead players to show you at the moment, we’ve got some model from Eiko and concept stuff ranging from “adorably spooky” to “lovecraftian nightmare” from Honkette, which finds itself more than appropriate for the Spooktober setting.&lt;/p&gt;
+&lt;p&gt;While we don’t have networked dead players to show you at the moment, we’ve got a ghost model from &lt;strong&gt;Eiko&lt;/strong&gt; and concept stuff ranging from “adorably spooky” to “lovecraftian nightmare” from Honkette, which finds itself more than appropriate for the Spooktober setting.&lt;/p&gt;
 
 &lt;video autoplay=&quot;autoplay&quot; muted=&quot;&quot; loop=&quot;loop&quot; poster=&quot;/assets/img/posts/19.10.01/EikoGhostRotate.webm&quot;&gt;
   &lt;source src=&quot;/assets/img/posts/19.10.01/EikoGhostRotate.webm&quot; type=&quot;video/webm&quot; /&gt;
@@ -646,7 +648,7 @@ Close your eyes but be guided by the hand.&lt;/p&gt;
 
 &lt;h2 id=&quot;eye-candy&quot;&gt;EYE CANDY&lt;/h2&gt;
 
-&lt;p&gt;From Goao, a Spooktober poster, a lovely render, new beakers, &lt;a href=&quot;/assets/img/posts/19.10.01/GoaoWhereTheDoot.png&quot; target=&quot;_blank&quot;&gt;and&lt;/a&gt; some machines you might or might not recognize from medical.&lt;/p&gt;
+&lt;p&gt;From &lt;strong&gt;Goao&lt;/strong&gt;, a Spooktober poster, a lovely render, new beakers, &lt;a href=&quot;/assets/img/posts/19.10.01/GoaoWhereTheDoot.png&quot; target=&quot;_blank&quot;&gt;and&lt;/a&gt; some machines you might or might not recognize from medical.&lt;/p&gt;
 
 &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/art/Goao/GoaoSpooktoberPoster.png&quot; class=&quot;image-link&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/GoaoSpooktoberPoster-580x1044.png 580w,    /assets/resized/GoaoSpooktoberPoster-290x522.png 290w,    /assets/resized/GoaoSpooktoberPoster-170x306.png 170w,    /assets/resized/GoaoSpooktoberPoster-145x261.png 145w, /assets/img/art/Goao/GoaoSpooktoberPoster.png 767w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
 
@@ -661,7 +663,7 @@ Close your eyes but be guided by the hand.&lt;/p&gt;
   &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/19.10.01/GoaoPandemic.png&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/GoaoPandemic-170x231.png 170w,    /assets/resized/GoaoPandemic-145x197.png 145w, /assets/img/posts/19.10.01/GoaoPandemic.png 221w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
 &lt;/div&gt;
 
-&lt;p&gt;From Eiko this month: ambrosia, glass and mirrors, monkeystuff, seedpackets,  packages, cold hard cash, the gate, and a poster model which properly displays &lt;a href=&quot;/assets/img/posts/19.10.01/EikoEdPoster.png&quot; target=&quot;_blank&quot;&gt;poster images.&lt;/a&gt;
+&lt;p&gt;From &lt;strong&gt;Eiko&lt;/strong&gt; this month: ambrosia, glass and mirrors, monkeystuff, seedpackets,  packages, cold hard cash, the gate, and a poster model which properly displays &lt;a href=&quot;/assets/img/posts/19.10.01/EikoEdPoster.png&quot; target=&quot;_blank&quot;&gt;poster images.&lt;/a&gt;
 &lt;em&gt;(From Eiko last month: a PAI made of shapekey wizardry)&lt;/em&gt;&lt;/p&gt;
 
 &lt;div class=&quot;horizontal-2&quot;&gt;
@@ -702,7 +704,7 @@ Close your eyes but be guided by the hand.&lt;/p&gt;
   &lt;source src=&quot;/assets/img/posts/19.10.01/EikoPAI.mp4&quot; type=&quot;video/mp4&quot; /&gt;
 &lt;/video&gt;
 
-&lt;p&gt;From CosmicCoincidence this month, new hydro and crops, dirt, potted plants modifications to Pacman, sportball, atmos items, science items, pens, and donuts.&lt;/p&gt;
+&lt;p&gt;From &lt;strong&gt;CosmicCoincidence&lt;/strong&gt; this month, new hydro and crops, dirt, potted plants modifications to Pacman, sportball, atmos items, science items, pens, and donuts.&lt;/p&gt;
 
 &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/19.10.01/CosmicCrops.png&quot; class=&quot;image-link&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/CosmicCrops-580x435.png 580w,    /assets/resized/CosmicCrops-290x218.png 290w,    /assets/resized/CosmicCrops-170x128.png 170w,    /assets/resized/CosmicCrops-145x109.png 145w, /assets/img/posts/19.10.01/CosmicCrops.png 800w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
 
@@ -741,7 +743,7 @@ Close your eyes but be guided by the hand.&lt;/p&gt;
   &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/19.10.01/CosmicTankStorage.png&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/CosmicTankStorage-580x435.png 580w,    /assets/resized/CosmicTankStorage-290x218.png 290w,    /assets/resized/CosmicTankStorage-170x128.png 170w,    /assets/resized/CosmicTankStorage-145x109.png 145w, /assets/img/posts/19.10.01/CosmicTankStorage.png 800w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
 &lt;/div&gt;
 
-&lt;p&gt;From Erythro, suit storage, shuttle engine, and some various items of varying degrees of danger.&lt;/p&gt;
+&lt;p&gt;From &lt;strong&gt;Erythro&lt;/strong&gt;, suit storage, shuttle engine, and some various items of varying degrees of danger.&lt;/p&gt;
 
 &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/19.10.01/ErythroSuitStorage.png&quot; class=&quot;image-link&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/ErythroSuitStorage-580x275.png 580w,    /assets/resized/ErythroSuitStorage-290x138.png 290w,    /assets/resized/ErythroSuitStorage-170x81.png 170w,    /assets/resized/ErythroSuitStorage-145x69.png 145w, /assets/img/posts/19.10.01/ErythroSuitStorage.png 674w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
 
@@ -754,7 +756,7 @@ Close your eyes but be guided by the hand.&lt;/p&gt;
 
 &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/19.10.01/ErythroItems.png&quot; class=&quot;image-link&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/ErythroItems-580x493.png 580w,    /assets/resized/ErythroItems-290x247.png 290w,    /assets/resized/ErythroItems-170x145.png 170w,    /assets/resized/ErythroItems-145x123.png 145w, /assets/img/posts/19.10.01/ErythroItems.png 609w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
 
-&lt;p&gt;From Brukas and Connie, a collection of fruit and a protokinetic accelerator, respectively.&lt;/p&gt;
+&lt;p&gt;From &lt;strong&gt;Brukas&lt;/strong&gt; and &lt;strong&gt;Connie&lt;/strong&gt;, a collection of fruit and a protokinetic accelerator, respectively.&lt;/p&gt;
 
 &lt;div class=&quot;horizontal-2&quot;&gt;
 
@@ -763,18 +765,18 @@ Close your eyes but be guided by the hand.&lt;/p&gt;
   &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/19.10.01/ConnieProtoKineticAccelerator.png&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/ConnieProtoKineticAccelerator-580x435.png 580w,    /assets/resized/ConnieProtoKineticAccelerator-290x218.png 290w,    /assets/resized/ConnieProtoKineticAccelerator-170x128.png 170w,    /assets/resized/ConnieProtoKineticAccelerator-145x109.png 145w, /assets/img/posts/19.10.01/ConnieProtoKineticAccelerator.png 800w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
 &lt;/div&gt;
 
-&lt;p&gt;From Probably Not, a spooky render encapsulating an emotion I struggle to communicate.&lt;/p&gt;
+&lt;p&gt;From &lt;strong&gt;Probably Not&lt;/strong&gt;, a spooky render encapsulating an emotion I struggle to communicate.&lt;/p&gt;
 
 &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/19.10.01/ProbablyNotYouDoneFuckedUpWide.png&quot; class=&quot;image-link&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/ProbablyNotYouDoneFuckedUpWide-580x326.png 580w,    /assets/resized/ProbablyNotYouDoneFuckedUpWide-290x163.png 290w,    /assets/resized/ProbablyNotYouDoneFuckedUpWide-170x96.png 170w,    /assets/resized/ProbablyNotYouDoneFuckedUpWide-145x82.png 145w, /assets/img/posts/19.10.01/ProbablyNotYouDoneFuckedUpWide.png 960w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
 
 &lt;h2 id=&quot;auditory-arts&quot;&gt;AUDITORY ARTS&lt;/h2&gt;
 
-&lt;p&gt;For reasons completely beyond me, our humble music section has found itself quite busy over the past month. Courtesy of Eiko, here is this resulting product of musical dabbling:&lt;/p&gt;
+&lt;p&gt;For reasons completely beyond me, our humble music section has found itself quite busy over the past month. Courtesy of &lt;strong&gt;Eiko&lt;/strong&gt;, here is this resulting product of musical dabbling:&lt;/p&gt;
 &lt;iframe class=&quot;video&quot; width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/WCPqPVdn-Oc&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
 
 &lt;h3 id=&quot;notes&quot;&gt;NOTES&lt;/h3&gt;
 
-&lt;p&gt;This is our monthly devblog, serving as an alleged anchor for showing our milestones of progress. Better late than never. Big thanks to CosmicCoincidence for peeling Sunberry off the ground and making this devblog happen. It feels nice to be lucid again.&lt;/p&gt;
+&lt;p&gt;This is our monthly devblog, serving as an alleged anchor for showing our milestones of progress. Better late than never. Big thanks to &lt;strong&gt;CosmicCoincidence&lt;/strong&gt; for peeling &lt;strong&gt;Sunberry&lt;/strong&gt; off the ground and making this devblog happen. It feels nice to be lucid again.&lt;/p&gt;
 
 &lt;p&gt;Come get toolboxed early on our &lt;a href=&quot;https://discord.gg/3ny9tdH&quot; target=&quot;_blank&quot;&gt;Discord&lt;/a&gt;.&lt;br /&gt;
 Since literally just asking nicely for programmers worked so effectively last time, please send programmers.&lt;/p&gt;
@@ -787,7 +789,7 @@ Since literally just asking nicely for programmers worked so effectively last ti
 
 &lt;h2 id=&quot;chatlog&quot;&gt;Chatlog&lt;/h2&gt;
 
-&lt;p&gt;Excellent WIP from Milly this month; work has begun on a feature-rich chatlog. For all your communications-based multitasking woes, this chatlog is to support multiple tabs, windows, and filters for said windows and tabs. The video puts it better, however.&lt;/p&gt;
+&lt;p&gt;Excellent WIP from &lt;strong&gt;Milly&lt;/strong&gt; this month; work has begun on a feature-rich chatlog. For all your communications-based multitasking woes, this chatlog is to support multiple tabs, windows, and filters for said windows and tabs. The video puts it better, however.&lt;/p&gt;
 &lt;video autoplay=&quot;autoplay&quot; muted=&quot;&quot; loop=&quot;loop&quot; poster=&quot;/assets/img/posts/19.09.01/MillyChatThumbnail.png&quot;&gt;
   &lt;source src=&quot;/assets/img/posts/19.09.01/MillyChatWIPSept.webm&quot; type=&quot;video/webm&quot; /&gt;
   &lt;source src=&quot;/assets/img/posts/19.09.01/MillyChatWIPSept.mp4&quot; type=&quot;video/mp4&quot; /&gt;
@@ -795,7 +797,7 @@ Since literally just asking nicely for programmers worked so effectively last ti
 
 &lt;h2 id=&quot;moving-and-shooting&quot;&gt;Moving and Shooting&lt;/h2&gt;
 
-&lt;p&gt;From LightVelox this month, early implementation of strafe-based movement and an aiming system. This will obviously end up being the base for the shooting system moving forward.&lt;/p&gt;
+&lt;p&gt;From &lt;strong&gt;LightVelox&lt;/strong&gt; this month, early implementation of strafe-based movement and an aiming system. This will obviously end up being the base for the shooting system moving forward.&lt;/p&gt;
 &lt;video autoplay=&quot;autoplay&quot; muted=&quot;&quot; loop=&quot;loop&quot; poster=&quot;/assets/img/posts/19.09.01/LightVeloxThumbnail.png&quot;&gt;
   &lt;source src=&quot;/assets/img/posts/19.09.01/LightVeloxSidewalk.webm&quot; type=&quot;video/webm&quot; /&gt;
   &lt;source src=&quot;/assets/img/posts/19.09.01/LightVeloxSidewalk.mp4&quot; type=&quot;video/mp4&quot; /&gt;
@@ -807,7 +809,7 @@ Since literally just asking nicely for programmers worked so effectively last ti
 
 &lt;h2 id=&quot;animations&quot;&gt;Animations&lt;/h2&gt;
 
-&lt;p&gt;Though not included in the above work, Probably Not has finished up some new directional movement animations and then some.&lt;/p&gt;
+&lt;p&gt;Though not included in the above work, &lt;strong&gt;Probably Not&lt;/strong&gt; has finished up some new directional movement animations and then some.&lt;/p&gt;
 &lt;video autoplay=&quot;autoplay&quot; muted=&quot;&quot; loop=&quot;loop&quot; poster=&quot;/assets/img/posts/19.09.01/ProbablyNotThumbnail.png&quot; width=&quot;580px&quot;&gt;
   &lt;source src=&quot;/assets/img/posts/19.09.01/ProbAnimations.webm&quot; type=&quot;video/webm&quot; /&gt;
   &lt;source src=&quot;/assets/img/posts/19.09.01/ProbAnimations.mp4&quot; type=&quot;video/mp4&quot; /&gt;
@@ -815,7 +817,7 @@ Since literally just asking nicely for programmers worked so effectively last ti
 
 &lt;h2 id=&quot;lavaland-aesthetics&quot;&gt;Lavaland Aesthetics&lt;/h2&gt;
 
-&lt;p&gt;Bridging the gap between everything else and Eye Candy, Milly has designed some lovely walls and ore walls for Lavaland, accompanied by matching ores and materials.The wall formations have different faces on each side, intended to be rotated randomly to easily mix up the environment to keep the lavaland tiles from looking too uniform.&lt;/p&gt;
+&lt;p&gt;Bridging the gap between everything else and Eye Candy, &lt;strong&gt;Milly&lt;/strong&gt; has designed some lovely walls and ore walls for Lavaland, accompanied by matching ores and materials.The wall formations have different faces on each side, intended to be rotated randomly to easily mix up the environment to keep the lavaland tiles from looking too uniform.&lt;/p&gt;
 &lt;video autoplay=&quot;autoplay&quot; muted=&quot;&quot; loop=&quot;loop&quot; poster=&quot;/assets/img/posts/19.09.01/MillyRockStuff.png&quot; width=&quot;580px&quot;&gt;
   &lt;source src=&quot;/assets/img/posts/19.09.01/MillyOreWallTrimShowcase.webm&quot; type=&quot;video/webm&quot; /&gt;
   &lt;source src=&quot;/assets/img/posts/19.09.01/MillyOreWallTrimShowcase.mp4&quot; type=&quot;video/mp4&quot; /&gt;
@@ -825,7 +827,7 @@ Since literally just asking nicely for programmers worked so effectively last ti
 
 &lt;h2 id=&quot;eye-candy&quot;&gt;EYE CANDY&lt;/h2&gt;
 
-&lt;p&gt;From Goao, an excellent compilation of items, alongside the diorama for this month’s title art.&lt;/p&gt;
+&lt;p&gt;From &lt;strong&gt;Goao&lt;/strong&gt;, an excellent compilation of items, alongside the diorama for this month’s title art.&lt;/p&gt;
 
 &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/19.09.01/GoaoCigarettes.png&quot; class=&quot;image-link&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/GoaoCigarettes-580x326.png 580w,    /assets/resized/GoaoCigarettes-290x163.png 290w,    /assets/resized/GoaoCigarettes-170x96.png 170w,    /assets/resized/GoaoCigarettes-145x82.png 145w, /assets/img/posts/19.09.01/GoaoCigarettes.png 1920w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
 
@@ -843,7 +845,7 @@ Since literally just asking nicely for programmers worked so effectively last ti
 
 &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/19.09.01/GoaoElectricChair.png&quot; class=&quot;image-link&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/GoaoElectricChair-580x435.png 580w,    /assets/resized/GoaoElectricChair-290x218.png 290w,    /assets/resized/GoaoElectricChair-170x128.png 170w,    /assets/resized/GoaoElectricChair-145x109.png 145w, /assets/img/posts/19.09.01/GoaoElectricChair.png 800w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
 
-&lt;p&gt;From Kiwav, a shotgun, some riot armor, and fully rigged solar panels.&lt;/p&gt;
+&lt;p&gt;From &lt;strong&gt;Kiwav&lt;/strong&gt;, a shotgun, some riot armor, and fully rigged solar panels.&lt;/p&gt;
 &lt;div class=&quot;horizontal-2&quot;&gt;
 
   &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/19.09.01/KiwavShotgun.png&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/KiwavShotgun-580x435.png 580w,    /assets/resized/KiwavShotgun-290x218.png 290w,    /assets/resized/KiwavShotgun-170x128.png 170w,    /assets/resized/KiwavShotgun-145x109.png 145w, /assets/img/posts/19.09.01/KiwavShotgun.png 800w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
@@ -853,7 +855,7 @@ Since literally just asking nicely for programmers worked so effectively last ti
 
 &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/19.09.01/KiwavSolarPanel.png&quot; class=&quot;image-link&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/KiwavSolarPanel-580x435.png 580w,    /assets/resized/KiwavSolarPanel-290x218.png 290w,    /assets/resized/KiwavSolarPanel-170x128.png 170w,    /assets/resized/KiwavSolarPanel-145x109.png 145w, /assets/img/posts/19.09.01/KiwavSolarPanel.png 800w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
 
-&lt;p&gt;From Eiko, delicious canisters and fire, two things that mix surprisingly well.&lt;/p&gt;
+&lt;p&gt;From &lt;strong&gt;Eiko&lt;/strong&gt;, delicious canisters and fire, two things that mix surprisingly well.&lt;/p&gt;
 &lt;div class=&quot;horizontal-2&quot;&gt;
 
   &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/19.09.01/EikoCanisters3.png&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/EikoCanisters3-580x452.png 580w,    /assets/resized/EikoCanisters3-290x226.png 290w,    /assets/resized/EikoCanisters3-170x133.png 170w,    /assets/resized/EikoCanisters3-145x113.png 145w, /assets/img/posts/19.09.01/EikoCanisters3.png 848w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
@@ -863,7 +865,7 @@ Since literally just asking nicely for programmers worked so effectively last ti
 
 &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/19.09.01/EikoFire2.gif&quot; class=&quot;image-link&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/EikoFire2-290x291.gif 290w,    /assets/resized/EikoFire2-170x171.gif 170w,    /assets/resized/EikoFire2-145x146.gif 145w, /assets/img/posts/19.09.01/EikoFire2.gif 533w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
 
-&lt;p&gt;From CosmicCoincidence, a colorful set of screwdrivers, some tanks, and some angry eggs.&lt;/p&gt;
+&lt;p&gt;From &lt;strong&gt;CosmicCoincidence&lt;/strong&gt;, a colorful set of screwdrivers, some tanks, and some angry eggs.&lt;/p&gt;
 &lt;div class=&quot;horizontal-2&quot;&gt;
 
   &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/19.09.01/CosmicCoincidenceScrewdrivers.png&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/CosmicCoincidenceScrewdrivers-580x435.png 580w,    /assets/resized/CosmicCoincidenceScrewdrivers-290x218.png 290w,    /assets/resized/CosmicCoincidenceScrewdrivers-170x128.png 170w,    /assets/resized/CosmicCoincidenceScrewdrivers-145x109.png 145w, /assets/img/posts/19.09.01/CosmicCoincidenceScrewdrivers.png 800w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
@@ -887,8 +889,10 @@ Come visit us on &lt;a href=&quot;https://discord.gg/3ny9tdH&quot; target=&quot;
 &lt;h2 id=&quot;teaser&quot;&gt;Teaser&lt;/h2&gt;
 
 &lt;p&gt;It doesn’t feel right to put this one anywhere besides the top.&lt;/p&gt;
+
 &lt;iframe class=&quot;video&quot; width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube-nocookie.com/embed/kb7lTMorbWo&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
-&lt;p&gt;New teaser video courtesy of Grimmie. Please share it with your programmer friends and tell them to come help us build the project. Technically an older piece from when this project was younger.&lt;/p&gt;
+
+&lt;p&gt;New teaser video courtesy of &lt;strong&gt;Grimmie&lt;/strong&gt;. Please share it with your programmer friends and tell them to come help us build the project. Technically an older piece from when this project was younger.&lt;/p&gt;
 
 &lt;h2 id=&quot;re-networking&quot;&gt;Re-networking&lt;/h2&gt;
 
@@ -909,7 +913,7 @@ Come visit us on &lt;a href=&quot;https://discord.gg/3ny9tdH&quot; target=&quot;
 
 &lt;h2 id=&quot;fov&quot;&gt;FoV&lt;/h2&gt;
 
-&lt;p&gt;Once again from Milly, some brand new WIP FoV, displayed here, akin to the prior-designed FoV, but better.&lt;/p&gt;
+&lt;p&gt;Once again from &lt;strong&gt;Milly&lt;/strong&gt;, some brand new WIP FoV, displayed here, akin to the prior-designed FoV, but better.&lt;/p&gt;
 
 &lt;video autoplay=&quot;autoplay&quot; muted=&quot;&quot; loop=&quot;loop&quot; poster=&quot;/assets/img/posts/19.08.01/AugustFoVTest.png&quot;&gt;
   &lt;source src=&quot;/assets/img/posts/19.08.01/AugustFoVTest.webm&quot; type=&quot;video/webm&quot; /&gt;
@@ -923,7 +927,8 @@ Come visit us on &lt;a href=&quot;https://discord.gg/3ny9tdH&quot; target=&quot;
 
 &lt;h2 id=&quot;player-inventory&quot;&gt;Player Inventory&lt;/h2&gt;
 
-&lt;p&gt;Also from Milly this month, WIP player inventory management:&lt;/p&gt;
+&lt;p&gt;Also from &lt;strong&gt;Milly&lt;/strong&gt; this month, WIP player inventory management:&lt;/p&gt;
+
 &lt;video autoplay=&quot;autoplay&quot; muted=&quot;&quot; loop=&quot;loop&quot; poster=&quot;/assets/img/posts/19.08.01/AugustNetworkingThumbnail.png&quot;&gt;
   &lt;source src=&quot;/assets/img/posts/19.08.01/AugustItems.webm&quot; type=&quot;video/webm&quot; /&gt;
   &lt;source src=&quot;/assets/img/posts/19.08.01/AugustItems.mp4&quot; type=&quot;video/mp4&quot; /&gt;
@@ -931,13 +936,13 @@ Come visit us on &lt;a href=&quot;https://discord.gg/3ny9tdH&quot; target=&quot;
 
 &lt;h2 id=&quot;piping-design&quot;&gt;Piping design&lt;/h2&gt;
 
-&lt;p&gt;New piping designs from Eiko! Beneath tile, there is room for disposals and two layers of pipes, and above tile, room for three layers of pipes for atmos shenanigans. Junctions are used to switch pipes between layers.&lt;/p&gt;
+&lt;p&gt;New piping designs from &lt;strong&gt;Eiko&lt;/strong&gt;! Beneath tile, there is room for disposals and two layers of pipes, and above tile, room for three layers of pipes for atmos shenanigans. Junctions are used to switch pipes between layers.&lt;/p&gt;
 
 &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/19.08.01/EikoPipes.png&quot; class=&quot;image-link&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/EikoPipes-580x349.png 580w,    /assets/resized/EikoPipes-290x175.png 290w,    /assets/resized/EikoPipes-170x102.png 170w,    /assets/resized/EikoPipes-145x87.png 145w, /assets/img/posts/19.08.01/EikoPipes.png 1400w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
 
 &lt;h2 id=&quot;new-walls&quot;&gt;New Walls&lt;/h2&gt;
 
-&lt;p&gt;While continuing our frustrating tradition of overhauling walls, Eiko has also designed walls-in-progress, reinforced walls, reinforced windows, counters, and countertop windows/shutters.&lt;/p&gt;
+&lt;p&gt;While continuing our frustrating tradition of overhauling walls, &lt;strong&gt;Eiko&lt;/strong&gt; has also designed walls-in-progress, reinforced walls, reinforced windows, counters, and countertop windows/shutters.&lt;/p&gt;
 
 &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/19.08.01/EikoWallworks.png&quot; class=&quot;image-link&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/EikoWallworks-580x285.png 580w,    /assets/resized/EikoWallworks-290x142.png 290w,    /assets/resized/EikoWallworks-170x83.png 170w,    /assets/resized/EikoWallworks-145x71.png 145w, /assets/img/posts/19.08.01/EikoWallworks.png 1441w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
 &lt;p&gt;Detail on the shutters:&lt;/p&gt;
@@ -954,27 +959,27 @@ Come visit us on &lt;a href=&quot;https://discord.gg/3ny9tdH&quot; target=&quot;
 &lt;h2 id=&quot;site-improvements&quot;&gt;Site Improvements&lt;/h2&gt;
 
 &lt;p&gt;We now have a lovely &lt;a href=&quot;/contribute/&quot;&gt;Contribute&lt;/a&gt; page, specifically designed to help model centralize resources for model contributors! The resources there are quite neat to look at, even if you don’t have any specific modelling knowledge or background. We also updated the &lt;a href=&quot;/about/&quot;&gt;About&lt;/a&gt; page (finally)! We also updated the &lt;a href=&quot;/faq/&quot;&gt;FAQ&lt;/a&gt; page (finally), too! Images load faster as thumbnails and can be clicked on for full-resolution!
-Site-specific writing courtesy of me, &lt;a href=&quot;/contribute/&quot;&gt;Contribute&lt;/a&gt; documents mostly courtesy of Eiko, and the site existing and improving to begin with as a whole is a continued effort courtesy of Stubenhocker.&lt;/p&gt;
+Site-specific writing courtesy of me (&lt;strong&gt;Sunberry&lt;/strong&gt;), &lt;a href=&quot;/contribute/&quot;&gt;Contribute&lt;/a&gt; documents mostly courtesy of &lt;strong&gt;Eiko&lt;/strong&gt;, and the site existing and improving to begin with as a whole is a continued effort courtesy of &lt;strong&gt;Stubenhocker&lt;/strong&gt;.&lt;/p&gt;
 
 &lt;h2 id=&quot;eye-candy&quot;&gt;EYE CANDY&lt;/h2&gt;
 
-&lt;p&gt;From Grimmie, some wallpaper shots from what the teaser video was once intended to include.&lt;/p&gt;
+&lt;p&gt;From &lt;strong&gt;Grimmie&lt;/strong&gt;, some wallpaper shots from what the teaser video was once intended to include.&lt;/p&gt;
 
 &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/art/Grimmie/GrimmieTimeAssassinLight.png&quot; class=&quot;image-link&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/GrimmieTimeAssassinLight-580x326.png 580w,    /assets/resized/GrimmieTimeAssassinLight-290x163.png 290w,    /assets/resized/GrimmieTimeAssassinLight-170x96.png 170w,    /assets/resized/GrimmieTimeAssassinLight-145x82.png 145w, /assets/img/art/Grimmie/GrimmieTimeAssassinLight.png 1920w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
 
 &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/art/Grimmie/GrimmieTimeAssassinDark.png&quot; class=&quot;image-link&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/GrimmieTimeAssassinDark-580x326.png 580w,    /assets/resized/GrimmieTimeAssassinDark-290x163.png 290w,    /assets/resized/GrimmieTimeAssassinDark-170x96.png 170w,    /assets/resized/GrimmieTimeAssassinDark-145x82.png 145w, /assets/img/art/Grimmie/GrimmieTimeAssassinDark.png 1920w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
 
-&lt;p&gt;Probably Not’s inspired art pieces:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Probably Not’s&lt;/strong&gt; inspired art pieces:&lt;/p&gt;
 
 &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/art/ProbablyNot/ProbablyNotClownHall.jpg&quot; class=&quot;image-link&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/ProbablyNotClownHall-580x326.jpg 580w,    /assets/resized/ProbablyNotClownHall-290x163.jpg 290w,    /assets/resized/ProbablyNotClownHall-170x96.jpg 170w,    /assets/resized/ProbablyNotClownHall-145x82.jpg 145w, /assets/img/art/ProbablyNot/ProbablyNotClownHall.jpg 1920w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
 
 &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/19.08.01/ProbablyNotSpook.jpg&quot; class=&quot;image-link&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/ProbablyNotSpook-580x463.jpg 580w,    /assets/resized/ProbablyNotSpook-290x232.jpg 290w,    /assets/resized/ProbablyNotSpook-170x136.jpg 170w,    /assets/resized/ProbablyNotSpook-145x116.jpg 145w, /assets/img/posts/19.08.01/ProbablyNotSpook.jpg 1200w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
 
-&lt;p&gt;In another step towards ensuring that the standard spessman can be properly disassembled, Eiko has now made it so that the ears can be removed.&lt;/p&gt;
+&lt;p&gt;In another step towards ensuring that the standard spessman can be properly disassembled, &lt;strong&gt;Eiko&lt;/strong&gt; has now made it so that the ears can be removed.&lt;/p&gt;
 
 &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/19.08.01/ear.gif&quot; class=&quot;image-link&quot;&gt;&lt;img src=&quot;/assets/img/posts/19.08.01/ear.gif&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
 
-&lt;p&gt;Console as a joint piece between Eiko and Goao. At one point this thing was fully animated with nothing but shapekey sorcery, but then Eiko made an animation to strap onto it. I still don’t know which one approach is more concerning anymore.&lt;/p&gt;
+&lt;p&gt;Console as a joint piece between &lt;strong&gt;Eiko&lt;/strong&gt; and &lt;strong&gt;Goao&lt;/strong&gt;. At one point this thing was fully animated with nothing but shapekey sorcery, but then &lt;strong&gt;Eiko&lt;/strong&gt; made an animation to strap onto it. I still don’t know which one approach is more concerning anymore.&lt;/p&gt;
 &lt;div class=&quot;horizontal-2&quot;&gt;
 
   &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/19.08.01/ConsoleEiko.png&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/ConsoleEiko-580x435.png 580w,    /assets/resized/ConsoleEiko-290x218.png 290w,    /assets/resized/ConsoleEiko-170x128.png 170w,    /assets/resized/ConsoleEiko-145x109.png 145w, /assets/img/posts/19.08.01/ConsoleEiko.png 800w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
@@ -982,7 +987,7 @@ Site-specific writing courtesy of me, &lt;a href=&quot;/contribute/&quot;&gt;Con
   &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/19.08.01/ConsoleGoao.png&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/ConsoleGoao-580x435.png 580w,    /assets/resized/ConsoleGoao-290x218.png 290w,    /assets/resized/ConsoleGoao-170x128.png 170w,    /assets/resized/ConsoleGoao-145x109.png 145w, /assets/img/posts/19.08.01/ConsoleGoao.png 800w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
 &lt;/div&gt;
 
-&lt;p&gt;More various items from Goao:&lt;/p&gt;
+&lt;p&gt;More various items from &lt;strong&gt;Goao&lt;/strong&gt;:&lt;/p&gt;
 &lt;div class=&quot;horizontal-2&quot;&gt;
 
   &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/19.08.01/Goao1.png&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/Goao1-580x491.png 580w,    /assets/resized/Goao1-290x245.png 290w,    /assets/resized/Goao1-170x144.png 170w,    /assets/resized/Goao1-145x123.png 145w, /assets/img/posts/19.08.01/Goao1.png 793w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
@@ -997,7 +1002,7 @@ Site-specific writing courtesy of me, &lt;a href=&quot;/contribute/&quot;&gt;Con
   &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/19.08.01/Goao4.png&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/Goao4-580x326.png 580w,    /assets/resized/Goao4-290x163.png 290w,    /assets/resized/Goao4-170x95.png 170w,    /assets/resized/Goao4-145x81.png 145w, /assets/img/posts/19.08.01/Goao4.png 908w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
 &lt;/div&gt;
 
-&lt;p&gt;From Lightvelox, that one old mining satchel you might recall, a blowtorch, and the CMO hardsuit.&lt;/p&gt;
+&lt;p&gt;From &lt;strong&gt;Lightvelox&lt;/strong&gt;, that one old mining satchel you might recall, a blowtorch, and the CMO hardsuit.&lt;/p&gt;
 &lt;div class=&quot;horizontal-2&quot;&gt;
 
   &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/19.08.01/LightVeloxMiningSatchelAndWeldingTool.png&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/LightVeloxMiningSatchelAndWeldingTool-580x435.png 580w,    /assets/resized/LightVeloxMiningSatchelAndWeldingTool-290x218.png 290w,    /assets/resized/LightVeloxMiningSatchelAndWeldingTool-170x128.png 170w,    /assets/resized/LightVeloxMiningSatchelAndWeldingTool-145x109.png 145w, /assets/img/posts/19.08.01/LightVeloxMiningSatchelAndWeldingTool.png 800w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
@@ -1005,19 +1010,19 @@ Site-specific writing courtesy of me, &lt;a href=&quot;/contribute/&quot;&gt;Con
   &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/19.08.01/CMOHardsuit.png&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/CMOHardsuit-580x326.png 580w,    /assets/resized/CMOHardsuit-290x163.png 290w,    /assets/resized/CMOHardsuit-170x96.png 170w,    /assets/resized/CMOHardsuit-145x82.png 145w, /assets/img/posts/19.08.01/CMOHardsuit.png 1920w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
 &lt;/div&gt;
 
-&lt;p&gt;From Kiwav, a collection of hardhats for any safety-oriented spessman.&lt;/p&gt;
+&lt;p&gt;From &lt;strong&gt;Kiwav&lt;/strong&gt;, a collection of hardhats for any safety-oriented spessman.&lt;/p&gt;
 
 &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/19.08.01/KiwavHardHats.png&quot; class=&quot;image-link&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/KiwavHardHats-580x326.png 580w,    /assets/resized/KiwavHardHats-290x163.png 290w,    /assets/resized/KiwavHardHats-170x96.png 170w,    /assets/resized/KiwavHardHats-145x82.png 145w, /assets/img/posts/19.08.01/KiwavHardHats.png 1920w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
 
-&lt;p&gt;From deBARBA, small collection of birds, including that prior-seen cockatiel.&lt;/p&gt;
+&lt;p&gt;From &lt;strong&gt;deBARBA&lt;/strong&gt;, small collection of birds, including that prior-seen cockatiel.&lt;/p&gt;
 
 &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/19.08.01/deBARBABirds.png&quot; class=&quot;image-link&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/deBARBABirds-580x435.png 580w,    /assets/resized/deBARBABirds-290x218.png 290w,    /assets/resized/deBARBABirds-170x128.png 170w,    /assets/resized/deBARBABirds-145x109.png 145w, /assets/img/posts/19.08.01/deBARBABirds.png 800w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
 
-&lt;p&gt;From Bathball, nougat in wrapper. Before this model, I had never fully understood what a nougat was.&lt;/p&gt;
+&lt;p&gt;From &lt;strong&gt;Bathball&lt;/strong&gt;, nougat in wrapper. Before this model, I had never fully understood what a nougat was.&lt;/p&gt;
 
 &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/19.08.01/BathballNougat.png&quot; class=&quot;image-link&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/BathballNougat-580x326.png 580w,    /assets/resized/BathballNougat-290x163.png 290w,    /assets/resized/BathballNougat-170x96.png 170w,    /assets/resized/BathballNougat-145x82.png 145w, /assets/img/posts/19.08.01/BathballNougat.png 1920w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
 
-&lt;p&gt;A new poster from Konstantin, this time depicting the automated menace of the station, Beepsky.&lt;/p&gt;
+&lt;p&gt;A new poster from &lt;strong&gt;Konstantin&lt;/strong&gt;, this time depicting the automated menace of the station, Beepsky.&lt;/p&gt;
 
 &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/19.08.01/KonstantinBeepsky.png&quot; class=&quot;image-link&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/KonstantinBeepsky-580x870.png 580w,    /assets/resized/KonstantinBeepsky-290x435.png 290w,    /assets/resized/KonstantinBeepsky-170x255.png 170w,    /assets/resized/KonstantinBeepsky-145x218.png 145w, /assets/img/posts/19.08.01/KonstantinBeepsky.png 600w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
 
@@ -1034,7 +1039,7 @@ Come visit us on &lt;a href=&quot;https://discord.gg/3ny9tdH&quot; target=&quot;
 
 &lt;h2 id=&quot;modelers-kit&quot;&gt;Modeler’s Kit&lt;/h2&gt;
 
-&lt;p&gt;Courtesy of the diligent Eiko, we now have a modeller’s kit, making contributing models literally easier than ever! Contains a Blender 2.8 template file with materials and settings properly set up so that people stop making models with backface culling disabled and sending stuff in with their normals facing the wrong way, &lt;a href=&quot;/assets/pdf/BeepStyleGuide.pdf&quot;&gt;*beep’s original SS3D Style Guide&lt;/a&gt;, a &lt;strong&gt;brand new&lt;/strong&gt; &lt;a href=&quot;/assets/pdf/SS3DModelFormattingGuide.pdf&quot;&gt;Model Formatting Guide&lt;/a&gt;, a simple character turnaround for planning clothes and equipables, and the original Items-18-2-22b to serve as a collection of example models.&lt;/p&gt;
+&lt;p&gt;Courtesy of the diligent &lt;strong&gt;Eiko&lt;/strong&gt;, we now have a modeller’s kit, making contributing models literally easier than ever! Contains a Blender 2.8 template file with materials and settings properly set up so that people stop making models with backface culling disabled and sending stuff in with their normals facing the wrong way, &lt;a href=&quot;/assets/pdf/BeepStyleGuide.pdf&quot;&gt;*beep’s original SS3D Style Guide&lt;/a&gt;, a brand new &lt;a href=&quot;/assets/pdf/SS3DModelFormattingGuide.pdf&quot;&gt;Model Formatting Guide&lt;/a&gt;, a simple character turnaround for planning clothes and equipables, and the original Items-18-2-22b to serve as a collection of example models.&lt;/p&gt;
 
 &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/19.07.01/ModelersKit.png&quot; class=&quot;image-link&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/ModelersKit-580x287.png 580w,    /assets/resized/ModelersKit-290x143.png 290w,    /assets/resized/ModelersKit-170x84.png 170w,    /assets/resized/ModelersKit-145x72.png 145w, /assets/img/posts/19.07.01/ModelersKit.png 1920w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
 
@@ -1053,7 +1058,7 @@ Here we have two examples of shapekey use: player eye states, and hair/headpiece
 
 &lt;h2 id=&quot;eye-candy&quot;&gt;EYE CANDY&lt;/h2&gt;
 
-&lt;p&gt;Eiko continues to provide significant model contributions despite his other efforts on the project, and I am still certain I don’t have all his contributions for the month.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Eiko&lt;/strong&gt; continues to provide significant model contributions despite his other efforts on the project, and I am still certain I don’t have all his contributions for the month.&lt;/p&gt;
 
 &lt;div class=&quot;horizontal-2&quot;&gt;
 
@@ -1118,7 +1123,7 @@ Here we have two examples of shapekey use: player eye states, and hair/headpiece
   &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/19.07.01/EikoArcade2.png&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/EikoArcade2-580x435.png 580w,    /assets/resized/EikoArcade2-290x218.png 290w,    /assets/resized/EikoArcade2-170x128.png 170w,    /assets/resized/EikoArcade2-145x109.png 145w, /assets/img/posts/19.07.01/EikoArcade2.png 800w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
 &lt;/div&gt;
 
-&lt;p&gt;Enclave was inspired to make some of the cultist items this month, as well as some wizard staffs and other miscellaneous station items.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Enclave&lt;/strong&gt; was inspired to make some of the cultist items this month, as well as some wizard staffs and other miscellaneous station items.&lt;/p&gt;
 
 &lt;div class=&quot;horizontal-2&quot;&gt;
 
@@ -1157,7 +1162,7 @@ Here we have two examples of shapekey use: player eye states, and hair/headpiece
 
 &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/19.07.01/EnclaveStaves.png&quot; class=&quot;image-link&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/EnclaveStaves-580x435.png 580w,    /assets/resized/EnclaveStaves-290x218.png 290w,    /assets/resized/EnclaveStaves-170x128.png 170w,    /assets/resized/EnclaveStaves-145x109.png 145w, /assets/img/posts/19.07.01/EnclaveStaves.png 800w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
 
-&lt;p&gt;From deBARBA, some birds and a blender, all animated, but not to imply those things should categorically mix.&lt;/p&gt;
+&lt;p&gt;From &lt;strong&gt;deBARBA&lt;/strong&gt;, some birds and a blender, all animated, but not to imply those things should categorically mix.&lt;/p&gt;
 
 &lt;div class=&quot;horizontal-2-direct-children-desktop&quot;&gt;
   &lt;div class=&quot;sketchfab-embed-wrapper&quot;&gt;
@@ -1185,7 +1190,7 @@ Here we have two examples of shapekey use: player eye states, and hair/headpiece
   &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;p&gt;From goao this month, a particular interest in instruments, and more.&lt;/p&gt;
+&lt;p&gt;From &lt;strong&gt;Goao&lt;/strong&gt; this month, a particular interest in instruments, and more.&lt;/p&gt;
 
 &lt;div class=&quot;horizontal-2&quot;&gt;
 
@@ -1222,7 +1227,7 @@ Here we have two examples of shapekey use: player eye states, and hair/headpiece
   &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/19.07.01/GoaoIceCreamStand.png&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/GoaoIceCreamStand-580x435.png 580w,    /assets/resized/GoaoIceCreamStand-290x218.png 290w,    /assets/resized/GoaoIceCreamStand-170x128.png 170w,    /assets/resized/GoaoIceCreamStand-145x109.png 145w, /assets/img/posts/19.07.01/GoaoIceCreamStand.png 800w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
 &lt;/div&gt;
 
-&lt;p&gt;Finally, we have a grinder and conveyer belts from Milly, and reinforced tiles from Chanoc.&lt;/p&gt;
+&lt;p&gt;Finally, we have a grinder and conveyer belts from &lt;strong&gt;Milly&lt;/strong&gt;, and reinforced tiles from &lt;strong&gt;Chanoc&lt;/strong&gt;.&lt;/p&gt;
 
 &lt;div class=&quot;horizontal-2&quot;&gt;
 
@@ -1233,7 +1238,7 @@ Here we have two examples of shapekey use: player eye states, and hair/headpiece
 
 &lt;h3 id=&quot;notes&quot;&gt;NOTES&lt;/h3&gt;
 
-&lt;p&gt;&lt;a href=&quot;/assets/txt/BoneHurtingAssassin.txt&quot; target=&quot;_blank&quot;&gt;Somebody&lt;/a&gt; replaced all the fluids in my residence with bone hurting juice, and it took me out of commission for a while. Special thanks to Eiko this month, who did half my job for me while I tried not to writhe in pain.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;/assets/txt/BoneHurtingAssassin.txt&quot; target=&quot;_blank&quot;&gt;Somebody&lt;/a&gt; replaced all the fluids in my residence with bone hurting juice, and it took me out of commission for a while. Special thanks to &lt;strong&gt;Eiko&lt;/strong&gt; this month, who did half my job for me while I tried not to writhe in pain.&lt;/p&gt;
 
 &lt;p&gt;This is our monthly devblog, standing as proof that we’re still here, even if I’m not.
 Come visit us on &lt;a href=&quot;https://discord.gg/3ny9tdH&quot; target=&quot;_blank&quot;&gt;Discord&lt;/a&gt; and get a special toolbox welcoming gift.&lt;/p&gt;</content><author><name></name></author><summary type="html">Models, models, models models…</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://ss3d.space/assets/img/art/Eiko/EikoPromoGibber.png" /></entry><entry><title type="html">19.06: June 2019 Devblog</title><link href="https://ss3d.space/2019/07/04/19.06.html" rel="alternate" type="text/html" title="19.06: June 2019 Devblog" /><published>2019-07-04T14:30:00+00:00</published><updated>2019-07-04T14:30:00+00:00</updated><id>https://ss3d.space/2019/07/04/19.06</id><content type="html" xml:base="https://ss3d.space/2019/07/04/19.06.html">&lt;p&gt;A new face appears. An old face vanishes. Gears start to turn again.&lt;/p&gt;
@@ -1246,7 +1251,7 @@ Come visit us on &lt;a href=&quot;https://discord.gg/3ny9tdH&quot; target=&quot;
 
 &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/19.06.01/EikoOldWallsNewWalls.png&quot; class=&quot;image-link&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/EikoOldWallsNewWalls-580x422.png 580w,    /assets/resized/EikoOldWallsNewWalls-290x211.png 290w,    /assets/resized/EikoOldWallsNewWalls-170x124.png 170w,    /assets/resized/EikoOldWallsNewWalls-145x106.png 145w, /assets/img/posts/19.06.01/EikoOldWallsNewWalls.png 960w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
 
-&lt;p&gt;Now, these taller walls &lt;em&gt;may or may not&lt;/em&gt; be the first step down a slippery slope that might land us in a place with vertical orientation, and they are overall possibly still very much subject to change, but they solve some problems with how certain especially larger entities will navigate the station. Their careful construction as a joint project between PlayerOne and our newly ordained Eiko has ensured their flexibility to function as proper building blocks of any station design.&lt;/p&gt;
+&lt;p&gt;Now, these taller walls &lt;em&gt;may or may not&lt;/em&gt; be the first step down a slippery slope that might land us in a place with vertical orientation, and they are overall possibly still very much subject to change, but they solve some problems with how certain especially larger entities will navigate the station. Their careful construction as a joint project between &lt;strong&gt;PlayerOne&lt;/strong&gt; and our newly ordained Eiko has ensured their flexibility to function as proper building blocks of any station design.&lt;/p&gt;
 
 &lt;p&gt;The flexibility is enough to produce  some curiously revolting structures, were an individual motivated enough to make some:&lt;/p&gt;
 
@@ -1276,17 +1281,17 @@ Come visit us on &lt;a href=&quot;https://discord.gg/3ny9tdH&quot; target=&quot;
   &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/19.06.01/Cauterized.png&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/Cauterized-580x436.png 580w,    /assets/resized/Cauterized-290x218.png 290w,    /assets/resized/Cauterized-170x128.png 170w,    /assets/resized/Cauterized-145x109.png 145w, /assets/img/posts/19.06.01/Cauterized.png 595w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
 &lt;/div&gt;
 
-&lt;p&gt;Examples of severed and cauterized limbs, courtesy of Eiko, who also made the &lt;a href=&quot;/assets/img/posts/19.06.01/SS3DDressCodeProblemSolving.PNG&quot; target=&quot;_blank&quot;&gt;definitely-violates-station-dresscode&lt;/a&gt; sundress pictured here.&lt;/p&gt;
+&lt;p&gt;Examples of severed and cauterized limbs, courtesy of &lt;strong&gt;Eiko&lt;/strong&gt;, who also made the &lt;a href=&quot;/assets/img/posts/19.06.01/SS3DDressCodeProblemSolving.PNG&quot; target=&quot;_blank&quot;&gt;definitely-violates-station-dresscode&lt;/a&gt; sundress pictured here.&lt;/p&gt;
 
 &lt;h2 id=&quot;skeletons&quot;&gt;SKELETONS&lt;/h2&gt;
 
 &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/19.06.01/SpookyScary.png&quot; class=&quot;image-link&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/SpookyScary-580x582.png 580w,    /assets/resized/SpookyScary-290x291.png 290w,    /assets/resized/SpookyScary-170x171.png 170w,    /assets/resized/SpookyScary-145x146.png 145w, /assets/img/posts/19.06.01/SpookyScary.png 705w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
 
-&lt;p&gt;Alongside our preparations for the dismemberment of our spessmen, we now also have a skeleton (again, courtesy of Eiko.) For the skeleton enthusiasts out there, like myself, let me assure you that the male and female skeletons can be properly differentiated by an informed inspection of the hips. Structurally, they also fit perfectly inside the base human model, allowing for fun effects like the cartoony “electrocution X-ray.”&lt;/p&gt;
+&lt;p&gt;Alongside our preparations for the dismemberment of our spessmen, we now also have a skeleton (again, courtesy of &lt;strong&gt;Eiko&lt;/strong&gt;.) For the skeleton enthusiasts out there, like myself, let me assure you that the male and female skeletons can be properly differentiated by an informed inspection of the hips. Structurally, they also fit perfectly inside the base human model, allowing for fun effects like the cartoony “electrocution X-ray.”&lt;/p&gt;
 
 &lt;h2 id=&quot;critters&quot;&gt;CRITTERS&lt;/h2&gt;
 
-&lt;p&gt;Three new critters join the station. Blame Eiko. You’ll have to take my word for it when I say that they’re all adorably animated, though, because I’m not competent enough to display that properly right now.&lt;/p&gt;
+&lt;p&gt;Three new critters join the station. Blame &lt;strong&gt;Eiko&lt;/strong&gt;. You’ll have to take my word for it when I say that they’re all adorably animated, though, because I’m not competent enough to display that properly right now.&lt;/p&gt;
 
 &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/19.06.01/EikoSpaceCarp.png&quot; class=&quot;image-link&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/EikoSpaceCarp-580x435.png 580w,    /assets/resized/EikoSpaceCarp-290x218.png 290w,    /assets/resized/EikoSpaceCarp-170x128.png 170w,    /assets/resized/EikoSpaceCarp-145x109.png 145w, /assets/img/posts/19.06.01/EikoSpaceCarp.png 800w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
 &lt;div class=&quot;horizontal-2&quot;&gt;
@@ -1298,7 +1303,7 @@ Come visit us on &lt;a href=&quot;https://discord.gg/3ny9tdH&quot; target=&quot;
 
 &lt;h2 id=&quot;eye-candy&quot;&gt;EYE CANDY&lt;/h2&gt;
 
-&lt;p&gt;Various other models from Eiko this month, beginning with a new update on door design to include panels, and ending with some various foodstuffs.&lt;/p&gt;
+&lt;p&gt;Various other models from &lt;strong&gt;Eiko&lt;/strong&gt; this month, beginning with a new update on door design to include panels, and ending with some various foodstuffs.&lt;/p&gt;
 
 &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/19.06.01/EikoDoorPanel.gif&quot; class=&quot;image-link&quot;&gt;&lt;img src=&quot;/assets/img/posts/19.06.01/EikoDoorPanel.gif&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
 &lt;div class=&quot;horizontal-2&quot;&gt;
@@ -1322,7 +1327,7 @@ Come visit us on &lt;a href=&quot;https://discord.gg/3ny9tdH&quot; target=&quot;
 
 &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/19.06.01/EikoFoods.png&quot; class=&quot;image-link&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/EikoFoods-580x292.png 580w,    /assets/resized/EikoFoods-290x146.png 290w,    /assets/resized/EikoFoods-170x85.png 170w,    /assets/resized/EikoFoods-145x73.png 145w, /assets/img/posts/19.06.01/EikoFoods.png 915w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
 
-&lt;p&gt;Some splendid machinery and furniture brought to us by deBARBA, some within some Sketchfab embeds. Click on the embeds, because they look way better than my lousy Blender screenshots, and the two machines have amazing animations.&lt;/p&gt;
+&lt;p&gt;Some splendid machinery and furniture brought to us by &lt;strong&gt;deBARBA&lt;/strong&gt;, some within some Sketchfab embeds. Click on the embeds, because they look way better than my lousy Blender screenshots, and the two machines have amazing animations.&lt;/p&gt;
 
 &lt;div class=&quot;sketchfab-embed-wrapper&quot;&gt;&lt;iframe width=&quot;600&quot; height=&quot;400&quot; src=&quot;https://sketchfab.com/models/a7f210103cf14821ac1a22624357cd18/embed?camera=0&quot; frameborder=&quot;0&quot; allow=&quot;autoplay; fullscreen; vr&quot; mozallowfullscreen=&quot;true&quot; webkitallowfullscreen=&quot;true&quot; style=&quot;width:100%&quot;&gt;&lt;/iframe&gt;
 &lt;p style=&quot;font-size: 13px; font-weight: normal; margin: 5px; color: #4A4A4A;&quot;&gt;
@@ -1355,7 +1360,7 @@ Come visit us on &lt;a href=&quot;https://discord.gg/3ny9tdH&quot; target=&quot;
   &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/19.06.01/deBARBAStationBouncedRadio.png&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/deBARBAStationBouncedRadio-580x435.png 580w,    /assets/resized/deBARBAStationBouncedRadio-290x218.png 290w,    /assets/resized/deBARBAStationBouncedRadio-170x128.png 170w,    /assets/resized/deBARBAStationBouncedRadio-145x109.png 145w, /assets/img/posts/19.06.01/deBARBAStationBouncedRadio.png 800w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
 &lt;/div&gt;
 
-&lt;p&gt;Capacitors, brought to us by goao, in standard, advanced, and super capacities.&lt;/p&gt;
+&lt;p&gt;Capacitors, brought to us by &lt;strong&gt;Goao&lt;/strong&gt;, in standard, advanced, and super capacities.&lt;/p&gt;
 
 &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/19.06.01/goaoCapacitorSuper.png&quot; class=&quot;image-link&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/goaoCapacitorSuper-580x435.png 580w,    /assets/resized/goaoCapacitorSuper-290x218.png 290w,    /assets/resized/goaoCapacitorSuper-170x128.png 170w,    /assets/resized/goaoCapacitorSuper-145x109.png 145w, /assets/img/posts/19.06.01/goaoCapacitorSuper.png 800w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
 
@@ -1378,7 +1383,7 @@ Fun things happen on the Discord, sometimes.&lt;/p&gt;</content><author><name></
 
 &lt;h2 id=&quot;injured-animations&quot;&gt;INJURED ANIMATIONS&lt;/h2&gt;
 
-&lt;p&gt;Some injured animations from our new animator, Venom:&lt;/p&gt;
+&lt;p&gt;Some injured animations from our new animator, &lt;strong&gt;Venom&lt;/strong&gt;:&lt;/p&gt;
 
 &lt;video autoplay=&quot;autoplay&quot; muted=&quot;&quot; loop=&quot;loop&quot; poster=&quot;/assets/img/posts/19.05.1/InjuredWalk.jpg&quot;&gt;
   &lt;source src=&quot;/assets/img/posts/19.05.1/InjuredWalk.webm&quot; type=&quot;video/webm&quot; /&gt;
@@ -1400,7 +1405,7 @@ Fun things happen on the Discord, sometimes.&lt;/p&gt;</content><author><name></
 
 &lt;h2 id=&quot;eye-candy&quot;&gt;EYE CANDY&lt;/h2&gt;
 
-&lt;p&gt;Brought to you (mostly) in stunning, 800x600 standard-definition, LightVelox has provided some rather bountiful contributions this month:&lt;/p&gt;
+&lt;p&gt;Brought to you (mostly) in stunning, 800x600 standard-definition, &lt;strong&gt;LightVelox&lt;/strong&gt; has provided some rather bountiful contributions this month:&lt;/p&gt;
 
 &lt;div class=&quot;horizontal-2&quot;&gt;
 
@@ -1489,7 +1494,7 @@ Fun things happen on the Discord, sometimes.&lt;/p&gt;</content><author><name></
   &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/19.05.1/LightVeloxRetractors.png&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/LightVeloxRetractors-170x297.png 170w,    /assets/resized/LightVeloxRetractors-145x253.png 145w, /assets/img/posts/19.05.1/LightVeloxRetractors.png 227w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
 &lt;/div&gt;
 
-&lt;p&gt;-and some items from Blackout, &lt;em&gt;not&lt;/em&gt; in glorious 800x600 resolution.&lt;/p&gt;
+&lt;p&gt;-and some items from &lt;strong&gt;Blackout&lt;/strong&gt;, &lt;em&gt;not&lt;/em&gt; in glorious 800x600 resolution.&lt;/p&gt;
 
 &lt;div class=&quot;horizontal-2&quot;&gt;
 
@@ -1510,8 +1515,6 @@ Fun things happen on the Discord, sometimes.&lt;/p&gt;</content><author><name></
 
 &lt;p&gt;As you’ve hopefully noticed so long as you still have at least one eye, &lt;em&gt;most&lt;/em&gt; of the Eye Candy section should look &lt;em&gt;generally&lt;/em&gt; cleaner and better, with the later portions being obvious exceptions. Sometimes the site resizes two side-by-side image of the same resolution into &lt;em&gt;different resolutions&lt;/em&gt;, so it still might need a bit of work. Hopefully this more uniform presentation will become the new standard.&lt;/p&gt;
 
-&lt;p&gt;We also have a new application form, which can be found &lt;a href=&quot;https://docs.google.com/forms/d/1Y1H7KdFwHZCKxM-fWGiSXjiUfypKQ1eGPtuqhalnoAY&quot; target=&quot;_blank&quot;&gt;here&lt;/a&gt;, because the last one was kinda atrocious.&lt;/p&gt;
-
 &lt;p&gt;If you’ve been patient, you might’ve been expecting something involving cameras this month. It was put aside for some other things. Apologies.&lt;/p&gt;
 
 &lt;p&gt;This is our monthly devblog, standing as proof that we’re still here breathing and working, despite the borderline malevolent forces that would have it otherwise.
@@ -1521,7 +1524,7 @@ Come visit us on &lt;a href=&quot;https://discord.gg/3ny9tdH&quot; target=&quot;
 
 &lt;h3 id=&quot;singularity&quot;&gt;SINGULARITY&lt;/h3&gt;
 
-&lt;p&gt;Ol’ Singulo is here, complete with containment fields, courtesy of PlayerOne. Experience the horror of a containing an erratic and malevolent force of destruction to power basic utilities.&lt;/p&gt;
+&lt;p&gt;Ol’ Singulo is here, complete with containment fields, courtesy of &lt;strong&gt;PlayerOne&lt;/strong&gt;. Experience the horror of a containing an erratic and malevolent force of destruction to power basic utilities.&lt;/p&gt;
 
 &lt;video width=&quot;580px&quot; autoplay=&quot;autoplay&quot; muted=&quot;&quot; loop=&quot;loop&quot; poster=&quot;/assets/img/posts/19.04.1/SinguloTest.jpg&quot;&gt;
   &lt;source src=&quot;/assets/img/posts/19.04.1/SinguloTest.webm&quot; type=&quot;video/webm&quot; /&gt;
@@ -1532,23 +1535,23 @@ Come visit us on &lt;a href=&quot;https://discord.gg/3ny9tdH&quot; target=&quot;
 
 &lt;h3 id=&quot;atmos&quot;&gt;ATMOS&lt;/h3&gt;
 
-&lt;p&gt;After the mantle had been left sitting on the floor in a half-finished state months ago, Dyhr has picked up Atmos this month and is bringing it into a state of completion. While it hasn’t reached that completion yet, we’re still inclined to share our progress. Pictured here is nitrogen and oxygen.&lt;/p&gt;
+&lt;p&gt;After the mantle had been left sitting on the floor in a half-finished state months ago, &lt;strong&gt;Dyhr&lt;/strong&gt; has picked up Atmos this month and is bringing it into a state of completion. While it hasn’t reached that completion yet, we’re still inclined to share our progress. Pictured here is nitrogen and oxygen.&lt;/p&gt;
 
 &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/19.04.1/AtmosTestApril19.gif&quot; class=&quot;image-link&quot;&gt;&lt;img src=&quot;/assets/img/posts/19.04.1/AtmosTestApril19.gif&quot; alt=&quot;Atmos Test&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
 
 &lt;h3 id=&quot;model-list&quot;&gt;MODEL LIST&lt;/h3&gt;
 
-&lt;p&gt;As one of the first steps to properly creating a good system for intaking model community submissions, we now have a big list of what models have and haven’t been explicitly accepted into the project. Most of the credit for this one goes to White Eagle, who made the majority of this twenty-something page document of items.&lt;/p&gt;
+&lt;p&gt;As one of the first steps to properly creating a good system for intaking model community submissions, we now have a big list of what models have and haven’t been explicitly accepted into the project. Most of the credit for this one goes to &lt;strong&gt;White Eagle&lt;/strong&gt;, who made the majority of this twenty-something page document of items.&lt;/p&gt;
 
 &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/19.04.1/ModelListWIP.gif&quot; class=&quot;image-link&quot;&gt;&lt;img src=&quot;/assets/img/posts/19.04.1/ModelListWIP.gif&quot; alt=&quot;A terrifyingly long gif of a scrolling model list&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
 
 &lt;h1 id=&quot;eye-candy&quot;&gt;EYE CANDY&lt;/h1&gt;
 
-&lt;p&gt;From White Eagle, we have cameras. These cameras were going to be for something special, but you will have to wait for the next devblog post for that detail.&lt;/p&gt;
+&lt;p&gt;From &lt;strong&gt;White Eagle&lt;/strong&gt;, we have cameras. These cameras were going to be for something special, but you will have to wait for the next devblog post for that detail.&lt;/p&gt;
 
 &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/19.04.1/WhiteEagleCameras.png&quot; class=&quot;image-link&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;Two pretty, fully rigged cameras.&quot; srcset=&quot;    /assets/resized/WhiteEagleCameras-580x368.png 580w,    /assets/resized/WhiteEagleCameras-290x184.png 290w,    /assets/resized/WhiteEagleCameras-170x108.png 170w,    /assets/resized/WhiteEagleCameras-145x92.png 145w, /assets/img/posts/19.04.1/WhiteEagleCameras.png 1136w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
 
-&lt;p&gt;From the combined efforts of Konstantin and Sunberry, we have Ian flying into the sun.&lt;/p&gt;
+&lt;p&gt;From the combined efforts of &lt;strong&gt;Konstantin&lt;/strong&gt; and &lt;strong&gt;Sunberry&lt;/strong&gt;, we have Ian flying into the sun.&lt;/p&gt;
 &lt;div class=&quot;horizontal-2&quot;&gt;
 
   &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/art/Konstantin3001/KonstantinIanSunsetPoster.png&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/KonstantinIanSunsetPoster-580x870.png 580w,    /assets/resized/KonstantinIanSunsetPoster-290x435.png 290w,    /assets/resized/KonstantinIanSunsetPoster-170x255.png 170w,    /assets/resized/KonstantinIanSunsetPoster-145x218.png 145w, /assets/img/art/Konstantin3001/KonstantinIanSunsetPoster.png 600w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
@@ -1556,7 +1559,7 @@ Come visit us on &lt;a href=&quot;https://discord.gg/3ny9tdH&quot; target=&quot;
   &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/art/Sunberry/SunberryIanSunsetPoster.png&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/SunberryIanSunsetPoster-580x870.png 580w,    /assets/resized/SunberryIanSunsetPoster-290x435.png 290w,    /assets/resized/SunberryIanSunsetPoster-170x255.png 170w,    /assets/resized/SunberryIanSunsetPoster-145x218.png 145w, /assets/img/art/Sunberry/SunberryIanSunsetPoster.png 600w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
 &lt;/div&gt;
 
-&lt;p&gt;Also from Konstantin, our first horizontal poster. You can use it as a desktop background, if you feel so inclined.&lt;/p&gt;
+&lt;p&gt;Also from &lt;strong&gt;Konstantin&lt;/strong&gt;, our first horizontal poster. You can use it as a desktop background, if you feel so inclined.&lt;/p&gt;
 
 &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/art/Konstantin3001/KonstantinCultistPoster.png&quot; class=&quot;image-link&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/KonstantinCultistPoster-580x387.png 580w,    /assets/resized/KonstantinCultistPoster-290x193.png 290w,    /assets/resized/KonstantinCultistPoster-170x113.png 170w,    /assets/resized/KonstantinCultistPoster-145x97.png 145w, /assets/img/art/Konstantin3001/KonstantinCultistPoster.png 1800w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
 
