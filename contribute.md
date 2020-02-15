@@ -51,7 +51,7 @@ We currently do not have any guides for sfx, but if you want to scream like psyc
 - [Modeler’s Kit v1.4]({{ site.baseurl }}/assets/misc/SS3D Modeler's Kit 1.4.zip) - currently primarily set up for Blender users
 - [Character Animation Kit v1.0]({{ site.baseurl }}/assets/misc/Character Animation Kit 1.0.zip) - currently only set up for Maya users
 - [Code board](https://github.com/RE-SS3D/SS3D/projects/2) - tracks what coding is complete, available, and in-progress
-- [Design board](https://github.com/RE-SS3D/SS3D/projects/3) - tracks what features are up next for designing
+- [Design board](https://trello.com/b/2tXviwhe/ss3d-design) - tracks what features are up next for designing
 - [Models board](https://trello.com/b/ZVcDitv0/ss3d-model-list) - tracks the completion status of our 3D models
 - [Animations board](https://trello.com/b/xZ5bhNWw/ss3d-animations) - tracks the completion status of our animations
 - [2D board](https://trello.com/b/XVZ95Hjq/ss3d-2d) - tracks the completion status of our 2D art

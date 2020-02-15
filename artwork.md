@@ -4,7 +4,7 @@ title: Artwork
 permalink: /artwork/
 ---
 
-This Page is for displaying SS3D-related artworks such as wallpapers, animations and music created by artists of the community.
+This Page is for displaying SS3D-related artworks such as wallpapers, animations, and music created by artists of the community.
 
 # Brukas
 {: class="centred" }

@@ -6,15 +6,15 @@ permalink: /faq/
 
 ## What is RE:SS3D?
 
-Yet another Space Station 13 remake.
+Yet another Space Station 13 remake, but we added another dimension to this one. More info on our [about page]({{ site.baseurl }}/about/).
 
-## what SS13 codebase are you following?
+## What SS13 codebase are you following?
 
-Were following pre-cobby chem TG, but we are taking influence from all codebases to some degree.
+We are mostly following a simplified TG core, but we are taking some influence from all SS13 codebases.
 
-## Is it top-down view still or will first person be and option and if so will VR be an option?
+## Is it top-down view still or will first person be an option and if so will VR be an option?
 
-It's still top down. We do not plan to implement first person or VR. Although it shouldn't be too difficult for another future server or codebase to make the switch to first person/VR.
+It's still top-down. We do not plan to implement first person or VR. Although it shouldn't be too difficult for another future server or codebase to make the switch to first-person/VR.
 
 ## How much will the game cost?
 
@@ -32,7 +32,7 @@ The game likely won't be to the playable state SS13 has for a few years.
 ## What engine does it use?
 
 The game is made with Unity, with Mirror for networking. 
-For legal reasons we don't use assets from the Unity Asset Store, but open source assets are fine.
+For legal reasons we don't use assets from the Unity Asset Store, but open-source assets are fine.
 
 ## What license is the project distributed under?
 
