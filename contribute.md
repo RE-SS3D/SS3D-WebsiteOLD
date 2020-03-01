@@ -27,9 +27,9 @@ For any other questions, concerns, or unsolicited advice, just ask around on the
 
 ## Coding tasks:
 
-Start by familarizing yourself with [our code style guide](https://github.com/RE-SS3D/SS3D/blob/master/StyleGuides/C_SHARP.md), and [GitHub contributing guide](https://github.com/RE-SS3D/SS3D/blob/master/CONTRIBUTING.md).
+Start by familiarizing yourself with [our code style guide](https://github.com/RE-SS3D/SS3D/blob/master/StyleGuides/C_SHARP.md), and [GitHub contributing guide](https://github.com/RE-SS3D/SS3D/blob/master/CONTRIBUTING.md).
 
-Next, check out our [3 GitHub repositories](https://github.com/RE-SS3D). 'SS3D' is our main repo, and is the repo for the game itself. 'CentCom' is our central communcations server, which manages user registration, authentication, and character storage, similar to what Byond is to SS13. Finally, 'Website' is what it sounds like, it's the repo for our (this) website.
+Next, check out our [3 GitHub repositories](https://github.com/RE-SS3D). 'SS3D' is our main repo which is the repo for the game itself, as well as the wiki. 'CentCom' is our central communications server, which manages user registration, authentication, and character storage, similar to what Byond is to SS13. Finally, 'Website' is what it sounds like, it's the repo for our (this) website.
 
 Feel free to help on any of our three repos as they could all use your help, but since most of you are here to help with the game itself, visit our SS3D [code board](https://github.com/RE-SS3D/SS3D/projects/2) for a task (the ones in the available column are ones you can start on).
 
@@ -39,7 +39,7 @@ Start by downloading our [Modeler’s Kit v1.4]({{ site.baseurl }}/assets/misc/S
 
 Then visit our [models board](https://trello.com/b/ZVcDitv0/ss3d-model-list) to find a task to work on, and you can assign it to yourself via a custom bot in our discord (the channel #art-readme has more info on this).
 
-We recommend using [Blender v2.8](https://www.blender.org/download/releases/) or newer as it's free and open-soure like the game we are making and thus is easily accessible by most people and as a result our modeler's kit is mostly designed for use with Blender.
+We recommend using [Blender v2.8](https://www.blender.org/download/releases/) or newer as it's free and open-source like the game we are making and thus is easily accessible by most people and as a result our modeler's kit is mostly designed for use with Blender.
 
 ## Animation tasks:
 
@@ -51,7 +51,13 @@ We currently do not have any guides for 2D art, but you can visit our [2D board]
 
 ## Sound tasks:
 
-We currently do not have any guides for sfx, but if you want to scream like psychopath or fart into a microphone, check out our [sounds board](https://trello.com/b/k6pWgJE0/ss3d-sound-design).
+We currently do not have any guides for SFX, but if you want to scream like psychopath or fart into a microphone, check out our [sounds board](https://trello.com/b/k6pWgJE0/ss3d-sound-design).
+
+## Submissions:
+
+Technical contributions are submitted to our main (SS3D) repo via pull request.
+
+Art contributions currently are submitted via the art channels on our discord.
 
 ### Contribution links:
 
@@ -67,3 +73,9 @@ We currently do not have any guides for sfx, but if you want to scream like psyc
 - [Animations board](https://trello.com/b/xZ5bhNWw/ss3d-animations) - tracks the completion status of our animations
 - [2D board](https://trello.com/b/XVZ95Hjq/ss3d-2d) - tracks the completion status of our 2D art
 - [Sounds board](https://trello.com/b/k6pWgJE0/ss3d-sound-design) - tracks the completion status of our sound effects
+
+### Licensing:
+
+**This project and it's code fall under the [MIT](LICENSE-CODE.md) license.**
+
+**All asset contributions fall under the [CC BY-NC-SA 4.0](LICENSE-ASSETS.md) license.**

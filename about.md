@@ -8,8 +8,8 @@ permalink: /about/
 
 RE:SS3D is a resurrection of *beep's SS3D (a 3D recreation of Space Station 13 using the Unity game engine). If you go digging for SS3D, you might find bits and pieces, but you will ultimately find a trail that ends in silence. Here's the short story:
 
-<iframe class="video" width="560" height="315" class="video" src="https://www.youtube.com/embed/4QnjxQwe7eg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-*video re-uploaded by Injazz*
+<iframe class="video" width="560" height="315" class="video" src="https://www.youtube.com/embed/videoseries?list=PLTkyYJ6zDmhoiQv5PJYT6oI766G4s60Av" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+*These videos are reuploads of *beep's SS3D and are NOT representitive of RE:SS3D or it's progress!*
 
 One day in early 2018, an individual by the name of *beep decided to create a game called SS3D, based upon a small prior made "demo" (video embedded above) that had been well-received. *beep was brilliant, and for those few beautiful, wonderful months of early 2018, *beep made leaps of progress faster than any remake before, and for some short time, the dream of SS3D was certain and inevitable. But when the world needed him most, he vanished...
 
