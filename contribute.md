@@ -7,11 +7,11 @@ permalink: /contribute/
 ### Step by step guide:
 
 1. Go to the appropriate board/list for your field and look for available tasks.
-2. Pick a task, and request a @Centcom member on discord to assign you to that task.
+2. Pick a task, and request a @Centcom member on discord to assign you to it.
 3. Work on that task, using the correct style and formatting.
-4. Request for your in-progress screenshots or videos to be posted in the #wip channel for extra praise.
-5. Submit the task (as a PR for code, or by posting the asset to discord and notifying someone in @Centcom).
-6. Include a photo/video of your submission for the devblog and if it's code, include a summary.
+4. Request WIP screenshots/videos of your contribution to be posted in the #wip channel for extra praise.
+5. Submit the task (as a PR for code, or by posting the asset to discord and notifying a @centcom member).
+6. Include a photo/video of your submission for the devblog, and if it's code, include a summary.
 7. Centcom and maybe even the community will review it, and may request changes.
 8. Once accepted, pat yourself on the back for your glorious contribution to SS3D!
 
@@ -19,7 +19,7 @@ permalink: /contribute/
 
 If you're a programmer, 2D artist, 3D modeler, musician, programmer, animator, soundcloud rapper, or *especially* a programmer, we need you!
 
-**To start on any of these, read the appropriate sections below which contains links to guides to help you and boards to select a task from. Once you have a task in mind, contact a council member on our [Discord](https://discord.gg/3ny9tdH).**
+**To start on any of these, read the appropriate sections below which contains links to guides to help you and boards to select a task from. Once you have a task in mind, contact a council member on our [discord](https://discord.gg/3ny9tdH).**
 
 The game itself is being developed in the Unity game engine. You can find what version of Unity we use, instructions on setting up our project, and a link to download our project [here](https://github.com/RE-SS3D/SS3D).
 
@@ -51,31 +51,17 @@ We currently do not have any guides for 2D art, but you can visit our [2D board]
 
 ## Sound tasks:
 
-We currently do not have any guides for SFX, but if you want to scream like psychopath or fart into a microphone, check out our [sounds board](https://trello.com/b/k6pWgJE0/ss3d-sound-design).
+We currently do not have any guides for SFX, but if you want to scream like a psychopath or fart into a microphone, check out our [sounds board](https://trello.com/b/k6pWgJE0/ss3d-sound-design).
 
 ## Submissions:
 
-Technical contributions are submitted to our main (SS3D) repo via pull request.
+Technical contributions are submitted to [our main (SS3D) repo via pull request](https://github.com/RE-SS3D/SS3D/pulls).
 
-Art contributions currently are submitted via the art channels on our discord.
-
-### Contribution links:
-
-- [GitHub](https://github.com/RE-SS3D) - hosts our 3 repositories
-- [Discord](https://discord.gg/3ny9tdH) - primary communication for the community and devs
-- [Code style guide](https://github.com/RE-SS3D/SS3D/blob/master/StyleGuides/C_SHARP.md) - guide for maintaining consistant code
-- [GitHub contributing guide](https://github.com/RE-SS3D/SS3D/blob/master/CONTRIBUTING.md) - guide for contributing to our GitHub
-- [Modeler’s Kit v1.4]({{ site.baseurl }}/assets/misc/SS3D Modeler's Kit 1.4.zip) - currently primarily set up for Blender users
-- [Character Animation Kit v1.0]({{ site.baseurl }}/assets/misc/Character Animation Kit 1.0.zip) - currently only set up for Maya users
-- [Code board](https://github.com/RE-SS3D/SS3D/projects/2) - tracks what coding is complete, available, and in-progress for the game
-- [Design board](https://trello.com/b/2tXviwhe/ss3d-design) - tracks what features are up next for designing
-- [Models board](https://trello.com/b/ZVcDitv0/ss3d-model-list) - tracks the completion status of our 3D models
-- [Animations board](https://trello.com/b/xZ5bhNWw/ss3d-animations) - tracks the completion status of our animations
-- [2D board](https://trello.com/b/XVZ95Hjq/ss3d-2d) - tracks the completion status of our 2D art
-- [Sounds board](https://trello.com/b/k6pWgJE0/ss3d-sound-design) - tracks the completion status of our sound effects
+Art contributions currently are submitted via the art channels on our [discord](https://discord.gg/3ny9tdH).
 
 ### Licensing:
 
-**This project and it's code fall under the [MIT](LICENSE-CODE.md) license.**
+**This project and it's code** fall under the [**MIT license**](https://github.com/RE-SS3D/SS3D/blob/master/LICENSE-CODE).
 
-**All asset contributions fall under the [CC BY-NC-SA 4.0](LICENSE-ASSETS.md) license.**
+**All asset contributions** fall under the [**CC BY-NC-SA 4.0 license**](https://github.com/RE-SS3D/SS3D/blob/master/LICENCE-ASSETS).
+
