@@ -22,7 +22,7 @@ It's free and open source.
 
 ## Is there a playable demo?
 
-**Download links can be found on our [SS3D github repo](https://github.com/RE-SS3D/SS3D).** 
+**Download links can be found on our [SS3D github repo](https://github.com/RE-SS3D/SS3D#downloads).** 
 But don't expect much yet, as we still have a lot of work to do.
 
 ## When will the game be completed?

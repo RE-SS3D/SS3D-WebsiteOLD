@@ -13,8 +13,8 @@ RE:SS3D is a resurrection of the SS3D project (a 3D remake of SS13), and is bein
 
 Our project boards can be found on our [github](https://github.com/RE-SS3D/SS3D/projects) and [trello](https://trello.com/ress3d), while information regarding contributing can be found on our [contribute]({{ site.baseurl }}/contribute/) page.
 
-## [->DOWNLOAD LINKS<-](https://github.com/RE-SS3D/SS3D)
+# [->DOWNLOADS<-](https://github.com/RE-SS3D/SS3D#downloads)
 {: class="centred" }
 
-# Latest Blog Post:
+## Latest Blog Post:
 {: class="centred" }
