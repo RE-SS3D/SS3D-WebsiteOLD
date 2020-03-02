@@ -14,7 +14,17 @@ This Page is for displaying SS3D-related artworks such as wallpapers, animations
 # Bug
 {: class="centred" }
 
-<video autoplay="autoplay" muted loop="loop" poster="{{ site.baseurl }}/assets/img/art/Bug/BugHydroponics.png" width="560px">
+<video width="560px" autoplay="autoplay" muted loop="loop" poster="{{ site.baseurl }}/assets/img/art/Bug/BugSpaceJunk.png">
+  <source src="{{ site.baseurl }}/assets/img/art/Bug/BugSpaceJunk.webm" type="video/webm">
+  <source src="{{ site.baseurl }}/assets/img/art/Bug/BugSpaceJunk.mp4" type="video/mp4">
+</video>
+
+<video width="560px" autoplay="autoplay" muted loop="loop" poster="{{ site.baseurl }}/assets/img/art/Bug/BugSyndie.png">
+  <source src="{{ site.baseurl }}/assets/img/art/Bug/BugSyndie.webm" type="video/webm">
+  <source src="{{ site.baseurl }}/assets/img/art/Bug/BugSyndie.mp4" type="video/mp4">
+</video>
+
+<video width="560px" autoplay="autoplay" muted loop="loop" poster="{{ site.baseurl }}/assets/img/art/Bug/BugHydroponics.png">
   <source src="{{ site.baseurl }}/assets/img/art/Bug/BugHydroponics.webm" type="video/webm">
   <source src="{{ site.baseurl }}/assets/img/art/Bug/BugHydroponics.mp4" type="video/mp4">
 </video>
@@ -25,11 +35,19 @@ This Page is for displaying SS3D-related artworks such as wallpapers, animations
 </video>
 
 <div class='horizontal-2' markdown='1'>
+{% responsive_image path: assets/img/art/Bug/BugSpaceJunk.png %}
+{% responsive_image path: assets/img/art/Bug/BugSyndie.png %}
+</div>
+
+<div class='horizontal-2' markdown='1'>
 {% responsive_image path: assets/img/art/Bug/BugWallpaper2.png %}
 {% responsive_image path: assets/img/art/Bug/BugWallpaper3.png %}
 </div>
 
-{% responsive_image path: assets/img/art/Bug/BugWallpaper1.png template: _includes/srcset.html %}
+<div class='horizontal-2' markdown='1'>
+{% responsive_image path: assets/img/art/Bug/BugHydroponics.png %}
+{% responsive_image path: assets/img/art/Bug/BugWallpaper1.png %}
+</div>
 
 # CosmicCoincidence
 {: class="centred" }
