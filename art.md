@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Artwork
-permalink: /artwork/
+title: Art
+permalink: /art/
 ---
 
 # Brukas
