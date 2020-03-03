@@ -48,7 +48,7 @@ The most significant changes will be redesigns of the shortcomings and limitatio
 
 ## How can I help?
 
-There are several ways you can help, from 2d art, 3d art, sfx, programming, website development and more, just visit our [contribute page]({{ site.baseurl }}/contribute/) and come join our [space sweatshop](https://discord.gg/3ny9tdH).
+There are several ways you can help, from 2d art, 3d art, sfx, programming, website development and more, just visit our [contribute page]({{ site.baseurl }}/contribute/) and come join our [discord](https://discord.gg/3ny9tdH)!
 
 ## Who is *beep?
 
