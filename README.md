@@ -1,10 +1,10 @@
 # RE:SS3D Website
 
+**This is the website for the RE:SS3D project, located at <https://ss3d.space>.**
+
 Release: [![Build Status](https://travis-ci.org/RE-SS3D/Website.svg?branch=release)](https://travis-ci.org/RE-SS3D/Website)
 
 Develop: [![Build Status](https://travis-ci.org/RE-SS3D/Website.svg?branch=develop)](https://travis-ci.org/RE-SS3D/Website)
-
-This is the website for the RE:SS3D project, located at <https://ss3d.space>.
 
 ## Requirements
 
@@ -27,7 +27,7 @@ Linux is the simplest as it's what these technologies are designed for. Especial
 
 On windows you need to use [WSL - Ubuntu](https://www.microsoft.com/en-nz/p/ubuntu-1804-lts/9n9tngvndl3q?rtc=1&activetab=pivot:overviewtab). The instructions below are based on the [jekyll WSL instructions](https://jekyllrb.com/docs/installation/windows/) and [rmagick install instructions](https://github.com/rmagick/rmagick).
 
-Once ubuntu is downloaded, open up powershell or command prompt, or directly open ubuntu (and skip the first line)
+Once ubuntu is downloaded, open up powershell or command prompt, or directly open ubuntu (and skip the first line).
 
     bash
     sudo apt update -y && sudo apt upgrade -y
@@ -50,14 +50,16 @@ then follow the next section.
 
 ## Running local website
 
-    bundle exec jekyll serve --watch --host 0.0.0.0
+    bundle exec jekyll serve
 
-- `--watch` for automatically rebuilding site for any changes
-- `--host 0.0.0.0` to make server listen on all IPs, to allow for mobile testing
+Add:
+
+- `--future` if you are testing a blog post with a date in the future.
+- `--watch` for automatically rebuilding site for any changes.
+- `--host 0.0.0.0` to make server listen on all IPs, to allow for mobile testing.
 
 Website should be accessible at <http://localhost:4000/>
 
 ## Creating the Devblog
 
-A template for the devblog's text file exists at [./_drafts/devblog-format.md](./_drafts/devblog-format.md), that you can fill in with
-details. And a checklist of everything that needs to be done can be found [on our management board](https://trello.com/c/jLB9dKJH).
+A template for the devblog's .md file exists at [./_drafts/devblog-format.md](./_drafts/devblog-format.md), that you can fill in with details. A checklist regarding the process of the devblog can be found [on our management board](https://trello.com/c/jLB9dKJH).
