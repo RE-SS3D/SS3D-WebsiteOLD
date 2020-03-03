@@ -22,7 +22,7 @@ It's free and open source.
 
 ## Is there a playable demo?
 
-[Latest build can be found here](https://github.com/RE-SS3D/SS3D/releases/latest). 
+**Download links can be found on our [SS3D github repo](https://github.com/RE-SS3D/SS3D#downloads).** 
 But don't expect much yet, as we still have a lot of work to do.
 
 ## When will the game be completed?
@@ -32,12 +32,12 @@ The game likely won't be to the playable state SS13 has for a few years.
 ## What engine does it use?
 
 The game is made with Unity, with Mirror for networking. 
-For legal reasons we don't use assets from the Unity Asset Store, but open-source assets are fine.
+For legal reasons, we don't use assets from the Unity Asset Store, but open-source assets are fine.
 
 ## What license is the project distributed under?
 
-All code assets use the MIT license, only requiring attribution when used.
-All art assets use the [**CC BY-NC-SA 4.0 license**](https://creativecommons.org/licenses/by-nc-sa/4.0/), requiring attribution, same license, and only for non-commercial uses.
+All code assets use the [**MIT license**](https://github.com/RE-SS3D/SS3D/blob/master/LICENSE-CODE), only requiring attribution when used.
+All art assets use the [**CC BY-NC-SA 4.0 license**](https://github.com/RE-SS3D/SS3D/blob/master/LICENCE-ASSETS), requiring attribution, same license, and only for non-commercial uses.
 Keep in mind that your contributions are not retractable. Once submitted, the project has the license to use your contribution indefinitely.
 
 ## Will there be "X" feature?

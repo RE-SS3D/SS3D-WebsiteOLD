@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "00.00 (year.month) : [insert month] Recap"
-date:   2020-00-05 (year-month-day) 15:30:00 +0100    // The date should be the day the devblog is released and becomes part of the link to the post on the site.
+date:   2020-00-05 (year-month-day) 0:30:00 +0100    // The date should be the day the devblog is released and becomes part of the link to the post on the site. Also the website will not post with a future date and time.
 description: |
     "Description goes here."
 image: /assets/img/posts/[insert folder]/Wallpaper.png
