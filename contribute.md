@@ -61,7 +61,7 @@ Art contributions currently are submitted via the art channels on our [discord](
 
 ### Licensing:
 
-**This project and it's code** fall under the [**MIT license**](https://github.com/RE-SS3D/SS3D/blob/master/LICENSE-CODE).
+**This project and it's code** fall under the [**MIT license**](https://github.com/RE-SS3D/SS3D/blob/master/LICENSE-CODE.md).
 
-**All asset contributions** fall under the [**CC BY-NC-SA 4.0 license**](https://github.com/RE-SS3D/SS3D/blob/master/LICENCE-ASSETS).
+**All asset contributions** fall under the [**CC BY-NC-SA 4.0 license**](https://github.com/RE-SS3D/SS3D/blob/master/LICENSE-ASSETS.md).
 
