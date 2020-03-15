@@ -2,9 +2,7 @@
 
 **This is the website for the RE:SS3D project, located at <https://ss3d.space>.**
 
-Release: [![Build Status](https://travis-ci.org/RE-SS3D/Website.svg?branch=release)](https://travis-ci.org/RE-SS3D/Website)
-
-Develop: [![Build Status](https://travis-ci.org/RE-SS3D/Website.svg?branch=develop)](https://travis-ci.org/RE-SS3D/Website)
+[![Build Status](https://travis-ci.org/RE-SS3D/Website.svg?branch=release)](https://travis-ci.org/RE-SS3D/Website)
 
 ## Requirements
 
@@ -54,9 +52,9 @@ then follow the next section.
 
 Add:
 
-- `--future` if you are testing a blog post with a date in the future.
 - `--watch` for automatically rebuilding site for any changes.
 - `--host 0.0.0.0` to make server listen on all IPs, to allow for mobile testing.
+- `--future` if you are testing a blog post with a date in the future.
 
 Website should be accessible at <http://localhost:4000/>
 
