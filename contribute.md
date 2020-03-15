@@ -27,7 +27,7 @@ For any other questions, concerns, or unsolicited advice, just ask around on the
 
 ## Coding tasks:
 
-Start by familiarizing yourself with [our code style guide](https://github.com/RE-SS3D/SS3D/blob/master/StyleGuides/C_SHARP.md), and [github contributing guide](https://github.com/RE-SS3D/SS3D/blob/master/CONTRIBUTING.md).
+Start by familiarizing yourself with [our code (C#) style guide](https://github.com/RE-SS3D/SS3D/blob/master/StyleGuides/C_SHARP.md), and [github contributing guide](https://github.com/RE-SS3D/SS3D/blob/master/CONTRIBUTING.md).
 
 Next, our [github organization](https://github.com/RE-SS3D) and it's 3 repositories. '[SS3D](https://github.com/RE-SS3D/SS3D)' is our main repo which is the repo for the game itself, and some documents. '[CentCom](https://github.com/RE-SS3D/CentCom)' is our central communications server, which manages user registration, authentication, and character storage, similar to what Byond is to SS13. Finally, '[Website](https://github.com/RE-SS3D/Website)' is what it sounds like, it's the repo for our (this) website.
 
@@ -64,4 +64,3 @@ Art contributions currently are submitted via the art channels on our [discord](
 **This project and it's code** fall under the [**MIT license**](https://github.com/RE-SS3D/SS3D/blob/master/LICENSE-CODE.md).
 
 **All asset contributions** fall under the [**CC BY-NC-SA 4.0 license**](https://github.com/RE-SS3D/SS3D/blob/master/LICENSE-ASSETS.md).
-
