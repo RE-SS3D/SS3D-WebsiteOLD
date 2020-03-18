@@ -1,0 +1,131 @@
+body {
+    font-family: Arial;
+    margin: 0;
+}
+
+/* Add rounded edges to objects */
+* {
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+  
+img {
+    vertical-align: middle;
+}
+  
+/* Position the image container (needed to position the left and right arrows) */
+/* Max-width equals largest responsive image size */
+.slideshow {
+    position: relative;
+    max-width: 580px;
+}
+  
+/* Hide the images by default */
+.mySlides, .myRows {
+    display: none;
+}  
+
+/* Hide the images by default */
+.mySlides {
+    padding: 1px;
+    z-index: 1;
+}
+  
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+    cursor: pointer;
+}
+ 
+/* Next & previous buttons */
+.prevSlide, .nextSlide, .prevRow, .nextRow {
+    cursor: pointer;
+    position: absolute;
+    top: 60%;
+    width: auto;
+    padding: 14px;
+    margin-left: -30px;
+    margin-right: -29px;
+    margin-top: -45px;
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+    border-radius: 15px;
+    user-select: none;
+    -webkit-user-select: none;
+    z-index: 2;
+}
+  
+/* Position row buttons lower */
+.prevRow, .nextRow {
+    top: 111%;
+}
+  
+/* Position the next buttons to the right */
+.nextSlide, .nextRow {
+    right: 0;
+}
+  
+/* Number text (1/3 etc) */
+.slide-number {
+    color: #f2f2f2;
+    padding: 2px 2px;
+    font-size: 12px;
+    position: absolute;
+    top: 0;
+    z-index: 2;
+}
+  
+/* Image title */
+.slide-title {
+    cursor: pointer;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    font-size: 24px;
+    padding: 1px 16px;
+    color: white;
+    font-weight: bold;
+}
+
+/* Image description */
+.slide-description {
+    display: none;
+    position: relative;
+    text-align: center;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.slide-description a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+  }
+
+/* Show the dropdown menu */
+.show {display: block;}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+  
+/* Six columns side by side */
+.column {
+    float: left;
+    width: 16.66%;
+    padding: 2px 1px;
+}
+  
+/* Add a transparency effect for thumnbail images */
+.thumbs {
+    opacity: 0.6;
+    background-color: #222;
+}
+    
+/* Removes transparency effect for active and hovered images */
+.active, .thumbs:hover {
+    opacity: 1;
+}
