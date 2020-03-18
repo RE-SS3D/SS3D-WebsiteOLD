@@ -119,7 +119,8 @@
             }
         </script>
         <script>
-            // changes slide show slides and captions
+
+            // changes slide show slides and title
             var slideIndex = 1;
             showSlides(slideIndex);
             
@@ -185,7 +186,7 @@
                 dots[rowIndex-1].className += " active";
             }
 
-            /* When the user clicks on the button, toggle between hiding and showing the dropdown content */
+            // toggles the image description dropdown when the user clicks on the image title
             function dropDescription() {
                 var dots = document.getElementsByClassName("mySlides");
                 var descriptionText = document.getElementById("description");
@@ -193,7 +194,7 @@
                 descriptionText.innerHTML = dots[slideIndex-1].getElementById("description");
             }
 
-            // Close the dropdown if the user clicks outside of it
+            // closes the dropdown when clicking outside of the dropdown
             window.onclick = function(event) {
                 if (!event.target.matches('.slide-title')) {
                     var dropdowns = document.getElementsByClassName("slide-description");

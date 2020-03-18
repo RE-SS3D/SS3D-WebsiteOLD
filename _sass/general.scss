@@ -66,6 +66,14 @@ body {
     }
 }
 
+* {
+    border-radius: 5px;
+}
+
+img {
+    vertical-align: middle;
+}
+
 // Links are coloured appropriately, so they don't look terrible
 a, .link {
     color: $color-link; // CSS3 variable fallback
