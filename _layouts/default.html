@@ -185,28 +185,6 @@
                 rows[rowIndex-1].style.display = "block";
                 dots[rowIndex-1].className += " active";
             }
-
-            // toggles the image description dropdown when the user clicks on the image title
-            function dropDescription() {
-                var dots = document.getElementsByClassName("mySlides");
-                var descriptionText = document.getElementById("description");
-                descriptionText.classList.toggle("show");
-                descriptionText.innerHTML = dots[slideIndex-1].getElementById("description");
-            }
-
-            // closes the dropdown when clicking outside of the dropdown
-            window.onclick = function(event) {
-                if (!event.target.matches('.slide-title')) {
-                    var dropdowns = document.getElementsByClassName("slide-description");
-                    var i;
-                    for (i = 0; i < dropdowns.length; i++) {
-                        var openDropdown = dropdowns[i];
-                        if (openDropdown.classList.contains('show')) {
-                            openDropdown.classList.remove('show');
-                        }
-                    }
-                }
-            }
         </script>
     </body>
 </html>
