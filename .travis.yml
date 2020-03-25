@@ -3,6 +3,8 @@ cache: bundler
 branches:
   only:
   - release
+  - develop
+  - devblog
 script:
   - JEKYLL_ENV=production bundle exec jekyll build --destination site
 deploy:
