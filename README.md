@@ -1,11 +1,9 @@
 # RE:SS3D Website
 
-**This is the website for the RE:SS3D project, located at <https://ss3d.space>.**
+**Located at <https://ss3d.space>.**
 
 Release: [![Build Status](https://travis-ci.org/RE-SS3D/Website.svg?branch=release)](https://travis-ci.org/RE-SS3D/Website)
-
 Develop: [![Build Status](https://travis-ci.org/RE-SS3D/Website.svg?branch=develop)](https://travis-ci.org/RE-SS3D/Website)
-
 Devblog: [![Build Status](https://travis-ci.org/RE-SS3D/Website.svg?branch=devblog)](https://travis-ci.org/RE-SS3D/Website)
 
 ## Requirements

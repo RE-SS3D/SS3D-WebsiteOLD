@@ -21,13 +21,13 @@ If you're a programmer, 2D artist, 3D modeler, musician, programmer, animator, s
 
 **To start on any of these, read the appropriate sections below which contains links to guides to help you and boards to select a task from. Once you have a task in mind, contact a council member on our [discord](https://discord.gg/3ny9tdH).**
 
-The game itself is being developed in the Unity game engine. You can find what version of Unity we use, instructions on setting up our project, and a link to download our project [here](https://github.com/RE-SS3D/SS3D).
+The game itself is being developed in the Unity game engine. You can find what version of Unity we use and instructions on setting up our project on our [github contributing guide](https://github.com/RE-SS3D/SS3D/blob/master/CONTRIBUTING.md).
 
 For any other questions, concerns, or unsolicited advice, just ask around on the discord and someone will likely help you out.
 
 ## Coding tasks:
 
-Start by familiarizing yourself with [our code (C#) style guide](https://github.com/RE-SS3D/SS3D/blob/master/StyleGuides/C_SHARP.md), and [github contributing guide](https://github.com/RE-SS3D/SS3D/blob/master/CONTRIBUTING.md).
+Start by familiarizing yourself with our [code (C#) style guide](https://github.com/RE-SS3D/SS3D/blob/master/StyleGuides/C_SHARP.md), and [github contributing guide](https://github.com/RE-SS3D/SS3D/blob/master/CONTRIBUTING.md).
 
 Next, our [github organization](https://github.com/RE-SS3D) and it's 3 repositories. '[SS3D](https://github.com/RE-SS3D/SS3D)' is our main repo which is the repo for the game itself, and some documents. '[CentCom](https://github.com/RE-SS3D/CentCom)' is our central communications server, which manages user registration, authentication, and character storage, similar to what Byond is to SS13. Finally, '[Website](https://github.com/RE-SS3D/Website)' is what it sounds like, it's the repo for our (this) website.
 
