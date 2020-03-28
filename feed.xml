@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://ss3d.space/feed.xml" rel="self" type="application/atom+xml" /><link href="https://ss3d.space/" rel="alternate" type="text/html" /><updated>2020-03-05T18:48:34+00:00</updated><id>https://ss3d.space/feed.xml</id><title type="html">RE:SS3D</title><subtitle>This is a 3D recreation of Space Station 13, on the Unity engine, which will come with its own set of gameplay/graphical improvements. </subtitle><entry><title type="html">20.02: February 2020 Devblog</title><link href="https://ss3d.space/2020/03/02/20.02.html" rel="alternate" type="text/html" title="20.02: February 2020 Devblog" /><published>2020-03-02T23:30:00+00:00</published><updated>2020-03-02T23:30:00+00:00</updated><id>https://ss3d.space/2020/03/02/20.02</id><content type="html" xml:base="https://ss3d.space/2020/03/02/20.02.html">&lt;p&gt;“Slow, steady, and humble, we shall not stumble.”&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://ss3d.space/feed.xml" rel="self" type="application/atom+xml" /><link href="https://ss3d.space/" rel="alternate" type="text/html" /><updated>2020-03-28T01:12:44+00:00</updated><id>https://ss3d.space/feed.xml</id><title type="html">RE:SS3D</title><subtitle>This is a 3D recreation of Space Station 13, on the Unity engine, which will come with its own set of gameplay/graphical improvements. </subtitle><entry><title type="html">20.02: February 2020 Devblog</title><link href="https://ss3d.space/2020/03/02/20.02.html" rel="alternate" type="text/html" title="20.02: February 2020 Devblog" /><published>2020-03-02T23:30:00+00:00</published><updated>2020-03-02T23:30:00+00:00</updated><id>https://ss3d.space/2020/03/02/20.02</id><content type="html" xml:base="https://ss3d.space/2020/03/02/20.02.html">&lt;p&gt;“Slow, steady, and humble, we shall not stumble.”&lt;/p&gt;
 
 &lt;h1 id=&quot;february-recap&quot;&gt;February Recap&lt;/h1&gt;
 
@@ -806,7 +806,7 @@ Close your eyes but be guided by the hand.&lt;/p&gt;
 
 &lt;h2 id=&quot;eye-candy&quot;&gt;EYE CANDY&lt;/h2&gt;
 
-&lt;p&gt;From &lt;strong&gt;Goao&lt;/strong&gt;, a Spooktober poster, a lovely render, new beakers, &lt;a href=&quot;/assets/img/posts/19.10.01/GoaoWhereTheDoot.png&quot; target=&quot;_blank&quot;&gt;and&lt;/a&gt; some machines you might or might not recognize from medical.&lt;/p&gt;
+&lt;p&gt;From &lt;strong&gt;Goao&lt;/strong&gt;, a Spooktober poster, a lovely render, new beakers, and some machines you might or might not recognize from medical.&lt;/p&gt;
 
 &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/art/Goao/GoaoSpooktoberPoster.png&quot; class=&quot;image-link&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/GoaoSpooktoberPoster-580x1044.png 580w,    /assets/resized/GoaoSpooktoberPoster-290x522.png 290w,    /assets/resized/GoaoSpooktoberPoster-170x306.png 170w,    /assets/resized/GoaoSpooktoberPoster-145x261.png 145w, /assets/img/art/Goao/GoaoSpooktoberPoster.png 767w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
 
@@ -1096,7 +1096,7 @@ Come visit us on &lt;a href=&quot;https://discord.gg/3ny9tdH&quot; target=&quot;
 
 &lt;p&gt;New piping designs from &lt;strong&gt;Eiko&lt;/strong&gt;! Beneath tile, there is room for disposals and two layers of pipes, and above tile, room for three layers of pipes for atmos shenanigans. Junctions are used to switch pipes between layers.&lt;/p&gt;
 
-&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/19.08.01/EikoPipes.png&quot; class=&quot;image-link&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/EikoPipes-580x349.png 580w,    /assets/resized/EikoPipes-290x175.png 290w,    /assets/resized/EikoPipes-170x102.png 170w,    /assets/resized/EikoPipes-145x87.png 145w, /assets/img/posts/19.08.01/EikoPipes.png 1400w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/19.08.01/EikoPipes.png&quot; class=&quot;image-link&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/EikoPipes-580x326.png 580w,    /assets/resized/EikoPipes-290x163.png 290w,    /assets/resized/EikoPipes-170x96.png 170w,    /assets/resized/EikoPipes-145x82.png 145w, /assets/img/posts/19.08.01/EikoPipes.png 1280w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
 
 &lt;h2 id=&quot;new-walls&quot;&gt;New Walls&lt;/h2&gt;
 
@@ -1116,8 +1116,8 @@ Come visit us on &lt;a href=&quot;https://discord.gg/3ny9tdH&quot; target=&quot;
 
 &lt;h2 id=&quot;site-improvements&quot;&gt;Site Improvements&lt;/h2&gt;
 
-&lt;p&gt;We now have a lovely &lt;a href=&quot;/contribute/&quot;&gt;Contribute&lt;/a&gt; page, specifically designed to help model centralize resources for model contributors! The resources there are quite neat to look at, even if you don’t have any specific modelling knowledge or background. We also updated the &lt;a href=&quot;/about/&quot;&gt;About&lt;/a&gt; page (finally)! We also updated the &lt;a href=&quot;/faq/&quot;&gt;FAQ&lt;/a&gt; page (finally), too! Images load faster as thumbnails and can be clicked on for full-resolution!
-Site-specific writing courtesy of me (&lt;strong&gt;Sunberry&lt;/strong&gt;), &lt;a href=&quot;/contribute/&quot;&gt;Contribute&lt;/a&gt; documents mostly courtesy of &lt;strong&gt;Eiko&lt;/strong&gt;, and the site existing and improving to begin with as a whole is a continued effort courtesy of &lt;strong&gt;Stubenhocker&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;We now have a lovely &lt;a href=&quot;/contribute/&quot;&gt;Contribute&lt;/a&gt; page, specifically designed to help model centralize resources for model contributors! The resources there are quite neat to look at, even if you don’t have any specific modeling knowledge or background. We also updated the &lt;a href=&quot;/about/&quot;&gt;About&lt;/a&gt; page (finally)! We also updated the &lt;a href=&quot;/faq/&quot;&gt;FAQ&lt;/a&gt; page (finally), too! Images load faster as thumbnails and can be clicked on for full-resolution!
+Site-specific writing courtesy of me (&lt;strong&gt;Sunberry&lt;/strong&gt;), documents mostly courtesy of &lt;strong&gt;Eiko&lt;/strong&gt;, and the site existing and improving to begin with as a whole is a continued effort courtesy of &lt;strong&gt;Stubenhocker&lt;/strong&gt;.&lt;/p&gt;
 
 &lt;h2 id=&quot;eye-candy&quot;&gt;EYE CANDY&lt;/h2&gt;
 
@@ -1197,7 +1197,7 @@ Come visit us on &lt;a href=&quot;https://discord.gg/3ny9tdH&quot; target=&quot;
 
 &lt;h2 id=&quot;modelers-kit&quot;&gt;Modeler’s Kit&lt;/h2&gt;
 
-&lt;p&gt;Courtesy of the diligent &lt;strong&gt;Eiko&lt;/strong&gt;, we now have a modeller’s kit, making contributing models literally easier than ever! Contains a Blender 2.8 template file with materials and settings properly set up so that people stop making models with backface culling disabled and sending stuff in with their normals facing the wrong way, &lt;a href=&quot;/assets/pdf/BeepStyleGuide.pdf&quot;&gt;*beep’s original SS3D Style Guide&lt;/a&gt;, a brand new &lt;a href=&quot;/assets/pdf/SS3DModelFormattingGuide.pdf&quot;&gt;Model Formatting Guide&lt;/a&gt;, a simple character turnaround for planning clothes and equipables, and the original Items-18-2-22b to serve as a collection of example models.&lt;/p&gt;
+&lt;p&gt;Courtesy of the diligent &lt;strong&gt;Eiko&lt;/strong&gt;, we now have a modeller’s kit, making contributing models literally easier than ever! Contains a Blender 2.8 template file with materials and settings properly set up, so that people stop making models with backface culling disabled or sending stuff in with their normals facing the wrong way, *beep’s original SS3D Style Guide, a brand new model formatting guide, a simple character turnaround for planning clothes and equipables, and the original Items-18-2-22b to serve as a collection of example models.&lt;/p&gt;
 
 &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/19.07.01/ModelersKit.png&quot; class=&quot;image-link&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/ModelersKit-580x287.png 580w,    /assets/resized/ModelersKit-290x143.png 290w,    /assets/resized/ModelersKit-170x84.png 170w,    /assets/resized/ModelersKit-145x72.png 145w, /assets/img/posts/19.07.01/ModelersKit.png 1920w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
 
@@ -1385,6 +1385,8 @@ Here we have two examples of shapekey use: player eye states, and hair/headpiece
   &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/19.07.01/GoaoIceCreamStand.png&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/GoaoIceCreamStand-580x435.png 580w,    /assets/resized/GoaoIceCreamStand-290x218.png 290w,    /assets/resized/GoaoIceCreamStand-170x128.png 170w,    /assets/resized/GoaoIceCreamStand-145x109.png 145w, /assets/img/posts/19.07.01/GoaoIceCreamStand.png 800w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
 &lt;/div&gt;
 
+&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/19.07.01/GoaoCamera.png&quot; class=&quot;image-link&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/GoaoCamera-580x435.png 580w,    /assets/resized/GoaoCamera-290x218.png 290w,    /assets/resized/GoaoCamera-170x128.png 170w,    /assets/resized/GoaoCamera-145x109.png 145w, /assets/img/posts/19.07.01/GoaoCamera.png 800w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+
 &lt;p&gt;Finally, we have a grinder and conveyer belts from &lt;strong&gt;Milly&lt;/strong&gt;, and reinforced tiles from &lt;strong&gt;Chanoc&lt;/strong&gt;.&lt;/p&gt;
 
 &lt;div class=&quot;horizontal-2&quot;&gt;
@@ -1396,7 +1398,7 @@ Here we have two examples of shapekey use: player eye states, and hair/headpiece
 
 &lt;h3 id=&quot;notes&quot;&gt;NOTES&lt;/h3&gt;
 
-&lt;p&gt;&lt;a href=&quot;/assets/txt/BoneHurtingAssassin.txt&quot; target=&quot;_blank&quot;&gt;Somebody&lt;/a&gt; replaced all the fluids in my residence with bone hurting juice, and it took me out of commission for a while. Special thanks to &lt;strong&gt;Eiko&lt;/strong&gt; this month, who did half my job for me while I tried not to writhe in pain.&lt;/p&gt;
+&lt;p&gt;Special thanks to &lt;strong&gt;Eiko&lt;/strong&gt; this month, who did half my job for me while I tried not to writhe in pain.&lt;/p&gt;
 
 &lt;p&gt;This is our monthly devblog, standing as proof that we’re still here, even if I’m not.
 Come visit us on &lt;a href=&quot;https://discord.gg/3ny9tdH&quot; target=&quot;_blank&quot;&gt;Discord&lt;/a&gt; and get a special toolbox welcoming gift.&lt;/p&gt;</content><author><name></name></author><summary type="html">Models, models, models models…</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://ss3d.space/assets/img/art/Eiko/EikoPromoGibber.png" /></entry><entry><title type="html">19.06: June 2019 Devblog</title><link href="https://ss3d.space/2019/07/04/19.06.html" rel="alternate" type="text/html" title="19.06: June 2019 Devblog" /><published>2019-07-04T14:30:00+00:00</published><updated>2019-07-04T14:30:00+00:00</updated><id>https://ss3d.space/2019/07/04/19.06</id><content type="html" xml:base="https://ss3d.space/2019/07/04/19.06.html">&lt;p&gt;A new face appears. An old face vanishes. Gears start to turn again.&lt;/p&gt;
@@ -1488,13 +1490,10 @@ Come visit us on &lt;a href=&quot;https://discord.gg/3ny9tdH&quot; target=&quot;
 &lt;p&gt;Some splendid machinery and furniture brought to us by &lt;strong&gt;deBARBA&lt;/strong&gt;, some within some Sketchfab embeds. Click on the embeds, because they look way better than my lousy Blender screenshots, and the two machines have amazing animations.&lt;/p&gt;
 
 &lt;div class=&quot;sketchfab-embed-wrapper&quot;&gt;&lt;iframe width=&quot;600&quot; height=&quot;400&quot; src=&quot;https://sketchfab.com/models/a7f210103cf14821ac1a22624357cd18/embed?camera=0&quot; frameborder=&quot;0&quot; allow=&quot;autoplay; fullscreen; vr&quot; mozallowfullscreen=&quot;true&quot; webkitallowfullscreen=&quot;true&quot; style=&quot;width:100%&quot;&gt;&lt;/iframe&gt;
-&lt;p style=&quot;font-size: 13px; font-weight: normal; margin: 5px; color: #4A4A4A;&quot;&gt;
-&lt;/p&gt;
+  &lt;p style=&quot;font-size: 13px; font-weight: normal; margin: 5px; color: #4A4A4A;&quot;&gt;&lt;/p&gt;
 &lt;/div&gt;
 
 &lt;div class=&quot;horizontal-2-direct-children-desktop&quot;&gt;
-
-  &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/19.06.01/deBARBAGibber.png&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/deBARBAGibber-580x435.png 580w,    /assets/resized/deBARBAGibber-290x218.png 290w,    /assets/resized/deBARBAGibber-170x128.png 170w,    /assets/resized/deBARBAGibber-145x109.png 145w, /assets/img/posts/19.06.01/deBARBAGibber.png 800w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
   &lt;div class=&quot;sketchfab-embed-wrapper&quot;&gt;
     &lt;p&gt;
       &lt;iframe width=&quot;320&quot; height=&quot;200&quot; src=&quot;https://sketchfab.com/models/35c1a18000e648019bf66803e9c49b98/embed&quot; frameborder=&quot;0&quot; allow=&quot;autoplay; fullscreen; vr&quot; mozallowfullscreen=&quot;true&quot; webkitallowfullscreen=&quot;true&quot; style=&quot;width:100%&quot;&gt;&lt;/iframe&gt;
@@ -1502,8 +1501,6 @@ Come visit us on &lt;a href=&quot;https://discord.gg/3ny9tdH&quot; target=&quot;
   &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class=&quot;horizontal-2-direct-children-desktop&quot;&gt;
-
-  &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/19.06.01/deBARBAComfyChair.png&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/deBARBAComfyChair-580x435.png 580w,    /assets/resized/deBARBAComfyChair-290x218.png 290w,    /assets/resized/deBARBAComfyChair-170x128.png 170w,    /assets/resized/deBARBAComfyChair-145x109.png 145w, /assets/img/posts/19.06.01/deBARBAComfyChair.png 800w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
   &lt;div class=&quot;sketchfab-embed-wrapper&quot;&gt;
     &lt;p&gt;
       &lt;iframe width=&quot;320&quot; height=&quot;200&quot; src=&quot;https://sketchfab.com/models/374d59cc92b440d089a9152cf07c6f50/embed&quot; frameborder=&quot;0&quot; allow=&quot;autoplay; fullscreen; vr&quot; mozallowfullscreen=&quot;true&quot; webkitallowfullscreen=&quot;true&quot; style=&quot;width:100%&quot;&gt;&lt;/iframe&gt;
@@ -1531,7 +1528,7 @@ Come visit us on &lt;a href=&quot;https://discord.gg/3ny9tdH&quot; target=&quot;
 
 &lt;h3 id=&quot;notes&quot;&gt;NOTES&lt;/h3&gt;
 
-&lt;p&gt;This one came out a few days late, because I am the weak link of the devblogs, and &lt;a href=&quot;https://cdn.discordapp.com/attachments/483819148825067521/590007716655661080/2019-06-16_22-39-31.mp4&quot; target=&quot;blank&quot;&gt;some&lt;/a&gt; things may’ve not gotten the proper mention they deserve, including new hairstyles and new expressions for the playermodel.&lt;/p&gt;
+&lt;p&gt;This one came out a few days late, because I am the weak link of the devblogs, and some things may’ve not gotten the proper mention they deserve, including new hairstyles and new expressions for the playermodel.&lt;/p&gt;
 
 &lt;p&gt;This is our monthly devblog, standing as proof that we’re still here breathing and working, even when only one of us is pulling all the weight.
 Come visit us on &lt;a href=&quot;https://discord.gg/3ny9tdH&quot; target=&quot;_blank&quot;&gt;Discord&lt;/a&gt;, if you’re into that.
@@ -1557,9 +1554,9 @@ Fun things happen on the Discord, sometimes.&lt;/p&gt;</content><author><name></
 
 &lt;h2 id=&quot;model-pipeline&quot;&gt;MODEL PIPELINE&lt;/h2&gt;
 
-&lt;p&gt;Continuing off last month’s mention of making a system for intaking model community submissions, our “&lt;a href=&quot;https://docs.google.com/document/d/1oz9qOsgDMaTaa3VagsiW9OdbJJvw3AvG6XR97ZZfLU8/edit?usp=sharing&quot; target=&quot;_blank&quot;&gt;Model Pipeline&lt;/a&gt;” is now prepared. This document is intended to outline the contribution process altogether, and also act as sort of an information hub for model documents, with some links scattered thoroughly throughout it. I didn’t get around to finishing up the technical guide, planned to accompany this, as my laptop shattered, but that mostly only inhibits instruction regarding more complicated models.&lt;/p&gt;
+&lt;p&gt;Continuing off last month’s mention of making a system for intaking model community submissions, our model pipeline has improved. This document is intended to outline the contribution process altogether, and also act as sort of an information hub for model documents, with some links scattered thoroughly throughout it. I didn’t get around to finishing up the technical guide, planned to accompany this, as my laptop shattered, but that mostly only inhibits instruction regarding more complicated models.&lt;/p&gt;
 
-&lt;p&gt;The objective of the model pipeline was to put a method of order and review to the way that models are adopted into the project. We’ve prior ended up with a jumbled mess of modelss that were not-quite-ready for deployment into the game standing alongside models that &lt;em&gt;were&lt;/em&gt;, and it was something of a confusing, directionless mess. Models are now reviewed two times for two categories of inspection, not including the general “peer-review” that models contributions tend to be subjected to in the RE:SS3D Discord, and their storage reflects these states. Further elaboration can be found in the &lt;a href=&quot;https://docs.google.com/document/d/1oz9qOsgDMaTaa3VagsiW9OdbJJvw3AvG6XR97ZZfLU8/edit?usp=sharing&quot; target=&quot;_blank&quot;&gt;document itself&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The objective of the model pipeline was to put a method of order and review to the way that models are adopted into the project. We’ve prior ended up with a jumbled mess of modelss that were not-quite-ready for deployment into the game standing alongside models that &lt;em&gt;were&lt;/em&gt;, and it was something of a confusing, directionless mess. Models are now reviewed two times for two categories of inspection, not including the general “peer-review” that models contributions tend to be subjected to in the RE:SS3D Discord, and their storage reflects these states.&lt;/p&gt;
 
 &lt;h2 id=&quot;eye-candy&quot;&gt;EYE CANDY&lt;/h2&gt;
 
