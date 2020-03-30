@@ -118,5 +118,73 @@
                 toggleSwitch.checked = true;
             }
         </script>
+        <script>
+
+            // changes slide show slides and title
+            var slideIndex = 1;
+            showSlides(slideIndex);
+            
+            function plusSlides(n) {
+                showSlides(slideIndex += n);
+            }
+            
+            function currentSlide(n) {
+                showSlides(slideIndex = n);
+            }
+            
+            function showSlides(n) {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                var dots = document.getElementsByClassName("thumbs");
+                var titleText = document.getElementById("title");
+                if (n > slides.length) {
+                    slideIndex = 1;
+                    showRows(rowIndex = 1);
+                }
+                if (n < 1) {
+                    slideIndex = slides.length;
+  	                showRows(rowIndex = -1);
+                }
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                if (n >= 1 && n <= 6) {showRows(rowIndex = 1)}
+                if (n >= 7 && n <= 12) {showRows(rowIndex = 2)}
+                slides[slideIndex-1].style.display = "block";
+                dots[slideIndex-1].className += " active";
+                titleText.innerHTML = dots[slideIndex-1].alt;
+            }
+            
+            // changes slide show rows
+            var rowIndex = 1;
+            showRows(rowIndex);
+
+            function plusRows(n) {
+                showRows(rowIndex += n);
+            }
+
+            function currentRow(n) {
+            showRows(rowIndex = n);
+            }
+
+            function showRows(n) {
+                var i;
+                var rows = document.getElementsByClassName("myRows");
+                var dots = document.getElementsByClassName("thumbs");
+                if (n > rows.length) {rowIndex = 1}
+                if (n < 1) {rowIndex = rows.length}
+                for (i = 0; i < rows.length; i++) {
+                    rows[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                rows[rowIndex-1].style.display = "block";
+                dots[rowIndex-1].className += " active";
+            }
+        </script>
     </body>
 </html>

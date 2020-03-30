@@ -1,0 +1,106 @@
+// Position the image container (needed to position the left and right arrows)
+// Max-width equals largest responsive image size
+.slideshow {
+    position: relative;
+    max-width: 580px;
+}
+  
+// Hide the images by default
+.mySlides, .myRows {
+    display: none;
+}  
+
+// Hide the images by default
+.mySlides {
+    padding: 1px;
+    z-index: 1;
+}
+  
+// Add a pointer when hovering over the thumbnail images
+.cursor {
+    cursor: pointer;
+}
+ 
+// Next & previous buttons
+.prevSlide, .nextSlide, .prevRow, .nextRow {
+    cursor: pointer;
+    position: absolute;
+    vertical-align: middle;
+    width: auto;
+    padding: 14px;
+    margin-left: -30px;
+    margin-right: -28px;
+    margin-top: 35%;
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+    border-radius: 15px;
+    user-select: none;
+    -webkit-user-select: none;
+}
+  
+// Position row buttons lower
+.prevRow, .nextRow {
+    top: 99%;
+    margin-top: 2%;
+}
+  
+// Position the next buttons to the right
+.nextSlide, .nextRow {
+    right: 0;
+}
+  
+// Number text (1/3 etc)
+.slide-number {
+    color: #f2f2f2;
+    padding: 45px 7px;
+    font-size: 12px;
+    position: absolute;
+    top: 0;
+    z-index: 2;
+}
+  
+// Image title
+.slide-title {
+    text-align: center;
+    background-color: rgba(5, 5, 5, 0.5);
+    margin-bottom: -8px;
+    font-size: 24px;
+    padding: 8px 2px;
+    color: white;
+    font-weight: bold;
+}
+
+// Image description
+.slide-description {
+    text-align: center;
+    background-color: rgba(5, 5, 5, 0.5);
+    margin-top: 3px;
+    font-size: 18px;
+    padding: 2px;
+    color: white;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+  
+// Six columns side by side
+.column {
+    float: left;
+    width: 16.66%;
+    padding: 2px 1px;
+}
+  
+// Add a transparency effect for thumnbail images
+.thumbs {
+    opacity: 0.6;
+    background-color: #111;
+}
+    
+// Removes transparency effect for active and hovered images
+.active, .thumbs:hover {
+    opacity: 1;
+}
