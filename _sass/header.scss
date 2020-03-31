@@ -7,17 +7,10 @@ header {
         overflow: visible;
         margin-top: $pad;
     }
-    p {
-        color: $color-header;
-        font-size: 13px;
-        font-size: 4.5vw;
+    h6 {
         white-space: nowrap;
         overflow: visible;
-        font-family: "Spessman", sans-serif;
-        @font-face {
-            font-family: "Spessman";
-            src: url("../assets/misc/spessmanfont.tff");
-        }
+        font-size: 4.5vw;
     }
     div {
         width: 100%;
@@ -36,9 +29,8 @@ header {
             font-size: 46px; 
             margin-top: 0.2em;
         }
-        p {
-            font-size: 28px;
-            padding-bottom: 10px;
+        h6 {
+            font-size: 30px;
         }
         img {
             height: 112px;

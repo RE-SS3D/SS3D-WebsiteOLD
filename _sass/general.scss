@@ -18,8 +18,19 @@ h5 {
     margin: 0em 0em .5em 0em;
     color: $color-text-h5;
     color: var(--color-text-h5);
+    max-width: 560px;
     @include respond-to(desktop) {
         margin: .25em 0em .5em 0em;
+    }
+}
+
+h6 {
+    color: $color-header;
+    font-size: 36px;
+    font-family: "Spessman", sans-serif;
+    @font-face {
+        font-family: "Spessman";
+        src: url("../assets/misc/spessmanfont.tff");
     }
 }
 

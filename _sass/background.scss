@@ -38,7 +38,7 @@ body {
     &::before {
         content: " ";
         display: block;
-        background: url("/assets/img/stars.webp");
+        background: url("/assets/img/stars.png");
         opacity: 0.1;
         top: 0;
         left: 0;
@@ -50,9 +50,6 @@ body {
         min-height: 100vh;
         height: 100%;
         float: left;   
-    }
-    .no-webp &::before {
-        background: url("/assets/img/stars.jpg");
     }
     @media (prefers-color-scheme: light) {
         &::before {
@@ -84,10 +81,7 @@ body {
         background: linear-gradient(180deg, #71A2E033 0%, #05060833 100%);
     }
     body::before {
-        background: url("/assets/img/stars.webp");
+        background: url("/assets/img/stars.png");
         display: block;
-    }
-    body .no-webp body::before {
-        background: url("/assets/img/stars.jpg");
     }
 }
