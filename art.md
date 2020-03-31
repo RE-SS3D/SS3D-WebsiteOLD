@@ -12,14 +12,19 @@ permalink: /art/
 # Bug
 {: class="centred" }
 
-<video width="560px" autoplay="autoplay" muted loop="loop" poster="{{ site.baseurl }}/assets/img/art/Bug/BugSpaceJunk.png">
-  <source src="{{ site.baseurl }}/assets/img/art/Bug/BugSpaceJunk.webm" type="video/webm">
-  <source src="{{ site.baseurl }}/assets/img/art/Bug/BugSpaceJunk.mp4" type="video/mp4">
+<video width="560px" autoplay="autoplay" muted loop="loop" poster="{{ site.baseurl }}/assets/img/art/Bug/BugPandemic.png">
+  <source src="{{ site.baseurl }}/assets/img/art/Bug/BugPandemic.webm" type="video/webm">
+  <source src="{{ site.baseurl }}/assets/img/art/Bug/BugPandemic.mp4" type="video/mp4">
 </video>
 
 <video width="560px" autoplay="autoplay" muted loop="loop" poster="{{ site.baseurl }}/assets/img/art/Bug/BugSyndie.png">
   <source src="{{ site.baseurl }}/assets/img/art/Bug/BugSyndie.webm" type="video/webm">
   <source src="{{ site.baseurl }}/assets/img/art/Bug/BugSyndie.mp4" type="video/mp4">
+</video>
+
+<video width="560px" autoplay="autoplay" muted loop="loop" poster="{{ site.baseurl }}/assets/img/art/Bug/BugSpaceJunk.png">
+  <source src="{{ site.baseurl }}/assets/img/art/Bug/BugSpaceJunk.webm" type="video/webm">
+  <source src="{{ site.baseurl }}/assets/img/art/Bug/BugSpaceJunk.mp4" type="video/mp4">
 </video>
 
 <video width="560px" autoplay="autoplay" muted loop="loop" poster="{{ site.baseurl }}/assets/img/art/Bug/BugHydroponics.png">
@@ -33,17 +38,18 @@ permalink: /art/
 </video>
 
 <div class='horizontal-2' markdown='1'>
-{% responsive_image path: assets/img/art/Bug/BugSpaceJunk.png %}
+{% responsive_image path: assets/img/art/Bug/BugPandemic.png %}
 {% responsive_image path: assets/img/art/Bug/BugSyndie.png %}
 </div>
 
 <div class='horizontal-2' markdown='1'>
-{% responsive_image path: assets/img/art/Bug/BugWallpaper2.png %}
-{% responsive_image path: assets/img/art/Bug/BugWallpaper3.png %}
+{% responsive_image path: assets/img/art/Bug/BugSpaceJunk.png %}
+{% responsive_image path: assets/img/art/Bug/BugHydroponics.png %}
 </div>
 
-<div class='horizontal-2' markdown='1'>
-{% responsive_image path: assets/img/art/Bug/BugHydroponics.png %}
+<div class='horizontal-3' markdown='1'>
+{% responsive_image path: assets/img/art/Bug/BugWallpaper3.png %}
+{% responsive_image path: assets/img/art/Bug/BugWallpaper2.png %}
 {% responsive_image path: assets/img/art/Bug/BugWallpaper1.png %}
 </div>
 
