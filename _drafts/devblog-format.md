@@ -52,7 +52,7 @@ Cute phrase/quote goes here.
 {% responsive_image path: assets/img/posts/[insert folder]/Image3.png %}
 </div>
 
-// Displaying a slideshow of images (number of slides (mySlides) must be divisible by 6 since thats how many slides per page (myRows)):
+// Displaying a slideshow of images (no more than 6 images (mySlides) per page (myRows)):
 <div class="slideshow">
   {% include slideshow.html %}
   <div class="mySlides">
