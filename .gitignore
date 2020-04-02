@@ -5,5 +5,3 @@ assets/resized/
 assets/fbx/
 vendor/
 node_modules
-_layouts/default.html
-_sass/slideshow.scss
