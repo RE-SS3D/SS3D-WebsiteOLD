@@ -6,12 +6,12 @@
 }
   
 // Hide the images by default
-.mySlides, .myRows {
+.mySlides1, .mySlides2, .mySlides3, .mySlides4, .mySlides5, .myRows1 .myRows2 .myRows3 .myRows4 .myRows5 {
     display: none;
 }  
 
 // Hide the images by default
-.mySlides {
+.mySlides1, .mySlides2, .mySlides3, .mySlides4, .mySlides5 {
     padding: 1px;
     z-index: 1;
 }

@@ -41,15 +41,15 @@ Cute phrase/quote goes here.
 
 // Displaying 2 images horizontally:
 <div class='horizontal-2' markdown='1'>
-{% responsive_image path: assets/img/posts/[insert folder]/Image1.png %}
-{% responsive_image path: assets/img/posts/[insert folder]/Image2.png %}
+  {% responsive_image path: assets/img/posts/[insert folder]/Image1.png %}
+  {% responsive_image path: assets/img/posts/[insert folder]/Image2.png %}
 </div>
 
 // Displaying 3 images horizontally:
 <div class='horizontal-3' markdown='1'>
-{% responsive_image path: assets/img/posts/[insert folder]/Image1.png %}
-{% responsive_image path: assets/img/posts/[insert folder]/Image2.png %}
-{% responsive_image path: assets/img/posts/[insert folder]/Image3.png %}
+  {% responsive_image path: assets/img/posts/[insert folder]/Image1.png %}
+  {% responsive_image path: assets/img/posts/[insert folder]/Image2.png %}
+  {% responsive_image path: assets/img/posts/[insert folder]/Image3.png %}
 </div>
 
 // Displaying a slideshow of images (no more than 6 images (mySlides) per page (myRows)):
