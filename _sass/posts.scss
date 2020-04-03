@@ -5,7 +5,7 @@
 
     div {
         display: inline-block;
-        width: 33.33%;
+        width: 32.5%;
         margin: 0;
         &::after {
             content: "";
@@ -14,7 +14,6 @@
         }
         a {
             float: left;
-            //width: 33.33%;
             padding: 5px;
             &:first-child {
                 padding-left: 0;
@@ -34,7 +33,7 @@
 
     div {
         display: inline-block;
-        width: 50%;
+        width: 49.5%;
         
         &::after {
             content: "";
@@ -74,6 +73,7 @@
 div.image, .post-content video, .post-content .video {
     align-self: center;
     margin-top: 0.5em;
+    margin-bottom: 0.25em;
 }
 
 // Images and videos can't be bigger than the post-content area

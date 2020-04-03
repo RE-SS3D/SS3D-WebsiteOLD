@@ -2,16 +2,17 @@
 // Max-width equals largest responsive image size
 .slideshow {
     position: relative;
+    margin-top: 10px;
     max-width: 580px;
 }
   
 // Hide the images by default
-.mySlides1, .mySlides2, .mySlides3, .mySlides4, .mySlides5, .myRows1 .myRows2 .myRows3 .myRows4 .myRows5 {
+.mySlides, .myRows {
     display: none;
 }  
 
 // Hide the images by default
-.mySlides1, .mySlides2, .mySlides3, .mySlides4, .mySlides5 {
+.mySlides {
     padding: 1px;
     z-index: 1;
 }

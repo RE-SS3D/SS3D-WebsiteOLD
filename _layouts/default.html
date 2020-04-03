@@ -121,34 +121,29 @@
         <script>
 
             // changes slide show slides and title
-            var slideIndex = [1,1,1,1,1];
-            var slideId = ["mySlides1", "mySlides2", "mySlides3", "mySlides4", "mySlides5"]
-            showSlides(1, 0);
-            showSlides(1, 1);
-            showSlides(1, 2);
-            showSlides(1, 3);
-            showSlides(1, 4);
+            var slideIndex = 1;
+            showSlides(slideIndex);
             
-            function plusSlides(n, no) {
-                showSlides(slideIndex[no] += n, no);
+            function plusSlides(n) {
+                showSlides(slideIndex += n);
             }
             
-            function currentSlide(n, no) {
-                showSlides(slideIndex[no] = n, no);
+            function currentSlide(n) {
+                showSlides(slideIndex = n);
             }
-
-            function showSlides(n, no) {
+            
+            function showSlides(n) {
                 var i;
-                var slides = document.getElementsByClassName(slideId[no]);
+                var slides = document.getElementsByClassName("mySlides");
                 var dots = document.getElementsByClassName("thumbs");
                 var titleText = document.getElementById("title");
                 if (n > slides.length) {
-                    slideIndex[no] = 1;
-                    showRows(rowIndex[no] = 1);
+                    slideIndex = 1;
+                    showRows(rowIndex = 1);
                 }
                 if (n < 1) {
-                    slideIndex[no] = slides.length;
-  	                showRows(rowIndex[no] = -1);
+                    slideIndex = slides.length;
+  	                showRows(rowIndex = -1);
                 }
                 for (i = 0; i < slides.length; i++) {
                     slides[i].style.display = "none";
@@ -156,43 +151,38 @@
                 for (i = 0; i < dots.length; i++) {
                     dots[i].className = dots[i].className.replace(" active", "");
                 }
-                showRows(rowIndex[no] = Math.floor((n-1)/6) + 1) 
-                slides[slideIndex[no]-1].style.display = "block";
-                dots[slideIndex[no]-1].className += " active";
-                titleText.innerHTML = dots[slideIndex[no]-1].alt;
+                showRows(rowIndex = Math.floor((n-1)/6) + 1) 
+                slides[slideIndex-1].style.display = "block";
+                dots[slideIndex-1].className += " active";
+                titleText.innerHTML = dots[slideIndex-1].alt;
             }
             
-            // changes slideshow rows
-            var rowIndex = [1,1,1,1,1];
-            var rowId = ["myRows1", "myRows2", "myRows3", "myRows4", "myRows5"]
-            showRows(1, 0);
-            showRows(1, 1);
-            showRows(1, 2);
-            showRows(1, 3);
-            showRows(1, 4);
+            // changes slide show rows
+            var rowIndex = 1;
+            showRows(rowIndex);
 
-            function plusRows(n, no) {
-                showRows(rowIndex[no] += n, no);
+            function plusRows(n) {
+                showRows(rowIndex += n);
             }
 
-            function currentRow(n, no) {
-            showRows(rowIndex[no] = n, no);
+            function currentRow(n) {
+            showRows(rowIndex = n);
             }
 
-            function showRows(n, no) {
+            function showRows(n) {
                 var i;
-                var rows = document.getElementsByClassName(rowId[no]);
+                var rows = document.getElementsByClassName("myRows");
                 var dots = document.getElementsByClassName("thumbs");
-                if (n > rows.length) {rowIndex[no] = 1}
-                if (n < 1) {rowIndex[no] = rows.length}
+                if (n > rows.length) {rowIndex = 1}
+                if (n < 1) {rowIndex = rows.length}
                 for (i = 0; i < rows.length; i++) {
                     rows[i].style.display = "none";
                 }
                 for (i = 0; i < dots.length; i++) {
                     dots[i].className = dots[i].className.replace(" active", "");
                 }
-                rows[rowIndex[no]-1].style.display = "block";
-                dots[rowIndex[no]-1].className += " active";
+                rows[rowIndex-1].style.display = "block";
+                dots[rowIndex-1].className += " active";
             }
         </script>
     </body>
