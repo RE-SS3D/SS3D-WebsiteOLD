@@ -42,8 +42,8 @@
   
 // Position row buttons lower
 .prevRow, .nextRow {
-    top: 99%;
-    margin-top: 2%;
+    top: 75%;
+    margin-top: 14%;
 }
   
 // Position the next buttons to the right
@@ -51,7 +51,7 @@
     right: 0;
 }
   
-// Number text (1/3 etc)
+// Slide text (1/3 etc)
 .slide-number {
     color: #f2f2f2;
     padding: 45px 7px;
@@ -61,7 +61,7 @@
     z-index: 2;
 }
   
-// Image title
+// Slide title
 .slide-title {
     text-align: center;
     background-color: rgba(5, 5, 5, 0.5);
@@ -72,7 +72,7 @@
     font-weight: bold;
 }
 
-// Image description
+// Slide description
 .slide-description {
     text-align: center;
     background-color: rgba(5, 5, 5, 0.5);

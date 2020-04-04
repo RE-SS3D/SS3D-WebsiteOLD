@@ -60,9 +60,6 @@ Cute phrase/quote goes here.
     {% responsive_image path: assets/img/posts/[insert folder]/Image1.png template: _includes/srcset.html %}
     <div id="description" class="slide-description">[insert description or delete this div]</div>
   </div>
-</div>
-
-<div class="slideshow">
   <div class="myRows">
     <div class="row">
       <div class="column">
