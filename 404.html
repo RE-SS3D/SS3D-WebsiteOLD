@@ -8,23 +8,15 @@ layout: default
     max-width: 600px;
     text-align: center;
   }
-  h1 {
-    margin: 30px 0;
-    font-size: 4em;
-    line-height: 1;
-    letter-spacing: -1px;
-  }
 </style>
 
 <div class="container">
   <div>
       <picture class="logo" >
-          <source srcset="{{ site.baseurl }}/assets/img/404.webp" type="image/webp">
-          <source srcset="{{ site.baseurl }}/assets/img/404.png" type="image/png"> 
-          <img alt="" src="{{ site.baseurl }}/assets/img/404.png">
+          <img src="{{ site.baseurl }}/assets/img/404.png" alt="404">
       </picture>
   </div>
 
   <h2><i><strong>ALERT: Location unknown!</strong></i></h2>
-  <h3><p><a href="{{ site.url }}">Please return to the station immediately!</a></p></h3>
+  <h3><a href="{{ site.url }}">Please return to the station immediately!</a></h3>
 </div>

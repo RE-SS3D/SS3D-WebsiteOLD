@@ -151,8 +151,7 @@
                 for (i = 0; i < dots.length; i++) {
                     dots[i].className = dots[i].className.replace(" active", "");
                 }
-                if (n >= 1 && n <= 6) {showRows(rowIndex = 1)}
-                if (n >= 7 && n <= 12) {showRows(rowIndex = 2)}
+                showRows(rowIndex = Math.floor((n-1)/6) + 1) 
                 slides[slideIndex-1].style.display = "block";
                 dots[slideIndex-1].className += " active";
                 titleText.innerHTML = dots[slideIndex-1].alt;

@@ -1,25 +1,31 @@
 body, h1, h2, h3, h4, h5, h6 {
     font-size-adjust: 0.58; // Keep font size same regardless of font family.
     padding: 0;
-    margin: 0.5em 0 0.25em 0;
+    margin: 1.5em 0 0.25em 0;
 
     vertical-align: baseline;
     line-height: 1em;
 }
 
 h1 {
-    margin: 0.75em 0em 0.5em 0em;
-    @include respond-to(desktop) {
-        margin: 1em 0em 0.75em 0em;
-    }
+    margin: 1em 0em 0.5em 0em;
 }
 
 h5 {
     margin: 0em 0em .5em 0em;
     color: $color-text-h5;
     color: var(--color-text-h5);
-    @include respond-to(desktop) {
-        margin: .25em 0em .5em 0em;
+    max-width: 560px;
+}
+
+h6 {
+    margin: 0.5em 0 0.25em 0;
+    color: $color-header;
+    font-size: 36px;
+    font-family: "Spessman", sans-serif;
+    @font-face {
+        font-family: "Spessman";
+        src: url("../assets/misc/spessmanfont.tff");
     }
 }
 

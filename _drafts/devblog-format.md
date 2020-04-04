@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "00.00 (year.month) : [insert month] Recap"
-date:   2020-00-05 (year-month-day) 12:30:00 +0100    // The date should be the day the devblog is released and becomes part of the link to the post on the site. Also the website will not post with a future date and time.
+date:   2020-00-05 (year-month-day) 06:30:00 +0100    // The date should be the day the devblog is released and becomes part of the link to the post on the site. Also the website will not post with a future date and time.
 description: |
     "Description goes here."
 image: /assets/img/posts/[insert folder]/Wallpaper.png
@@ -41,18 +41,18 @@ Cute phrase/quote goes here.
 
 // Displaying 2 images horizontally:
 <div class='horizontal-2' markdown='1'>
-{% responsive_image path: assets/img/posts/[insert folder]/Image1.png %}
-{% responsive_image path: assets/img/posts/[insert folder]/Image2.png %}
+  {% responsive_image path: assets/img/posts/[insert folder]/Image1.png %}
+  {% responsive_image path: assets/img/posts/[insert folder]/Image2.png %}
 </div>
 
 // Displaying 3 images horizontally:
 <div class='horizontal-3' markdown='1'>
-{% responsive_image path: assets/img/posts/[insert folder]/Image1.png %}
-{% responsive_image path: assets/img/posts/[insert folder]/Image2.png %}
-{% responsive_image path: assets/img/posts/[insert folder]/Image3.png %}
+  {% responsive_image path: assets/img/posts/[insert folder]/Image1.png %}
+  {% responsive_image path: assets/img/posts/[insert folder]/Image2.png %}
+  {% responsive_image path: assets/img/posts/[insert folder]/Image3.png %}
 </div>
 
-// Displaying a slideshow of images (number of slides (mySlides) must be divisible by 6 since thats how many slides per page (myRows)):
+// Displaying a slideshow of images (no more than 6 images (mySlides) per page (myRows)):
 <div class="slideshow">
   {% include slideshow.html %}
   <div class="mySlides">
@@ -60,8 +60,6 @@ Cute phrase/quote goes here.
     {% responsive_image path: assets/img/posts/[insert folder]/Image1.png template: _includes/srcset.html %}
     <div id="description" class="slide-description">[insert description or delete this div]</div>
   </div>
-</div>
-<div class="slideshow">
   <div class="myRows">
     <div class="row">
       <div class="column">
