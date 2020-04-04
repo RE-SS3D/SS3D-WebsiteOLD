@@ -14,4 +14,4 @@ Usage:
 {% endfor %}
 {% endcapture %}
 
-<div class="image"><a href="/{{ path }}" class="image-link"><img src="/{{ smallest.path }}" alt="{{ alt }}" srcset="{{ srcset | strip_newlines }} /{{ path }} {{ original.width }}w" sizes="(max-width: 624px) 100vw, 578px, 580px"></a></div>
+<div class="image"><a href="/{{ path }}" class="image-link" target="_blank"><img src="/{{ smallest.path }}" alt="{{ alt }}" srcset="{{ srcset | strip_newlines }} /{{ path }} {{ original.width }}w" sizes="(max-width: 624px) 100vw, 578px, 580px"></a></div>

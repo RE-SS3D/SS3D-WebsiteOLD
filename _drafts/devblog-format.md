@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "00.00 (year.month) : [insert month] Recap"
-date:   2020-00-05 (year-month-day) 12:30:00 +0100    // The date should be the day the devblog is released and becomes part of the link to the post on the site. Also the website will not post with a future date and time.
+date:   2020-00-05 (year-month-day) 06:30:00 +0100    // The date should be the day the devblog is released and becomes part of the link to the post on the site. Also the website will not post with a future date and time.
 description: |
     "Description goes here."
 image: /assets/img/posts/[insert folder]/Wallpaper.png
@@ -23,43 +23,60 @@ Cute phrase/quote goes here.
 
 # [Insert Month] Recap
 
-Vague summary of the month goes here.
+[Insert Recap Summary]
 
 ## Special
 
 // 'Special' is any content from other categories specifically intended to show first.
 
-Description goes here.
+[Insert Description]
 
 [Insert Media]
 
 // Avoid gifs if possible and ensure reasonable file size if you do.
 // Use the lines below to format your media by inserting file paths and names.
 
-// Displaying a video:
-<video autoplay="autoplay" muted loop="loop" poster="{{ site.baseurl }}/assets/img/posts/[insert folder]/VideoThumbnail.png">
-  <source src="{{ site.baseurl }}/assets/img/posts/[insert folder]/Video.webm" type="video/webm">
-  <source src="{{ site.baseurl }}/assets/img/posts/[insert folder]/Video.mp4" type="video/mp4">
-</video>
-
-// Displaying a gif:
-{% responsive_image path: assets/img/posts/[insert folder]/gif1.gif template: _includes/srcset-gif.html %}
-
 // Displaying an image:
 {% responsive_image path: assets/img/posts/[insert folder]/image1.png template: _includes/srcset.html %}
 
 // Displaying 2 images horizontally:
 <div class='horizontal-2' markdown='1'>
-{% responsive_image path: assets/img/posts/[insert folder]/Image1.png %}
-{% responsive_image path: assets/img/posts/[insert folder]/Image2.png %}
+  {% responsive_image path: assets/img/posts/[insert folder]/Image1.png %}
+  {% responsive_image path: assets/img/posts/[insert folder]/Image2.png %}
 </div>
 
 // Displaying 3 images horizontally:
 <div class='horizontal-3' markdown='1'>
-{% responsive_image path: assets/img/posts/[insert folder]/Image1.png %}
-{% responsive_image path: assets/img/posts/[insert folder]/Image2.png %}
-{% responsive_image path: assets/img/posts/[insert folder]/Image3.png %}
+  {% responsive_image path: assets/img/posts/[insert folder]/Image1.png %}
+  {% responsive_image path: assets/img/posts/[insert folder]/Image2.png %}
+  {% responsive_image path: assets/img/posts/[insert folder]/Image3.png %}
 </div>
+
+// Displaying a slideshow of images (no more than 6 images (mySlides) per page (myRows)):
+<div class="slideshow">
+  {% include slideshow.html %}
+  <div class="mySlides">
+    <div class="slide-number">1 / X</div>
+    {% responsive_image path: assets/img/posts/[insert folder]/Image1.png template: _includes/srcset.html %}
+    <div id="description" class="slide-description">[insert description or delete this div]</div>
+  </div>
+  <div class="myRows">
+    <div class="row">
+      <div class="column">
+        <img class="thumbs cursor" src="{{ site.baseurl }}/assets/img/posts/[insert folder]/Image1.png" style="width:100%" alt="Image 1" onclick="currentSlide(1)">
+      </div>
+    </div>
+  </div>
+</div>   
+
+// Displaying a gif:
+{% responsive_image path: assets/img/posts/[insert folder]/gif1.gif template: _includes/srcset-gif.html %}
+
+// Displaying a video:
+<video autoplay="autoplay" muted loop="loop" poster="{{ site.baseurl }}/assets/img/posts/[insert folder]/VideoThumbnail.png">
+  <source src="{{ site.baseurl }}/assets/img/posts/[insert folder]/Video.webm" type="video/webm">
+  <source src="{{ site.baseurl }}/assets/img/posts/[insert folder]/Video.mp4" type="video/mp4">
+</video>
 
 ## Core-Systems
 
