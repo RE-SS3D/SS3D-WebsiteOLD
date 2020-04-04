@@ -142,7 +142,7 @@ body {
 body::before {
   content: " ";
   display: block;
-  background: url("/assets/img/stars.webp");
+  background: url("/assets/img/stars.png");
   opacity: 0.1;
   top: 0;
   left: 0;
@@ -154,8 +154,6 @@ body::before {
   min-height: 100vh;
   height: 100%;
   float: left; }
-.no-webp body::before {
-  background: url("/assets/img/stars.jpg"); }
 @media (prefers-color-scheme: light) {
   body::before {
     display: none;
@@ -176,32 +174,34 @@ body::before {
   background-color: #252525;
   background: linear-gradient(180deg, #71A2E033 0%, #05060833 100%); }
 [data-theme="dark"] body::before {
-  background: url("/assets/img/stars.webp");
+  background: url("/assets/img/stars.png");
   display: block; }
-[data-theme="dark"] body .no-webp body::before {
-  background: url("/assets/img/stars.jpg"); }
 
 body, h1, h2, h3, h4, h5, h6 {
   font-size-adjust: 0.58;
   padding: 0;
-  margin: 0.5em 0 0.25em 0;
+  margin: 1.5em 0 0.25em 0;
   vertical-align: baseline;
   line-height: 1em; }
 
 h1 {
-  margin: 0.75em 0em 0.5em 0em; }
-  @media (min-width: 624px) {
-    h1 {
-      margin: 1em 0em 0.75em 0em; } }
+  margin: 1em 0em 0.5em 0em; }
 
 h5 {
   margin: 0em 0em .5em 0em;
   color: #666666;
-  color: var(--color-text-h5); }
-  @media (min-width: 624px) {
-    h5 {
-      margin: .25em 0em .5em 0em; } }
+  color: var(--color-text-h5);
+  max-width: 560px; }
 
+h6 {
+  margin: 0.5em 0 0.25em 0;
+  color: #b14335;
+  font-size: 36px;
+  font-family: "Spessman", sans-serif; }
+@font-face {
+  h6 {
+    font-family: "Spessman";
+    src: url("../assets/misc/spessmanfont.tff"); } }
 p {
   margin-bottom: 10px; }
 
@@ -237,6 +237,12 @@ body {
   .a-reset:focus {
     color: inherit;
     text-decoration: inherit; }
+
+* {
+  border-radius: 5px; }
+
+img {
+  vertical-align: middle; }
 
 a, .link {
   color: #b83d32;
@@ -285,17 +291,10 @@ header {
     white-space: nowrap;
     overflow: visible;
     margin-top: 1em; }
-  header p {
-    color: #b14335;
-    font-size: 13px;
-    font-size: 4.5vw;
+  header h6 {
     white-space: nowrap;
     overflow: visible;
-    font-family: "Spessman", sans-serif; }
-@font-face {
-  header p {
-    font-family: "Spessman";
-    src: url("../assets/misc/spessmanfont.tff"); } }
+    font-size: 4.5vw; }
   header div {
     width: 100%; }
   header img {
@@ -310,9 +309,8 @@ header {
     header h1 {
       font-size: 46px;
       margin-top: 0.2em; }
-    header p {
-      font-size: 28px;
-      padding-bottom: 10px; }
+    header h6 {
+      font-size: 30px; }
     header img {
       height: 112px; } }
 
@@ -523,7 +521,7 @@ nav {
   align-self: center; }
   .horizontal-3 div {
     display: inline-block;
-    width: 33.33%;
+    width: 32.5%;
     margin: 0; }
     .horizontal-3 div::after {
       content: "";
@@ -543,7 +541,7 @@ nav {
   align-self: center; }
   .horizontal-2 div {
     display: inline-block;
-    width: 50%; }
+    width: 49.5%; }
     .horizontal-2 div::after {
       content: "";
       clear: both;
@@ -568,7 +566,88 @@ nav {
 
 div.image, .post-content video, .post-content .video {
   align-self: center;
-  margin-top: 0.5em; }
+  margin-top: 0.5em;
+  margin-bottom: 0.25em; }
 
 .post-content img, .post-content video, .post-content .video {
   max-width: 100%; }
+
+.slideshow {
+  position: relative;
+  margin-top: 10px;
+  max-width: 580px; }
+
+.mySlides, .myRows {
+  display: none; }
+
+.mySlides {
+  padding: 1px;
+  z-index: 1; }
+
+.cursor {
+  cursor: pointer; }
+
+.prevSlide, .nextSlide, .prevRow, .nextRow {
+  cursor: pointer;
+  position: absolute;
+  vertical-align: middle;
+  width: auto;
+  padding: 14px;
+  margin-left: -30px;
+  margin-right: -28px;
+  margin-top: 35%;
+  color: white;
+  font-weight: bold;
+  font-size: 24px;
+  border-radius: 15px;
+  user-select: none;
+  -webkit-user-select: none; }
+
+.prevRow, .nextRow {
+  top: 75%;
+  margin-top: 14%; }
+
+.nextSlide, .nextRow {
+  right: 0; }
+
+.slide-number {
+  color: #f2f2f2;
+  padding: 45px 7px;
+  font-size: 12px;
+  position: absolute;
+  top: 0;
+  z-index: 2; }
+
+.slide-title {
+  text-align: center;
+  background-color: rgba(5, 5, 5, 0.5);
+  margin-bottom: -8px;
+  font-size: 24px;
+  padding: 8px 2px;
+  color: white;
+  font-weight: bold; }
+
+.slide-description {
+  text-align: center;
+  background-color: rgba(5, 5, 5, 0.5);
+  margin-top: 3px;
+  font-size: 18px;
+  padding: 2px;
+  color: white; }
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+.column {
+  float: left;
+  width: 16.66%;
+  padding: 2px 1px; }
+
+.thumbs {
+  opacity: 0.6;
+  background-color: #111; }
+
+.active, .thumbs:hover {
+  opacity: 1; }

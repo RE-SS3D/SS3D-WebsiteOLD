@@ -141,32 +141,30 @@ window.cookieconsent.initialise({
             <header class="header">
     <div>
         <picture class="logo" >
-            <source srcset="/assets/img/logo.webp" type="image/webp">
-            <source srcset="/assets/img/logo.png" type="image/png"> 
-            <img alt="" src="/assets/img/logo.png">
+            <img src="/assets/img/logo.png" alt="RE:">
         </picture>
     </div>
     <div>
         <picture class="logo" >
-            <source srcset="/assets/img/SPACESTATION3D.webp" type="image/webp">
-            <source srcset="/assets/img/SPACESTATION3D.png" type="image/png"> 
-            <img alt="" src="/assets/img/SPACESTATION3D.png">
+            <img src="/assets/img/SPACESTATION3D.png" alt="SPACE STATION 3D">
         </picture>
     </div>
-    <p>A 3D recreation of Space Station 13</p>
+    <h6>A 3D recreation of Space Station 13</h6>
 </header>
             <main class="post-content">
                 <p class="centred"><em>“Welcome to the station crew. Enjoy your stay.”</em></p>
 
-<iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/kb7lTMorbWo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
-<h5 id="video-credit---grimmie"><em>Video credit - Grimmie</em></h5>
+<div>
+    <iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/ZlWGkLT2kRo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+    <h5><i>Video credit - Grimmie</i></h5>
+</div>
 
 <p>RE:SS3D is a resurrection of the SS3D project (a 3D remake of SS13), and is being developed in the Unity game engine.</p>
 
 <p>Our project boards can be found on our <a href="https://github.com/RE-SS3D/SS3D/projects">github</a> and <a href="https://trello.com/ress3d">trello</a>, while information regarding contributing can be found on our <a href="/contribute/">contribute</a> page.</p>
 
 <header class="header">
-<p style="font-size:35px"><a href="https://github.com/RE-SS3D/SS3D#downloads">D O W N L O A D S</a></p>
+<h6 style="font-size:35px"><a href="https://github.com/RE-SS3D/SS3D#downloads">D O W N L O A D S</a></h6>
 </header>
 
 <h2 class="centred" id="latest-blog-post">Latest Blog Post:</h2>
@@ -174,18 +172,18 @@ window.cookieconsent.initialise({
 <ul class="ul-reset post-list">
 
     <li class="post-row">
-        <a style="white-space: nowrap;" href="/2020/03/02/20.02.html">
+        <a style="white-space: nowrap;" href="/2020/04/03/20.03.html">
             
 
 
 
-<img src="/" alt="" srcset="    /assets/resized/BugSpaceJunk-580x326.png 580w,    /assets/resized/BugSpaceJunk-290x163.png 290w,    /assets/resized/BugSpaceJunk-170x96.png 170w,    /assets/resized/BugSpaceJunk-145x82.png 145w," sizes="(max-width: 624px) 100vw, 580px">
+<img src="/" alt="" srcset="    /assets/resized/BugPandemic-580x326.png 580w,    /assets/resized/BugPandemic-290x163.png 290w,    /assets/resized/BugPandemic-170x96.png 170w,    /assets/resized/BugPandemic-145x82.png 145w," sizes="(max-width: 624px) 100vw, 580px" target="_blank">
         </a>
         <div class="post-text">
-            <h2><a href="/2020/03/02/20.02.html">20.02: February 2020 Devblog</a></h2>
-            <a class="a-reset" href="/2020/03/02/20.02.html"><span class="postDate">Mar 2, 2020</span></a>
+            <h2><a href="/2020/04/03/20.03.html">20.03: March 2020 Devblog</a></h2>
+            <a class="a-reset" href="/2020/04/03/20.03.html"><span class="postDate">Apr 3, 2020</span></a>
             <div class="post-description">
-                <a class="a-reset" href="/2020/03/02/20.02.html"><p>"Success we want, patience we must have."
+                <a class="a-reset" href="/2020/04/03/20.03.html"><p>"Lynch Viro!"
 </p></a>
             </div>
         </div>
@@ -253,6 +251,73 @@ window.cookieconsent.initialise({
             //pre-check the dark-theme checkbox if dark-theme is set
             if (document.documentElement.getAttribute("data-theme") == "light"){
                 toggleSwitch.checked = true;
+            }
+        </script>
+        <script>
+
+            // changes slide show slides and title
+            var slideIndex = 1;
+            showSlides(slideIndex);
+            
+            function plusSlides(n) {
+                showSlides(slideIndex += n);
+            }
+            
+            function currentSlide(n) {
+                showSlides(slideIndex = n);
+            }
+            
+            function showSlides(n) {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                var dots = document.getElementsByClassName("thumbs");
+                var titleText = document.getElementById("title");
+                if (n > slides.length) {
+                    slideIndex = 1;
+                    showRows(rowIndex = 1);
+                }
+                if (n < 1) {
+                    slideIndex = slides.length;
+  	                showRows(rowIndex = -1);
+                }
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                showRows(rowIndex = Math.floor((n-1)/6) + 1) 
+                slides[slideIndex-1].style.display = "block";
+                dots[slideIndex-1].className += " active";
+                titleText.innerHTML = dots[slideIndex-1].alt;
+            }
+            
+            // changes slide show rows
+            var rowIndex = 1;
+            showRows(rowIndex);
+
+            function plusRows(n) {
+                showRows(rowIndex += n);
+            }
+
+            function currentRow(n) {
+            showRows(rowIndex = n);
+            }
+
+            function showRows(n) {
+                var i;
+                var rows = document.getElementsByClassName("myRows");
+                var dots = document.getElementsByClassName("thumbs");
+                if (n > rows.length) {rowIndex = 1}
+                if (n < 1) {rowIndex = rows.length}
+                for (i = 0; i < rows.length; i++) {
+                    rows[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                rows[rowIndex-1].style.display = "block";
+                dots[rowIndex-1].className += " active";
             }
         </script>
     </body>
