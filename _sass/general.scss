@@ -8,10 +8,7 @@ body, h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-    margin: 0.75em 0em 0.5em 0em;
-    @include respond-to(desktop) {
-        margin: 1em 0em 0.75em 0em;
-    }
+    margin: 1em 0em 0.5em 0em;
 }
 
 h5 {
@@ -19,12 +16,10 @@ h5 {
     color: $color-text-h5;
     color: var(--color-text-h5);
     max-width: 560px;
-    @include respond-to(desktop) {
-        margin: .25em 0em .5em 0em;
-    }
 }
 
 h6 {
+    margin: 0.5em 0 0.25em 0;
     color: $color-header;
     font-size: 36px;
     font-family: "Spessman", sans-serif;
