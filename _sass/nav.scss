@@ -12,6 +12,7 @@
     background-color: $color-navbar;
     background-color: var(--color-navbar);
     height: 50px;
+    border-radius: 0px;
     @include respond-to(desktop) {
         text-align: center;
     }
