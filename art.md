@@ -12,27 +12,27 @@ permalink: /art/
 # Bug
 {: class="centred" }
 
-<video width="560px" autoplay="autoplay" muted loop="loop" poster="{{ site.baseurl }}/assets/img/art/Bug/BugPandemic.png">
+<video width="580px" autoplay="autoplay" muted loop="loop" poster="{{ site.baseurl }}/assets/img/art/Bug/BugPandemic.png">
   <source src="{{ site.baseurl }}/assets/img/art/Bug/BugPandemic.webm" type="video/webm">
   <source src="{{ site.baseurl }}/assets/img/art/Bug/BugPandemic.mp4" type="video/mp4">
 </video>
 
-<video width="560px" autoplay="autoplay" muted loop="loop" poster="{{ site.baseurl }}/assets/img/art/Bug/BugSyndie.png">
+<video width="580px" autoplay="autoplay" muted loop="loop" poster="{{ site.baseurl }}/assets/img/art/Bug/BugSyndie.png">
   <source src="{{ site.baseurl }}/assets/img/art/Bug/BugSyndie.webm" type="video/webm">
   <source src="{{ site.baseurl }}/assets/img/art/Bug/BugSyndie.mp4" type="video/mp4">
 </video>
 
-<video width="560px" autoplay="autoplay" muted loop="loop" poster="{{ site.baseurl }}/assets/img/art/Bug/BugSpaceJunk.png">
+<video width="580px" autoplay="autoplay" muted loop="loop" poster="{{ site.baseurl }}/assets/img/art/Bug/BugSpaceJunk.png">
   <source src="{{ site.baseurl }}/assets/img/art/Bug/BugSpaceJunk.webm" type="video/webm">
   <source src="{{ site.baseurl }}/assets/img/art/Bug/BugSpaceJunk.mp4" type="video/mp4">
 </video>
 
-<video width="560px" autoplay="autoplay" muted loop="loop" poster="{{ site.baseurl }}/assets/img/art/Bug/BugHydroponics.png">
+<video width="580px" autoplay="autoplay" muted loop="loop" poster="{{ site.baseurl }}/assets/img/art/Bug/BugHydroponics.png">
   <source src="{{ site.baseurl }}/assets/img/art/Bug/BugHydroponics.webm" type="video/webm">
   <source src="{{ site.baseurl }}/assets/img/art/Bug/BugHydroponics.mp4" type="video/mp4">
 </video>
 
-<video width="560px" autoplay="autoplay" muted loop="loop" poster="{{ site.baseurl }}/assets/img/art/Bug/BugWallpaper2.png">
+<video width="580px" autoplay="autoplay" muted loop="loop" poster="{{ site.baseurl }}/assets/img/art/Bug/BugWallpaper2.png">
   <source src="{{ site.baseurl }}/assets/img/art/Bug/BugAnimation.webm" type="video/webm">
   <source src="{{ site.baseurl }}/assets/img/art/Bug/BugAnimation.mp4" type="video/mp4">
 </video>
@@ -63,7 +63,7 @@ permalink: /art/
 # Eiko
 {: class="centred" }
 
-<iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/WCPqPVdn-Oc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe class="video" width="580px" height="325px" src="https://www.youtube-nocookie.com/embed/WCPqPVdn-Oc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 {% responsive_image path: assets/img/art/Eiko/EikoPromoGibber.png template: _includes/srcset.html %}
 
@@ -88,7 +88,7 @@ permalink: /art/
 # Grimmie (Judge Honkette)
 {: class="centred" }
 
-<iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/kb7lTMorbWo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe class="video" width="580px" height="272px" src="https://www.youtube-nocookie.com/embed/ZlWGkLT2kRo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <div class='horizontal-2' markdown='1'>
 {% responsive_image path: assets/img/art/Grimmie/GrimmieTimeAssassinLight.png %}
