@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://ss3d.space/feed.xml" rel="self" type="application/atom+xml" /><link href="https://ss3d.space/" rel="alternate" type="text/html" /><updated>2020-04-15T00:53:19+00:00</updated><id>https://ss3d.space/feed.xml</id><title type="html">RE:SS3D</title><subtitle>This is a 3D recreation of Space Station 13, on the Unity engine, which will come with its own set of gameplay/graphical improvements. </subtitle><entry><title type="html">20.03: March 2020 Devblog</title><link href="https://ss3d.space/2020/04/03/20.03.html" rel="alternate" type="text/html" title="20.03: March 2020 Devblog" /><published>2020-04-03T05:30:00+00:00</published><updated>2020-04-03T05:30:00+00:00</updated><id>https://ss3d.space/2020/04/03/20.03</id><content type="html" xml:base="https://ss3d.space/2020/04/03/20.03.html">&lt;p&gt;“Don’t forget what it was like before all this.”&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://ss3d.space/feed.xml" rel="self" type="application/atom+xml" /><link href="https://ss3d.space/" rel="alternate" type="text/html" /><updated>2020-04-17T03:47:11+00:00</updated><id>https://ss3d.space/feed.xml</id><title type="html">RE:SS3D</title><subtitle>This is a 3D recreation of Space Station 13, on the Unity engine, which will come with its own set of gameplay/graphical improvements. </subtitle><entry><title type="html">20.03: March 2020 Devblog</title><link href="https://ss3d.space/2020/04/03/20.03.html" rel="alternate" type="text/html" title="20.03: March 2020 Devblog" /><published>2020-04-03T05:30:00+00:00</published><updated>2020-04-03T05:30:00+00:00</updated><id>https://ss3d.space/2020/04/03/20.03</id><content type="html" xml:base="https://ss3d.space/2020/04/03/20.03.html">&lt;p&gt;“Don’t forget what it was like before all this.”&lt;/p&gt;
 
 &lt;h1 id=&quot;march-recap&quot;&gt;March Recap&lt;/h1&gt;
 
@@ -12,7 +12,7 @@
 
 &lt;p&gt;We can finally say we have working doors. At the beginning of the month, &lt;strong&gt;Nonanon&lt;/strong&gt; fixed up an old PR from the previous month by &lt;strong&gt;Doobly&lt;/strong&gt; for it and now we have the basic functionality.&lt;/p&gt;
 
-&lt;video autoplay=&quot;autoplay&quot; muted=&quot;&quot; loop=&quot;loop&quot; poster=&quot;/assets/img/posts/20.03.01/NonanonDoors.png&quot; width=&quot;560px&quot;&gt;
+&lt;video autoplay=&quot;autoplay&quot; muted=&quot;&quot; loop=&quot;loop&quot; poster=&quot;/assets/img/posts/20.03.01/NonanonDoors.png&quot; width=&quot;580px&quot;&gt;
   &lt;source src=&quot;/assets/img/posts/20.03.01/NonanonDoors.webm&quot; type=&quot;video/webm&quot; /&gt;
   &lt;source src=&quot;/assets/img/posts/20.03.01/NonanonDoors.mp4&quot; type=&quot;video/mp4&quot; /&gt;
 &lt;/video&gt;
@@ -21,7 +21,7 @@
 
 &lt;p&gt;&lt;strong&gt;Cosmic&lt;/strong&gt; decided to tackle an old &lt;a href=&quot;https://user-images.githubusercontent.com/15195221/73611940-1715e580-45f0-11ea-8c1e-90cc5dff2cc6.png&quot; target=&quot;_blank&quot;&gt;issue with our table connections&lt;/a&gt;, which was thought to only be an issue with the mesh of the 3D model, ended up discovering some minor errors in the connections script itself as well. After fixing them, tables truly have infinitely smooth connections now!&lt;/p&gt;
 
-&lt;video autoplay=&quot;autoplay&quot; muted=&quot;&quot; loop=&quot;loop&quot; poster=&quot;/assets/img/posts/20.03.01/CosmicTables.png&quot; width=&quot;560px&quot;&gt;
+&lt;video autoplay=&quot;autoplay&quot; muted=&quot;&quot; loop=&quot;loop&quot; poster=&quot;/assets/img/posts/20.03.01/CosmicTables.png&quot; width=&quot;580px&quot;&gt;
   &lt;source src=&quot;/assets/img/posts/20.03.01/CosmicTables.webm&quot; type=&quot;video/webm&quot; /&gt;
   &lt;source src=&quot;/assets/img/posts/20.03.01/CosmicTables.mp4&quot; type=&quot;video/mp4&quot; /&gt;
 &lt;/video&gt;
@@ -466,7 +466,7 @@
 
 &lt;p&gt;Another month, and another epic wallpaper set by &lt;strong&gt;Bug&lt;/strong&gt;, including both an animated version and still-frame version!&lt;/p&gt;
 
-&lt;video autoplay=&quot;autoplay&quot; muted=&quot;&quot; loop=&quot;loop&quot; poster=&quot;/assets/img/art/Bug/BugPandemic.png&quot; width=&quot;560px&quot;&gt;
+&lt;video autoplay=&quot;autoplay&quot; muted=&quot;&quot; loop=&quot;loop&quot; poster=&quot;/assets/img/art/Bug/BugPandemic.png&quot; width=&quot;580px&quot;&gt;
   &lt;source src=&quot;/assets/img/art/Bug/BugPandemic.webm&quot; type=&quot;video/webm&quot; /&gt;
   &lt;source src=&quot;/assets/img/art/Bug/BugPandemic.mp4&quot; type=&quot;video/mp4&quot; /&gt;
 &lt;/video&gt;
@@ -487,7 +487,7 @@
 
 &lt;p&gt;&lt;strong&gt;Em3rgency&lt;/strong&gt;, after being an absolute workhorse last month, has slowed down a bit this month but still decided to invest the time to implement basic rounds for the game. The round time starts right after the server is launched and you can see a timer in the top right corner. Currently, the rounds are limited to just 5 minutes before the server resets, due to there not being much to do right now anyway. If you can’t wait the 5 minutes, there is also a manual server reset button, but is only visible to the hosting player.&lt;/p&gt;
 
-&lt;video autoplay=&quot;autoplay&quot; muted=&quot;&quot; loop=&quot;loop&quot; poster=&quot;/assets/img/posts/20.02.01/Em3rgencyRounds.png&quot; width=&quot;560px&quot;&gt;
+&lt;video autoplay=&quot;autoplay&quot; muted=&quot;&quot; loop=&quot;loop&quot; poster=&quot;/assets/img/posts/20.02.01/Em3rgencyRounds.png&quot; width=&quot;580px&quot;&gt;
   &lt;source src=&quot;/assets/img/posts/20.02.01/Em3rgencyRounds.webm&quot; type=&quot;video/webm&quot; /&gt;
   &lt;source src=&quot;/assets/img/posts/20.02.01/Em3rgencyRounds.mp4&quot; type=&quot;video/mp4&quot; /&gt;
 &lt;/video&gt;
@@ -496,7 +496,7 @@
 
 &lt;p&gt;New this month, &lt;strong&gt;Lazerballs&lt;/strong&gt; has decided to address blob shadows and deferred lighting. After adding a hint of ambient occlusion on top and it really changes the atmosphere of the station. If you don’t remember what it looked like before, just look at the video above.&lt;/p&gt;
 
-&lt;video autoplay=&quot;autoplay&quot; muted=&quot;&quot; loop=&quot;loop&quot; poster=&quot;/assets/img/posts/20.02.01/LazerballsLighting.png&quot; width=&quot;560px&quot;&gt;
+&lt;video autoplay=&quot;autoplay&quot; muted=&quot;&quot; loop=&quot;loop&quot; poster=&quot;/assets/img/posts/20.02.01/LazerballsLighting.png&quot; width=&quot;580px&quot;&gt;
   &lt;source src=&quot;/assets/img/posts/20.02.01/LazerballsLighting.webm&quot; type=&quot;video/webm&quot; /&gt;
   &lt;source src=&quot;/assets/img/posts/20.02.01/LazerballsLighting.mp4&quot; type=&quot;video/mp4&quot; /&gt;
 &lt;/video&gt;
@@ -507,7 +507,7 @@
 
 &lt;p&gt;Currently, the primary things that are implemented in the new interaction system are, picking up/dropping items, using storage containers, and constructing/deconstructing walls (crowbar) and tables (wrench). Unfortunately, the new system doesn’t include our drawing system like the old one yet, nor does it reintroduce our basic combat system yet.&lt;/p&gt;
 
-&lt;video autoplay=&quot;autoplay&quot; muted=&quot;&quot; loop=&quot;loop&quot; poster=&quot;/assets/img/posts/20.02.01/NonanonInteraction.png&quot; width=&quot;560px&quot;&gt;
+&lt;video autoplay=&quot;autoplay&quot; muted=&quot;&quot; loop=&quot;loop&quot; poster=&quot;/assets/img/posts/20.02.01/NonanonInteraction.png&quot; width=&quot;580px&quot;&gt;
   &lt;source src=&quot;/assets/img/posts/20.02.01/NonanonInteraction.webm&quot; type=&quot;video/webm&quot; /&gt;
   &lt;source src=&quot;/assets/img/posts/20.02.01/NonanonInteraction.mp4&quot; type=&quot;video/mp4&quot; /&gt;
 &lt;/video&gt;
@@ -535,7 +535,7 @@
 
 &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/20.02.01/EikoBots.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/EikoBots-580x435.png 580w,    /assets/resized/EikoBots-290x218.png 290w,    /assets/resized/EikoBots-170x128.png 170w,    /assets/resized/EikoBots-145x109.png 145w, /assets/img/posts/20.02.01/EikoBots.png 800w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
 
-&lt;video autoplay=&quot;autoplay&quot; muted=&quot;&quot; loop=&quot;loop&quot; poster=&quot;/assets/img/posts/20.02.01/EikoNews.png&quot; width=&quot;560px&quot;&gt;
+&lt;video autoplay=&quot;autoplay&quot; muted=&quot;&quot; loop=&quot;loop&quot; poster=&quot;/assets/img/posts/20.02.01/EikoNews.png&quot; width=&quot;580px&quot;&gt;
   &lt;source src=&quot;/assets/img/posts/20.02.01/EikoNews.webm&quot; type=&quot;video/webm&quot; /&gt;
   &lt;source src=&quot;/assets/img/posts/20.02.01/EikoNews.mp4&quot; type=&quot;video/mp4&quot; /&gt;
 &lt;/video&gt;
@@ -571,7 +571,7 @@
 
 &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/20.02.01/BugMelons.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/BugMelons-580x435.png 580w,    /assets/resized/BugMelons-290x218.png 290w,    /assets/resized/BugMelons-170x128.png 170w,    /assets/resized/BugMelons-145x109.png 145w, /assets/img/posts/20.02.01/BugMelons.png 800w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
 
-&lt;video autoplay=&quot;autoplay&quot; muted=&quot;&quot; loop=&quot;loop&quot; poster=&quot;/assets/img/posts/20.02.01/BugCannabis.png&quot; width=&quot;560px&quot;&gt;
+&lt;video autoplay=&quot;autoplay&quot; muted=&quot;&quot; loop=&quot;loop&quot; poster=&quot;/assets/img/posts/20.02.01/BugCannabis.png&quot; width=&quot;580px&quot;&gt;
   &lt;source src=&quot;/assets/img/posts/20.02.01/BugCannabis.webm&quot; type=&quot;video/webm&quot; /&gt;
   &lt;source src=&quot;/assets/img/posts/20.02.01/BugCannabis.mp4&quot; type=&quot;video/mp4&quot; /&gt;
 &lt;/video&gt;
@@ -608,12 +608,12 @@
 
 &lt;p&gt;&lt;strong&gt;Bug&lt;/strong&gt; simply won’t stop making really cool animations, regardless of how many times we tell him to.&lt;/p&gt;
 
-&lt;video autoplay=&quot;autoplay&quot; muted=&quot;&quot; loop=&quot;loop&quot; poster=&quot;/assets/img/art/Bug/BugSpaceJunk.png&quot; width=&quot;560px&quot;&gt;
+&lt;video autoplay=&quot;autoplay&quot; muted=&quot;&quot; loop=&quot;loop&quot; poster=&quot;/assets/img/art/Bug/BugSpaceJunk.png&quot; width=&quot;580px&quot;&gt;
   &lt;source src=&quot;/assets/img/art/Bug/BugSpaceJunk.webm&quot; type=&quot;video/webm&quot; /&gt;
   &lt;source src=&quot;/assets/img/art/Bug/BugSpaceJunk.mp4&quot; type=&quot;video/mp4&quot; /&gt;
 &lt;/video&gt;
 
-&lt;video autoplay=&quot;autoplay&quot; muted=&quot;&quot; loop=&quot;loop&quot; poster=&quot;/assets/img/art/Bug/BugSyndie.png&quot; width=&quot;560px&quot;&gt;
+&lt;video autoplay=&quot;autoplay&quot; muted=&quot;&quot; loop=&quot;loop&quot; poster=&quot;/assets/img/art/Bug/BugSyndie.png&quot; width=&quot;580px&quot;&gt;
   &lt;source src=&quot;/assets/img/art/Bug/BugSyndie.webm&quot; type=&quot;video/webm&quot; /&gt;
   &lt;source src=&quot;/assets/img/art/Bug/BugSyndie.mp4&quot; type=&quot;video/mp4&quot; /&gt;
 &lt;/video&gt;
@@ -645,14 +645,14 @@
 
 &lt;p&gt;Back again with progress on core systems, &lt;strong&gt;Nonanon&lt;/strong&gt; has updated the tilemap system to auto-connect prefabs (like walls or tables) both in-game and in the editor in Unity. It works by correctly choosing the appropriate prefab variant and applying rotation. With accurate modeling, this system can be attributed to other connectables like pipes, multi-tile floor patterns, etc.&lt;/p&gt;
 
-&lt;video autoplay=&quot;autoplay&quot; muted=&quot;&quot; loop=&quot;loop&quot; poster=&quot;/assets/img/posts/20.01.01/NonanonTilemap.png&quot; width=&quot;560px&quot;&gt;
+&lt;video autoplay=&quot;autoplay&quot; muted=&quot;&quot; loop=&quot;loop&quot; poster=&quot;/assets/img/posts/20.01.01/NonanonTilemap.png&quot; width=&quot;580px&quot;&gt;
   &lt;source src=&quot;/assets/img/posts/20.01.01/NonanonTilemap.webm&quot; type=&quot;video/webm&quot; /&gt;
   &lt;source src=&quot;/assets/img/posts/20.01.01/NonanonTilemap.mp4&quot; type=&quot;video/mp4&quot; /&gt;
 &lt;/video&gt;
 
 &lt;p&gt;He also made improvements to the tile editor to allow for saving and editing innumerous tile configurations. Currently, a tile configuration supports a ‘turf’ (floors, windows, walls, etc.) and a ‘fixture’ (wall lights, airlocks, tables, etc.). Both the turf and the fixture are placed when placing a tile configuration. Placing tiles in the editor is smoother now too, with the added ability to be able to click and drag them to place multiple quickly. There is still some work to be done and bugs to flush out, but the system looks very promising.&lt;/p&gt;
 
-&lt;video autoplay=&quot;autoplay&quot; muted=&quot;&quot; loop=&quot;loop&quot; poster=&quot;/assets/img/posts/20.01.01/NonanonTilemap2.png&quot; width=&quot;560px&quot;&gt;
+&lt;video autoplay=&quot;autoplay&quot; muted=&quot;&quot; loop=&quot;loop&quot; poster=&quot;/assets/img/posts/20.01.01/NonanonTilemap2.png&quot; width=&quot;580px&quot;&gt;
   &lt;source src=&quot;/assets/img/posts/20.01.01/NonanonTilemap2.webm&quot; type=&quot;video/webm&quot; /&gt;
   &lt;source src=&quot;/assets/img/posts/20.01.01/NonanonTilemap2.mp4&quot; type=&quot;video/mp4&quot; /&gt;
 &lt;/video&gt;
@@ -671,7 +671,7 @@
 
 &lt;p&gt;Limbs now track their damage as well as track status effects like crippled, bruised, bleeding, etc. They will even detach given enough damage. Unfortunately, this cannot be tested currently as a result of the interaction system which merged shortly after this (mentioned above).&lt;/p&gt;
 
-&lt;video autoplay=&quot;autoplay&quot; muted=&quot;&quot; loop=&quot;loop&quot; poster=&quot;/assets/img/posts/20.01.01/Em3rgencyDamage.png&quot; width=&quot;560px&quot;&gt;
+&lt;video autoplay=&quot;autoplay&quot; muted=&quot;&quot; loop=&quot;loop&quot; poster=&quot;/assets/img/posts/20.01.01/Em3rgencyDamage.png&quot; width=&quot;580px&quot;&gt;
   &lt;source src=&quot;/assets/img/posts/20.01.01/Em3rgencyDamage.webm&quot; type=&quot;video/webm&quot; /&gt;
   &lt;source src=&quot;/assets/img/posts/20.01.01/Em3rgencyDamage.mp4&quot; type=&quot;video/mp4&quot; /&gt;
 &lt;/video&gt;
@@ -688,7 +688,7 @@
 
 &lt;p&gt;If you don’t want to download Unity and build the most recent development changes yourself, you can instead &lt;a href=&quot;https://github.com/RE-SS3D/SS3D/releases/latest&quot;&gt;&lt;strong&gt;download our latest build here&lt;/strong&gt;&lt;/a&gt;, which has been updated recently. And we also hope to update it frequently by integrating automated builds in the future for each minor release.&lt;/p&gt;
 
-&lt;video autoplay=&quot;autoplay&quot; muted=&quot;&quot; loop=&quot;loop&quot; poster=&quot;/assets/img/posts/20.01.01/Em3rgencyLogin.png&quot; width=&quot;560px&quot;&gt;
+&lt;video autoplay=&quot;autoplay&quot; muted=&quot;&quot; loop=&quot;loop&quot; poster=&quot;/assets/img/posts/20.01.01/Em3rgencyLogin.png&quot; width=&quot;580px&quot;&gt;
   &lt;source src=&quot;/assets/img/posts/20.01.01/Em3rgencyLogin.webm&quot; type=&quot;video/webm&quot; /&gt;
   &lt;source src=&quot;/assets/img/posts/20.01.01/Em3rgencyLogin.mp4&quot; type=&quot;video/mp4&quot; /&gt;
 &lt;/video&gt;
@@ -699,14 +699,14 @@
 
 &lt;p&gt;The fuel system simply acts as the amount of what we’re calling “fuel”, but the system can be made to work with other objects such as crayons that will deplete over time, or even objects that store ammo, charge, propellent, etc. You can see how much remaining fuel your crayon has in the small progress bar in the hand its held in.&lt;/p&gt;
 
-&lt;video autoplay=&quot;autoplay&quot; muted=&quot;&quot; loop=&quot;loop&quot; poster=&quot;/assets/img/posts/20.01.01/Em3rgencyDrawing1.png&quot; width=&quot;560px&quot;&gt;
+&lt;video autoplay=&quot;autoplay&quot; muted=&quot;&quot; loop=&quot;loop&quot; poster=&quot;/assets/img/posts/20.01.01/Em3rgencyDrawing1.png&quot; width=&quot;580px&quot;&gt;
   &lt;source src=&quot;/assets/img/posts/20.01.01/Em3rgencyDrawing1.webm&quot; type=&quot;video/webm&quot; /&gt;
   &lt;source src=&quot;/assets/img/posts/20.01.01/Em3rgencyDrawing1.mp4&quot; type=&quot;video/mp4&quot; /&gt;
 &lt;/video&gt;
 
 &lt;p&gt;The system is fun to play with and in his own words, “drawing lets you, quite literally, leave a mark on the world”. Currently, only some major surfaces can be drawn on, like floors, walls, tables, and lockers, but we plan to significantly add to that list.&lt;/p&gt;
 
-&lt;video autoplay=&quot;autoplay&quot; muted=&quot;&quot; loop=&quot;loop&quot; poster=&quot;/assets/img/posts/20.01.01/Em3rgencyDrawing2.png&quot; width=&quot;560px&quot;&gt;
+&lt;video autoplay=&quot;autoplay&quot; muted=&quot;&quot; loop=&quot;loop&quot; poster=&quot;/assets/img/posts/20.01.01/Em3rgencyDrawing2.png&quot; width=&quot;580px&quot;&gt;
   &lt;source src=&quot;/assets/img/posts/20.01.01/Em3rgencyDrawing2.webm&quot; type=&quot;video/webm&quot; /&gt;
   &lt;source src=&quot;/assets/img/posts/20.01.01/Em3rgencyDrawing2.mp4&quot; type=&quot;video/mp4&quot; /&gt;
 &lt;/video&gt;
@@ -757,7 +757,7 @@
 
 &lt;p&gt;&lt;strong&gt;Nicola&lt;/strong&gt; put a lot of focus on atmospheric parts and engineering machines this month, with some pumps, filters, and mixers, etc, that we were missing, as well as gravity generator and a shield generator.&lt;/p&gt;
 
-&lt;video autoplay=&quot;autoplay&quot; muted=&quot;&quot; loop=&quot;loop&quot; poster=&quot;/assets/img/posts/20.01.01/NicolaAtmosParts.png&quot; width=&quot;560px&quot;&gt;
+&lt;video autoplay=&quot;autoplay&quot; muted=&quot;&quot; loop=&quot;loop&quot; poster=&quot;/assets/img/posts/20.01.01/NicolaAtmosParts.png&quot; width=&quot;580px&quot;&gt;
   &lt;source src=&quot;/assets/img/posts/20.01.01/NicolaAtmosParts.webm&quot; type=&quot;video/webm&quot; /&gt;
   &lt;source src=&quot;/assets/img/posts/20.01.01/NicolaAtmosParts.mp4&quot; type=&quot;video/mp4&quot; /&gt;
 &lt;/video&gt;
@@ -813,7 +813,7 @@
 
 &lt;p&gt;Again this month, &lt;strong&gt;Bug&lt;/strong&gt; has made another interesting animation to spark your curiosity!&lt;/p&gt;
 
-&lt;video autoplay=&quot;autoplay&quot; muted=&quot;&quot; loop=&quot;loop&quot; poster=&quot;/assets/img/art/Bug/BugHydroponics.png&quot; width=&quot;560px&quot;&gt;
+&lt;video autoplay=&quot;autoplay&quot; muted=&quot;&quot; loop=&quot;loop&quot; poster=&quot;/assets/img/art/Bug/BugHydroponics.png&quot; width=&quot;580px&quot;&gt;
   &lt;source src=&quot;/assets/img/art/Bug/BugHydroponics.webm&quot; type=&quot;video/webm&quot; /&gt;
   &lt;source src=&quot;/assets/img/art/Bug/BugHydroponics.mp4&quot; type=&quot;video/mp4&quot; /&gt;
 &lt;/video&gt;
@@ -844,7 +844,7 @@
 
 &lt;p&gt;&lt;strong&gt;Probably Not&lt;/strong&gt;, who has been with us since beep’s SS3D days, continues to patiently craft character animations for us without loosing stride or getting discouraged when we are slow. This month he has provided 4 more unique animations (opening cig pack and removing a cig, placing cig in mouth, opening lighter, using lighter). These animations will be associated with indiviual actions, but will be smoothed together when the player queues several actions quickly.&lt;/p&gt;
 
-&lt;video autoplay=&quot;autoplay&quot; muted=&quot;&quot; loop=&quot;loop&quot; poster=&quot;/assets/img/posts/19.12.01/ProbablyNotSmoke.png&quot;&gt;
+&lt;video autoplay=&quot;autoplay&quot; muted=&quot;&quot; loop=&quot;loop&quot; width=&quot;580px&quot; poster=&quot;/assets/img/posts/19.12.01/ProbablyNotSmoke.png&quot;&gt;
   &lt;source src=&quot;/assets/img/posts/19.12.01/ProbablyNotSmoke.webm&quot; type=&quot;video/webm&quot; /&gt;
   &lt;source src=&quot;/assets/img/posts/19.12.01/ProbablyNotSmoke.mp4&quot; type=&quot;video/mp4&quot; /&gt;
 &lt;/video&gt;
@@ -857,7 +857,7 @@
 
 &lt;p&gt;Animated textures can be just as fun. Here is a positronic brain from &lt;strong&gt;CosmicCoincidence&lt;/strong&gt; with an electrifying video texture!&lt;/p&gt;
 
-&lt;video autoplay=&quot;autoplay&quot; muted=&quot;&quot; loop=&quot;loop&quot; poster=&quot;/assets/img/posts/19.12.01/CosmicPositronicBrain.png&quot;&gt;
+&lt;video autoplay=&quot;autoplay&quot; muted=&quot;&quot; loop=&quot;loop&quot; width=&quot;580px&quot; poster=&quot;/assets/img/posts/19.12.01/CosmicPositronicBrain.png&quot;&gt;
   &lt;source src=&quot;/assets/img/posts/19.12.01/CosmicPositronicBrain.webm&quot; type=&quot;video/webm&quot; /&gt;
   &lt;source src=&quot;/assets/img/posts/19.12.01/CosmicPositronicBrain.mp4&quot; type=&quot;video/mp4&quot; /&gt;
 &lt;/video&gt;
@@ -958,7 +958,7 @@
 
 &lt;p&gt;This month, &lt;strong&gt;Bug&lt;/strong&gt; has spent as much time making art as he has models. Here is an awesome looping animation from him, as well as a few wallpapers!&lt;/p&gt;
 
-&lt;video autoplay=&quot;autoplay&quot; muted=&quot;&quot; loop=&quot;loop&quot; poster=&quot;/assets/img/art/Bug/BugWallpaper2.png&quot; width=&quot;560px&quot;&gt;
+&lt;video autoplay=&quot;autoplay&quot; muted=&quot;&quot; loop=&quot;loop&quot; width=&quot;580px&quot; poster=&quot;/assets/img/art/Bug/BugWallpaper2.png&quot;&gt;
   &lt;source src=&quot;/assets/img/art/Bug/BugAnimation.webm&quot; type=&quot;video/webm&quot; /&gt;
   &lt;source src=&quot;/assets/img/art/Bug/BugAnimation.mp4&quot; type=&quot;video/mp4&quot; /&gt;
 &lt;/video&gt;
@@ -993,28 +993,28 @@ Close your eyes but be guided by the hand.&lt;/p&gt;
 
 &lt;p&gt;&lt;em&gt;Disclaimer: SS3D is a top down game but the camera here is zoomed in to show more detail. Also the airlocks here are NOT our most up-to-date version so ignore the obvious mistakes in them (see the models section below for the current version). And finally gravity is not implemented for the player yet, so just pretend you don’t notice the player floating in this first clip.&lt;/em&gt;&lt;/p&gt;
 
-&lt;video autoplay=&quot;autoplay&quot; muted=&quot;&quot; loop=&quot;loop&quot; poster=&quot;/assets/img/posts/19.11.01/NonanonInventory1.png&quot;&gt;
+&lt;video autoplay=&quot;autoplay&quot; muted=&quot;&quot; loop=&quot;loop&quot; width=&quot;580px&quot; poster=&quot;/assets/img/posts/19.11.01/NonanonInventory1.png&quot;&gt;
   &lt;source src=&quot;/assets/img/posts/19.11.01/NonanonInventory1.webm&quot; type=&quot;video/webm&quot; /&gt;
   &lt;source src=&quot;/assets/img/posts/19.11.01/NonanonInventory1.mp4&quot; type=&quot;video/mp4&quot; /&gt;
 &lt;/video&gt;
 
 &lt;p&gt;Moving items around in inventories can be done via clicking your desired location or by clicking and then dragging your item to the location you want to move it. Players currently have access to all body slots (balance things on your head or embed them in your torso), but clothing slots (belts, pockets, suits, ect.) are yet to be implemented. Items and item slots have rudimentary restrictions so that you can’t equip meson goggles to your feet, for example, and slots will highlight if they are compatible with the item being equipped.&lt;/p&gt;
 
-&lt;video autoplay=&quot;autoplay&quot; muted=&quot;&quot; loop=&quot;loop&quot; poster=&quot;/assets/img/posts/19.11.01/NonanonInventory2.png&quot;&gt;
+&lt;video autoplay=&quot;autoplay&quot; muted=&quot;&quot; loop=&quot;loop&quot; width=&quot;580px&quot; poster=&quot;/assets/img/posts/19.11.01/NonanonInventory2.png&quot;&gt;
   &lt;source src=&quot;/assets/img/posts/19.11.01/NonanonInventory2.webm&quot; type=&quot;video/webm&quot; /&gt;
   &lt;source src=&quot;/assets/img/posts/19.11.01/NonanonInventory2.mp4&quot; type=&quot;video/mp4&quot; /&gt;
 &lt;/video&gt;
 
 &lt;p&gt;Players can open a container’s inventory from a certain distance away, and interact with it within that distance. The container’s inventory window is also moveable.&lt;/p&gt;
 
-&lt;video autoplay=&quot;autoplay&quot; muted=&quot;&quot; loop=&quot;loop&quot; poster=&quot;/assets/img/posts/19.11.01/NonanonInventory3.png&quot;&gt;
+&lt;video autoplay=&quot;autoplay&quot; muted=&quot;&quot; loop=&quot;loop&quot; width=&quot;580px&quot; poster=&quot;/assets/img/posts/19.11.01/NonanonInventory3.png&quot;&gt;
   &lt;source src=&quot;/assets/img/posts/19.11.01/NonanonInventory3.webm&quot; type=&quot;video/webm&quot; /&gt;
   &lt;source src=&quot;/assets/img/posts/19.11.01/NonanonInventory3.mp4&quot; type=&quot;video/mp4&quot; /&gt;
 &lt;/video&gt;
 
 &lt;p&gt;To top it all off, all is fully networked and tested.&lt;/p&gt;
 
-&lt;video autoplay=&quot;autoplay&quot; muted=&quot;&quot; loop=&quot;loop&quot; poster=&quot;/assets/img/posts/19.11.01/NonanonInventory4.png&quot;&gt;
+&lt;video autoplay=&quot;autoplay&quot; muted=&quot;&quot; loop=&quot;loop&quot; width=&quot;580px&quot; poster=&quot;/assets/img/posts/19.11.01/NonanonInventory4.png&quot;&gt;
   &lt;source src=&quot;/assets/img/posts/19.11.01/NonanonInventory4.webm&quot; type=&quot;video/webm&quot; /&gt;
   &lt;source src=&quot;/assets/img/posts/19.11.01/NonanonInventory4.mp4&quot; type=&quot;video/mp4&quot; /&gt;
 &lt;/video&gt;
@@ -1214,14 +1214,14 @@ Close your eyes but be guided by the hand.&lt;/p&gt;
 
 &lt;p&gt;Also, we have a jawline slider, now.&lt;/p&gt;
 
-&lt;video autoplay=&quot;autoplay&quot; muted=&quot;&quot; loop=&quot;loop&quot; poster=&quot;/assets/img/posts/19.10.01/EikoJawline.gif&quot;&gt;
+&lt;video autoplay=&quot;autoplay&quot; muted=&quot;&quot; loop=&quot;loop&quot; width=&quot;580px&quot; poster=&quot;/assets/img/posts/19.10.01/EikoJawline.gif&quot;&gt;
   &lt;source src=&quot;/assets/img/posts/19.10.01/EikoJawline.gif&quot; type=&quot;video/webm&quot; /&gt;
   &lt;source src=&quot;/assets/img/posts/19.10.01/EikoJawline.gif&quot; type=&quot;video/mp4&quot; /&gt;
 &lt;/video&gt;
 
 &lt;h2 id=&quot;z-dreams&quot;&gt;Z-Dreams&lt;/h2&gt;
 
-&lt;video autoplay=&quot;autoplay&quot; muted=&quot;&quot; loop=&quot;loop&quot; poster=&quot;/assets/img/posts/19.10.01/EikoZSwapThumbnail.PNG&quot;&gt;
+&lt;video autoplay=&quot;autoplay&quot; muted=&quot;&quot; loop=&quot;loop&quot; width=&quot;580px&quot; poster=&quot;/assets/img/posts/19.10.01/EikoZSwapThumbnail.PNG&quot;&gt;
   &lt;source src=&quot;/assets/img/posts/19.10.01/EikoZSwap.webm&quot; type=&quot;video/webm&quot; /&gt;
   &lt;source src=&quot;/assets/img/posts/19.10.01/EikoZSwap.mp4&quot; type=&quot;video/mp4&quot; /&gt;
 &lt;/video&gt;
@@ -1266,7 +1266,7 @@ Close your eyes but be guided by the hand.&lt;/p&gt;
 
 &lt;p&gt;While we don’t have networked dead players to show you at the moment, we’ve got a ghost model from &lt;strong&gt;Eiko&lt;/strong&gt; and concept stuff ranging from “adorably spooky” to “lovecraftian nightmare” from Honkette, which finds itself more than appropriate for the Spooktober setting.&lt;/p&gt;
 
-&lt;video autoplay=&quot;autoplay&quot; muted=&quot;&quot; loop=&quot;loop&quot; poster=&quot;/assets/img/posts/19.10.01/EikoGhostRotate.webm&quot;&gt;
+&lt;video autoplay=&quot;autoplay&quot; muted=&quot;&quot; loop=&quot;loop&quot; width=&quot;580px&quot; poster=&quot;/assets/img/posts/19.10.01/EikoGhostRotate.webm&quot;&gt;
   &lt;source src=&quot;/assets/img/posts/19.10.01/EikoGhostRotate.webm&quot; type=&quot;video/webm&quot; /&gt;
   &lt;source src=&quot;/assets/img/posts/19.10.01/EikoGhostRotate.mp4&quot; type=&quot;video/mp4&quot; /&gt;
 &lt;/video&gt;
@@ -1334,7 +1334,7 @@ Close your eyes but be guided by the hand.&lt;/p&gt;
 
 &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/19.10.01/EikoPoster.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/EikoPoster-580x435.png 580w,    /assets/resized/EikoPoster-290x218.png 290w,    /assets/resized/EikoPoster-170x128.png 170w,    /assets/resized/EikoPoster-145x109.png 145w, /assets/img/posts/19.10.01/EikoPoster.png 800w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
 
-&lt;video autoplay=&quot;autoplay&quot; muted=&quot;&quot; loop=&quot;loop&quot; poster=&quot;/assets/img/posts/19.10.01/EikoPAI.gif&quot;&gt;
+&lt;video autoplay=&quot;autoplay&quot; muted=&quot;&quot; loop=&quot;loop&quot; width=&quot;580px&quot; poster=&quot;/assets/img/posts/19.10.01/EikoPAI.gif&quot;&gt;
   &lt;source src=&quot;/assets/img/posts/19.10.01/EikoPAI.webm&quot; type=&quot;video/webm&quot; /&gt;
   &lt;source src=&quot;/assets/img/posts/19.10.01/EikoPAI.mp4&quot; type=&quot;video/mp4&quot; /&gt;
 &lt;/video&gt;
@@ -1407,7 +1407,7 @@ Close your eyes but be guided by the hand.&lt;/p&gt;
 &lt;h2 id=&quot;auditory-arts&quot;&gt;AUDITORY ARTS&lt;/h2&gt;
 
 &lt;p&gt;For reasons completely beyond me, our humble music section has found itself quite busy over the past month. Courtesy of &lt;strong&gt;Eiko&lt;/strong&gt;, here is this resulting product of musical dabbling:&lt;/p&gt;
-&lt;iframe class=&quot;video&quot; width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/WCPqPVdn-Oc&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+&lt;iframe class=&quot;video&quot; width=&quot;580px&quot; height=&quot;325px&quot; src=&quot;https://www.youtube.com/embed/WCPqPVdn-Oc&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
 
 &lt;h3 id=&quot;notes&quot;&gt;NOTES&lt;/h3&gt;
 
@@ -1425,7 +1425,7 @@ Since literally just asking nicely for programmers worked so effectively last ti
 &lt;h2 id=&quot;chatlog&quot;&gt;Chatlog&lt;/h2&gt;
 
 &lt;p&gt;Excellent WIP from &lt;strong&gt;Milly&lt;/strong&gt; this month; work has begun on a feature-rich chatlog. For all your communications-based multitasking woes, this chatlog is to support multiple tabs, windows, and filters for said windows and tabs. The video puts it better, however.&lt;/p&gt;
-&lt;video autoplay=&quot;autoplay&quot; muted=&quot;&quot; loop=&quot;loop&quot; poster=&quot;/assets/img/posts/19.09.01/MillyChatThumbnail.png&quot;&gt;
+&lt;video autoplay=&quot;autoplay&quot; muted=&quot;&quot; loop=&quot;loop&quot; poster=&quot;/assets/img/posts/19.09.01/MillyChatThumbnail.png&quot; width=&quot;580px&quot;&gt;
   &lt;source src=&quot;/assets/img/posts/19.09.01/MillyChatWIPSept.webm&quot; type=&quot;video/webm&quot; /&gt;
   &lt;source src=&quot;/assets/img/posts/19.09.01/MillyChatWIPSept.mp4&quot; type=&quot;video/mp4&quot; /&gt;
 &lt;/video&gt;
@@ -1433,11 +1433,11 @@ Since literally just asking nicely for programmers worked so effectively last ti
 &lt;h2 id=&quot;moving-and-shooting&quot;&gt;Moving and Shooting&lt;/h2&gt;
 
 &lt;p&gt;From &lt;strong&gt;LightVelox&lt;/strong&gt; this month, early implementation of strafe-based movement and an aiming system. This will obviously end up being the base for the shooting system moving forward.&lt;/p&gt;
-&lt;video autoplay=&quot;autoplay&quot; muted=&quot;&quot; loop=&quot;loop&quot; poster=&quot;/assets/img/posts/19.09.01/LightVeloxThumbnail.png&quot;&gt;
+&lt;video autoplay=&quot;autoplay&quot; muted=&quot;&quot; loop=&quot;loop&quot; poster=&quot;/assets/img/posts/19.09.01/LightVeloxThumbnail.png&quot; width=&quot;580px&quot;&gt;
   &lt;source src=&quot;/assets/img/posts/19.09.01/LightVeloxSidewalk.webm&quot; type=&quot;video/webm&quot; /&gt;
   &lt;source src=&quot;/assets/img/posts/19.09.01/LightVeloxSidewalk.mp4&quot; type=&quot;video/mp4&quot; /&gt;
 &lt;/video&gt;
-&lt;video autoplay=&quot;autoplay&quot; muted=&quot;&quot; loop=&quot;loop&quot; poster=&quot;/assets/img/posts/19.09.01/LightVeloxThumbnail.png&quot;&gt;
+&lt;video autoplay=&quot;autoplay&quot; muted=&quot;&quot; loop=&quot;loop&quot; poster=&quot;/assets/img/posts/19.09.01/LightVeloxThumbnail.png&quot; width=&quot;580px&quot;&gt;
   &lt;source src=&quot;/assets/img/posts/19.09.01/LightVeloxSidewalkShoot.webm&quot; type=&quot;video/webm&quot; /&gt;
   &lt;source src=&quot;/assets/img/posts/19.09.01/LightVeloxSidewalkShoot.mp4&quot; type=&quot;video/mp4&quot; /&gt;
 &lt;/video&gt;
@@ -1525,7 +1525,7 @@ Come visit us on &lt;a href=&quot;https://discord.gg/3ny9tdH&quot; target=&quot;
 
 &lt;p&gt;It doesn’t feel right to put this one anywhere besides the top.&lt;/p&gt;
 
-&lt;iframe class=&quot;video&quot; width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube-nocookie.com/embed/kb7lTMorbWo&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+&lt;iframe class=&quot;video&quot; width=&quot;580px&quot; height=&quot;272px&quot; src=&quot;https://www.youtube-nocookie.com/embed/ZlWGkLT2kRo&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
 
 &lt;p&gt;New teaser video courtesy of &lt;strong&gt;Grimmie&lt;/strong&gt;. Please share it with your programmer friends and tell them to come help us build the project. Technically an older piece from when this project was younger.&lt;/p&gt;
 
@@ -1533,7 +1533,7 @@ Come visit us on &lt;a href=&quot;https://discord.gg/3ny9tdH&quot; target=&quot;
 
 &lt;p&gt;Specifically the cause for our this month’s scrapping, the networking solution that we were using before took an absurdly long amount of time to compile, which was awful for every obvious reason. We rebuilt using Mirror for our networking, and have since pretty much surpassed where we were before.&lt;/p&gt;
 
-&lt;video autoplay=&quot;autoplay&quot; muted=&quot;&quot; loop=&quot;loop&quot; poster=&quot;/assets/img/posts/19.08.01/AugustNetworkingThumbnail.png&quot;&gt;
+&lt;video autoplay=&quot;autoplay&quot; muted=&quot;&quot; loop=&quot;loop&quot; width=&quot;580px&quot; poster=&quot;/assets/img/posts/19.08.01/AugustNetworkingThumbnail.png&quot;&gt;
   &lt;source src=&quot;/assets/img/posts/19.08.01/AugustNetworking.webm&quot; type=&quot;video/webm&quot; /&gt;
   &lt;source src=&quot;/assets/img/posts/19.08.01/AugustNetworking.mp4&quot; type=&quot;video/mp4&quot; /&gt;
 &lt;/video&gt;
@@ -1550,12 +1550,12 @@ Come visit us on &lt;a href=&quot;https://discord.gg/3ny9tdH&quot; target=&quot;
 
 &lt;p&gt;Once again from &lt;strong&gt;Milly&lt;/strong&gt;, some brand new WIP FoV, displayed here, akin to the prior-designed FoV, but better.&lt;/p&gt;
 
-&lt;video autoplay=&quot;autoplay&quot; muted=&quot;&quot; loop=&quot;loop&quot; poster=&quot;/assets/img/posts/19.08.01/AugustFoVTest.png&quot;&gt;
+&lt;video autoplay=&quot;autoplay&quot; muted=&quot;&quot; loop=&quot;loop&quot; width=&quot;580px&quot; poster=&quot;/assets/img/posts/19.08.01/AugustFoVTest.png&quot;&gt;
   &lt;source src=&quot;/assets/img/posts/19.08.01/AugustFoVTest.webm&quot; type=&quot;video/webm&quot; /&gt;
   &lt;source src=&quot;/assets/img/posts/19.08.01/AugustFoVTest.mp4&quot; type=&quot;video/mp4&quot; /&gt;
 &lt;/video&gt;
 
-&lt;video autoplay=&quot;autoplay&quot; muted=&quot;&quot; loop=&quot;loop&quot; poster=&quot;/assets/img/posts/19.08.01/AugustFoVStation.png&quot;&gt;
+&lt;video autoplay=&quot;autoplay&quot; muted=&quot;&quot; loop=&quot;loop&quot; width=&quot;580px&quot; poster=&quot;/assets/img/posts/19.08.01/AugustFoVStation.png&quot;&gt;
   &lt;source src=&quot;/assets/img/posts/19.08.01/AugustFoVStation.webm&quot; type=&quot;video/webm&quot; /&gt;
   &lt;source src=&quot;/assets/img/posts/19.08.01/AugustFoVStation.mp4&quot; type=&quot;video/mp4&quot; /&gt;
 &lt;/video&gt;
@@ -1564,7 +1564,7 @@ Come visit us on &lt;a href=&quot;https://discord.gg/3ny9tdH&quot; target=&quot;
 
 &lt;p&gt;Also from &lt;strong&gt;Milly&lt;/strong&gt; this month, WIP player inventory management:&lt;/p&gt;
 
-&lt;video autoplay=&quot;autoplay&quot; muted=&quot;&quot; loop=&quot;loop&quot; poster=&quot;/assets/img/posts/19.08.01/AugustNetworkingThumbnail.png&quot;&gt;
+&lt;video autoplay=&quot;autoplay&quot; muted=&quot;&quot; loop=&quot;loop&quot; width=&quot;580px&quot; poster=&quot;/assets/img/posts/19.08.01/AugustNetworkingThumbnail.png&quot;&gt;
   &lt;source src=&quot;/assets/img/posts/19.08.01/AugustItems.webm&quot; type=&quot;video/webm&quot; /&gt;
   &lt;source src=&quot;/assets/img/posts/19.08.01/AugustItems.mp4&quot; type=&quot;video/mp4&quot; /&gt;
 &lt;/video&gt;

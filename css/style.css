@@ -315,26 +315,27 @@ header {
       height: 112px; } }
 
 nav, nav ul {
-  width: calc(100vw - 69px);
-  height: 50px; }
+  width: 100vw;
+  height: 50px;
+  border-radius: 0px; }
   @media (min-width: 624px) {
     nav, nav ul {
-      width: 580px; } }
+      width: 600px; } }
 
 .nav-background {
   width: 100%;
   background-color: #1e4684;
   background-color: var(--color-navbar);
-  height: 50px; }
-  @media (min-width: 624px) {
-    .nav-background {
-      text-align: center; } }
+  height: 50px;
+  border-radius: 0px;
+  text-align: center; }
 
 nav {
   display: inline-block;
   overflow: hidden;
   position: relative; }
   nav .ul-container {
+    border-radius: 0px;
     line-height: 20px;
     overflow: scroll;
     position: absolute;
@@ -357,15 +358,24 @@ nav {
     white-space: nowrap; }
   nav li {
     display: inline-block;
-    margin-top: 16px; }
+    margin: 14px -3px; }
     nav li a {
+      border-radius: 0px;
       color: #ffffff;
       color: var(--color-navbar-text);
       text-align: center;
-      padding: 16px;
+      padding: 16px 12px;
       text-decoration: none;
       transition: background-color .17s ease,color .17s ease;
       font-size: 16px; }
+      @media (min-width: 624px) {
+        nav li a {
+          padding: 16px;
+          font-size: 17px; } }
+      @media (min-width: 1024px) {
+        nav li a {
+          padding: 16px 22px;
+          font-size: 18px; } }
       nav li a:hover {
         background-color: #111111;
         background-color: var(--color-navbar-hover);
@@ -511,7 +521,7 @@ nav {
       width: 44%;
       float: right; } }
   .post-row h2 {
-    margin-bottom: 0.325em; }
+    margin-top: 0.5em; }
     .post-row h2 a {
       text-decoration: underline; }
 
