@@ -1,4 +1,77 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://ss3d.space/feed.xml" rel="self" type="application/atom+xml" /><link href="https://ss3d.space/" rel="alternate" type="text/html" /><updated>2020-04-17T03:47:11+00:00</updated><id>https://ss3d.space/feed.xml</id><title type="html">RE:SS3D</title><subtitle>This is a 3D recreation of Space Station 13, on the Unity engine, which will come with its own set of gameplay/graphical improvements. </subtitle><entry><title type="html">20.03: March 2020 Devblog</title><link href="https://ss3d.space/2020/04/03/20.03.html" rel="alternate" type="text/html" title="20.03: March 2020 Devblog" /><published>2020-04-03T05:30:00+00:00</published><updated>2020-04-03T05:30:00+00:00</updated><id>https://ss3d.space/2020/04/03/20.03</id><content type="html" xml:base="https://ss3d.space/2020/04/03/20.03.html">&lt;p&gt;“Don’t forget what it was like before all this.”&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://ss3d.space/feed.xml" rel="self" type="application/atom+xml" /><link href="https://ss3d.space/" rel="alternate" type="text/html" /><updated>2020-05-05T01:19:57+00:00</updated><id>https://ss3d.space/feed.xml</id><title type="html">RE:SS3D</title><subtitle>This is a 3D recreation of Space Station 13, on the Unity engine, which will come with its own set of gameplay/graphical improvements. </subtitle><entry><title type="html">20.04: April 2020 Devblog</title><link href="https://ss3d.space/2020/05/04/20.04.html" rel="alternate" type="text/html" title="20.04: April 2020 Devblog" /><published>2020-05-04T05:30:00+00:00</published><updated>2020-05-04T05:30:00+00:00</updated><id>https://ss3d.space/2020/05/04/20.04</id><content type="html" xml:base="https://ss3d.space/2020/05/04/20.04.html">&lt;p&gt;&lt;em&gt;“They’ve outlawed the No. 1 vegetable on the planet.”&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;– Timothy Leary&lt;/p&gt;
+
+&lt;h1 id=&quot;april-recap&quot;&gt;April Recap&lt;/h1&gt;
+
+&lt;p&gt;We hope you all had a happy month of 4/20! Not a lot of progress this month due most of us being too high to leave our homes regardless of the quarantines. Just kidding, some of us have just been busier recently, but we’re still here! We gotta thank all the new contributors who continue to show up each month, providing momentum for the project. Though there weren’t any major changes this month, there were several smaller fixes made by two new individuals.&lt;/p&gt;
+
+&lt;h2 id=&quot;fixes&quot;&gt;Fixes&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;TheLife&lt;/strong&gt; implemented a basic interaction distance for construction, to prevent the player from building at an infinite distance. The new distance is 1.5 meters/tiles. He also fixed some bugs allowing the player to construct various objects over other objects.&lt;/p&gt;
+
+&lt;video autoplay=&quot;autoplay&quot; muted=&quot;&quot; loop=&quot;loop&quot; poster=&quot;/assets/img/posts/20.04.01/TheLife_BuildDistance.png&quot; width=&quot;580px&quot;&gt;
+  &lt;source src=&quot;/assets/img/posts/20.04.01/TheLife_BuildDistance.webm&quot; type=&quot;video/webm&quot; /&gt;
+  &lt;source src=&quot;/assets/img/posts/20.04.01/TheLife_BuildDistance.mp4&quot; type=&quot;video/mp4&quot; /&gt;
+&lt;/video&gt;
+
+&lt;p&gt;&lt;strong&gt;PhantomFears&lt;/strong&gt; repaired an issue in our scene where most of our tiles were offset by the slightest amount (0.01), and while he was at it, fixed our broken round timer.&lt;/p&gt;
+
+&lt;h2 id=&quot;textures&quot;&gt;Textures&lt;/h2&gt;
+
+&lt;p&gt;This month, &lt;strong&gt;Eiko&lt;/strong&gt; decided to make some more console screen animations. The far left one (&lt;a href=&quot;/assets/img/posts/20.04.01/crew_monitor.mp4&quot; target=&quot;_blank&quot;&gt;crew monitor&lt;/a&gt;) was his first one which was made many moons ago. The next 4 (&lt;a href=&quot;/assets/img/posts/20.04.01/cargo_1.mp4&quot; target=&quot;_blank&quot;&gt;supply&lt;/a&gt;, &lt;a href=&quot;/assets/img/posts/20.04.01/slime.mp4&quot; target=&quot;_blank&quot;&gt;slime management&lt;/a&gt;, &lt;a href=&quot;/assets/img/posts/20.04.01/cloning.mp4&quot; target=&quot;_blank&quot;&gt;cloning&lt;/a&gt;, and &lt;a href=&quot;/assets/img/posts/20.04.01/security_records.mp4&quot; target=&quot;_blank&quot;&gt;security records&lt;/a&gt;) are his new ones this month. The final console (&lt;a href=&quot;/assets/img/posts/20.04.01/cmd.mp4&quot; target=&quot;_blank&quot;&gt;cmd&lt;/a&gt;) was made by &lt;strong&gt;Goao&lt;/strong&gt; along with the touchpad displays on each of the consoles.&lt;/p&gt;
+
+&lt;video autoplay=&quot;autoplay&quot; muted=&quot;&quot; loop=&quot;loop&quot; poster=&quot;/assets/img/posts/20.04.01/Consoles.png&quot; width=&quot;580px&quot;&gt;
+  &lt;source src=&quot;/assets/img/posts/20.04.01/Consoles.webm&quot; type=&quot;video/webm&quot; /&gt;
+  &lt;source src=&quot;/assets/img/posts/20.04.01/Consoles.mp4&quot; type=&quot;video/mp4&quot; /&gt;
+&lt;/video&gt;
+
+&lt;p&gt;Also from &lt;strong&gt;Eiko&lt;/strong&gt;, a &lt;a href=&quot;/assets/img/posts/20.04.01/pirate_blanket.png&quot; target=&quot;_blank&quot;&gt;pirate blanket texture&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;models&quot;&gt;Models&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;Basecode&lt;/strong&gt; is back, providing a deep-fryer, request console, illuminated floors, shuttle floors &amp;amp; windows, and a redesign of our old shuttle engine and compressor. Besides making these new models, he also helped a lot this month cleaning &amp;amp; fixing older models to get them up-to-date, including a bit of organizing.&lt;/p&gt;
+
+&lt;div class=&quot;horizontal-3&quot;&gt;
+
+  &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/20.04.01/Basecode_DeepFryer.png&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/Basecode_DeepFryer-580x435.png 580w,    /assets/resized/Basecode_DeepFryer-290x218.png 290w,    /assets/resized/Basecode_DeepFryer-170x128.png 170w,    /assets/resized/Basecode_DeepFryer-145x109.png 145w, /assets/img/posts/20.04.01/Basecode_DeepFryer.png 800w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+
+  &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/20.04.01/Basecode_RequestConsole.png&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/Basecode_RequestConsole-580x435.png 580w,    /assets/resized/Basecode_RequestConsole-290x218.png 290w,    /assets/resized/Basecode_RequestConsole-170x128.png 170w,    /assets/resized/Basecode_RequestConsole-145x109.png 145w, /assets/img/posts/20.04.01/Basecode_RequestConsole.png 800w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+
+  &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/20.04.01/Basecode_LightTile.png&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/Basecode_LightTile-580x435.png 580w,    /assets/resized/Basecode_LightTile-290x218.png 290w,    /assets/resized/Basecode_LightTile-170x128.png 170w,    /assets/resized/Basecode_LightTile-145x109.png 145w, /assets/img/posts/20.04.01/Basecode_LightTile.png 800w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;horizontal-3&quot;&gt;
+
+  &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/20.04.01/Basecode_ShuttleFloors.png&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/Basecode_ShuttleFloors-580x435.png 580w,    /assets/resized/Basecode_ShuttleFloors-290x218.png 290w,    /assets/resized/Basecode_ShuttleFloors-170x128.png 170w,    /assets/resized/Basecode_ShuttleFloors-145x109.png 145w, /assets/img/posts/20.04.01/Basecode_ShuttleFloors.png 800w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+
+  &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/20.04.01/Basecode_Windows_LightShuttle.png&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/Basecode_Windows_LightShuttle-580x435.png 580w,    /assets/resized/Basecode_Windows_LightShuttle-290x218.png 290w,    /assets/resized/Basecode_Windows_LightShuttle-170x128.png 170w,    /assets/resized/Basecode_Windows_LightShuttle-145x109.png 145w, /assets/img/posts/20.04.01/Basecode_Windows_LightShuttle.png 800w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+
+  &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/20.04.01/Basecode_ShuttleEngine.png&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/Basecode_ShuttleEngine-580x435.png 580w,    /assets/resized/Basecode_ShuttleEngine-290x218.png 290w,    /assets/resized/Basecode_ShuttleEngine-170x128.png 170w,    /assets/resized/Basecode_ShuttleEngine-145x109.png 145w, /assets/img/posts/20.04.01/Basecode_ShuttleEngine.png 800w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;Goao&lt;/strong&gt; also made the robotic corgi, I.A.N.&lt;/p&gt;
+
+&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/20.04.01/John_RoboCorgi.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/John_RoboCorgi-580x435.png 580w,    /assets/resized/John_RoboCorgi-290x218.png 290w,    /assets/resized/John_RoboCorgi-170x128.png 170w,    /assets/resized/John_RoboCorgi-145x109.png 145w, /assets/img/posts/20.04.01/John_RoboCorgi.png 800w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;Bug&lt;/strong&gt; made this gnarly gas mask.&lt;/p&gt;
+
+&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/20.04.01/Bug_Gasmask.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/Bug_Gasmask-580x435.png 580w,    /assets/resized/Bug_Gasmask-290x218.png 290w,    /assets/resized/Bug_Gasmask-170x128.png 170w,    /assets/resized/Bug_Gasmask-145x109.png 145w, /assets/img/posts/20.04.01/Bug_Gasmask.png 800w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;art&quot;&gt;Art&lt;/h2&gt;
+
+&lt;p&gt;I imagine that many of you can relate to &lt;strong&gt;Bug’s&lt;/strong&gt; artwork this month!&lt;/p&gt;
+
+&lt;video autoplay=&quot;autoplay&quot; muted=&quot;&quot; loop=&quot;loop&quot; poster=&quot;/assets/img/art/Bug/Bug_420Hydro.png&quot; width=&quot;580px&quot;&gt;
+  &lt;source src=&quot;/assets/img/art/Bug/Bug_420Hydro.webm&quot; type=&quot;video/webm&quot; /&gt;
+  &lt;source src=&quot;/assets/img/art/Bug/Bug_420Hydro.mp4&quot; type=&quot;video/mp4&quot; /&gt;
+&lt;/video&gt;
+
+&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/art/Bug/Bug_420Hydro.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/Bug_420Hydro-580x326.png 580w,    /assets/resized/Bug_420Hydro-290x163.png 290w,    /assets/resized/Bug_420Hydro-170x96.png 170w,    /assets/resized/Bug_420Hydro-145x82.png 145w, /assets/img/art/Bug/Bug_420Hydro.png 1920w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;notes&quot;&gt;Notes&lt;/h3&gt;
+
+&lt;p&gt;If you haven’t already, come join our &lt;a href=&quot;https://discord.gg/3ny9tdH&quot; target=&quot;_blank&quot;&gt;discord&lt;/a&gt; to get a greater insight on our development!&lt;/p&gt;</content><author><name></name></author><summary type="html">“They’ve outlawed the No. 1 vegetable on the planet.”</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://ss3d.space/assets/img/art/Bug/Bug_420Hydro.png" /></entry><entry><title type="html">20.03: March 2020 Devblog</title><link href="https://ss3d.space/2020/04/03/20.03.html" rel="alternate" type="text/html" title="20.03: March 2020 Devblog" /><published>2020-04-03T05:30:00+00:00</published><updated>2020-04-03T05:30:00+00:00</updated><id>https://ss3d.space/2020/04/03/20.03</id><content type="html" xml:base="https://ss3d.space/2020/04/03/20.03.html">&lt;p&gt;Don’t forget what it was like before all this.&lt;/p&gt;
 
 &lt;h1 id=&quot;march-recap&quot;&gt;March Recap&lt;/h1&gt;
 
@@ -475,7 +548,7 @@
 
 &lt;h3 id=&quot;notes&quot;&gt;Notes&lt;/h3&gt;
 
-&lt;p&gt;Obligatory, join our &lt;a href=&quot;https://discord.gg/3ny9tdH&quot; target=&quot;_blank&quot;&gt;discord&lt;/a&gt;.&lt;/p&gt;</content><author><name></name></author><summary type="html">“Don’t forget what it was like before all this.”</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://ss3d.space/assets/img/art/Bug/BugPandemic.png" /></entry><entry><title type="html">20.02: February 2020 Devblog</title><link href="https://ss3d.space/2020/03/02/20.02.html" rel="alternate" type="text/html" title="20.02: February 2020 Devblog" /><published>2020-03-02T23:30:00+00:00</published><updated>2020-03-02T23:30:00+00:00</updated><id>https://ss3d.space/2020/03/02/20.02</id><content type="html" xml:base="https://ss3d.space/2020/03/02/20.02.html">&lt;p&gt;“Slow, steady, and humble, we shall not stumble.”&lt;/p&gt;
+&lt;p&gt;Obligatory, join our &lt;a href=&quot;https://discord.gg/3ny9tdH&quot; target=&quot;_blank&quot;&gt;discord&lt;/a&gt;.&lt;/p&gt;</content><author><name></name></author><summary type="html">Don’t forget what it was like before all this.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://ss3d.space/assets/img/art/Bug/BugPandemic.png" /></entry><entry><title type="html">20.02: February 2020 Devblog</title><link href="https://ss3d.space/2020/03/02/20.02.html" rel="alternate" type="text/html" title="20.02: February 2020 Devblog" /><published>2020-03-02T23:30:00+00:00</published><updated>2020-03-02T23:30:00+00:00</updated><id>https://ss3d.space/2020/03/02/20.02</id><content type="html" xml:base="https://ss3d.space/2020/03/02/20.02.html">&lt;p&gt;Slow, steady, and humble, we shall not stumble.&lt;/p&gt;
 
 &lt;h1 id=&quot;february-recap&quot;&gt;February Recap&lt;/h1&gt;
 
@@ -633,7 +706,7 @@
 
 &lt;p&gt;As mentioned above, we have continued working hard on updating documentation, not just on our website, but also on our other sites, to help make the contribution process easier for everyone.&lt;/p&gt;
 
-&lt;p&gt;Well, that wraps up another month here at RE:SS3D, if you are curious about more content from us, or want to contribute to the project yourself, come visit our &lt;a href=&quot;https://discord.gg/3ny9tdH&quot; target=&quot;_blank&quot;&gt;discord&lt;/a&gt;!&lt;/p&gt;</content><author><name></name></author><summary type="html">“Slow, steady, and humble, we shall not stumble.”</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://ss3d.space/assets/img/art/Bug/BugSpaceJunk.png" /></entry><entry><title type="html">20.01: January 2020 Devblog</title><link href="https://ss3d.space/2020/02/03/20.01.html" rel="alternate" type="text/html" title="20.01: January 2020 Devblog" /><published>2020-02-03T14:30:00+00:00</published><updated>2020-02-03T14:30:00+00:00</updated><id>https://ss3d.space/2020/02/03/20.01</id><content type="html" xml:base="https://ss3d.space/2020/02/03/20.01.html">&lt;p&gt;“A new month, a new year, a new decade, a new hope.”&lt;/p&gt;
+&lt;p&gt;Well, that wraps up another month here at RE:SS3D, if you are curious about more content from us, or want to contribute to the project yourself, come visit our &lt;a href=&quot;https://discord.gg/3ny9tdH&quot; target=&quot;_blank&quot;&gt;discord&lt;/a&gt;!&lt;/p&gt;</content><author><name></name></author><summary type="html">Slow, steady, and humble, we shall not stumble.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://ss3d.space/assets/img/art/Bug/BugSpaceJunk.png" /></entry><entry><title type="html">20.01: January 2020 Devblog</title><link href="https://ss3d.space/2020/02/03/20.01.html" rel="alternate" type="text/html" title="20.01: January 2020 Devblog" /><published>2020-02-03T14:30:00+00:00</published><updated>2020-02-03T14:30:00+00:00</updated><id>https://ss3d.space/2020/02/03/20.01</id><content type="html" xml:base="https://ss3d.space/2020/02/03/20.01.html">&lt;p&gt;A new month, a new year, a new decade, a new hope.&lt;/p&gt;
 
 &lt;h1 id=&quot;january-recap&quot;&gt;January Recap&lt;/h1&gt;
 
@@ -832,9 +905,9 @@
 
 &lt;p&gt;Also, in the past, we have showcased work in these blogs that was never submitted in one form or another. This has resulted in us not actually having some ‘progress’ despite us having previously displaying it in a blog post. From here on, we intend to only show progress that has been submitted and accepted to the project in our blog posts. More wip content can be found on our reddit and discord.&lt;/p&gt;
 
-&lt;p&gt;For more information on these recent changes, our progress, or how to contribute, come say hello in our &lt;a href=&quot;https://discord.gg/3ny9tdH&quot; target=&quot;_blank&quot;&gt;discord&lt;/a&gt;!&lt;/p&gt;</content><author><name></name></author><summary type="html">“A new month, a new year, a new decade, a new hope.”</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://ss3d.space/assets/img/art/Bug/BugHydroponics.png" /></entry><entry><title type="html">19.12: December 2019 Devblog</title><link href="https://ss3d.space/2020/01/10/19.12.html" rel="alternate" type="text/html" title="19.12: December 2019 Devblog" /><published>2020-01-10T14:30:00+00:00</published><updated>2020-01-10T14:30:00+00:00</updated><id>https://ss3d.space/2020/01/10/19.12</id><content type="html" xml:base="https://ss3d.space/2020/01/10/19.12.html">&lt;p&gt;“A good system shortens the road to the goal.”&lt;/p&gt;
+&lt;p&gt;For more information on these recent changes, our progress, or how to contribute, come say hello in our &lt;a href=&quot;https://discord.gg/3ny9tdH&quot; target=&quot;_blank&quot;&gt;discord&lt;/a&gt;!&lt;/p&gt;</content><author><name></name></author><summary type="html">A new month, a new year, a new decade, a new hope.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://ss3d.space/assets/img/art/Bug/BugHydroponics.png" /></entry><entry><title type="html">19.12: December 2019 Devblog</title><link href="https://ss3d.space/2020/01/10/19.12.html" rel="alternate" type="text/html" title="19.12: December 2019 Devblog" /><published>2020-01-10T14:30:00+00:00</published><updated>2020-01-10T14:30:00+00:00</updated><id>https://ss3d.space/2020/01/10/19.12</id><content type="html" xml:base="https://ss3d.space/2020/01/10/19.12.html">&lt;p&gt;&lt;em&gt;“A good system shortens the road to the goal.”&lt;/em&gt;&lt;/p&gt;
 
-&lt;p&gt;-Orison Swett Marden&lt;/p&gt;
+&lt;p&gt;– Orison Swett Marden&lt;/p&gt;
 
 &lt;h1 id=&quot;december-recap&quot;&gt;December Recap&lt;/h1&gt;
 
@@ -1878,135 +1951,4 @@ Here we have two examples of shapekey use: player eye states, and hair/headpiece
 &lt;p&gt;Special thanks to &lt;strong&gt;Eiko&lt;/strong&gt; this month, who did half my job for me while I tried not to writhe in pain.&lt;/p&gt;
 
 &lt;p&gt;This is our monthly devblog, standing as proof that we’re still here, even if I’m not.
-Come visit us on &lt;a href=&quot;https://discord.gg/3ny9tdH&quot; target=&quot;_blank&quot;&gt;Discord&lt;/a&gt; and get a special toolbox welcoming gift.&lt;/p&gt;</content><author><name></name></author><summary type="html">Models, models, models models…</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://ss3d.space/assets/img/art/Eiko/EikoPromoGibber.png" /></entry><entry><title type="html">19.06: June 2019 Devblog</title><link href="https://ss3d.space/2019/07/04/19.06.html" rel="alternate" type="text/html" title="19.06: June 2019 Devblog" /><published>2019-07-04T14:30:00+00:00</published><updated>2019-07-04T14:30:00+00:00</updated><id>https://ss3d.space/2019/07/04/19.06</id><content type="html" xml:base="https://ss3d.space/2019/07/04/19.06.html">&lt;p&gt;A new face appears. An old face vanishes. Gears start to turn again.&lt;/p&gt;
-
-&lt;h1 id=&quot;june-recap&quot;&gt;June Recap&lt;/h1&gt;
-
-&lt;h2 id=&quot;newer-taller-more-modular-walls&quot;&gt;NEWER, TALLER, MORE MODULAR WALLS&lt;/h2&gt;
-
-&lt;p&gt;Foreground is example of old walls, background is example of new walls.&lt;/p&gt;
-
-&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/19.06.01/EikoOldWallsNewWalls.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/EikoOldWallsNewWalls-580x422.png 580w,    /assets/resized/EikoOldWallsNewWalls-290x211.png 290w,    /assets/resized/EikoOldWallsNewWalls-170x124.png 170w,    /assets/resized/EikoOldWallsNewWalls-145x106.png 145w, /assets/img/posts/19.06.01/EikoOldWallsNewWalls.png 960w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-
-&lt;p&gt;Now, these taller walls &lt;em&gt;may or may not&lt;/em&gt; be the first step down a slippery slope that might land us in a place with vertical orientation, and they are overall possibly still very much subject to change, but they solve some problems with how certain especially larger entities will navigate the station. Their careful construction as a joint project between &lt;strong&gt;PlayerOne&lt;/strong&gt; and our newly ordained Eiko has ensured their flexibility to function as proper building blocks of any station design.&lt;/p&gt;
-
-&lt;p&gt;The flexibility is enough to produce  some curiously revolting structures, were an individual motivated enough to make some:&lt;/p&gt;
-
-&lt;div class=&quot;horizontal-2&quot;&gt;
-
-  &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/19.06.01/EikoRevoltingStructures1.png&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/EikoRevoltingStructures1-290x204.png 290w,    /assets/resized/EikoRevoltingStructures1-170x119.png 170w,    /assets/resized/EikoRevoltingStructures1-145x102.png 145w, /assets/img/posts/19.06.01/EikoRevoltingStructures1.png 579w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-
-  &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/19.06.01/EikoRevoltingStructures2.png&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/EikoRevoltingStructures2-290x204.png 290w,    /assets/resized/EikoRevoltingStructures2-170x119.png 170w,    /assets/resized/EikoRevoltingStructures2-145x102.png 145w, /assets/img/posts/19.06.01/EikoRevoltingStructures2.png 579w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;horizontal-2&quot;&gt;
-
-  &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/19.06.01/EikoRevoltingStructures3.png&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/EikoRevoltingStructures3-290x204.png 290w,    /assets/resized/EikoRevoltingStructures3-170x119.png 170w,    /assets/resized/EikoRevoltingStructures3-145x102.png 145w, /assets/img/posts/19.06.01/EikoRevoltingStructures3.png 579w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-
-  &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/19.06.01/EikoRevoltingStructures4.png&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/EikoRevoltingStructures4-290x204.png 290w,    /assets/resized/EikoRevoltingStructures4-170x119.png 170w,    /assets/resized/EikoRevoltingStructures4-145x102.png 145w, /assets/img/posts/19.06.01/EikoRevoltingStructures4.png 579w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;h2 id=&quot;limbs&quot;&gt;LIMBS&lt;/h2&gt;
-
-&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/19.06.01/Limbs.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/Limbs-290x336.png 290w,    /assets/resized/Limbs-170x197.png 170w,    /assets/resized/Limbs-145x168.png 145w, /assets/img/posts/19.06.01/Limbs.png 499w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-
-&lt;p&gt;Though the cartoony style of our spessman might be deceiving, RE:SS3D is still based off of SS13, and as such, spessmen will be expected to inevitably die in incredibly brutal ways. Chopped limbs and cauterized wounds have been designed and do well to fit that perfect balance between being cartoony and appropriately depicting the horribly injury they are intended to represent.&lt;/p&gt;
-
-&lt;div class=&quot;horizontal-2&quot;&gt;
-
-  &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/19.06.01/Severed.png&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/Severed-580x436.png 580w,    /assets/resized/Severed-290x218.png 290w,    /assets/resized/Severed-170x128.png 170w,    /assets/resized/Severed-145x109.png 145w, /assets/img/posts/19.06.01/Severed.png 595w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-
-  &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/19.06.01/Cauterized.png&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/Cauterized-580x436.png 580w,    /assets/resized/Cauterized-290x218.png 290w,    /assets/resized/Cauterized-170x128.png 170w,    /assets/resized/Cauterized-145x109.png 145w, /assets/img/posts/19.06.01/Cauterized.png 595w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;p&gt;Examples of severed and cauterized limbs, courtesy of &lt;strong&gt;Eiko&lt;/strong&gt;, who also made the &lt;a href=&quot;/assets/img/posts/19.06.01/SS3DDressCodeProblemSolving.PNG&quot; target=&quot;_blank&quot;&gt;definitely-violates-station-dresscode&lt;/a&gt; sundress pictured here.&lt;/p&gt;
-
-&lt;h2 id=&quot;skeletons&quot;&gt;SKELETONS&lt;/h2&gt;
-
-&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/19.06.01/SpookyScary.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/SpookyScary-580x582.png 580w,    /assets/resized/SpookyScary-290x291.png 290w,    /assets/resized/SpookyScary-170x171.png 170w,    /assets/resized/SpookyScary-145x146.png 145w, /assets/img/posts/19.06.01/SpookyScary.png 705w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-
-&lt;p&gt;Alongside our preparations for the dismemberment of our spessmen, we now also have a skeleton (again, courtesy of &lt;strong&gt;Eiko&lt;/strong&gt;.) For the skeleton enthusiasts out there, like myself, let me assure you that the male and female skeletons can be properly differentiated by an informed inspection of the hips. Structurally, they also fit perfectly inside the base human model, allowing for fun effects like the cartoony “electrocution X-ray.”&lt;/p&gt;
-
-&lt;h2 id=&quot;critters&quot;&gt;CRITTERS&lt;/h2&gt;
-
-&lt;p&gt;Three new critters join the station. Blame &lt;strong&gt;Eiko&lt;/strong&gt;. You’ll have to take my word for it when I say that they’re all adorably animated, though, because I’m not competent enough to display that properly right now.&lt;/p&gt;
-
-&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/19.06.01/EikoSpaceCarp.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/EikoSpaceCarp-580x435.png 580w,    /assets/resized/EikoSpaceCarp-290x218.png 290w,    /assets/resized/EikoSpaceCarp-170x128.png 170w,    /assets/resized/EikoSpaceCarp-145x109.png 145w, /assets/img/posts/19.06.01/EikoSpaceCarp.png 800w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-&lt;div class=&quot;horizontal-2&quot;&gt;
-
-  &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/19.06.01/EikoCockroach.png&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/EikoCockroach-580x435.png 580w,    /assets/resized/EikoCockroach-290x218.png 290w,    /assets/resized/EikoCockroach-170x128.png 170w,    /assets/resized/EikoCockroach-145x109.png 145w, /assets/img/posts/19.06.01/EikoCockroach.png 800w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-
-  &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/19.06.01/EikoLizard.png&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/EikoLizard-580x435.png 580w,    /assets/resized/EikoLizard-290x218.png 290w,    /assets/resized/EikoLizard-170x128.png 170w,    /assets/resized/EikoLizard-145x109.png 145w, /assets/img/posts/19.06.01/EikoLizard.png 800w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;h2 id=&quot;eye-candy&quot;&gt;EYE CANDY&lt;/h2&gt;
-
-&lt;p&gt;Various other models from &lt;strong&gt;Eiko&lt;/strong&gt; this month, beginning with a new update on door design to include panels, and ending with some various foodstuffs.&lt;/p&gt;
-
-&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/19.06.01/EikoDoorPanel.gif&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/assets/img/posts/19.06.01/EikoDoorPanel.gif&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-&lt;div class=&quot;horizontal-2&quot;&gt;
-
-  &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/19.06.01/EikoDeskLamp.png&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/EikoDeskLamp-580x435.png 580w,    /assets/resized/EikoDeskLamp-290x218.png 290w,    /assets/resized/EikoDeskLamp-170x128.png 170w,    /assets/resized/EikoDeskLamp-145x109.png 145w, /assets/img/posts/19.06.01/EikoDeskLamp.png 800w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-
-  &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/19.06.01/EikoHolopad.png&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/EikoHolopad-580x435.png 580w,    /assets/resized/EikoHolopad-290x218.png 290w,    /assets/resized/EikoHolopad-170x128.png 170w,    /assets/resized/EikoHolopad-145x109.png 145w, /assets/img/posts/19.06.01/EikoHolopad.png 800w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;horizontal-2&quot;&gt;
-
-  &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/19.06.01/EikoPianoAndStool.png&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/EikoPianoAndStool-580x435.png 580w,    /assets/resized/EikoPianoAndStool-290x218.png 290w,    /assets/resized/EikoPianoAndStool-170x128.png 170w,    /assets/resized/EikoPianoAndStool-145x109.png 145w, /assets/img/posts/19.06.01/EikoPianoAndStool.png 800w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-
-  &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/19.06.01/EikoPottedPlant.png&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/EikoPottedPlant-580x435.png 580w,    /assets/resized/EikoPottedPlant-290x218.png 290w,    /assets/resized/EikoPottedPlant-170x128.png 170w,    /assets/resized/EikoPottedPlant-145x109.png 145w, /assets/img/posts/19.06.01/EikoPottedPlant.png 800w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;horizontal-2&quot;&gt;
-
-  &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/19.06.01/EikoSpaceHeaterOff.png&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/EikoSpaceHeaterOff-580x435.png 580w,    /assets/resized/EikoSpaceHeaterOff-290x218.png 290w,    /assets/resized/EikoSpaceHeaterOff-170x128.png 170w,    /assets/resized/EikoSpaceHeaterOff-145x109.png 145w, /assets/img/posts/19.06.01/EikoSpaceHeaterOff.png 800w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-
-  &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/19.06.01/EikoTowel.png&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/EikoTowel-580x435.png 580w,    /assets/resized/EikoTowel-290x218.png 290w,    /assets/resized/EikoTowel-170x128.png 170w,    /assets/resized/EikoTowel-145x109.png 145w, /assets/img/posts/19.06.01/EikoTowel.png 800w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/19.06.01/EikoFoods.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/EikoFoods-580x292.png 580w,    /assets/resized/EikoFoods-290x146.png 290w,    /assets/resized/EikoFoods-170x85.png 170w,    /assets/resized/EikoFoods-145x73.png 145w, /assets/img/posts/19.06.01/EikoFoods.png 915w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-
-&lt;p&gt;Some splendid machinery and furniture brought to us by &lt;strong&gt;deBARBA&lt;/strong&gt;, some within some Sketchfab embeds. Click on the embeds, because they look way better than my lousy Blender screenshots, and the two machines have amazing animations.&lt;/p&gt;
-
-&lt;div class=&quot;sketchfab-embed-wrapper&quot;&gt;&lt;iframe width=&quot;600&quot; height=&quot;400&quot; src=&quot;https://sketchfab.com/models/a7f210103cf14821ac1a22624357cd18/embed?camera=0&quot; frameborder=&quot;0&quot; allow=&quot;autoplay; fullscreen; vr&quot; mozallowfullscreen=&quot;true&quot; webkitallowfullscreen=&quot;true&quot; style=&quot;width:100%&quot;&gt;&lt;/iframe&gt;
-  &lt;p style=&quot;font-size: 13px; font-weight: normal; margin: 5px; color: #4A4A4A;&quot;&gt;&lt;/p&gt;
-&lt;/div&gt;
-
-&lt;div class=&quot;horizontal-2-direct-children-desktop&quot;&gt;
-  &lt;div class=&quot;sketchfab-embed-wrapper&quot;&gt;
-    &lt;p&gt;
-      &lt;iframe width=&quot;320&quot; height=&quot;200&quot; src=&quot;https://sketchfab.com/models/35c1a18000e648019bf66803e9c49b98/embed&quot; frameborder=&quot;0&quot; allow=&quot;autoplay; fullscreen; vr&quot; mozallowfullscreen=&quot;true&quot; webkitallowfullscreen=&quot;true&quot; style=&quot;width:100%&quot;&gt;&lt;/iframe&gt;
-    &lt;/p&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;horizontal-2-direct-children-desktop&quot;&gt;
-  &lt;div class=&quot;sketchfab-embed-wrapper&quot;&gt;
-    &lt;p&gt;
-      &lt;iframe width=&quot;320&quot; height=&quot;200&quot; src=&quot;https://sketchfab.com/models/374d59cc92b440d089a9152cf07c6f50/embed&quot; frameborder=&quot;0&quot; allow=&quot;autoplay; fullscreen; vr&quot; mozallowfullscreen=&quot;true&quot; webkitallowfullscreen=&quot;true&quot; style=&quot;width:100%&quot;&gt;&lt;/iframe&gt;
-    &lt;/p&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-
-&lt;div class=&quot;horizontal-2&quot;&gt;
-
-  &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/19.06.01/deBARBAShuttleChair.png&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/deBARBAShuttleChair-580x435.png 580w,    /assets/resized/deBARBAShuttleChair-290x218.png 290w,    /assets/resized/deBARBAShuttleChair-170x128.png 170w,    /assets/resized/deBARBAShuttleChair-145x109.png 145w, /assets/img/posts/19.06.01/deBARBAShuttleChair.png 800w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-
-  &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/19.06.01/deBARBAStationBouncedRadio.png&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/deBARBAStationBouncedRadio-580x435.png 580w,    /assets/resized/deBARBAStationBouncedRadio-290x218.png 290w,    /assets/resized/deBARBAStationBouncedRadio-170x128.png 170w,    /assets/resized/deBARBAStationBouncedRadio-145x109.png 145w, /assets/img/posts/19.06.01/deBARBAStationBouncedRadio.png 800w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;p&gt;Capacitors, brought to us by &lt;strong&gt;Goao&lt;/strong&gt;, in standard, advanced, and super capacities.&lt;/p&gt;
-
-&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/19.06.01/goaoCapacitorSuper.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/goaoCapacitorSuper-580x435.png 580w,    /assets/resized/goaoCapacitorSuper-290x218.png 290w,    /assets/resized/goaoCapacitorSuper-170x128.png 170w,    /assets/resized/goaoCapacitorSuper-145x109.png 145w, /assets/img/posts/19.06.01/goaoCapacitorSuper.png 800w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-
-&lt;div class=&quot;horizontal-2&quot;&gt;
-
-  &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/19.06.01/goaoCapacitor.png&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/goaoCapacitor-580x435.png 580w,    /assets/resized/goaoCapacitor-290x218.png 290w,    /assets/resized/goaoCapacitor-170x128.png 170w,    /assets/resized/goaoCapacitor-145x109.png 145w, /assets/img/posts/19.06.01/goaoCapacitor.png 800w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-
-  &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/19.06.01/goaoCapacitorAdvanced.png&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/goaoCapacitorAdvanced-580x435.png 580w,    /assets/resized/goaoCapacitorAdvanced-290x218.png 290w,    /assets/resized/goaoCapacitorAdvanced-170x128.png 170w,    /assets/resized/goaoCapacitorAdvanced-145x109.png 145w, /assets/img/posts/19.06.01/goaoCapacitorAdvanced.png 800w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;h3 id=&quot;notes&quot;&gt;NOTES&lt;/h3&gt;
-
-&lt;p&gt;This one came out a few days late, because I am the weak link of the devblogs, and some things may’ve not gotten the proper mention they deserve, including new hairstyles and new expressions for the playermodel.&lt;/p&gt;
-
-&lt;p&gt;This is our monthly devblog, standing as proof that we’re still here breathing and working, even when only one of us is pulling all the weight.
-Come visit us on &lt;a href=&quot;https://discord.gg/3ny9tdH&quot; target=&quot;_blank&quot;&gt;Discord&lt;/a&gt;, if you’re into that.
-Fun things happen on the Discord, sometimes.&lt;/p&gt;</content><author><name></name></author><summary type="html">A new face appears. An old face vanishes. Gears start to turn again.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://ss3d.space/assets/img/posts/19.06.01/EikoEmptyVoid.png" /></entry></feed>
+Come visit us on &lt;a href=&quot;https://discord.gg/3ny9tdH&quot; target=&quot;_blank&quot;&gt;Discord&lt;/a&gt; and get a special toolbox welcoming gift.&lt;/p&gt;</content><author><name></name></author><summary type="html">Models, models, models models…</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://ss3d.space/assets/img/art/Eiko/EikoPromoGibber.png" /></entry></feed>
