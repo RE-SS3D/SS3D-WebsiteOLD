@@ -284,7 +284,9 @@ a, .link {
   transition: none !important; }
 
 header {
-  text-align: center; }
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 30px; }
   header h1 {
     font-size: 16px;
     font-size: 7.5vw;
@@ -401,7 +403,7 @@ nav {
   background-image: linear-gradient(to right, #1e4684, #1e4684), linear-gradient(to right, #1e4684, #1e4684), linear-gradient(to right, rgba(84, 28, 23, 0.25), rgba(30, 70, 132, 0)), linear-gradient(to left, rgba(84, 28, 23, 0.25), rgba(30, 70, 132, 0)); }
 
 .contact {
-  padding: 18px 0 90px 0; }
+  padding: 50px 0; }
   .contact ul {
     text-align: center; }
   .contact li {

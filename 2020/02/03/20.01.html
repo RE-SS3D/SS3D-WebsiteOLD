@@ -181,14 +181,14 @@ window.cookieconsent.initialise({
 
 <p>Back again with progress on core systems, <strong>Nonanon</strong> has updated the tilemap system to auto-connect prefabs (like walls or tables) both in-game and in the editor in Unity. It works by correctly choosing the appropriate prefab variant and applying rotation. With accurate modeling, this system can be attributed to other connectables like pipes, multi-tile floor patterns, etc.</p>
 
-<video autoplay="autoplay" muted="" loop="loop" poster="/assets/img/posts/20.01.01/NonanonTilemap.png" width="580px">
+<video controls="" muted="" poster="/assets/img/posts/20.01.01/NonanonTilemap.png" width="580px">
   <source src="/assets/img/posts/20.01.01/NonanonTilemap.webm" type="video/webm" />
   <source src="/assets/img/posts/20.01.01/NonanonTilemap.mp4" type="video/mp4" />
 </video>
 
 <p>He also made improvements to the tile editor to allow for saving and editing innumerous tile configurations. Currently, a tile configuration supports a ‘turf’ (floors, windows, walls, etc.) and a ‘fixture’ (wall lights, airlocks, tables, etc.). Both the turf and the fixture are placed when placing a tile configuration. Placing tiles in the editor is smoother now too, with the added ability to be able to click and drag them to place multiple quickly. There is still some work to be done and bugs to flush out, but the system looks very promising.</p>
 
-<video autoplay="autoplay" muted="" loop="loop" poster="/assets/img/posts/20.01.01/NonanonTilemap2.png" width="580px">
+<video controls="" muted="" poster="/assets/img/posts/20.01.01/NonanonTilemap2.png" width="580px">
   <source src="/assets/img/posts/20.01.01/NonanonTilemap2.webm" type="video/webm" />
   <source src="/assets/img/posts/20.01.01/NonanonTilemap2.mp4" type="video/mp4" />
 </video>
@@ -207,7 +207,7 @@ window.cookieconsent.initialise({
 
 <p>Limbs now track their damage as well as track status effects like crippled, bruised, bleeding, etc. They will even detach given enough damage. Unfortunately, this cannot be tested currently as a result of the interaction system which merged shortly after this (mentioned above).</p>
 
-<video autoplay="autoplay" muted="" loop="loop" poster="/assets/img/posts/20.01.01/Em3rgencyDamage.png" width="580px">
+<video controls="" muted="" poster="/assets/img/posts/20.01.01/Em3rgencyDamage.png" width="580px">
   <source src="/assets/img/posts/20.01.01/Em3rgencyDamage.webm" type="video/webm" />
   <source src="/assets/img/posts/20.01.01/Em3rgencyDamage.mp4" type="video/mp4" />
 </video>
@@ -224,7 +224,7 @@ window.cookieconsent.initialise({
 
 <p>If you don’t want to download Unity and build the most recent development changes yourself, you can instead <a href="https://github.com/RE-SS3D/SS3D/releases/latest"><strong>download our latest build here</strong></a>, which has been updated recently. And we also hope to update it frequently by integrating automated builds in the future for each minor release.</p>
 
-<video autoplay="autoplay" muted="" loop="loop" poster="/assets/img/posts/20.01.01/Em3rgencyLogin.png" width="580px">
+<video controls="" muted="" poster="/assets/img/posts/20.01.01/Em3rgencyLogin.png" width="580px">
   <source src="/assets/img/posts/20.01.01/Em3rgencyLogin.webm" type="video/webm" />
   <source src="/assets/img/posts/20.01.01/Em3rgencyLogin.mp4" type="video/mp4" />
 </video>
@@ -235,14 +235,14 @@ window.cookieconsent.initialise({
 
 <p>The fuel system simply acts as the amount of what we’re calling “fuel”, but the system can be made to work with other objects such as crayons that will deplete over time, or even objects that store ammo, charge, propellent, etc. You can see how much remaining fuel your crayon has in the small progress bar in the hand its held in.</p>
 
-<video autoplay="autoplay" muted="" loop="loop" poster="/assets/img/posts/20.01.01/Em3rgencyDrawing1.png" width="580px">
+<video controls="" muted="" poster="/assets/img/posts/20.01.01/Em3rgencyDrawing1.png" width="580px">
   <source src="/assets/img/posts/20.01.01/Em3rgencyDrawing1.webm" type="video/webm" />
   <source src="/assets/img/posts/20.01.01/Em3rgencyDrawing1.mp4" type="video/mp4" />
 </video>
 
 <p>The system is fun to play with and in his own words, “drawing lets you, quite literally, leave a mark on the world”. Currently, only some major surfaces can be drawn on, like floors, walls, tables, and lockers, but we plan to significantly add to that list.</p>
 
-<video autoplay="autoplay" muted="" loop="loop" poster="/assets/img/posts/20.01.01/Em3rgencyDrawing2.png" width="580px">
+<video controls="" muted="" poster="/assets/img/posts/20.01.01/Em3rgencyDrawing2.png" width="580px">
   <source src="/assets/img/posts/20.01.01/Em3rgencyDrawing2.webm" type="video/webm" />
   <source src="/assets/img/posts/20.01.01/Em3rgencyDrawing2.mp4" type="video/mp4" />
 </video>
@@ -375,30 +375,37 @@ window.cookieconsent.initialise({
             <footer>
                 <div class="contact">
     <ul class="ul-reset">
-    <li>
-        <a href="https://discord.gg/3ny9tdH">Discord</a>
-    </li>
-    <li>
-        <a href="https://github.com/RE-SS3D">GitHub</a>
-    </li>
-    <li>
-        <a href="https://trello.com/ress3d">Trello</a>
-    </li>
-    <li>
-        <a href="https://reddit.com/r/RESS3D">Reddit</a>
-    </li>
-    <li>
-        <a href="/privacy">Privacy Policy</a>
-    </li>
-    <li>
-        <a type="application/atom+xml" href="/feed.xml">Atom (RSS)</a>
-    </li>
-    <li>
-        <label id="theme-switch" class="theme-switch" for="checkbox_theme">
-            <input type="checkbox" id="checkbox_theme" style="display:none"><span class="link">Toggle Theme</span>
-        </label>
-    </li>
-</ul>
+        <li>
+            <h3><a href="https://discord.gg/3ny9tdH">Discord</a></h3>
+        </li>
+        <li>
+            <h3><a href="https://github.com/RE-SS3D">GitHub</a></h3>
+        </li>
+        <li>
+            <h3><a href="https://trello.com/ress3d">Trello</a></h3>
+        </li>
+        <li>
+            <h3><a href="https://reddit.com/r/RESS3D">Reddit</a></h3>
+        </li>
+        <li>
+            <h3><a href="https://www.youtube.com/channel/UCJT-bVqDOYfyxF3oxECceZg">YouTube</a></h3>
+        </li>
+    </ul><br>
+    <ul class="ul-reset">
+        <li>
+            <h5><a href="/privacy">Privacy Policy</a></h5>
+        </li>
+        <li>
+            <h5><a type="application/atom+xml" href="/feed.xml">Atom (RSS)</a></h5>
+        </li>
+        <li>
+            <h5>
+                <label id="theme-switch" class="theme-switch" for="checkbox_theme">
+                    <input type="checkbox" id="checkbox_theme" style="display:none"><span class="link">Toggle Theme</span>
+                </label>
+            </h5>
+        </li>
+    </ul>
 </div>
             </footer>
         </div>

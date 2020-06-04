@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="/css/style.css">
+        <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+        <meta name="theme-color" content="#1e4684">
+        <script>
+            //theme toggle
+            //determines if the user has a set theme
+            function detectColorScheme(){
+                var theme="dark";    //default to dark
+
+                //local storage is used to override OS theme settings
+                if(localStorage.getItem("theme")){
+                    if(localStorage.getItem("theme") == "light"){
+                        var theme = "light";
+                    }
+                } else if(!window.matchMedia) {
+                    //matchMedia method not supported
+                    return false;
+                } else if(window.matchMedia("(prefers-color-scheme: light)").matches) {
+                    //OS theme setting detected as dark
+                    var theme = "light";
+                }
+
+                //dark theme preferred, set document with a `data-theme` attribute
+                if (theme=="light") {
+                    document.documentElement.setAttribute("data-theme", "light");
+                } else {
+                    document.documentElement.setAttribute("data-theme", "dark");
+                }
+            }
+            detectColorScheme();
+            
+            // Function to keep the navigation bars scroll offset when changing pages.
+            setScroll = function(url, scroll) {
+                if(scroll != 0) {
+                    window.location.href = url + '?scroll=' + scroll;
+                    return;
+                }
+                window.location.href = url;
+            }
+            // Set navigation bar scroll offset, if it exists.
+            getScroll = function() {
+                var url = new URL(window.location.href);
+                var scroll = url.searchParams.get("scroll");
+                if (scroll != 0) {
+                    var el = document.getElementById('scroll');
+                    el.scrollLeft = scroll;
+                }
+            }
+            if (window.addEventListener) {
+                window.addEventListener('load', getScroll, false);
+            }
+            else if (window.attachEvent) {
+                window.attachEvent('onload', getScroll);
+            }
+        </script>
+        <script>
+            /*! modernizr 3.6.0 (Custom Build) | MIT *
+            * https://modernizr.com/download/?-webp-setclasses !*/
+            !function(e,n,A){function o(e,n){return typeof e===n}function t(){var e,n,A,t,a,i,l;for(var f in r)if(r.hasOwnProperty(f)){if(e=[],n=r[f],n.name&&(e.push(n.name.toLowerCase()),n.options&&n.options.aliases&&n.options.aliases.length))for(A=0;A<n.options.aliases.length;A++)e.push(n.options.aliases[A].toLowerCase());for(t=o(n.fn,"function")?n.fn():n.fn,a=0;a<e.length;a++)i=e[a],l=i.split("."),1===l.length?Modernizr[l[0]]=t:(!Modernizr[l[0]]||Modernizr[l[0]]instanceof Boolean||(Modernizr[l[0]]=new Boolean(Modernizr[l[0]])),Modernizr[l[0]][l[1]]=t),s.push((t?"":"no-")+l.join("-"))}}function a(e){var n=u.className,A=Modernizr._config.classPrefix||"";if(c&&(n=n.baseVal),Modernizr._config.enableJSClass){var o=new RegExp("(^|\\s)"+A+"no-js(\\s|$)");n=n.replace(o,"$1"+A+"js$2")}Modernizr._config.enableClasses&&(n+=" "+A+e.join(" "+A),c?u.className.baseVal=n:u.className=n)}function i(e,n){if("object"==typeof e)for(var A in e)f(e,A)&&i(A,e[A]);else{e=e.toLowerCase();var o=e.split("."),t=Modernizr[o[0]];if(2==o.length&&(t=t[o[1]]),"undefined"!=typeof t)return Modernizr;n="function"==typeof n?n():n,1==o.length?Modernizr[o[0]]=n:(!Modernizr[o[0]]||Modernizr[o[0]]instanceof Boolean||(Modernizr[o[0]]=new Boolean(Modernizr[o[0]])),Modernizr[o[0]][o[1]]=n),a([(n&&0!=n?"":"no-")+o.join("-")]),Modernizr._trigger(e,n)}return Modernizr}var s=[],r=[],l={_version:"3.6.0",_config:{classPrefix:"",enableClasses:!0,enableJSClass:!0,usePrefixes:!0},_q:[],on:function(e,n){var A=this;setTimeout(function(){n(A[e])},0)},addTest:function(e,n,A){r.push({name:e,fn:n,options:A})},addAsyncTest:function(e){r.push({name:null,fn:e})}},Modernizr=function(){};Modernizr.prototype=l,Modernizr=new Modernizr;var f,u=n.documentElement,c="svg"===u.nodeName.toLowerCase();!function(){var e={}.hasOwnProperty;f=o(e,"undefined")||o(e.call,"undefined")?function(e,n){return n in e&&o(e.constructor.prototype[n],"undefined")}:function(n,A){return e.call(n,A)}}(),l._l={},l.on=function(e,n){this._l[e]||(this._l[e]=[]),this._l[e].push(n),Modernizr.hasOwnProperty(e)&&setTimeout(function(){Modernizr._trigger(e,Modernizr[e])},0)},l._trigger=function(e,n){if(this._l[e]){var A=this._l[e];setTimeout(function(){var e,o;for(e=0;e<A.length;e++)(o=A[e])(n)},0),delete this._l[e]}},Modernizr._q.push(function(){l.addTest=i}),Modernizr.addAsyncTest(function(){function e(e,n,A){function o(n){var o=n&&"load"===n.type?1==t.width:!1,a="webp"===e;i(e,a&&o?new Boolean(o):o),A&&A(n)}var t=new Image;t.onerror=o,t.onload=o,t.src=n}var n=[{uri:"data:image/webp;base64,UklGRiQAAABXRUJQVlA4IBgAAAAwAQCdASoBAAEAAwA0JaQAA3AA/vuUAAA=",name:"webp"},{uri:"data:image/webp;base64,UklGRkoAAABXRUJQVlA4WAoAAAAQAAAAAAAAAAAAQUxQSAwAAAABBxAR/Q9ERP8DAABWUDggGAAAADABAJ0BKgEAAQADADQlpAADcAD++/1QAA==",name:"webp.alpha"},{uri:"data:image/webp;base64,UklGRlIAAABXRUJQVlA4WAoAAAASAAAAAAAAAAAAQU5JTQYAAAD/////AABBTk1GJgAAAAAAAAAAAAAAAAAAAGQAAABWUDhMDQAAAC8AAAAQBxAREYiI/gcA",name:"webp.animation"},{uri:"data:image/webp;base64,UklGRh4AAABXRUJQVlA4TBEAAAAvAAAAAAfQ//73v/+BiOh/AAA=",name:"webp.lossless"}],A=n.shift();e(A.name,A.uri,function(A){if(A&&"load"===A.type)for(var o=0;o<n.length;o++)e(n[o].name,n[o].uri)})}),t(),a(s),delete l.addTest,delete l.addAsyncTest;for(var p=0;p<Modernizr._q.length;p++)Modernizr._q[p]();e.Modernizr=Modernizr}(window,document);
+        </script>
+        <!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>20.05: May 2020 Devblog | RE:SS3D</title>
+<meta name="generator" content="Jekyll v3.8.5" />
+<meta property="og:title" content="20.05: May 2020 Devblog" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="“It takes NOTHING to join the crowd, it takes EVERYTHING to stand alone.”" />
+<meta property="og:description" content="“It takes NOTHING to join the crowd, it takes EVERYTHING to stand alone.”" />
+<link rel="canonical" href="https://ss3d.space/2020/06/04/20.05.html" />
+<meta property="og:url" content="https://ss3d.space/2020/06/04/20.05.html" />
+<meta property="og:site_name" content="RE:SS3D" />
+<meta property="og:image" content="https://ss3d.space/assets/img/art/ProbablyNot/ProbablyNot_Chase.png" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2020-06-04T05:30:00+00:00" />
+<script type="application/ld+json">
+{"description":"“It takes NOTHING to join the crowd, it takes EVERYTHING to stand alone.”","@type":"BlogPosting","headline":"20.05: May 2020 Devblog","dateModified":"2020-06-04T05:30:00+00:00","datePublished":"2020-06-04T05:30:00+00:00","url":"https://ss3d.space/2020/06/04/20.05.html","mainEntityOfPage":{"@type":"WebPage","@id":"https://ss3d.space/2020/06/04/20.05.html"},"image":"https://ss3d.space/assets/img/art/ProbablyNot/ProbablyNot_Chase.png","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+        <link type="application/atom+xml" rel="alternate" href="https://ss3d.space/feed.xml" title="RE:SS3D" />
+        <link rel="stylesheet" type="text/css" href="/assets/css/cookieconsent.min.css" />
+<script src="/assets/js/cookieconsent.min.js"></script>
+<script>
+window.addEventListener("load", function(){
+window.cookieconsent.initialise({
+"palette": {
+    "popup": {
+    "background": "#1e4684",
+    "text": "#dadada"
+    },
+    "button": {
+    "background": "#b83d32",
+    "text": "#ffffff"
+    }
+},
+"theme": "classic",
+"content": {
+    "message": "This website uses cookies for analytics.",
+    "dismiss": "Ok",
+    "href": "/privacy"
+}
+})});
+</script>
+        <!-- Analytics -->
+        
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-140169746-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-140169746-1');
+</script>
+
+        
+    </head>
+    <body class="preload">
+        <div class="nav-background">
+            <nav>
+                <div id="scroll" class="ul-container">
+    <ul class="ul-reset">
+        
+        <li><a onclick="setScroll('/',parentNode.parentNode.parentNode.scrollLeft); return false;" class="" href="/">Home</a></li>
+        
+        <li><a onclick="setScroll('/devblog/',parentNode.parentNode.parentNode.scrollLeft); return false;" class="" href="/devblog/">Devblog</a></li>
+        
+        <li><a onclick="setScroll('/art/',parentNode.parentNode.parentNode.scrollLeft); return false;" class="" href="/art/">Art</a></li>
+        
+        <li><a onclick="setScroll('/faq/',parentNode.parentNode.parentNode.scrollLeft); return false;" class="" href="/faq/">FAQ</a></li>
+        
+        <li><a onclick="setScroll('/about/',parentNode.parentNode.parentNode.scrollLeft); return false;" class="" href="/about/">About</a></li>
+        
+        <li><a onclick="setScroll('/contribute/',parentNode.parentNode.parentNode.scrollLeft); return false;" class="" href="/contribute/">Contribute</a></li>
+        
+    </ul>
+</div>
+            </nav>
+        </div>
+        <div class="body-content">
+            <header class="header">
+    <div>
+        <picture class="logo" >
+            <img src="/assets/img/logo.png" alt="RE:">
+        </picture>
+    </div>
+    <div>
+        <picture class="logo" >
+            <img src="/assets/img/SPACESTATION3D.png" alt="SPACE STATION 3D">
+        </picture>
+    </div>
+    <h6>A 3D recreation of Space Station 13</h6>
+</header>
+            <main class="post-content">
+                <div class="image credit-wrapper">
+  
+
+
+
+<div class="image"><a href="/assets/img/art/ProbablyNot/ProbablyNot_Chase.png" class="image-link" target="_blank"><img src="/" alt="" srcset="    /assets/resized/ProbablyNot_Chase-580x326.png 580w,    /assets/resized/ProbablyNot_Chase-290x163.png 290w,    /assets/resized/ProbablyNot_Chase-170x96.png 170w,    /assets/resized/ProbablyNot_Chase-145x82.png 145w, /assets/img/art/ProbablyNot/ProbablyNot_Chase.png 3840w" sizes="(max-width: 624px) 100vw, 578px, 580px"></a></div>
+  
+    <h5><i>Image credit - ProbablyNot</i></h5>
+  
+</div>
+
+<h1>20.05: May 2020 Devblog</h1>
+<h5><i>Thursday, June 4, 2020</i></h5>
+<h5><i>Written by - CosmicCoincidence</i></h5>
+<p><em>“The greatest tyrannies are always perpetrated in the name of the noblest causes.”</em></p>
+
+<p>– Thomas Paine</p>
+
+<h1 id="may-recap">May Recap</h1>
+
+<p>In May, the same as every month, we received more new contributors, but this month it seems to have been more programmers than artists which is a change for us. These new programmers are highly responsible for a large increase of momentum in the development of the game. As a result, the game looks totally different now than it did just <a href="/assets/img/posts/20.04.01/TheLife_BuildDistance.webm" target="_blank">one month ago</a>!</p>
+
+<p>This month, we also made a new <a href="https://www.youtube.com/channel/UCJT-bVqDOYfyxF3oxECceZg" target="_blank">YouTube account</a> where we have begun uploading animations and gameplay/teaser videos. Are you curious what RE:SS3D would look like from another perspective? Then check out the first-person &amp; isometric camera teaser tests on our YouTube channel (note: we will not be implementing either of those camera perspectives ourselves, we will be going for a more traditional top-down-ish perspective).</p>
+
+<p>Also, we have gotten many questions regarding when our next public release will be… and that answer to that is… RIGHT NOW! You can <a href="https://github.com/RE-SS3D/SS3D/releases/latest" target="_blank">DOWNLOAD our latest release (v0.3.5 built on June 1st) here!</a>. Last month we intended to begin releasing a monthly build that would coincide with our monthly devblogs, but we had issues with our automated build and never got last month’s release made. Although we still have not resolved the issues with the automated build, we will begin to put out monthly releases with our devblogs even if we have to do so manually (which is what we did this month).</p>
+
+<h2 id="added-content">Added Content</h2>
+
+<p>Early in the month, what began with <strong>CosmicCoincidence</strong> updating the models in the game (tools, tables, walls/windows, floors, &amp; doors), turned into him adding more models, such as more tools, foods, generic items, furniture, machines, weapons, and more, throughout the month. These new objects came with the addition of a much-needed scene expansion which has most of these newly added models on display.</p>
+
+<p>This was made possible by a huge effort by <strong>Basecode</strong>, who spent a lot of time again this month helping to go through older model submissions to clean/fix them or marking to be cleaned/fixed. This undertaking not only fixed up many old models but also sped up the process of getting them sorted into our main models folder and one step closer to moving them into the game itself.</p>
+
+<p><strong>Basecode</strong> also rendered out textures and normal maps for all our standard floor types which we promptly got added into the game. If you are unfamiliar with normal maps, it is essentially a secondary texture used to give 3D shading to the primary texture. Here are 2 examples of these new floor textures now in the game (left is without normal maps, right is with normal maps): <a href="/assets/img/posts/20.05.01/normalmaps_darkfloor.png" target="_blank">dark grey floors</a> &amp; <a href="/assets/img/posts/20.05.01/normalmaps_reinforcedfloor.png" target="_blank">reinforced floors</a>.</p>
+
+<h2 id="lighting-overhaul">Lighting Overhaul</h2>
+
+<p>One of our new contributors this month and the one who has had the greatest impact on the new <em>look</em> of the game is <strong>Seteron</strong>. He isn’t actually new to the community this month but has finally officially contributed this month. As many of you who voted in our community polls on discord know, he has spent many moons since early March massively overhauling the project’s lighting.</p>
+
+<p>After adding a new wrapped BRDF lighting model, added drop shadows, changed out our glass shader, added sceen-space raytracing, and made tweaks to light values, material settings, tone mapping/color grading, and post-processing, he decided he could finally call it good. <a href="/assets/img/posts/20.04.01/TheLife_BuildDistance.png" target="_blank">Before (last month)</a> and <a href="/assets/img/posts/20.05.01/Seteron_Lighting.png" target="_blank">after (Seteron’s rework)</a></p>
+
+<video controls="" muted="" poster="/assets/img/posts/20.05.01/Seteron_Lighting_Vid.png" width="580px">
+  <source src="/assets/img/posts/20.05.01/Seteron_Lighting_Vid.webm" type="video/webm" />
+  <source src="/assets/img/posts/20.05.01/Seteron_Lighting_Vid.mp4" type="video/mp4" />
+</video>
+
+<h2 id="item-hold-positions-and-rotations">Item Hold Positions and Rotations</h2>
+
+<p>Another new contributor this month, <strong>Alainx277</strong> was also a big part in making our game look more like a game and less like a demo. He added in attachment points which can be adjusted to an items prefab and act as the character’s holding position on that item. As a result, it is now much easier to adjust items to be held properly.</p>
+
+<p>Once the hold positions were taken care of, <strong>Alainx277</strong> also made sure that items would place properly and at the same orientation as when they were picked up. Although many items still need to be worked on, like weapons, which currently place standing upright. For those that do place correctly, they also rotate so the item faces the character when placed down.</p>
+
+<p>Currently dropping an item will give it the same orientation as when placing it, but that may change in the future to the item dropping with the same orientation it had when it was being held, which will look more natural.</p>
+
+<video controls="" muted="" poster="/assets/img/posts/20.05.01/ItemOrientations.png" width="580px">
+  <source src="/assets/img/posts/20.05.01/ItemOrientations.webm" type="video/webm" />
+  <source src="/assets/img/posts/20.05.01/ItemOrientations.mp4" type="video/mp4" />
+</video>
+
+<h2 id="interaction-system-rework">Interaction System Rework</h2>
+
+<p><strong>Alainx277</strong> also did some overhauling this month, though his focus was the interaction system. After adding in delayed interactions (interactions that are delayed on a timer, like construction) with progress bars, he reworked the system itself to fix several bugs including item components being disabled after dropping said item, interactions continuing after the player moves away or drops the item, and several more. This reworked system should make it easier for adding future interactions as well.</p>
+
+<p>After reworking the system, he added in-hand interactions so you can press ‘Z’ or now click on the item in-hand to activate/use it. This required the addition of interaction priorities, so a crowbar, for example, knows to construct a table as a priority instead of being placed on the floor.</p>
+
+<video controls="" muted="" poster="/assets/img/posts/20.05.01/Alainx_Interactions.png" width="580px">
+  <source src="/assets/img/posts/20.05.01/Alainx_Interactions.webm" type="video/webm" />
+  <source src="/assets/img/posts/20.05.01/Alainx_Interactions.mp4" type="video/mp4" />
+</video>
+
+<h2 id="icons">Icons</h2>
+
+<p>Now that we have more items in-game, <strong>Goao</strong> figured it was time they needed unique icons. So, he set up an icon renderer which is exactly what it sounds like, renders item icons from their 3D models. There is room for improvement with this and on some items the icon renderer has issues with some complex item prefabs like energy swords and welders.</p>
+
+<p>With the interaction system rework and the addition of some new interactions (see the Interactions &amp; Vendors section below), we noticed we were lacking some icons for a few of these interactions. <strong>Konstantin3001</strong> has already made most of them, but when we notified him that we were missing a few, he promptly made some <a href="/assets/img/posts/20.05.01/Konstantin_InteractionIcons.png" target="_blank">new ones</a> for us.</p>
+
+<h2 id="radial-context-menu">Radial Context Menu</h2>
+
+<p>Coded by <strong>Onebi</strong> and implemented by <strong>Goao</strong>, we now have a spiffy radial context menu, which looks and operates much nicer than <a href="/assets/img/posts/20.05.01/OldContextMenu.png" target="_blank">our old context menu</a>. The new menu uses the new interaction icons (some need to be added still) and should be quicker to operate when in a hurry.</p>
+
+<video controls="" muted="" poster="/assets/img/posts/20.05.01/ContextMenu.png" width="580px">
+  <source src="/assets/img/posts/20.05.01/ContextMenu.webm" type="video/webm" />
+  <source src="/assets/img/posts/20.05.01/ContextMenu.mp4" type="video/mp4" />
+</video>
+
+<h2 id="character-movement">Character Movement</h2>
+
+<p>Several things came together this month to really improve the overall movement of the character. As many of you know, <strong>ProbablyNot</strong> has put a lot of effort into making player animations for all sorts of movements, but before the only animation that was implemented and working was running. We didn’t even have the walk animation working as the character’s ‘walk’ was actually a run with reduced movement speed.</p>
+
+<div>
+  <video controls="" muted="" poster="/assets/img/posts/20.05.01/OldMovement.png" width="580px">
+    <source src="/assets/img/posts/20.05.01/OldMovement.webm" type="video/webm" />
+    <source src="/assets/img/posts/20.05.01/OldMovement.mp4" type="video/mp4" />
+  </video>
+  <h5><i>Old character movement</i></h5>
+</div>
+
+<p><strong>Light Velox</strong> wasn’t happy about this and decided to fix the walk animation, then update and smooth out both the walk and run animations.</p>
+
+<p>With the walking fixed, <strong>Goao</strong> started working on the character as well. He smoothed out the character’s rotation, added inverse kinematics to the upper body and head, and added head movement so the character’s head looks at the user’s mouse if it’s within the sight radius of the character.</p>
+
+<div>
+  <video controls="" muted="" poster="/assets/img/posts/20.05.01/NewMovement.png" width="580px">
+    <source src="/assets/img/posts/20.05.01/NewMovement.webm" type="video/webm" />
+    <source src="/assets/img/posts/20.05.01/NewMovement.mp4" type="video/mp4" />
+  </video>
+  <h5><i>New character movement</i></h5>
+</div>
+
+<h2 id="sounds">Sounds</h2>
+
+<p>Something else that must have been bugging <strong>LightVelox</strong> was our lack of sound effects because he added in several sounds (and their associated interactions) this month. He added sounds to the bike horn, service bell, microwave, and 3 classic tunes for the boombox, so now the airlocks are no longer alone in making noise. Additionally, effects for the energy sword were added in by <strong>Goao</strong>.</p>
+
+<div>
+  <video controls="" poster="/assets/img/posts/20.05.01/Sounds.png" width="580px">
+    <source src="/assets/img/posts/20.05.01/Sounds.webm" type="video/webm" />
+    <source src="/assets/img/posts/20.05.01/Sounds.mp4" type="video/mp4" />
+  </video>
+  <h5><i>Turn your audio on</i></h5>
+</div>
+
+<h2 id="interactions--vendors">Interactions &amp; Vendors</h2>
+
+<p><strong>Alainx277</strong> seems to have had plans while reworking the interaction system, because once that was through, he began implementing the basics for future systems like crafting, vendors, and substance dispensers. Though, they are very much basic still.</p>
+
+<p>You can grab a cup from the water cooler and fill it up with water (the only substance we currently have) which is measured in milliliters and you can see the liquid level rise in the cup.</p>
+
+<p>You could roll the dough flat with the rolling pin and cut it into strips with the knife but that seems to have been broken right before we made our release (but has already since been fixed in the project). So in the release, the only possible crafting is the 1 recipe we have for the microwave currently, the tortilla. To make a tortilla, simply microwave a flat dough and wait until you hear the chime.</p>
+
+<p>To start, only 2 of the vending machines are operational (the soda and tool vendors), which currently dispense a random item from a list and have a set number of items they can dispense. Their functionality will likely expand once we begin getting proper interfaces for them.</p>
+
+<video controls="" muted="" poster="/assets/img/posts/20.05.01/Alainx_Interactions2.png" width="580px">
+  <source src="/assets/img/posts/20.05.01/Alainx_Interactions2.webm" type="video/webm" />
+  <source src="/assets/img/posts/20.05.01/Alainx_Interactions2.mp4" type="video/mp4" />
+</video>
+
+<h2 id="fixes">Fixes</h2>
+
+<p><strong>CosmicCoincidence</strong> updated the wall connections so all possible directions connect properly now, and wall to reinforced wall connections look smooth now.</p>
+
+<p><strong>Seteron</strong> updated the advanced window connections script to also properly connect the unique pieces in the windows set. He also fixed some more issues with the main camera, adjusted our material settings (specifically with our computer screen emission), extended our round timer, and more.</p>
+
+<p><strong>Nonanon</strong> fixed a networking error with our airlocks and gave them new animations.</p>
+
+<p><strong>Goao</strong> fixed several bugs with the UIs, art assets, prefabs, and animations.</p>
+
+<p><strong>LightVelox</strong> fixed the player camera, shrank the UIs, made the flashlight toggleable, and fixed multiple selection-based issues with the radial menu.</p>
+
+<p><strong>Alainx277</strong> fixed the secondary hand not working for non-hosts, hid the server restart button from non-hosts, added an animation for locker doors, and chunked the tile info to fix a tilemap networking failure.</p>
+
+<p><strong>BroodjeKipcorn</strong> who is new this month, fixed multiple bugs related to inventories, including items floating in the air after placing them in an inventory, item icons glitching out and doubling up, and some items being deleted after trying to remove them from an inventory.</p>
+
+<h2 id="models">Models</h2>
+
+<p>Back to modeling, <strong>LightVelox</strong> noticed a severe lack of basic foods and ingredients and pumped out a large collection of general foods.</p>
+
+<div class="horizontal-2">
+
+  <div class="image"><a href="/assets/img/posts/20.05.01/LightVelox_Food.png" target="_blank"><img src="/" alt="" srcset="    /assets/resized/LightVelox_Food-580x435.png 580w,    /assets/resized/LightVelox_Food-290x218.png 290w,    /assets/resized/LightVelox_Food-170x128.png 170w,    /assets/resized/LightVelox_Food-145x109.png 145w, /assets/img/posts/20.05.01/LightVelox_Food.png 800w" sizes="(max-width: 624px) 50vw, 290px" /></a></div>
+
+  <div class="image"><a href="/assets/img/posts/20.05.01/LightVelox_Food2.png" target="_blank"><img src="/" alt="" srcset="    /assets/resized/LightVelox_Food2-580x435.png 580w,    /assets/resized/LightVelox_Food2-290x218.png 290w,    /assets/resized/LightVelox_Food2-170x128.png 170w,    /assets/resized/LightVelox_Food2-145x109.png 145w, /assets/img/posts/20.05.01/LightVelox_Food2.png 800w" sizes="(max-width: 624px) 50vw, 290px" /></a></div>
+</div>
+
+<p><strong>Eiko</strong> also worked on food, making some potatoes, potato-based meals, and potato plants for botany.</p>
+
+<div class="horizontal-2">
+
+  <div class="image"><a href="/assets/img/posts/20.05.01/Eiko_Potatos.png" target="_blank"><img src="/" alt="" srcset="    /assets/resized/Eiko_Potatos-580x435.png 580w,    /assets/resized/Eiko_Potatos-290x218.png 290w,    /assets/resized/Eiko_Potatos-170x128.png 170w,    /assets/resized/Eiko_Potatos-145x109.png 145w, /assets/img/posts/20.05.01/Eiko_Potatos.png 800w" sizes="(max-width: 624px) 50vw, 290px" /></a></div>
+
+  <div class="image"><a href="/assets/img/posts/20.05.01/Eiko_Potatos2.png" target="_blank"><img src="/" alt="" srcset="    /assets/resized/Eiko_Potatos2-580x435.png 580w,    /assets/resized/Eiko_Potatos2-290x218.png 290w,    /assets/resized/Eiko_Potatos2-170x128.png 170w,    /assets/resized/Eiko_Potatos2-145x109.png 145w, /assets/img/posts/20.05.01/Eiko_Potatos2.png 800w" sizes="(max-width: 624px) 50vw, 290px" /></a></div>
+</div>
+
+<p>Some more locker variants from <strong>CosmicCoincidence</strong>.</p>
+
+<div class="horizontal-2">
+
+  <div class="image"><a href="/assets/img/posts/20.05.01/CosmicLockers.png" target="_blank"><img src="/" alt="" srcset="    /assets/resized/CosmicLockers-580x435.png 580w,    /assets/resized/CosmicLockers-290x218.png 290w,    /assets/resized/CosmicLockers-170x128.png 170w,    /assets/resized/CosmicLockers-145x109.png 145w, /assets/img/posts/20.05.01/CosmicLockers.png 800w" sizes="(max-width: 624px) 50vw, 290px" /></a></div>
+
+  <div class="image"><a href="/assets/img/posts/20.05.01/CosmicLockers2.png" target="_blank"><img src="/" alt="" srcset="    /assets/resized/CosmicLockers2-580x435.png 580w,    /assets/resized/CosmicLockers2-290x218.png 290w,    /assets/resized/CosmicLockers2-170x128.png 170w,    /assets/resized/CosmicLockers2-145x109.png 145w, /assets/img/posts/20.05.01/CosmicLockers2.png 800w" sizes="(max-width: 624px) 50vw, 290px" /></a></div>
+</div>
+
+<p><strong>Hummus</strong> is back again, now with the seed processor.</p>
+
+<div class="image"><a href="/assets/img/posts/20.05.01/SeedProcessor.png" class="image-link" target="_blank"><img src="/" alt="" srcset="    /assets/resized/SeedProcessor-580x435.png 580w,    /assets/resized/SeedProcessor-290x218.png 290w,    /assets/resized/SeedProcessor-170x128.png 170w,    /assets/resized/SeedProcessor-145x109.png 145w, /assets/img/posts/20.05.01/SeedProcessor.png 800w" sizes="(max-width: 624px) 100vw, 578px, 580px" /></a></div>
+
+<p><strong>Nicola</strong> is also back this month, again with more engineering equipment, this time with emitter reflectors.</p>
+
+<div class="image"><a href="/assets/img/posts/20.05.01/Reflectors.png" class="image-link" target="_blank"><img src="/" alt="" srcset="    /assets/resized/Reflectors-580x435.png 580w,    /assets/resized/Reflectors-290x218.png 290w,    /assets/resized/Reflectors-170x128.png 170w,    /assets/resized/Reflectors-145x109.png 145w, /assets/img/posts/20.05.01/Reflectors.png 800w" sizes="(max-width: 624px) 100vw, 578px, 580px" /></a></div>
+
+<p>A new modeler this month, <strong>Trerri</strong>, submitted a gas igniter, gas sensor, a newly styled multitool, and an advanced looking singularity seed.</p>
+
+<div class="horizontal-2">
+
+  <div class="image"><a href="/assets/img/posts/20.05.01/Trerri_GasIgniter_GasSensor.png" target="_blank"><img src="/" alt="" srcset="    /assets/resized/Trerri_GasIgniter_GasSensor-580x435.png 580w,    /assets/resized/Trerri_GasIgniter_GasSensor-290x218.png 290w,    /assets/resized/Trerri_GasIgniter_GasSensor-170x128.png 170w,    /assets/resized/Trerri_GasIgniter_GasSensor-145x109.png 145w, /assets/img/posts/20.05.01/Trerri_GasIgniter_GasSensor.png 800w" sizes="(max-width: 624px) 50vw, 290px" /></a></div>
+
+  <div class="image"><a href="/assets/img/posts/20.05.01/Trerri_Multitool.png" target="_blank"><img src="/" alt="" srcset="    /assets/resized/Trerri_Multitool-580x435.png 580w,    /assets/resized/Trerri_Multitool-290x218.png 290w,    /assets/resized/Trerri_Multitool-170x128.png 170w,    /assets/resized/Trerri_Multitool-145x109.png 145w, /assets/img/posts/20.05.01/Trerri_Multitool.png 800w" sizes="(max-width: 624px) 50vw, 290px" /></a></div>
+</div>
+
+<div class="image"><a href="/assets/img/posts/20.05.01/Trerri_SinguloSeed.png" class="image-link" target="_blank"><img src="/" alt="" srcset="    /assets/resized/Trerri_SinguloSeed-580x435.png 580w,    /assets/resized/Trerri_SinguloSeed-290x218.png 290w,    /assets/resized/Trerri_SinguloSeed-170x128.png 170w,    /assets/resized/Trerri_SinguloSeed-145x109.png 145w, /assets/img/posts/20.05.01/Trerri_SinguloSeed.png 800w" sizes="(max-width: 624px) 100vw, 578px, 580px" /></a></div>
+
+<p>After doing a ton of model cleaning and sorting, <strong>Basecode</strong> still managed to find time to make a few new models himself. This month he made a new SMES, a fun claw machine, and a creepy changeling critter.</p>
+
+<div class="horizontal-2">
+
+  <div class="image"><a href="/assets/img/posts/20.05.01/Basecode_SMES.png" target="_blank"><img src="/" alt="" srcset="    /assets/resized/Basecode_SMES-580x435.png 580w,    /assets/resized/Basecode_SMES-290x218.png 290w,    /assets/resized/Basecode_SMES-170x128.png 170w,    /assets/resized/Basecode_SMES-145x109.png 145w, /assets/img/posts/20.05.01/Basecode_SMES.png 800w" sizes="(max-width: 624px) 50vw, 290px" /></a></div>
+
+  <div class="image"><a href="/assets/img/posts/20.05.01/Basecode_ClawMachine.png" target="_blank"><img src="/" alt="" srcset="    /assets/resized/Basecode_ClawMachine-580x435.png 580w,    /assets/resized/Basecode_ClawMachine-290x218.png 290w,    /assets/resized/Basecode_ClawMachine-170x128.png 170w,    /assets/resized/Basecode_ClawMachine-145x109.png 145w, /assets/img/posts/20.05.01/Basecode_ClawMachine.png 800w" sizes="(max-width: 624px) 50vw, 290px" /></a></div>
+</div>
+
+<div class="image"><a href="/assets/img/posts/20.05.01/Basecode_ChangelingHead.png" class="image-link" target="_blank"><img src="/" alt="" srcset="    /assets/resized/Basecode_ChangelingHead-580x435.png 580w,    /assets/resized/Basecode_ChangelingHead-290x218.png 290w,    /assets/resized/Basecode_ChangelingHead-170x128.png 170w,    /assets/resized/Basecode_ChangelingHead-145x109.png 145w, /assets/img/posts/20.05.01/Basecode_ChangelingHead.png 800w" sizes="(max-width: 624px) 100vw, 578px, 580px" /></a></div>
+
+<h2 id="textures">Textures</h2>
+
+<p><strong>Konstantin3001</strong> made this cozy beach skybox for the holodeck.</p>
+
+<div class="image"><a href="/assets/img/posts/20.05.01/Beach_Holodeck.png" class="image-link" target="_blank"><img src="/" alt="" srcset="    /assets/resized/Beach_Holodeck-580x435.png 580w,    /assets/resized/Beach_Holodeck-290x217.png 290w,    /assets/resized/Beach_Holodeck-170x127.png 170w,    /assets/resized/Beach_Holodeck-145x109.png 145w, /assets/img/posts/20.05.01/Beach_Holodeck.png 1366w" sizes="(max-width: 624px) 100vw, 578px, 580px" /></a></div>
+
+<p>And <strong>Eiko</strong> made a great <a href="/assets/img/posts/20.05.01/HonkGraffiti.png" target="_blank">graffiti texture of the word “honk”</a> which can also be seen in this months blog art.</p>
+
+<h2 id="art">Art</h2>
+
+<p>Which speaking of, makes a great wallpaper and was made by <strong>ProbablyNot</strong>.</p>
+
+<div class="image"><a href="/assets/img/art/ProbablyNot/ProbablyNot_Chase.png" class="image-link" target="_blank"><img src="/" alt="" srcset="    /assets/resized/ProbablyNot_Chase-580x326.png 580w,    /assets/resized/ProbablyNot_Chase-290x163.png 290w,    /assets/resized/ProbablyNot_Chase-170x96.png 170w,    /assets/resized/ProbablyNot_Chase-145x82.png 145w, /assets/img/art/ProbablyNot/ProbablyNot_Chase.png 3840w" sizes="(max-width: 624px) 100vw, 578px, 580px" /></a></div>
+
+<h3 id="notes">Notes</h3>
+
+<p>Still not part of our community? Well, better late than never to come hop in our community <a href="https://discord.gg/3ny9tdH" target="_blank">discord</a> to share your opinions, see WIP content/systems, or vote on polls that influence the design of the game!</p>
+
+<p>See you here again next month!</p>
+
+
+            </main>
+            <footer>
+                <div class="contact">
+    <ul class="ul-reset">
+        <li>
+            <h3><a href="https://discord.gg/3ny9tdH">Discord</a></h3>
+        </li>
+        <li>
+            <h3><a href="https://github.com/RE-SS3D">GitHub</a></h3>
+        </li>
+        <li>
+            <h3><a href="https://trello.com/ress3d">Trello</a></h3>
+        </li>
+        <li>
+            <h3><a href="https://reddit.com/r/RESS3D">Reddit</a></h3>
+        </li>
+        <li>
+            <h3><a href="https://www.youtube.com/channel/UCJT-bVqDOYfyxF3oxECceZg">YouTube</a></h3>
+        </li>
+    </ul><br>
+    <ul class="ul-reset">
+        <li>
+            <h5><a href="/privacy">Privacy Policy</a></h5>
+        </li>
+        <li>
+            <h5><a type="application/atom+xml" href="/feed.xml">Atom (RSS)</a></h5>
+        </li>
+        <li>
+            <h5>
+                <label id="theme-switch" class="theme-switch" for="checkbox_theme">
+                    <input type="checkbox" id="checkbox_theme" style="display:none"><span class="link">Toggle Theme</span>
+                </label>
+            </h5>
+        </li>
+    </ul>
+</div>
+            </footer>
+        </div>
+        <script>
+            
+            // Fix flashing buttons by only allowing the css animations to play after a slight delay.
+            setTimeout(function() {
+                document.getElementsByTagName('body')[0].classList.remove('preload');
+            }, 50);
+
+            //theme toggle
+            //identify the toggle switch HTML element
+            const toggleSwitch = document.querySelector('#theme-switch input[type="checkbox"]');
+    
+            //function that changes the theme, and sets a localStorage variable to track the theme between page loads
+            function switchTheme(e) {
+                if (e.target.checked) {
+                    localStorage.setItem('theme', 'light');
+                    document.documentElement.setAttribute('data-theme', 'light');
+                    toggleSwitch.checked = true;
+                } else {
+                    localStorage.setItem('theme', 'dark');
+                    document.documentElement.setAttribute('data-theme', 'dark');
+                    toggleSwitch.checked = false;
+                }    
+            }
+    
+            //listener for changing themes
+            toggleSwitch.addEventListener('change', switchTheme, false);
+    
+            //pre-check the dark-theme checkbox if dark-theme is set
+            if (document.documentElement.getAttribute("data-theme") == "light"){
+                toggleSwitch.checked = true;
+            }
+        </script>
+        <script>
+
+            // changes slide show slides and title
+            var slideIndex = 1;
+            showSlides(slideIndex);
+            
+            function plusSlides(n) {
+                showSlides(slideIndex += n);
+            }
+            
+            function currentSlide(n) {
+                showSlides(slideIndex = n);
+            }
+            
+            function showSlides(n) {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                var dots = document.getElementsByClassName("thumbs");
+                var titleText = document.getElementById("title");
+                if (n > slides.length) {
+                    slideIndex = 1;
+                    showRows(rowIndex = 1);
+                }
+                if (n < 1) {
+                    slideIndex = slides.length;
+  	                showRows(rowIndex = -1);
+                }
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                showRows(rowIndex = Math.floor((n-1)/6) + 1) 
+                slides[slideIndex-1].style.display = "block";
+                dots[slideIndex-1].className += " active";
+                titleText.innerHTML = dots[slideIndex-1].alt;
+            }
+            
+            // changes slide show rows
+            var rowIndex = 1;
+            showRows(rowIndex);
+
+            function plusRows(n) {
+                showRows(rowIndex += n);
+            }
+
+            function currentRow(n) {
+            showRows(rowIndex = n);
+            }
+
+            function showRows(n) {
+                var i;
+                var rows = document.getElementsByClassName("myRows");
+                var dots = document.getElementsByClassName("thumbs");
+                if (n > rows.length) {rowIndex = 1}
+                if (n < 1) {rowIndex = rows.length}
+                for (i = 0; i < rows.length; i++) {
+                    rows[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                rows[rowIndex-1].style.display = "block";
+                dots[rowIndex-1].className += " active";
+            }
+        </script>
+    </body>
+</html>
