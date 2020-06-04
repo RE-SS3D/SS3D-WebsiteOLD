@@ -65,9 +65,9 @@ permalink: /art/
 # CosmicCoincidence
 {: class="centred" }
 
-{% responsive_image path: assets/img/art/CosmicCoincidence/CosmicHalloween.png template: _includes/srcset.html %}
-
 {% responsive_image path: assets/img/art/CosmicCoincidence/CosmicChristmas.png template: _includes/srcset.html %}
+
+{% responsive_image path: assets/img/art/CosmicCoincidence/CosmicHalloween.png template: _includes/srcset.html %}
 
 # Eiko
 {: class="centred" }
@@ -85,14 +85,14 @@ permalink: /art/
 ### **[Traitor REMIX](https://soundcloud.com/joao-pedro-buratto/traitor-mix2)**
 {: class="centred" }
 
+{% responsive_image path: assets/img/art/Goao/GoaoSpooktober.png template: _includes/srcset.html %}
+
+{% responsive_image path: assets/img/art/Goao/GoaoSpooktoberPoster.png template: _includes/srcset.html %}
+
 <div class='horizontal-2' markdown='1'>
 {% responsive_image path: assets/img/art/Goao/GoaoRender.png %}
 {% responsive_image path: assets/img/art/Goao/GoaoSeptember19Diorama.png %}
 </div>
-
-{% responsive_image path: assets/img/art/Goao/GoaoSpooktober.png template: _includes/srcset.html %}
-
-{% responsive_image path: assets/img/art/Goao/GoaoSpooktoberPoster.png template: _includes/srcset.html %}
 
 # Grimmie (Judge Honkette)
 {: class="centred" }
@@ -128,13 +128,13 @@ permalink: /art/
 # Probably Not
 {: class="centred" }
 
-{% responsive_image path: assets/img/art/ProbablyNot/ProbablyNotDark.jpg template: _includes/srcset.html %}
-
-{% responsive_image path: assets/img/art/ProbablyNot/ProbablyNotClownHall.jpg template: _includes/srcset.html %}
+{% responsive_image path: assets/img/art/ProbablyNot/ProbablyNot_Chase.png template: _includes/srcset.html %}
 
 {% responsive_image path: assets/img/art/ProbablyNot/November19Wallpaper.png template: _includes/srcset.html %}
 
-{% responsive_image path: assets/img/art/ProbablyNot/ProbablyNot_Chase.png template: _includes/srcset.html %}
+{% responsive_image path: assets/img/art/ProbablyNot/ProbablyNotClownHall.jpg template: _includes/srcset.html %}
+
+{% responsive_image path: assets/img/art/ProbablyNot/ProbablyNotDark.jpg template: _includes/srcset.html %}
 
 # Sunberry
 {: class="centred" }
