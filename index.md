@@ -13,11 +13,13 @@ title: Home
 
 RE:SS3D is a resurrection of the SS3D project (a 3D remake of SS13), and is being developed in the Unity game engine.
 
-Our project boards can be found on our [github](https://github.com/RE-SS3D/SS3D/projects) and [trello](https://trello.com/ress3d), while information regarding contributing can be found on our [contribute]({{ site.baseurl }}/contribute/) page.
+Our project boards can be found on our [github]({{ site.github_url }}){:target="_blank"} and [trello]({{ site.trello_url }}){:target="_blank"}, while our main form of communication is our [discord]({{ site.discord_url }}){:target="_blank"} information regarding contributing can be found on our [contribute]({{ site.baseurl }}/contribute/) page.
 
 <header class="header">
-<h6 style="font-size:35px"><a href="https://github.com/RE-SS3D/SS3D#downloads">D O W N L O A D S</a></h6>
+    <h6 style="font-size:35px">
+        <a href="https://github.com/RE-SS3D/SS3D#downloads" target="_blank">D O W N L O A D S</a>
+    </h6>
 </header>
 
-## Latest Blog Post:
+<h2>Latest Blog Post:</h2>
 {: class="centred" }

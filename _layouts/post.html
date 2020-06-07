@@ -1,20 +1,18 @@
 ---
 layout: default
 ---
-
-<div class="image credit-wrapper">
-  {% responsive_image_block %}
-    path: {{ page.image | prepend: site.baseurl |  remove_first: "/" }}
-    alt: {{ post.title }}
-    template: "_includes/srcset.html" 
-    title: {{ post.title }}
-  {% endresponsive_image_block %}
-  {% if page.image_credit %}
-    <h5><i>{{ page.image_credit }}</i></h5>
-  {% endif %}
+<div>
+  <div class="image">
+    <img src="{{ page.image | prepend: site.baseurl }}" alt="{{ post.title }}">
+  </div>
+  <h5><i>{{ page.image_credit }}</i></h5>
 </div>
 
 <h1>{{ page.title }}</h1>
 <h5><i>{{ page.date | date: "%A, %B %-d, %Y" }}</i></h5>
 <h5><i>{{ page.post_credit }}</i></h5>
+{% if page.monthly_release %}
+<h2>Monthly Release: <a href="https://github.com/RE-SS3D/SS3D/tree/{{ page.monthly_release }}" target="_blank">v{{ page.monthly_release }}</a></h2>
+{% endif %}
+<br>
 {{ content }}
