@@ -22,7 +22,7 @@ It's free and open source.
 
 ## Is there a playable demo?
 
-**Download links can be found on our [SS3D github repo](https://github.com/RE-SS3D/SS3D#downloads).** 
+**Download links can be found on our [SS3D github repo]({{ site.github_url }}/SS3D#downloads){:target="_blank"}.** 
 But don't expect much yet, as we still have a lot of work to do.
 
 ## When will the game be completed?
@@ -36,8 +36,8 @@ For legal reasons, we don't use assets from the Unity Asset Store, but open-sour
 
 ## What license is the project distributed under?
 
-All code assets use the [**MIT license**](https://github.com/RE-SS3D/SS3D/blob/master/LICENSE-CODE), only requiring attribution when used.
-All art assets use the [**CC BY-NC-SA 4.0 license**](https://github.com/RE-SS3D/SS3D/blob/master/LICENCE-ASSETS), requiring attribution, same license, and only for non-commercial uses.
+All code assets use the [**MIT license**]({{ site.github_url }}/SS3D/blob/master/LICENSE-CODE){:target="_blank"}, only requiring attribution when used.
+All art assets use the [**CC BY-NC-SA 4.0 license**]({{ site.github_url }}/SS3D/blob/master/LICENCE-ASSETS){:target="_blank"}, requiring attribution, same license, and only for non-commercial uses.
 Keep in mind that your contributions are not retractable. Once submitted, the project has the license to use your contribution indefinitely.
 
 ## Will there be "X" feature?
@@ -48,7 +48,7 @@ The most significant changes will be redesigns of the shortcomings and limitatio
 
 ## How can I help?
 
-There are several ways you can help, from 2d art, 3d art, sfx, programming, website development and more, just visit our [contribute page]({{ site.baseurl }}/contribute/) and come join our [discord](https://discord.gg/3ny9tdH)!
+There are several ways you can help, from 2d art, 3d art, sfx, programming, website development and more, just visit our [contribute page]({{ site.baseurl }}/contribute/) and come join our [discord]({{ site.discord_url }}){:target="_blank"}!
 
 ## Who is *beep?
 

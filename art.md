@@ -79,10 +79,10 @@ permalink: /art/
 # Goao
 {: class="centred" }
 
-### **[Title 3 - Tin Tin REMIX](https://soundcloud.com/joao-pedro-buratto/tin-tin-title3-mix-7-version-6)**
+### [Title 3 - Tin Tin REMIX](https://soundcloud.com/joao-pedro-buratto/tin-tin-title3-mix-7-version-6){:target="_blank"}
 {: class="centred" }
 
-### **[Traitor REMIX](https://soundcloud.com/joao-pedro-buratto/traitor-mix2)**
+### [Traitor REMIX](https://soundcloud.com/joao-pedro-buratto/traitor-mix2){:target="_blank"}
 {: class="centred" }
 
 {% responsive_image path: assets/img/art/Goao/GoaoSpooktober.png template: _includes/srcset.html %}
@@ -106,7 +106,7 @@ permalink: /art/
 
 {% responsive_image path: assets/img/art/Grimmie/GrimmieGravity.png template: _includes/srcset.html %}
 
-# [Konstantin3001](https://www.deviantart.com/konstantin3001)
+# [Konstantin3001](https://www.deviantart.com/konstantin3001){:target="_blank"}
 {: class="centred" }
 
 {% responsive_image path: assets/img/art/Konstantin3001/KonstantinCultistPoster.png template: _includes/srcset.html %}

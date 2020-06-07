@@ -7,6 +7,7 @@ description: |
 image: /assets/img/posts/[insert folder]/Wallpaper.png
 image_credit: Image credit - [insert name]
 post_credit: Written by - [insert name]
+monthly_release: [insert release tag]
 ---
 
 Cute phrase/quote goes here.
@@ -86,9 +87,11 @@ Cute phrase/quote goes here.
 
 // 'Sub-Systems' is what it sounds like, but I usually change the section name to the name of the system (specific interactions, surgery, jobs, etc).
 
+## Fixes
+
 ## Animations
 
-## Shaders
+## VFX
 
 ## Textures
 
@@ -96,9 +99,9 @@ Cute phrase/quote goes here.
 
 ## 2D
 
-// '2D' is logos, posters, decals, etc.
+// '2D' is logos, graphics, decals, etc.
 
-## Sounds
+## SFX
 
 // 'Sounds' is sound effects, music, noises, etc.
 
@@ -128,4 +131,4 @@ Cute phrase/quote goes here.
 
 // 'Conclusion' is the final wrap-up and goodbye, and include the discord link, as tradition.
 
-Goodbye summary goes here. [Discord link.](https://discord.gg/3ny9tdH){:target="_blank"}
+Goodbye summary goes here. [Discord link]({{ site.discord_url }}){:target="_blank"}.
