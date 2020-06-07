@@ -97,7 +97,7 @@ permalink: /art/
 # Grimmie (Judge Honkette)
 {: class="centred" }
 
-<iframe class="video" width="580px" height="272px" src="https://www.youtube-nocookie.com/embed/ZlWGkLT2kRo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe class="video" width="580px" height="272px" src="https://www.youtube-nocookie.com/embed/uzLdgxOBPrc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <div class='horizontal-2' markdown='1'>
 {% responsive_image path: assets/img/art/Grimmie/GrimmieTimeAssassinLight.png %}
