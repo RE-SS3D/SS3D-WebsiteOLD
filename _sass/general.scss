@@ -1,7 +1,7 @@
 body, h1, h2, h3, h4, h5, h6 {
     font-size-adjust: 0.58; // Keep font size same regardless of font family.
     padding: 0;
-    margin: 1.5em 0 0.25em 0;
+    margin: 1.5em 0em 0.25em 0em;
 
     vertical-align: baseline;
     line-height: 1em;
@@ -9,6 +9,10 @@ body, h1, h2, h3, h4, h5, h6 {
 
 h1 {
     margin: 1em 0em 0.5em 0em;
+}
+
+h4 {
+    margin: 1em 0em 0.75em 0em;
 }
 
 h5 {
