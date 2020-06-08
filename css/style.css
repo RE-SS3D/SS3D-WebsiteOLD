@@ -180,12 +180,15 @@ body::before {
 body, h1, h2, h3, h4, h5, h6 {
   font-size-adjust: 0.58;
   padding: 0;
-  margin: 1.5em 0 0.25em 0;
+  margin: 1.5em 0em 0.25em 0em;
   vertical-align: baseline;
   line-height: 1em; }
 
 h1 {
   margin: 1em 0em 0.5em 0em; }
+
+h4 {
+  margin: 1em 0em 0.75em 0em; }
 
 h5 {
   margin: 0em 0em .5em 0em;
@@ -531,7 +534,8 @@ nav {
 .horizontal-3 {
   overflow: hidden;
   white-space: nowrap;
-  align-self: center; }
+  align-self: center;
+  max-width: 580px; }
   .horizontal-3 div {
     display: inline-block;
     width: 32.5%;
@@ -551,7 +555,8 @@ nav {
 .horizontal-2 {
   overflow: hidden;
   white-space: nowrap;
-  align-self: center; }
+  align-self: center;
+  max-width: 580px; }
   .horizontal-2 div {
     display: inline-block;
     width: 49.5%; }
