@@ -4,6 +4,7 @@ layout: default
 
 {{ content }}
 <ul class="ul-reset post-list">
+    <centred><h2>Latest Blog Post:</h2></centred>
 {% for post in site.posts limit:1 %}
     <li class="post-row">
         <a style="white-space: nowrap;" href="{{ site.baseurl}}{{ post.url }}">
