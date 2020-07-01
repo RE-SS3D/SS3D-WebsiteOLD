@@ -58,7 +58,7 @@ We currently do not have any guides for SFX, but if you want to scream like a ps
 
 ## Submissions:
 
-Technical contributions are submitted to [our main (SS3D) repo via pull request]({{ site.github/game_url }}/pulls){:target="_blank"}.
+Technical contributions are submitted to [our main (SS3D) repo via pull request]({{ site.github_game_url }}/pulls){:target="_blank"}.
 
 Art contributions currently are submitted via the art channels on our [discord]({{ site.discord_url }}){:target="_blank"}.
 
