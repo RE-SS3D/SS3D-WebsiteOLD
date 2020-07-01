@@ -27,7 +27,7 @@ In the ashes immediately following the abandonment of the project to the horribl
 
 ## Where is RE:SS3D now?
 
-RE:SS3D is fully open-source and is located on [github]({{ site.github_url }}){:target="_blank"}. We have quite a few dedicated contributors of different types, although, admittedly our art departments move a bit faster than the technical ones. See our progress on our [devblog page]({{ site.baseurl }}/devblog/).
+RE:SS3D is fully open-source and is located on [github]({{ site.github_organization_url }}){:target="_blank"}. We have quite a few dedicated contributors of different types, although, admittedly our art departments move a bit faster than the technical ones. See our progress on our [devblog page]({{ site.baseurl }}/devblog/).
 
 ## I want to help!
 
