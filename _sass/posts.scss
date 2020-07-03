@@ -53,7 +53,7 @@
 }
 
 .horizontal-2-direct-children-desktop {
-    @include respond-to(desktop) { 
+    @include respond-to(medium-screen) { 
         &::after {
             content: "";
             clear: both;

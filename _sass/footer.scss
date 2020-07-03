@@ -6,7 +6,7 @@
     li {
         margin-top: 16px;
         margin-left: 0;
-        @include respond-to(desktop) {
+        @include respond-to(small-screen) {
             display: inline-block;
             margin-top: 0;
             margin-left: 16px;

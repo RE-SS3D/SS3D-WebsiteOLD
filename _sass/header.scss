@@ -12,13 +12,13 @@ header {
     h6 {
         white-space: nowrap;
         overflow: visible;
-        font-size: 4.5vw;
+        font-size: 23px;
     }
     div {
         width: 100%;
     }
     img {
-        height: 76px;
+        height: 80px;
         position: relative;
         right: 5px;
         top: 0px;
@@ -26,16 +26,36 @@ header {
         padding-top: 10px;
         padding-bottom: 0px;
     }
-    @include respond-to(desktop) {
-        h1 {
-            font-size: 46px; 
-            margin-top: 0.2em;
-        }
+    @include respond-to(small-screen) {
         h6 {
-            font-size: 30px;
+            font-size: 26px;
         }
         img {
-            height: 112px;
+            height: 90px;
+        }
+    }
+    @include respond-to(medium-screen) {
+        h6 {
+            font-size: 29px;
+        }
+        img {
+            height: 100px;
+        }
+    }
+    @include respond-to(large-screen) {
+        h6 {
+            font-size: 32px;
+        }
+        img {
+            height: 110px;
+        }
+    }
+    @include respond-to(extra-large-screen) {
+        h6 {
+            font-size: 36px;
+        }
+        img {
+            height: 120px;
         }
     }
 }

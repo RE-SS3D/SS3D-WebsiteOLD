@@ -71,7 +71,7 @@
     a {
         margin-bottom: 1em;
     }
-    @include respond-to(desktop) { 
+    @include respond-to(medium-screen) { 
         p {
             display: flex;
             justify-content: space-between;
