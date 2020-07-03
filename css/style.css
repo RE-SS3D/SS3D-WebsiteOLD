@@ -191,10 +191,10 @@ h4 {
   margin: 1em 0em 0.75em 0em; }
 
 h5 {
-  margin: 0em 0em .5em 0em;
+  margin: 0em 0em 0.5em 0em;
   color: #666666;
   color: var(--color-text-h5);
-  max-width: 560px; }
+  max-width: 580px; }
 
 h6 {
   margin: 0.5em 0 0.25em 0;
@@ -218,7 +218,7 @@ body {
   font-size: 1.125em;
   line-height: 22px;
   line-height: 1.375em; }
-  @media (min-width: 624px) {
+  @media (min-width: 840px) {
     body {
       line-height: 20px;
       line-height: 1.4em; } }
@@ -266,11 +266,19 @@ a, .link {
   display: flex;
   flex-direction: column;
   align-items: center; }
-  @media (min-width: 624px) {
+  @media (min-width: 600px) {
+    .post-content {
+      margin: 0 auto;
+      width: 90%; } }
+  @media (min-width: 840px) {
     .post-content {
       margin: 0 auto;
       width: 80%; } }
-  @media (min-width: 1024px) {
+  @media (min-width: 1080px) {
+    .post-content {
+      margin: 0 auto;
+      width: 65%; } }
+  @media (min-width: 1600px) {
     .post-content {
       margin: 0 auto;
       width: 45%; } }
@@ -299,31 +307,43 @@ header {
   header h6 {
     white-space: nowrap;
     overflow: visible;
-    font-size: 4.5vw; }
+    font-size: 19px; }
   header div {
     width: 100%; }
   header img {
-    height: 76px;
+    height: 64px;
     position: relative;
     right: 5px;
     top: 0px;
     padding: 1em;
     padding-top: 10px;
     padding-bottom: 0px; }
-  @media (min-width: 624px) {
-    header h1 {
-      font-size: 46px;
-      margin-top: 0.2em; }
+  @media (min-width: 600px) {
     header h6 {
-      font-size: 30px; }
+      font-size: 25px; }
     header img {
-      height: 112px; } }
+      height: 84px; } }
+  @media (min-width: 840px) {
+    header h6 {
+      font-size: 29px; }
+    header img {
+      height: 96px; } }
+  @media (min-width: 1080px) {
+    header h6 {
+      font-size: 34px; }
+    header img {
+      height: 110px; } }
+  @media (min-width: 1600px) {
+    header h6 {
+      font-size: 39px; }
+    header img {
+      height: 126px; } }
 
 nav, nav ul {
   width: 100vw;
   height: 50px;
   border-radius: 0px; }
-  @media (min-width: 624px) {
+  @media (min-width: 840px) {
     nav, nav ul {
       width: 600px; } }
 
@@ -373,11 +393,11 @@ nav {
       text-decoration: none;
       transition: background-color .17s ease,color .17s ease;
       font-size: 16px; }
-      @media (min-width: 624px) {
+      @media (min-width: 840px) {
         nav li a {
           padding: 16px;
           font-size: 17px; } }
-      @media (min-width: 1024px) {
+      @media (min-width: 1080px) {
         nav li a {
           padding: 16px 22px;
           font-size: 18px; } }
@@ -406,13 +426,13 @@ nav {
   background-image: linear-gradient(to right, #1e4684, #1e4684), linear-gradient(to right, #1e4684, #1e4684), linear-gradient(to right, rgba(84, 28, 23, 0.25), rgba(30, 70, 132, 0)), linear-gradient(to left, rgba(84, 28, 23, 0.25), rgba(30, 70, 132, 0)); }
 
 .contact {
-  padding: 50px 0; }
+  padding: 20px 0; }
   .contact ul {
     text-align: center; }
   .contact li {
     margin-top: 16px;
     margin-left: 0; }
-    @media (min-width: 624px) {
+    @media (min-width: 600px) {
       .contact li {
         display: inline-block;
         margin-top: 0;
@@ -495,7 +515,7 @@ nav {
 
 .horizontal-buttons a {
   margin-bottom: 1em; }
-@media (min-width: 624px) {
+@media (min-width: 840px) {
   .horizontal-buttons p {
     display: flex;
     justify-content: space-between; }
@@ -513,16 +533,16 @@ nav {
 .post-row {
   max-width: 580px;
   padding: 32px 0px; }
-  @media (min-width: 1024px) {
+  @media (min-width: 1080px) {
     .post-row {
       max-width: none;
       min-width: 800px;
       width: 70%; } }
-  @media (min-width: 1024px) {
+  @media (min-width: 1080px) {
     .post-row img {
       width: 52%;
       float: left; } }
-  @media (min-width: 1024px) {
+  @media (min-width: 1080px) {
     .post-row .post-text {
       width: 44%;
       float: right; } }
@@ -570,7 +590,7 @@ nav {
       .horizontal-2 div a:last-child {
         padding-right: 0; }
 
-@media (min-width: 624px) {
+@media (min-width: 840px) {
   .horizontal-2-direct-children-desktop::after {
     content: "";
     clear: both;
