@@ -12,13 +12,13 @@ header {
     h6 {
         white-space: nowrap;
         overflow: visible;
-        font-size: 23px;
+        font-size: 22px;
     }
     div {
         width: 100%;
     }
     img {
-        height: 80px;
+        height: 74px;
         position: relative;
         right: 5px;
         top: 0px;
@@ -28,10 +28,10 @@ header {
     }
     @include respond-to(small-screen) {
         h6 {
-            font-size: 26px;
+            font-size: 25px;
         }
         img {
-            height: 90px;
+            height: 84px;
         }
     }
     @include respond-to(medium-screen) {
@@ -39,12 +39,12 @@ header {
             font-size: 29px;
         }
         img {
-            height: 100px;
+            height: 96px;
         }
     }
     @include respond-to(large-screen) {
         h6 {
-            font-size: 32px;
+            font-size: 34px;
         }
         img {
             height: 110px;
@@ -52,10 +52,10 @@ header {
     }
     @include respond-to(extra-large-screen) {
         h6 {
-            font-size: 36px;
+            font-size: 39px;
         }
         img {
-            height: 120px;
+            height: 126px;
         }
     }
 }
