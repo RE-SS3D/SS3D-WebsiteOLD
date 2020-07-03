@@ -65,6 +65,8 @@ permalink: /art/
 # CosmicCoincidence
 {: class="centred" }
 
+{% responsive_image path: assets/img/art/CosmicCoincidence/SS13.png template: _includes/srcset.html %}
+
 {% responsive_image path: assets/img/art/CosmicCoincidence/CosmicChristmas.png template: _includes/srcset.html %}
 
 {% responsive_image path: assets/img/art/CosmicCoincidence/CosmicHalloween.png template: _includes/srcset.html %}
@@ -127,6 +129,8 @@ permalink: /art/
 
 # Probably Not
 {: class="centred" }
+
+{% responsive_image path: assets/img/art/ProbablyNot/CreationOfGreytide.png template: _includes/srcset.html %}
 
 {% responsive_image path: assets/img/art/ProbablyNot/ProbablyNot_Chase.png template: _includes/srcset.html %}
 
