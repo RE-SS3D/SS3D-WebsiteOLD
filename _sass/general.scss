@@ -16,10 +16,10 @@ h4 {
 }
 
 h5 {
-    margin: 0em 0em .5em 0em;
+    margin: 0em 0em 0.5em 0em;
     color: $color-text-h5;
     color: var(--color-text-h5);
-    max-width: 560px;
+    max-width: 580px;
 }
 
 h6 {
@@ -47,7 +47,7 @@ body {
     font-size: 1.125em;
     line-height: 22px;
     line-height: 1.375em;
-    @include respond-to(desktop) {
+    @include respond-to(medium-screen) {
         line-height: 20px;
         line-height: 1.4em;
     }
@@ -110,11 +110,19 @@ a, .link {
 
     flex-direction: column;
     align-items: center;
-    @include respond-to(desktop) {
+    @include respond-to(small-screen) {
+        margin: 0 auto;
+        width: 90%;
+    }
+    @include respond-to(medium-screen) {
         margin: 0 auto;
         width: 80%;
     }
     @include respond-to(large-screen) {
+        margin: 0 auto;
+        width: 65%;
+    }
+    @include respond-to(extra-large-screen) {
         margin: 0 auto;
         width: 45%;
     }

@@ -74,7 +74,7 @@ Cute phrase/quote goes here.
 {% responsive_image path: assets/img/posts/[insert folder]/gif1.gif template: _includes/srcset-gif.html %}
 
 // Displaying a video:
-<video autoplay="autoplay" muted loop="loop" poster="{{ site.baseurl }}/assets/img/posts/[insert folder]/VideoThumbnail.png">
+<video controls muted poster="{{ site.baseurl }}/assets/img/posts/[insert folder]/VideoThumbnail.png">
   <source src="{{ site.baseurl }}/assets/img/posts/[insert folder]/Video.webm" type="video/webm">
   <source src="{{ site.baseurl }}/assets/img/posts/[insert folder]/Video.mp4" type="video/mp4">
 </video>
