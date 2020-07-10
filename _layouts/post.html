@@ -12,7 +12,11 @@ layout: default
 <h5><i>{{ page.date | date: "%A, %B %-d, %Y" }}</i></h5>
 <h5><i>{{ page.post_credit }}</i></h5>
 {% if page.monthly_release %}
-<h2>Monthly Release: <u><a href="{{ site.github_game_url }}/releases/tag/{{ page.monthly_release }}" target="_blank">v{{ page.monthly_release }}</a></u></h2>
+<h2>Monthly Release: 
+  <u>
+    <a href="{{ site.github_game_url }}/releases/download/{{ page.monthly_release }}/RESS3D_{{ page.monthly_release }}.zip" target="_blank">v{{ page.monthly_release }}</a>
+  </u>
+</h2>
 {% endif %}
 <br>
 {{ content }}
