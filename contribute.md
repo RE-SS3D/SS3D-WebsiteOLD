@@ -32,7 +32,7 @@ For any other questions, concerns, or unsolicited advice, just ask around on the
 
 ## Coding tasks:
 
-Start by familiarizing yourself with our [code (C#) style guide]({{ site.github_game_url }}/blob/master/Documents/C_SHARP..md){:target="_blank"}, and [github contributing guide]({{ site.github_game_url }}/blob/master/CONTRIBUTING.md){:target="_blank"}.
+Start by familiarizing yourself with our [code (C#) style guide]({{ site.github_game_url }}/blob/master/Documents/C_SHARP.md){:target="_blank"}, and [github contributing guide]({{ site.github_game_url }}/blob/master/CONTRIBUTING.md){:target="_blank"}.
 
 Feel free to help on any of our three repos as they could all use your help, but since most of you are here to help with the game itself, visit our SS3D [code board]({{ site.github_game_url }}/projects/2){:target="_blank"} for a task (the ones in the available column are ones you can start on).
 
