@@ -1,4 +1,130 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://ss3d.space/feed.xml" rel="self" type="application/atom+xml" /><link href="https://ss3d.space/" rel="alternate" type="text/html" /><updated>2020-07-29T03:27:20+00:00</updated><id>https://ss3d.space/feed.xml</id><title type="html">RE:SS3D</title><subtitle>This is a 3D recreation of Space Station 13, on the Unity engine, which will come with its own set of gameplay/graphical improvements. </subtitle><entry><title type="html">20.06: June 2020 Devblog</title><link href="https://ss3d.space/2020/07/03/20.06.html" rel="alternate" type="text/html" title="20.06: June 2020 Devblog" /><published>2020-07-03T05:30:00+00:00</published><updated>2020-07-03T05:30:00+00:00</updated><id>https://ss3d.space/2020/07/03/20.06</id><content type="html" xml:base="https://ss3d.space/2020/07/03/20.06.html">&lt;p&gt;&lt;em&gt;The Gods bestoweth upon thee a tool of great power, it is your duty to decide whether you shall use it to build civilizations or destroy them.&lt;/em&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://ss3d.space/feed.xml" rel="self" type="application/atom+xml" /><link href="https://ss3d.space/" rel="alternate" type="text/html" /><updated>2020-08-05T20:58:32+00:00</updated><id>https://ss3d.space/feed.xml</id><title type="html">RE:SS3D</title><subtitle>This is a 3D recreation of Space Station 13, on the Unity engine, which will come with its own set of gameplay/graphical improvements. </subtitle><entry><title type="html">20.07: July 2020 Devblog</title><link href="https://ss3d.space/2020/08/05/20.07.html" rel="alternate" type="text/html" title="20.07: July 2020 Devblog" /><published>2020-08-05T05:30:00+00:00</published><updated>2020-08-05T05:30:00+00:00</updated><id>https://ss3d.space/2020/08/05/20.07</id><content type="html" xml:base="https://ss3d.space/2020/08/05/20.07.html">&lt;p&gt;&lt;em&gt;As they were meeting, the clown took the pie, licked it; then threw it at the crew, and exclaimed, ‘HONK ye all’!&lt;/em&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;july-recap&quot;&gt;July Recap&lt;/h1&gt;
+
+&lt;p&gt;A little slower this month, but we are still here…&lt;/p&gt;
+
+&lt;h2 id=&quot;tilemap-layer-restrictions&quot;&gt;Tilemap Layer Restrictions&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;BroodjeKipcorn&lt;/strong&gt; spent more time this month working on the tilemap system. It now has a lot more layer restrictions which prevents objects from being placed on the wrong layers, prevents certain wall-mounts on windows, prevents all wall-mounts on girders, and many other smaller restrictions.&lt;/p&gt;
+
+&lt;h2 id=&quot;containers&quot;&gt;Containers&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;Light Velox&lt;/strong&gt; reworked our container system, by adding sizes, volumes, filters, &amp;amp; traits. Sizes range from tiny to huge, you can only put items in a container of equal or smaller size. Volumes are the maximum volume the container can hold (the sum of the volume of all items inside), so a container will not accept additional items if the max volume is reached (this can be disabled for containers like the bluespace backpack, allowing an infinite max volume for the container). Finally, filters are used in conjunction with traits to restrict what items can be contained in certain containers. The traits (snacks, alcohol, pills, etc) are attached to items, while filters (food, beverages, medication, etc) are attached to containers, and the filters can be used to specifically accept or refuse linked traits.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;CosmicCoincidence&lt;/strong&gt; made mobile containers out of the toolbox, medkit, &amp;amp; cardboard box. The toolbox only accepts tools and the medkit only accepts medications (using the filters &amp;amp; traits mentioned above) for now. These smaller mobile containers are obviously special compared to our other containers as they can be carried and even placed inside larger containers like lockers.&lt;/p&gt;
+
+&lt;h2 id=&quot;material-construction&quot;&gt;Material Construction&lt;/h2&gt;
+
+&lt;p&gt;We now have basic material construction courtesy of &lt;strong&gt;Alainx277&lt;/strong&gt;. For now, the player can use metal sheets to build a wall girder or metal table, use the glass sheets to build a glass table, or use the wood planks to build a wood table.&lt;/p&gt;
+
+&lt;video controls=&quot;&quot; muted=&quot;&quot; poster=&quot;/assets/img/posts/20.07.01/Alain_Construction.png&quot; width=&quot;580px&quot;&gt;
+  &lt;source src=&quot;/assets/img/posts/20.07.01/Alain_Construction.webm&quot; type=&quot;video/webm&quot; /&gt;
+  &lt;source src=&quot;/assets/img/posts/20.07.01/Alain_Construction.mp4&quot; type=&quot;video/mp4&quot; /&gt;
+&lt;/video&gt;
+
+&lt;h2 id=&quot;options-menu&quot;&gt;Options Menu&lt;/h2&gt;
+
+&lt;p&gt;A new options menu added by &lt;strong&gt;Goao&lt;/strong&gt; this month (hit ESC to open/close it). There’s not much on this menu yet, but it does make a better home for our round timer and restart button.&lt;/p&gt;
+
+&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/20.07.01/Goao_Menu.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/Goao_Menu-580x326.png 580w,    /assets/resized/Goao_Menu-290x163.png 290w,    /assets/resized/Goao_Menu-170x96.png 170w,    /assets/resized/Goao_Menu-145x82.png 145w, /assets/img/posts/20.07.01/Goao_Menu.png 1280w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;consumption&quot;&gt;Consumption&lt;/h2&gt;
+
+&lt;p&gt;Also from &lt;strong&gt;Goao&lt;/strong&gt; (and with help from &lt;strong&gt;Alainx277&lt;/strong&gt; bug fixing), we now have a consumption interaction for eating and drinking. You can feed yourself as well as others!&lt;/p&gt;
+
+&lt;video controls=&quot;&quot; poster=&quot;/assets/img/posts/20.07.01/Consumption.png&quot; width=&quot;580px&quot;&gt;
+  &lt;source src=&quot;/assets/img/posts/20.07.01/Consumption.webm&quot; type=&quot;video/webm&quot; /&gt;
+  &lt;source src=&quot;/assets/img/posts/20.07.01/Consumption.mp4&quot; type=&quot;video/mp4&quot; /&gt;
+&lt;/video&gt;
+
+&lt;h2 id=&quot;details&quot;&gt;Details&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;Seteron:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;updated the airlocks to use our newer airlock models, and also added animations &amp;amp; lights to them.&lt;/li&gt;
+  &lt;li&gt;improved the appearance of our opaque glass material.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;CosmicCoincidence:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;added basic floor overlays.&lt;/li&gt;
+  &lt;li&gt;added cigarettes, a lighter, &amp;amp; the cigarette vendor.&lt;/li&gt;
+  &lt;li&gt;added snacks (cup ramen, twinkie, 4no raisins, donk pocket) &amp;amp; the snack vendor.&lt;/li&gt;
+  &lt;li&gt;added many beverages (booze, juice, milk) along with substances for each, &amp;amp; the booze vendor.&lt;/li&gt;
+  &lt;li&gt;added more kitchen utensils (frying pan, spatula, whisk, coffee mugs) &amp;amp; the dinnerware vendor.&lt;/li&gt;
+  &lt;li&gt;added a new table type (poker table), and added table frames for all table types.&lt;/li&gt;
+  &lt;li&gt;added more furniture &amp;amp; wall-mounts (air alarm, emergency lights, SMES, solar panels, sink, mirror, toilet, vent, scrubber).&lt;/li&gt;
+  &lt;li&gt;added some missing (forgotten) wire meshes, now accounting for all orientations.&lt;/li&gt;
+  &lt;li&gt;expanded the map, adding most of the objects mentioned above, a new library, a new bathroom, &amp;amp; a pseudo atmospheric pipe network.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;fixes&quot;&gt;Fixes&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;Alain:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;fixed a bug allowing the player to build tables on the same tile as the player.&lt;/li&gt;
+  &lt;li&gt;fixed the cell charger not working.&lt;/li&gt;
+  &lt;li&gt;fixed the interaction range to check horizontal &amp;amp; vertical distances separately.&lt;/li&gt;
+  &lt;li&gt;fixed a bug with the ragdolls that prevented the player from standing back up sometimes.&lt;/li&gt;
+  &lt;li&gt;fixed the player’s hand slots by serializing the hash fields on the item filters.&lt;/li&gt;
+  &lt;li&gt;fixed an error with the tilemap adjacency connector which caused tiles not to load sometimes.&lt;/li&gt;
+  &lt;li&gt;fixed a bug with toggleable items inconsistently changing their states after being dropped and then picked back up.&lt;/li&gt;
+  &lt;li&gt;improved FOV performance by using batched raycasts and native mesh functions.&lt;/li&gt;
+  &lt;li&gt;changed sounds to be relative to the camera orientation.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Seteron:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;fixed FOV so it is localized to the player.&lt;/li&gt;
+  &lt;li&gt;fixed the walls/windows rigid body settings, reducing tons of unnecessary physics calculations.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;CosmicCoincidence:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;fixed the examine function not working on wall-mounts, computer consoles, &amp;amp; airlocks.&lt;/li&gt;
+  &lt;li&gt;adjusted object names and IDs on nearly all objects for proper identification.&lt;/li&gt;
+  &lt;li&gt;converted most of the furniture objects to fixture types.&lt;/li&gt;
+  &lt;li&gt;fixed a bug with some of the glass table connections having inverted materials.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;models&quot;&gt;Models&lt;/h2&gt;
+
+&lt;p&gt;A new floor tile item by &lt;strong&gt;CosmicCoincidence&lt;/strong&gt;, which is UV unwrapped in a way to use the floor tile textures we already have.&lt;/p&gt;
+
+&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/20.07.01/Cosmic_Tiles.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/Cosmic_Tiles-580x435.png 580w,    /assets/resized/Cosmic_Tiles-290x218.png 290w,    /assets/resized/Cosmic_Tiles-170x128.png 170w,    /assets/resized/Cosmic_Tiles-145x109.png 145w, /assets/img/posts/20.07.01/Cosmic_Tiles.png 800w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;graphics&quot;&gt;Graphics&lt;/h2&gt;
+
+&lt;p&gt;New this month, &lt;strong&gt;NazarDoe&lt;/strong&gt; added a bunch of missing symbols to our graffiti set, some new warning lines, and a set of amazing runes!&lt;/p&gt;
+
+&lt;div class=&quot;horizontal-3&quot;&gt;
+
+  &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/20.07.01/NazarDoe_Graffiti.png&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/NazarDoe_Graffiti-580x435.png 580w,    /assets/resized/NazarDoe_Graffiti-290x218.png 290w,    /assets/resized/NazarDoe_Graffiti-170x128.png 170w,    /assets/resized/NazarDoe_Graffiti-145x109.png 145w, /assets/img/posts/20.07.01/NazarDoe_Graffiti.png 800w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+
+  &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/20.07.01/NazarDoe_WarningLines.png&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/NazarDoe_WarningLines-580x435.png 580w,    /assets/resized/NazarDoe_WarningLines-290x218.png 290w,    /assets/resized/NazarDoe_WarningLines-170x128.png 170w,    /assets/resized/NazarDoe_WarningLines-145x109.png 145w, /assets/img/posts/20.07.01/NazarDoe_WarningLines.png 800w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+
+  &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/20.07.01/NazarDoe_Runes.png&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/NazarDoe_Runes-580x435.png 580w,    /assets/resized/NazarDoe_Runes-290x218.png 290w,    /assets/resized/NazarDoe_Runes-170x128.png 170w,    /assets/resized/NazarDoe_Runes-145x109.png 145w, /assets/img/posts/20.07.01/NazarDoe_Runes.png 800w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;More interaction icons from &lt;strong&gt;Konstantin3001&lt;/strong&gt;, as well as some new thermometers for the UI.&lt;/p&gt;
+
+&lt;div class=&quot;horizontal-2&quot;&gt;
+
+  &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/20.07.01/Konstantin_UI.png&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/Konstantin_UI-580x435.png 580w,    /assets/resized/Konstantin_UI-290x218.png 290w,    /assets/resized/Konstantin_UI-170x128.png 170w,    /assets/resized/Konstantin_UI-145x109.png 145w, /assets/img/posts/20.07.01/Konstantin_UI.png 800w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+
+  &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/20.07.01/Konstantin_Thermometer.png&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/Konstantin_Thermometer-580x435.png 580w,    /assets/resized/Konstantin_Thermometer-290x218.png 290w,    /assets/resized/Konstantin_Thermometer-170x128.png 170w,    /assets/resized/Konstantin_Thermometer-145x109.png 145w, /assets/img/posts/20.07.01/Konstantin_Thermometer.png 800w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;art&quot;&gt;Art&lt;/h2&gt;
+
+&lt;p&gt;‘The Last Branch’ is the name of this month’s art piece, as &lt;strong&gt;Bug&lt;/strong&gt; decided to continue the theme of recreating classical art with SS3D assets.&lt;/p&gt;
+
+&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/art/Bug/Bug_TheLastBranch.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/Bug_TheLastBranch-580x326.png 580w,    /assets/resized/Bug_TheLastBranch-290x163.png 290w,    /assets/resized/Bug_TheLastBranch-170x96.png 170w,    /assets/resized/Bug_TheLastBranch-145x82.png 145w, /assets/img/art/Bug/Bug_TheLastBranch.png 1920w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;notes&quot;&gt;Notes&lt;/h3&gt;
+
+&lt;p&gt;Haven’t joined the party yet? Then come visit us on our &lt;a href=&quot;https://discord.gg/3ny9tdH&quot; target=&quot;_blank&quot;&gt;discord&lt;/a&gt;!&lt;/p&gt;</content><author><name></name></author><summary type="html">As they were meeting, the clown took the pie, licked it; then threw it at the crew, and exclaimed, ‘HONK ye all’!</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://ss3d.space/assets/img/art/Bug/Bug_TheLastBranch.png" /></entry><entry><title type="html">20.06: June 2020 Devblog</title><link href="https://ss3d.space/2020/07/03/20.06.html" rel="alternate" type="text/html" title="20.06: June 2020 Devblog" /><published>2020-07-03T05:30:00+00:00</published><updated>2020-07-03T05:30:00+00:00</updated><id>https://ss3d.space/2020/07/03/20.06</id><content type="html" xml:base="https://ss3d.space/2020/07/03/20.06.html">&lt;p&gt;&lt;em&gt;The Gods bestoweth upon thee a tool of great power, it is your duty to decide whether you shall use it to build civilizations or destroy them.&lt;/em&gt;&lt;/p&gt;
 
 &lt;h1 id=&quot;june-recap&quot;&gt;June Recap&lt;/h1&gt;
 
@@ -1939,103 +2065,4 @@ Close your eyes but be guided by the hand.&lt;/p&gt;
 &lt;p&gt;Come get toolboxed early on our &lt;a href=&quot;https://discord.gg/3ny9tdH&quot; target=&quot;_blank&quot;&gt;Discord&lt;/a&gt;.&lt;br /&gt;
 Since literally just asking nicely for programmers worked so effectively last time, please send programmers.&lt;/p&gt;
 
-&lt;p&gt;Remember, folks, Spooktober might be over, but skeletons last forever.&lt;/p&gt;</content><author><name></name></author><summary type="html">I was a little afraid, myself, to be frank.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://ss3d.space/assets/img/art/CosmicCoincidence/CosmicHalloween.png" /></entry><entry><title type="html">19.09: September 2019 Devblog</title><link href="https://ss3d.space/2019/10/06/19.09.html" rel="alternate" type="text/html" title="19.09: September 2019 Devblog" /><published>2019-10-06T14:30:00+00:00</published><updated>2019-10-06T14:30:00+00:00</updated><id>https://ss3d.space/2019/10/06/19.09</id><content type="html" xml:base="https://ss3d.space/2019/10/06/19.09.html">&lt;p&gt;Opening up has paid off, but the fruit still unripe.&lt;/p&gt;
-
-&lt;h1 id=&quot;september-recap&quot;&gt;September Recap&lt;/h1&gt;
-
-&lt;p&gt;For our efforts of making it easier for programmers to contribute, we’ve gained a few lovely new faces. Work continues. Sometimes it almost feels like a struggle on the artistic side looking for models that haven’t been finished yet, but we still find ourselves wishing for more programmers.&lt;/p&gt;
-
-&lt;h2 id=&quot;chatlog&quot;&gt;Chatlog&lt;/h2&gt;
-
-&lt;p&gt;Excellent WIP from &lt;strong&gt;Milly&lt;/strong&gt; this month; work has begun on a feature-rich chatlog. For all your communications-based multitasking woes, this chatlog is to support multiple tabs, windows, and filters for said windows and tabs. The video puts it better, however.&lt;/p&gt;
-&lt;video autoplay=&quot;autoplay&quot; muted=&quot;&quot; loop=&quot;loop&quot; poster=&quot;/assets/img/posts/19.09.01/MillyChatThumbnail.png&quot; width=&quot;580px&quot;&gt;
-  &lt;source src=&quot;/assets/img/posts/19.09.01/MillyChatWIPSept.webm&quot; type=&quot;video/webm&quot; /&gt;
-  &lt;source src=&quot;/assets/img/posts/19.09.01/MillyChatWIPSept.mp4&quot; type=&quot;video/mp4&quot; /&gt;
-&lt;/video&gt;
-
-&lt;h2 id=&quot;moving-and-shooting&quot;&gt;Moving and Shooting&lt;/h2&gt;
-
-&lt;p&gt;From &lt;strong&gt;LightVelox&lt;/strong&gt; this month, early implementation of strafe-based movement and an aiming system. This will obviously end up being the base for the shooting system moving forward.&lt;/p&gt;
-&lt;video autoplay=&quot;autoplay&quot; muted=&quot;&quot; loop=&quot;loop&quot; poster=&quot;/assets/img/posts/19.09.01/LightVeloxThumbnail.png&quot; width=&quot;580px&quot;&gt;
-  &lt;source src=&quot;/assets/img/posts/19.09.01/LightVeloxSidewalk.webm&quot; type=&quot;video/webm&quot; /&gt;
-  &lt;source src=&quot;/assets/img/posts/19.09.01/LightVeloxSidewalk.mp4&quot; type=&quot;video/mp4&quot; /&gt;
-&lt;/video&gt;
-&lt;video autoplay=&quot;autoplay&quot; muted=&quot;&quot; loop=&quot;loop&quot; poster=&quot;/assets/img/posts/19.09.01/LightVeloxThumbnail.png&quot; width=&quot;580px&quot;&gt;
-  &lt;source src=&quot;/assets/img/posts/19.09.01/LightVeloxSidewalkShoot.webm&quot; type=&quot;video/webm&quot; /&gt;
-  &lt;source src=&quot;/assets/img/posts/19.09.01/LightVeloxSidewalkShoot.mp4&quot; type=&quot;video/mp4&quot; /&gt;
-&lt;/video&gt;
-
-&lt;h2 id=&quot;animations&quot;&gt;Animations&lt;/h2&gt;
-
-&lt;p&gt;Though not included in the above work, &lt;strong&gt;Probably Not&lt;/strong&gt; has finished up some new directional movement animations and then some.&lt;/p&gt;
-&lt;video autoplay=&quot;autoplay&quot; muted=&quot;&quot; loop=&quot;loop&quot; poster=&quot;/assets/img/posts/19.09.01/ProbablyNotThumbnail.png&quot; width=&quot;580px&quot;&gt;
-  &lt;source src=&quot;/assets/img/posts/19.09.01/ProbAnimations.webm&quot; type=&quot;video/webm&quot; /&gt;
-  &lt;source src=&quot;/assets/img/posts/19.09.01/ProbAnimations.mp4&quot; type=&quot;video/mp4&quot; /&gt;
-&lt;/video&gt;
-
-&lt;h2 id=&quot;lavaland-aesthetics&quot;&gt;Lavaland Aesthetics&lt;/h2&gt;
-
-&lt;p&gt;Bridging the gap between everything else and Eye Candy, &lt;strong&gt;Milly&lt;/strong&gt; has designed some lovely walls and ore walls for Lavaland, accompanied by matching ores and materials.The wall formations have different faces on each side, intended to be rotated randomly to easily mix up the environment to keep the lavaland tiles from looking too uniform.&lt;/p&gt;
-&lt;video autoplay=&quot;autoplay&quot; muted=&quot;&quot; loop=&quot;loop&quot; poster=&quot;/assets/img/posts/19.09.01/MillyRockStuff.png&quot; width=&quot;580px&quot;&gt;
-  &lt;source src=&quot;/assets/img/posts/19.09.01/MillyOreWallTrimShowcase.webm&quot; type=&quot;video/webm&quot; /&gt;
-  &lt;source src=&quot;/assets/img/posts/19.09.01/MillyOreWallTrimShowcase.mp4&quot; type=&quot;video/mp4&quot; /&gt;
-&lt;/video&gt;
-
-&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/19.09.01/MillyRockStuff.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/MillyRockStuff-580x435.png 580w,    /assets/resized/MillyRockStuff-290x218.png 290w,    /assets/resized/MillyRockStuff-170x128.png 170w,    /assets/resized/MillyRockStuff-145x109.png 145w, /assets/img/posts/19.09.01/MillyRockStuff.png 800w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-
-&lt;h2 id=&quot;eye-candy&quot;&gt;EYE CANDY&lt;/h2&gt;
-
-&lt;p&gt;From &lt;strong&gt;Goao&lt;/strong&gt;, an excellent compilation of items, alongside the diorama for this month’s title art.&lt;/p&gt;
-
-&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/19.09.01/GoaoCigarettes.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/GoaoCigarettes-580x326.png 580w,    /assets/resized/GoaoCigarettes-290x163.png 290w,    /assets/resized/GoaoCigarettes-170x96.png 170w,    /assets/resized/GoaoCigarettes-145x82.png 145w, /assets/img/posts/19.09.01/GoaoCigarettes.png 1920w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-
-&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/19.09.01/GoaoIDs.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/GoaoIDs-580x326.png 580w,    /assets/resized/GoaoIDs-290x163.png 290w,    /assets/resized/GoaoIDs-170x96.png 170w,    /assets/resized/GoaoIDs-145x82.png 145w, /assets/img/posts/19.09.01/GoaoIDs.png 1920w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-
-&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/19.09.01/GoaoPDAs.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/GoaoPDAs-580x435.png 580w,    /assets/resized/GoaoPDAs-290x218.png 290w,    /assets/resized/GoaoPDAs-170x128.png 170w,    /assets/resized/GoaoPDAs-145x109.png 145w, /assets/img/posts/19.09.01/GoaoPDAs.png 800w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-
-&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/19.09.01/GoaoBooks.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/GoaoBooks-580x435.png 580w,    /assets/resized/GoaoBooks-290x218.png 290w,    /assets/resized/GoaoBooks-170x128.png 170w,    /assets/resized/GoaoBooks-145x109.png 145w, /assets/img/posts/19.09.01/GoaoBooks.png 800w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-
-&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/19.09.01/GoaoVendings.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/GoaoVendings-580x435.png 580w,    /assets/resized/GoaoVendings-290x218.png 290w,    /assets/resized/GoaoVendings-170x128.png 170w,    /assets/resized/GoaoVendings-145x109.png 145w, /assets/img/posts/19.09.01/GoaoVendings.png 800w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-
-&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/19.09.01/GoaoDrinks.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/GoaoDrinks-580x435.png 580w,    /assets/resized/GoaoDrinks-290x218.png 290w,    /assets/resized/GoaoDrinks-170x128.png 170w,    /assets/resized/GoaoDrinks-145x109.png 145w, /assets/img/posts/19.09.01/GoaoDrinks.png 800w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-
-&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/19.09.01/GoaoEnergySwordsAndPen.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/GoaoEnergySwordsAndPen-580x435.png 580w,    /assets/resized/GoaoEnergySwordsAndPen-290x218.png 290w,    /assets/resized/GoaoEnergySwordsAndPen-170x128.png 170w,    /assets/resized/GoaoEnergySwordsAndPen-145x109.png 145w, /assets/img/posts/19.09.01/GoaoEnergySwordsAndPen.png 800w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-
-&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/19.09.01/GoaoElectricChair.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/GoaoElectricChair-580x435.png 580w,    /assets/resized/GoaoElectricChair-290x218.png 290w,    /assets/resized/GoaoElectricChair-170x128.png 170w,    /assets/resized/GoaoElectricChair-145x109.png 145w, /assets/img/posts/19.09.01/GoaoElectricChair.png 800w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-
-&lt;p&gt;From &lt;strong&gt;Kiwav&lt;/strong&gt;, a shotgun, some riot armor, and fully rigged solar panels.&lt;/p&gt;
-&lt;div class=&quot;horizontal-2&quot;&gt;
-
-  &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/19.09.01/KiwavShotgun.png&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/KiwavShotgun-580x435.png 580w,    /assets/resized/KiwavShotgun-290x218.png 290w,    /assets/resized/KiwavShotgun-170x128.png 170w,    /assets/resized/KiwavShotgun-145x109.png 145w, /assets/img/posts/19.09.01/KiwavShotgun.png 800w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-
-  &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/19.09.01/KiwavRiotArmor.png&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/KiwavRiotArmor-580x435.png 580w,    /assets/resized/KiwavRiotArmor-290x218.png 290w,    /assets/resized/KiwavRiotArmor-170x128.png 170w,    /assets/resized/KiwavRiotArmor-145x109.png 145w, /assets/img/posts/19.09.01/KiwavRiotArmor.png 800w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/19.09.01/KiwavSolarPanel.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/KiwavSolarPanel-580x435.png 580w,    /assets/resized/KiwavSolarPanel-290x218.png 290w,    /assets/resized/KiwavSolarPanel-170x128.png 170w,    /assets/resized/KiwavSolarPanel-145x109.png 145w, /assets/img/posts/19.09.01/KiwavSolarPanel.png 800w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-
-&lt;p&gt;From &lt;strong&gt;Eiko&lt;/strong&gt;, delicious canisters and fire, two things that mix surprisingly well.&lt;/p&gt;
-&lt;div class=&quot;horizontal-2&quot;&gt;
-
-  &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/19.09.01/EikoCanisters3.png&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/EikoCanisters3-580x452.png 580w,    /assets/resized/EikoCanisters3-290x226.png 290w,    /assets/resized/EikoCanisters3-170x133.png 170w,    /assets/resized/EikoCanisters3-145x113.png 145w, /assets/img/posts/19.09.01/EikoCanisters3.png 848w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-
-  &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/19.09.01/EikoCanistersDark.png&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/EikoCanistersDark-580x415.png 580w,    /assets/resized/EikoCanistersDark-290x207.png 290w,    /assets/resized/EikoCanistersDark-170x122.png 170w,    /assets/resized/EikoCanistersDark-145x104.png 145w, /assets/img/posts/19.09.01/EikoCanistersDark.png 853w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/19.09.01/EikoFire2.gif&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/EikoFire2-290x291.gif 290w,    /assets/resized/EikoFire2-170x171.gif 170w,    /assets/resized/EikoFire2-145x146.gif 145w, /assets/img/posts/19.09.01/EikoFire2.gif 533w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-
-&lt;p&gt;From &lt;strong&gt;CosmicCoincidence&lt;/strong&gt;, a colorful set of screwdrivers, some tanks, and some angry eggs.&lt;/p&gt;
-&lt;div class=&quot;horizontal-2&quot;&gt;
-
-  &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/19.09.01/CosmicCoincidenceScrewdrivers.png&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/CosmicCoincidenceScrewdrivers-580x435.png 580w,    /assets/resized/CosmicCoincidenceScrewdrivers-290x218.png 290w,    /assets/resized/CosmicCoincidenceScrewdrivers-170x128.png 170w,    /assets/resized/CosmicCoincidenceScrewdrivers-145x109.png 145w, /assets/img/posts/19.09.01/CosmicCoincidenceScrewdrivers.png 800w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-
-  &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/19.09.01/CosmicCoincidenceTanks.png&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/CosmicCoincidenceTanks-580x435.png 580w,    /assets/resized/CosmicCoincidenceTanks-290x218.png 290w,    /assets/resized/CosmicCoincidenceTanks-170x128.png 170w,    /assets/resized/CosmicCoincidenceTanks-145x109.png 145w, /assets/img/posts/19.09.01/CosmicCoincidenceTanks.png 800w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/19.09.01/CosmicCoincidenceEggs.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/CosmicCoincidenceEggs-580x435.png 580w,    /assets/resized/CosmicCoincidenceEggs-290x218.png 290w,    /assets/resized/CosmicCoincidenceEggs-170x128.png 170w,    /assets/resized/CosmicCoincidenceEggs-145x109.png 145w, /assets/img/posts/19.09.01/CosmicCoincidenceEggs.png 800w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-
-&lt;h3 id=&quot;notes&quot;&gt;NOTES&lt;/h3&gt;
-
-&lt;p&gt;This is our monthly devblog, continuing to serve as legal evidence of our existence, despite the implications that might be inferred from such an action.
-Come visit us on &lt;a href=&quot;https://discord.gg/3ny9tdH&quot; target=&quot;_blank&quot;&gt;Discord&lt;/a&gt;. Bring a programmer friend. Steal a friend’s programmer and drop them off. We would like your programmers, please.&lt;/p&gt;
-
-&lt;p&gt;Spookmonth is here, y’all. Our skeletons are at the ready; are yours?&lt;/p&gt;</content><author><name></name></author><summary type="html">Opening up has paid off, but the fruit still unripe.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://ss3d.space/assets/img/art/Goao/GoaoSeptember19Diorama.png" /></entry></feed>
+&lt;p&gt;Remember, folks, Spooktober might be over, but skeletons last forever.&lt;/p&gt;</content><author><name></name></author><summary type="html">I was a little afraid, myself, to be frank.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://ss3d.space/assets/img/art/CosmicCoincidence/CosmicHalloween.png" /></entry></feed>
