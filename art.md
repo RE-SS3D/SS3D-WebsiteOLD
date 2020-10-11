@@ -87,6 +87,8 @@ permalink: /art/
 ### [Traitor REMIX](https://soundcloud.com/joao-pedro-buratto/traitor-mix2){:target="_blank"}
 {: class="centred" }
 
+{% responsive_image path: assets/img/art/Goao/GoaoLiftoff.png template: _includes/srcset.html %}
+
 {% responsive_image path: assets/img/art/Goao/GoaoSpessGothic.png template: _includes/srcset.html %}
 
 {% responsive_image path: assets/img/art/Goao/GoaoSpooktober.png template: _includes/srcset.html %}
