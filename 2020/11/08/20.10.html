@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="/css/style.css">
+        <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+        <meta name="theme-color" content="#1e4684">
+        <script>
+            //theme toggle
+            //determines if the user has a set theme
+            function detectColorScheme(){
+                var theme="dark";    //default to dark
+
+                //local storage is used to override OS theme settings
+                if(localStorage.getItem("theme")){
+                    if(localStorage.getItem("theme") == "light"){
+                        var theme = "light";
+                    }
+                } else if(!window.matchMedia) {
+                    //matchMedia method not supported
+                    return false;
+                } else if(window.matchMedia("(prefers-color-scheme: light)").matches) {
+                    //OS theme setting detected as dark
+                    var theme = "light";
+                }
+
+                //dark theme preferred, set document with a `data-theme` attribute
+                if (theme=="light") {
+                    document.documentElement.setAttribute("data-theme", "light");
+                } else {
+                    document.documentElement.setAttribute("data-theme", "dark");
+                }
+            }
+            detectColorScheme();
+            
+            // Function to keep the navigation bars scroll offset when changing pages.
+            setScroll = function(url, scroll) {
+                if(scroll != 0) {
+                    window.location.href = url + '?scroll=' + scroll;
+                    return;
+                }
+                window.location.href = url;
+            }
+            // Set navigation bar scroll offset, if it exists.
+            getScroll = function() {
+                var url = new URL(window.location.href);
+                var scroll = url.searchParams.get("scroll");
+                if (scroll != 0) {
+                    var el = document.getElementById('scroll');
+                    el.scrollLeft = scroll;
+                }
+            }
+            if (window.addEventListener) {
+                window.addEventListener('load', getScroll, false);
+            }
+            else if (window.attachEvent) {
+                window.attachEvent('onload', getScroll);
+            }
+        </script>
+        <script>
+            /*! modernizr 3.6.0 (Custom Build) | MIT *
+            * https://modernizr.com/download/?-webp-setclasses !*/
+            !function(e,n,A){function o(e,n){return typeof e===n}function t(){var e,n,A,t,a,i,l;for(var f in r)if(r.hasOwnProperty(f)){if(e=[],n=r[f],n.name&&(e.push(n.name.toLowerCase()),n.options&&n.options.aliases&&n.options.aliases.length))for(A=0;A<n.options.aliases.length;A++)e.push(n.options.aliases[A].toLowerCase());for(t=o(n.fn,"function")?n.fn():n.fn,a=0;a<e.length;a++)i=e[a],l=i.split("."),1===l.length?Modernizr[l[0]]=t:(!Modernizr[l[0]]||Modernizr[l[0]]instanceof Boolean||(Modernizr[l[0]]=new Boolean(Modernizr[l[0]])),Modernizr[l[0]][l[1]]=t),s.push((t?"":"no-")+l.join("-"))}}function a(e){var n=u.className,A=Modernizr._config.classPrefix||"";if(c&&(n=n.baseVal),Modernizr._config.enableJSClass){var o=new RegExp("(^|\\s)"+A+"no-js(\\s|$)");n=n.replace(o,"$1"+A+"js$2")}Modernizr._config.enableClasses&&(n+=" "+A+e.join(" "+A),c?u.className.baseVal=n:u.className=n)}function i(e,n){if("object"==typeof e)for(var A in e)f(e,A)&&i(A,e[A]);else{e=e.toLowerCase();var o=e.split("."),t=Modernizr[o[0]];if(2==o.length&&(t=t[o[1]]),"undefined"!=typeof t)return Modernizr;n="function"==typeof n?n():n,1==o.length?Modernizr[o[0]]=n:(!Modernizr[o[0]]||Modernizr[o[0]]instanceof Boolean||(Modernizr[o[0]]=new Boolean(Modernizr[o[0]])),Modernizr[o[0]][o[1]]=n),a([(n&&0!=n?"":"no-")+o.join("-")]),Modernizr._trigger(e,n)}return Modernizr}var s=[],r=[],l={_version:"3.6.0",_config:{classPrefix:"",enableClasses:!0,enableJSClass:!0,usePrefixes:!0},_q:[],on:function(e,n){var A=this;setTimeout(function(){n(A[e])},0)},addTest:function(e,n,A){r.push({name:e,fn:n,options:A})},addAsyncTest:function(e){r.push({name:null,fn:e})}},Modernizr=function(){};Modernizr.prototype=l,Modernizr=new Modernizr;var f,u=n.documentElement,c="svg"===u.nodeName.toLowerCase();!function(){var e={}.hasOwnProperty;f=o(e,"undefined")||o(e.call,"undefined")?function(e,n){return n in e&&o(e.constructor.prototype[n],"undefined")}:function(n,A){return e.call(n,A)}}(),l._l={},l.on=function(e,n){this._l[e]||(this._l[e]=[]),this._l[e].push(n),Modernizr.hasOwnProperty(e)&&setTimeout(function(){Modernizr._trigger(e,Modernizr[e])},0)},l._trigger=function(e,n){if(this._l[e]){var A=this._l[e];setTimeout(function(){var e,o;for(e=0;e<A.length;e++)(o=A[e])(n)},0),delete this._l[e]}},Modernizr._q.push(function(){l.addTest=i}),Modernizr.addAsyncTest(function(){function e(e,n,A){function o(n){var o=n&&"load"===n.type?1==t.width:!1,a="webp"===e;i(e,a&&o?new Boolean(o):o),A&&A(n)}var t=new Image;t.onerror=o,t.onload=o,t.src=n}var n=[{uri:"data:image/webp;base64,UklGRiQAAABXRUJQVlA4IBgAAAAwAQCdASoBAAEAAwA0JaQAA3AA/vuUAAA=",name:"webp"},{uri:"data:image/webp;base64,UklGRkoAAABXRUJQVlA4WAoAAAAQAAAAAAAAAAAAQUxQSAwAAAABBxAR/Q9ERP8DAABWUDggGAAAADABAJ0BKgEAAQADADQlpAADcAD++/1QAA==",name:"webp.alpha"},{uri:"data:image/webp;base64,UklGRlIAAABXRUJQVlA4WAoAAAASAAAAAAAAAAAAQU5JTQYAAAD/////AABBTk1GJgAAAAAAAAAAAAAAAAAAAGQAAABWUDhMDQAAAC8AAAAQBxAREYiI/gcA",name:"webp.animation"},{uri:"data:image/webp;base64,UklGRh4AAABXRUJQVlA4TBEAAAAvAAAAAAfQ//73v/+BiOh/AAA=",name:"webp.lossless"}],A=n.shift();e(A.name,A.uri,function(A){if(A&&"load"===A.type)for(var o=0;o<n.length;o++)e(n[o].name,n[o].uri)})}),t(),a(s),delete l.addTest,delete l.addAsyncTest;for(var p=0;p<Modernizr._q.length;p++)Modernizr._q[p]();e.Modernizr=Modernizr}(window,document);
+        </script>
+        <!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>20.10: October 2020 Devblog | RE:SS3D</title>
+<meta name="generator" content="Jekyll v3.8.5" />
+<meta property="og:title" content="20.10: October 2020 Devblog" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="“SpOOky!”" />
+<meta property="og:description" content="“SpOOky!”" />
+<link rel="canonical" href="https://ss3d.space/2020/11/08/20.10.html" />
+<meta property="og:url" content="https://ss3d.space/2020/11/08/20.10.html" />
+<meta property="og:site_name" content="RE:SS3D" />
+<meta property="og:image" content="https://ss3d.space/assets/img/art/ProbablyNot/ProbablyNot_Harvest.png" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2020-11-08T05:30:00+00:00" />
+<script type="application/ld+json">
+{"description":"“SpOOky!”","image":"https://ss3d.space/assets/img/art/ProbablyNot/ProbablyNot_Harvest.png","@type":"BlogPosting","headline":"20.10: October 2020 Devblog","dateModified":"2020-11-08T05:30:00+00:00","datePublished":"2020-11-08T05:30:00+00:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://ss3d.space/2020/11/08/20.10.html"},"url":"https://ss3d.space/2020/11/08/20.10.html","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+        <link type="application/atom+xml" rel="alternate" href="https://ss3d.space/feed.xml" title="RE:SS3D" />
+        <link rel="stylesheet" type="text/css" href="/assets/css/cookieconsent.min.css" />
+<script src="/assets/js/cookieconsent.min.js"></script>
+<script>
+window.addEventListener("load", function(){
+window.cookieconsent.initialise({
+"palette": {
+    "popup": {
+    "background": "#1e4684",
+    "text": "#dadada"
+    },
+    "button": {
+    "background": "#b83d32",
+    "text": "#ffffff"
+    }
+},
+"theme": "classic",
+"content": {
+    "message": "This website uses cookies for analytics.",
+    "dismiss": "Ok",
+    "href": "/privacy"
+}
+})});
+</script>
+        <!-- Analytics -->
+        
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-140169746-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-140169746-1');
+</script>
+
+        
+    </head>
+    <body class="preload">
+        <div class="nav-background">
+            <nav>
+                <div id="scroll" class="ul-container">
+    <ul class="ul-reset">
+        
+        <li><a onclick="setScroll('/',parentNode.parentNode.parentNode.scrollLeft); return false;" class="" href="/">Home</a></li>
+        
+        <li><a onclick="setScroll('/devblog/',parentNode.parentNode.parentNode.scrollLeft); return false;" class="" href="/devblog/">Devblog</a></li>
+        
+        <li><a onclick="setScroll('/art/',parentNode.parentNode.parentNode.scrollLeft); return false;" class="" href="/art/">Art</a></li>
+        
+        <li><a onclick="setScroll('/faq/',parentNode.parentNode.parentNode.scrollLeft); return false;" class="" href="/faq/">FAQ</a></li>
+        
+        <li><a onclick="setScroll('/about/',parentNode.parentNode.parentNode.scrollLeft); return false;" class="" href="/about/">About</a></li>
+        
+        <li><a onclick="setScroll('/contribute/',parentNode.parentNode.parentNode.scrollLeft); return false;" class="" href="/contribute/">Contribute</a></li>
+        
+    </ul>
+</div>
+            </nav>
+        </div>
+        <div class="body-content">
+            <header class="header">
+    <div class="image">
+        <img src="/assets/img/RESPACESTATION3D.png" alt="RE: SPACE STATION 3D">
+    </div>
+    <div><h6>A 3D recreation of Space Station 13</h6></div>
+</header>
+
+            <main class="post-content">
+                <div>
+  <div class="image">
+    <img src="/assets/img/art/ProbablyNot/ProbablyNot_Harvest.png" alt="">
+  </div>
+  <h5><i>Image credit - ProbablyNot</i></h5>
+</div>
+
+<h1>20.10: October 2020 Devblog</h1>
+<h5><i>Sunday, November 8, 2020</i></h5>
+<h5><i>Written by – CosmicCoincidence</i></h5>
+
+<h2>Monthly Release: 
+  <u>
+    <a href="https://github.com/RE-SS3D/SS3D/releases/download/0.3.91/RESS3D_0.3.91.zip" target="_blank">v0.3.91</a>
+  </u>
+</h2>
+
+<br>
+<p>Hope you all had a SpOOky halloween!</p>
+
+<h1 id="october-recap">October Recap</h1>
+
+<p>This month was a bit slow in development again, but we have had a fun time in the discord with this month’s art contest (winners announced below)!</p>
+
+<h2 id="fixes">Fixes</h2>
+
+<p><strong>Macoron</strong>, a new contributor this month, separated the game logic from the UI views with individual prefabs which should help decrease future spaghetti code.</p>
+
+<h2 id="models">Models</h2>
+
+<p><strong>Eiko</strong> never seems to dissapoint with his 3D art! This month he contributed a boxing mat, boxing ring, throwing knives &amp; stars, and a few adorable plushies!</p>
+
+<div class="horizontal-2">
+
+  <div class="image"><a href="/assets/img/posts/20.10.01/Eiko_BoxingMat.png" target="_blank"><img src="/" alt="" srcset="    /assets/resized/Eiko_BoxingMat-580x435.png 580w,    /assets/resized/Eiko_BoxingMat-290x218.png 290w,    /assets/resized/Eiko_BoxingMat-170x128.png 170w,    /assets/resized/Eiko_BoxingMat-145x109.png 145w, /assets/img/posts/20.10.01/Eiko_BoxingMat.png 800w" sizes="(max-width: 624px) 50vw, 290px" /></a></div>
+
+  <div class="image"><a href="/assets/img/posts/20.10.01/Eiko_BoxingRing.png" target="_blank"><img src="/" alt="" srcset="    /assets/resized/Eiko_BoxingRing-580x435.png 580w,    /assets/resized/Eiko_BoxingRing-290x218.png 290w,    /assets/resized/Eiko_BoxingRing-170x128.png 170w,    /assets/resized/Eiko_BoxingRing-145x109.png 145w, /assets/img/posts/20.10.01/Eiko_BoxingRing.png 800w" sizes="(max-width: 624px) 50vw, 290px" /></a></div>
+</div>
+
+<div class="image"><a href="/assets/img/posts/20.10.01/Eiko_Shuriken.png" class="image-link" target="_blank"><img src="/" alt="" srcset="    /assets/resized/Eiko_Shuriken-580x435.png 580w,    /assets/resized/Eiko_Shuriken-290x218.png 290w,    /assets/resized/Eiko_Shuriken-170x128.png 170w,    /assets/resized/Eiko_Shuriken-145x109.png 145w, /assets/img/posts/20.10.01/Eiko_Shuriken.png 800w" sizes="(max-width: 624px) 100vw, 578px, 580px" /></a></div>
+
+<div class="horizontal-2">
+
+  <div class="image"><a href="/assets/img/posts/20.10.01/Eiko_Plushie.png" target="_blank"><img src="/" alt="" srcset="    /assets/resized/Eiko_Plushie-580x435.png 580w,    /assets/resized/Eiko_Plushie-290x218.png 290w,    /assets/resized/Eiko_Plushie-170x128.png 170w,    /assets/resized/Eiko_Plushie-145x109.png 145w, /assets/img/posts/20.10.01/Eiko_Plushie.png 800w" sizes="(max-width: 624px) 50vw, 290px" /></a></div>
+
+  <div class="image"><a href="/assets/img/posts/20.10.01/Eiko_Plushies.png" target="_blank"><img src="/" alt="" srcset="    /assets/resized/Eiko_Plushies-580x435.png 580w,    /assets/resized/Eiko_Plushies-290x218.png 290w,    /assets/resized/Eiko_Plushies-170x128.png 170w,    /assets/resized/Eiko_Plushies-145x109.png 145w, /assets/img/posts/20.10.01/Eiko_Plushies.png 800w" sizes="(max-width: 624px) 50vw, 290px" /></a></div>
+</div>
+
+<h2 id="ui">UI</h2>
+
+<p><strong>Konstantin3001</strong> is back with more UI graphics, specifically with a targetting doll.</p>
+
+<div class="image"><a href="/assets/img/posts/20.10.01/Konstantin_TargetDoll.png" class="image-link" target="_blank"><img src="/" alt="" srcset="    /assets/resized/Konstantin_TargetDoll-580x435.png 580w,    /assets/resized/Konstantin_TargetDoll-290x218.png 290w,    /assets/resized/Konstantin_TargetDoll-170x128.png 170w,    /assets/resized/Konstantin_TargetDoll-145x109.png 145w, /assets/img/posts/20.10.01/Konstantin_TargetDoll.png 800w" sizes="(max-width: 624px) 100vw, 578px, 580px" /></a></div>
+
+<h2 id="art">Art</h2>
+
+<p>And the moment many of you have been waiting for, we are announcing the winners of the Halloween 2020 Art Contest! But first, this month’s blog cover art is by <strong>ProbablyNot</strong>, whom was disqualified from the art contest for being a member of Centcom.</p>
+
+<div class="image"><a href="/assets/img/art/ProbablyNot/ProbablyNot_Harvest.png" class="image-link" target="_blank"><img src="/" alt="" srcset="    /assets/resized/ProbablyNot_Harvest-580x326.png 580w,    /assets/resized/ProbablyNot_Harvest-290x163.png 290w,    /assets/resized/ProbablyNot_Harvest-170x96.png 170w,    /assets/resized/ProbablyNot_Harvest-145x82.png 145w, /assets/img/art/ProbablyNot/ProbablyNot_Harvest.png 3840w" sizes="(max-width: 624px) 100vw, 578px, 580px" /></a></div>
+
+<p>Contest submissions below!</p>
+
+<div>
+    
+
+
+
+<div class="image"><a href="/assets/img/art/Bug/Bug_Halloween2020.png" class="image-link" target="_blank"><img src="/" alt="" srcset="    /assets/resized/Bug_Halloween2020-580x326.png 580w,    /assets/resized/Bug_Halloween2020-290x163.png 290w,    /assets/resized/Bug_Halloween2020-170x96.png 170w,    /assets/resized/Bug_Halloween2020-145x82.png 145w, /assets/img/art/Bug/Bug_Halloween2020.png 1920w" sizes="(max-width: 624px) 100vw, 578px, 580px" /></a></div>
+    <h5><i>Artist - Bug</i></h5>
+</div>
+
+<div>
+    
+
+
+
+<div class="image"><a href="/assets/img/art/Igiari/Igiari_Halloween2020.png" class="image-link" target="_blank"><img src="/" alt="" srcset="    /assets/resized/Igiari_Halloween2020-580x326.png 580w,    /assets/resized/Igiari_Halloween2020-290x163.png 290w,    /assets/resized/Igiari_Halloween2020-170x96.png 170w,    /assets/resized/Igiari_Halloween2020-145x82.png 145w, /assets/img/art/Igiari/Igiari_Halloween2020.png 3840w" sizes="(max-width: 624px) 100vw, 578px, 580px" /></a></div>
+    <h5><i>Artist - Igiari</i></h5>
+</div>
+
+<div>
+    
+
+
+
+<div class="image"><a href="/assets/img/art/Sice/Sice_Halloween2020.png" class="image-link" target="_blank"><img src="/" alt="" srcset="    /assets/resized/Sice_Halloween2020-580x326.png 580w,    /assets/resized/Sice_Halloween2020-290x163.png 290w,    /assets/resized/Sice_Halloween2020-170x96.png 170w,    /assets/resized/Sice_Halloween2020-145x82.png 145w, /assets/img/art/Sice/Sice_Halloween2020.png 1920w" sizes="(max-width: 624px) 100vw, 578px, 580px" /></a></div>
+    <h5><i>Artist - Sice</i></h5>
+</div>
+
+<div>
+    
+
+
+
+<div class="image"><a href="/assets/img/art/Turkey/Turkey_Halloween2020.png" class="image-link" target="_blank"><img src="/" alt="" srcset="    /assets/resized/Turkey_Halloween2020-580x326.png 580w,    /assets/resized/Turkey_Halloween2020-290x163.png 290w,    /assets/resized/Turkey_Halloween2020-170x96.png 170w,    /assets/resized/Turkey_Halloween2020-145x82.png 145w, /assets/img/art/Turkey/Turkey_Halloween2020.png 3840w" sizes="(max-width: 624px) 100vw, 578px, 580px" /></a></div>
+    <h5><i>Artist - Turkey</i></h5>
+</div>
+
+<p>Contest winners:</p>
+
+<ul>
+  <li>1st Place ($50): <strong>Turkey</strong></li>
+  <li>2nd Place ($25): <strong>Bug</strong></li>
+  <li>3rd Place ($10): <strong>Sice</strong></li>
+</ul>
+
+<p>To recieve your prizes, contact <strong>ProbablyNot</strong> on discord.</p>
+
+<h2 id="conclusion">Conclusion</h2>
+
+<p>Missed the art contest? Well join our <a href="https://discord.gg/3ny9tdH" target="_blank">Discord</a> so you dont miss out on any future contests!</p>
+
+
+            </main>
+            <footer>
+                <div class="contact">
+    <ul class="ul-reset">
+        <li>
+            <h3><a href="https://github.com/RE-SS3D" target="_blank">GitHub</a></h3>
+        </li>
+        <li>
+            <h3><a href="https://discord.gg/3ny9tdH" target="_blank">Discord</a></h3>
+        </li>
+        <li>
+            <h3><a href="https://reddit.com/r/RESS3D" target="_blank">Reddit</a></h3>
+        </li>
+        <li>
+            <h3><a href="https://www.youtube.com/channel/UCJT-bVqDOYfyxF3oxECceZg" target="_blank">YouTube</a></h3>
+        </li>
+        <li>
+            <h3><a href="https://trello.com/ress3d" target="_blank">Trello</a></h3>
+        </li>
+    </ul><br>
+    <ul class="ul-reset">
+        <li>
+            <h5><a href="/privacy">Privacy Policy</a></h5>
+        </li>
+        <li>
+            <h5><a type="application/atom+xml" href="/feed.xml">Atom (RSS)</a></h5>
+        </li>
+        <li>
+            <h5>
+                <label id="theme-switch" class="theme-switch" for="checkbox_theme">
+                    <input type="checkbox" id="checkbox_theme" style="display:none"><span class="link">Toggle Theme</span>
+                </label>
+            </h5>
+        </li>
+    </ul>
+</div>
+            </footer>
+        </div>
+        <script>
+            
+            // Fix flashing buttons by only allowing the css animations to play after a slight delay.
+            setTimeout(function() {
+                document.getElementsByTagName('body')[0].classList.remove('preload');
+            }, 50);
+
+            //theme toggle
+            //identify the toggle switch HTML element
+            const toggleSwitch = document.querySelector('#theme-switch input[type="checkbox"]');
+    
+            //function that changes the theme, and sets a localStorage variable to track the theme between page loads
+            function switchTheme(e) {
+                if (e.target.checked) {
+                    localStorage.setItem('theme', 'light');
+                    document.documentElement.setAttribute('data-theme', 'light');
+                    toggleSwitch.checked = true;
+                } else {
+                    localStorage.setItem('theme', 'dark');
+                    document.documentElement.setAttribute('data-theme', 'dark');
+                    toggleSwitch.checked = false;
+                }    
+            }
+    
+            //listener for changing themes
+            toggleSwitch.addEventListener('change', switchTheme, false);
+    
+            //pre-check the dark-theme checkbox if dark-theme is set
+            if (document.documentElement.getAttribute("data-theme") == "light"){
+                toggleSwitch.checked = true;
+            }
+        </script>
+        <script>
+
+            // changes slide show slides and title
+            var slideIndex = 1;
+            showSlides(slideIndex);
+            
+            function plusSlides(n) {
+                showSlides(slideIndex += n);
+            }
+            
+            function currentSlide(n) {
+                showSlides(slideIndex = n);
+            }
+            
+            function showSlides(n) {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                var dots = document.getElementsByClassName("thumbs");
+                var titleText = document.getElementById("title");
+                if (n > slides.length) {
+                    slideIndex = 1;
+                    showRows(rowIndex = 1);
+                }
+                if (n < 1) {
+                    slideIndex = slides.length;
+  	                showRows(rowIndex = -1);
+                }
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                showRows(rowIndex = Math.floor((n-1)/6) + 1) 
+                slides[slideIndex-1].style.display = "block";
+                dots[slideIndex-1].className += " active";
+                titleText.innerHTML = dots[slideIndex-1].alt;
+            }
+            
+            // changes slide show rows
+            var rowIndex = 1;
+            showRows(rowIndex);
+
+            function plusRows(n) {
+                showRows(rowIndex += n);
+            }
+
+            function currentRow(n) {
+            showRows(rowIndex = n);
+            }
+
+            function showRows(n) {
+                var i;
+                var rows = document.getElementsByClassName("myRows");
+                var dots = document.getElementsByClassName("thumbs");
+                if (n > rows.length) {rowIndex = 1}
+                if (n < 1) {rowIndex = rows.length}
+                for (i = 0; i < rows.length; i++) {
+                    rows[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                rows[rowIndex-1].style.display = "block";
+                dots[rowIndex-1].className += " active";
+            }
+        </script>
+    </body>
+</html>

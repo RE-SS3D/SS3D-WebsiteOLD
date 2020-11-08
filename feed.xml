@@ -1,4 +1,96 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://ss3d.space/feed.xml" rel="self" type="application/atom+xml" /><link href="https://ss3d.space/" rel="alternate" type="text/html" /><updated>2020-10-12T17:07:27+00:00</updated><id>https://ss3d.space/feed.xml</id><title type="html">RE:SS3D</title><subtitle>This is a 3D recreation of Space Station 13, on the Unity engine, which will come with its own set of gameplay/graphical improvements. </subtitle><entry><title type="html">20.09: September 2020 Devblog</title><link href="https://ss3d.space/2020/10/10/20.09.html" rel="alternate" type="text/html" title="20.09: September 2020 Devblog" /><published>2020-10-10T05:30:00+00:00</published><updated>2020-10-10T05:30:00+00:00</updated><id>https://ss3d.space/2020/10/10/20.09</id><content type="html" xml:base="https://ss3d.space/2020/10/10/20.09.html">&lt;p&gt;Bastin’ off!&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://ss3d.space/feed.xml" rel="self" type="application/atom+xml" /><link href="https://ss3d.space/" rel="alternate" type="text/html" /><updated>2020-11-08T20:28:09+00:00</updated><id>https://ss3d.space/feed.xml</id><title type="html">RE:SS3D</title><subtitle>This is a 3D recreation of Space Station 13, on the Unity engine, which will come with its own set of gameplay/graphical improvements. </subtitle><entry><title type="html">20.10: October 2020 Devblog</title><link href="https://ss3d.space/2020/11/08/20.10.html" rel="alternate" type="text/html" title="20.10: October 2020 Devblog" /><published>2020-11-08T05:30:00+00:00</published><updated>2020-11-08T05:30:00+00:00</updated><id>https://ss3d.space/2020/11/08/20.10</id><content type="html" xml:base="https://ss3d.space/2020/11/08/20.10.html">&lt;p&gt;Hope you all had a SpOOky halloween!&lt;/p&gt;
+
+&lt;h1 id=&quot;october-recap&quot;&gt;October Recap&lt;/h1&gt;
+
+&lt;p&gt;This month was a bit slow in development again, but we have had a fun time in the discord with this month’s art contest (winners announced below)!&lt;/p&gt;
+
+&lt;h2 id=&quot;fixes&quot;&gt;Fixes&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;Macoron&lt;/strong&gt;, a new contributor this month, separated the game logic from the UI views with individual prefabs which should help decrease future spaghetti code.&lt;/p&gt;
+
+&lt;h2 id=&quot;models&quot;&gt;Models&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;Eiko&lt;/strong&gt; never seems to dissapoint with his 3D art! This month he contributed a boxing mat, boxing ring, throwing knives &amp;amp; stars, and a few adorable plushies!&lt;/p&gt;
+
+&lt;div class=&quot;horizontal-2&quot;&gt;
+
+  &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/20.10.01/Eiko_BoxingMat.png&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/Eiko_BoxingMat-580x435.png 580w,    /assets/resized/Eiko_BoxingMat-290x218.png 290w,    /assets/resized/Eiko_BoxingMat-170x128.png 170w,    /assets/resized/Eiko_BoxingMat-145x109.png 145w, /assets/img/posts/20.10.01/Eiko_BoxingMat.png 800w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+
+  &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/20.10.01/Eiko_BoxingRing.png&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/Eiko_BoxingRing-580x435.png 580w,    /assets/resized/Eiko_BoxingRing-290x218.png 290w,    /assets/resized/Eiko_BoxingRing-170x128.png 170w,    /assets/resized/Eiko_BoxingRing-145x109.png 145w, /assets/img/posts/20.10.01/Eiko_BoxingRing.png 800w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/20.10.01/Eiko_Shuriken.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/Eiko_Shuriken-580x435.png 580w,    /assets/resized/Eiko_Shuriken-290x218.png 290w,    /assets/resized/Eiko_Shuriken-170x128.png 170w,    /assets/resized/Eiko_Shuriken-145x109.png 145w, /assets/img/posts/20.10.01/Eiko_Shuriken.png 800w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+
+&lt;div class=&quot;horizontal-2&quot;&gt;
+
+  &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/20.10.01/Eiko_Plushie.png&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/Eiko_Plushie-580x435.png 580w,    /assets/resized/Eiko_Plushie-290x218.png 290w,    /assets/resized/Eiko_Plushie-170x128.png 170w,    /assets/resized/Eiko_Plushie-145x109.png 145w, /assets/img/posts/20.10.01/Eiko_Plushie.png 800w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+
+  &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/20.10.01/Eiko_Plushies.png&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/Eiko_Plushies-580x435.png 580w,    /assets/resized/Eiko_Plushies-290x218.png 290w,    /assets/resized/Eiko_Plushies-170x128.png 170w,    /assets/resized/Eiko_Plushies-145x109.png 145w, /assets/img/posts/20.10.01/Eiko_Plushies.png 800w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;ui&quot;&gt;UI&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;Konstantin3001&lt;/strong&gt; is back with more UI graphics, specifically with a targetting doll.&lt;/p&gt;
+
+&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/20.10.01/Konstantin_TargetDoll.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/Konstantin_TargetDoll-580x435.png 580w,    /assets/resized/Konstantin_TargetDoll-290x218.png 290w,    /assets/resized/Konstantin_TargetDoll-170x128.png 170w,    /assets/resized/Konstantin_TargetDoll-145x109.png 145w, /assets/img/posts/20.10.01/Konstantin_TargetDoll.png 800w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;art&quot;&gt;Art&lt;/h2&gt;
+
+&lt;p&gt;And the moment many of you have been waiting for, we are announcing the winners of the Halloween 2020 Art Contest! But first, this month’s blog cover art is by &lt;strong&gt;ProbablyNot&lt;/strong&gt;, whom was disqualified from the art contest for being a member of Centcom.&lt;/p&gt;
+
+&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/art/ProbablyNot/ProbablyNot_Harvest.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/ProbablyNot_Harvest-580x326.png 580w,    /assets/resized/ProbablyNot_Harvest-290x163.png 290w,    /assets/resized/ProbablyNot_Harvest-170x96.png 170w,    /assets/resized/ProbablyNot_Harvest-145x82.png 145w, /assets/img/art/ProbablyNot/ProbablyNot_Harvest.png 3840w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+
+&lt;p&gt;Contest submissions below!&lt;/p&gt;
+
+&lt;div&gt;
+    
+
+
+
+&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/art/Bug/Bug_Halloween2020.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/Bug_Halloween2020-580x326.png 580w,    /assets/resized/Bug_Halloween2020-290x163.png 290w,    /assets/resized/Bug_Halloween2020-170x96.png 170w,    /assets/resized/Bug_Halloween2020-145x82.png 145w, /assets/img/art/Bug/Bug_Halloween2020.png 1920w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+    &lt;h5&gt;&lt;i&gt;Artist - Bug&lt;/i&gt;&lt;/h5&gt;
+&lt;/div&gt;
+
+&lt;div&gt;
+    
+
+
+
+&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/art/Igiari/Igiari_Halloween2020.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/Igiari_Halloween2020-580x326.png 580w,    /assets/resized/Igiari_Halloween2020-290x163.png 290w,    /assets/resized/Igiari_Halloween2020-170x96.png 170w,    /assets/resized/Igiari_Halloween2020-145x82.png 145w, /assets/img/art/Igiari/Igiari_Halloween2020.png 3840w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+    &lt;h5&gt;&lt;i&gt;Artist - Igiari&lt;/i&gt;&lt;/h5&gt;
+&lt;/div&gt;
+
+&lt;div&gt;
+    
+
+
+
+&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/art/Sice/Sice_Halloween2020.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/Sice_Halloween2020-580x326.png 580w,    /assets/resized/Sice_Halloween2020-290x163.png 290w,    /assets/resized/Sice_Halloween2020-170x96.png 170w,    /assets/resized/Sice_Halloween2020-145x82.png 145w, /assets/img/art/Sice/Sice_Halloween2020.png 1920w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+    &lt;h5&gt;&lt;i&gt;Artist - Sice&lt;/i&gt;&lt;/h5&gt;
+&lt;/div&gt;
+
+&lt;div&gt;
+    
+
+
+
+&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/art/Turkey/Turkey_Halloween2020.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/Turkey_Halloween2020-580x326.png 580w,    /assets/resized/Turkey_Halloween2020-290x163.png 290w,    /assets/resized/Turkey_Halloween2020-170x96.png 170w,    /assets/resized/Turkey_Halloween2020-145x82.png 145w, /assets/img/art/Turkey/Turkey_Halloween2020.png 3840w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+    &lt;h5&gt;&lt;i&gt;Artist - Turkey&lt;/i&gt;&lt;/h5&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Contest winners:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;1st Place ($50): &lt;strong&gt;Turkey&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;2nd Place ($25): &lt;strong&gt;Bug&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;3rd Place ($10): &lt;strong&gt;Sice&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;To recieve your prizes, contact &lt;strong&gt;ProbablyNot&lt;/strong&gt; on discord.&lt;/p&gt;
+
+&lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
+
+&lt;p&gt;Missed the art contest? Well join our &lt;a href=&quot;https://discord.gg/3ny9tdH&quot; target=&quot;_blank&quot;&gt;Discord&lt;/a&gt; so you dont miss out on any future contests!&lt;/p&gt;</content><author><name></name></author><summary type="html">Hope you all had a SpOOky halloween!</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://ss3d.space/assets/img/art/ProbablyNot/ProbablyNot_Harvest.png" /></entry><entry><title type="html">20.09: September 2020 Devblog</title><link href="https://ss3d.space/2020/10/10/20.09.html" rel="alternate" type="text/html" title="20.09: September 2020 Devblog" /><published>2020-10-10T05:30:00+00:00</published><updated>2020-10-10T05:30:00+00:00</updated><id>https://ss3d.space/2020/10/10/20.09</id><content type="html" xml:base="https://ss3d.space/2020/10/10/20.09.html">&lt;p&gt;Bastin’ off!&lt;/p&gt;
 
 &lt;h1 id=&quot;september-recap&quot;&gt;September Recap&lt;/h1&gt;
 
@@ -1619,152 +1711,4 @@ warning cone, toilet plungers, a cyborg charging station, and an oddly creative 
 
 &lt;p&gt;Also, in the past, we have showcased work in these blogs that was never submitted in one form or another. This has resulted in us not actually having some ‘progress’ despite us having previously displaying it in a blog post. From here on, we intend to only show progress that has been submitted and accepted to the project in our blog posts. More wip content can be found on our reddit and discord.&lt;/p&gt;
 
-&lt;p&gt;For more information on these recent changes, our progress, or how to contribute, come say hello in our &lt;a href=&quot;https://discord.gg/3ny9tdH&quot; target=&quot;_blank&quot;&gt;discord&lt;/a&gt;!&lt;/p&gt;</content><author><name></name></author><summary type="html">A new month, a new year, a new decade, a new hope.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://ss3d.space/assets/img/art/Bug/BugHydroponics.png" /></entry><entry><title type="html">19.12: December 2019 Devblog</title><link href="https://ss3d.space/2020/01/10/19.12.html" rel="alternate" type="text/html" title="19.12: December 2019 Devblog" /><published>2020-01-10T14:30:00+00:00</published><updated>2020-01-10T14:30:00+00:00</updated><id>https://ss3d.space/2020/01/10/19.12</id><content type="html" xml:base="https://ss3d.space/2020/01/10/19.12.html">&lt;p&gt;&lt;em&gt;“A good system shortens the road to the goal.”&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;– Orison Swett Marden&lt;/p&gt;
-
-&lt;h1 id=&quot;december-recap&quot;&gt;December Recap&lt;/h1&gt;
-
-&lt;p&gt;The season of giving has brought more new faces interested in contributing both through art and code! Now with so many willing faces but little direction, we have been discussing for some time various logistical changes to increase documentation, organization, and direction, which should speed and ease the over-all work-flow. But hitting some roadblocks trying to get these changes rolling, has unfortunately prevented us from being as timely with them as we would like. That being said, changes are taking place and direction beginning to take hold.&lt;/p&gt;
-
-&lt;h2 id=&quot;animations&quot;&gt;Animations&lt;/h2&gt;
-
-&lt;p&gt;&lt;strong&gt;Probably Not&lt;/strong&gt;, who has been with us since beep’s SS3D days, continues to patiently craft character animations for us without loosing stride or getting discouraged when we are slow. This month he has provided 4 more unique animations (opening cig pack and removing a cig, placing cig in mouth, opening lighter, using lighter). These animations will be associated with indiviual actions, but will be smoothed together when the player queues several actions quickly.&lt;/p&gt;
-
-&lt;video autoplay=&quot;autoplay&quot; muted=&quot;&quot; loop=&quot;loop&quot; width=&quot;580px&quot; poster=&quot;/assets/img/posts/19.12.01/ProbablyNotSmoke.png&quot;&gt;
-  &lt;source src=&quot;/assets/img/posts/19.12.01/ProbablyNotSmoke.webm&quot; type=&quot;video/webm&quot; /&gt;
-  &lt;source src=&quot;/assets/img/posts/19.12.01/ProbablyNotSmoke.mp4&quot; type=&quot;video/mp4&quot; /&gt;
-&lt;/video&gt;
-
-&lt;h2 id=&quot;textures&quot;&gt;Textures&lt;/h2&gt;
-
-&lt;p&gt;Textures can be quite a lot of fun, and this martial arts scroll and several textures from &lt;strong&gt;Sanuki&lt;/strong&gt; are no exception. Applying one of the custom &lt;a href=&quot;/assets/img/posts/19.12.01/SanukiMartialArtsScrollTexture.png&quot; target=&quot;_blank&quot;&gt;texture&lt;/a&gt; files adds elegance and character to this simple scroll.&lt;/p&gt;
-
-&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/19.12.01/SanukiMartialArtsScroll.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/SanukiMartialArtsScroll-580x435.png 580w,    /assets/resized/SanukiMartialArtsScroll-290x218.png 290w,    /assets/resized/SanukiMartialArtsScroll-170x128.png 170w,    /assets/resized/SanukiMartialArtsScroll-145x109.png 145w, /assets/img/posts/19.12.01/SanukiMartialArtsScroll.png 800w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-
-&lt;p&gt;Animated textures can be just as fun. Here is a positronic brain from &lt;strong&gt;CosmicCoincidence&lt;/strong&gt; with an electrifying video texture!&lt;/p&gt;
-
-&lt;video autoplay=&quot;autoplay&quot; muted=&quot;&quot; loop=&quot;loop&quot; width=&quot;580px&quot; poster=&quot;/assets/img/posts/19.12.01/CosmicPositronicBrain.png&quot;&gt;
-  &lt;source src=&quot;/assets/img/posts/19.12.01/CosmicPositronicBrain.webm&quot; type=&quot;video/webm&quot; /&gt;
-  &lt;source src=&quot;/assets/img/posts/19.12.01/CosmicPositronicBrain.mp4&quot; type=&quot;video/mp4&quot; /&gt;
-&lt;/video&gt;
-
-&lt;h2 id=&quot;models&quot;&gt;Models&lt;/h2&gt;
-
-&lt;p&gt;To get some of us in the holiday mood, &lt;strong&gt;CosmicCoincidence&lt;/strong&gt; has contributed several festive models, including some Christmas trees, lights, presents, stockings, candycanes, as well as a fireplace.&lt;/p&gt;
-
-&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/19.12.01/CosmicChristmasDecor.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/CosmicChristmasDecor-580x435.png 580w,    /assets/resized/CosmicChristmasDecor-290x218.png 290w,    /assets/resized/CosmicChristmasDecor-170x128.png 170w,    /assets/resized/CosmicChristmasDecor-145x109.png 145w, /assets/img/posts/19.12.01/CosmicChristmasDecor.png 800w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-
-&lt;p&gt;&lt;strong&gt;Goao&lt;/strong&gt; decided to join the festive fun by submitting a suspiciously robust looking snowman.&lt;/p&gt;
-
-&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/19.12.01/GoaoSnowman.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/GoaoSnowman-580x435.png 580w,    /assets/resized/GoaoSnowman-290x218.png 290w,    /assets/resized/GoaoSnowman-170x128.png 170w,    /assets/resized/GoaoSnowman-145x109.png 145w, /assets/img/posts/19.12.01/GoaoSnowman.png 800w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-
-&lt;p&gt;Contributing to both the holiday mood as well as our characters, &lt;strong&gt;Divibee&lt;/strong&gt; has made some festive headwear and an IPC.&lt;/p&gt;
-
-&lt;div class=&quot;horizontal-2&quot;&gt;
-
-  &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/19.12.01/DiviXmasHats.png&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/DiviXmasHats-580x431.png 580w,    /assets/resized/DiviXmasHats-290x215.png 290w,    /assets/resized/DiviXmasHats-170x126.png 170w,    /assets/resized/DiviXmasHats-145x108.png 145w, /assets/img/posts/19.12.01/DiviXmasHats.png 1093w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-
-  &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/19.12.01/DiviIPC.png&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/DiviIPC-580x435.png 580w,    /assets/resized/DiviIPC-290x218.png 290w,    /assets/resized/DiviIPC-170x128.png 170w,    /assets/resized/DiviIPC-145x109.png 145w, /assets/img/posts/19.12.01/DiviIPC.png 800w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;p&gt;&lt;strong&gt;Kiwav&lt;/strong&gt; again does some fine work for us, by contributing an UZI sub-machine gun with foldable stock and detachable suppressor and magazine, as well as a katana, and some reall cool modular transit tubes!&lt;/p&gt;
-
-&lt;div class=&quot;horizontal-2&quot;&gt;
-
-  &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/19.12.01/KiwavUZI.png&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/KiwavUZI-580x435.png 580w,    /assets/resized/KiwavUZI-290x218.png 290w,    /assets/resized/KiwavUZI-170x128.png 170w,    /assets/resized/KiwavUZI-145x109.png 145w, /assets/img/posts/19.12.01/KiwavUZI.png 800w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-
-  &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/19.12.01/KiwavKatana.png&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/KiwavKatana-580x435.png 580w,    /assets/resized/KiwavKatana-290x218.png 290w,    /assets/resized/KiwavKatana-170x128.png 170w,    /assets/resized/KiwavKatana-145x109.png 145w, /assets/img/posts/19.12.01/KiwavKatana.png 800w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/19.12.01/KiwavTransitTubes.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/KiwavTransitTubes-580x435.png 580w,    /assets/resized/KiwavTransitTubes-290x218.png 290w,    /assets/resized/KiwavTransitTubes-170x128.png 170w,    /assets/resized/KiwavTransitTubes-145x109.png 145w, /assets/img/posts/19.12.01/KiwavTransitTubes.png 800w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-
-&lt;p&gt;&lt;strong&gt;UnevenPrankster&lt;/strong&gt; is back with some syndicate gear including, a mini-bomb, reinforced bola, X4 explosive, power sink, and telecrystal. Also from them this month, a cute spiderling and some tape.&lt;/p&gt;
-
-&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/19.12.01/UnevenPranksterSyndicate.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/UnevenPranksterSyndicate-580x435.png 580w,    /assets/resized/UnevenPranksterSyndicate-290x218.png 290w,    /assets/resized/UnevenPranksterSyndicate-170x128.png 170w,    /assets/resized/UnevenPranksterSyndicate-145x109.png 145w, /assets/img/posts/19.12.01/UnevenPranksterSyndicate.png 800w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-
-&lt;div class=&quot;horizontal-2&quot;&gt;
-
-  &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/19.12.01/UnevenPranksterSpiderling.png&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/UnevenPranksterSpiderling-580x435.png 580w,    /assets/resized/UnevenPranksterSpiderling-290x218.png 290w,    /assets/resized/UnevenPranksterSpiderling-170x128.png 170w,    /assets/resized/UnevenPranksterSpiderling-145x109.png 145w, /assets/img/posts/19.12.01/UnevenPranksterSpiderling.png 800w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-
-  &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/19.12.01/UnevenPranksterTape.png&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/UnevenPranksterTape-580x435.png 580w,    /assets/resized/UnevenPranksterTape-290x218.png 290w,    /assets/resized/UnevenPranksterTape-170x128.png 170w,    /assets/resized/UnevenPranksterTape-145x109.png 145w, /assets/img/posts/19.12.01/UnevenPranksterTape.png 800w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;p&gt;From &lt;strong&gt;Liddius&lt;/strong&gt; this month, a power-hammer and power-pickaxe.&lt;/p&gt;
-
-&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/19.12.01/LiddiusPowerTools.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/LiddiusPowerTools-580x435.png 580w,    /assets/resized/LiddiusPowerTools-290x218.png 290w,    /assets/resized/LiddiusPowerTools-170x128.png 170w,    /assets/resized/LiddiusPowerTools-145x109.png 145w, /assets/img/posts/19.12.01/LiddiusPowerTools.png 800w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-
-&lt;p&gt;New this month is &lt;strong&gt;GPTeles&lt;/strong&gt;, who has submitted an ore machine, holo-projector, as well as several surgery-related items including updated blood bags, iv stand, bone gel, cautery tool, and surgical drapes.&lt;/p&gt;
-
-&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/19.12.01/GPTelesOreMachineAndHoloProjector.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/GPTelesOreMachineAndHoloProjector-580x435.png 580w,    /assets/resized/GPTelesOreMachineAndHoloProjector-290x218.png 290w,    /assets/resized/GPTelesOreMachineAndHoloProjector-170x128.png 170w,    /assets/resized/GPTelesOreMachineAndHoloProjector-145x109.png 145w, /assets/img/posts/19.12.01/GPTelesOreMachineAndHoloProjector.png 800w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-
-&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/19.12.01/GPTelesSurgery.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/GPTelesSurgery-580x435.png 580w,    /assets/resized/GPTelesSurgery-290x218.png 290w,    /assets/resized/GPTelesSurgery-170x128.png 170w,    /assets/resized/GPTelesSurgery-145x109.png 145w, /assets/img/posts/19.12.01/GPTelesSurgery.png 800w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-
-&lt;p&gt;On the note of new modelers, &lt;strong&gt;Sanuki&lt;/strong&gt; not only contributed the martial arts scroll above but also some tofu, a cultivator, a spade, and the x-ray gun.&lt;/p&gt;
-
-&lt;div class=&quot;horizontal-2&quot;&gt;
-
-  &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/19.12.01/SanukiTofu.png&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/SanukiTofu-580x435.png 580w,    /assets/resized/SanukiTofu-290x218.png 290w,    /assets/resized/SanukiTofu-170x128.png 170w,    /assets/resized/SanukiTofu-145x109.png 145w, /assets/img/posts/19.12.01/SanukiTofu.png 800w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-
-  &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/19.12.01/SanukiCultivatorSpade.png&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/SanukiCultivatorSpade-580x435.png 580w,    /assets/resized/SanukiCultivatorSpade-290x218.png 290w,    /assets/resized/SanukiCultivatorSpade-170x128.png 170w,    /assets/resized/SanukiCultivatorSpade-145x109.png 145w, /assets/img/posts/19.12.01/SanukiCultivatorSpade.png 800w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/19.12.01/SanukiX-RayLaserGun.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/SanukiX-RayLaserGun-580x435.png 580w,    /assets/resized/SanukiX-RayLaserGun-290x218.png 290w,    /assets/resized/SanukiX-RayLaserGun-170x128.png 170w,    /assets/resized/SanukiX-RayLaserGun-145x109.png 145w, /assets/img/posts/19.12.01/SanukiX-RayLaserGun.png 800w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-
-&lt;p&gt;Another new modeler, &lt;strong&gt;Nicola&lt;/strong&gt; has provided a welding helmet, SMES, tesla coil, thermal electric generator, and some modular heat exchange pipes.&lt;/p&gt;
-
-&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/19.12.01/NicolaWeldingHelmet.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/NicolaWeldingHelmet-580x435.png 580w,    /assets/resized/NicolaWeldingHelmet-290x218.png 290w,    /assets/resized/NicolaWeldingHelmet-170x128.png 170w,    /assets/resized/NicolaWeldingHelmet-145x109.png 145w, /assets/img/posts/19.12.01/NicolaWeldingHelmet.png 800w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-
-&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/19.12.01/NicolaTeslaSMES.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/NicolaTeslaSMES-580x435.png 580w,    /assets/resized/NicolaTeslaSMES-290x218.png 290w,    /assets/resized/NicolaTeslaSMES-170x128.png 170w,    /assets/resized/NicolaTeslaSMES-145x109.png 145w, /assets/img/posts/19.12.01/NicolaTeslaSMES.png 800w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-
-&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/19.12.01/NicolaTEG.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/NicolaTEG-580x435.png 580w,    /assets/resized/NicolaTEG-290x218.png 290w,    /assets/resized/NicolaTEG-170x128.png 170w,    /assets/resized/NicolaTEG-145x109.png 145w, /assets/img/posts/19.12.01/NicolaTEG.png 800w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-
-&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/19.12.01/NicolaHEPipes.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/NicolaHEPipes-580x435.png 580w,    /assets/resized/NicolaHEPipes-290x218.png 290w,    /assets/resized/NicolaHEPipes-170x128.png 170w,    /assets/resized/NicolaHEPipes-145x109.png 145w, /assets/img/posts/19.12.01/NicolaHEPipes.png 800w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-
-&lt;p&gt;Also some manual valves from both &lt;strong&gt;Nicola&lt;/strong&gt; (left) and &lt;strong&gt;Cyke&lt;/strong&gt; (right).&lt;/p&gt;
-
-&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/19.12.01/NicolaPipeValves.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/NicolaPipeValves-580x435.png 580w,    /assets/resized/NicolaPipeValves-290x218.png 290w,    /assets/resized/NicolaPipeValves-170x128.png 170w,    /assets/resized/NicolaPipeValves-145x109.png 145w, /assets/img/posts/19.12.01/NicolaPipeValves.png 800w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-
-&lt;p&gt;Also from &lt;strong&gt;Cyke&lt;/strong&gt; this month, a petri dish and a vent cover.&lt;/p&gt;
-
-&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/19.12.01/CykePetriDishVent.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/CykePetriDishVent-580x435.png 580w,    /assets/resized/CykePetriDishVent-290x218.png 290w,    /assets/resized/CykePetriDishVent-170x128.png 170w,    /assets/resized/CykePetriDishVent-145x109.png 145w, /assets/img/posts/19.12.01/CykePetriDishVent.png 800w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-
-&lt;p&gt;We now also have cabbages thanks to &lt;strong&gt;Bug&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/19.12.01/BugCabbages.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/BugCabbages-580x435.png 580w,    /assets/resized/BugCabbages-290x218.png 290w,    /assets/resized/BugCabbages-170x128.png 170w,    /assets/resized/BugCabbages-145x109.png 145w, /assets/img/posts/19.12.01/BugCabbages.png 800w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-
-&lt;h2 id=&quot;graphics&quot;&gt;Graphics&lt;/h2&gt;
-
-&lt;p&gt;Another really neat contribution, which has been in works for some time, are these job and stamp graphics from &lt;strong&gt;Konstantin3001&lt;/strong&gt;.  Some of the jobs are used from the artist &lt;strong&gt;Luis Prado&lt;/strong&gt; on &lt;a href=&quot;thenounproject.com&quot; target=&quot;_blank&quot;&gt;thenounproject.com&lt;/a&gt;, but many are unique recrafts by &lt;strong&gt;Konstantin3001&lt;/strong&gt;&lt;/p&gt;
-
-&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/19.12.01/KonstantinJobs.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/KonstantinJobs-580x435.png 580w,    /assets/resized/KonstantinJobs-290x218.png 290w,    /assets/resized/KonstantinJobs-170x128.png 170w,    /assets/resized/KonstantinJobs-145x109.png 145w, /assets/img/posts/19.12.01/KonstantinJobs.png 800w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-
-&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/19.12.01/KonstantinStamps.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/KonstantinStamps-580x435.png 580w,    /assets/resized/KonstantinStamps-290x218.png 290w,    /assets/resized/KonstantinStamps-170x128.png 170w,    /assets/resized/KonstantinStamps-145x109.png 145w, /assets/img/posts/19.12.01/KonstantinStamps.png 800w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-
-&lt;h2 id=&quot;artwork&quot;&gt;Artwork&lt;/h2&gt;
-
-&lt;p&gt;This month, &lt;strong&gt;Bug&lt;/strong&gt; has spent as much time making art as he has models. Here is an awesome looping animation from him, as well as a few wallpapers!&lt;/p&gt;
-
-&lt;video autoplay=&quot;autoplay&quot; muted=&quot;&quot; loop=&quot;loop&quot; width=&quot;580px&quot; poster=&quot;/assets/img/art/Bug/BugWallpaper2.png&quot;&gt;
-  &lt;source src=&quot;/assets/img/art/Bug/BugAnimation.webm&quot; type=&quot;video/webm&quot; /&gt;
-  &lt;source src=&quot;/assets/img/art/Bug/BugAnimation.mp4&quot; type=&quot;video/mp4&quot; /&gt;
-&lt;/video&gt;
-
-&lt;div class=&quot;horizontal-2&quot;&gt;
-
-  &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/art/Bug/BugWallpaper2.png&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/BugWallpaper2-580x326.png 580w,    /assets/resized/BugWallpaper2-290x163.png 290w,    /assets/resized/BugWallpaper2-170x96.png 170w,    /assets/resized/BugWallpaper2-145x82.png 145w, /assets/img/art/Bug/BugWallpaper2.png 1920w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-
-  &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/art/Bug/BugWallpaper3.png&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/BugWallpaper3-580x326.png 580w,    /assets/resized/BugWallpaper3-290x163.png 290w,    /assets/resized/BugWallpaper3-170x96.png 170w,    /assets/resized/BugWallpaper3-145x82.png 145w, /assets/img/art/Bug/BugWallpaper3.png 1920w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/art/Bug/BugWallpaper1.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/BugWallpaper1-580x326.png 580w,    /assets/resized/BugWallpaper1-290x163.png 290w,    /assets/resized/BugWallpaper1-170x96.png 170w,    /assets/resized/BugWallpaper1-145x82.png 145w, /assets/img/art/Bug/BugWallpaper1.png 1920w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-
-&lt;p&gt;And finally a warm and festive vertical wallpaper from &lt;strong&gt;CosmicCoincidence&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/art/CosmicCoincidence/CosmicChristmas.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/CosmicChristmas-580x870.png 580w,    /assets/resized/CosmicChristmas-290x435.png 290w,    /assets/resized/CosmicChristmas-170x255.png 170w,    /assets/resized/CosmicChristmas-145x218.png 145w, /assets/img/art/CosmicCoincidence/CosmicChristmas.png 1200w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-
-&lt;h3 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h3&gt;
-
-&lt;p&gt;This month has been a little slow as a result of both the logistical changes taking place as well as the holidays. Although the changes have put a temporary hold on programming tasks, the holidays are now over and said changes should be wrapped up soon and programming resumed.&lt;/p&gt;
-
-&lt;p&gt;As always, come check out the &lt;a href=&quot;https://discord.gg/3ny9tdH&quot; target=&quot;_blank&quot;&gt;discord&lt;/a&gt; for more wip content, and community discussions. Hope you all enjoyed your holidays and see you next month!&lt;/p&gt;</content><author><name></name></author><summary type="html">“A good system shortens the road to the goal.”</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://ss3d.space/assets/img/art/Bug/BugWallpaper2.png" /></entry></feed>
+&lt;p&gt;For more information on these recent changes, our progress, or how to contribute, come say hello in our &lt;a href=&quot;https://discord.gg/3ny9tdH&quot; target=&quot;_blank&quot;&gt;discord&lt;/a&gt;!&lt;/p&gt;</content><author><name></name></author><summary type="html">A new month, a new year, a new decade, a new hope.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://ss3d.space/assets/img/art/Bug/BugHydroponics.png" /></entry></feed>
