@@ -12,6 +12,8 @@ permalink: /art/
 # Bug
 {: class="centred" }
 
+{% responsive_image path: assets/img/art/Bug/Bug_Halloween2020.png template: _includes/srcset.html %}
+
 <video width="580px" autoplay="autoplay" muted loop="loop" poster="{{ site.baseurl }}/assets/img/art/Bug/Bug_420Hydro.png">
   <source src="{{ site.baseurl }}/assets/img/art/Bug/Bug_420Hydro.webm" type="video/webm">
   <source src="{{ site.baseurl }}/assets/img/art/Bug/Bug_420Hydro.mp4" type="video/mp4">
@@ -112,6 +114,11 @@ permalink: /art/
 
 {% responsive_image path: assets/img/art/Grimmie/GrimmieGravity.png template: _includes/srcset.html %}
 
+# Igiari
+{: class="centred" }
+
+{% responsive_image path: assets/img/art/Igiari/Igiari_Halloween2020.png template: _includes/srcset.html %}
+
 # [Konstantin3001](https://www.deviantart.com/konstantin3001){:target="_blank"}
 {: class="centred" }
 
@@ -134,6 +141,8 @@ permalink: /art/
 # Probably Not
 {: class="centred" }
 
+{% responsive_image path: assets/img/art/ProbablyNot/ProbablyNot_Harvest.png template: _includes/srcset.html %}
+
 {% responsive_image path: assets/img/art/ProbablyNot/CreationOfGreytide.png template: _includes/srcset.html %}
 
 {% responsive_image path: assets/img/art/ProbablyNot/ProbablyNot_Chase.png template: _includes/srcset.html %}
@@ -144,7 +153,17 @@ permalink: /art/
 
 {% responsive_image path: assets/img/art/ProbablyNot/ProbablyNotDark.jpg template: _includes/srcset.html %}
 
+# Sice
+{: class="centred" }
+
+{% responsive_image path: assets/img/art/Sice/Sice_Halloween2020.png template: _includes/srcset.html %}
+
 # Sunberry
 {: class="centred" }
 
 {% responsive_image path: assets/img/art/Sunberry/SunberryIanSunsetPoster.png template: _includes/srcset.html %}
+
+# Turkey
+{: class="centred" }
+
+{% responsive_image path: assets/img/art/Turkey/Turkey_Halloween2020.png template: _includes/srcset.html %}
