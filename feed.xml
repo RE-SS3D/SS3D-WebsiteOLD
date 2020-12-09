@@ -1,4 +1,34 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://ss3d.space/feed.xml" rel="self" type="application/atom+xml" /><link href="https://ss3d.space/" rel="alternate" type="text/html" /><updated>2020-12-09T03:35:38+00:00</updated><id>https://ss3d.space/feed.xml</id><title type="html">RE:SS3D</title><subtitle>This is a 3D recreation of Space Station 13, on the Unity engine, which will come with its own set of gameplay/graphical improvements. </subtitle><entry><title type="html">20.10: October 2020 Devblog</title><link href="https://ss3d.space/2020/11/08/20.10.html" rel="alternate" type="text/html" title="20.10: October 2020 Devblog" /><published>2020-11-08T05:30:00+00:00</published><updated>2020-11-08T05:30:00+00:00</updated><id>https://ss3d.space/2020/11/08/20.10</id><content type="html" xml:base="https://ss3d.space/2020/11/08/20.10.html">&lt;p&gt;Hope you all had a SpOOky halloween!&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://ss3d.space/feed.xml" rel="self" type="application/atom+xml" /><link href="https://ss3d.space/" rel="alternate" type="text/html" /><updated>2020-12-09T05:34:17+00:00</updated><id>https://ss3d.space/feed.xml</id><title type="html">RE:SS3D</title><subtitle>This is a 3D recreation of Space Station 13, on the Unity engine, which will come with its own set of gameplay/graphical improvements. </subtitle><entry><title type="html">20.11: November 2020 Devblog</title><link href="https://ss3d.space/2020/12/08/20.11.html" rel="alternate" type="text/html" title="20.11: November 2020 Devblog" /><published>2020-12-08T05:30:00+00:00</published><updated>2020-12-08T05:30:00+00:00</updated><id>https://ss3d.space/2020/12/08/20.11</id><content type="html" xml:base="https://ss3d.space/2020/12/08/20.11.html">&lt;p&gt;The community we share brings us joy and robustness for years to come!&lt;/p&gt;
+
+&lt;h1 id=&quot;november-recap&quot;&gt;November Recap&lt;/h1&gt;
+
+&lt;p&gt;Indeed we are still moving slow, but we haven’t left. We have been entertaining some ideas on how to increase productivity again, so we will see what comes of that hopefully soon. Again, if you want to help, you are more than welcome to do so in whatever means you are willing, though we especially need people who can work with Unity.&lt;/p&gt;
+
+&lt;h2 id=&quot;fixes&quot;&gt;Fixes&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;John&lt;/strong&gt; made several changes to our in-game 3D assets, mostly fixing some topology and color issues.&lt;/p&gt;
+
+&lt;h2 id=&quot;models&quot;&gt;Models&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;John&lt;/strong&gt; also seems to be the only one who made any models this month. He a (back row, moving left to right) hand teleporter, pinpointer, syndicate camera bug, flash, atmospheric analyzer, (front row) mining analyzer, hydroponics analyzer, medical analyzer, slime analyzer, &amp;amp; finally a newly styled multitool.&lt;/p&gt;
+
+&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/20.11.01/JohnDevices.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/JohnDevices-580x435.png 580w,    /assets/resized/JohnDevices-290x218.png 290w,    /assets/resized/JohnDevices-170x128.png 170w,    /assets/resized/JohnDevices-145x109.png 145w, /assets/img/posts/20.11.01/JohnDevices.png 800w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+
+&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/20.11.01/JohnMultitool.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/JohnMultitool-580x435.png 580w,    /assets/resized/JohnMultitool-290x218.png 290w,    /assets/resized/JohnMultitool-170x128.png 170w,    /assets/resized/JohnMultitool-145x109.png 145w, /assets/img/posts/20.11.01/JohnMultitool.png 800w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;art&quot;&gt;Art&lt;/h2&gt;
+
+&lt;p&gt;This month’s art is brought to us by &lt;strong&gt;Bug&lt;/strong&gt;!&lt;/p&gt;
+
+&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/art/Bug/Bug_Spacegiving.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/Bug_Spacegiving-580x326.png 580w,    /assets/resized/Bug_Spacegiving-290x163.png 290w,    /assets/resized/Bug_Spacegiving-170x96.png 170w,    /assets/resized/Bug_Spacegiving-145x82.png 145w, /assets/img/art/Bug/Bug_Spacegiving.png 1920w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
+
+&lt;p&gt;These last few months have indeed been slow, but they seem slower than they actually are. We have things that are slowly in the works, but we do not post that progress here, we only display implemented progress in these updates. So…&lt;/p&gt;
+
+&lt;p&gt;Join community discussions, ideas, and see WIP content from us over at our &lt;a href=&quot;https://discord.gg/3ny9tdH&quot; target=&quot;_blank&quot;&gt;Discord&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;See you back next month!&lt;/p&gt;</content><author><name></name></author><summary type="html">The community we share brings us joy and robustness for years to come!</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://ss3d.space/assets/img/art/Bug/Bug_Spacegiving.png" /></entry><entry><title type="html">20.10: October 2020 Devblog</title><link href="https://ss3d.space/2020/11/08/20.10.html" rel="alternate" type="text/html" title="20.10: October 2020 Devblog" /><published>2020-11-08T05:30:00+00:00</published><updated>2020-11-08T05:30:00+00:00</updated><id>https://ss3d.space/2020/11/08/20.10</id><content type="html" xml:base="https://ss3d.space/2020/11/08/20.10.html">&lt;p&gt;Hope you all had a SpOOky halloween!&lt;/p&gt;
 
 &lt;h1 id=&quot;october-recap&quot;&gt;October Recap&lt;/h1&gt;
 
@@ -86,7 +116,7 @@
   &lt;li&gt;3rd Place ($10): &lt;strong&gt;Sice&lt;/strong&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;To recieve your prizes, contact &lt;strong&gt;ProbablyNot&lt;/strong&gt; on discord.&lt;/p&gt;
+&lt;p&gt;Congratulations winners, to recieve your prizes contact &lt;strong&gt;ProbablyNot&lt;/strong&gt; on discord.&lt;/p&gt;
 
 &lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
 
@@ -1512,203 +1542,4 @@ warning cone, toilet plungers, a cyborg charging station, and an oddly creative 
 
 &lt;p&gt;As mentioned above, we have continued working hard on updating documentation, not just on our website, but also on our other sites, to help make the contribution process easier for everyone.&lt;/p&gt;
 
-&lt;p&gt;Well, that wraps up another month here at RE:SS3D, if you are curious about more content from us, or want to contribute to the project yourself, come visit our &lt;a href=&quot;https://discord.gg/3ny9tdH&quot; target=&quot;_blank&quot;&gt;discord&lt;/a&gt;!&lt;/p&gt;</content><author><name></name></author><summary type="html">Slow, steady, and humble, we shall not stumble.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://ss3d.space/assets/img/art/Bug/BugSpaceJunk.png" /></entry><entry><title type="html">20.01: January 2020 Devblog</title><link href="https://ss3d.space/2020/02/03/20.01.html" rel="alternate" type="text/html" title="20.01: January 2020 Devblog" /><published>2020-02-03T14:30:00+00:00</published><updated>2020-02-03T14:30:00+00:00</updated><id>https://ss3d.space/2020/02/03/20.01</id><content type="html" xml:base="https://ss3d.space/2020/02/03/20.01.html">&lt;p&gt;A new month, a new year, a new decade, a new hope.&lt;/p&gt;
-
-&lt;h1 id=&quot;january-recap&quot;&gt;January Recap&lt;/h1&gt;
-
-&lt;p&gt;This month has been a leap in productivity for SS3D, and for multiple reasons (more information at the bottom). One of those reasons, not unlike other months, is the new contributors both big and small. Some manage to find the time to really put their passion to work here at SS3D, while others help out where they can, when they can. But, We’re just happy to no longer have to beg for programmers to come join and help us, but rather now, thank all our amazing programmers for their contributions, reviews, web-maintenance, issue reports, and fixes. Though if your’e a programmer, there is plenty of room for you here still.&lt;/p&gt;
-
-&lt;p&gt;One of our new contributors this month is &lt;strong&gt;Em3rgency&lt;/strong&gt;, and he has really shown both work ethic and passion for our project, as well as trust and great development skills. As a result, within the same month he has joined as a contributor, he has also worked his way up to being a board member. I’m not sure if this has anything to do with his 6 years of software development experience and even more years prototyping things in Unity, or not. Maybe it’s just coincidental… and let’s not even mention his contributions to *cough &lt;a href=&quot;https://unitystation.org/&quot; target=&quot;_blank&quot;&gt;&lt;em&gt;Unity Station&lt;/em&gt;&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h2 id=&quot;tilemaps&quot;&gt;Tilemaps&lt;/h2&gt;
-
-&lt;p&gt;Back again with progress on core systems, &lt;strong&gt;Nonanon&lt;/strong&gt; has updated the tilemap system to auto-connect prefabs (like walls or tables) both in-game and in the editor in Unity. It works by correctly choosing the appropriate prefab variant and applying rotation. With accurate modeling, this system can be attributed to other connectables like pipes, multi-tile floor patterns, etc.&lt;/p&gt;
-
-&lt;video controls=&quot;&quot; muted=&quot;&quot; poster=&quot;/assets/img/posts/20.01.01/NonanonTilemap.png&quot; width=&quot;580px&quot;&gt;
-  &lt;source src=&quot;/assets/img/posts/20.01.01/NonanonTilemap.webm&quot; type=&quot;video/webm&quot; /&gt;
-  &lt;source src=&quot;/assets/img/posts/20.01.01/NonanonTilemap.mp4&quot; type=&quot;video/mp4&quot; /&gt;
-&lt;/video&gt;
-
-&lt;p&gt;He also made improvements to the tile editor to allow for saving and editing innumerous tile configurations. Currently, a tile configuration supports a ‘turf’ (floors, windows, walls, etc.) and a ‘fixture’ (wall lights, airlocks, tables, etc.). Both the turf and the fixture are placed when placing a tile configuration. Placing tiles in the editor is smoother now too, with the added ability to be able to click and drag them to place multiple quickly. There is still some work to be done and bugs to flush out, but the system looks very promising.&lt;/p&gt;
-
-&lt;video controls=&quot;&quot; muted=&quot;&quot; poster=&quot;/assets/img/posts/20.01.01/NonanonTilemap2.png&quot; width=&quot;580px&quot;&gt;
-  &lt;source src=&quot;/assets/img/posts/20.01.01/NonanonTilemap2.webm&quot; type=&quot;video/webm&quot; /&gt;
-  &lt;source src=&quot;/assets/img/posts/20.01.01/NonanonTilemap2.mp4&quot; type=&quot;video/mp4&quot; /&gt;
-&lt;/video&gt;
-
-&lt;h2 id=&quot;interaction&quot;&gt;Interaction&lt;/h2&gt;
-
-&lt;p&gt;&lt;strong&gt;Dyhr&lt;/strong&gt; this month has begun experimenting more with the interactions system, by contributing a WIP event-based interaction system. The system includes both single event (like picking up or dropping an item) and continuous interactions (like drawing with a crayon or shooting an automatic weapon). Although, currently not everything has been tied to this new system yet, most notably the health/damage system mentioned lower down.&lt;/p&gt;
-
-&lt;h2 id=&quot;chat&quot;&gt;Chat&lt;/h2&gt;
-
-&lt;p&gt;If you remember our &lt;a href=&quot;/2019/10/06/19.09.html&quot;&gt;September devblog&lt;/a&gt;, you may also remember the &lt;a href=&quot;/assets/img/posts/19.09.01/MillyChatWIPSept.webm&quot; target=&quot;_blank&quot;&gt;WIP chat system made by &lt;strong&gt;Milly&lt;/strong&gt;&lt;/a&gt;, which sadly got left behind and never merged. That is, until the beginning of January where &lt;strong&gt;Em3rgency&lt;/strong&gt; picked it up, dusted it off, and slapped networking on it as well as a few quality of life things. It’s still incomplete as there are no channel permissions yet, but it’s a good start.&lt;/p&gt;
-
-&lt;h2 id=&quot;healthdamage&quot;&gt;Health/Damage&lt;/h2&gt;
-
-&lt;p&gt;&lt;strong&gt;Em3rgency&lt;/strong&gt;, unhappy to see stale merge requests for WIP systems, wanted to resurrect another, this one being for rudimentary player health and damage. After looking through it and deciding it should probably be redone from scratch, he went ahead and did just that!&lt;/p&gt;
-
-&lt;p&gt;Limbs now track their damage as well as track status effects like crippled, bruised, bleeding, etc. They will even detach given enough damage. Unfortunately, this cannot be tested currently as a result of the interaction system which merged shortly after this (mentioned above).&lt;/p&gt;
-
-&lt;video controls=&quot;&quot; muted=&quot;&quot; poster=&quot;/assets/img/posts/20.01.01/Em3rgencyDamage.png&quot; width=&quot;580px&quot;&gt;
-  &lt;source src=&quot;/assets/img/posts/20.01.01/Em3rgencyDamage.webm&quot; type=&quot;video/webm&quot; /&gt;
-  &lt;source src=&quot;/assets/img/posts/20.01.01/Em3rgencyDamage.mp4&quot; type=&quot;video/mp4&quot; /&gt;
-&lt;/video&gt;
-
-&lt;h2 id=&quot;central-communications-centcom-server&quot;&gt;Central Communications (CentCom) Server&lt;/h2&gt;
-
-&lt;p&gt;Happy with a place to put his talents to work, and with large goals in mind, &lt;strong&gt;Em3rgency&lt;/strong&gt; added a new &lt;a href=&quot;https://github.com/RE-SS3D/SS3D-CentCom&quot; target=&quot;_blank&quot;&gt;Centcom repository&lt;/a&gt; to our organization. This acts as a central server for managing user registration, authentication, and character storage, similar to what Byond is to SS13.&lt;/p&gt;
-
-&lt;p&gt;Currently, although passwords are encrypted, you can simply use a fake email and it will remember it, but in the future, this will likely change to using actual usernames. At the moment, all clients connect to the same Centcom server but since the server is open-source like the game, each game server could, in theory, have it’s own Centcom server. But that’s something to build on in the future.&lt;/p&gt;
-
-&lt;p&gt;With some help from &lt;strong&gt;Milly&lt;/strong&gt; on making the UI, you can also create and save multiple characters in the character creator. Unfortunately, the only customization you can currently do to the character is changing the name, so better get creative!&lt;/p&gt;
-
-&lt;p&gt;For now, you can host your own game server, join it, create and save characters, and then use your characters to run around in someone else’s game server! Which is absolutely amazing!&lt;/p&gt;
-
-&lt;p&gt;If you don’t want to download Unity and build the most recent development changes yourself, you can instead &lt;a href=&quot;https://github.com/RE-SS3D/SS3D/releases/download/0.3.0/RESS3D_0.3.0.zip&quot; target=&quot;_blank&quot;&gt;&lt;strong&gt;download our latest build (v0.3.0) here&lt;/strong&gt;&lt;/a&gt;, which has been updated recently. And we also hope to update it frequently by integrating automated builds in the future for each minor release.&lt;/p&gt;
-
-&lt;video controls=&quot;&quot; muted=&quot;&quot; poster=&quot;/assets/img/posts/20.01.01/Em3rgencyLogin.png&quot; width=&quot;580px&quot;&gt;
-  &lt;source src=&quot;/assets/img/posts/20.01.01/Em3rgencyLogin.webm&quot; type=&quot;video/webm&quot; /&gt;
-  &lt;source src=&quot;/assets/img/posts/20.01.01/Em3rgencyLogin.mp4&quot; type=&quot;video/mp4&quot; /&gt;
-&lt;/video&gt;
-
-&lt;h2 id=&quot;drawing&quot;&gt;Drawing&lt;/h2&gt;
-
-&lt;p&gt;After developing a few of the core systems, &lt;strong&gt;Em3rgency&lt;/strong&gt; wanted to take a break by implementing something fun to do in-game. So, with a little help from our artists, he made a simple drawing system and a fuel system. The drawing system currently only uses crayons, but this system can be expanded for use with other things, such as spray paint.&lt;/p&gt;
-
-&lt;p&gt;The fuel system simply acts as the amount of what we’re calling “fuel”, but the system can be made to work with other objects such as crayons that will deplete over time, or even objects that store ammo, charge, propellent, etc. You can see how much remaining fuel your crayon has in the small progress bar in the hand its held in.&lt;/p&gt;
-
-&lt;video controls=&quot;&quot; muted=&quot;&quot; poster=&quot;/assets/img/posts/20.01.01/Em3rgencyDrawing1.png&quot; width=&quot;580px&quot;&gt;
-  &lt;source src=&quot;/assets/img/posts/20.01.01/Em3rgencyDrawing1.webm&quot; type=&quot;video/webm&quot; /&gt;
-  &lt;source src=&quot;/assets/img/posts/20.01.01/Em3rgencyDrawing1.mp4&quot; type=&quot;video/mp4&quot; /&gt;
-&lt;/video&gt;
-
-&lt;p&gt;The system is fun to play with and in his own words, “drawing lets you, quite literally, leave a mark on the world”. Currently, only some major surfaces can be drawn on, like floors, walls, tables, and lockers, but we plan to significantly add to that list.&lt;/p&gt;
-
-&lt;video controls=&quot;&quot; muted=&quot;&quot; poster=&quot;/assets/img/posts/20.01.01/Em3rgencyDrawing2.png&quot; width=&quot;580px&quot;&gt;
-  &lt;source src=&quot;/assets/img/posts/20.01.01/Em3rgencyDrawing2.webm&quot; type=&quot;video/webm&quot; /&gt;
-  &lt;source src=&quot;/assets/img/posts/20.01.01/Em3rgencyDrawing2.mp4&quot; type=&quot;video/mp4&quot; /&gt;
-&lt;/video&gt;
-
-&lt;h2 id=&quot;textures&quot;&gt;Textures&lt;/h2&gt;
-
-&lt;p&gt;&lt;strong&gt;Konstantin3001&lt;/strong&gt; is back as always, this time with some cool Nanotrasen posters and a colorful skybox which we are considering using for the holodeck!&lt;/p&gt;
-
-&lt;div class=&quot;horizontal-3&quot;&gt;
-
-  &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/art/Konstantin3001/NT.png&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/NT-580x870.png 580w,    /assets/resized/NT-290x435.png 290w,    /assets/resized/NT-170x255.png 170w,    /assets/resized/NT-145x218.png 145w, /assets/img/art/Konstantin3001/NT.png 600w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-
-  &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/art/Konstantin3001/NT2.png&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/NT2-580x870.png 580w,    /assets/resized/NT2-290x435.png 290w,    /assets/resized/NT2-170x255.png 170w,    /assets/resized/NT2-145x218.png 145w, /assets/img/art/Konstantin3001/NT2.png 600w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-
-  &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/art/Konstantin3001/NT3.png&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/NT3-580x870.png 580w,    /assets/resized/NT3-290x435.png 290w,    /assets/resized/NT3-170x255.png 170w,    /assets/resized/NT3-145x218.png 145w, /assets/img/art/Konstantin3001/NT3.png 600w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/20.01.01/KonstantinSpessbox.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/KonstantinSpessbox-580x435.png 580w,    /assets/resized/KonstantinSpessbox-290x218.png 290w,    /assets/resized/KonstantinSpessbox-170x128.png 170w,    /assets/resized/KonstantinSpessbox-145x109.png 145w, /assets/img/posts/20.01.01/KonstantinSpessbox.png 4096w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-
-&lt;p&gt;&lt;strong&gt;Nicola&lt;/strong&gt; also made some posters this month, here are his pod and space posters.&lt;/p&gt;
-
-&lt;div class=&quot;horizontal-2&quot;&gt;
-
-  &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/20.01.01/PODS_L.png&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/PODS_L-580x870.png 580w,    /assets/resized/PODS_L-290x435.png 290w,    /assets/resized/PODS_L-170x255.png 170w,    /assets/resized/PODS_L-145x218.png 145w, /assets/img/posts/20.01.01/PODS_L.png 600w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-
-  &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/20.01.01/PODS_R.png&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/PODS_R-580x870.png 580w,    /assets/resized/PODS_R-290x435.png 290w,    /assets/resized/PODS_R-170x255.png 170w,    /assets/resized/PODS_R-145x218.png 145w, /assets/img/posts/20.01.01/PODS_R.png 600w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;div class=&quot;horizontal-2&quot;&gt;
-
-  &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/20.01.01/SPACE_L.png&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/SPACE_L-580x870.png 580w,    /assets/resized/SPACE_L-290x435.png 290w,    /assets/resized/SPACE_L-170x255.png 170w,    /assets/resized/SPACE_L-145x218.png 145w, /assets/img/posts/20.01.01/SPACE_L.png 600w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-
-  &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/20.01.01/SPACE_R.png&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/SPACE_R-580x870.png 580w,    /assets/resized/SPACE_R-290x435.png 290w,    /assets/resized/SPACE_R-170x255.png 170w,    /assets/resized/SPACE_R-145x218.png 145w, /assets/img/posts/20.01.01/SPACE_R.png 600w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;h2 id=&quot;models&quot;&gt;Models&lt;/h2&gt;
-
-&lt;p&gt;Again new modelers this month, one of which is &lt;strong&gt;ComradeCheekiBreeki&lt;/strong&gt;, who has already contributed a set of bibles, a latte, and a few sauces (hot sauce, cold sauce, universal enzyme, and soy sauce).&lt;/p&gt;
-
-&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/20.01.01/ComradeCheekiBibles.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/ComradeCheekiBibles-580x435.png 580w,    /assets/resized/ComradeCheekiBibles-290x218.png 290w,    /assets/resized/ComradeCheekiBibles-170x128.png 170w,    /assets/resized/ComradeCheekiBibles-145x109.png 145w, /assets/img/posts/20.01.01/ComradeCheekiBibles.png 800w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-
-&lt;div class=&quot;horizontal-2&quot;&gt;
-
-  &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/20.01.01/ComradeCheekiLatte.png&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/ComradeCheekiLatte-580x435.png 580w,    /assets/resized/ComradeCheekiLatte-290x218.png 290w,    /assets/resized/ComradeCheekiLatte-170x128.png 170w,    /assets/resized/ComradeCheekiLatte-145x109.png 145w, /assets/img/posts/20.01.01/ComradeCheekiLatte.png 800w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-
-  &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/20.01.01/ComradeCheekiSauces.png&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/ComradeCheekiSauces-580x435.png 580w,    /assets/resized/ComradeCheekiSauces-290x218.png 290w,    /assets/resized/ComradeCheekiSauces-170x128.png 170w,    /assets/resized/ComradeCheekiSauces-145x109.png 145w, /assets/img/posts/20.01.01/ComradeCheekiSauces.png 800w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;p&gt;&lt;strong&gt;Nicola&lt;/strong&gt; put a lot of focus on atmospheric parts and engineering machines this month, with some pumps, filters, and mixers, etc, that we were missing, as well as gravity generator and a shield generator.&lt;/p&gt;
-
-&lt;video autoplay=&quot;autoplay&quot; muted=&quot;&quot; loop=&quot;loop&quot; poster=&quot;/assets/img/posts/20.01.01/NicolaAtmosParts.png&quot; width=&quot;580px&quot;&gt;
-  &lt;source src=&quot;/assets/img/posts/20.01.01/NicolaAtmosParts.webm&quot; type=&quot;video/webm&quot; /&gt;
-  &lt;source src=&quot;/assets/img/posts/20.01.01/NicolaAtmosParts.mp4&quot; type=&quot;video/mp4&quot; /&gt;
-&lt;/video&gt;
-
-&lt;div class=&quot;horizontal-2&quot;&gt;
-
-  &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/20.01.01/NicolaGravityGenerator.png&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/NicolaGravityGenerator-580x435.png 580w,    /assets/resized/NicolaGravityGenerator-290x218.png 290w,    /assets/resized/NicolaGravityGenerator-170x128.png 170w,    /assets/resized/NicolaGravityGenerator-145x109.png 145w, /assets/img/posts/20.01.01/NicolaGravityGenerator.png 800w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-
-  &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/20.01.01/NicolaShieldGenerator.png&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/NicolaShieldGenerator-580x435.png 580w,    /assets/resized/NicolaShieldGenerator-290x218.png 290w,    /assets/resized/NicolaShieldGenerator-170x128.png 170w,    /assets/resized/NicolaShieldGenerator-145x109.png 145w, /assets/img/posts/20.01.01/NicolaShieldGenerator.png 800w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;p&gt;He also made a mini fire extinguisher, some warning signs, and a small leather bag.&lt;/p&gt;
-
-&lt;div class=&quot;horizontal-3&quot;&gt;
-
-  &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/20.01.01/NicolaFireExtinguisher.png&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/NicolaFireExtinguisher-580x435.png 580w,    /assets/resized/NicolaFireExtinguisher-290x218.png 290w,    /assets/resized/NicolaFireExtinguisher-170x128.png 170w,    /assets/resized/NicolaFireExtinguisher-145x109.png 145w, /assets/img/posts/20.01.01/NicolaFireExtinguisher.png 800w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-
-  &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/20.01.01/NicolaSigns.png&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/NicolaSigns-580x435.png 580w,    /assets/resized/NicolaSigns-290x218.png 290w,    /assets/resized/NicolaSigns-170x128.png 170w,    /assets/resized/NicolaSigns-145x109.png 145w, /assets/img/posts/20.01.01/NicolaSigns.png 800w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-
-  &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/20.01.01/NicolaLeatherBag.png&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/NicolaLeatherBag-580x435.png 580w,    /assets/resized/NicolaLeatherBag-290x218.png 290w,    /assets/resized/NicolaLeatherBag-170x128.png 170w,    /assets/resized/NicolaLeatherBag-145x109.png 145w, /assets/img/posts/20.01.01/NicolaLeatherBag.png 800w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;p&gt;&lt;strong&gt;Sanuki&lt;/strong&gt; is back this month as well, with this really cool decloner gun.&lt;/p&gt;
-
-&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/20.01.01/SanukiDecloner.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/SanukiDecloner-580x399.png 580w,    /assets/resized/SanukiDecloner-290x199.png 290w,    /assets/resized/SanukiDecloner-170x117.png 170w,    /assets/resized/SanukiDecloner-145x100.png 145w, /assets/img/posts/20.01.01/SanukiDecloner.png 1088w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-
-&lt;p&gt;A cute little portable scrubber from &lt;strong&gt;Goao&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/20.01.01/GoaoScrubber.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/GoaoScrubber-580x435.png 580w,    /assets/resized/GoaoScrubber-290x218.png 290w,    /assets/resized/GoaoScrubber-170x128.png 170w,    /assets/resized/GoaoScrubber-145x109.png 145w, /assets/img/posts/20.01.01/GoaoScrubber.png 800w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-
-&lt;p&gt;&lt;strong&gt;GPTeles&lt;/strong&gt; is also back, with some creatively unique vending machines, completing our vending machines list!&lt;/p&gt;
-
-&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/20.01.01/GPTVending.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/GPTVending-580x435.png 580w,    /assets/resized/GPTVending-290x218.png 290w,    /assets/resized/GPTVending-170x128.png 170w,    /assets/resized/GPTVending-145x109.png 145w, /assets/img/posts/20.01.01/GPTVending.png 800w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-
-&lt;p&gt;A nice handheld holoprojector from &lt;strong&gt;Hummus&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/20.01.01/HummusHoloprojector.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/HummusHoloprojector-580x435.png 580w,    /assets/resized/HummusHoloprojector-290x218.png 290w,    /assets/resized/HummusHoloprojector-170x128.png 170w,    /assets/resized/HummusHoloprojector-145x109.png 145w, /assets/img/posts/20.01.01/HummusHoloprojector.png 800w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-
-&lt;p&gt;And a little less interesting than some others, but &lt;strong&gt;CosmicCoincidence&lt;/strong&gt; added a couple missing pieces to the wall and window sets, as well as a missing table piece which was crucial to have fully working connections in the new tilemap system.&lt;/p&gt;
-
-&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/20.01.01/CosmicWalls.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/CosmicWalls-580x435.png 580w,    /assets/resized/CosmicWalls-290x218.png 290w,    /assets/resized/CosmicWalls-170x128.png 170w,    /assets/resized/CosmicWalls-145x109.png 145w, /assets/img/posts/20.01.01/CosmicWalls.png 800w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-
-&lt;p&gt;Someone who is not new to the community but is contributing for the first time, &lt;strong&gt;SwankCookie&lt;/strong&gt; has also made some crayons and a custom law mod for us.&lt;/p&gt;
-
-&lt;div class=&quot;horizontal-2&quot;&gt;
-
-  &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/20.01.01/SwankCookieCrayons.png&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/SwankCookieCrayons-580x435.png 580w,    /assets/resized/SwankCookieCrayons-290x218.png 290w,    /assets/resized/SwankCookieCrayons-170x128.png 170w,    /assets/resized/SwankCookieCrayons-145x109.png 145w, /assets/img/posts/20.01.01/SwankCookieCrayons.png 800w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-
-  &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/20.01.01/SwankCookieCustomLawMod.png&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/SwankCookieCustomLawMod-580x435.png 580w,    /assets/resized/SwankCookieCustomLawMod-290x218.png 290w,    /assets/resized/SwankCookieCustomLawMod-170x128.png 170w,    /assets/resized/SwankCookieCustomLawMod-145x109.png 145w, /assets/img/posts/20.01.01/SwankCookieCustomLawMod.png 800w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;h2 id=&quot;artwork&quot;&gt;Artwork&lt;/h2&gt;
-
-&lt;p&gt;Again this month, &lt;strong&gt;Bug&lt;/strong&gt; has made another interesting animation to spark your curiosity!&lt;/p&gt;
-
-&lt;video autoplay=&quot;autoplay&quot; muted=&quot;&quot; loop=&quot;loop&quot; poster=&quot;/assets/img/art/Bug/BugHydroponics.png&quot; width=&quot;580px&quot;&gt;
-  &lt;source src=&quot;/assets/img/art/Bug/BugHydroponics.webm&quot; type=&quot;video/webm&quot; /&gt;
-  &lt;source src=&quot;/assets/img/art/Bug/BugHydroponics.mp4&quot; type=&quot;video/mp4&quot; /&gt;
-&lt;/video&gt;
-
-&lt;p&gt;And from &lt;strong&gt;CosmicCoincidence&lt;/strong&gt; a couple of new logos using our iconic toolbox icon!&lt;/p&gt;
-
-&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/20.01.01/RESPACESTATION3D.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/RESPACESTATION3D-580x91.png 580w,    /assets/resized/RESPACESTATION3D-290x45.png 290w,    /assets/resized/RESPACESTATION3D-170x27.png 170w,    /assets/resized/RESPACESTATION3D-145x23.png 145w, /assets/img/posts/20.01.01/RESPACESTATION3D.png 1920w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-
-&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/20.01.01/RESS3D.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/RESS3D-580x290.png 580w,    /assets/resized/RESS3D-290x145.png 290w,    /assets/resized/RESS3D-170x85.png 170w,    /assets/resized/RESS3D-145x73.png 145w, /assets/img/posts/20.01.01/RESS3D.png 1280w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-
-&lt;h3 id=&quot;notes&quot;&gt;Notes&lt;/h3&gt;
-
-&lt;p&gt;You may recall us mentioning some in-progress management changes in our last devlog, these changes were decided upon in late 2019 by what is now the “Centcom” team. The primary reason for these changes being our technical stagnation, as well as other roadblocks in progress as a result of leaders going absent, which has been a recurring theme for us. The new leadership, the Centcom team, now has more &lt;a href=&quot;https://github.com/RE-SS3D/SS3D/wiki/Council-Responsibilities&quot; target=&quot;_blank&quot;&gt;responsibilities&lt;/a&gt; and functions more like a ‘leading team’ as opposed to individual ‘team leaders’.&lt;/p&gt;
-
-&lt;p&gt;Over the last month, the team has put a lot of effort into updating links and guides, populating task boards, writing documents, and restructuring our discord, amongst other things. All of which is to help streamline the contribution process both for the average contributor as well as the managing staff. Admittedly there are still a few new guides to make and assets to organize, but the important stuff is mostly caught up and the rest hasn’t been forgotten.&lt;/p&gt;
-
-&lt;p&gt;Also, in the past, we have showcased work in these blogs that was never submitted in one form or another. This has resulted in us not actually having some ‘progress’ despite us having previously displaying it in a blog post. From here on, we intend to only show progress that has been submitted and accepted to the project in our blog posts. More wip content can be found on our reddit and discord.&lt;/p&gt;
-
-&lt;p&gt;For more information on these recent changes, our progress, or how to contribute, come say hello in our &lt;a href=&quot;https://discord.gg/3ny9tdH&quot; target=&quot;_blank&quot;&gt;discord&lt;/a&gt;!&lt;/p&gt;</content><author><name></name></author><summary type="html">A new month, a new year, a new decade, a new hope.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://ss3d.space/assets/img/art/Bug/BugHydroponics.png" /></entry></feed>
+&lt;p&gt;Well, that wraps up another month here at RE:SS3D, if you are curious about more content from us, or want to contribute to the project yourself, come visit our &lt;a href=&quot;https://discord.gg/3ny9tdH&quot; target=&quot;_blank&quot;&gt;discord&lt;/a&gt;!&lt;/p&gt;</content><author><name></name></author><summary type="html">Slow, steady, and humble, we shall not stumble.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://ss3d.space/assets/img/art/Bug/BugSpaceJunk.png" /></entry></feed>
