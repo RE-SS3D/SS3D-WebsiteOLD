@@ -1,4 +1,54 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://ss3d.space/feed.xml" rel="self" type="application/atom+xml" /><link href="https://ss3d.space/" rel="alternate" type="text/html" /><updated>2021-01-13T01:32:21+00:00</updated><id>https://ss3d.space/feed.xml</id><title type="html">RE:SS3D</title><subtitle>This is a 3D recreation of Space Station 13, on the Unity engine, which will come with its own set of gameplay/graphical improvements. </subtitle><entry><title type="html">20.11: November 2020 Devblog</title><link href="https://ss3d.space/2020/12/08/20.11.html" rel="alternate" type="text/html" title="20.11: November 2020 Devblog" /><published>2020-12-08T05:30:00+00:00</published><updated>2020-12-08T05:30:00+00:00</updated><id>https://ss3d.space/2020/12/08/20.11</id><content type="html" xml:base="https://ss3d.space/2020/12/08/20.11.html">&lt;p&gt;The community we share brings us joy and robustness for years to come!&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://ss3d.space/feed.xml" rel="self" type="application/atom+xml" /><link href="https://ss3d.space/" rel="alternate" type="text/html" /><updated>2021-01-13T12:24:35+00:00</updated><id>https://ss3d.space/feed.xml</id><title type="html">RE:SS3D</title><subtitle>This is a 3D recreation of Space Station 13, on the Unity engine, which will come with its own set of gameplay/graphical improvements. </subtitle><entry><title type="html">20.12: December 2020 Devblog</title><link href="https://ss3d.space/2021/01/13/20.12.html" rel="alternate" type="text/html" title="20.12: December 2020 Devblog" /><published>2021-01-13T05:30:00+00:00</published><updated>2021-01-13T05:30:00+00:00</updated><id>https://ss3d.space/2021/01/13/20.12</id><content type="html" xml:base="https://ss3d.space/2021/01/13/20.12.html">&lt;p&gt;Cheers to the new years, let hope this one is better than the last!&lt;/p&gt;
+
+&lt;h1 id=&quot;december-recap&quot;&gt;December Recap&lt;/h1&gt;
+
+&lt;p&gt;Apologies for the delay in gettting this month’s blog post made, but we hope everyone had a great holiday season despite what we are all going through in this crazy world.&lt;/p&gt;
+
+&lt;h2 id=&quot;fixes&quot;&gt;Fixes&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;Seteron&lt;/strong&gt; Retimed the move cycle to fix the symmetry of the run/walk animations. He also fixxed the inverted SSRT when using OpenGL drivers.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;John&lt;/strong&gt; made countless small fixes to many of our models again this month, regarding topology, shading, style, and more.&lt;/p&gt;
+
+&lt;h2 id=&quot;details&quot;&gt;Details&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;CosmicCoincidence&lt;/strong&gt; moved several more art assets into the game, most notably some botany-related furniture, items, and plants (and added a botany room to the station).&lt;/p&gt;
+
+&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/20.12.01/BotanyMap.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/BotanyMap-580x435.png 580w,    /assets/resized/BotanyMap-290x218.png 290w,    /assets/resized/BotanyMap-170x128.png 170w,    /assets/resized/BotanyMap-145x109.png 145w, /assets/img/posts/20.12.01/BotanyMap.png 800w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;models&quot;&gt;Models&lt;/h2&gt;
+
+&lt;p&gt;This month, &lt;strong&gt;UnevenPrankster&lt;/strong&gt; returned with a new wall-mounted safe!&lt;/p&gt;
+
+&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/20.12.01/UnevenPrankster_WallSafe.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/UnevenPrankster_WallSafe-580x435.png 580w,    /assets/resized/UnevenPrankster_WallSafe-290x218.png 290w,    /assets/resized/UnevenPrankster_WallSafe-170x128.png 170w,    /assets/resized/UnevenPrankster_WallSafe-145x109.png 145w, /assets/img/posts/20.12.01/UnevenPrankster_WallSafe.png 800w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;Goao&lt;/strong&gt; also submitted a few things this month, including a keg, wire cutters, an action figure, a toy spaceship, and a full assortment of grenades!&lt;/p&gt;
+
+&lt;div class=&quot;horizontal-2&quot;&gt;
+
+  &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/20.12.01/GoaoKeg.png&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/GoaoKeg-580x435.png 580w,    /assets/resized/GoaoKeg-290x218.png 290w,    /assets/resized/GoaoKeg-170x128.png 170w,    /assets/resized/GoaoKeg-145x109.png 145w, /assets/img/posts/20.12.01/GoaoKeg.png 800w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+
+  &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/20.12.01/GoaoWirecutters.png&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/GoaoWirecutters-580x435.png 580w,    /assets/resized/GoaoWirecutters-290x218.png 290w,    /assets/resized/GoaoWirecutters-170x128.png 170w,    /assets/resized/GoaoWirecutters-145x109.png 145w, /assets/img/posts/20.12.01/GoaoWirecutters.png 800w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;horizontal-2&quot;&gt;
+
+  &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/20.12.01/GoaoActionFigure.png&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/GoaoActionFigure-580x435.png 580w,    /assets/resized/GoaoActionFigure-290x218.png 290w,    /assets/resized/GoaoActionFigure-170x128.png 170w,    /assets/resized/GoaoActionFigure-145x109.png 145w, /assets/img/posts/20.12.01/GoaoActionFigure.png 800w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+
+  &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/20.12.01/GoaoFighterToy.png&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/GoaoFighterToy-580x435.png 580w,    /assets/resized/GoaoFighterToy-290x218.png 290w,    /assets/resized/GoaoFighterToy-170x128.png 170w,    /assets/resized/GoaoFighterToy-145x109.png 145w, /assets/img/posts/20.12.01/GoaoFighterToy.png 800w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/20.12.01/GoaoExplosives.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/GoaoExplosives-580x435.png 580w,    /assets/resized/GoaoExplosives-290x218.png 290w,    /assets/resized/GoaoExplosives-170x128.png 170w,    /assets/resized/GoaoExplosives-145x109.png 145w, /assets/img/posts/20.12.01/GoaoExplosives.png 800w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;art&quot;&gt;Art&lt;/h2&gt;
+
+&lt;p&gt;This month’s friendly blog cover-art is brought to us by &lt;strong&gt;Eiko&lt;/strong&gt;!&lt;/p&gt;
+
+&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/art/Eiko/Eiko_Friends.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/Eiko_Friends-580x326.png 580w,    /assets/resized/Eiko_Friends-290x163.png 290w,    /assets/resized/Eiko_Friends-170x96.png 170w,    /assets/resized/Eiko_Friends-145x82.png 145w, /assets/img/art/Eiko/Eiko_Friends.png 1920w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
+
+&lt;p&gt;Want to get more updates or interact with our community? Then join us at our &lt;a href=&quot;https://discord.gg/3ny9tdH&quot; target=&quot;_blank&quot;&gt;Discord&lt;/a&gt;!&lt;/p&gt;</content><author><name></name></author><summary type="html">Cheers to the new years, let hope this one is better than the last!</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://ss3d.space/assets/img/art/Eiko/Eiko_Friends.png" /></entry><entry><title type="html">20.11: November 2020 Devblog</title><link href="https://ss3d.space/2020/12/08/20.11.html" rel="alternate" type="text/html" title="20.11: November 2020 Devblog" /><published>2020-12-08T05:30:00+00:00</published><updated>2020-12-08T05:30:00+00:00</updated><id>https://ss3d.space/2020/12/08/20.11</id><content type="html" xml:base="https://ss3d.space/2020/12/08/20.11.html">&lt;p&gt;The community we share brings us joy and robustness for years to come!&lt;/p&gt;
 
 &lt;h1 id=&quot;november-recap&quot;&gt;November Recap&lt;/h1&gt;
 
@@ -1384,162 +1434,4 @@ warning cone, toilet plungers, a cyborg charging station, and an oddly creative 
 
 &lt;h3 id=&quot;notes&quot;&gt;Notes&lt;/h3&gt;
 
-&lt;p&gt;Obligatory, join our &lt;a href=&quot;https://discord.gg/3ny9tdH&quot; target=&quot;_blank&quot;&gt;discord&lt;/a&gt;.&lt;/p&gt;</content><author><name></name></author><summary type="html">Don’t forget what it was like before all this.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://ss3d.space/assets/img/art/Bug/BugPandemic.png" /></entry><entry><title type="html">20.02: February 2020 Devblog</title><link href="https://ss3d.space/2020/03/02/20.02.html" rel="alternate" type="text/html" title="20.02: February 2020 Devblog" /><published>2020-03-02T23:30:00+00:00</published><updated>2020-03-02T23:30:00+00:00</updated><id>https://ss3d.space/2020/03/02/20.02</id><content type="html" xml:base="https://ss3d.space/2020/03/02/20.02.html">&lt;p&gt;Slow, steady, and humble, we shall not stumble.&lt;/p&gt;
-
-&lt;h1 id=&quot;february-recap&quot;&gt;February Recap&lt;/h1&gt;
-
-&lt;p&gt;This month, we’ve continued chugging along making progress in core features, which is really exciting (more info below)! Seeing progress on core features is also a good opportunity for programmers or Unity enthusiasts to get their feet wet in RE:SS3D.&lt;/p&gt;
-
-&lt;p&gt;With progress on features, comes the process of resolving any issues that arise from it over time. Obviously, as many issues as possible will be flushed out initially but often times many bugs get overlooked. This comes the need for people to playtest the game, report bugs, and help fix bugs. If you want to help, there’s currently several ‘good first issues’, tasks, bugs that need confirming and reporting on our &lt;a href=&quot;https://github.com/RE-SS3D/SS3D/issues&quot; target=&quot;_blank&quot;&gt;issues page&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h2 id=&quot;rounds&quot;&gt;Rounds&lt;/h2&gt;
-
-&lt;p&gt;&lt;strong&gt;Em3rgency&lt;/strong&gt;, after being an absolute workhorse last month, has slowed down a bit this month but still decided to invest the time to implement basic rounds for the game. The round time starts right after the server is launched and you can see a timer in the top right corner. Currently, the rounds are limited to just 5 minutes before the server resets, due to there not being much to do right now anyway. If you can’t wait the 5 minutes, there is also a manual server reset button, but is only visible to the hosting player.&lt;/p&gt;
-
-&lt;video controls=&quot;&quot; muted=&quot;&quot; poster=&quot;/assets/img/posts/20.02.01/Em3rgencyRounds.png&quot; width=&quot;580px&quot;&gt;
-  &lt;source src=&quot;/assets/img/posts/20.02.01/Em3rgencyRounds.webm&quot; type=&quot;video/webm&quot; /&gt;
-  &lt;source src=&quot;/assets/img/posts/20.02.01/Em3rgencyRounds.mp4&quot; type=&quot;video/mp4&quot; /&gt;
-&lt;/video&gt;
-
-&lt;h2 id=&quot;lightsshadows&quot;&gt;Lights/Shadows&lt;/h2&gt;
-
-&lt;p&gt;New this month, &lt;strong&gt;Lazerballs&lt;/strong&gt; has decided to address blob shadows and deferred lighting. After adding a hint of ambient occlusion on top and it really changes the atmosphere of the station. If you don’t remember what it looked like before, just look at the video above.&lt;/p&gt;
-
-&lt;video controls=&quot;&quot; muted=&quot;&quot; poster=&quot;/assets/img/posts/20.02.01/LazerballsLighting.png&quot; width=&quot;580px&quot;&gt;
-  &lt;source src=&quot;/assets/img/posts/20.02.01/LazerballsLighting.webm&quot; type=&quot;video/webm&quot; /&gt;
-  &lt;source src=&quot;/assets/img/posts/20.02.01/LazerballsLighting.mp4&quot; type=&quot;video/mp4&quot; /&gt;
-&lt;/video&gt;
-
-&lt;h2 id=&quot;interaction&quot;&gt;Interaction&lt;/h2&gt;
-
-&lt;p&gt;If you remember last month, we had just introduced a new, basic interaction system but was still lacking our combat system. Well this month, &lt;strong&gt;Nonanon&lt;/strong&gt; replaced it with another, new, less-basic interaction system. It should be more user-friendly when adding new interactions and also introduces the beginnings of the context menu.&lt;/p&gt;
-
-&lt;p&gt;Currently, the primary things that are implemented in the new interaction system are, picking up/dropping items, using storage containers, and constructing/deconstructing walls (crowbar) and tables (wrench). Unfortunately, the new system doesn’t include our drawing system like the old one yet, nor does it reintroduce our basic combat system yet.&lt;/p&gt;
-
-&lt;video controls=&quot;&quot; muted=&quot;&quot; poster=&quot;/assets/img/posts/20.02.01/NonanonInteraction.png&quot; width=&quot;580px&quot;&gt;
-  &lt;source src=&quot;/assets/img/posts/20.02.01/NonanonInteraction.webm&quot; type=&quot;video/webm&quot; /&gt;
-  &lt;source src=&quot;/assets/img/posts/20.02.01/NonanonInteraction.mp4&quot; type=&quot;video/mp4&quot; /&gt;
-&lt;/video&gt;
-
-&lt;h2 id=&quot;models&quot;&gt;Models&lt;/h2&gt;
-
-&lt;p&gt;Also form &lt;strong&gt;Lazerballs&lt;/strong&gt; this month, some very nice botany plants, specifically bananas (banana, mimana, and bluespace banana) and wheat (wheat and meat wheat).&lt;/p&gt;
-
-&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/20.02.01/LazerballsBananas.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/LazerballsBananas-580x435.png 580w,    /assets/resized/LazerballsBananas-290x218.png 290w,    /assets/resized/LazerballsBananas-170x128.png 170w,    /assets/resized/LazerballsBananas-145x109.png 145w, /assets/img/posts/20.02.01/LazerballsBananas.png 800w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-
-&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/20.02.01/LazerballsWheat.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/LazerballsWheat-580x435.png 580w,    /assets/resized/LazerballsWheat-290x218.png 290w,    /assets/resized/LazerballsWheat-170x128.png 170w,    /assets/resized/LazerballsWheat-145x109.png 145w, /assets/img/posts/20.02.01/LazerballsWheat.png 800w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-
-&lt;p&gt;New this month, &lt;strong&gt;Marbles&lt;/strong&gt; contributed this great t-ray scanner.&lt;/p&gt;
-
-&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/20.02.01/MarblesT-RayScanner.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/MarblesT-RayScanner-580x435.png 580w,    /assets/resized/MarblesT-RayScanner-290x218.png 290w,    /assets/resized/MarblesT-RayScanner-170x128.png 170w,    /assets/resized/MarblesT-RayScanner-145x109.png 145w, /assets/img/posts/20.02.01/MarblesT-RayScanner.png 800w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-
-&lt;p&gt;Back this month, &lt;strong&gt;Eiko&lt;/strong&gt; has contributed a gas giant planet, wood floors, mulebot, peacekeeper borg, newscaster and newspaper!&lt;/p&gt;
-
-&lt;div class=&quot;horizontal-2&quot;&gt;
-
-  &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/20.02.01/EikoGasGiant.png&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/EikoGasGiant-580x435.png 580w,    /assets/resized/EikoGasGiant-290x218.png 290w,    /assets/resized/EikoGasGiant-170x128.png 170w,    /assets/resized/EikoGasGiant-145x109.png 145w, /assets/img/posts/20.02.01/EikoGasGiant.png 800w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-
-  &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/20.02.01/EikoWoodFloors.png&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/EikoWoodFloors-580x435.png 580w,    /assets/resized/EikoWoodFloors-290x218.png 290w,    /assets/resized/EikoWoodFloors-170x128.png 170w,    /assets/resized/EikoWoodFloors-145x109.png 145w, /assets/img/posts/20.02.01/EikoWoodFloors.png 800w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/20.02.01/EikoBots.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/EikoBots-580x435.png 580w,    /assets/resized/EikoBots-290x218.png 290w,    /assets/resized/EikoBots-170x128.png 170w,    /assets/resized/EikoBots-145x109.png 145w, /assets/img/posts/20.02.01/EikoBots.png 800w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-
-&lt;video autoplay=&quot;autoplay&quot; muted=&quot;&quot; loop=&quot;loop&quot; poster=&quot;/assets/img/posts/20.02.01/EikoNews.png&quot; width=&quot;580px&quot;&gt;
-  &lt;source src=&quot;/assets/img/posts/20.02.01/EikoNews.webm&quot; type=&quot;video/webm&quot; /&gt;
-  &lt;source src=&quot;/assets/img/posts/20.02.01/EikoNews.mp4&quot; type=&quot;video/mp4&quot; /&gt;
-&lt;/video&gt;
-
-&lt;p&gt;This month &lt;strong&gt;Hummus&lt;/strong&gt; has concentrated on traitor items, by providing a stun prod, breaching charge, teleport gun, holoprojector, mini-bible, dart gun with darts, and a pickpocket gun.&lt;/p&gt;
-
-&lt;div class=&quot;horizontal-2&quot;&gt;
-
-  &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/20.02.01/HummusStunProd.png&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/HummusStunProd-580x434.png 580w,    /assets/resized/HummusStunProd-290x217.png 290w,    /assets/resized/HummusStunProd-170x127.png 170w,    /assets/resized/HummusStunProd-145x109.png 145w, /assets/img/posts/20.02.01/HummusStunProd.png 801w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-
-  &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/20.02.01/HummusSyndieItems.png&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/HummusSyndieItems-580x435.png 580w,    /assets/resized/HummusSyndieItems-290x218.png 290w,    /assets/resized/HummusSyndieItems-170x128.png 170w,    /assets/resized/HummusSyndieItems-145x109.png 145w, /assets/img/posts/20.02.01/HummusSyndieItems.png 800w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/20.02.01/HummusSyndieGuns.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/HummusSyndieGuns-580x435.png 580w,    /assets/resized/HummusSyndieGuns-290x218.png 290w,    /assets/resized/HummusSyndieGuns-170x128.png 170w,    /assets/resized/HummusSyndieGuns-145x109.png 145w, /assets/img/posts/20.02.01/HummusSyndieGuns.png 800w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-
-&lt;p&gt;&lt;strong&gt;ComradeCheeki&lt;/strong&gt; provided some captain’s medals and storage box, as well as some various medical things (chemical dropper, bottle, and med patches) and security things (baton and telescopic shield).&lt;/p&gt;
-
-&lt;div class=&quot;horizontal-2&quot;&gt;
-
-  &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/20.02.01/ComradeMedals.png&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/ComradeMedals-580x435.png 580w,    /assets/resized/ComradeMedals-290x218.png 290w,    /assets/resized/ComradeMedals-170x128.png 170w,    /assets/resized/ComradeMedals-145x109.png 145w, /assets/img/posts/20.02.01/ComradeMedals.png 800w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-
-  &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/20.02.01/ComradeMedalsBox.png&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/ComradeMedalsBox-580x435.png 580w,    /assets/resized/ComradeMedalsBox-290x218.png 290w,    /assets/resized/ComradeMedalsBox-170x128.png 170w,    /assets/resized/ComradeMedalsBox-145x109.png 145w, /assets/img/posts/20.02.01/ComradeMedalsBox.png 800w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;div class=&quot;horizontal-2&quot;&gt;
-
-  &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/20.02.01/ComradeMedStuff.png&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/ComradeMedStuff-580x435.png 580w,    /assets/resized/ComradeMedStuff-290x218.png 290w,    /assets/resized/ComradeMedStuff-170x128.png 170w,    /assets/resized/ComradeMedStuff-145x109.png 145w, /assets/img/posts/20.02.01/ComradeMedStuff.png 800w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-
-  &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/20.02.01/ComradeSecurity.png&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/ComradeSecurity-580x435.png 580w,    /assets/resized/ComradeSecurity-290x218.png 290w,    /assets/resized/ComradeSecurity-170x128.png 170w,    /assets/resized/ComradeSecurity-145x109.png 145w, /assets/img/posts/20.02.01/ComradeSecurity.png 800w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;p&gt;Some more plants this month from &lt;strong&gt;Bug&lt;/strong&gt; including melons (watermelon and holy-melon) and cannabis (weed, omega weed, life weed, death weed, and rainbow weed) with help from &lt;strong&gt;CosmicCoincidence&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/20.02.01/BugMelons.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/BugMelons-580x435.png 580w,    /assets/resized/BugMelons-290x218.png 290w,    /assets/resized/BugMelons-170x128.png 170w,    /assets/resized/BugMelons-145x109.png 145w, /assets/img/posts/20.02.01/BugMelons.png 800w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-
-&lt;video controls=&quot;&quot; muted=&quot;&quot; poster=&quot;/assets/img/posts/20.02.01/BugCannabis.png&quot; width=&quot;580px&quot;&gt;
-  &lt;source src=&quot;/assets/img/posts/20.02.01/BugCannabis.webm&quot; type=&quot;video/webm&quot; /&gt;
-  &lt;source src=&quot;/assets/img/posts/20.02.01/BugCannabis.mp4&quot; type=&quot;video/mp4&quot; /&gt;
-&lt;/video&gt;
-
-&lt;p&gt;A fancy server and laser cannon from &lt;strong&gt;Kiwav&lt;/strong&gt; this month.&lt;/p&gt;
-
-&lt;div class=&quot;horizontal-2&quot;&gt;
-
-  &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/20.02.01/KiwavServer.png&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/KiwavServer-580x435.png 580w,    /assets/resized/KiwavServer-290x218.png 290w,    /assets/resized/KiwavServer-170x128.png 170w,    /assets/resized/KiwavServer-145x109.png 145w, /assets/img/posts/20.02.01/KiwavServer.png 800w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-
-  &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/20.02.01/KiwavLaserCannon.png&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/KiwavLaserCannon-580x435.png 580w,    /assets/resized/KiwavLaserCannon-290x218.png 290w,    /assets/resized/KiwavLaserCannon-170x128.png 170w,    /assets/resized/KiwavLaserCannon-145x109.png 145w, /assets/img/posts/20.02.01/KiwavLaserCannon.png 800w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;h2 id=&quot;textures&quot;&gt;Textures&lt;/h2&gt;
-
-&lt;p&gt;&lt;strong&gt;Sanuki&lt;/strong&gt; made a really cool rock floor this month a baked out a texture for us to use on our floor tiles, along with a &lt;a href=&quot;/assets/img/posts/20.02.01/SanukiLavalandFloorNormal.png&quot; target=&quot;_blank&quot;&gt;normal map&lt;/a&gt; to give the flat surface 3D shading.&lt;/p&gt;
-
-&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/20.02.01/SanukiLavalandFloorDiffuse.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/SanukiLavalandFloorDiffuse-580x580.png 580w,    /assets/resized/SanukiLavalandFloorDiffuse-290x290.png 290w,    /assets/resized/SanukiLavalandFloorDiffuse-170x170.png 170w,    /assets/resized/SanukiLavalandFloorDiffuse-145x145.png 145w, /assets/img/posts/20.02.01/SanukiLavalandFloorDiffuse.png 1024w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-
-&lt;h2 id=&quot;graphics&quot;&gt;Graphics&lt;/h2&gt;
-
-&lt;p&gt;&lt;strong&gt;Konstantin3001&lt;/strong&gt; continuing to provide 2D artwork. This month, some paper and book cover textures, and a bunch of various separated graphics of which only &lt;em&gt;a few&lt;/em&gt; are displayed here. Several of the organs are used from the artist &lt;strong&gt;Jakob Vogel&lt;/strong&gt; on &lt;a href=&quot;thenounproject.com&quot; target=&quot;_blank&quot;&gt;thenounproject.com&lt;/a&gt;.&lt;/p&gt;
-
-&lt;div class=&quot;horizontal-2&quot;&gt;
-
-  &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/20.02.01/KonstantinPapers.png&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/KonstantinPapers-580x435.png 580w,    /assets/resized/KonstantinPapers-290x218.png 290w,    /assets/resized/KonstantinPapers-170x128.png 170w,    /assets/resized/KonstantinPapers-145x109.png 145w, /assets/img/posts/20.02.01/KonstantinPapers.png 800w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-
-  &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/20.02.01/KonstantinBookCovers.png&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/KonstantinBookCovers-580x435.png 580w,    /assets/resized/KonstantinBookCovers-290x218.png 290w,    /assets/resized/KonstantinBookCovers-170x128.png 170w,    /assets/resized/KonstantinBookCovers-145x109.png 145w, /assets/img/posts/20.02.01/KonstantinBookCovers.png 800w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/20.02.01/KonstantinHarmTypes.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/KonstantinHarmTypes-580x435.png 580w,    /assets/resized/KonstantinHarmTypes-290x218.png 290w,    /assets/resized/KonstantinHarmTypes-170x128.png 170w,    /assets/resized/KonstantinHarmTypes-145x109.png 145w, /assets/img/posts/20.02.01/KonstantinHarmTypes.png 800w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-
-&lt;h2 id=&quot;artwork&quot;&gt;Artwork&lt;/h2&gt;
-
-&lt;p&gt;&lt;strong&gt;Bug&lt;/strong&gt; simply won’t stop making really cool animations, regardless of how many times we tell him to.&lt;/p&gt;
-
-&lt;video autoplay=&quot;autoplay&quot; muted=&quot;&quot; loop=&quot;loop&quot; poster=&quot;/assets/img/art/Bug/BugSpaceJunk.png&quot; width=&quot;580px&quot;&gt;
-  &lt;source src=&quot;/assets/img/art/Bug/BugSpaceJunk.webm&quot; type=&quot;video/webm&quot; /&gt;
-  &lt;source src=&quot;/assets/img/art/Bug/BugSpaceJunk.mp4&quot; type=&quot;video/mp4&quot; /&gt;
-&lt;/video&gt;
-
-&lt;video autoplay=&quot;autoplay&quot; muted=&quot;&quot; loop=&quot;loop&quot; poster=&quot;/assets/img/art/Bug/BugSyndie.png&quot; width=&quot;580px&quot;&gt;
-  &lt;source src=&quot;/assets/img/art/Bug/BugSyndie.webm&quot; type=&quot;video/webm&quot; /&gt;
-  &lt;source src=&quot;/assets/img/art/Bug/BugSyndie.mp4&quot; type=&quot;video/mp4&quot; /&gt;
-&lt;/video&gt;
-
-&lt;div class=&quot;horizontal-2&quot;&gt;
-
-  &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/art/Bug/BugSpaceJunk.png&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/BugSpaceJunk-580x326.png 580w,    /assets/resized/BugSpaceJunk-290x163.png 290w,    /assets/resized/BugSpaceJunk-170x96.png 170w,    /assets/resized/BugSpaceJunk-145x82.png 145w, /assets/img/art/Bug/BugSpaceJunk.png 1920w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-
-  &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/art/Bug/BugSyndie.png&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/BugSyndie-580x326.png 580w,    /assets/resized/BugSyndie-290x163.png 290w,    /assets/resized/BugSyndie-170x96.png 170w,    /assets/resized/BugSyndie-145x82.png 145w, /assets/img/art/Bug/BugSyndie.png 1920w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;h3 id=&quot;website&quot;&gt;Website&lt;/h3&gt;
-
-&lt;p&gt;Something that gets less attention, but deserves some every now and again is our website. Over the last couple of months, it has received formatting and documentation updates from both &lt;strong&gt;Nonanon&lt;/strong&gt; and &lt;strong&gt;CosmicCoincidence&lt;/strong&gt;, while &lt;strong&gt;Cosmic&lt;/strong&gt; added the &lt;a href=&quot;/art/&quot;&gt;art page&lt;/a&gt; and has still been tackling the blog posts. A few other updates from &lt;strong&gt;Cosmic&lt;/strong&gt;, specific to this month, include a new header using the logo he made last month, a new &lt;a href=&quot;/404/&quot;&gt;404 page&lt;/a&gt;, and updates to all of our primary pages. The most notable one being our home page, which now includes a big link for downloads, and provides an appropriate home for our (unofficial) trailer.&lt;/p&gt;
-
-&lt;h3 id=&quot;notes&quot;&gt;Notes&lt;/h3&gt;
-
-&lt;p&gt;As mentioned above, we have continued working hard on updating documentation, not just on our website, but also on our other sites, to help make the contribution process easier for everyone.&lt;/p&gt;
-
-&lt;p&gt;Well, that wraps up another month here at RE:SS3D, if you are curious about more content from us, or want to contribute to the project yourself, come visit our &lt;a href=&quot;https://discord.gg/3ny9tdH&quot; target=&quot;_blank&quot;&gt;discord&lt;/a&gt;!&lt;/p&gt;</content><author><name></name></author><summary type="html">Slow, steady, and humble, we shall not stumble.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://ss3d.space/assets/img/art/Bug/BugSpaceJunk.png" /></entry></feed>
+&lt;p&gt;Obligatory, join our &lt;a href=&quot;https://discord.gg/3ny9tdH&quot; target=&quot;_blank&quot;&gt;discord&lt;/a&gt;.&lt;/p&gt;</content><author><name></name></author><summary type="html">Don’t forget what it was like before all this.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://ss3d.space/assets/img/art/Bug/BugPandemic.png" /></entry></feed>
