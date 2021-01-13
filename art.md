@@ -80,6 +80,8 @@ permalink: /art/
 
 <iframe class="video" width="580px" height="325px" src="https://www.youtube-nocookie.com/embed/WCPqPVdn-Oc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+{% responsive_image path: assets/img/art/Eiko/Eiko_Friends.png template: _includes/srcset.html %}
+
 {% responsive_image path: assets/img/art/Eiko/EikoPromoGibber.png template: _includes/srcset.html %}
 
 # Goao
