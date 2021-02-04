@@ -4,18 +4,21 @@ title: Contribute
 permalink: /contribute/
 ---
 
-### Step by step guide:
+### How to contribute:
 
-1. Go to the appropriate board/list for your field and look for available tasks.
-2. Pick a task, and request a @Centcom member on discord to assign you to it.
-3. Work on that task, using the correct style and formatting.
-4. Request WIP screenshots/videos of your contribution to be posted in the #wip channel for extra praise.
-5. Submit the task (as a PR for code, or by posting the asset to discord and notifying a @centcom member).
-6. Include a photo/video of your submission for the devblog, and if it's code, include a summary.
-7. Centcom and maybe even the community will review it, and may request changes.
-8. Once accepted, pat yourself on the back for your glorious contribution to SS3D!
+There are 2 primary ways you can donate, either by donating to our project, or by directly helping with development.
 
-# How to contribute:
+# Donations
+
+Patreon: [https://www.patreon.com/ss3d](https://www.patreon.com/ss3d){:target="_blank"}.
+
+Subscribestar: [https://www.subscribestar.com/space-station-3d](https://www.subscribestar.com/space-station-3d){:target="_blank"}.
+
+Multi-Chain Crypto Address: "*SpaceStation3D.crypto*".
+- Currently accepts $BCH, $BTC, $BNB, $ETH, $DASH, $DOGE, $LTC, $TRX, $XRP, $ZEC, & $ZIL.
+- Other currencies can be added later at request.
+
+# Development
 
 If you're a programmer, 2D artist, 3D modeler, musician, programmer, animator, soundcloud rapper, or *especially* a programmer, we need you!
 
