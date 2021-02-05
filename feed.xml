@@ -1,4 +1,70 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://ss3d.space/feed.xml" rel="self" type="application/atom+xml" /><link href="https://ss3d.space/" rel="alternate" type="text/html" /><updated>2021-01-13T12:24:35+00:00</updated><id>https://ss3d.space/feed.xml</id><title type="html">RE:SS3D</title><subtitle>This is a 3D recreation of Space Station 13, on the Unity engine, which will come with its own set of gameplay/graphical improvements. </subtitle><entry><title type="html">20.12: December 2020 Devblog</title><link href="https://ss3d.space/2021/01/13/20.12.html" rel="alternate" type="text/html" title="20.12: December 2020 Devblog" /><published>2021-01-13T05:30:00+00:00</published><updated>2021-01-13T05:30:00+00:00</updated><id>https://ss3d.space/2021/01/13/20.12</id><content type="html" xml:base="https://ss3d.space/2021/01/13/20.12.html">&lt;p&gt;Cheers to the new years, let hope this one is better than the last!&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://ss3d.space/feed.xml" rel="self" type="application/atom+xml" /><link href="https://ss3d.space/" rel="alternate" type="text/html" /><updated>2021-02-05T00:18:28+00:00</updated><id>https://ss3d.space/feed.xml</id><title type="html">RE:SS3D</title><subtitle>This is a 3D recreation of Space Station 13, on the Unity engine, which will come with its own set of gameplay/graphical improvements. </subtitle><entry><title type="html">21.01: January 2021 Devblog</title><link href="https://ss3d.space/2021/02/04/21.01.html" rel="alternate" type="text/html" title="21.01: January 2021 Devblog" /><published>2021-02-04T11:30:00+00:00</published><updated>2021-02-04T11:30:00+00:00</updated><id>https://ss3d.space/2021/02/04/21.01</id><content type="html" xml:base="https://ss3d.space/2021/02/04/21.01.html">&lt;p&gt;Spatial awarness is a necessary skill to do your job.&lt;/p&gt;
+
+&lt;h1 id=&quot;january-recap&quot;&gt;January Recap&lt;/h1&gt;
+
+&lt;p&gt;Its a new year, and we have a new wave of contributions. Strap in yall.&lt;/p&gt;
+
+&lt;h2 id=&quot;lobby--main-menu&quot;&gt;Lobby &amp;amp; Main Menu&lt;/h2&gt;
+
+&lt;p&gt;Our biggest and probably most important feature this month has got to be our fancy new lobby system. &lt;strong&gt;John&lt;/strong&gt; was hard at work this month seperating the map, primary menus, and lobby from a unified scene to individual scenes. The result is more modualr in the sense that the editor can more easily work on a these systems without impacting the others as much. It also allows us to quickly swap between map scenes now both in the Unity editor but now in-game, getting us 1 more step closer to a complete game loop.&lt;/p&gt;
+
+&lt;p&gt;Connecting players will now be initially greeted with a basic lobby to hang out in (character customization and chat will eventually be added in here) until they’re ready to join. The game host also now has access to an admin menu to control various parameters for the game. This ranges from changing the map, gamemode (just for show currently), and setting a timer for the length of time until the next round starts.&lt;/p&gt;
+
+&lt;video controls=&quot;&quot; muted=&quot;&quot; poster=&quot;/assets/img/posts/21.01.01/LobbyMenu.png&quot; width=&quot;580px&quot;&gt;&amp;gt;
+  &lt;source src=&quot;/assets/img/posts/21.01.01/LobbyMenu.webm&quot; type=&quot;video/webm&quot; /&gt;
+  &lt;source src=&quot;/assets/img/posts/21.01.01/LobbyMenu.mp4&quot; type=&quot;video/mp4&quot; /&gt;
+&lt;/video&gt;
+
+&lt;h2 id=&quot;tilemap-editor&quot;&gt;TileMap Editor&lt;/h2&gt;
+
+&lt;p&gt;Originally started by &lt;strong&gt;DefNotEric&lt;/strong&gt; many moons ago, but recently ressurected and expanded by &lt;strong&gt;BroodjeKipcorn&lt;/strong&gt;, our new tilemap editor is a significant improvement over our previous one. Now the editor can edit/add tilemap layers individually rather than having to rebuild all layers on a tile if a single layer on that tile needs a change. You can even hide the visibility of layers in the editor to make it easier to see what you are working on.&lt;/p&gt;
+
+&lt;p&gt;The map editor also now has an object search functionality and the objects have a small thumbnail display so the user can find what they are looking for more quickly.&lt;/p&gt;
+
+&lt;p&gt;The other big improvement is the addition of tilemap rotations. As we did not have proper tilemap rotations built into the editor before, the user would have to manually edit the Y-axis rotation on each prefab after adding it to the map. Now the user can simply select a cardinal direction for the object to face prior to adding it on the map. Many small bugs related to the tilemap were also taken care of with this new tilemap editor.&lt;/p&gt;
+
+&lt;video controls=&quot;&quot; muted=&quot;&quot; poster=&quot;/assets/img/posts/21.01.01/TilemapEditor.png&quot; width=&quot;580px&quot;&gt;&amp;gt;
+  &lt;source src=&quot;/assets/img/posts/21.01.01/TilemapEditor.webm&quot; type=&quot;video/webm&quot; /&gt;
+  &lt;source src=&quot;/assets/img/posts/21.01.01/TilemapEditor.mp4&quot; type=&quot;video/mp4&quot; /&gt;
+&lt;/video&gt;
+
+&lt;h2 id=&quot;container-system&quot;&gt;Container System&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;Alainx&lt;/strong&gt; did a great job over the last couple months, overhauling our existing system for containers. This new system uses a Resident Evil-like 2-dimensional modular approach, allowing things like containers on child objects, multiple containers per object, and more. The system also adds functionality for things like wearbles (clothing) for mobs. The system is server authoritative, which should be robust when protecting against cheating. This new system flushed out some lingering inventory-related bugs as well.&lt;/p&gt;
+
+&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/21.01.01/ModularContainers.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/ModularContainers-580x326.png 580w,    /assets/resized/ModularContainers-290x163.png 290w,    /assets/resized/ModularContainers-170x96.png 170w,    /assets/resized/ModularContainers-145x82.png 145w, /assets/img/posts/21.01.01/ModularContainers.png 1280w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;details&quot;&gt;Details&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;BroodjeKipcorn&lt;/strong&gt; improved the atmospheric loop performance, drastically reducing the CPU time and memory allocations needed to run it.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;John&lt;/strong&gt; cleaned up many more models this month.&lt;/p&gt;
+
+&lt;h2 id=&quot;textures&quot;&gt;Textures&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;Konstatin&lt;/strong&gt; made a nice new texture for the station AI. You probably recognize her.&lt;/p&gt;
+
+&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/21.01.01/shodan_white.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/shodan_white-580x579.png 580w,    /assets/resized/shodan_white-290x290.png 290w,    /assets/resized/shodan_white-170x170.png 170w,    /assets/resized/shodan_white-145x145.png 145w, /assets/img/posts/21.01.01/shodan_white.png 4896w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;art&quot;&gt;Art&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;ProbablyNot&lt;/strong&gt; is back to being this month’s cover artist.&lt;/p&gt;
+
+&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/art/ProbablyNot/ProbablyNot_PDA.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/ProbablyNot_PDA-580x326.png 580w,    /assets/resized/ProbablyNot_PDA-290x163.png 290w,    /assets/resized/ProbablyNot_PDA-170x96.png 170w,    /assets/resized/ProbablyNot_PDA-145x82.png 145w, /assets/img/art/ProbablyNot/ProbablyNot_PDA.png 3842w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;updates&quot;&gt;Updates&lt;/h2&gt;
+
+&lt;p&gt;To kick off this new year, we are finally launching a means to support the development of this game via donations. We have launched a &lt;a href=&quot;https://www.patreon.com/ss3d&quot;&gt;Patreon&lt;/a&gt;, &lt;a href=&quot;https://www.subscribestar.com/space-station-3d&quot;&gt;SubscribeStar&lt;/a&gt;, and even a multi-chain crypto wallet + .crypto domain (SpaceStation3D.crypto) which accepts multiple cryptocurrencies, see the full list of accepted cryptos &lt;a href=&quot;https://github.com/RE-SS3D/SS3D/wiki/Related-Sites-&amp;amp;-Resources#donation-links&quot;&gt;at the bottom of this page&lt;/a&gt; or at the top of &lt;a href=&quot;/contribute/&quot;&gt;our contribute page&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;The money gathered from our donations will primarily be used for paying technical bounties which we will launch once we have recieved adequate inital funds. Eventually, the donations will also be used to help cover any costs to continue developing &amp;amp; hosting this game (like paying to host servers).&lt;/p&gt;
+
+&lt;p&gt;One &lt;em&gt;very&lt;/em&gt; important thing we want to ensure is that we are COMPLETELY transparent about how we use your donations for this project. So we have set up a #money-log channel on our discord which will log our donations and how they are spent.&lt;/p&gt;
+
+&lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
+
+&lt;p&gt;It has been a rough past year. But 2021 is already showing some promise, especially for SS3D. Stay safe and stay tuned everyone.&lt;/p&gt;
+
+&lt;p&gt;Also join our &lt;a href=&quot;https://discord.gg/3ny9tdH&quot; target=&quot;_blank&quot;&gt;Discord&lt;/a&gt; if you haven’t already, por favor.&lt;/p&gt;</content><author><name></name></author><summary type="html">Spatial awarness is a necessary skill to do your job.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://ss3d.space/assets/img/art/ProbablyNot/ProbablyNot_PDA.png" /></entry><entry><title type="html">20.12: December 2020 Devblog</title><link href="https://ss3d.space/2021/01/13/20.12.html" rel="alternate" type="text/html" title="20.12: December 2020 Devblog" /><published>2021-01-13T05:30:00+00:00</published><updated>2021-01-13T05:30:00+00:00</updated><id>https://ss3d.space/2021/01/13/20.12</id><content type="html" xml:base="https://ss3d.space/2021/01/13/20.12.html">&lt;p&gt;Cheers to the new years, let hope this one is better than the last!&lt;/p&gt;
 
 &lt;h1 id=&quot;december-recap&quot;&gt;December Recap&lt;/h1&gt;
 
@@ -957,481 +1023,4 @@ warning cone, toilet plungers, a cyborg charging station, and an oddly creative 
 
 &lt;h3 id=&quot;notes&quot;&gt;Notes&lt;/h3&gt;
 
-&lt;p&gt;If you haven’t already, come join our &lt;a href=&quot;https://discord.gg/3ny9tdH&quot; target=&quot;_blank&quot;&gt;discord&lt;/a&gt; to get a greater insight on our development!&lt;/p&gt;</content><author><name></name></author><summary type="html">“They’ve outlawed the No. 1 vegetable on the planet.”</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://ss3d.space/assets/img/art/Bug/Bug_420Hydro.png" /></entry><entry><title type="html">20.03: March 2020 Devblog</title><link href="https://ss3d.space/2020/04/03/20.03.html" rel="alternate" type="text/html" title="20.03: March 2020 Devblog" /><published>2020-04-03T05:30:00+00:00</published><updated>2020-04-03T05:30:00+00:00</updated><id>https://ss3d.space/2020/04/03/20.03</id><content type="html" xml:base="https://ss3d.space/2020/04/03/20.03.html">&lt;p&gt;Don’t forget what it was like before all this.&lt;/p&gt;
-
-&lt;h1 id=&quot;march-recap&quot;&gt;March Recap&lt;/h1&gt;
-
-&lt;p&gt;I hope all you spessman are staying healthy out there, I know I’m trying to. Despite what’s all going on in the real world right now we have still made &lt;em&gt;some&lt;/em&gt; headway this month, although not as much as we would have liked.&lt;/p&gt;
-
-&lt;p&gt;We invested a lot of time into sorting our boards, assets, art, documents, and GitHub project folders, and getting them all parallel with each other, to share the same overall structure. This structure is likely not perfect, as it may still see tweaks as we cross issues we haven’t consider further down the line.&lt;/p&gt;
-
-&lt;p&gt;For those of you contributing via Unity, you will be happy to hear that we have updated the project version (from 2019.2.0 to 2019.3.7).&lt;/p&gt;
-
-&lt;h2 id=&quot;doors&quot;&gt;Doors&lt;/h2&gt;
-
-&lt;p&gt;We can finally say we have working doors. At the beginning of the month, &lt;strong&gt;Nonanon&lt;/strong&gt; fixed up an old PR from the previous month by &lt;strong&gt;Doobly&lt;/strong&gt; for it and now we have the basic functionality.&lt;/p&gt;
-
-&lt;video controls=&quot;&quot; muted=&quot;&quot; poster=&quot;/assets/img/posts/20.03.01/NonanonDoors.png&quot; width=&quot;580px&quot;&gt;
-  &lt;source src=&quot;/assets/img/posts/20.03.01/NonanonDoors.webm&quot; type=&quot;video/webm&quot; /&gt;
-  &lt;source src=&quot;/assets/img/posts/20.03.01/NonanonDoors.mp4&quot; type=&quot;video/mp4&quot; /&gt;
-&lt;/video&gt;
-
-&lt;h2 id=&quot;tables&quot;&gt;Tables&lt;/h2&gt;
-
-&lt;p&gt;&lt;strong&gt;Cosmic&lt;/strong&gt; decided to tackle an old &lt;a href=&quot;https://user-images.githubusercontent.com/15195221/73611940-1715e580-45f0-11ea-8c1e-90cc5dff2cc6.png&quot; target=&quot;_blank&quot;&gt;issue with our table connections&lt;/a&gt;, which was thought to only be an issue with the mesh of the 3D model, ended up discovering some minor errors in the connections script itself as well. After fixing them, tables truly have infinitely smooth connections now!&lt;/p&gt;
-
-&lt;video controls=&quot;&quot; muted=&quot;&quot; poster=&quot;/assets/img/posts/20.03.01/CosmicTables.png&quot; width=&quot;580px&quot;&gt;
-  &lt;source src=&quot;/assets/img/posts/20.03.01/CosmicTables.webm&quot; type=&quot;video/webm&quot; /&gt;
-  &lt;source src=&quot;/assets/img/posts/20.03.01/CosmicTables.mp4&quot; type=&quot;video/mp4&quot; /&gt;
-&lt;/video&gt;
-
-&lt;h2 id=&quot;graphics&quot;&gt;Graphics&lt;/h2&gt;
-
-&lt;p&gt;One of our longest and most consistent contributors is still keeping up great work, this time with a cool animated nuclear warning symbol!&lt;/p&gt;
-
-&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/20.03.01/KonstantinNuke.gif&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/assets/img/posts/20.03.01/KonstantinNuke.gif&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-
-&lt;h2 id=&quot;models&quot;&gt;Models&lt;/h2&gt;
-
-&lt;p&gt;New this month, &lt;strong&gt;Halloween&lt;/strong&gt; came up with this nice little camera film for us.&lt;/p&gt;
-
-&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/20.03.01/Halloween_Camera_Film.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/Halloween_Camera_Film-580x435.png 580w,    /assets/resized/Halloween_Camera_Film-290x218.png 290w,    /assets/resized/Halloween_Camera_Film-170x128.png 170w,    /assets/resized/Halloween_Camera_Film-145x109.png 145w, /assets/img/posts/20.03.01/Halloween_Camera_Film.png 800w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-
-&lt;p&gt;&lt;strong&gt;Bug&lt;/strong&gt; is back with his cabbages, and also the replica pod plant and replica pod man.&lt;/p&gt;
-
-&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/20.03.01/Bugs_Cabbages.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/Bugs_Cabbages-580x435.png 580w,    /assets/resized/Bugs_Cabbages-290x218.png 290w,    /assets/resized/Bugs_Cabbages-170x128.png 170w,    /assets/resized/Bugs_Cabbages-145x109.png 145w, /assets/img/posts/20.03.01/Bugs_Cabbages.png 800w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-
-&lt;p&gt;&lt;strong&gt;Cosmic&lt;/strong&gt; submitting some older models he made, these being a fresh take on the airlocks. Including both single and double versions of the glass and non-glass styled airlocks with variants for all the standard departments.&lt;/p&gt;
-
-&lt;div class=&quot;horizontal-3&quot;&gt;
-
-  &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/20.03.01/Cosmic_Airlocks1.png&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/Cosmic_Airlocks1-580x435.png 580w,    /assets/resized/Cosmic_Airlocks1-290x218.png 290w,    /assets/resized/Cosmic_Airlocks1-170x128.png 170w,    /assets/resized/Cosmic_Airlocks1-145x109.png 145w, /assets/img/posts/20.03.01/Cosmic_Airlocks1.png 800w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-
-  &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/20.03.01/Cosmic_Airlocks2.png&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/Cosmic_Airlocks2-580x435.png 580w,    /assets/resized/Cosmic_Airlocks2-290x218.png 290w,    /assets/resized/Cosmic_Airlocks2-170x128.png 170w,    /assets/resized/Cosmic_Airlocks2-145x109.png 145w, /assets/img/posts/20.03.01/Cosmic_Airlocks2.png 800w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-
-  &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/20.03.01/Cosmic_Airlocks3.png&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/Cosmic_Airlocks3-580x435.png 580w,    /assets/resized/Cosmic_Airlocks3-290x218.png 290w,    /assets/resized/Cosmic_Airlocks3-170x128.png 170w,    /assets/resized/Cosmic_Airlocks3-145x109.png 145w, /assets/img/posts/20.03.01/Cosmic_Airlocks3.png 800w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;p&gt;Another returning modeler this month, &lt;strong&gt;ComradeCheeki&lt;/strong&gt;, provided some really nice models many of you will recognize, including donk pockets, shotgun shells, briefcases, folders, and a wooden buckler.&lt;/p&gt;
-
-&lt;div class=&quot;horizontal-3&quot;&gt;
-
-  &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/20.03.01/Comrade_DonkPockets.png&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/Comrade_DonkPockets-580x435.png 580w,    /assets/resized/Comrade_DonkPockets-290x218.png 290w,    /assets/resized/Comrade_DonkPockets-170x128.png 170w,    /assets/resized/Comrade_DonkPockets-145x109.png 145w, /assets/img/posts/20.03.01/Comrade_DonkPockets.png 800w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-
-  &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/20.03.01/Comrade_Shotgun_Shells.png&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/Comrade_Shotgun_Shells-580x435.png 580w,    /assets/resized/Comrade_Shotgun_Shells-290x218.png 290w,    /assets/resized/Comrade_Shotgun_Shells-170x128.png 170w,    /assets/resized/Comrade_Shotgun_Shells-145x109.png 145w, /assets/img/posts/20.03.01/Comrade_Shotgun_Shells.png 800w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-
-  &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/20.03.01/Comrade_Cases.png&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/Comrade_Cases-580x435.png 580w,    /assets/resized/Comrade_Cases-290x218.png 290w,    /assets/resized/Comrade_Cases-170x128.png 170w,    /assets/resized/Comrade_Cases-145x109.png 145w, /assets/img/posts/20.03.01/Comrade_Cases.png 800w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;div class=&quot;horizontal-2&quot;&gt;
-
-  &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/20.03.01/Comrade_Folders.png&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/Comrade_Folders-580x435.png 580w,    /assets/resized/Comrade_Folders-290x218.png 290w,    /assets/resized/Comrade_Folders-170x128.png 170w,    /assets/resized/Comrade_Folders-145x109.png 145w, /assets/img/posts/20.03.01/Comrade_Folders.png 800w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-
-  &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/20.03.01/Comrade_WoodBuckler.png&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/Comrade_WoodBuckler-580x435.png 580w,    /assets/resized/Comrade_WoodBuckler-290x218.png 290w,    /assets/resized/Comrade_WoodBuckler-170x128.png 170w,    /assets/resized/Comrade_WoodBuckler-145x109.png 145w, /assets/img/posts/20.03.01/Comrade_WoodBuckler.png 800w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;p&gt;New this month, &lt;strong&gt;Basecode&lt;/strong&gt; has been an absolute workhorse making so many models within such a short time that &lt;strong&gt;Cosmic&lt;/strong&gt; decided it was necessary to implement a slideshow into the website so the blog wouldn’t be outrageously long!&lt;/p&gt;
-
-&lt;p&gt;Besides doing all the models you see below, he also invested a lot of time cleaning and fixing some old models, most notably walls, windows, and some animals.&lt;/p&gt;
-
-&lt;div class=&quot;slideshow&quot;&gt;
-  &lt;div class=&quot;slide-title&quot; id=&quot;title&quot;&gt;&lt;/div&gt;
-&lt;a class=&quot;prevSlide&quot; onclick=&quot;plusSlides(-1)&quot;&gt;❮&lt;/a&gt;
-&lt;a class=&quot;nextSlide&quot; onclick=&quot;plusSlides(1)&quot;&gt;❯&lt;/a&gt;
-&lt;a class=&quot;prevRow&quot; onclick=&quot;plusRows(-1)&quot;&gt;❮&lt;/a&gt;
-&lt;a class=&quot;nextRow&quot; onclick=&quot;plusRows(1)&quot;&gt;❯&lt;/a&gt;
-  &lt;div class=&quot;mySlides&quot;&gt;
-    &lt;div class=&quot;slide-number&quot;&gt;1 / 30&lt;/div&gt;
-    
-
-
-
-&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/20.03.01/Basecode_Door_Centcom.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/Basecode_Door_Centcom-580x435.png 580w,    /assets/resized/Basecode_Door_Centcom-290x218.png 290w,    /assets/resized/Basecode_Door_Centcom-170x128.png 170w,    /assets/resized/Basecode_Door_Centcom-145x109.png 145w, /assets/img/posts/20.03.01/Basecode_Door_Centcom.png 800w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-    &lt;div id=&quot;description&quot; class=&quot;slide-description&quot;&gt;Single and Double&lt;/div&gt;
-  &lt;/div&gt;
-  &lt;div class=&quot;mySlides&quot;&gt;
-    &lt;div class=&quot;slide-number&quot;&gt;2 / 30&lt;/div&gt;
-    
-
-
-
-&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/20.03.01/Basecode_Floors.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/Basecode_Floors-580x435.png 580w,    /assets/resized/Basecode_Floors-290x218.png 290w,    /assets/resized/Basecode_Floors-170x128.png 170w,    /assets/resized/Basecode_Floors-145x109.png 145w, /assets/img/posts/20.03.01/Basecode_Floors.png 800w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-    &lt;div id=&quot;description&quot; class=&quot;slide-description&quot;&gt;Rock / Sand / Dirt / Freezer / Showroom / Circuitry&lt;/div&gt;
-  &lt;/div&gt;
-  &lt;div class=&quot;mySlides&quot;&gt;
-    &lt;div class=&quot;slide-number&quot;&gt;3 / 30&lt;/div&gt;
-    
-
-
-
-&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/20.03.01/Basecode_Wall_Girders.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/Basecode_Wall_Girders-580x435.png 580w,    /assets/resized/Basecode_Wall_Girders-290x218.png 290w,    /assets/resized/Basecode_Wall_Girders-170x128.png 170w,    /assets/resized/Basecode_Wall_Girders-145x109.png 145w, /assets/img/posts/20.03.01/Basecode_Wall_Girders.png 800w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-  &lt;/div&gt;
-  &lt;div class=&quot;mySlides&quot;&gt;
-    &lt;div class=&quot;slide-number&quot;&gt;4 / 30&lt;/div&gt;
-    
-
-
-
-&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/20.03.01/Basecode_Window_Girders.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/Basecode_Window_Girders-580x435.png 580w,    /assets/resized/Basecode_Window_Girders-290x218.png 290w,    /assets/resized/Basecode_Window_Girders-170x128.png 170w,    /assets/resized/Basecode_Window_Girders-145x109.png 145w, /assets/img/posts/20.03.01/Basecode_Window_Girders.png 800w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-  &lt;/div&gt;
-  &lt;div class=&quot;mySlides&quot;&gt;
-    &lt;div class=&quot;slide-number&quot;&gt;5 / 30&lt;/div&gt;
-    
-
-
-
-&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/20.03.01/Basecode_Walls_LightShuttle.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/Basecode_Walls_LightShuttle-580x435.png 580w,    /assets/resized/Basecode_Walls_LightShuttle-290x218.png 290w,    /assets/resized/Basecode_Walls_LightShuttle-170x128.png 170w,    /assets/resized/Basecode_Walls_LightShuttle-145x109.png 145w, /assets/img/posts/20.03.01/Basecode_Walls_LightShuttle.png 800w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-  &lt;/div&gt;
-  &lt;div class=&quot;mySlides&quot;&gt;
-    &lt;div class=&quot;slide-number&quot;&gt;6 / 30&lt;/div&gt;
-    
-
-
-
-&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/20.03.01/Basecode_MachineFrame.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/Basecode_MachineFrame-580x435.png 580w,    /assets/resized/Basecode_MachineFrame-290x218.png 290w,    /assets/resized/Basecode_MachineFrame-170x128.png 170w,    /assets/resized/Basecode_MachineFrame-145x109.png 145w, /assets/img/posts/20.03.01/Basecode_MachineFrame.png 800w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-  &lt;/div&gt;
-  &lt;div class=&quot;mySlides&quot;&gt;
-    &lt;div class=&quot;slide-number&quot;&gt;7 / 30&lt;/div&gt;
-    
-
-
-
-&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/20.03.01/Basecode_Sofa.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/Basecode_Sofa-580x435.png 580w,    /assets/resized/Basecode_Sofa-290x218.png 290w,    /assets/resized/Basecode_Sofa-170x128.png 170w,    /assets/resized/Basecode_Sofa-145x109.png 145w, /assets/img/posts/20.03.01/Basecode_Sofa.png 800w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-  &lt;/div&gt;
-  &lt;div class=&quot;mySlides&quot;&gt;
-    &lt;div class=&quot;slide-number&quot;&gt;8 / 30&lt;/div&gt;
-    
-
-
-
-&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/20.03.01/Basecode_Seats.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/Basecode_Seats-580x435.png 580w,    /assets/resized/Basecode_Seats-290x218.png 290w,    /assets/resized/Basecode_Seats-170x128.png 170w,    /assets/resized/Basecode_Seats-145x109.png 145w, /assets/img/posts/20.03.01/Basecode_Seats.png 800w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-    &lt;div id=&quot;description&quot; class=&quot;slide-description&quot;&gt;Wood Chair / Chapel Pew / Shuttle Chair&lt;/div&gt;
-  &lt;/div&gt;
-  &lt;div class=&quot;mySlides&quot;&gt;
-    &lt;div class=&quot;slide-number&quot;&gt;9 / 30&lt;/div&gt;
-    
-
-
-
-&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/20.03.01/Basecode_FireExtinguisherCabinet.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/Basecode_FireExtinguisherCabinet-580x435.png 580w,    /assets/resized/Basecode_FireExtinguisherCabinet-290x218.png 290w,    /assets/resized/Basecode_FireExtinguisherCabinet-170x128.png 170w,    /assets/resized/Basecode_FireExtinguisherCabinet-145x109.png 145w, /assets/img/posts/20.03.01/Basecode_FireExtinguisherCabinet.png 800w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-  &lt;/div&gt;
-  &lt;div class=&quot;mySlides&quot;&gt;
-    &lt;div class=&quot;slide-number&quot;&gt;10 / 30&lt;/div&gt;
-    
-
-
-
-&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/20.03.01/Basecode_PepperSprayDispenser.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/Basecode_PepperSprayDispenser-580x435.png 580w,    /assets/resized/Basecode_PepperSprayDispenser-290x218.png 290w,    /assets/resized/Basecode_PepperSprayDispenser-170x128.png 170w,    /assets/resized/Basecode_PepperSprayDispenser-145x109.png 145w, /assets/img/posts/20.03.01/Basecode_PepperSprayDispenser.png 800w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-  &lt;/div&gt;
-  &lt;div class=&quot;mySlides&quot;&gt;
-    &lt;div class=&quot;slide-number&quot;&gt;11 / 30&lt;/div&gt;
-    
-
-
-
-&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/20.03.01/Basecode_ItemRack.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/Basecode_ItemRack-580x435.png 580w,    /assets/resized/Basecode_ItemRack-290x218.png 290w,    /assets/resized/Basecode_ItemRack-170x128.png 170w,    /assets/resized/Basecode_ItemRack-145x109.png 145w, /assets/img/posts/20.03.01/Basecode_ItemRack.png 800w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-  &lt;/div&gt;
-  &lt;div class=&quot;mySlides&quot;&gt;
-    &lt;div class=&quot;slide-number&quot;&gt;12 / 30&lt;/div&gt;
-    
-
-
-
-&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/20.03.01/Basecode_DryingRack.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/Basecode_DryingRack-580x435.png 580w,    /assets/resized/Basecode_DryingRack-290x218.png 290w,    /assets/resized/Basecode_DryingRack-170x128.png 170w,    /assets/resized/Basecode_DryingRack-145x109.png 145w, /assets/img/posts/20.03.01/Basecode_DryingRack.png 800w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-  &lt;/div&gt;
-  &lt;div class=&quot;mySlides&quot;&gt;
-    &lt;div class=&quot;slide-number&quot;&gt;13 / 30&lt;/div&gt;
-    
-
-
-
-&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/20.03.01/Basecode_MeatSpike_DogBed_Apiary.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/Basecode_MeatSpike_DogBed_Apiary-580x435.png 580w,    /assets/resized/Basecode_MeatSpike_DogBed_Apiary-290x218.png 290w,    /assets/resized/Basecode_MeatSpike_DogBed_Apiary-170x128.png 170w,    /assets/resized/Basecode_MeatSpike_DogBed_Apiary-145x109.png 145w, /assets/img/posts/20.03.01/Basecode_MeatSpike_DogBed_Apiary.png 800w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-    &lt;div id=&quot;description&quot; class=&quot;slide-description&quot;&gt;Meat Spike / Dog Bed / Apiary&lt;/div&gt;
-  &lt;/div&gt;
-  &lt;div class=&quot;mySlides&quot;&gt;
-    &lt;div class=&quot;slide-number&quot;&gt;14 / 30&lt;/div&gt;
-    
-
-
-
-&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/20.03.01/Basecode_GenericTools.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/Basecode_GenericTools-580x435.png 580w,    /assets/resized/Basecode_GenericTools-290x218.png 290w,    /assets/resized/Basecode_GenericTools-170x128.png 170w,    /assets/resized/Basecode_GenericTools-145x109.png 145w, /assets/img/posts/20.03.01/Basecode_GenericTools.png 800w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-    &lt;div id=&quot;description&quot; class=&quot;slide-description&quot;&gt;Audio Recorder/ Laser Pointer / Mini Fire Extinguisher / Photo&lt;/div&gt;
-  &lt;/div&gt;
-  &lt;div class=&quot;mySlides&quot;&gt;
-    &lt;div class=&quot;slide-number&quot;&gt;15 / 30&lt;/div&gt;
-    
-
-
-
-&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/20.03.01/Basecode_GeigerCounter.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/Basecode_GeigerCounter-580x435.png 580w,    /assets/resized/Basecode_GeigerCounter-290x218.png 290w,    /assets/resized/Basecode_GeigerCounter-170x128.png 170w,    /assets/resized/Basecode_GeigerCounter-145x109.png 145w, /assets/img/posts/20.03.01/Basecode_GeigerCounter.png 800w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-  &lt;/div&gt;
-  &lt;div class=&quot;mySlides&quot;&gt;
-    &lt;div class=&quot;slide-number&quot;&gt;16 / 30&lt;/div&gt;
-    
-
-
-
-&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/20.03.01/Basecode_SprayBottles.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/Basecode_SprayBottles-580x435.png 580w,    /assets/resized/Basecode_SprayBottles-290x218.png 290w,    /assets/resized/Basecode_SprayBottles-170x128.png 170w,    /assets/resized/Basecode_SprayBottles-145x109.png 145w, /assets/img/posts/20.03.01/Basecode_SprayBottles.png 800w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-  &lt;/div&gt;
-  &lt;div class=&quot;mySlides&quot;&gt;
-    &lt;div class=&quot;slide-number&quot;&gt;17 / 30&lt;/div&gt;
-    
-
-
-
-&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/20.03.01/Basecode_Beakers.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/Basecode_Beakers-580x435.png 580w,    /assets/resized/Basecode_Beakers-290x218.png 290w,    /assets/resized/Basecode_Beakers-170x128.png 170w,    /assets/resized/Basecode_Beakers-145x109.png 145w, /assets/img/posts/20.03.01/Basecode_Beakers.png 800w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-  &lt;/div&gt;
-  &lt;div class=&quot;mySlides&quot;&gt;
-    &lt;div class=&quot;slide-number&quot;&gt;18 / 30&lt;/div&gt;
-    
-
-
-
-&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/20.03.01/Basecode_BeverageContainers.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/Basecode_BeverageContainers-580x435.png 580w,    /assets/resized/Basecode_BeverageContainers-290x218.png 290w,    /assets/resized/Basecode_BeverageContainers-170x128.png 170w,    /assets/resized/Basecode_BeverageContainers-145x109.png 145w, /assets/img/posts/20.03.01/Basecode_BeverageContainers.png 800w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-  &lt;/div&gt;
-  &lt;div class=&quot;mySlides&quot;&gt;
-    &lt;div class=&quot;slide-number&quot;&gt;19 / 30&lt;/div&gt;
-    
-
-
-
-&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/20.03.01/Basecode_Cakes.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/Basecode_Cakes-580x435.png 580w,    /assets/resized/Basecode_Cakes-290x218.png 290w,    /assets/resized/Basecode_Cakes-170x128.png 170w,    /assets/resized/Basecode_Cakes-145x109.png 145w, /assets/img/posts/20.03.01/Basecode_Cakes.png 800w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-    &lt;div id=&quot;description&quot; class=&quot;slide-description&quot;&gt;
-      &lt;a href=&quot;https://tgstation13.org/wiki/Guide_to_food_and_drinks#Cakes&quot; target=&quot;_blank&quot;&gt;TG Station Cakes&lt;/a&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-  &lt;div class=&quot;mySlides&quot;&gt;
-    &lt;div class=&quot;slide-number&quot;&gt;20 / 30&lt;/div&gt;
-    
-
-
-
-&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/20.03.01/Basecode_Pastas.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/Basecode_Pastas-580x435.png 580w,    /assets/resized/Basecode_Pastas-290x218.png 290w,    /assets/resized/Basecode_Pastas-170x128.png 170w,    /assets/resized/Basecode_Pastas-145x109.png 145w, /assets/img/posts/20.03.01/Basecode_Pastas.png 800w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-    &lt;div id=&quot;description&quot; class=&quot;slide-description&quot;&gt;
-      &lt;a href=&quot;https://tgstation13.org/wiki/Guide_to_food_and_drinks#Pastas&quot; target=&quot;_blank&quot;&gt;TG Station Pastas&lt;/a&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-  &lt;div class=&quot;mySlides&quot;&gt;
-    &lt;div class=&quot;slide-number&quot;&gt;21 / 30&lt;/div&gt;
-    
-
-
-
-&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/20.03.01/Basecode_Pizzas.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/Basecode_Pizzas-580x435.png 580w,    /assets/resized/Basecode_Pizzas-290x218.png 290w,    /assets/resized/Basecode_Pizzas-170x128.png 170w,    /assets/resized/Basecode_Pizzas-145x109.png 145w, /assets/img/posts/20.03.01/Basecode_Pizzas.png 800w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-    &lt;div id=&quot;description&quot; class=&quot;slide-description&quot;&gt;
-      &lt;a href=&quot;https://tgstation13.org/wiki/Guide_to_food_and_drinks#Pizzas&quot; target=&quot;_blank&quot;&gt;TG Station Pizzas&lt;/a&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-  &lt;div class=&quot;mySlides&quot;&gt;
-    &lt;div class=&quot;slide-number&quot;&gt;22 / 30&lt;/div&gt;
-    
-
-
-
-&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/20.03.01/Basecode_Pies.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/Basecode_Pies-580x435.png 580w,    /assets/resized/Basecode_Pies-290x218.png 290w,    /assets/resized/Basecode_Pies-170x128.png 170w,    /assets/resized/Basecode_Pies-145x109.png 145w, /assets/img/posts/20.03.01/Basecode_Pies.png 800w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-    &lt;div id=&quot;description&quot; class=&quot;slide-description&quot;&gt;
-      &lt;a href=&quot;https://tgstation13.org/wiki/Guide_to_food_and_drinks#Pies&quot; target=&quot;_blank&quot;&gt;TG Station Pies&lt;/a&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-  &lt;div class=&quot;mySlides&quot;&gt;
-    &lt;div class=&quot;slide-number&quot;&gt;23 / 30&lt;/div&gt;
-    
-
-
-
-&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/20.03.01/Basecode_Salads.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/Basecode_Salads-580x435.png 580w,    /assets/resized/Basecode_Salads-290x218.png 290w,    /assets/resized/Basecode_Salads-170x128.png 170w,    /assets/resized/Basecode_Salads-145x109.png 145w, /assets/img/posts/20.03.01/Basecode_Salads.png 800w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-    &lt;div id=&quot;description&quot; class=&quot;slide-description&quot;&gt;
-      &lt;a href=&quot;https://tgstation13.org/wiki/Guide_to_food_and_drinks#Salads&quot; target=&quot;_blank&quot;&gt;TG Station Salads&lt;/a&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-  &lt;div class=&quot;mySlides&quot;&gt;
-    &lt;div class=&quot;slide-number&quot;&gt;24 / 30&lt;/div&gt;
-    
-
-
-
-&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/20.03.01/Basecode_Soups.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/Basecode_Soups-580x435.png 580w,    /assets/resized/Basecode_Soups-290x218.png 290w,    /assets/resized/Basecode_Soups-170x128.png 170w,    /assets/resized/Basecode_Soups-145x109.png 145w, /assets/img/posts/20.03.01/Basecode_Soups.png 800w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-    &lt;div id=&quot;description&quot; class=&quot;slide-description&quot;&gt;
-      &lt;a href=&quot;https://tgstation13.org/wiki/Guide_to_food_and_drinks#Soups_.26_Stews&quot; target=&quot;_blank&quot;&gt;TG Station Soups&lt;/a&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-  &lt;div class=&quot;mySlides&quot;&gt;
-    &lt;div class=&quot;slide-number&quot;&gt;25 / 30&lt;/div&gt;
-    
-
-
-
-&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/20.03.01/Basecode_Burgers.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/Basecode_Burgers-580x435.png 580w,    /assets/resized/Basecode_Burgers-290x218.png 290w,    /assets/resized/Basecode_Burgers-170x128.png 170w,    /assets/resized/Basecode_Burgers-145x109.png 145w, /assets/img/posts/20.03.01/Basecode_Burgers.png 800w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-    &lt;div id=&quot;description&quot; class=&quot;slide-description&quot;&gt;
-      &lt;a href=&quot;https://tgstation13.org/wiki/Guide_to_food_and_drinks#Burgers&quot; target=&quot;_blank&quot;&gt;TG Station Burgers&lt;/a&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-  &lt;div class=&quot;mySlides&quot;&gt;
-    &lt;div class=&quot;slide-number&quot;&gt;26 / 30&lt;/div&gt;
-    
-
-
-
-&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/20.03.01/Basecode_Hispanic.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/Basecode_Hispanic-580x435.png 580w,    /assets/resized/Basecode_Hispanic-290x218.png 290w,    /assets/resized/Basecode_Hispanic-170x128.png 170w,    /assets/resized/Basecode_Hispanic-145x109.png 145w, /assets/img/posts/20.03.01/Basecode_Hispanic.png 800w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-    &lt;div id=&quot;description&quot; class=&quot;slide-description&quot;&gt;Tacos / Burritos / Nachos / Enchiladas&lt;/div&gt;
-  &lt;/div&gt;
-  &lt;div class=&quot;mySlides&quot;&gt;
-    &lt;div class=&quot;slide-number&quot;&gt;27 / 30&lt;/div&gt;
-    
-
-
-
-&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/20.03.01/Basecode_PancakeWaffle.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/Basecode_PancakeWaffle-580x435.png 580w,    /assets/resized/Basecode_PancakeWaffle-290x218.png 290w,    /assets/resized/Basecode_PancakeWaffle-170x128.png 170w,    /assets/resized/Basecode_PancakeWaffle-145x109.png 145w, /assets/img/posts/20.03.01/Basecode_PancakeWaffle.png 800w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-  &lt;/div&gt;
-  &lt;div class=&quot;mySlides&quot;&gt;
-    &lt;div class=&quot;slide-number&quot;&gt;28 / 30&lt;/div&gt;
-    
-
-
-
-&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/20.03.01/Basecode_Kebabs.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/Basecode_Kebabs-580x435.png 580w,    /assets/resized/Basecode_Kebabs-290x218.png 290w,    /assets/resized/Basecode_Kebabs-170x128.png 170w,    /assets/resized/Basecode_Kebabs-145x109.png 145w, /assets/img/posts/20.03.01/Basecode_Kebabs.png 800w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-  &lt;/div&gt;
-  &lt;div class=&quot;mySlides&quot;&gt;
-    &lt;div class=&quot;slide-number&quot;&gt;29 / 30&lt;/div&gt;
-    
-
-
-
-&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/20.03.01/Basecode_JunkFood.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/Basecode_JunkFood-580x435.png 580w,    /assets/resized/Basecode_JunkFood-290x218.png 290w,    /assets/resized/Basecode_JunkFood-170x128.png 170w,    /assets/resized/Basecode_JunkFood-145x109.png 145w, /assets/img/posts/20.03.01/Basecode_JunkFood.png 800w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-    &lt;div id=&quot;description&quot; class=&quot;slide-description&quot;&gt;Candy / Snacks / Chicken Drumsticks &amp;amp; Nuggets / Popcorn &amp;amp; Fries&lt;/div&gt;
-  &lt;/div&gt;
-  &lt;div class=&quot;mySlides&quot;&gt;
-    &lt;div class=&quot;slide-number&quot;&gt;30 / 30&lt;/div&gt;
-    
-
-
-
-&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/20.03.01/Basecode_Cak.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/Basecode_Cak-580x435.png 580w,    /assets/resized/Basecode_Cak-290x218.png 290w,    /assets/resized/Basecode_Cak-170x128.png 170w,    /assets/resized/Basecode_Cak-145x109.png 145w, /assets/img/posts/20.03.01/Basecode_Cak.png 800w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-    &lt;div id=&quot;description&quot; class=&quot;slide-description&quot;&gt;Cak, the cake cat!&lt;/div&gt;
-  &lt;/div&gt;
-  &lt;div class=&quot;myRows&quot;&gt;
-    &lt;div class=&quot;row&quot;&gt;
-      &lt;div class=&quot;column&quot;&gt;
-        &lt;img class=&quot;thumbs cursor&quot; src=&quot;/assets/img/posts/20.03.01/Basecode_Door_Centcom.png&quot; style=&quot;width:100%&quot; alt=&quot;Centcom Airlock&quot; onclick=&quot;currentSlide(1)&quot; /&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;column&quot;&gt;
-        &lt;img class=&quot;thumbs cursor&quot; src=&quot;/assets/img/posts/20.03.01/Basecode_Floors.png&quot; style=&quot;width:100%&quot; alt=&quot;Floors&quot; onclick=&quot;currentSlide(2)&quot; /&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;column&quot;&gt;
-        &lt;img class=&quot;thumbs cursor&quot; src=&quot;/assets/img/posts/20.03.01/Basecode_Wall_Girders.png&quot; style=&quot;width:100%&quot; alt=&quot;Wall Girders&quot; onclick=&quot;currentSlide(3)&quot; /&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;column&quot;&gt;
-        &lt;img class=&quot;thumbs cursor&quot; src=&quot;/assets/img/posts/20.03.01/Basecode_Window_Girders.png&quot; style=&quot;width:100%&quot; alt=&quot;Window Girders&quot; onclick=&quot;currentSlide(4)&quot; /&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;column&quot;&gt;
-        &lt;img class=&quot;thumbs cursor&quot; src=&quot;/assets/img/posts/20.03.01/Basecode_Walls_LightShuttle.png&quot; style=&quot;width:100%&quot; alt=&quot;Shuttle Walls&quot; onclick=&quot;currentSlide(5)&quot; /&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;column&quot;&gt;
-        &lt;img class=&quot;thumbs cursor&quot; src=&quot;/assets/img/posts/20.03.01/Basecode_MachineFrame.png&quot; style=&quot;width:100%&quot; alt=&quot;Machine Frame&quot; onclick=&quot;currentSlide(6)&quot; /&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-  &lt;div class=&quot;myRows&quot;&gt;
-    &lt;div class=&quot;row&quot;&gt;
-      &lt;div class=&quot;column&quot;&gt;
-        &lt;img class=&quot;thumbs cursor&quot; src=&quot;/assets/img/posts/20.03.01/Basecode_Sofa.png&quot; style=&quot;width:100%&quot; alt=&quot;Sofa&quot; onclick=&quot;currentSlide(7)&quot; /&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;column&quot;&gt;
-        &lt;img class=&quot;thumbs cursor&quot; src=&quot;/assets/img/posts/20.03.01/Basecode_Seats.png&quot; style=&quot;width:100%&quot; alt=&quot;Seats&quot; onclick=&quot;currentSlide(8)&quot; /&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;column&quot;&gt;
-        &lt;img class=&quot;thumbs cursor&quot; src=&quot;/assets/img/posts/20.03.01/Basecode_FireExtinguisherCabinet.png&quot; style=&quot;width:100%&quot; alt=&quot;Fire Extinguisher Cabinet&quot; onclick=&quot;currentSlide(9)&quot; /&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;column&quot;&gt;
-        &lt;img class=&quot;thumbs cursor&quot; src=&quot;/assets/img/posts/20.03.01/Basecode_PepperSprayDispenser.png&quot; style=&quot;width:100%&quot; alt=&quot;Pepper Spray Dispenser&quot; onclick=&quot;currentSlide(10)&quot; /&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;column&quot;&gt;
-        &lt;img class=&quot;thumbs cursor&quot; src=&quot;/assets/img/posts/20.03.01/Basecode_ItemRack.png&quot; style=&quot;width:100%&quot; alt=&quot;Item Rack&quot; onclick=&quot;currentSlide(11)&quot; /&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;column&quot;&gt;
-        &lt;img class=&quot;thumbs cursor&quot; src=&quot;/assets/img/posts/20.03.01/Basecode_DryingRack.png&quot; style=&quot;width:100%&quot; alt=&quot;Drying Rack&quot; onclick=&quot;currentSlide(12)&quot; /&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-  &lt;div class=&quot;myRows&quot;&gt;
-    &lt;div class=&quot;row&quot;&gt;
-      &lt;div class=&quot;column&quot;&gt;
-        &lt;img class=&quot;thumbs cursor&quot; src=&quot;/assets/img/posts/20.03.01/Basecode_MeatSpike_DogBed_Apiary.png&quot; style=&quot;width:100%&quot; alt=&quot;Other Furniture&quot; onclick=&quot;currentSlide(13)&quot; /&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;column&quot;&gt;
-        &lt;img class=&quot;thumbs cursor&quot; src=&quot;/assets/img/posts/20.03.01/Basecode_GenericTools.png&quot; style=&quot;width:100%&quot; alt=&quot;Tools&quot; onclick=&quot;currentSlide(14)&quot; /&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;column&quot;&gt;
-        &lt;img class=&quot;thumbs cursor&quot; src=&quot;/assets/img/posts/20.03.01/Basecode_GeigerCounter.png&quot; style=&quot;width:100%&quot; alt=&quot;Geiger Counter&quot; onclick=&quot;currentSlide(15)&quot; /&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;column&quot;&gt;
-        &lt;img class=&quot;thumbs cursor&quot; src=&quot;/assets/img/posts/20.03.01/Basecode_SprayBottles.png&quot; style=&quot;width:100%&quot; alt=&quot;Spray Bottles&quot; onclick=&quot;currentSlide(16)&quot; /&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;column&quot;&gt;
-        &lt;img class=&quot;thumbs cursor&quot; src=&quot;/assets/img/posts/20.03.01/Basecode_Beakers.png&quot; style=&quot;width:100%&quot; alt=&quot;Beakers&quot; onclick=&quot;currentSlide(17)&quot; /&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;column&quot;&gt;
-        &lt;img class=&quot;thumbs cursor&quot; src=&quot;/assets/img/posts/20.03.01/Basecode_BeverageContainers.png&quot; style=&quot;width:100%&quot; alt=&quot;Beverage Containers&quot; onclick=&quot;currentSlide(18)&quot; /&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-  &lt;div class=&quot;myRows&quot;&gt;
-    &lt;div class=&quot;row&quot;&gt;
-      &lt;div class=&quot;column&quot;&gt;
-        &lt;img class=&quot;thumbs cursor&quot; src=&quot;/assets/img/posts/20.03.01/Basecode_Cakes.png&quot; style=&quot;width:100%&quot; alt=&quot;Cakes&quot; onclick=&quot;currentSlide(19)&quot; /&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;column&quot;&gt;
-        &lt;img class=&quot;thumbs cursor&quot; src=&quot;/assets/img/posts/20.03.01/Basecode_Pastas.png&quot; style=&quot;width:100%&quot; alt=&quot;Pastas&quot; onclick=&quot;currentSlide(20)&quot; /&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;column&quot;&gt;
-        &lt;img class=&quot;thumbs cursor&quot; src=&quot;/assets/img/posts/20.03.01/Basecode_Pizzas.png&quot; style=&quot;width:100%&quot; alt=&quot;Pizzas&quot; onclick=&quot;currentSlide(21)&quot; /&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;column&quot;&gt;
-        &lt;img class=&quot;thumbs cursor&quot; src=&quot;/assets/img/posts/20.03.01/Basecode_Pies.png&quot; style=&quot;width:100%&quot; alt=&quot;Pies&quot; onclick=&quot;currentSlide(22)&quot; /&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;column&quot;&gt;
-        &lt;img class=&quot;thumbs cursor&quot; src=&quot;/assets/img/posts/20.03.01/Basecode_Salads.png&quot; style=&quot;width:100%&quot; alt=&quot;Salads&quot; onclick=&quot;currentSlide(23)&quot; /&gt;
-      &lt;/div&gt;    
-      &lt;div class=&quot;column&quot;&gt;
-        &lt;img class=&quot;thumbs cursor&quot; src=&quot;/assets/img/posts/20.03.01/Basecode_Soups.png&quot; style=&quot;width:100%&quot; alt=&quot;Soups&quot; onclick=&quot;currentSlide(24)&quot; /&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-  &lt;div class=&quot;myRows&quot;&gt;
-    &lt;div class=&quot;row&quot;&gt;
-      &lt;div class=&quot;column&quot;&gt;
-        &lt;img class=&quot;thumbs cursor&quot; src=&quot;/assets/img/posts/20.03.01/Basecode_Burgers.png&quot; style=&quot;width:100%&quot; alt=&quot;Burgers&quot; onclick=&quot;currentSlide(25)&quot; /&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;column&quot;&gt;
-        &lt;img class=&quot;thumbs cursor&quot; src=&quot;/assets/img/posts/20.03.01/Basecode_Hispanic.png&quot; style=&quot;width:100%&quot; alt=&quot;Hispanic Food&quot; onclick=&quot;currentSlide(26)&quot; /&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;column&quot;&gt;
-        &lt;img class=&quot;thumbs cursor&quot; src=&quot;/assets/img/posts/20.03.01/Basecode_PancakeWaffle.png&quot; style=&quot;width:100%&quot; alt=&quot;Pancakes and Waffles&quot; onclick=&quot;currentSlide(27)&quot; /&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;column&quot;&gt;
-        &lt;img class=&quot;thumbs cursor&quot; src=&quot;/assets/img/posts/20.03.01/Basecode_Kebabs.png&quot; style=&quot;width:100%&quot; alt=&quot;Kebabs&quot; onclick=&quot;currentSlide(28)&quot; /&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;column&quot;&gt;
-        &lt;img class=&quot;thumbs cursor&quot; src=&quot;/assets/img/posts/20.03.01/Basecode_JunkFood.png&quot; style=&quot;width:100%&quot; alt=&quot;Junk Food&quot; onclick=&quot;currentSlide(29)&quot; /&gt;
-      &lt;/div&gt;    
-      &lt;div class=&quot;column&quot;&gt;
-        &lt;img class=&quot;thumbs cursor&quot; src=&quot;/assets/img/posts/20.03.01/Basecode_Cak.png&quot; style=&quot;width:100%&quot; alt=&quot;Cak&quot; onclick=&quot;currentSlide(30)&quot; /&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-
-&lt;h2 id=&quot;art&quot;&gt;Art&lt;/h2&gt;
-
-&lt;p&gt;Another month, and another epic wallpaper set by &lt;strong&gt;Bug&lt;/strong&gt;, including both an animated version and still-frame version!&lt;/p&gt;
-
-&lt;video autoplay=&quot;autoplay&quot; muted=&quot;&quot; loop=&quot;loop&quot; poster=&quot;/assets/img/art/Bug/BugPandemic.png&quot; width=&quot;580px&quot;&gt;
-  &lt;source src=&quot;/assets/img/art/Bug/BugPandemic.webm&quot; type=&quot;video/webm&quot; /&gt;
-  &lt;source src=&quot;/assets/img/art/Bug/BugPandemic.mp4&quot; type=&quot;video/mp4&quot; /&gt;
-&lt;/video&gt;
-
-&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/art/Bug/BugPandemic.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/BugPandemic-580x326.png 580w,    /assets/resized/BugPandemic-290x163.png 290w,    /assets/resized/BugPandemic-170x96.png 170w,    /assets/resized/BugPandemic-145x82.png 145w, /assets/img/art/Bug/BugPandemic.png 1920w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-
-&lt;h3 id=&quot;notes&quot;&gt;Notes&lt;/h3&gt;
-
-&lt;p&gt;Obligatory, join our &lt;a href=&quot;https://discord.gg/3ny9tdH&quot; target=&quot;_blank&quot;&gt;discord&lt;/a&gt;.&lt;/p&gt;</content><author><name></name></author><summary type="html">Don’t forget what it was like before all this.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://ss3d.space/assets/img/art/Bug/BugPandemic.png" /></entry></feed>
+&lt;p&gt;If you haven’t already, come join our &lt;a href=&quot;https://discord.gg/3ny9tdH&quot; target=&quot;_blank&quot;&gt;discord&lt;/a&gt; to get a greater insight on our development!&lt;/p&gt;</content><author><name></name></author><summary type="html">“They’ve outlawed the No. 1 vegetable on the planet.”</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://ss3d.space/assets/img/art/Bug/Bug_420Hydro.png" /></entry></feed>
