@@ -167,17 +167,17 @@ window.cookieconsent.initialise({
 </h2>
 
 <br>
-<p>Spatial awarness is a necessary skill to do your job.</p>
+<p>Spatial awareness is a necessary skill to do your job.</p>
 
 <h1 id="january-recap">January Recap</h1>
 
-<p>Its a new year, and we have a new wave of contributions. Strap in yall.</p>
+<p>It’s a new year, and we have a new wave of contributions. Strap in yall.</p>
 
 <h2 id="lobby--main-menu">Lobby &amp; Main Menu</h2>
 
-<p>Our biggest and probably most important feature this month has got to be our fancy new lobby system. <strong>John</strong> was hard at work this month seperating the map, primary menus, and lobby from a unified scene to individual scenes. The result is more modualr in the sense that the editor can more easily work on a these systems without impacting the others as much. It also allows us to quickly swap between map scenes now both in the Unity editor but now in-game, getting us 1 more step closer to a complete game loop.</p>
+<p>Our biggest and probably most important feature this month has got to be our fancy new lobby system. <strong>John</strong> was hard at work this month separating the map, primary menus, and lobby from a unified scene to individual scenes. The result is more modular in the sense that the editor can more easily work on these systems without impacting the others as much. It also allows us to quickly swap between map scenes now both in the Unity editor but now in-game, getting us 1 more step closer to a complete game loop.</p>
 
-<p>Connecting players will now be initially greeted with a basic lobby to hang out in (character customization and chat will eventually be added in here) until they’re ready to join. The game host also now has access to an admin menu to control various parameters for the game. This ranges from changing the map, gamemode (just for show currently), and setting a timer for the length of time until the next round starts.</p>
+<p>Connecting players will now be initially greeted with a basic lobby to hang out in (character customization and chat will eventually be added in here) until they’re ready to join. The game host also now has access to an admin menu to control various parameters for the game. This ranges from changing the map, game mode (just for show currently), and setting a timer for the length of time until the next round starts.</p>
 
 <video controls="" muted="" poster="/assets/img/posts/21.01.01/LobbyMenu.png" width="580px">&gt;
   <source src="/assets/img/posts/21.01.01/LobbyMenu.webm" type="video/webm" />
@@ -186,11 +186,11 @@ window.cookieconsent.initialise({
 
 <h2 id="tilemap-editor">TileMap Editor</h2>
 
-<p>Originally started by <strong>DefNotEric</strong> many moons ago, but recently ressurected and expanded by <strong>BroodjeKipcorn</strong>, our new tilemap editor is a significant improvement over our previous one. Now the editor can edit/add tilemap layers individually rather than having to rebuild all layers on a tile if a single layer on that tile needs a change. You can even hide the visibility of layers in the editor to make it easier to see what you are working on.</p>
+<p>Originally started by <strong>DefNotEric</strong> many moons ago, but recently resurrected and expanded by <strong>BroodjeKipcorn</strong>, our new tilemap editor is a significant improvement over our previous one. Now the editor can edit/add tilemap layers individually rather than having to rebuild all layers on a tile if a single layer on that tile needs a change. You can even hide the visibility of layers in the editor to make it easier to see what you are working on.</p>
 
 <p>The map editor also now has an object search functionality and the objects have a small thumbnail display so the user can find what they are looking for more quickly.</p>
 
-<p>The other big improvement is the addition of tilemap rotations. As we did not have proper tilemap rotations built into the editor before, the user would have to manually edit the Y-axis rotation on each prefab after adding it to the map. Now the user can simply select a cardinal direction for the object to face prior to adding it on the map. Many small bugs related to the tilemap were also taken care of with this new tilemap editor.</p>
+<p>The other big improvement is the addition of tilemap rotations. As we did not have proper tilemap rotations built into the editor before, the user would have to manually edit the Y-axis rotation on each prefab after adding it to the map. Now the user can simply select a cardinal direction for the object to face before adding it to the map. Many small bugs related to the tilemap were also taken care of with this new tilemap editor.</p>
 
 <video controls="" muted="" poster="/assets/img/posts/21.01.01/TilemapEditor.png" width="580px">&gt;
   <source src="/assets/img/posts/21.01.01/TilemapEditor.webm" type="video/webm" />
@@ -199,7 +199,7 @@ window.cookieconsent.initialise({
 
 <h2 id="container-system">Container System</h2>
 
-<p><strong>Alainx</strong> did a great job over the last couple months, overhauling our existing system for containers. This new system uses a Resident Evil-like 2-dimensional modular approach, allowing things like containers on child objects, multiple containers per object, and more. The system also adds functionality for things like wearbles (clothing) for mobs. The system is server authoritative, which should be robust when protecting against cheating. This new system flushed out some lingering inventory-related bugs as well.</p>
+<p><strong>Alainx</strong> did a great job over the last couple of months, overhauling our existing system for containers. This new system uses a Resident Evil-like 2-dimensional modular approach, allowing things like containers on child objects, multiple containers per object, and more. The system also adds functionality for things like wearables (clothing) for mobs. The system is server authoritative, which should be robust when protecting against cheating. This new system flushed out some lingering inventory-related bugs as well.</p>
 
 <div class="image"><a href="/assets/img/posts/21.01.01/ModularContainers.png" class="image-link" target="_blank"><img src="/" alt="" srcset="    /assets/resized/ModularContainers-580x326.png 580w,    /assets/resized/ModularContainers-290x163.png 290w,    /assets/resized/ModularContainers-170x96.png 170w,    /assets/resized/ModularContainers-145x82.png 145w, /assets/img/posts/21.01.01/ModularContainers.png 1280w" sizes="(max-width: 624px) 100vw, 578px, 580px" /></a></div>
 
@@ -225,7 +225,7 @@ window.cookieconsent.initialise({
 
 <p>To kick off this new year, we are finally launching a means to support the development of this game via donations. We have launched a <a href="https://www.patreon.com/ss3d">Patreon</a>, <a href="https://www.subscribestar.com/space-station-3d">SubscribeStar</a>, and even a multi-chain crypto wallet + .crypto domain (SpaceStation3D.crypto) which accepts multiple cryptocurrencies, see the full list of accepted cryptos <a href="https://github.com/RE-SS3D/SS3D/wiki/Related-Sites-&amp;-Resources#donation-links">at the bottom of this page</a> or at the top of <a href="/contribute/">our contribute page</a>.</p>
 
-<p>The money gathered from our donations will primarily be used for paying technical bounties which we will launch once we have recieved adequate inital funds. Eventually, the donations will also be used to help cover any costs to continue developing &amp; hosting this game (like paying to host servers).</p>
+<p>The money gathered from our donations will primarily be used for paying technical bounties which we will launch once we have received adequate initial funds. Eventually, the donations will also be used to help cover any costs to continue developing &amp; hosting this game (like paying to host servers).</p>
 
 <p>One <em>very</em> important thing we want to ensure is that we are COMPLETELY transparent about how we use your donations for this project. So we have set up a #money-log channel on our discord which will log our donations and how they are spent.</p>
 
