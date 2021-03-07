@@ -1,4 +1,99 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://ss3d.space/feed.xml" rel="self" type="application/atom+xml" /><link href="https://ss3d.space/" rel="alternate" type="text/html" /><updated>2021-02-05T05:53:02+00:00</updated><id>https://ss3d.space/feed.xml</id><title type="html">RE:SS3D</title><subtitle>This is a 3D recreation of Space Station 13, on the Unity engine, which will come with its own set of gameplay/graphical improvements. </subtitle><entry><title type="html">21.01: January 2021 Devblog</title><link href="https://ss3d.space/2021/02/04/21.01.html" rel="alternate" type="text/html" title="21.01: January 2021 Devblog" /><published>2021-02-04T11:30:00+00:00</published><updated>2021-02-04T11:30:00+00:00</updated><id>https://ss3d.space/2021/02/04/21.01</id><content type="html" xml:base="https://ss3d.space/2021/02/04/21.01.html">&lt;p&gt;Spatial awareness is a necessary skill to do your job.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://ss3d.space/feed.xml" rel="self" type="application/atom+xml" /><link href="https://ss3d.space/" rel="alternate" type="text/html" /><updated>2021-03-07T18:30:00+00:00</updated><id>https://ss3d.space/feed.xml</id><title type="html">RE:SS3D</title><subtitle>This is a 3D recreation of Space Station 13, on the Unity engine, which will come with its own set of gameplay/graphical improvements. </subtitle><entry><title type="html">21.02: February 2021 Devblog</title><link href="https://ss3d.space/2021/03/07/21.02.html" rel="alternate" type="text/html" title="21.02: February 2021 Devblog" /><published>2021-03-07T11:30:00+00:00</published><updated>2021-03-07T11:30:00+00:00</updated><id>https://ss3d.space/2021/03/07/21.02</id><content type="html" xml:base="https://ss3d.space/2021/03/07/21.02.html">&lt;p&gt;What is this, a zoo in space?&lt;/p&gt;
+
+&lt;h1 id=&quot;february-recap&quot;&gt;February Recap&lt;/h1&gt;
+
+&lt;p&gt;Keep your arms and legs inside the spacestation at all times during your stay!&lt;/p&gt;
+
+&lt;h2 id=&quot;optional-connections&quot;&gt;Optional Connections&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;BroodjeKipcorn&lt;/strong&gt; added the much needed feature of optional connections for things like pipes &amp;amp; wires. So now the user can decide when and in what direction these fixtures attach to one another. Currently this is only possible in the map editor but will be expanded to in-game once the functionality to interact with the fixtures is implemented.&lt;/p&gt;
+
+&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/21.02.01/OptionalConnections.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/OptionalConnections-580x435.png 580w,    /assets/resized/OptionalConnections-290x218.png 290w,    /assets/resized/OptionalConnections-170x128.png 170w,    /assets/resized/OptionalConnections-145x109.png 145w, /assets/img/posts/21.02.01/OptionalConnections.png 800w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;container-ui&quot;&gt;Container UI&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;Goao&lt;/strong&gt; was sick of looking at our &lt;a href=&quot;/assets/img/posts/21.02.01/ContainerUI_Old.png&quot; target=&quot;_blank&quot;&gt;old container UI&lt;/a&gt;, so he quickly whipped together a new one for us which includes a scroll wheel if the container is large and has many slots.&lt;/p&gt;
+
+&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/21.02.01/ContainerUI_New.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/ContainerUI_New-580x435.png 580w,    /assets/resized/ContainerUI_New-290x218.png 290w,    /assets/resized/ContainerUI_New-170x128.png 170w,    /assets/resized/ContainerUI_New-145x109.png 145w, /assets/img/posts/21.02.01/ContainerUI_New.png 800w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;details&quot;&gt;Details&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;peeB&lt;/strong&gt;, whose been a active member in our community since day 1 but a new contributor this month…&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Improved interaction for the pepper spray item.&lt;/li&gt;
+  &lt;li&gt;Improved interaction for the lighter item, including animations.&lt;/li&gt;
+  &lt;li&gt;Improved interaction for the wetfloor sign, including open/close animations.&lt;/li&gt;
+  &lt;li&gt;Improved interaction for the airlocks.&lt;/li&gt;
+  &lt;li&gt;Enhanced the interaction distance check for more realistic interaction range.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Goao&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Fixed a couple bugs related to round timer and joining a round.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;BroodjeKipcorn&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Added sound fall-off for the airlock’s interaction.&lt;/li&gt;
+  &lt;li&gt;Added basic interactions for lights (turning them on &amp;amp; off), but this seems have already broken with another change to interactions themselves. Hopefully it will be fixed again soon.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;models&quot;&gt;Models&lt;/h2&gt;
+
+&lt;p&gt;New contributor this month, &lt;strong&gt;Putski&lt;/strong&gt; made this great ore crate.&lt;/p&gt;
+
+&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/21.02.01/Putski_OreCrate.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/Putski_OreCrate-580x435.png 580w,    /assets/resized/Putski_OreCrate-290x218.png 290w,    /assets/resized/Putski_OreCrate-170x128.png 170w,    /assets/resized/Putski_OreCrate-145x109.png 145w, /assets/img/posts/21.02.01/Putski_OreCrate.png 800w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+
+&lt;p&gt;Another new contributor, &lt;strong&gt;Cornelius&lt;/strong&gt;, contributed many missing animals and other creatures for us this month!&lt;/p&gt;
+
+&lt;div class=&quot;horizontal-3&quot;&gt;
+
+  &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/21.02.01/CorneliusFrog.png&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/CorneliusFrog-580x435.png 580w,    /assets/resized/CorneliusFrog-290x218.png 290w,    /assets/resized/CorneliusFrog-170x128.png 170w,    /assets/resized/CorneliusFrog-145x109.png 145w, /assets/img/posts/21.02.01/CorneliusFrog.png 800w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+
+  &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/21.02.01/CorneliusSnake.png&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/CorneliusSnake-580x435.png 580w,    /assets/resized/CorneliusSnake-290x218.png 290w,    /assets/resized/CorneliusSnake-170x128.png 170w,    /assets/resized/CorneliusSnake-145x109.png 145w, /assets/img/posts/21.02.01/CorneliusSnake.png 800w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+
+  &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/21.02.01/CorneliusMice.png&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/CorneliusMice-580x435.png 580w,    /assets/resized/CorneliusMice-290x218.png 290w,    /assets/resized/CorneliusMice-170x128.png 170w,    /assets/resized/CorneliusMice-145x109.png 145w, /assets/img/posts/21.02.01/CorneliusMice.png 800w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;horizontal-2&quot;&gt;
+
+  &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/21.02.01/CorneliusCats.png&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/CorneliusCats-580x435.png 580w,    /assets/resized/CorneliusCats-290x218.png 290w,    /assets/resized/CorneliusCats-170x128.png 170w,    /assets/resized/CorneliusCats-145x109.png 145w, /assets/img/posts/21.02.01/CorneliusCats.png 800w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+
+  &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/21.02.01/CorneliusChickens.png&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/CorneliusChickens-580x435.png 580w,    /assets/resized/CorneliusChickens-290x218.png 290w,    /assets/resized/CorneliusChickens-170x128.png 170w,    /assets/resized/CorneliusChickens-145x109.png 145w, /assets/img/posts/21.02.01/CorneliusChickens.png 800w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;horizontal-3&quot;&gt;
+
+  &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/21.02.01/CorneliusCows.png&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/CorneliusCows-580x435.png 580w,    /assets/resized/CorneliusCows-290x218.png 290w,    /assets/resized/CorneliusCows-170x128.png 170w,    /assets/resized/CorneliusCows-145x109.png 145w, /assets/img/posts/21.02.01/CorneliusCows.png 800w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+
+  &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/21.02.01/CorneliusFox.png&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/CorneliusFox-580x435.png 580w,    /assets/resized/CorneliusFox-290x218.png 290w,    /assets/resized/CorneliusFox-170x128.png 170w,    /assets/resized/CorneliusFox-145x109.png 145w, /assets/img/posts/21.02.01/CorneliusFox.png 800w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+
+  &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/21.02.01/CorneliusSloth.png&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/CorneliusSloth-580x435.png 580w,    /assets/resized/CorneliusSloth-290x218.png 290w,    /assets/resized/CorneliusSloth-170x128.png 170w,    /assets/resized/CorneliusSloth-145x109.png 145w, /assets/img/posts/21.02.01/CorneliusSloth.png 800w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;horizontal-3&quot;&gt;
+
+  &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/21.02.01/CorneliusXenomorph.png&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/CorneliusXenomorph-580x435.png 580w,    /assets/resized/CorneliusXenomorph-290x218.png 290w,    /assets/resized/CorneliusXenomorph-170x128.png 170w,    /assets/resized/CorneliusXenomorph-145x109.png 145w, /assets/img/posts/21.02.01/CorneliusXenomorph.png 800w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+
+  &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/21.02.01/CorneliusChestburster.png&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/CorneliusChestburster-580x435.png 580w,    /assets/resized/CorneliusChestburster-290x218.png 290w,    /assets/resized/CorneliusChestburster-170x128.png 170w,    /assets/resized/CorneliusChestburster-145x109.png 145w, /assets/img/posts/21.02.01/CorneliusChestburster.png 800w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+
+  &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/21.02.01/CorneliusFacehugger.png&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/CorneliusFacehugger-580x435.png 580w,    /assets/resized/CorneliusFacehugger-290x218.png 290w,    /assets/resized/CorneliusFacehugger-170x128.png 170w,    /assets/resized/CorneliusFacehugger-145x109.png 145w, /assets/img/posts/21.02.01/CorneliusFacehugger.png 800w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;art&quot;&gt;Art&lt;/h2&gt;
+
+&lt;p&gt;One could argue that &lt;strong&gt;Bug&lt;/strong&gt; went a little &lt;em&gt;wild&lt;/em&gt; with this month’s blog art.&lt;/p&gt;
+
+&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/art/Bug/Bug_CargoAnimals.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/Bug_CargoAnimals-580x326.png 580w,    /assets/resized/Bug_CargoAnimals-290x163.png 290w,    /assets/resized/Bug_CargoAnimals-170x96.png 170w,    /assets/resized/Bug_CargoAnimals-145x82.png 145w, /assets/img/art/Bug/Bug_CargoAnimals.png 1920w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
+
+&lt;p&gt;First and foremost, thank you to everyone who has donated to the project over the last month! We have raised a little over $325 our this first month, and every dollar is much appreciated! Look forward to hearing from us this next month on how these funds will be allocated for bounties (health system will likely be one).&lt;/p&gt;
+
+&lt;p&gt;So stay tuned, and check out our &lt;a href=&quot;https://discord.gg/3ny9tdH&quot; target=&quot;_blank&quot;&gt;Discord&lt;/a&gt; for more info.&lt;/p&gt;</content><author><name></name></author><summary type="html">What is this, a zoo in space?</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://ss3d.space/assets/img/art/Bug/Bug_CargoAnimals.png" /></entry><entry><title type="html">21.01: January 2021 Devblog</title><link href="https://ss3d.space/2021/02/04/21.01.html" rel="alternate" type="text/html" title="21.01: January 2021 Devblog" /><published>2021-02-04T11:30:00+00:00</published><updated>2021-02-04T11:30:00+00:00</updated><id>https://ss3d.space/2021/02/04/21.01</id><content type="html" xml:base="https://ss3d.space/2021/02/04/21.01.html">&lt;p&gt;Spatial awareness is a necessary skill to do your job.&lt;/p&gt;
 
 &lt;h1 id=&quot;january-recap&quot;&gt;January Recap&lt;/h1&gt;
 
@@ -950,77 +1045,4 @@ warning cone, toilet plungers, a cyborg charging station, and an oddly creative 
 
 &lt;p&gt;Still not part of our community? Well, better late than never to come hop in our community &lt;a href=&quot;https://discord.gg/3ny9tdH&quot; target=&quot;_blank&quot;&gt;discord&lt;/a&gt; to share your opinions, see WIP content/systems, or vote on polls that influence the design of the game!&lt;/p&gt;
 
-&lt;p&gt;See you here again next month!&lt;/p&gt;</content><author><name></name></author><summary type="html">“The greatest tyrannies are always perpetrated in the name of the noblest causes.”</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://ss3d.space/assets/img/art/ProbablyNot/ProbablyNot_Chase.png" /></entry><entry><title type="html">20.04: April 2020 Devblog</title><link href="https://ss3d.space/2020/05/04/20.04.html" rel="alternate" type="text/html" title="20.04: April 2020 Devblog" /><published>2020-05-04T05:30:00+00:00</published><updated>2020-05-04T05:30:00+00:00</updated><id>https://ss3d.space/2020/05/04/20.04</id><content type="html" xml:base="https://ss3d.space/2020/05/04/20.04.html">&lt;p&gt;&lt;em&gt;“They’ve outlawed the No. 1 vegetable on the planet.”&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;– Timothy Leary&lt;/p&gt;
-
-&lt;h1 id=&quot;april-recap&quot;&gt;April Recap&lt;/h1&gt;
-
-&lt;p&gt;We hope you all had a happy month of 4/20! Not a lot of progress this month due most of us being too high to leave our homes regardless of the quarantines. Just kidding, some of us have just been busier recently, but we’re still here! We gotta thank all the new contributors who continue to show up each month, providing momentum for the project. Though there weren’t any major changes this month, there were several smaller fixes made by two new individuals.&lt;/p&gt;
-
-&lt;h2 id=&quot;fixes&quot;&gt;Fixes&lt;/h2&gt;
-
-&lt;p&gt;&lt;strong&gt;TheLife&lt;/strong&gt; implemented a basic interaction distance for construction, to prevent the player from building at an infinite distance. The new build distance is 1.5 meters/tiles. He also fixed some bugs allowing the player to construct various objects over other objects.&lt;/p&gt;
-
-&lt;video controls=&quot;&quot; muted=&quot;&quot; poster=&quot;/assets/img/posts/20.04.01/TheLife_BuildDistance.png&quot; width=&quot;580px&quot;&gt;
-  &lt;source src=&quot;/assets/img/posts/20.04.01/TheLife_BuildDistance.webm&quot; type=&quot;video/webm&quot; /&gt;
-  &lt;source src=&quot;/assets/img/posts/20.04.01/TheLife_BuildDistance.mp4&quot; type=&quot;video/mp4&quot; /&gt;
-&lt;/video&gt;
-
-&lt;p&gt;&lt;strong&gt;PhantomFears&lt;/strong&gt; repaired an issue in our scene where most of our tiles were offset by the slightest amount (0.01), and while he was at it, fixed our broken round timer.&lt;/p&gt;
-
-&lt;h2 id=&quot;textures&quot;&gt;Textures&lt;/h2&gt;
-
-&lt;p&gt;This month, &lt;strong&gt;Eiko&lt;/strong&gt; decided to make some more console screen animations. The far left one (&lt;a href=&quot;/assets/img/posts/20.04.01/crew_monitor.mp4&quot; target=&quot;_blank&quot;&gt;crew monitor&lt;/a&gt;) was his first one which was made many moons ago. The next 4 (&lt;a href=&quot;/assets/img/posts/20.04.01/cargo_1.mp4&quot; target=&quot;_blank&quot;&gt;supply&lt;/a&gt;, &lt;a href=&quot;/assets/img/posts/20.04.01/slime.mp4&quot; target=&quot;_blank&quot;&gt;slime management&lt;/a&gt;, &lt;a href=&quot;/assets/img/posts/20.04.01/cloning.mp4&quot; target=&quot;_blank&quot;&gt;cloning&lt;/a&gt;, and &lt;a href=&quot;/assets/img/posts/20.04.01/security_records.mp4&quot; target=&quot;_blank&quot;&gt;security records&lt;/a&gt;) are his new ones this month. The final console (&lt;a href=&quot;/assets/img/posts/20.04.01/cmd.mp4&quot; target=&quot;_blank&quot;&gt;cmd&lt;/a&gt;) was made by &lt;strong&gt;Goao&lt;/strong&gt; along with the touchpad displays on each of the consoles.&lt;/p&gt;
-
-&lt;video autoplay=&quot;autoplay&quot; muted=&quot;&quot; loop=&quot;loop&quot; poster=&quot;/assets/img/posts/20.04.01/Consoles.png&quot; width=&quot;580px&quot;&gt;
-  &lt;source src=&quot;/assets/img/posts/20.04.01/Consoles.webm&quot; type=&quot;video/webm&quot; /&gt;
-  &lt;source src=&quot;/assets/img/posts/20.04.01/Consoles.mp4&quot; type=&quot;video/mp4&quot; /&gt;
-&lt;/video&gt;
-
-&lt;p&gt;Also from &lt;strong&gt;Eiko&lt;/strong&gt;, a &lt;a href=&quot;/assets/img/posts/20.04.01/pirate_blanket.png&quot; target=&quot;_blank&quot;&gt;pirate blanket texture&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h2 id=&quot;models&quot;&gt;Models&lt;/h2&gt;
-
-&lt;p&gt;&lt;strong&gt;Basecode&lt;/strong&gt; is back, providing a deep-fryer, request console, illuminated floors, shuttle floors &amp;amp; windows, and a redesign of our old shuttle engine and compressor. Besides making these new models, he also helped a lot this month cleaning &amp;amp; fixing older models to get them up-to-date, including a bit of organizing.&lt;/p&gt;
-
-&lt;div class=&quot;horizontal-3&quot;&gt;
-
-  &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/20.04.01/Basecode_DeepFryer.png&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/Basecode_DeepFryer-580x435.png 580w,    /assets/resized/Basecode_DeepFryer-290x218.png 290w,    /assets/resized/Basecode_DeepFryer-170x128.png 170w,    /assets/resized/Basecode_DeepFryer-145x109.png 145w, /assets/img/posts/20.04.01/Basecode_DeepFryer.png 800w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-
-  &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/20.04.01/Basecode_RequestConsole.png&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/Basecode_RequestConsole-580x435.png 580w,    /assets/resized/Basecode_RequestConsole-290x218.png 290w,    /assets/resized/Basecode_RequestConsole-170x128.png 170w,    /assets/resized/Basecode_RequestConsole-145x109.png 145w, /assets/img/posts/20.04.01/Basecode_RequestConsole.png 800w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-
-  &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/20.04.01/Basecode_LightTile.png&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/Basecode_LightTile-580x435.png 580w,    /assets/resized/Basecode_LightTile-290x218.png 290w,    /assets/resized/Basecode_LightTile-170x128.png 170w,    /assets/resized/Basecode_LightTile-145x109.png 145w, /assets/img/posts/20.04.01/Basecode_LightTile.png 800w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;div class=&quot;horizontal-3&quot;&gt;
-
-  &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/20.04.01/Basecode_ShuttleFloors.png&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/Basecode_ShuttleFloors-580x435.png 580w,    /assets/resized/Basecode_ShuttleFloors-290x218.png 290w,    /assets/resized/Basecode_ShuttleFloors-170x128.png 170w,    /assets/resized/Basecode_ShuttleFloors-145x109.png 145w, /assets/img/posts/20.04.01/Basecode_ShuttleFloors.png 800w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-
-  &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/20.04.01/Basecode_Windows_LightShuttle.png&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/Basecode_Windows_LightShuttle-580x435.png 580w,    /assets/resized/Basecode_Windows_LightShuttle-290x218.png 290w,    /assets/resized/Basecode_Windows_LightShuttle-170x128.png 170w,    /assets/resized/Basecode_Windows_LightShuttle-145x109.png 145w, /assets/img/posts/20.04.01/Basecode_Windows_LightShuttle.png 800w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-
-  &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/20.04.01/Basecode_ShuttleEngine.png&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/Basecode_ShuttleEngine-580x435.png 580w,    /assets/resized/Basecode_ShuttleEngine-290x218.png 290w,    /assets/resized/Basecode_ShuttleEngine-170x128.png 170w,    /assets/resized/Basecode_ShuttleEngine-145x109.png 145w, /assets/img/posts/20.04.01/Basecode_ShuttleEngine.png 800w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;p&gt;&lt;strong&gt;Goao&lt;/strong&gt; also made the robotic corgi, I.A.N.&lt;/p&gt;
-
-&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/20.04.01/John_RoboCorgi.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/John_RoboCorgi-580x435.png 580w,    /assets/resized/John_RoboCorgi-290x218.png 290w,    /assets/resized/John_RoboCorgi-170x128.png 170w,    /assets/resized/John_RoboCorgi-145x109.png 145w, /assets/img/posts/20.04.01/John_RoboCorgi.png 800w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-
-&lt;p&gt;&lt;strong&gt;Bug&lt;/strong&gt; made this gnarly gas mask.&lt;/p&gt;
-
-&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/20.04.01/Bug_Gasmask.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/Bug_Gasmask-580x435.png 580w,    /assets/resized/Bug_Gasmask-290x218.png 290w,    /assets/resized/Bug_Gasmask-170x128.png 170w,    /assets/resized/Bug_Gasmask-145x109.png 145w, /assets/img/posts/20.04.01/Bug_Gasmask.png 800w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-
-&lt;h2 id=&quot;art&quot;&gt;Art&lt;/h2&gt;
-
-&lt;p&gt;I imagine that many of you can relate to &lt;strong&gt;Bug’s&lt;/strong&gt; artwork this month!&lt;/p&gt;
-
-&lt;video autoplay=&quot;autoplay&quot; muted=&quot;&quot; loop=&quot;loop&quot; poster=&quot;/assets/img/art/Bug/Bug_420Hydro.png&quot; width=&quot;580px&quot;&gt;
-  &lt;source src=&quot;/assets/img/art/Bug/Bug_420Hydro.webm&quot; type=&quot;video/webm&quot; /&gt;
-  &lt;source src=&quot;/assets/img/art/Bug/Bug_420Hydro.mp4&quot; type=&quot;video/mp4&quot; /&gt;
-&lt;/video&gt;
-
-&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/art/Bug/Bug_420Hydro.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/Bug_420Hydro-580x326.png 580w,    /assets/resized/Bug_420Hydro-290x163.png 290w,    /assets/resized/Bug_420Hydro-170x96.png 170w,    /assets/resized/Bug_420Hydro-145x82.png 145w, /assets/img/art/Bug/Bug_420Hydro.png 1920w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-
-&lt;h3 id=&quot;notes&quot;&gt;Notes&lt;/h3&gt;
-
-&lt;p&gt;If you haven’t already, come join our &lt;a href=&quot;https://discord.gg/3ny9tdH&quot; target=&quot;_blank&quot;&gt;discord&lt;/a&gt; to get a greater insight on our development!&lt;/p&gt;</content><author><name></name></author><summary type="html">“They’ve outlawed the No. 1 vegetable on the planet.”</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://ss3d.space/assets/img/art/Bug/Bug_420Hydro.png" /></entry></feed>
+&lt;p&gt;See you here again next month!&lt;/p&gt;</content><author><name></name></author><summary type="html">“The greatest tyrannies are always perpetrated in the name of the noblest causes.”</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://ss3d.space/assets/img/art/ProbablyNot/ProbablyNot_Chase.png" /></entry></feed>
