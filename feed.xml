@@ -1,12 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://ss3d.space/feed.xml" rel="self" type="application/atom+xml" /><link href="https://ss3d.space/" rel="alternate" type="text/html" /><updated>2021-03-07T18:30:00+00:00</updated><id>https://ss3d.space/feed.xml</id><title type="html">RE:SS3D</title><subtitle>This is a 3D recreation of Space Station 13, on the Unity engine, which will come with its own set of gameplay/graphical improvements. </subtitle><entry><title type="html">21.02: February 2021 Devblog</title><link href="https://ss3d.space/2021/03/07/21.02.html" rel="alternate" type="text/html" title="21.02: February 2021 Devblog" /><published>2021-03-07T11:30:00+00:00</published><updated>2021-03-07T11:30:00+00:00</updated><id>https://ss3d.space/2021/03/07/21.02</id><content type="html" xml:base="https://ss3d.space/2021/03/07/21.02.html">&lt;p&gt;What is this, a zoo in space?&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://ss3d.space/feed.xml" rel="self" type="application/atom+xml" /><link href="https://ss3d.space/" rel="alternate" type="text/html" /><updated>2021-03-08T05:21:40+00:00</updated><id>https://ss3d.space/feed.xml</id><title type="html">RE:SS3D</title><subtitle>This is a 3D recreation of Space Station 13, on the Unity engine, which will come with its own set of gameplay/graphical improvements. </subtitle><entry><title type="html">21.02: February 2021 Devblog</title><link href="https://ss3d.space/2021/03/07/21.02.html" rel="alternate" type="text/html" title="21.02: February 2021 Devblog" /><published>2021-03-07T11:30:00+00:00</published><updated>2021-03-07T11:30:00+00:00</updated><id>https://ss3d.space/2021/03/07/21.02</id><content type="html" xml:base="https://ss3d.space/2021/03/07/21.02.html">&lt;p&gt;What is this, a zoo in space?&lt;/p&gt;
 
 &lt;h1 id=&quot;february-recap&quot;&gt;February Recap&lt;/h1&gt;
 
-&lt;p&gt;Keep your arms and legs inside the spacestation at all times during your stay!&lt;/p&gt;
+&lt;p&gt;Keep your arms and legs inside the space station at all times during your stay!&lt;/p&gt;
 
 &lt;h2 id=&quot;optional-connections&quot;&gt;Optional Connections&lt;/h2&gt;
 
-&lt;p&gt;&lt;strong&gt;BroodjeKipcorn&lt;/strong&gt; added the much needed feature of optional connections for things like pipes &amp;amp; wires. So now the user can decide when and in what direction these fixtures attach to one another. Currently this is only possible in the map editor but will be expanded to in-game once the functionality to interact with the fixtures is implemented.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;BroodjeKipcorn&lt;/strong&gt; added the much-needed feature of optional connections for things like pipes &amp;amp; wires. So now the user can decide when and in what direction these fixtures attach. Currently, this is only possible in the map editor but will be expanded to in-game once the functionality to interact with the fixtures is implemented.&lt;/p&gt;
 
 &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/21.02.01/OptionalConnections.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/OptionalConnections-580x435.png 580w,    /assets/resized/OptionalConnections-290x218.png 290w,    /assets/resized/OptionalConnections-170x128.png 170w,    /assets/resized/OptionalConnections-145x109.png 145w, /assets/img/posts/21.02.01/OptionalConnections.png 800w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
 
@@ -18,32 +18,32 @@
 
 &lt;h2 id=&quot;details&quot;&gt;Details&lt;/h2&gt;
 
-&lt;p&gt;&lt;strong&gt;peeB&lt;/strong&gt;, whose been a active member in our community since day 1 but a new contributor this month…&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;peeB&lt;/strong&gt;, whose been an active member in our community since day 1 but a new contributor this month…&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;Improved interaction for the pepper spray item.&lt;/li&gt;
   &lt;li&gt;Improved interaction for the lighter item, including animations.&lt;/li&gt;
-  &lt;li&gt;Improved interaction for the wetfloor sign, including open/close animations.&lt;/li&gt;
+  &lt;li&gt;Improved interaction for the wet floor sign, including open/close animations.&lt;/li&gt;
   &lt;li&gt;Improved interaction for the airlocks.&lt;/li&gt;
-  &lt;li&gt;Enhanced the interaction distance check for more realistic interaction range.&lt;/li&gt;
+  &lt;li&gt;Enhanced the interaction distance check for a more realistic interaction range.&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;&lt;strong&gt;Goao&lt;/strong&gt;&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;Fixed a couple bugs related to round timer and joining a round.&lt;/li&gt;
+  &lt;li&gt;Fixed a couple of bugs related to the round timer and joining a round.&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;&lt;strong&gt;BroodjeKipcorn&lt;/strong&gt;&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;Added sound fall-off for the airlock’s interaction.&lt;/li&gt;
-  &lt;li&gt;Added basic interactions for lights (turning them on &amp;amp; off), but this seems have already broken with another change to interactions themselves. Hopefully it will be fixed again soon.&lt;/li&gt;
+  &lt;li&gt;Added basic interactions for lights (turning them on &amp;amp; off), but this seems to have already broken with another change to interactions themselves. Hopefully, it will be fixed again soon.&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h2 id=&quot;models&quot;&gt;Models&lt;/h2&gt;
 
-&lt;p&gt;New contributor this month, &lt;strong&gt;Putski&lt;/strong&gt; made this great ore crate.&lt;/p&gt;
+&lt;p&gt;Another new contributor this month, &lt;strong&gt;Putski&lt;/strong&gt; made this great ore crate.&lt;/p&gt;
 
 &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/21.02.01/Putski_OreCrate.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/Putski_OreCrate-580x435.png 580w,    /assets/resized/Putski_OreCrate-290x218.png 290w,    /assets/resized/Putski_OreCrate-170x128.png 170w,    /assets/resized/Putski_OreCrate-145x109.png 145w, /assets/img/posts/21.02.01/Putski_OreCrate.png 800w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
 
@@ -91,7 +91,7 @@
 
 &lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
 
-&lt;p&gt;First and foremost, thank you to everyone who has donated to the project over the last month! We have raised a little over $325 our this first month, and every dollar is much appreciated! Look forward to hearing from us this next month on how these funds will be allocated for bounties (health system will likely be one).&lt;/p&gt;
+&lt;p&gt;First and foremost, thank you to everyone who has donated to the project over the last month! We have raised a little over $325 our first month, and every dollar is much appreciated! Look forward to hearing from us this next month on how these funds will be allocated for bounties (the health system will likely be one).&lt;/p&gt;
 
 &lt;p&gt;So stay tuned, and check out our &lt;a href=&quot;https://discord.gg/3ny9tdH&quot; target=&quot;_blank&quot;&gt;Discord&lt;/a&gt; for more info.&lt;/p&gt;</content><author><name></name></author><summary type="html">What is this, a zoo in space?</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://ss3d.space/assets/img/art/Bug/Bug_CargoAnimals.png" /></entry><entry><title type="html">21.01: January 2021 Devblog</title><link href="https://ss3d.space/2021/02/04/21.01.html" rel="alternate" type="text/html" title="21.01: January 2021 Devblog" /><published>2021-02-04T11:30:00+00:00</published><updated>2021-02-04T11:30:00+00:00</updated><id>https://ss3d.space/2021/02/04/21.01</id><content type="html" xml:base="https://ss3d.space/2021/02/04/21.01.html">&lt;p&gt;Spatial awareness is a necessary skill to do your job.&lt;/p&gt;
 
