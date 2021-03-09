@@ -15,7 +15,7 @@ There are 2 primary ways you can donate, either by donating to our project, or b
 [Subscribestar](https://www.subscribestar.com/space-station-3d){:target="_blank"}
 
 Multi-Chain Crypto Address: "*SpaceStation3D.crypto*"
-- Currently accepts $BCH, $BTC, $ETH, & $LTC.
+- Currently accepts $BCH, $BTC, $BNB, $ETH, $DASH, $DOGE, $LTC, $TRX, $XRP, $ZEC, & $ZIL.
 - Other currencies can be added later at request.
 
 # Development

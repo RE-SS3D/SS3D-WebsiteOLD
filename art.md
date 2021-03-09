@@ -12,8 +12,6 @@ permalink: /art/
 # Bug
 {: class="centred" }
 
-{% responsive_image path: assets/img/art/Bug/Bug_CargoAnimals.png template: _includes/srcset.html %}
-
 {% responsive_image path: assets/img/art/Bug/Bug_Spacegiving.png template: _includes/srcset.html %}
 
 {% responsive_image path: assets/img/art/Bug/Bug_Halloween2020.png template: _includes/srcset.html %}
