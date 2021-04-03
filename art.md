@@ -147,6 +147,10 @@ permalink: /art/
 # Probably Not
 {: class="centred" }
 
+{% responsive_image path: assets/img/art/ProbablyNot/ProbablyNot_Sec.png template: _includes/srcset.html %}
+
+{% responsive_image path: assets/img/art/ProbablyNot/ProbablyNot_PDA.png template: _includes/srcset.html %}
+
 {% responsive_image path: assets/img/art/ProbablyNot/ProbablyNot_Harvest.png template: _includes/srcset.html %}
 
 {% responsive_image path: assets/img/art/ProbablyNot/CreationOfGreytide.png template: _includes/srcset.html %}

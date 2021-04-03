@@ -6,17 +6,22 @@ permalink: /contribute/
 
 ### How to contribute:
 
-There are 2 primary ways you can donate, either by donating to our project, or by directly helping with development.
+There are 2 primary ways you can contribute, either by donating to the project, or by directly helping with the development.
 
-# Donations
+# Donation Links
 
 [Patreon](https://www.patreon.com/ss3d){:target="_blank"}
 
 [Subscribestar](https://www.subscribestar.com/space-station-3d){:target="_blank"}
 
-Multi-Chain Crypto Address: "*SpaceStation3D.crypto*"
-- Currently accepts $BCH, $BTC, $ETH, & $LTC.
-- Other currencies can be added later at request.
+[Paypal](https://www.paypal.me/SpaceStation3D){:target="_blank"}
+Or send directly to our email: ress3d.project@gmail.com
+
+Crypto: spacestation3d.crypto (accepts $BCH, $BTC, $ETH, & $LTC) but some wallets don't accept that format so...
+- BCH: qzu0hprd6gxlcpm57usmp77q68tnv9cnwuyx4k8uxu
+- BTC: bc1q4qw9528vgc6wm88tsqsehkd7rpahmv4zgrgge3
+- ETH: 0xE2e60a1a53dec4bFd7E77C3e1a96590bB74f0438
+- LTC: ltc1qjdchzy623egyuy00kvydeqg5zqdqsclf4zv09r
 
 # Development
 
@@ -67,6 +72,6 @@ Art contributions currently are submitted via the art channels on our [discord](
 
 ### Licensing:
 
-**This project and it's code** fall under the [**MIT license**]({{ site.github_game_url }}/blob/master/LICENSE-CODE.md){:target="_blank"}.
+**This project and its code** fall under the [**MIT license**]({{ site.github_game_url }}/blob/master/LICENSE-CODE.md){:target="_blank"}.
 
 **All asset contributions** fall under the [**CC BY-NC-SA 4.0 license**]({{ site.github_game_url }}/blob/master/LICENSE-ASSETS.md){:target="_blank"}.
