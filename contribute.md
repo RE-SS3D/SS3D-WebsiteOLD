@@ -10,12 +10,12 @@ There are 2 primary ways you can contribute, either by donating to the project, 
 
 # Donation Links
 
-[Patreon](https://www.patreon.com/ss3d){:target="_blank"}
-
-[Subscribestar](https://www.subscribestar.com/space-station-3d){:target="_blank"}
-
-[Paypal](https://www.paypal.me/SpaceStation3D){:target="_blank"}
+[Paypal]({{ site.paypal_url }}){:target="_blank"}
 Or send directly to our email: ress3d.project@gmail.com
+
+[Patreon]({{ site.patreon_url }}){:target="_blank"}
+
+[Subscribestar]({{ site.subscribestar_url }}){:target="_blank"}
 
 Crypto: spacestation3d.crypto (accepts $BCH, $BTC, $ETH, & $LTC) but some wallets don't accept that format so...
 - BCH: qzu0hprd6gxlcpm57usmp77q68tnv9cnwuyx4k8uxu

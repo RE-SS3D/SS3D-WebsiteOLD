@@ -86,7 +86,7 @@ permalink: /art/
 
 {% responsive_image path: assets/img/art/Eiko/EikoPromoGibber.png template: _includes/srcset.html %}
 
-# Goao
+# Goao (John)
 {: class="centred" }
 
 ### [Title 3 - Tin Tin REMIX](https://soundcloud.com/joao-pedro-buratto/tin-tin-title3-mix-7-version-6){:target="_blank"}
