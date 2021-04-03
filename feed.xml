@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://ss3d.space/feed.xml" rel="self" type="application/atom+xml" /><link href="https://ss3d.space/" rel="alternate" type="text/html" /><updated>2021-04-03T08:38:27+00:00</updated><id>https://ss3d.space/feed.xml</id><title type="html">RE:SS3D</title><subtitle>This is a 3D recreation of Space Station 13, on the Unity engine, which will come with its own set of gameplay/graphical improvements. </subtitle><entry><title type="html">21.03: March 2021 Devblog</title><link href="https://ss3d.space/2021/04/01/21.03.html" rel="alternate" type="text/html" title="21.03: March 2021 Devblog" /><published>2021-04-01T11:30:00+00:00</published><updated>2021-04-01T11:30:00+00:00</updated><id>https://ss3d.space/2021/04/01/21.03</id><content type="html" xml:base="https://ss3d.space/2021/04/01/21.03.html">&lt;p&gt;Big plans require big action.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://ss3d.space/feed.xml" rel="self" type="application/atom+xml" /><link href="https://ss3d.space/" rel="alternate" type="text/html" /><updated>2021-04-03T19:25:32+00:00</updated><id>https://ss3d.space/feed.xml</id><title type="html">RE:SS3D</title><subtitle>This is a 3D recreation of Space Station 13, on the Unity engine, which will come with its own set of gameplay/graphical improvements. </subtitle><entry><title type="html">21.03: March 2021 Devblog</title><link href="https://ss3d.space/2021/04/01/21.03.html" rel="alternate" type="text/html" title="21.03: March 2021 Devblog" /><published>2021-04-01T11:30:00+00:00</published><updated>2021-04-01T11:30:00+00:00</updated><id>https://ss3d.space/2021/04/01/21.03</id><content type="html" xml:base="https://ss3d.space/2021/04/01/21.03.html">&lt;p&gt;Big plans require big action.&lt;/p&gt;
 
 &lt;h1 id=&quot;march-recap&quot;&gt;March Recap&lt;/h1&gt;
 
@@ -8,9 +8,9 @@
 
 &lt;p&gt;We saw that now that money is a factor, we could no longer continue developing randomly. We don’t want to throw bounty money at tasks they may end up completely broken if the underlying systems need future rework. To completely avoid future rework, it would be ideal to develop the game linearly, starting with the most core pieces and working up. This, however, is a very slow process and it’s no secret our development has already been quite slow.&lt;/p&gt;
 
-&lt;p&gt;We had a team meeting in discord this week (with the added presence from Jack Trachea from UnityStation) discussing these topics. With the added insight from Jack on UnityStation’s development, we concluded it would be highly beneficial to create a ‘game slice’ or a basic playable round to release as a sort of alpha or demo (we decided to focus on the traitor gamemode first). This would hopefully attract some players, testers, or even developers. And to help achieve this goal in as short of time period as possible, it would be advisable to not include some systems, or in some cases include incomplete systems. But this will likely cause them to need rework later.&lt;/p&gt;
+&lt;p&gt;We had a team meeting in discord this week (with the added presence from Jack Trachea from UnityStation) discussing these topics. With the added insight from Jack on UnityStation’s development, we concluded it would be highly beneficial to create a ‘game slice’ or a basic playable round to release as a sort of alpha or demo (we decided to focus on the traitor gamemode first). This would hopefully attract some new players, testers, or even developers. And to help achieve this goal in as short of time period as possible, it would be advisable to not include some systems, or in some cases include incomplete systems. But this will likely cause them to need rework later.&lt;/p&gt;
 
-&lt;p&gt;So we broke up the milestone into a &lt;a href=&quot;https://github.com/RE-SS3D/SS3D/wiki/Roadmap-to-a-playable-round&quot; target=&quot;_blank&quot;&gt;5-step process&lt;/a&gt; that we believe balances releasing a playable game loop ASAP and reducing needing future rework. Each part of this process also has its own &lt;a href=&quot;https://github.com/RE-SS3D/SS3D/milestones&quot;&gt;milestone page on our github&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;So we broke up the milestone into a &lt;a href=&quot;https://github.com/RE-SS3D/SS3D/wiki/Roadmap-to-a-playable-round&quot; target=&quot;_blank&quot;&gt;5-step process&lt;/a&gt; that we believe balances releasing a playable game loop ASAP and reducing future rework. Each part of this process also has its own &lt;a href=&quot;https://github.com/RE-SS3D/SS3D/milestones&quot;&gt;milestone page on our github&lt;/a&gt;.&lt;/p&gt;
 &lt;ul&gt;
   &lt;li&gt;First and foremost, we need to design our major systems to all be future-proof even if we aren’t implementing them fully yet. The core systems we do need to be fully robust initially are at least interactions, containers, &amp;amp; tilemap. Currently, the tilemap system needs an overhaul due to trouble scaling. Interactions may need some upgrades too.&lt;/li&gt;
   &lt;li&gt;Secondly, we need a few new systems like animation, clothing, &amp;amp; basic health. Health is one of those that we will have a complex design for but our first implementation will be basic. We need some form of health in our demo for playability, but we will plan for its future replacement.&lt;/li&gt;
@@ -23,7 +23,7 @@
 
 &lt;h2 id=&quot;details&quot;&gt;Details&lt;/h2&gt;
 
-&lt;p&gt;&lt;strong&gt;Goao&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Goao (John)&lt;/strong&gt;&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;Added some basic graphic quality settings to the lobby menu, this may help those with slower PCs test our current game.&lt;/li&gt;
@@ -32,7 +32,7 @@
 
 &lt;h2 id=&quot;models&quot;&gt;Models&lt;/h2&gt;
 
-&lt;p&gt;&lt;strong&gt;Cornielus&lt;/strong&gt; still on a roll, contributing some apples, bbq sauce, and a very badass and very large &lt;del&gt;xeno&lt;/del&gt; alien queen!&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Cornelius&lt;/strong&gt; still on a roll, contributing some apples, bbq sauce, and a very badass and very large &lt;del&gt;xeno&lt;/del&gt; alien queen!&lt;/p&gt;
 
 &lt;div class=&quot;horizontal-2&quot;&gt;
 
@@ -49,7 +49,7 @@
 
 &lt;h2 id=&quot;art&quot;&gt;Art&lt;/h2&gt;
 
-&lt;p&gt;&lt;strong&gt;ProbablyNot&lt;/strong&gt; can be credited again with this month’s awesome blog art.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Probably Not&lt;/strong&gt; can be credited again with this month’s awesome blog art.&lt;/p&gt;
 
 &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/art/ProbablyNot/ProbablyNot_Sec.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/ProbablyNot_Sec-580x326.png 580w,    /assets/resized/ProbablyNot_Sec-290x163.png 290w,    /assets/resized/ProbablyNot_Sec-170x96.png 170w,    /assets/resized/ProbablyNot_Sec-145x82.png 145w, /assets/img/art/ProbablyNot/ProbablyNot_Sec.png 3840w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
 
