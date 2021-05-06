@@ -71,6 +71,16 @@ permalink: /art/
 # CosmicCoincidence
 {: class="centred" }
 
+<div class='horizontal-2' markdown='1'>
+{% responsive_image path: assets/img/art/CosmicCoincidence/CosmicGrinderA1.png %}
+{% responsive_image path: assets/img/art/CosmicCoincidence/CosmicGrinderA2.png %}
+</div>
+
+<div class='horizontal-2' markdown='1'>
+{% responsive_image path: assets/img/art/CosmicCoincidence/CosmicGrinderB1.png %}
+{% responsive_image path: assets/img/art/CosmicCoincidence/CosmicGrinderB2.png %}
+</div>
+
 {% responsive_image path: assets/img/art/CosmicCoincidence/SS13.png template: _includes/srcset.html %}
 
 {% responsive_image path: assets/img/art/CosmicCoincidence/CosmicChristmas.png template: _includes/srcset.html %}
