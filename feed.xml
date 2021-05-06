@@ -1,4 +1,106 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://ss3d.space/feed.xml" rel="self" type="application/atom+xml" /><link href="https://ss3d.space/" rel="alternate" type="text/html" /><updated>2021-04-03T19:25:32+00:00</updated><id>https://ss3d.space/feed.xml</id><title type="html">RE:SS3D</title><subtitle>This is a 3D recreation of Space Station 13, on the Unity engine, which will come with its own set of gameplay/graphical improvements. </subtitle><entry><title type="html">21.03: March 2021 Devblog</title><link href="https://ss3d.space/2021/04/01/21.03.html" rel="alternate" type="text/html" title="21.03: March 2021 Devblog" /><published>2021-04-01T11:30:00+00:00</published><updated>2021-04-01T11:30:00+00:00</updated><id>https://ss3d.space/2021/04/01/21.03</id><content type="html" xml:base="https://ss3d.space/2021/04/01/21.03.html">&lt;p&gt;Big plans require big action.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://ss3d.space/feed.xml" rel="self" type="application/atom+xml" /><link href="https://ss3d.space/" rel="alternate" type="text/html" /><updated>2021-05-06T20:59:01+00:00</updated><id>https://ss3d.space/feed.xml</id><title type="html">RE:SS3D</title><subtitle>This is a 3D recreation of Space Station 13, on the Unity engine, which will come with its own set of gameplay/graphical improvements. </subtitle><entry><title type="html">21.04: April 2021 Devblog</title><link href="https://ss3d.space/2021/05/06/21.04.html" rel="alternate" type="text/html" title="21.04: April 2021 Devblog" /><published>2021-05-06T11:30:00+00:00</published><updated>2021-05-06T11:30:00+00:00</updated><id>https://ss3d.space/2021/05/06/21.04</id><content type="html" xml:base="https://ss3d.space/2021/05/06/21.04.html">&lt;p&gt;Surely everything happens for a reason, right?&lt;/p&gt;
+
+&lt;h1 id=&quot;april-recap&quot;&gt;April Recap&lt;/h1&gt;
+
+&lt;p&gt;This month’s technical contributions were uneventful, currently we are in the process still of reworking the core system designs, and then implementing some of those systems, most notably the tilemap system.&lt;/p&gt;
+
+&lt;h2 id=&quot;details&quot;&gt;Details&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;Madasski&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;fixed a bug preventing interactions with light fixtures.&lt;/li&gt;
+  &lt;li&gt;fixed a bug with the examine camera causing inaccurate examinations.&lt;/li&gt;
+  &lt;li&gt;improved the in-game camera controls.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;mjboth&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;added a light and emission materials to the inside of the microwave that turns on when it’s active.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/21.04.01/MicrowaveLights.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/MicrowaveLights-580x435.png 580w,    /assets/resized/MicrowaveLights-290x218.png 290w,    /assets/resized/MicrowaveLights-170x128.png 170w,    /assets/resized/MicrowaveLights-145x109.png 145w, /assets/img/posts/21.04.01/MicrowaveLights.png 800w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;models&quot;&gt;Models&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;Baga&lt;/strong&gt; is back this month, contributing a welder, a cookie man, a set of handcuffs, a set of awesome syringe guns, and finally a collection of PDA cartridges.&lt;/p&gt;
+
+&lt;div class=&quot;horizontal-2&quot;&gt;
+
+  &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/21.04.01/BagaWelder.png&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/BagaWelder-580x435.png 580w,    /assets/resized/BagaWelder-290x218.png 290w,    /assets/resized/BagaWelder-170x128.png 170w,    /assets/resized/BagaWelder-145x109.png 145w, /assets/img/posts/21.04.01/BagaWelder.png 800w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+
+  &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/21.04.01/BagaCookie.png&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/BagaCookie-580x435.png 580w,    /assets/resized/BagaCookie-290x218.png 290w,    /assets/resized/BagaCookie-170x128.png 170w,    /assets/resized/BagaCookie-145x109.png 145w, /assets/img/posts/21.04.01/BagaCookie.png 800w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;horizontal-2&quot;&gt;
+
+  &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/21.04.01/BagaHandcuffs.png&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/BagaHandcuffs-580x435.png 580w,    /assets/resized/BagaHandcuffs-290x218.png 290w,    /assets/resized/BagaHandcuffs-170x128.png 170w,    /assets/resized/BagaHandcuffs-145x109.png 145w, /assets/img/posts/21.04.01/BagaHandcuffs.png 800w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+
+  &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/21.04.01/BagaSyringeGuns.png&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/BagaSyringeGuns-580x435.png 580w,    /assets/resized/BagaSyringeGuns-290x218.png 290w,    /assets/resized/BagaSyringeGuns-170x128.png 170w,    /assets/resized/BagaSyringeGuns-145x109.png 145w, /assets/img/posts/21.04.01/BagaSyringeGuns.png 800w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/21.04.01/BagaCartridges.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/BagaCartridges-580x435.png 580w,    /assets/resized/BagaCartridges-290x218.png 290w,    /assets/resized/BagaCartridges-170x128.png 170w,    /assets/resized/BagaCartridges-145x109.png 145w, /assets/img/posts/21.04.01/BagaCartridges.png 800w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;Basecode&lt;/strong&gt; starting making us a wall-mounted security camera, but someone how managed to combine it with our old IPC, creating a security IPC.&lt;/p&gt;
+
+&lt;div class=&quot;horizontal-2&quot;&gt;
+
+  &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/21.04.01/BasecodeCamera.png&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/BasecodeCamera-580x435.png 580w,    /assets/resized/BasecodeCamera-290x218.png 290w,    /assets/resized/BasecodeCamera-170x128.png 170w,    /assets/resized/BasecodeCamera-145x109.png 145w, /assets/img/posts/21.04.01/BasecodeCamera.png 800w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+
+  &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/21.04.01/BasecodeIPC.png&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/BasecodeIPC-580x435.png 580w,    /assets/resized/BasecodeIPC-290x218.png 290w,    /assets/resized/BasecodeIPC-170x128.png 170w,    /assets/resized/BasecodeIPC-145x109.png 145w, /assets/img/posts/21.04.01/BasecodeIPC.png 800w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;Cornelius&lt;/strong&gt; also made a security camera, as well as a human heart and several new facial hairstyles.&lt;/p&gt;
+
+&lt;div class=&quot;horizontal-2&quot;&gt;
+
+  &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/21.04.01/CorneliusCamera.png&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/CorneliusCamera-580x435.png 580w,    /assets/resized/CorneliusCamera-290x218.png 290w,    /assets/resized/CorneliusCamera-170x128.png 170w,    /assets/resized/CorneliusCamera-145x109.png 145w, /assets/img/posts/21.04.01/CorneliusCamera.png 800w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+
+  &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/21.04.01/CorneliusHeart.png&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/CorneliusHeart-580x435.png 580w,    /assets/resized/CorneliusHeart-290x218.png 290w,    /assets/resized/CorneliusHeart-170x128.png 170w,    /assets/resized/CorneliusHeart-145x109.png 145w, /assets/img/posts/21.04.01/CorneliusHeart.png 800w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/21.04.01/CorneliusHair.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/CorneliusHair-580x435.png 580w,    /assets/resized/CorneliusHair-290x218.png 290w,    /assets/resized/CorneliusHair-170x128.png 170w,    /assets/resized/CorneliusHair-145x109.png 145w, /assets/img/posts/21.04.01/CorneliusHair.png 800w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;CosmicCoincidence&lt;/strong&gt; improved upon an old AI core model and made several colorful face textures to go with it.&lt;/p&gt;
+
+&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/21.04.01/AICores.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/AICores-580x435.png 580w,    /assets/resized/AICores-290x218.png 290w,    /assets/resized/AICores-170x128.png 170w,    /assets/resized/AICores-145x109.png 145w, /assets/img/posts/21.04.01/AICores.png 800w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;textures&quot;&gt;Textures&lt;/h2&gt;
+
+&lt;p&gt;With an ai core to now test on, &lt;strong&gt;Konstantin3001&lt;/strong&gt; created &lt;a href=&quot;/assets/img/posts/21.04.01/shodan_simple.png&quot; target=&quot;_blank&quot;&gt;this simple Shodan face texture&lt;/a&gt; to use on the ai core.&lt;/p&gt;
+
+&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/21.04.01/AIShodan.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/AIShodan-580x435.png 580w,    /assets/resized/AIShodan-290x218.png 290w,    /assets/resized/AIShodan-170x128.png 170w,    /assets/resized/AIShodan-145x109.png 145w, /assets/img/posts/21.04.01/AIShodan.png 800w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+
+&lt;p&gt;When asked if he could produce some toony footprints, he promptly obliged.&lt;/p&gt;
+
+&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/21.04.01/Footprints.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/Footprints-580x435.png 580w,    /assets/resized/Footprints-290x218.png 290w,    /assets/resized/Footprints-170x128.png 170w,    /assets/resized/Footprints-145x109.png 145w, /assets/img/posts/21.04.01/Footprints.png 800w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+
+&lt;p&gt;He also scanned &lt;a href=&quot;/assets/img/posts/21.04.01/ss3d_butt_scan.png&quot; target=&quot;_blank&quot;&gt;this picture of his butt for us…&lt;/a&gt; only kidding, &lt;em&gt;but&lt;/em&gt; seriously this will be the image created when you scan your bare bottom on the photocopier.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;CosmicCoincidence&lt;/strong&gt; contributed models for a playing card and its box, as well as 2 full sets of card textures (one nantotrasen themed, one syndicate themed).&lt;/p&gt;
+
+&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/21.04.01/CosmicCards.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/CosmicCards-580x435.png 580w,    /assets/resized/CosmicCards-290x218.png 290w,    /assets/resized/CosmicCards-170x128.png 170w,    /assets/resized/CosmicCards-145x109.png 145w, /assets/img/posts/21.04.01/CosmicCards.png 800w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;art&quot;&gt;Art&lt;/h2&gt;
+
+&lt;p&gt;This month’s dev blog art is also brought to you by the &lt;strong&gt;CosmicCoincidence&lt;/strong&gt; who couldn’t decide how to finish the piece and thus made a few final variations.&lt;/p&gt;
+
+&lt;div class=&quot;horizontal-2&quot;&gt;
+
+  &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/art/CosmicCoincidence/CosmicGrinderA1.png&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/CosmicGrinderA1-580x326.png 580w,    /assets/resized/CosmicGrinderA1-290x163.png 290w,    /assets/resized/CosmicGrinderA1-170x96.png 170w,    /assets/resized/CosmicGrinderA1-145x82.png 145w, /assets/img/art/CosmicCoincidence/CosmicGrinderA1.png 3840w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+
+  &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/art/CosmicCoincidence/CosmicGrinderA2.png&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/CosmicGrinderA2-580x326.png 580w,    /assets/resized/CosmicGrinderA2-290x163.png 290w,    /assets/resized/CosmicGrinderA2-170x96.png 170w,    /assets/resized/CosmicGrinderA2-145x82.png 145w, /assets/img/art/CosmicCoincidence/CosmicGrinderA2.png 3840w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;horizontal-2&quot;&gt;
+
+  &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/art/CosmicCoincidence/CosmicGrinderB1.png&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/CosmicGrinderB1-580x326.png 580w,    /assets/resized/CosmicGrinderB1-290x163.png 290w,    /assets/resized/CosmicGrinderB1-170x96.png 170w,    /assets/resized/CosmicGrinderB1-145x82.png 145w, /assets/img/art/CosmicCoincidence/CosmicGrinderB1.png 3840w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+
+  &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/art/CosmicCoincidence/CosmicGrinderB2.png&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/CosmicGrinderB2-580x326.png 580w,    /assets/resized/CosmicGrinderB2-290x163.png 290w,    /assets/resized/CosmicGrinderB2-170x96.png 170w,    /assets/resized/CosmicGrinderB2-145x82.png 145w, /assets/img/art/CosmicCoincidence/CosmicGrinderB2.png 3840w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
+
+&lt;p&gt;If your’e new here, come join the discord happening over at our &lt;a href=&quot;https://discord.gg/3ny9tdH&quot; target=&quot;_blank&quot;&gt;Discord&lt;/a&gt;.&lt;/p&gt;</content><author><name></name></author><summary type="html">Surely everything happens for a reason, right?</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://ss3d.space/assets/img/art/CosmicCoincidence/CosmicGrinderB2.png" /></entry><entry><title type="html">21.03: March 2021 Devblog</title><link href="https://ss3d.space/2021/04/01/21.03.html" rel="alternate" type="text/html" title="21.03: March 2021 Devblog" /><published>2021-04-01T11:30:00+00:00</published><updated>2021-04-01T11:30:00+00:00</updated><id>https://ss3d.space/2021/04/01/21.03</id><content type="html" xml:base="https://ss3d.space/2021/04/01/21.03.html">&lt;p&gt;Big plans require big action.&lt;/p&gt;
 
 &lt;h1 id=&quot;march-recap&quot;&gt;March Recap&lt;/h1&gt;
 
@@ -652,240 +754,4 @@ as they’re usable in the game and are &lt;strong&gt;&lt;em&gt;submitted and ap
 
 &lt;h3 id=&quot;notes&quot;&gt;Notes&lt;/h3&gt;
 
-&lt;p&gt;Haven’t joined the party yet? Then come visit us on our &lt;a href=&quot;https://discord.gg/3ny9tdH&quot; target=&quot;_blank&quot;&gt;discord&lt;/a&gt;!&lt;/p&gt;</content><author><name></name></author><summary type="html">As they were meeting, the clown took the pie, licked it; then threw it at the crew, and exclaimed, ‘HONK ye all’!</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://ss3d.space/assets/img/art/Bug/Bug_TheLastBrunch.png" /></entry><entry><title type="html">20.06: June 2020 Devblog</title><link href="https://ss3d.space/2020/07/03/20.06.html" rel="alternate" type="text/html" title="20.06: June 2020 Devblog" /><published>2020-07-03T05:30:00+00:00</published><updated>2020-07-03T05:30:00+00:00</updated><id>https://ss3d.space/2020/07/03/20.06</id><content type="html" xml:base="https://ss3d.space/2020/07/03/20.06.html">&lt;p&gt;&lt;em&gt;The Gods bestoweth upon thee a tool of great power, it is your duty to decide whether you shall use it to build civilizations or destroy them.&lt;/em&gt;&lt;/p&gt;
-
-&lt;h1 id=&quot;june-recap&quot;&gt;June Recap&lt;/h1&gt;
-
-&lt;p&gt;This month seems to have flown by for us at SS3D as we finish paving our foundation and begin building a structure on top. We are excited to show this month’s features so I’m skipping the long summary and let’s get straight to it…&lt;/p&gt;
-
-&lt;h2 id=&quot;fov&quot;&gt;FOV&lt;/h2&gt;
-
-&lt;p&gt;Early in the month &lt;strong&gt;Milly&lt;/strong&gt; added a volumetric shader-based FOV system. Which has customizable variables for color, transparency, radius, &amp;amp; POV which can be useful for different effects like optical meson goggles, x-ray, blindness, etc. After receiving some view obstacles, fixes, and other tweaks from Seteron, it’s looking really great!&lt;/p&gt;
-
-&lt;video controls=&quot;&quot; muted=&quot;&quot; poster=&quot;/assets/img/posts/20.06.01/FOV.png&quot; width=&quot;580px&quot;&gt;
-  &lt;source src=&quot;/assets/img/posts/20.06.01/FOV.webm&quot; type=&quot;video/webm&quot; /&gt;
-  &lt;source src=&quot;/assets/img/posts/20.06.01/FOV.mp4&quot; type=&quot;video/mp4&quot; /&gt;
-&lt;/video&gt;
-
-&lt;video controls=&quot;&quot; muted=&quot;&quot; poster=&quot;/assets/img/posts/20.06.01/FOV_Colors.png&quot; width=&quot;580px&quot;&gt;
-  &lt;source src=&quot;/assets/img/posts/20.06.01/FOV_Colors.webm&quot; type=&quot;video/webm&quot; /&gt;
-  &lt;source src=&quot;/assets/img/posts/20.06.01/FOV_Colors.mp4&quot; type=&quot;video/mp4&quot; /&gt;
-&lt;/video&gt;
-
-&lt;h2 id=&quot;recipes&quot;&gt;Recipes&lt;/h2&gt;
-
-&lt;p&gt;Last month we implemented the microwave and a single simple recipe (microwave a flat dough to make a tortilla) for proof of concept which had some issues. &lt;strong&gt;Alainx277&lt;/strong&gt; fixed the issues so you can make tortillas again. Also, if you have an incorrect recipe the contents will turn to ash.&lt;/p&gt;
-
-&lt;p&gt;This month &lt;strong&gt;Alainx277&lt;/strong&gt; has added another proof of concept recipe, but this one being with reagents. You can now dispense various booze types from the booze dispenser in the kitchen and when mixing 3 parts Vodka with 2 parts Kahlua it will make a Black Russian mixed drink.&lt;/p&gt;
-
-&lt;h2 id=&quot;atmospherics&quot;&gt;Atmospherics&lt;/h2&gt;
-
-&lt;p&gt;Something that we are all excited to see, is that &lt;strong&gt;BroodjeKipcorn&lt;/strong&gt; has revived, refreshed, &amp;amp; implemented our old atmos code! The system uses the Ideal Gas Law (PV=nRT), taking moles, pressure, volume, &amp;amp; temperature into account. Differences in pressure or temperature will equalize over time, different gas types mix together, gas types of different specific heat values, significant changes in pressure will move items across the room (basically wind). Currently, we have 4 gases implemented (Oxygen, Nitrogen, Carbon Dioxide, &amp;amp; Plasma) as proof of concept but they do not yet have unique properties/colors.&lt;/p&gt;
-
-&lt;p&gt;(In the videos below the transparent grey cubes represent the gas on that tile, the taller the greater the pressure on that tile. When there is a change in the atmosphere the tiles turn white to show they are updating but will turn back to transparent grey once they are done equalizing.)&lt;/p&gt;
-
-&lt;video controls=&quot;&quot; muted=&quot;&quot; poster=&quot;/assets/img/posts/20.06.01/Atmos_Pressure.png&quot; width=&quot;580px&quot;&gt;
-  &lt;source src=&quot;/assets/img/posts/20.06.01/Atmos_Pressure.webm&quot; type=&quot;video/webm&quot; /&gt;
-  &lt;source src=&quot;/assets/img/posts/20.06.01/Atmos_Pressure.mp4&quot; type=&quot;video/mp4&quot; /&gt;
-&lt;/video&gt;
-
-&lt;video controls=&quot;&quot; muted=&quot;&quot; poster=&quot;/assets/img/posts/20.06.01/Atmos_Wind.png&quot; width=&quot;580px&quot;&gt;
-  &lt;source src=&quot;/assets/img/posts/20.06.01/Atmos_Wind.webm&quot; type=&quot;video/webm&quot; /&gt;
-  &lt;source src=&quot;/assets/img/posts/20.06.01/Atmos_Wind.mp4&quot; type=&quot;video/mp4&quot; /&gt;
-&lt;/video&gt;
-
-&lt;p&gt;After basic area atmospherics were in &lt;strong&gt;BroodjeKipcorn&lt;/strong&gt; decided to work on the basics for atmos pipes and their machinery as well. Currently implemented pipe machines include, manual valves, pressure pumps, volume pumps, gas mixers, &amp;amp; gas injectors. (Note that the pipes were not yet updated in the video below, hence we many of the connections on them are incorrect.)&lt;/p&gt;
-
-&lt;video controls=&quot;&quot; muted=&quot;&quot; poster=&quot;/assets/img/posts/20.06.01/Atmos_Pipes.png&quot; width=&quot;580px&quot;&gt;
-  &lt;source src=&quot;/assets/img/posts/20.06.01/Atmos_Pipes.webm&quot; type=&quot;video/webm&quot; /&gt;
-  &lt;source src=&quot;/assets/img/posts/20.06.01/Atmos_Pipes.mp4&quot; type=&quot;video/mp4&quot; /&gt;
-&lt;/video&gt;
-
-&lt;p&gt;Finally, &lt;strong&gt;Goao&lt;/strong&gt; added in some atmospheric canisters to the map and some basic functions for them so that the player has a way to play with the atmos system in-game. You can open the valve on a canister to release gas into the environment, or even use the ‘increase pressure’ function to release a lot of gas at once to make some wind.&lt;/p&gt;
-
-&lt;h2 id=&quot;ragdolls&quot;&gt;Ragdolls&lt;/h2&gt;
-
-&lt;p&gt;Another thing &lt;strong&gt;Alainx277&lt;/strong&gt; implemented last month but was not shown due to not working at the time of the blog, was ragdolls. This month he re-added player-item collision, fixing the issues with the ragdolls so you can now slip (or watch your friends slip) on banana peels and soap. Currently, the implementation is not perfect as sometimes it’s difficult to trigger a slip but we have considered other collider methods on how to improve this already.&lt;/p&gt;
-
-&lt;video controls=&quot;&quot; muted=&quot;&quot; poster=&quot;/assets/img/posts/20.06.01/Ragdolls.png&quot; width=&quot;580px&quot;&gt;
-  &lt;source src=&quot;/assets/img/posts/20.06.01/Ragdolls.webm&quot; type=&quot;video/webm&quot; /&gt;
-  &lt;source src=&quot;/assets/img/posts/20.06.01/Ragdolls.mp4&quot; type=&quot;video/mp4&quot; /&gt;
-&lt;/video&gt;
-
-&lt;p&gt;And with the recent atmospherics work where items get pushed around by ‘wind’, &lt;strong&gt;Alainx277&lt;/strong&gt; made the player ragdoll upon hitting such wind as well. The threshold for this can be adjusted or potentially changed based on what gear the player is wearing.&lt;/p&gt;
-
-&lt;video controls=&quot;&quot; muted=&quot;&quot; poster=&quot;/assets/img/posts/20.06.01/Ragdolls_Atmos.png&quot; width=&quot;580px&quot;&gt;
-  &lt;source src=&quot;/assets/img/posts/20.06.01/Ragdolls_Atmos.webm&quot; type=&quot;video/webm&quot; /&gt;
-  &lt;source src=&quot;/assets/img/posts/20.06.01/Ragdolls_Atmos.mp4&quot; type=&quot;video/mp4&quot; /&gt;
-&lt;/video&gt;
-
-&lt;h2 id=&quot;examine&quot;&gt;Examine&lt;/h2&gt;
-
-&lt;p&gt;Also courtesy of &lt;strong&gt;Alainx277&lt;/strong&gt;, the player can now examine their surroundings by holding the ‘Shift’ key to see the name of an object and a description beneath the name (most items don’t have a description yet). This feature also has some kinks to work out still as you cannot examine an object that is within another object’s collider (such as wall fixtures).&lt;/p&gt;
-
-&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/20.06.01/Examine.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/Examine-580x326.png 580w,    /assets/resized/Examine-290x163.png 290w,    /assets/resized/Examine-170x96.png 170w,    /assets/resized/Examine-145x82.png 145w, /assets/img/posts/20.06.01/Examine.png 1280w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-
-&lt;h2 id=&quot;power-cells&quot;&gt;Power Cells&lt;/h2&gt;
-
-&lt;p&gt;&lt;strong&gt;LightVelox&lt;/strong&gt; managed to work on some basic functionality for power cells. They can hold a certain amount of charge, and be placed on the charger to recharge any lost charge. The charge of the power cell is currently displayed as a meter in the hand slot it is held in.&lt;/p&gt;
-
-&lt;h2 id=&quot;tilemap-overhaul&quot;&gt;Tilemap Overhaul&lt;/h2&gt;
-
-&lt;p&gt;Another huge contribution this month by &lt;strong&gt;BroodjeKipcorn&lt;/strong&gt; was an overhaul of our tilemap system. Before, all we had per tile was a turf (floor/wall) and a singular fixture that could be placed (table/light). But we now have a system that supports multiple tile fixtures and reworks the layers so now there is a plenum layer beneath the turf which acts as our base layer upon which other layers are built.&lt;/p&gt;
-
-&lt;p&gt;The plenum layer can support multiple fixture layers including wires, disposal tubes, AND 3 layers of atmospheric pipes.&lt;/p&gt;
-
-&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/20.06.01/Plenum_Fixtures.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/Plenum_Fixtures-580x326.png 580w,    /assets/resized/Plenum_Fixtures-290x163.png 290w,    /assets/resized/Plenum_Fixtures-170x96.png 170w,    /assets/resized/Plenum_Fixtures-145x82.png 145w, /assets/img/posts/20.06.01/Plenum_Fixtures.png 1280w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-
-&lt;p&gt;The turf layer can still either be a floor or a wall, but the 2 types now support different fixture types. Floors can support 3 floor overlay layers, 5 furniture layers, &amp;amp; an above floor atmos pipe layer (yup, that’s right, 4 atmos pipe layers total).&lt;/p&gt;
-
-&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/20.06.01/Floor_Fixtures.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/Floor_Fixtures-580x326.png 580w,    /assets/resized/Floor_Fixtures-290x163.png 290w,    /assets/resized/Floor_Fixtures-170x96.png 170w,    /assets/resized/Floor_Fixtures-145x82.png 145w, /assets/img/posts/20.06.01/Floor_Fixtures.png 1280w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-
-&lt;p&gt;Walls can support a high fixture (lights) AND low fixture (fire alarm, APC, posters, etc) on all 4 sides.&lt;/p&gt;
-
-&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/20.06.01/Wall_Fixtures.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/Wall_Fixtures-580x326.png 580w,    /assets/resized/Wall_Fixtures-290x163.png 290w,    /assets/resized/Wall_Fixtures-170x96.png 170w,    /assets/resized/Wall_Fixtures-145x82.png 145w, /assets/img/posts/20.06.01/Wall_Fixtures.png 1280w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-
-&lt;h2 id=&quot;disposals&quot;&gt;Disposals&lt;/h2&gt;
-
-&lt;p&gt;Basic disposals are now in thanks to &lt;strong&gt;Goao&lt;/strong&gt;. He has updated the model itself a few times and added a script and sound for basic item flushing, though there are many kinks to work out still.&lt;/p&gt;
-
-&lt;video controls=&quot;&quot; muted=&quot;&quot; poster=&quot;/assets/img/posts/20.06.01/Disposals.png&quot; width=&quot;580px&quot;&gt;
-  &lt;source src=&quot;/assets/img/posts/20.06.01/Disposals.webm&quot; type=&quot;video/webm&quot; /&gt;
-  &lt;source src=&quot;/assets/img/posts/20.06.01/Disposals.mp4&quot; type=&quot;video/mp4&quot; /&gt;
-&lt;/video&gt;
-
-&lt;h2 id=&quot;details&quot;&gt;Details&lt;/h2&gt;
-
-&lt;p&gt;&lt;strong&gt;Alainx277&lt;/strong&gt; added the boombox music functionality to the jukebox now as well.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;LightVelox&lt;/strong&gt; added item weights to all items so they might be affected by atmospheric wind differently.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Goao&lt;/strong&gt; added a new skybox and made it rotate very slowly.&lt;/p&gt;
-
-&lt;h2 id=&quot;fixes&quot;&gt;Fixes&lt;/h2&gt;
-
-&lt;p&gt;Throughout this month, &lt;strong&gt;CosmicCoincidence&lt;/strong&gt; went through a lot of the high priority models (mostly ones relating to the tilemap), fixing them and updating them in the project. These include the plenums, pipes, wires, &amp;amp; wall mounts seen in the section above, as well as &lt;strong&gt;Basecode’s&lt;/strong&gt; girders.&lt;/p&gt;
-
-&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/20.06.01/Girders.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/Girders-580x326.png 580w,    /assets/resized/Girders-290x163.png 290w,    /assets/resized/Girders-170x96.png 170w,    /assets/resized/Girders-145x82.png 145w, /assets/img/posts/20.06.01/Girders.png 1280w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-
-&lt;p&gt;&lt;strong&gt;CosmicCoincidence&lt;/strong&gt; also remade the entire map after the tilemap overhaul (the new map features a pseudo electrical circuit and disposal circuit), as well as fixed some orientation issues with the connection scripts, re-exported all connectible objects, and fixed the placement of the cryotube.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Alainx277&lt;/strong&gt; fixed our radial menu shortcuts, improved the atmospheric system performance, repaired our warning messages, fixed interactions not working within airlock colliders and beneath the player, &amp;amp; prevented players from constructing tables/walls on themselves or others.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Seteron&lt;/strong&gt; fixed the FOV view obstacles multiple times this month, and fixed the color of the human skin material.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;BroodjeKipcorn&lt;/strong&gt; allowed tile connections to happen on the plenum layer (so the plenum covers connect appropriately).&lt;/p&gt;
-
-&lt;p&gt;A new contributor this month, &lt;strong&gt;SoyBoi&lt;/strong&gt;, fixed an issue with the player’s hands getting locked up upon picking up items from the janicart.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;LightVelox&lt;/strong&gt; fixed the interaction wheel showing an interaction being selected even before one was selected.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Goao&lt;/strong&gt;  fixed dropped items’ rotations, fixed an issue with the player floating in the air, added missing network transformations to a bunch of objects, fixed door animations on everything that has a swinging door (microwave, fridge, lockers, &amp;amp; crates), and fixed the poster’s texture settings.&lt;/p&gt;
-
-&lt;h2 id=&quot;models&quot;&gt;Models&lt;/h2&gt;
-
-&lt;p&gt;New wires (with many color variants) &amp;amp; high-voltage cables from &lt;strong&gt;CosmicCoincidence&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/20.06.01/Cosmic_Wires.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/Cosmic_Wires-580x326.png 580w,    /assets/resized/Cosmic_Wires-290x163.png 290w,    /assets/resized/Cosmic_Wires-170x96.png 170w,    /assets/resized/Cosmic_Wires-145x82.png 145w, /assets/img/posts/20.06.01/Cosmic_Wires.png 1280w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-
-&lt;p&gt;&lt;strong&gt;Basecode&lt;/strong&gt; made some fresh socks for the player which are a combination of models and textures.&lt;/p&gt;
-
-&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/20.06.01/Basecode_Socks.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/Basecode_Socks-580x435.png 580w,    /assets/resized/Basecode_Socks-290x218.png 290w,    /assets/resized/Basecode_Socks-170x128.png 170w,    /assets/resized/Basecode_Socks-145x109.png 145w, /assets/img/posts/20.06.01/Basecode_Socks.png 800w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-
-&lt;p&gt;A familiar-looking laser assault rifle from &lt;strong&gt;LightVelox&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/20.06.01/LightVelox_LaserAssaultRifle.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/LightVelox_LaserAssaultRifle-580x435.png 580w,    /assets/resized/LightVelox_LaserAssaultRifle-290x218.png 290w,    /assets/resized/LightVelox_LaserAssaultRifle-170x128.png 170w,    /assets/resized/LightVelox_LaserAssaultRifle-145x109.png 145w, /assets/img/posts/20.06.01/LightVelox_LaserAssaultRifle.png 800w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-
-&lt;p&gt;A new autolathe and protolathe courtesy of &lt;strong&gt;Milly&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/20.06.01/Milly_Lathes.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/Milly_Lathes-580x435.png 580w,    /assets/resized/Milly_Lathes-290x218.png 290w,    /assets/resized/Milly_Lathes-170x128.png 170w,    /assets/resized/Milly_Lathes-145x109.png 145w, /assets/img/posts/20.06.01/Milly_Lathes.png 800w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-
-&lt;p&gt;A nice airlock sensor by &lt;strong&gt;Trerri&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/20.06.01/Trerri_AirlockSensor.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/Trerri_AirlockSensor-580x435.png 580w,    /assets/resized/Trerri_AirlockSensor-290x218.png 290w,    /assets/resized/Trerri_AirlockSensor-170x128.png 170w,    /assets/resized/Trerri_AirlockSensor-145x109.png 145w, /assets/img/posts/20.06.01/Trerri_AirlockSensor.png 800w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-
-&lt;p&gt;A new modeler this month, &lt;strong&gt;Baga&lt;/strong&gt; has contributed a great rapid piping device (RPD), industrial welder, 
-warning cone, toilet plungers, a cyborg charging station, and an oddly creative giant coffee bean plant for hydroponics.&lt;/p&gt;
-
-&lt;div class=&quot;horizontal-3&quot;&gt;
-
-  &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/20.06.01/Baga_RPD.png&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/Baga_RPD-580x435.png 580w,    /assets/resized/Baga_RPD-290x218.png 290w,    /assets/resized/Baga_RPD-170x128.png 170w,    /assets/resized/Baga_RPD-145x109.png 145w, /assets/img/posts/20.06.01/Baga_RPD.png 800w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-
-  &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/20.06.01/Baga_IndustrialWelder.png&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/Baga_IndustrialWelder-580x435.png 580w,    /assets/resized/Baga_IndustrialWelder-290x218.png 290w,    /assets/resized/Baga_IndustrialWelder-170x128.png 170w,    /assets/resized/Baga_IndustrialWelder-145x109.png 145w, /assets/img/posts/20.06.01/Baga_IndustrialWelder.png 800w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-
-  &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/20.06.01/Baga_Cone_Plunger.png&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/Baga_Cone_Plunger-580x435.png 580w,    /assets/resized/Baga_Cone_Plunger-290x218.png 290w,    /assets/resized/Baga_Cone_Plunger-170x128.png 170w,    /assets/resized/Baga_Cone_Plunger-145x109.png 145w, /assets/img/posts/20.06.01/Baga_Cone_Plunger.png 800w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;div class=&quot;horizontal-2&quot;&gt;
-
-  &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/20.06.01/Baga_CyborgChargingStation.png&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/Baga_CyborgChargingStation-580x435.png 580w,    /assets/resized/Baga_CyborgChargingStation-290x218.png 290w,    /assets/resized/Baga_CyborgChargingStation-170x128.png 170w,    /assets/resized/Baga_CyborgChargingStation-145x109.png 145w, /assets/img/posts/20.06.01/Baga_CyborgChargingStation.png 800w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-
-  &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/20.06.01/Baga_GiantCoffee.png&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/Baga_GiantCoffee-580x435.png 580w,    /assets/resized/Baga_GiantCoffee-290x218.png 290w,    /assets/resized/Baga_GiantCoffee-170x128.png 170w,    /assets/resized/Baga_GiantCoffee-145x109.png 145w, /assets/img/posts/20.06.01/Baga_GiantCoffee.png 800w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;p&gt;&lt;strong&gt;Comradecheeki&lt;/strong&gt; is back this month with an E-Cig, a display case, mosin nagant rifle and revolver.&lt;/p&gt;
-
-&lt;div class=&quot;horizontal-2&quot;&gt;
-
-  &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/20.06.01/Comrade_ECig.png&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/Comrade_ECig-580x435.png 580w,    /assets/resized/Comrade_ECig-290x218.png 290w,    /assets/resized/Comrade_ECig-170x128.png 170w,    /assets/resized/Comrade_ECig-145x109.png 145w, /assets/img/posts/20.06.01/Comrade_ECig.png 800w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-
-  &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/20.06.01/Comrade_DisplayCase.png&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/Comrade_DisplayCase-580x435.png 580w,    /assets/resized/Comrade_DisplayCase-290x218.png 290w,    /assets/resized/Comrade_DisplayCase-170x128.png 170w,    /assets/resized/Comrade_DisplayCase-145x109.png 145w, /assets/img/posts/20.06.01/Comrade_DisplayCase.png 800w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;div class=&quot;horizontal-2&quot;&gt;
-
-  &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/20.06.01/Comrade_MosinNagant.png&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/Comrade_MosinNagant-580x435.png 580w,    /assets/resized/Comrade_MosinNagant-290x218.png 290w,    /assets/resized/Comrade_MosinNagant-170x128.png 170w,    /assets/resized/Comrade_MosinNagant-145x109.png 145w, /assets/img/posts/20.06.01/Comrade_MosinNagant.png 800w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-
-  &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/20.06.01/Comrade_NagantRevolver.png&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/Comrade_NagantRevolver-580x435.png 580w,    /assets/resized/Comrade_NagantRevolver-290x218.png 290w,    /assets/resized/Comrade_NagantRevolver-170x128.png 170w,    /assets/resized/Comrade_NagantRevolver-145x109.png 145w, /assets/img/posts/20.06.01/Comrade_NagantRevolver.png 800w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;p&gt;From &lt;strong&gt;Kiwav&lt;/strong&gt; this month, a wooden bucket and several deagle variants.&lt;/p&gt;
-
-&lt;div class=&quot;horizontal-2&quot;&gt;
-
-  &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/20.06.01/Kiwav_WoodBucket.png&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/Kiwav_WoodBucket-580x435.png 580w,    /assets/resized/Kiwav_WoodBucket-290x218.png 290w,    /assets/resized/Kiwav_WoodBucket-170x128.png 170w,    /assets/resized/Kiwav_WoodBucket-145x109.png 145w, /assets/img/posts/20.06.01/Kiwav_WoodBucket.png 800w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-
-  &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/20.06.01/Kiwav_Deagles.png&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/Kiwav_Deagles-580x435.png 580w,    /assets/resized/Kiwav_Deagles-290x218.png 290w,    /assets/resized/Kiwav_Deagles-170x128.png 170w,    /assets/resized/Kiwav_Deagles-145x109.png 145w, /assets/img/posts/20.06.01/Kiwav_Deagles.png 800w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;p&gt;And a Gnoll race by &lt;strong&gt;LocalHyena&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;div class=&quot;horizontal-2&quot;&gt;
-
-  &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/20.06.01/LocalHyena_Gnoll.png&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/LocalHyena_Gnoll-580x435.png 580w,    /assets/resized/LocalHyena_Gnoll-290x218.png 290w,    /assets/resized/LocalHyena_Gnoll-170x128.png 170w,    /assets/resized/LocalHyena_Gnoll-145x109.png 145w, /assets/img/posts/20.06.01/LocalHyena_Gnoll.png 800w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-
-  &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/20.06.01/LocalHyena_Gnoll2.png&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/LocalHyena_Gnoll2-580x435.png 580w,    /assets/resized/LocalHyena_Gnoll2-290x218.png 290w,    /assets/resized/LocalHyena_Gnoll2-170x128.png 170w,    /assets/resized/LocalHyena_Gnoll2-145x109.png 145w, /assets/img/posts/20.06.01/LocalHyena_Gnoll2.png 800w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;h2 id=&quot;textures&quot;&gt;Textures&lt;/h2&gt;
-
-&lt;p&gt;These 2 new suspicious posters from &lt;strong&gt;CosmicCoincidence&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;div&gt;
-  &lt;div class=&quot;horizontal-2&quot;&gt;
-
-    &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/art/CosmicCoincidence/SS13.png&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/SS13-580x870.png 580w,    /assets/resized/SS13-290x435.png 290w,    /assets/resized/SS13-170x255.png 170w,    /assets/resized/SS13-145x218.png 145w, /assets/img/art/CosmicCoincidence/SS13.png 600w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-
-    &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/art/CosmicCoincidence/SS14.png&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/SS14-580x870.png 580w,    /assets/resized/SS14-290x435.png 290w,    /assets/resized/SS14-170x255.png 170w,    /assets/resized/SS14-145x218.png 145w, /assets/img/art/CosmicCoincidence/SS14.png 600w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-  &lt;/div&gt;
-  &lt;h5&gt;&lt;i&gt;&quot;This poster seems to be referencing the 13th space station of the corporate fleet, this particular station is infamous for its bad luck.&quot;&lt;/i&gt;&lt;/h5&gt;
-  &lt;h5&gt;&lt;i&gt;&quot;There seems to be 2nd poster as well, a misprint of the first with an obvious typo. I wonder if it could be even worse luck.&quot;&lt;/i&gt;&lt;/h5&gt;
-&lt;/div&gt;
-
-&lt;p&gt;Some new harm type warning symbols from &lt;strong&gt;Konstantin3001&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/20.06.01/Konstantin_HarmTypes.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/Konstantin_HarmTypes-580x435.png 580w,    /assets/resized/Konstantin_HarmTypes-290x218.png 290w,    /assets/resized/Konstantin_HarmTypes-170x128.png 170w,    /assets/resized/Konstantin_HarmTypes-145x109.png 145w, /assets/img/posts/20.06.01/Konstantin_HarmTypes.png 800w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-
-&lt;h2 id=&quot;sfx&quot;&gt;SFX&lt;/h2&gt;
-
-&lt;p&gt;Another new contributor this month, &lt;strong&gt;sKRiBEL&lt;/strong&gt;, submitted a bunch of much-needed sound effects for us most of which are male vocal sounds. These include hiccups, sniffs, coughs, chokes, throat clears, slurps, burps, screams, whistles, farts, and finally a soda can opening. Unfortunately, I don’t have an efficient way of showing these on the site so you will have to wait to hear these once they get implemented in-game.&lt;/p&gt;
-
-&lt;h2 id=&quot;art&quot;&gt;Art&lt;/h2&gt;
-
-&lt;p&gt;Another epic wallpaper by &lt;strong&gt;ProbablyNot&lt;/strong&gt; for this month’s blog cover art.&lt;/p&gt;
-
-&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/art/ProbablyNot/CreationOfGreytide.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/CreationOfGreytide-580x326.png 580w,    /assets/resized/CreationOfGreytide-290x163.png 290w,    /assets/resized/CreationOfGreytide-170x96.png 170w,    /assets/resized/CreationOfGreytide-145x82.png 145w, /assets/img/art/ProbablyNot/CreationOfGreytide.png 1920w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-
-&lt;h3 id=&quot;notes&quot;&gt;Notes&lt;/h3&gt;
-
-&lt;p&gt;Hey you. Are you still not in the &lt;a href=&quot;https://discord.gg/3ny9tdH&quot; target=&quot;_blank&quot;&gt;discord&lt;/a&gt;? If not, come on down and join us in the development process. The developers love to hear ideas from the community, as well as appreciate any feedback.&lt;/p&gt;</content><author><name></name></author><summary type="html">The Gods bestoweth upon thee a tool of great power, it is your duty to decide whether you shall use it to build civilizations or destroy them.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://ss3d.space/assets/img/art/ProbablyNot/CreationOfGreytide.png" /></entry></feed>
+&lt;p&gt;Haven’t joined the party yet? Then come visit us on our &lt;a href=&quot;https://discord.gg/3ny9tdH&quot; target=&quot;_blank&quot;&gt;discord&lt;/a&gt;!&lt;/p&gt;</content><author><name></name></author><summary type="html">As they were meeting, the clown took the pie, licked it; then threw it at the crew, and exclaimed, ‘HONK ye all’!</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://ss3d.space/assets/img/art/Bug/Bug_TheLastBrunch.png" /></entry></feed>
