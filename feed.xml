@@ -1,8 +1,8 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://ss3d.space/feed.xml" rel="self" type="application/atom+xml" /><link href="https://ss3d.space/" rel="alternate" type="text/html" /><updated>2021-05-06T20:59:01+00:00</updated><id>https://ss3d.space/feed.xml</id><title type="html">RE:SS3D</title><subtitle>This is a 3D recreation of Space Station 13, on the Unity engine, which will come with its own set of gameplay/graphical improvements. </subtitle><entry><title type="html">21.04: April 2021 Devblog</title><link href="https://ss3d.space/2021/05/06/21.04.html" rel="alternate" type="text/html" title="21.04: April 2021 Devblog" /><published>2021-05-06T11:30:00+00:00</published><updated>2021-05-06T11:30:00+00:00</updated><id>https://ss3d.space/2021/05/06/21.04</id><content type="html" xml:base="https://ss3d.space/2021/05/06/21.04.html">&lt;p&gt;Surely everything happens for a reason, right?&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://ss3d.space/feed.xml" rel="self" type="application/atom+xml" /><link href="https://ss3d.space/" rel="alternate" type="text/html" /><updated>2021-05-07T00:36:40+00:00</updated><id>https://ss3d.space/feed.xml</id><title type="html">RE:SS3D</title><subtitle>This is a 3D recreation of Space Station 13, on the Unity engine, which will come with its own set of gameplay/graphical improvements. </subtitle><entry><title type="html">21.04: April 2021 Devblog</title><link href="https://ss3d.space/2021/05/06/21.04.html" rel="alternate" type="text/html" title="21.04: April 2021 Devblog" /><published>2021-05-06T11:30:00+00:00</published><updated>2021-05-06T11:30:00+00:00</updated><id>https://ss3d.space/2021/05/06/21.04</id><content type="html" xml:base="https://ss3d.space/2021/05/06/21.04.html">&lt;p&gt;Surely everything happens for a reason, right?&lt;/p&gt;
 
 &lt;h1 id=&quot;april-recap&quot;&gt;April Recap&lt;/h1&gt;
 
-&lt;p&gt;This month’s technical contributions were uneventful, currently we are in the process still of reworking the core system designs, and then implementing some of those systems, most notably the tilemap system.&lt;/p&gt;
+&lt;p&gt;This month’s technical contributions were fairly uneventful, currently we are in the process still of reworking the core system designs, and then implementing some of those systems, most notably the tilemap system.&lt;/p&gt;
 
 &lt;h2 id=&quot;details&quot;&gt;Details&lt;/h2&gt;
 
@@ -22,7 +22,7 @@
 
 &lt;h2 id=&quot;models&quot;&gt;Models&lt;/h2&gt;
 
-&lt;p&gt;&lt;strong&gt;Baga&lt;/strong&gt; is back this month, contributing a welder, a cookie man, a set of handcuffs, a set of awesome syringe guns, and finally a collection of PDA cartridges.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Baga&lt;/strong&gt; is back this month, contributing a welder, a cookie man, some handcuffs, a set of awesome syringe guns, and finally a collection of PDA cartridges.&lt;/p&gt;
 
 &lt;div class=&quot;horizontal-2&quot;&gt;
 
@@ -49,7 +49,7 @@
   &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/21.04.01/BasecodeIPC.png&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/BasecodeIPC-580x435.png 580w,    /assets/resized/BasecodeIPC-290x218.png 290w,    /assets/resized/BasecodeIPC-170x128.png 170w,    /assets/resized/BasecodeIPC-145x109.png 145w, /assets/img/posts/21.04.01/BasecodeIPC.png 800w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
 &lt;/div&gt;
 
-&lt;p&gt;&lt;strong&gt;Cornelius&lt;/strong&gt; also made a security camera, as well as a human heart and several new facial hairstyles.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Cornelius&lt;/strong&gt; also made a security camera, as well as a human heart, and several new facial hairstyles.&lt;/p&gt;
 
 &lt;div class=&quot;horizontal-2&quot;&gt;
 
@@ -60,7 +60,7 @@
 
 &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/21.04.01/CorneliusHair.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/CorneliusHair-580x435.png 580w,    /assets/resized/CorneliusHair-290x218.png 290w,    /assets/resized/CorneliusHair-170x128.png 170w,    /assets/resized/CorneliusHair-145x109.png 145w, /assets/img/posts/21.04.01/CorneliusHair.png 800w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
 
-&lt;p&gt;&lt;strong&gt;CosmicCoincidence&lt;/strong&gt; improved upon an old AI core model and made several colorful face textures to go with it.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;CosmicCoincidence&lt;/strong&gt; improved upon an old ai core model and made several colorful face textures to go with it.&lt;/p&gt;
 
 &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/21.04.01/AICores.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/AICores-580x435.png 580w,    /assets/resized/AICores-290x218.png 290w,    /assets/resized/AICores-170x128.png 170w,    /assets/resized/AICores-145x109.png 145w, /assets/img/posts/21.04.01/AICores.png 800w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
 
@@ -70,7 +70,7 @@
 
 &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/21.04.01/AIShodan.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/AIShodan-580x435.png 580w,    /assets/resized/AIShodan-290x218.png 290w,    /assets/resized/AIShodan-170x128.png 170w,    /assets/resized/AIShodan-145x109.png 145w, /assets/img/posts/21.04.01/AIShodan.png 800w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
 
-&lt;p&gt;When asked if he could produce some toony footprints, he promptly obliged.&lt;/p&gt;
+&lt;p&gt;And when asked if he could produce some toony footprints, he promptly obliged.&lt;/p&gt;
 
 &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/21.04.01/Footprints.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/Footprints-580x435.png 580w,    /assets/resized/Footprints-290x218.png 290w,    /assets/resized/Footprints-170x128.png 170w,    /assets/resized/Footprints-145x109.png 145w, /assets/img/posts/21.04.01/Footprints.png 800w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
 
@@ -82,7 +82,7 @@
 
 &lt;h2 id=&quot;art&quot;&gt;Art&lt;/h2&gt;
 
-&lt;p&gt;This month’s dev blog art is also brought to you by the &lt;strong&gt;CosmicCoincidence&lt;/strong&gt; who couldn’t decide how to finish the piece and thus made a few final variations.&lt;/p&gt;
+&lt;p&gt;This month’s dev blog art is also brought to you by the &lt;strong&gt;CosmicCoincidence&lt;/strong&gt;, who couldn’t decide how to finish his piece and thus made a few final variations.&lt;/p&gt;
 
 &lt;div class=&quot;horizontal-2&quot;&gt;
 
@@ -100,7 +100,7 @@
 
 &lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
 
-&lt;p&gt;If your’e new here, come join the discord happening over at our &lt;a href=&quot;https://discord.gg/3ny9tdH&quot; target=&quot;_blank&quot;&gt;Discord&lt;/a&gt;.&lt;/p&gt;</content><author><name></name></author><summary type="html">Surely everything happens for a reason, right?</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://ss3d.space/assets/img/art/CosmicCoincidence/CosmicGrinderB2.png" /></entry><entry><title type="html">21.03: March 2021 Devblog</title><link href="https://ss3d.space/2021/04/01/21.03.html" rel="alternate" type="text/html" title="21.03: March 2021 Devblog" /><published>2021-04-01T11:30:00+00:00</published><updated>2021-04-01T11:30:00+00:00</updated><id>https://ss3d.space/2021/04/01/21.03</id><content type="html" xml:base="https://ss3d.space/2021/04/01/21.03.html">&lt;p&gt;Big plans require big action.&lt;/p&gt;
+&lt;p&gt;If you’re new here, come join the discord happening over at our &lt;a href=&quot;https://discord.gg/3ny9tdH&quot; target=&quot;_blank&quot;&gt;Discord&lt;/a&gt;.&lt;/p&gt;</content><author><name></name></author><summary type="html">Surely everything happens for a reason, right?</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://ss3d.space/assets/img/art/CosmicCoincidence/CosmicGrinderB2.png" /></entry><entry><title type="html">21.03: March 2021 Devblog</title><link href="https://ss3d.space/2021/04/01/21.03.html" rel="alternate" type="text/html" title="21.03: March 2021 Devblog" /><published>2021-04-01T11:30:00+00:00</published><updated>2021-04-01T11:30:00+00:00</updated><id>https://ss3d.space/2021/04/01/21.03</id><content type="html" xml:base="https://ss3d.space/2021/04/01/21.03.html">&lt;p&gt;Big plans require big action.&lt;/p&gt;
 
 &lt;h1 id=&quot;march-recap&quot;&gt;March Recap&lt;/h1&gt;
 
