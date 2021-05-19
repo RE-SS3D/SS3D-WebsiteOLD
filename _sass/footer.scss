@@ -3,16 +3,45 @@
     ul {
         text-align: center;
     }
-    li {
-        margin-top: 16px;
-        margin-left: 0;
-        @include respond-to(small-screen) {
-            display: inline-block;
-            margin-top: 0;
-            margin-left: 16px;
-            &:first-child {
-                margin-left: 0;
+
+    .social-icons {
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+
+        a {
+            white-space: normal;
+        }
+
+        li {
+            margin-left: 30px;
+            width: 40px;
+            @include respond-to(small-screen) {
+                margin-left: 42px;
+                width: 50px;
             }
         }
     }
+
+    .legal-list {
+        li {
+            margin-top: 16px;
+            margin-left: 0;
+            @include respond-to(small-screen) {
+                display: inline-block;
+                margin-top: 0;
+                margin-left: 16px;
+                &:first-child {
+                    margin-left: 0;
+                }
+            }
+        }
+    }
+}
+
+.social-icon-bg {
+    fill: #dd1d0c;
+}
+.social-icon-inside {
+    fill: var(--color-background);
 }

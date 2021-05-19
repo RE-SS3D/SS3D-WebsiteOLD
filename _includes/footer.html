@@ -1,32 +1,38 @@
 <div class="contact">
-    <ul class="ul-reset">
+    <ul class="ul-reset social-icons">
+        {% for icon in site.data.social-icons %}
         <li>
-            <h3><a href="{{ site.github_organization_url }}" target="_blank">GitHub</a></h3>
+            <a class="social-icon--link {{ icon.class }}" href="{{ icon.url }}">
+                <span class="icon-{{icon.class}}">
+                    {% include {{ icon.class | prepend: 'social-icons/' | append: '.svg' }} %}</span
+                >
+            </a>
         </li>
-        <li>
-            <h3><a href="{{ site.discord_url }}" target="_blank">Discord</a></h3>
-        </li>
-        <li>
-            <h3><a href="{{ site.reddit_url }}" target="_blank">Reddit</a></h3>
-        </li>
-        <li>
-            <h3><a href="{{ site.youtube_url }}" target="_blank">YouTube</a></h3>
-        </li>
-        <li>
-            <h3><a href="{{ site.patreon_url }}" target="_blank">Patreon</a></h3>
-        </li>
-    </ul><br>
-    <ul class="ul-reset">
+
+        {% endfor %}
+    </ul>
+    <br />
+    <ul class="ul-reset legal-list">
         <li>
             <h5><a href="/privacy">Privacy Policy</a></h5>
         </li>
         <li>
-            <h5><a type="application/atom+xml" href="/feed.xml">Atom (RSS)</a></h5>
+            <h5>
+                <a type="application/atom+xml" href="/feed.xml">Atom (RSS)</a>
+            </h5>
         </li>
         <li>
             <h5>
-                <label id="theme-switch" class="theme-switch" for="checkbox_theme">
-                    <input type="checkbox" id="checkbox_theme" style="display:none"><span class="link">Toggle Theme</span>
+                <label
+                    id="theme-switch"
+                    class="theme-switch"
+                    for="checkbox_theme"
+                >
+                    <input
+                        type="checkbox"
+                        id="checkbox_theme"
+                        style="display: none"
+                    /><span class="link">Toggle Theme</span>
                 </label>
             </h5>
         </li>
