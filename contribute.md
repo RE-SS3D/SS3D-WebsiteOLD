@@ -40,7 +40,7 @@ For any other questions, concerns, or unsolicited advice, just ask around on the
 
 ## Coding tasks:
 
-Start by familiarizing yourself with our [code (C#) style guide]({{ site.github_game_url }}/blob/master/Documents/C_SHARP.md){:target="_blank"}, and [github contributing guide]({{ site.github_game_url }}/blob/master/CONTRIBUTING.md){:target="_blank"}.
+Start by familiarizing yourself with our [code (C#) style guide]({{ site.github_game_url }}/blob/master/Documents/C_SHARP.md){:target="_blank"}, and [github contributing guide]({{ site.github_game_url }}/blob/master/Documents/CONTRIBUTING.md){:target="_blank"}.
 
 Feel free to help on any of our three repos as they could all use your help, but since most of you are here to help with the game itself, visit our SS3D [code board]({{ site.github_game_url }}/projects/2){:target="_blank"} for a task (the ones in the available column are ones you can start on).
 
@@ -72,6 +72,6 @@ Art contributions currently are submitted via the art channels on our [discord](
 
 ### Licensing:
 
-**This project and its code** fall under the [**MIT license**]({{ site.github_game_url }}/blob/master/LICENSE-CODE.md){:target="_blank"}.
+**This project and its code** fall under the [**MIT license**]({{ site.github_game_url }}/blob/master/Documents/LICENSE-CODE.md){:target="_blank"}.
 
-**All asset contributions** fall under the [**CC BY-NC-SA 4.0 license**]({{ site.github_game_url }}/blob/master/LICENSE-ASSETS.md){:target="_blank"}.
+**All asset contributions** fall under the [**CC BY-NC-SA 4.0 license**]({{ site.github_game_url }}/blob/master/Documents/LICENSE-ASSETS.md){:target="_blank"}.
