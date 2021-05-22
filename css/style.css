@@ -429,16 +429,32 @@ nav {
   padding: 0 0 20px; }
   .contact ul {
     text-align: center; }
-  .contact li {
+  .contact .social-icons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center; }
+    .contact .social-icons a {
+      white-space: normal; }
+    .contact .social-icons li {
+      margin-left: 30px;
+      width: 40px; }
+      .contact .social-icons li:first-child {
+        margin-left: 0; }
+      @media (min-width: 600px) {
+        .contact .social-icons li {
+          margin-left: 42px;
+          width: 50px; } }
+  .contact .legal-list li {
     margin-top: 16px;
     margin-left: 0; }
     @media (min-width: 600px) {
-      .contact li {
+      .contact .legal-list li {
         display: inline-block;
         margin-top: 0;
-        margin-left: 16px; }
-        .contact li:first-child {
-          margin-left: 0; } }
+        margin-left: 16px; } }
+
+.social-icon-bg {
+  fill: #dd1d0c; }
 
 .youtubeEmbed {
   position: relative;
