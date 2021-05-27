@@ -426,7 +426,7 @@ nav {
   background-image: linear-gradient(to right, #1e4684, #1e4684), linear-gradient(to right, #1e4684, #1e4684), linear-gradient(to right, rgba(84, 28, 23, 0.25), rgba(30, 70, 132, 0)), linear-gradient(to left, rgba(84, 28, 23, 0.25), rgba(30, 70, 132, 0)); }
 
 .contact {
-  padding: 0 0 20px; }
+  padding: 25px 0; }
   .contact ul {
     text-align: center; }
   .contact .social-icons {
