@@ -14,7 +14,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: RE:SS3D
-#email: RESS3D@gmail.com
+#email: RESS3D.project@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   This is a 3D recreation of Space Station 13, on the Unity engine,
   which will come with its own set of gameplay/graphical improvements. 
