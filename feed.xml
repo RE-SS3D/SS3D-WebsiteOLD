@@ -1,4 +1,109 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://ss3d.space/feed.xml" rel="self" type="application/atom+xml" /><link href="https://ss3d.space/" rel="alternate" type="text/html" /><updated>2021-05-27T02:52:48+00:00</updated><id>https://ss3d.space/feed.xml</id><title type="html">RE:SS3D</title><subtitle>This is a 3D recreation of Space Station 13, on the Unity engine, which will come with its own set of gameplay/graphical improvements. </subtitle><entry><title type="html">21.04: April 2021 Devblog</title><link href="https://ss3d.space/2021/05/06/21.04.html" rel="alternate" type="text/html" title="21.04: April 2021 Devblog" /><published>2021-05-06T11:30:00+00:00</published><updated>2021-05-06T11:30:00+00:00</updated><id>https://ss3d.space/2021/05/06/21.04</id><content type="html" xml:base="https://ss3d.space/2021/05/06/21.04.html">&lt;p&gt;Surely everything happens for a reason, right?&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://ss3d.space/feed.xml" rel="self" type="application/atom+xml" /><link href="https://ss3d.space/" rel="alternate" type="text/html" /><updated>2021-06-04T20:09:38+00:00</updated><id>https://ss3d.space/feed.xml</id><title type="html">RE:SS3D</title><subtitle>This is a 3D recreation of Space Station 13, on the Unity engine, which will come with its own set of gameplay/graphical improvements. </subtitle><entry><title type="html">21.05: May 2021 Devblog</title><link href="https://ss3d.space/2021/06/04/21.05.html" rel="alternate" type="text/html" title="21.05: May 2021 Devblog" /><published>2021-06-04T11:30:00+00:00</published><updated>2021-06-04T11:30:00+00:00</updated><id>https://ss3d.space/2021/06/04/21.05</id><content type="html" xml:base="https://ss3d.space/2021/06/04/21.05.html">&lt;p&gt;&lt;em&gt;“What could we accomplish if we knew we could not fail?”&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;– Eleanor Roosevelt&lt;/p&gt;
+
+&lt;h1 id=&quot;may-recap&quot;&gt;May Recap&lt;/h1&gt;
+
+&lt;p&gt;While we are still reworking the tilemap design we made some progress this month with fixing and cleaning the project up. We also made a Twitter account this month so if you are active there, go give &lt;a href=&quot;https://twitter.com/SpaceStation3D&quot; target=&quot;_blank&quot;&gt;us a follow&lt;/a&gt;! Related to that, &lt;strong&gt;viniciusueharaweb&lt;/strong&gt; added some nice vector graphics for our social media links in the footer of this website (see bottom of page).&lt;/p&gt;
+
+&lt;h2 id=&quot;lung-cancer&quot;&gt;Lung Cancer&lt;/h2&gt;
+
+&lt;p&gt;Cigarettes and joints are now consumed when lit, currently lasting just 10 seconds. Even includes an extinguish interaction. Fine-tuning will come later.&lt;/p&gt;
+
+&lt;video controls=&quot;&quot; muted=&quot;&quot; poster=&quot;/assets/img/posts/21.05.01/Smokin.png&quot; width=&quot;580px&quot;&gt;&amp;gt;
+  &lt;source src=&quot;/assets/img/posts/21.05.01/Smokin.webm&quot; type=&quot;video/webm&quot; /&gt;
+  &lt;source src=&quot;/assets/img/posts/21.05.01/Smokin.mp4&quot; type=&quot;video/mp4&quot; /&gt;
+&lt;/video&gt;
+
+&lt;h2 id=&quot;details&quot;&gt;Details&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;LightVelox&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Added a secondary hold point for certain objects, fixing a problem where certain items clipped into the character when held.&lt;/li&gt;
+  &lt;li&gt;Added starting filters for specific container types to prevent certain items in them.&lt;/li&gt;
+  &lt;li&gt;Fixed a bug in the container UI that when you drag the UI the slots of the container move but not the items which caused a glitch.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;CosmicCoincidence&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Renamed many files for consistency and removed so outdated ones.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Eiko&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Added a new Unity gizmo to help visualize the placement and orientation of our hold points on objects.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;mjboth&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Re-encoded our Surgery Console animated texture, fixing the stutter it had.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Seteron&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Reduced the medkit and toolbox animations so they open less and prevent clipping.&lt;/li&gt;
+  &lt;li&gt;Updated UI slot image, preventing the issue of not being able to see which hand is selected.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;BroodjeKipcorn&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Updated the delete function in the tilemap editor so it only deletes the active layer instead of the whole tile.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Ryan&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Updated a few game controls.&lt;/li&gt;
+  &lt;li&gt;Renamed a couple of interaction methods to reduce confusion.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;models&quot;&gt;Models&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;Turkey&lt;/strong&gt; who is a long-time community member but doesn’t often contribute, surprised us with a cute maintenance drone this month.&lt;/p&gt;
+
+&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/21.05.01/TurkeyMaintDrone.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/TurkeyMaintDrone-580x435.png 580w,    /assets/resized/TurkeyMaintDrone-290x218.png 290w,    /assets/resized/TurkeyMaintDrone-170x128.png 170w,    /assets/resized/TurkeyMaintDrone-145x109.png 145w, /assets/img/posts/21.05.01/TurkeyMaintDrone.png 800w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+
+&lt;p&gt;The great &lt;strong&gt;Cornelius&lt;/strong&gt; is back this month with some nostalgic squirt guns and intriguing xeno egg.&lt;/p&gt;
+
+&lt;div class=&quot;horizontal-2&quot;&gt;
+
+  &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/21.05.01/SquirtGuns.png&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/SquirtGuns-580x435.png 580w,    /assets/resized/SquirtGuns-290x218.png 290w,    /assets/resized/SquirtGuns-170x128.png 170w,    /assets/resized/SquirtGuns-145x109.png 145w, /assets/img/posts/21.05.01/SquirtGuns.png 800w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+
+  &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/21.05.01/XenoEgg.png&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/XenoEgg-580x435.png 580w,    /assets/resized/XenoEgg-290x218.png 290w,    /assets/resized/XenoEgg-170x128.png 170w,    /assets/resized/XenoEgg-145x109.png 145w, /assets/img/posts/21.05.01/XenoEgg.png 800w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;Eiko&lt;/strong&gt; is back this month as well with a goofy cardboard cutout and a new set of airlocks, including secure airlocks and a fire-lock.&lt;/p&gt;
+
+&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/21.05.01/CardboardCutout.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/CardboardCutout-580x435.png 580w,    /assets/resized/CardboardCutout-290x218.png 290w,    /assets/resized/CardboardCutout-170x128.png 170w,    /assets/resized/CardboardCutout-145x109.png 145w, /assets/img/posts/21.05.01/CardboardCutout.png 800w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+
+&lt;div class=&quot;horizontal-2&quot;&gt;
+
+  &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/21.05.01/Airlocks.png&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/Airlocks-580x435.png 580w,    /assets/resized/Airlocks-290x218.png 290w,    /assets/resized/Airlocks-170x128.png 170w,    /assets/resized/Airlocks-145x109.png 145w, /assets/img/posts/21.05.01/Airlocks.png 800w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+
+  &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/21.05.01/AirlocksSpecial.png&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/AirlocksSpecial-580x435.png 580w,    /assets/resized/AirlocksSpecial-290x218.png 290w,    /assets/resized/AirlocksSpecial-170x128.png 170w,    /assets/resized/AirlocksSpecial-145x109.png 145w, /assets/img/posts/21.05.01/AirlocksSpecial.png 800w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;textures&quot;&gt;Textures&lt;/h2&gt;
+
+&lt;p&gt;Also from &lt;strong&gt;Eiko&lt;/strong&gt; this month, are these hilarious posters.&lt;/p&gt;
+
+&lt;div class=&quot;horizontal-2&quot;&gt;
+
+  &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/21.05.01/ERPNO.png&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/ERPNO-580x870.png 580w,    /assets/resized/ERPNO-290x435.png 290w,    /assets/resized/ERPNO-170x255.png 170w,    /assets/resized/ERPNO-145x218.png 145w, /assets/img/posts/21.05.01/ERPNO.png 600w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+
+  &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/21.05.01/ERPYES.png&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/ERPYES-580x870.png 580w,    /assets/resized/ERPYES-290x435.png 290w,    /assets/resized/ERPYES-170x255.png 170w,    /assets/resized/ERPYES-145x218.png 145w, /assets/img/posts/21.05.01/ERPYES.png 600w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;art&quot;&gt;Art&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;ProbablyNot&lt;/strong&gt; is back this month with his infamous 3D scenes.&lt;/p&gt;
+
+&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/art/ProbablyNot/ProbablyNot_Janitor.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/ProbablyNot_Janitor-580x326.png 580w,    /assets/resized/ProbablyNot_Janitor-290x163.png 290w,    /assets/resized/ProbablyNot_Janitor-170x96.png 170w,    /assets/resized/ProbablyNot_Janitor-145x82.png 145w, /assets/img/art/ProbablyNot/ProbablyNot_Janitor.png 3840w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
+
+&lt;p&gt;Lastly, although we have a download link for each monthy version at the top of each blog post, and keep a link to the latest version on the homepage, we also added a new &lt;a href=&quot;/download/&quot;&gt;download page&lt;/a&gt; that links to the latest release as well. It’s handier to link to externally and will download the game automatically.&lt;/p&gt;
+
+&lt;p&gt;We’re still over here working so, as always, you know where to find us if you want to follow us closer or come contribute (on &lt;a href=&quot;https://discord.gg/3ny9tdH&quot; target=&quot;_blank&quot;&gt;Discord&lt;/a&gt;).&lt;/p&gt;</content><author><name></name></author><summary type="html">“What could we accomplish if we knew we could not fail?”</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://ss3d.space/assets/img/art/ProbablyNot/ProbablyNot_Janitor.png" /></entry><entry><title type="html">21.04: April 2021 Devblog</title><link href="https://ss3d.space/2021/05/06/21.04.html" rel="alternate" type="text/html" title="21.04: April 2021 Devblog" /><published>2021-05-06T11:30:00+00:00</published><updated>2021-05-06T11:30:00+00:00</updated><id>https://ss3d.space/2021/05/06/21.04</id><content type="html" xml:base="https://ss3d.space/2021/05/06/21.04.html">&lt;p&gt;Surely everything happens for a reason, right?&lt;/p&gt;
 
 &lt;h1 id=&quot;april-recap&quot;&gt;April Recap&lt;/h1&gt;
 
@@ -628,130 +733,4 @@ as they’re usable in the game and are &lt;strong&gt;&lt;em&gt;submitted and ap
 
 &lt;p&gt;While the previous month may have been excruciatingly slow, we are not going anywhere. Here is to a more active September.&lt;/p&gt;
 
-&lt;p&gt;Also join our &lt;a href=&quot;https://discord.gg/3ny9tdH&quot; target=&quot;_blank&quot;&gt;discord&lt;/a&gt; por favor.&lt;/p&gt;</content><author><name></name></author><summary type="html">Since when was a Nanotransen employee able to afford a house?</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://ss3d.space/assets/img/art/Goao/GoaoSpessGothic.png" /></entry><entry><title type="html">20.07: July 2020 Devblog</title><link href="https://ss3d.space/2020/08/05/20.07.html" rel="alternate" type="text/html" title="20.07: July 2020 Devblog" /><published>2020-08-05T05:30:00+00:00</published><updated>2020-08-05T05:30:00+00:00</updated><id>https://ss3d.space/2020/08/05/20.07</id><content type="html" xml:base="https://ss3d.space/2020/08/05/20.07.html">&lt;p&gt;&lt;em&gt;As they were meeting, the clown took the pie, licked it; then threw it at the crew, and exclaimed, ‘HONK ye all’!&lt;/em&gt;&lt;/p&gt;
-
-&lt;h1 id=&quot;july-recap&quot;&gt;July Recap&lt;/h1&gt;
-
-&lt;p&gt;A little slower this month, but we are still here…&lt;/p&gt;
-
-&lt;h2 id=&quot;tilemap-layer-restrictions&quot;&gt;Tilemap Layer Restrictions&lt;/h2&gt;
-
-&lt;p&gt;&lt;strong&gt;BroodjeKipcorn&lt;/strong&gt; spent more time this month working on the tilemap system. It now has a lot more layer restrictions which prevents objects from being placed on the wrong layers, prevents certain wall-mounts on windows, prevents all wall-mounts on girders, and many other smaller restrictions.&lt;/p&gt;
-
-&lt;h2 id=&quot;containers&quot;&gt;Containers&lt;/h2&gt;
-
-&lt;p&gt;&lt;strong&gt;Light Velox&lt;/strong&gt; reworked our container system, by adding sizes, volumes, filters, &amp;amp; traits. Sizes range from tiny to huge, you can only put items in a container of equal or smaller size. Volumes are the maximum volume the container can hold (the sum of the volume of all items inside), so a container will not accept additional items if the max volume is reached (this can be disabled for containers like the bluespace backpack, allowing an infinite max volume for the container). Finally, filters are used in conjunction with traits to restrict what items can be contained in certain containers. The traits (snacks, alcohol, pills, etc) are attached to items, while filters (food, beverages, medication, etc) are attached to containers, and the filters can be used to specifically accept or refuse linked traits.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;CosmicCoincidence&lt;/strong&gt; made mobile containers out of the toolbox, medkit, &amp;amp; cardboard box. The toolbox only accepts tools and the medkit only accepts medications (using the filters &amp;amp; traits mentioned above) for now. These smaller mobile containers are obviously special compared to our other containers as they can be carried and even placed inside larger containers like lockers.&lt;/p&gt;
-
-&lt;h2 id=&quot;material-construction&quot;&gt;Material Construction&lt;/h2&gt;
-
-&lt;p&gt;We now have basic material construction courtesy of &lt;strong&gt;Alainx277&lt;/strong&gt;. For now, the player can use metal sheets to build a wall girder or metal table, use the glass sheets to build a glass table, or use the wood planks to build a wood table.&lt;/p&gt;
-
-&lt;video controls=&quot;&quot; muted=&quot;&quot; poster=&quot;/assets/img/posts/20.07.01/Alain_Construction.png&quot; width=&quot;580px&quot;&gt;
-  &lt;source src=&quot;/assets/img/posts/20.07.01/Alain_Construction.webm&quot; type=&quot;video/webm&quot; /&gt;
-  &lt;source src=&quot;/assets/img/posts/20.07.01/Alain_Construction.mp4&quot; type=&quot;video/mp4&quot; /&gt;
-&lt;/video&gt;
-
-&lt;h2 id=&quot;options-menu&quot;&gt;Options Menu&lt;/h2&gt;
-
-&lt;p&gt;A new options menu added by &lt;strong&gt;Goao&lt;/strong&gt; this month (hit ESC to open/close it). There’s not much on this menu yet, but it does make a better home for our round timer and restart button.&lt;/p&gt;
-
-&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/20.07.01/Goao_Menu.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/Goao_Menu-580x326.png 580w,    /assets/resized/Goao_Menu-290x163.png 290w,    /assets/resized/Goao_Menu-170x96.png 170w,    /assets/resized/Goao_Menu-145x82.png 145w, /assets/img/posts/20.07.01/Goao_Menu.png 1280w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-
-&lt;h2 id=&quot;consumption&quot;&gt;Consumption&lt;/h2&gt;
-
-&lt;p&gt;Also from &lt;strong&gt;Goao&lt;/strong&gt; (and with help from &lt;strong&gt;Alainx277&lt;/strong&gt; bug fixing), we now have a consumption interaction for eating and drinking. You can feed yourself as well as others!&lt;/p&gt;
-
-&lt;video controls=&quot;&quot; poster=&quot;/assets/img/posts/20.07.01/Consumption.png&quot; width=&quot;580px&quot;&gt;
-  &lt;source src=&quot;/assets/img/posts/20.07.01/Consumption.webm&quot; type=&quot;video/webm&quot; /&gt;
-  &lt;source src=&quot;/assets/img/posts/20.07.01/Consumption.mp4&quot; type=&quot;video/mp4&quot; /&gt;
-&lt;/video&gt;
-
-&lt;h2 id=&quot;details&quot;&gt;Details&lt;/h2&gt;
-
-&lt;p&gt;&lt;strong&gt;Seteron:&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;updated the airlocks to use our newer airlock models, and also added animations &amp;amp; lights to them.&lt;/li&gt;
-  &lt;li&gt;improved the appearance of our opaque glass material.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;strong&gt;CosmicCoincidence:&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;added basic floor overlays.&lt;/li&gt;
-  &lt;li&gt;added cigarettes, a lighter, &amp;amp; the cigarette vendor.&lt;/li&gt;
-  &lt;li&gt;added snacks (cup ramen, twinkie, 4no raisins, donk pocket) &amp;amp; the snack vendor.&lt;/li&gt;
-  &lt;li&gt;added many beverages (booze, juice, milk) along with substances for each, &amp;amp; the booze vendor.&lt;/li&gt;
-  &lt;li&gt;added more kitchen utensils (frying pan, spatula, whisk, coffee mugs) &amp;amp; the dinnerware vendor.&lt;/li&gt;
-  &lt;li&gt;added a new table type (poker table), and added table frames for all table types.&lt;/li&gt;
-  &lt;li&gt;added more furniture &amp;amp; wall-mounts (air alarm, emergency lights, SMES, solar panels, sink, mirror, toilet, vent, scrubber).&lt;/li&gt;
-  &lt;li&gt;added some missing (forgotten) wire meshes, now accounting for all orientations.&lt;/li&gt;
-  &lt;li&gt;expanded the map, adding most of the objects mentioned above, a new library, a new bathroom, &amp;amp; a pseudo atmospheric pipe network.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;fixes&quot;&gt;Fixes&lt;/h2&gt;
-
-&lt;p&gt;&lt;strong&gt;Alainx277:&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;fixed a bug allowing the player to build tables on the same tile as the player.&lt;/li&gt;
-  &lt;li&gt;fixed the cell charger not working.&lt;/li&gt;
-  &lt;li&gt;fixed the interaction range to check horizontal &amp;amp; vertical distances separately.&lt;/li&gt;
-  &lt;li&gt;fixed a bug with the ragdolls that prevented the player from standing back up sometimes.&lt;/li&gt;
-  &lt;li&gt;fixed the player’s hand slots by serializing the hash fields on the item filters.&lt;/li&gt;
-  &lt;li&gt;fixed an error with the tilemap adjacency connector which caused tiles not to load sometimes.&lt;/li&gt;
-  &lt;li&gt;fixed a bug with toggleable items inconsistently changing their states after being dropped and then picked back up.&lt;/li&gt;
-  &lt;li&gt;improved FOV performance by using batched raycasts and native mesh functions.&lt;/li&gt;
-  &lt;li&gt;changed sounds to be relative to the camera orientation.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;strong&gt;Seteron:&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;fixed FOV so it is localized to the player.&lt;/li&gt;
-  &lt;li&gt;fixed the walls/windows rigid body settings, reducing tons of unnecessary physics calculations.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;strong&gt;CosmicCoincidence:&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;fixed the examine function not working on wall-mounts, computer consoles, &amp;amp; airlocks.&lt;/li&gt;
-  &lt;li&gt;adjusted object names and IDs on nearly all objects for proper identification.&lt;/li&gt;
-  &lt;li&gt;converted most of the furniture objects to fixture types.&lt;/li&gt;
-  &lt;li&gt;fixed a bug with some of the glass table connections having inverted materials.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;models&quot;&gt;Models&lt;/h2&gt;
-
-&lt;p&gt;A new floor tile item by &lt;strong&gt;CosmicCoincidence&lt;/strong&gt;, which is UV unwrapped in a way to use the floor tile textures we already have.&lt;/p&gt;
-
-&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/20.07.01/Cosmic_Tiles.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/Cosmic_Tiles-580x435.png 580w,    /assets/resized/Cosmic_Tiles-290x218.png 290w,    /assets/resized/Cosmic_Tiles-170x128.png 170w,    /assets/resized/Cosmic_Tiles-145x109.png 145w, /assets/img/posts/20.07.01/Cosmic_Tiles.png 800w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-
-&lt;h2 id=&quot;graphics&quot;&gt;Graphics&lt;/h2&gt;
-
-&lt;p&gt;New this month, &lt;strong&gt;NazarDoe&lt;/strong&gt; added a bunch of missing symbols to our graffiti set, some new warning lines, and a set of amazing runes!&lt;/p&gt;
-
-&lt;div class=&quot;horizontal-3&quot;&gt;
-
-  &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/20.07.01/NazarDoe_Graffiti.png&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/NazarDoe_Graffiti-580x435.png 580w,    /assets/resized/NazarDoe_Graffiti-290x218.png 290w,    /assets/resized/NazarDoe_Graffiti-170x128.png 170w,    /assets/resized/NazarDoe_Graffiti-145x109.png 145w, /assets/img/posts/20.07.01/NazarDoe_Graffiti.png 800w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-
-  &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/20.07.01/NazarDoe_WarningLines.png&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/NazarDoe_WarningLines-580x435.png 580w,    /assets/resized/NazarDoe_WarningLines-290x218.png 290w,    /assets/resized/NazarDoe_WarningLines-170x128.png 170w,    /assets/resized/NazarDoe_WarningLines-145x109.png 145w, /assets/img/posts/20.07.01/NazarDoe_WarningLines.png 800w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-
-  &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/20.07.01/NazarDoe_Runes.png&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/NazarDoe_Runes-580x435.png 580w,    /assets/resized/NazarDoe_Runes-290x218.png 290w,    /assets/resized/NazarDoe_Runes-170x128.png 170w,    /assets/resized/NazarDoe_Runes-145x109.png 145w, /assets/img/posts/20.07.01/NazarDoe_Runes.png 800w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;p&gt;More interaction icons from &lt;strong&gt;Konstantin3001&lt;/strong&gt;, as well as some new thermometers for the UI.&lt;/p&gt;
-
-&lt;div class=&quot;horizontal-2&quot;&gt;
-
-  &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/20.07.01/Konstantin_UI.png&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/Konstantin_UI-580x435.png 580w,    /assets/resized/Konstantin_UI-290x218.png 290w,    /assets/resized/Konstantin_UI-170x128.png 170w,    /assets/resized/Konstantin_UI-145x109.png 145w, /assets/img/posts/20.07.01/Konstantin_UI.png 800w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-
-  &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/20.07.01/Konstantin_Thermometer.png&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/Konstantin_Thermometer-580x435.png 580w,    /assets/resized/Konstantin_Thermometer-290x218.png 290w,    /assets/resized/Konstantin_Thermometer-170x128.png 170w,    /assets/resized/Konstantin_Thermometer-145x109.png 145w, /assets/img/posts/20.07.01/Konstantin_Thermometer.png 800w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;h2 id=&quot;art&quot;&gt;Art&lt;/h2&gt;
-
-&lt;p&gt;‘The Last Brunch’ is the name of this month’s art piece, as &lt;strong&gt;Bug&lt;/strong&gt; decided to continue the theme of recreating classical art with SS3D assets.&lt;/p&gt;
-
-&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/art/Bug/Bug_TheLastBrunch.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/Bug_TheLastBrunch-580x326.png 580w,    /assets/resized/Bug_TheLastBrunch-290x163.png 290w,    /assets/resized/Bug_TheLastBrunch-170x96.png 170w,    /assets/resized/Bug_TheLastBrunch-145x82.png 145w, /assets/img/art/Bug/Bug_TheLastBrunch.png 1920w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-
-&lt;h3 id=&quot;notes&quot;&gt;Notes&lt;/h3&gt;
-
-&lt;p&gt;Haven’t joined the party yet? Then come visit us on our &lt;a href=&quot;https://discord.gg/3ny9tdH&quot; target=&quot;_blank&quot;&gt;discord&lt;/a&gt;!&lt;/p&gt;</content><author><name></name></author><summary type="html">As they were meeting, the clown took the pie, licked it; then threw it at the crew, and exclaimed, ‘HONK ye all’!</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://ss3d.space/assets/img/art/Bug/Bug_TheLastBrunch.png" /></entry></feed>
+&lt;p&gt;Also join our &lt;a href=&quot;https://discord.gg/3ny9tdH&quot; target=&quot;_blank&quot;&gt;discord&lt;/a&gt; por favor.&lt;/p&gt;</content><author><name></name></author><summary type="html">Since when was a Nanotransen employee able to afford a house?</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://ss3d.space/assets/img/art/Goao/GoaoSpessGothic.png" /></entry></feed>
