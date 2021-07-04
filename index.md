@@ -10,7 +10,7 @@ title: Home
     <h5><i>Video credit - Grimmie</i></h5>
 </div>
 
-RE:SS3D is a resurrection of the SS3D project (a 3D remake of SS13), and is being developed in the Unity game engine.
+RE:SS3D is a resurrection of SS3D (a 3D demo of SS13), and is being developed in 'Unity'. It is in pre-alpha still so there isn't much to do yet, but if you want to play-test it, the download link below is for the latest release.
 
 <centred>
     <h6>

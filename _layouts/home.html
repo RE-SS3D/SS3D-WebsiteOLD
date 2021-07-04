@@ -16,6 +16,9 @@ layout: default
         <div class="post-text">
             <h2><a href="{{ site.baseurl}}{{ post.url }}">{{ post.title }}</a></h2>
             <a class="a-reset" href="{{ site.baseurl}}{{ post.url }}"><span class="postDate">{{ post.date | date: "%b %-d, %Y" }}</span></a>
+            {% if post.monthly_release %}
+            <h5><a class="a-reset" href="{{ site.baseurl}}{{ post.url }}">v{{ post.monthly_release }}</a></h5>
+            {% endif %}
             <div class="post-description">
                 <a class="a-reset" href="{{ site.baseurl}}{{ post.url }}"><p>{{ post.description }}</p></a>
             </div>

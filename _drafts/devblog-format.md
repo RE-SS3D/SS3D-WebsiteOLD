@@ -7,7 +7,7 @@ description: |
 image: /assets/img/posts/[insert folder]/Wallpaper.png
 image_credit: Image credit - [insert name]
 post_credit: Written by - [insert name]
-monthly_release: [insert release tag]
+monthly_release: [insert release tag]   // This MUST match the related release tag on GitHub.
 ---
 
 Cute phrase/quote goes here.
@@ -74,10 +74,25 @@ Cute phrase/quote goes here.
 {% responsive_image path: assets/img/posts/[insert folder]/gif1.gif template: _includes/srcset-gif.html %}
 
 // Displaying a video:
+// Removed 'muted' if the video has sound.
+// Remove 'controls' and add 'autoplay' and 'loop' if you want it to loop.
 <video controls muted poster="{{ site.baseurl }}/assets/img/posts/[insert folder]/VideoThumbnail.png">
   <source src="{{ site.baseurl }}/assets/img/posts/[insert folder]/Video.webm" type="video/webm">
   <source src="{{ site.baseurl }}/assets/img/posts/[insert folder]/Video.mp4" type="video/mp4">
 </video>
+
+// Displaying 2 videos horizontally
+<div id="doublevid"> 
+    <video id="vid1" width="285" height="285" poster="{{ site.baseurl }}/assets/img/posts/[insert folder]/VideoThumbnail.png" autoplay loop muted> 
+      <source src="{{ site.baseurl }}/assets/img/posts/[insert folder]/Video.webm" type="video/webm">
+      <source src="{{ site.baseurl }}/assets/img/posts/[insert folder]/Video.mp4" type="video/mp4">
+    </video>
+    <video id="vid2" width="285" height="285" poster="{{ site.baseurl }}/assets/img/posts/[insert folder]/VideoThumbnail.png" autoplay loop muted> 
+      <source src="{{ site.baseurl }}/assets/img/posts/[insert folder]/Video.webm" type="video/webm">
+      <source src="{{ site.baseurl }}/assets/img/posts/[insert folder]/Video.mp4" type="video/mp4">
+    </video>
+    <div class="vidclear"></div> 
+</div>
 
 ## Core-Systems
 
@@ -131,4 +146,4 @@ Cute phrase/quote goes here.
 
 // 'Conclusion' is the final wrap-up and goodbye, and include the discord link, as tradition.
 
-Goodbye summary goes here. [Discord link]({{ site.discord_url }}){:target="_blank"}.
+Goodbye summary goes here, including our discord link. [Discord link]({{ site.discord_url }}){:target="_blank"}.
