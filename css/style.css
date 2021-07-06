@@ -567,6 +567,38 @@ nav {
     .post-row h2 a {
       text-decoration: underline; }
 
+#doublevid {
+  width: 580px;
+  height: auto;
+  margin: 0 auto; }
+
+#vid1 {
+  width: 49%;
+  height: 285px;
+  float: left; }
+
+#vid2 {
+  width: 49%;
+  height: 285px;
+  float: right; }
+
+.vidclear {
+  clear: both; }
+
+@media (max-width: 580px) {
+  #doublevid {
+    width: 100%;
+    height: auto; }
+
+  #vid1 {
+    width: 100%;
+    height: auto;
+    float: none; }
+
+  #vid2 {
+    width: 100%;
+    height: auto;
+    float: none; } }
 .horizontal-3 {
   overflow: hidden;
   white-space: nowrap;

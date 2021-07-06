@@ -1,4 +1,145 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://ss3d.space/feed.xml" rel="self" type="application/atom+xml" /><link href="https://ss3d.space/" rel="alternate" type="text/html" /><updated>2021-06-04T22:14:11+00:00</updated><id>https://ss3d.space/feed.xml</id><title type="html">RE:SS3D</title><subtitle>This is a 3D recreation of Space Station 13, on the Unity engine, which will come with its own set of gameplay/graphical improvements. </subtitle><entry><title type="html">21.05: May 2021 Devblog</title><link href="https://ss3d.space/2021/06/04/21.05.html" rel="alternate" type="text/html" title="21.05: May 2021 Devblog" /><published>2021-06-04T11:30:00+00:00</published><updated>2021-06-04T11:30:00+00:00</updated><id>https://ss3d.space/2021/06/04/21.05</id><content type="html" xml:base="https://ss3d.space/2021/06/04/21.05.html">&lt;p&gt;&lt;em&gt;“What could we accomplish if we knew we could not fail?”&lt;/em&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://ss3d.space/feed.xml" rel="self" type="application/atom+xml" /><link href="https://ss3d.space/" rel="alternate" type="text/html" /><updated>2021-07-06T23:42:32+00:00</updated><id>https://ss3d.space/feed.xml</id><title type="html">RE:SS3D</title><subtitle>This is a 3D recreation of Space Station 13, on the Unity engine, which will come with its own set of gameplay/graphical improvements. </subtitle><entry><title type="html">21.06: June 2021 Devblog</title><link href="https://ss3d.space/2021/07/06/21.06.html" rel="alternate" type="text/html" title="21.06: June 2021 Devblog" /><published>2021-07-06T11:30:00+00:00</published><updated>2021-07-06T11:30:00+00:00</updated><id>https://ss3d.space/2021/07/06/21.06</id><content type="html" xml:base="https://ss3d.space/2021/07/06/21.06.html">&lt;p&gt;&lt;em&gt;“The Devil grows inside the hearts of the selfish and wicked.&lt;br /&gt;
+White, brown, yellow, and black — color is not restricted.&lt;br /&gt;
+You have a self-destructive destiny when you’re inflicted.&lt;br /&gt;
+And you’ll be one of God’s children that fell from the top.&lt;br /&gt;
+There’s no diversity because we’re burnin’ in the melting pot.&lt;br /&gt;
+So when the Devil wants to dance with you, you better say never.&lt;br /&gt;
+Because a dance with the Devil might last you forever…”&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;– Immortal Technique&lt;/p&gt;
+
+&lt;h1 id=&quot;june-recap&quot;&gt;June Recap&lt;/h1&gt;
+
+&lt;p&gt;June brought us several small fixes and quality of life features both within the game and outside of it. We added a new &lt;a href=&quot;https://github.com/RE-SS3D/SS3D/discussions&quot; target=&quot;_blank&quot;&gt;discussions tab on github&lt;/a&gt; which we will begin hosting various community discussions. If you feel inclined you can even start your own discussion, like providing feedback, making a suggestion, or asking the community a question.&lt;/p&gt;
+
+&lt;h2 id=&quot;examine-system-rework&quot;&gt;Examine System Rework&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;Ryan&lt;/strong&gt; reworked the entire examine system, and also added several improvements. One of the new key features is the creation of a modular UI system, making it easier to create custom examine interfaces (see the poster and ID card in the video below). These interfaces can be linked with custom data, like adding a character’s name, age, or even appearance to an ID card interface (currently our ID cards use 3 random identities &lt;strong&gt;Ryan&lt;/strong&gt; made as we do not have custom characters in the game yet).&lt;/p&gt;
+
+&lt;p&gt;The other new key feature is the addition of modular requirements. New requirements can be customized and added easily. An example of a requirement is needing to hold a certain item to display specific examination information. Another example is needing to stand a certain distance from the object (notice in the video below when examining the poster and ID card, the text is only displayed if the player is more than 1.5 tiles away, but within this distance, an image is also shown).&lt;/p&gt;
+
+&lt;p&gt;The system also now allows for examining items that are in containers that display their content (ex. items on the custodial cart or an item in another player’s hand), it also now allows for examining items in a UI (like an item in your pocket or another type of UI).&lt;/p&gt;
+
+&lt;video controls=&quot;&quot; muted=&quot;&quot; poster=&quot;/assets/img/posts/21.06.01/ExamineUI.png&quot; width=&quot;580px&quot;&gt;&amp;gt;
+  &lt;source src=&quot;/assets/img/posts/21.06.01/ExamineUI.webm&quot; type=&quot;video/webm&quot; /&gt;
+  &lt;source src=&quot;/assets/img/posts/21.06.01/ExamineUI.mp4&quot; type=&quot;video/mp4&quot; /&gt;
+&lt;/video&gt;
+
+&lt;p&gt;For the curious, more information on the new examine system can be found in the &lt;a href=&quot;https://drive.google.com/file/d/1xTyRXzi1g7H3SOkw1wkrFFbMcDUA0VEE/view?usp=sharing&quot; target=&quot;_blank&quot;&gt;Examine Design Document&lt;/a&gt; that &lt;strong&gt;Ryan&lt;/strong&gt; included.&lt;/p&gt;
+
+&lt;h2 id=&quot;container-system-expansion&quot;&gt;Container System Expansion&lt;/h2&gt;
+
+&lt;p&gt;We now have 2 new types of technical containers, thanks to &lt;strong&gt;LightVelox&lt;/strong&gt;, ‘hidden’ containers and ‘pile’ containers.&lt;/p&gt;
+
+&lt;p&gt;Hidden containers are containers the player does not directly interact with but may do so indirectly (like the battery inside of some machines or energy weapons, which can be charged indirectly but cannot be removed from the object).&lt;/p&gt;
+
+&lt;p&gt;Pile containers are containers that you can insert/remove items but, unlike regular containers, these have no container UI (like the power cell charger which only accepts 1 battery at a time and you insert or remove the battery by interacting the with charger itself instead of a UI).&lt;/p&gt;
+
+&lt;h2 id=&quot;details&quot;&gt;Details&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;Ryan&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Fixed the broken server ‘disconnect’ button.&lt;/li&gt;
+  &lt;li&gt;Fixed an issue preventing clients from loading a map after disconnecting.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;stilnat&lt;/strong&gt; (new this month)&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Added swapping hands via clicking on the UI.&lt;/li&gt;
+  &lt;li&gt;Added the names of containers to their UI.&lt;/li&gt;
+  &lt;li&gt;Made the clothing UI collapsable via toggle.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;frimannloes&lt;/strong&gt; (new this month)&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Set the desk lamp light to toggle via interaction.&lt;/li&gt;
+  &lt;li&gt;Set flashlight &amp;amp; desk lamp materials to toggle with light toggle (help from &lt;strong&gt;jake34b&lt;/strong&gt;).&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;mjboth&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Fixed a bug allowing containers to store themselves.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Seteron&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Fixed an issue preventing airlocks from being rotated on the map.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;CosmicCoincidence&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Finished renaming &amp;amp; organizing project assets from last month.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;models&quot;&gt;Models&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;Chinwizard&lt;/strong&gt; (new this month) made this great bulldog semi-auto shotgun with various magazine types.&lt;/p&gt;
+
+&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/21.06.01/ChinwizardBulldog.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/ChinwizardBulldog-580x435.png 580w,    /assets/resized/ChinwizardBulldog-290x218.png 290w,    /assets/resized/ChinwizardBulldog-170x128.png 170w,    /assets/resized/ChinwizardBulldog-145x109.png 145w, /assets/img/posts/21.06.01/ChinwizardBulldog.png 800w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;Baga&lt;/strong&gt; is back with an awesome paramedic ambulance and 2 trailers. One trailer is a patient transport bed, the other trailer is a fold-out mobile operation table.&lt;/p&gt;
+
+&lt;div class=&quot;horizontal-2&quot;&gt;
+
+  &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/21.06.01/BagaAmbulance1.png&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/BagaAmbulance1-580x435.png 580w,    /assets/resized/BagaAmbulance1-290x218.png 290w,    /assets/resized/BagaAmbulance1-170x128.png 170w,    /assets/resized/BagaAmbulance1-145x109.png 145w, /assets/img/posts/21.06.01/BagaAmbulance1.png 800w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+
+  &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/21.06.01/BagaAmbulance2.png&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/BagaAmbulance2-580x435.png 580w,    /assets/resized/BagaAmbulance2-290x218.png 290w,    /assets/resized/BagaAmbulance2-170x128.png 170w,    /assets/resized/BagaAmbulance2-145x109.png 145w, /assets/img/posts/21.06.01/BagaAmbulance2.png 800w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;Eiko&lt;/strong&gt; is back again, this time bestowing upon us these fancy connectable carpets.&lt;/p&gt;
+
+&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/21.06.01/EikoCarpet.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/EikoCarpet-580x435.png 580w,    /assets/resized/EikoCarpet-290x218.png 290w,    /assets/resized/EikoCarpet-170x128.png 170w,    /assets/resized/EikoCarpet-145x109.png 145w, /assets/img/posts/21.06.01/EikoCarpet.png 800w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;Nicola&lt;/strong&gt; returned with some more long hairdos.&lt;/p&gt;
+
+&lt;div class=&quot;horizontal-2&quot;&gt;
+
+  &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/21.06.01/NicolaLongHair.png&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/NicolaLongHair-580x435.png 580w,    /assets/resized/NicolaLongHair-290x218.png 290w,    /assets/resized/NicolaLongHair-170x128.png 170w,    /assets/resized/NicolaLongHair-145x109.png 145w, /assets/img/posts/21.06.01/NicolaLongHair.png 800w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+
+  &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/21.06.01/NicolaPonytail.png&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/NicolaPonytail-580x435.png 580w,    /assets/resized/NicolaPonytail-290x218.png 290w,    /assets/resized/NicolaPonytail-170x128.png 170w,    /assets/resized/NicolaPonytail-145x109.png 145w, /assets/img/posts/21.06.01/NicolaPonytail.png 800w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;textures&quot;&gt;Textures&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;Konstantin3001&lt;/strong&gt; never seems to go more than a couple of months without giving us something. This month he is back with these cute little particle textures.&lt;/p&gt;
+
+&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/21.06.01/Particles.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/Particles-580x435.png 580w,    /assets/resized/Particles-290x218.png 290w,    /assets/resized/Particles-170x128.png 170w,    /assets/resized/Particles-145x109.png 145w, /assets/img/posts/21.06.01/Particles.png 800w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+
+&lt;p&gt;New this month, &lt;strong&gt;Jadetea&lt;/strong&gt; made these simple animated textures to use on the PDA.&lt;/p&gt;
+
+&lt;div id=&quot;doublevid&quot;&gt; 
+    &lt;video id=&quot;vid1&quot; width=&quot;285&quot; height=&quot;285&quot; poster=&quot;/assets/img/posts/21.06.01/PDA_Alert.png&quot; autoplay=&quot;&quot; loop=&quot;&quot; muted=&quot;&quot;&gt; 
+      &lt;source src=&quot;/assets/img/posts/21.06.01/PDA_Alert.webm&quot; type=&quot;video/webm&quot; /&gt;
+      &lt;source src=&quot;/assets/img/posts/21.06.01/PDA_Alert.mp4&quot; type=&quot;video/mp4&quot; /&gt;
+    &lt;/video&gt;
+    &lt;video id=&quot;vid2&quot; width=&quot;285&quot; height=&quot;285&quot; poster=&quot;/assets/img/posts/21.06.01/PDA_Flashlight.png&quot; autoplay=&quot;&quot; loop=&quot;&quot; muted=&quot;&quot;&gt; 
+      &lt;source src=&quot;/assets/img/posts/21.06.01/PDA_Flashlight.webm&quot; type=&quot;video/webm&quot; /&gt;
+      &lt;source src=&quot;/assets/img/posts/21.06.01/PDA_Flashlight.mp4&quot; type=&quot;video/mp4&quot; /&gt;
+    &lt;/video&gt;
+    &lt;div class=&quot;vidclear&quot;&gt;&lt;/div&gt; 
+&lt;/div&gt;
+
+&lt;div id=&quot;doublevid&quot;&gt; 
+    &lt;video id=&quot;vid1&quot; width=&quot;285&quot; height=&quot;285&quot; poster=&quot;/assets/img/posts/21.06.01/PDA_Text.png&quot; autoplay=&quot;&quot; loop=&quot;&quot; muted=&quot;&quot;&gt; 
+      &lt;source src=&quot;/assets/img/posts/21.06.01/PDA_Text.webm&quot; type=&quot;video/webm&quot; /&gt;
+      &lt;source src=&quot;/assets/img/posts/21.06.01/PDA_Text.mp4&quot; type=&quot;video/mp4&quot; /&gt;
+    &lt;/video&gt;
+    &lt;video id=&quot;vid2&quot; width=&quot;285&quot; height=&quot;285&quot; poster=&quot;/assets/img/posts/21.06.01/PDA_Mail.png&quot; autoplay=&quot;&quot; loop=&quot;&quot; muted=&quot;&quot;&gt; 
+      &lt;source src=&quot;/assets/img/posts/21.06.01/PDA_Mail.webm&quot; type=&quot;video/webm&quot; /&gt;
+      &lt;source src=&quot;/assets/img/posts/21.06.01/PDA_Mail.mp4&quot; type=&quot;video/mp4&quot; /&gt;
+    &lt;/video&gt;
+    &lt;div class=&quot;vidclear&quot;&gt;&lt;/div&gt; 
+&lt;/div&gt;
+
+&lt;h2 id=&quot;art&quot;&gt;Art&lt;/h2&gt;
+
+&lt;p&gt;It seems &lt;strong&gt;Bug&lt;/strong&gt; crawled back inside during the night to do this month’s blog art.&lt;/p&gt;
+
+&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/art/Bug/BugCult.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/BugCult-580x326.png 580w,    /assets/resized/BugCult-290x163.png 290w,    /assets/resized/BugCult-170x96.png 170w,    /assets/resized/BugCult-145x82.png 145w, /assets/img/art/Bug/BugCult.png 3840w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
+
+&lt;p&gt;If you missed the party invite, just ask the people over at our &lt;a href=&quot;https://discord.gg/3ny9tdH&quot; target=&quot;_blank&quot;&gt;Discord&lt;/a&gt;, they should let you in.&lt;/p&gt;</content><author><name></name></author><summary type="html">“The Devil grows inside the hearts of the selfish and wicked. White, brown, yellow, and black — color is not restricted. You have a self-destructive destiny when you’re inflicted. And you’ll be one of God’s children that fell from the top. There’s no diversity because we’re burnin’ in the melting pot. So when the Devil wants to dance with you, you better say never. Because a dance with the Devil might last you forever…”</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://ss3d.space/assets/img/art/Bug/BugCult.png" /></entry><entry><title type="html">21.05: May 2021 Devblog</title><link href="https://ss3d.space/2021/06/04/21.05.html" rel="alternate" type="text/html" title="21.05: May 2021 Devblog" /><published>2021-06-04T11:30:00+00:00</published><updated>2021-06-04T11:30:00+00:00</updated><id>https://ss3d.space/2021/06/04/21.05</id><content type="html" xml:base="https://ss3d.space/2021/06/04/21.05.html">&lt;p&gt;&lt;em&gt;“What could we accomplish if we knew we could not fail?”&lt;/em&gt;&lt;/p&gt;
 
 &lt;p&gt;– Eleanor Roosevelt&lt;/p&gt;
 
@@ -26,7 +167,7 @@
 
 &lt;p&gt;&lt;strong&gt;CosmicCoincidence&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
-  &lt;li&gt;Renamed many files for consistency and removed so outdated ones.&lt;/li&gt;
+  &lt;li&gt;Renamed many files for consistency and removed some outdated ones.&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;&lt;strong&gt;Eiko&lt;/strong&gt;&lt;/p&gt;
@@ -660,77 +801,4 @@ as they’re usable in the game and are &lt;strong&gt;&lt;em&gt;submitted and ap
 
 &lt;p&gt;.&lt;/p&gt;
 
-&lt;p&gt;Oh yeah we have a &lt;a href=&quot;https://discord.gg/3ny9tdH&quot; target=&quot;_blank&quot;&gt;Discord&lt;/a&gt;, so if you haven’t already, join that.&lt;/p&gt;</content><author><name></name></author><summary type="html">Bastin’ off!</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://ss3d.space/assets/img/art/Goao/GoaoLiftoff.png" /></entry><entry><title type="html">20.08: August 2020 Devblog</title><link href="https://ss3d.space/2020/09/07/20.08.html" rel="alternate" type="text/html" title="20.08: August 2020 Devblog" /><published>2020-09-07T11:31:00+00:00</published><updated>2020-09-07T11:31:00+00:00</updated><id>https://ss3d.space/2020/09/07/20.08</id><content type="html" xml:base="https://ss3d.space/2020/09/07/20.08.html">&lt;p&gt;Since when was a Nanotransen employee able to afford a house?&lt;/p&gt;
-
-&lt;h1 id=&quot;august-recap&quot;&gt;August Recap&lt;/h1&gt;
-
-&lt;p&gt;I promise you that we are still alive… Probably.&lt;/p&gt;
-
-&lt;h2 id=&quot;ui-rework&quot;&gt;UI Rework&lt;/h2&gt;
-
-&lt;p&gt;A UI rework has been much needed for a long time and &lt;strong&gt;Goao&lt;/strong&gt; did just that, making it much prettier than &lt;a href=&quot;/assets/img/posts/20.06.01/Girders.png&quot; target=&quot;_blank&quot;&gt;before&lt;/a&gt;. He also added a new &lt;a href=&quot;/assets/img/posts/20.08.01/Goao_UI2.png&quot; target=&quot;_blank&quot;&gt;intent cycler and targeting doll&lt;/a&gt;. Currently, you can swap between ‘help’ and ‘harm’ intents as well as select a targeting location on the target doll, but it’s just for show for now as they do not have an underlying functionality yet.&lt;/p&gt;
-
-&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/20.08.01/Goao_UI1.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/Goao_UI1-580x326.png 580w,    /assets/resized/Goao_UI1-290x163.png 290w,    /assets/resized/Goao_UI1-170x96.png 170w,    /assets/resized/Goao_UI1-145x82.png 145w, /assets/img/posts/20.08.01/Goao_UI1.png 1280w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-
-&lt;h2 id=&quot;atmospheric-pipe-machinery&quot;&gt;Atmospheric Pipe Machinery&lt;/h2&gt;
-
-&lt;p&gt;In addition to all our previous atmos-related progress, &lt;strong&gt;BroodjeKipcorn&lt;/strong&gt; has expanded on our pipe atmos system and introduced a few more functions (and their related machinery). Before, the atmos system could only handle 1 layer of pipes with the only working machine pieces being valves and pumps. Now, the atmos system can handle ALL 4 of our atmos pipe layers, these layers can be connected together via layer manifolds, as well as new functionality for filters, scrubbers, and ventilators.&lt;/p&gt;
-
-&lt;p&gt;Currently, the scrubbers are default set to ‘scrub’ and only scrub CO2, they can be changed to ‘siphon’ which will suck in all gas types. The vents can be set to either ‘internal’ or ‘external’ which will change the vent’s targetting pressure to either be based upon the internal pressure of the pipe or external pressure (the room), by default it is set to external with a target pressure of 101.3 for standard atmospheric pressure in the station. For now, the interactions for the scrubbers and vents are done right on the part itself as we do not have the air alarms functional yet.&lt;/p&gt;
-
-&lt;div&gt;
-  &lt;video controls=&quot;&quot; muted=&quot;&quot; poster=&quot;/assets/img/posts/20.08.01/BroodjePipeAtmos1.png&quot; width=&quot;580px&quot;&gt;
-    &lt;source src=&quot;/assets/img/posts/20.08.01/BroodjePipeAtmos1.webm&quot; type=&quot;video/webm&quot; /&gt;
-    &lt;source src=&quot;/assets/img/posts/20.08.01/BroodjePipeAtmos1.mp4&quot; type=&quot;video/mp4&quot; /&gt;
-  &lt;/video&gt;
-  &lt;h5&gt;&lt;i&gt;CO2 being scrubbed from a room&lt;/i&gt;&lt;/h5&gt;
-&lt;/div&gt;
-
-&lt;div&gt;
-  &lt;video controls=&quot;&quot; muted=&quot;&quot; poster=&quot;/assets/img/posts/20.08.01/BroodjePipeAtmos2.png&quot; width=&quot;580px&quot;&gt;
-    &lt;source src=&quot;/assets/img/posts/20.08.01/BroodjePipeAtmos2.webm&quot; type=&quot;video/webm&quot; /&gt;
-    &lt;source src=&quot;/assets/img/posts/20.08.01/BroodjePipeAtmos2.mp4&quot; type=&quot;video/mp4&quot; /&gt;
-  &lt;/video&gt;
-  &lt;h5&gt;&lt;i&gt;CO2 moving through a pipe, passing through a 4-way pipe manifold, and splitting into 4 different pipes each on different layers&lt;/i&gt;&lt;/h5&gt;
-&lt;/div&gt;
-
-&lt;h2 id=&quot;fixes&quot;&gt;Fixes&lt;/h2&gt;
-
-&lt;p&gt;&lt;strong&gt;Ryan&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;Fixed the examine function by separating the description and title, allowing for more customization (like using bold words, etc) in the object descriptions.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Fixed an issue where non-hosting clients were unable to examine networked objects.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Fixed a bug where the interaction name was unreadable in the interaction wheel if the wheel is too close to the bottom (the text was below the wheel before, but Ryan allowed it to move to the top when the interaction wheel is low on the screen).&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;icons&quot;&gt;Icons&lt;/h2&gt;
-
-&lt;p&gt;&lt;strong&gt;Konstatin&lt;/strong&gt; made some snazzy icons for the thermometer in extreme temperatures, player intent, and various types of body damages. Check em’ out.&lt;/p&gt;
-
-&lt;div class=&quot;horizontal-2&quot;&gt;
-
-  &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/20.08.01/Konstantin_Thermometers.png&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/Konstantin_Thermometers-580x435.png 580w,    /assets/resized/Konstantin_Thermometers-290x218.png 290w,    /assets/resized/Konstantin_Thermometers-170x128.png 170w,    /assets/resized/Konstantin_Thermometers-145x109.png 145w, /assets/img/posts/20.08.01/Konstantin_Thermometers.png 800w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-
-  &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/20.08.01/Konstantin_Intents.png&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/Konstantin_Intents-580x435.png 580w,    /assets/resized/Konstantin_Intents-290x218.png 290w,    /assets/resized/Konstantin_Intents-170x128.png 170w,    /assets/resized/Konstantin_Intents-145x109.png 145w, /assets/img/posts/20.08.01/Konstantin_Intents.png 800w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/20.08.01/Konstantin_BodyDamage.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/Konstantin_BodyDamage-580x435.png 580w,    /assets/resized/Konstantin_BodyDamage-290x218.png 290w,    /assets/resized/Konstantin_BodyDamage-170x128.png 170w,    /assets/resized/Konstantin_BodyDamage-145x109.png 145w, /assets/img/posts/20.08.01/Konstantin_BodyDamage.png 800w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-
-&lt;h2 id=&quot;updates&quot;&gt;Updates&lt;/h2&gt;
-
-&lt;p&gt;It ain’t a secret that the server has been a little on the quiet side lately, so to remedy this we are going to start hosting events. At the moment we will only be doing movie nights, as well as Jackbox nights. So, if you are up for watching a cool spacey movie or having fun with the developers and other members of the community in a game of &lt;em&gt;Push the Button&lt;/em&gt;, check out &lt;a href=&quot;https://calendar.google.com/calendar/u/2/r?tab=oc&amp;amp;pli=1&quot; target=&quot;_blank&quot;&gt;our google calendar&lt;/a&gt; for the next upcoming event (they will also be posted in our #events channel on our discord).&lt;/p&gt;
-
-&lt;iframe src=&quot;https://calendar.google.com/calendar/embed?src=f7ttpb0t68tst1feejt9k02660%40group.calendar.google.com&amp;amp;ctz=America%2FLos_Angeles&quot; style=&quot;border: 0&quot; width=&quot;580&quot; height=&quot;435&quot; frameborder=&quot;0&quot; scrolling=&quot;no&quot;&gt;&lt;/iframe&gt;
-
-&lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
-
-&lt;p&gt;While the previous month may have been excruciatingly slow, we are not going anywhere. Here is to a more active September.&lt;/p&gt;
-
-&lt;p&gt;Also join our &lt;a href=&quot;https://discord.gg/3ny9tdH&quot; target=&quot;_blank&quot;&gt;discord&lt;/a&gt; por favor.&lt;/p&gt;</content><author><name></name></author><summary type="html">Since when was a Nanotransen employee able to afford a house?</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://ss3d.space/assets/img/art/Goao/GoaoSpessGothic.png" /></entry></feed>
+&lt;p&gt;Oh yeah we have a &lt;a href=&quot;https://discord.gg/3ny9tdH&quot; target=&quot;_blank&quot;&gt;Discord&lt;/a&gt;, so if you haven’t already, join that.&lt;/p&gt;</content><author><name></name></author><summary type="html">Bastin’ off!</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://ss3d.space/assets/img/art/Goao/GoaoLiftoff.png" /></entry></feed>
