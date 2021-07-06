@@ -1,4 +1,6 @@
-# [RE:SS3D Website (https://ss3d.space)](https://ss3d.space)
+# RE:SS3D Website
+
+**Located at [https://ss3d.space](https://ss3d.space)**
 
 Release: [![Build Status](https://travis-ci.org/RE-SS3D/SS3D-Website.svg?branch=release)](https://travis-ci.org/RE-SS3D/SS3D-Website)
 Develop: [![Build Status](https://travis-ci.org/RE-SS3D/SS3D-Website.svg?branch=develop)](https://travis-ci.org/RE-SS3D/SS3D-Website)
@@ -12,7 +14,7 @@ Develop: [![Build Status](https://travis-ci.org/RE-SS3D/SS3D-Website.svg?branch=
 
 ### On Linux
 
-Linux is the easiest as it's what these technologies are designed for. Especially ubuntu:
+Linux is the simplest as it's what these technologies are designed for. Especially ubuntu:
 
     sudo apt install libmagickwand-dev
     gem install jekyll bundler rmagick
