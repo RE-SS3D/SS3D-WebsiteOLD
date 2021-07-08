@@ -13,14 +13,14 @@
             white-space: normal;
         }
         li {
-            margin-left: 30px;
-            width: 40px;
+            margin-left: 25px;
+            width: 30px;
             &:first-child {
                 margin-left: 0;
             }
             @include respond-to(small-screen) {
-                margin-left: 42px;
-                width: 50px;
+                margin-left: 35px;
+                width: 40px;
             }
         }
     }
@@ -39,5 +39,5 @@
 }
 
 .social-icon-bg {
-    fill: #dd1d0c;
+    fill: $color-social-icon;
 }
