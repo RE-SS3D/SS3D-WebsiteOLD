@@ -4,106 +4,12 @@
   --color-link-active: #cf594e;
   --color-text: #dadada;
   --color-text-h5: #666666;
-  --color-button-text: #ffffff;
-  --color-button: #b83d32;
-  --color-button-github: #1074e7;
-  --color-button-github-hover: #0366d6;
-  --color-button-github-active: #005bc4;
-  --color-button-discord: #7289da;
-  --color-button-discord-hover: #677bc4;
-  --color-button-discord-active: #5b6eae;
-  --color-button-reddit: #ff4500;
-  --color-button-reddit-hover: #ff6a33;
-  --color-button-reddit-active: #cc3700;
-  --color-button-hover: #a4362d;
-  --color-button-active: #903027;
   --color-navbar: #1e4684;
   --color-navbar-hover: #111111;
   --color-navbar-scroll-shadow: #541c17;
   --color-navbar-active: #9f90ce;
   --color-navbar-text: #ffffff;
   --color-background: #050608;
-  --color-header: #b14335; }
-
-@media (prefers-color-scheme: light) {
-  :root {
-    --color-link: #dd1d0c;
-    --color-link-hover: #fc4a3e;
-    --color-link-active: #cf594e;
-    --color-text: #2a2a2e;
-    --color-text-h5: #464646;
-    --color-button-text: #ffffff;
-    --color-button: #cf594e;
-    --color-button-github: #1074e7;
-    --color-button-github-hover: #0366d6;
-    --color-button-github-active: #005bc4;
-    --color-button-discord: #7289da;
-    --color-button-discord-hover: #677bc4;
-    --color-button-discord-active: #5b6eae;
-    --color-button-reddit: #ff4500;
-    --color-button-reddit-hover: #ff6a33;
-    --color-button-reddit-active: #cc3700;
-    --color-button-hover: #a4362d;
-    --color-button-active: #903027;
-    --color-navbar: #2c67c2;
-    --color-navbar-hover: #1e4684;
-    --color-navbar-scroll-shadow: #541c17;
-    --color-navbar-active: #d6bbe7;
-    --color-navbar-text: #ffffff;
-    --color-background: #d8d4d8;
-    --color-header: #b14335; } }
-[data-theme="dark"] {
-  --color-link: #b83d32;
-  --color-link-hover: #fd7970;
-  --color-link-active: #cf594e;
-  --color-text: #dadada;
-  --color-text-h5: #666666;
-  --color-button-text: #ffffff;
-  --color-button: #b83d32;
-  --color-button-github: #1074e7;
-  --color-button-github-hover: #0366d6;
-  --color-button-github-active: #005bc4;
-  --color-button-discord: #7289da;
-  --color-button-discord-hover: #677bc4;
-  --color-button-discord-active: #5b6eae;
-  --color-button-reddit: #ff4500;
-  --color-button-reddit-hover: #ff6a33;
-  --color-button-reddit-active: #cc3700;
-  --color-button-hover: #a4362d;
-  --color-button-active: #903027;
-  --color-navbar: #1e4684;
-  --color-navbar-hover: #111111;
-  --color-navbar-scroll-shadow: #541c17;
-  --color-navbar-active: #9f90ce;
-  --color-navbar-text: #ffffff;
-  --color-background: #050608;
-  --color-header: #b14335; }
-
-[data-theme="light"] {
-  --color-link: #dd1d0c;
-  --color-link-hover: #fc4a3e;
-  --color-link-active: #cf594e;
-  --color-text: #2a2a2e;
-  --color-text-h5: #464646;
-  --color-button-text: #ffffff;
-  --color-button: #cf594e;
-  --color-button-github: #1074e7;
-  --color-button-github-hover: #0366d6;
-  --color-button-github-active: #005bc4;
-  --color-button-discord: #7289da;
-  --color-button-discord-hover: #677bc4;
-  --color-button-discord-active: #5b6eae;
-  --color-button-reddit: #ff4500;
-  --color-button-reddit-hover: #ff6a33;
-  --color-button-reddit-active: #cc3700;
-  --color-button-hover: #a4362d;
-  --color-button-active: #903027;
-  --color-navbar: #2c67c2;
-  --color-navbar-hover: #1e4684;
-  --color-navbar-scroll-shadow: #541c17;
-  --color-navbar-active: #d6bbe7;
-  --color-navbar-text: #ffffff;
-  --color-background: #d8d4d8;
   --color-header: #b14335; }
 
 /* Used with @mixin respond-to($name) mixin */
@@ -130,14 +36,10 @@ html {
 body {
   min-height: 100%;
   background-color: #252525;
-  background: linear-gradient(180deg, #71A2E033 0%, #05060833 100%);
+  background: linear-gradient(180deg, #3a537446 0%, #05060883 100%);
   background-repeat: no-repeat;
   background-attachment: fixed;
   position: relative; }
-  @media (prefers-color-scheme: light) {
-    body {
-      background: var(--color-background);
-      background-color: var(--color-background); } }
 
 body::before {
   content: " ";
@@ -154,28 +56,6 @@ body::before {
   min-height: 100vh;
   height: 100%;
   float: left; }
-@media (prefers-color-scheme: light) {
-  body::before {
-    display: none;
-    background: none; }
-  .no-webp body::before {
-    background: none; } }
-
-[data-theme="light"] body {
-  background: var(--color-background);
-  background-color: var(--color-background); }
-[data-theme="light"] body::before {
-  display: none;
-  background: none; }
-[data-theme="light"] .no-webp body::before {
-  background: none; }
-
-[data-theme="dark"] body {
-  background-color: #252525;
-  background: linear-gradient(180deg, #71A2E033 0%, #05060833 100%); }
-[data-theme="dark"] body::before {
-  background: url("/assets/img/stars.png");
-  display: block; }
 
 body, h1, h2, h3, h4, h5, h6 {
   font-size-adjust: 0.58;
@@ -246,6 +126,24 @@ body {
 
 img {
   vertical-align: middle; }
+
+.image-stack {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  position: relative; }
+
+.image-stack_top {
+  grid-column: 4 / -4;
+  grid-row: 1;
+  padding-top: 20%;
+  z-index: 1; }
+
+.image-stack_bottom {
+  grid-column: 1 / span 8;
+  grid-row: 1;
+  -webkit-filter: blur(0.25px) brightness(90%) contrast(90%) saturate(90%);
+  /* Safari 6.0 - 9.0 */
+  filter: blur(0.25px) brightness(90%) contrast(90%) saturate(90%); }
 
 a, .link {
   color: #b83d32;
@@ -375,9 +273,6 @@ nav {
     overflow-y: hidden; }
     nav .ul-container::-webkit-scrollbar {
       display: none; }
-    @media (prefers-color-scheme: light) {
-      nav .ul-container {
-        background-image: linear-gradient(to right, #2c67c2, #2c67c2), linear-gradient(to right, #2c67c2, #2c67c2), linear-gradient(to right, rgba(84, 28, 23, 0.25), rgba(44, 103, 194, 0)), linear-gradient(to left, rgba(84, 28, 23, 0.25), rgba(44, 103, 194, 0)); } }
   nav ul {
     margin: 0 auto;
     white-space: nowrap; }
@@ -419,12 +314,6 @@ nav {
   nav h2 {
     padding: 1em 0 0 0; }
 
-[data-theme="light"] nav .ul-container {
-  background-image: linear-gradient(to right, #2c67c2, #2c67c2), linear-gradient(to right, #2c67c2, #2c67c2), linear-gradient(to right, rgba(84, 28, 23, 0.25), rgba(44, 103, 194, 0)), linear-gradient(to left, rgba(84, 28, 23, 0.25), rgba(44, 103, 194, 0)); }
-
-[data-theme="dark"] nav .ul-container {
-  background-image: linear-gradient(to right, #1e4684, #1e4684), linear-gradient(to right, #1e4684, #1e4684), linear-gradient(to right, rgba(84, 28, 23, 0.25), rgba(30, 70, 132, 0)), linear-gradient(to left, rgba(84, 28, 23, 0.25), rgba(30, 70, 132, 0)); }
-
 .contact {
   padding: 25px 0; }
   .contact ul {
@@ -436,14 +325,14 @@ nav {
     .contact .social-icons a {
       white-space: normal; }
     .contact .social-icons li {
-      margin-left: 30px;
-      width: 40px; }
+      margin-left: 25px;
+      width: 30px; }
       .contact .social-icons li:first-child {
         margin-left: 0; }
       @media (min-width: 600px) {
         .contact .social-icons li {
-          margin-left: 42px;
-          width: 50px; } }
+          margin-left: 35px;
+          width: 40px; } }
   .contact .legal-list li {
     margin-top: 16px;
     margin-left: 0; }
@@ -471,74 +360,6 @@ nav {
   left: 0;
   width: 100%;
   height: 100%; }
-
-.button {
-  display: flex;
-  box-sizing: border-box;
-  background-color: #b83d32;
-  background-color: var(--color-button);
-  padding: 2px 16px;
-  border-radius: 3px;
-  height: 50px;
-  min-height: 50px;
-  width: 100%;
-  align-items: center;
-  justify-content: center;
-  transition: background-color .17s ease,color .17s ease;
-  color: #ffffff;
-  color: var(--color-button-text); }
-  .button:hover {
-    text-decoration: none;
-    color: #ffffff;
-    color: var(--color-button-text);
-    background-color: #a4362d;
-    background-color: var(--color-button-hover); }
-  .button:active {
-    color: #ffffff;
-    color: var(--color-button-text);
-    background-color: #903027;
-    background-color: var(--color-button-active); }
-
-.github-colors {
-  background-color: #1074e7;
-  background-color: var(--color-button-github); }
-  .github-colors:hover {
-    background-color: #0366d6;
-    background-color: var(--color-button-github-hover); }
-  .github-colors:active {
-    background-color: #005bc4;
-    background-color: var(--color-button-github-active); }
-
-.discord-colors {
-  background-color: #7289da;
-  background-color: var(--color-button-discord); }
-  .discord-colors:hover {
-    background-color: #677bc4;
-    background-color: var(--color-button-discord-hover); }
-  .discord-colors:active {
-    background-color: #5b6eae;
-    background-color: var(--color-button-discord-active); }
-
-.reddit-colors {
-  background-color: #ff4500;
-  background-color: var(--color-button-reddit); }
-  .reddit-colors:hover {
-    background-color: #ff6a33;
-    background-color: var(--color-button-reddit-hover); }
-  .reddit-colors:active {
-    background-color: #cc3700;
-    background-color: var(--color-button-reddit-active); }
-
-.horizontal-buttons a {
-  margin-bottom: 1em; }
-@media (min-width: 840px) {
-  .horizontal-buttons p {
-    display: flex;
-    justify-content: space-between; }
-    .horizontal-buttons p a {
-      margin-right: 5px; }
-      .horizontal-buttons p a:last-child {
-        margin-right: 0; } }
 
 .post-content ul.post-list {
   align-self: center;

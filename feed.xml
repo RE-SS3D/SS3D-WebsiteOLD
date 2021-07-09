@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://ss3d.space/feed.xml" rel="self" type="application/atom+xml" /><link href="https://ss3d.space/" rel="alternate" type="text/html" /><updated>2021-07-07T16:13:28+00:00</updated><id>https://ss3d.space/feed.xml</id><title type="html">RE:SS3D</title><subtitle>This is a 3D recreation of Space Station 13, on the Unity engine, which will come with its own set of gameplay/graphical improvements. </subtitle><entry><title type="html">21.06: June 2021 Devblog</title><link href="https://ss3d.space/2021/07/06/21.06.html" rel="alternate" type="text/html" title="21.06: June 2021 Devblog" /><published>2021-07-06T11:30:00+00:00</published><updated>2021-07-06T11:30:00+00:00</updated><id>https://ss3d.space/2021/07/06/21.06</id><content type="html" xml:base="https://ss3d.space/2021/07/06/21.06.html">&lt;p&gt;&lt;em&gt;“The Devil grows inside the hearts of the selfish and wicked.&lt;br /&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://ss3d.space/feed.xml" rel="self" type="application/atom+xml" /><link href="https://ss3d.space/" rel="alternate" type="text/html" /><updated>2021-07-09T03:08:26+00:00</updated><id>https://ss3d.space/feed.xml</id><title type="html">RE:SS3D</title><subtitle>This is a 3D recreation of Space Station 13, on the Unity engine, which will come with its own set of gameplay/graphical improvements. </subtitle><entry><title type="html">21.06: June 2021 Devblog</title><link href="https://ss3d.space/2021/07/06/21.06.html" rel="alternate" type="text/html" title="21.06: June 2021 Devblog" /><published>2021-07-06T11:30:00+00:00</published><updated>2021-07-06T11:30:00+00:00</updated><id>https://ss3d.space/2021/07/06/21.06</id><content type="html" xml:base="https://ss3d.space/2021/07/06/21.06.html">&lt;p&gt;&lt;em&gt;“The Devil grows inside the hearts of the selfish and wicked.&lt;br /&gt;
 White, brown, yellow, and black — color is not restricted.&lt;br /&gt;
 You have a self-destructive destiny when you’re inflicted.&lt;br /&gt;
 And you’ll be one of God’s children that fell from the top.&lt;br /&gt;
@@ -14,19 +14,16 @@ Because a dance with the Devil might last you forever…”&lt;/em&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;examine-system-rework&quot;&gt;Examine System Rework&lt;/h2&gt;
 
-&lt;p&gt;&lt;strong&gt;Ryan&lt;/strong&gt; reworked the entire examine system, and also added several improvements. One of the new key features is the creation of a modular UI system, making it easier to create custom examine interfaces (see the poster and ID card in the video below). These interfaces can be linked with custom data, like adding a character’s name, age, or even appearance to an ID card interface (currently our ID cards use 3 random identities &lt;strong&gt;Ryan&lt;/strong&gt; made as we do not have custom characters in the game yet).&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Ryan&lt;/strong&gt; reworked the entire examine system, and also added several improvements. One of the new key features is the creation of a modular UI system, making it easier to create custom examine interfaces (see the poster and ID card in the video below). These interfaces can be linked with custom data, like adding a character’s name, age, or even appearance to an ID card interface (which was made by &lt;strong&gt;Eiko&lt;/strong&gt; but currently uses 3 random identities as temporary placeholder data until we get custom characters in the game).&lt;/p&gt;
 
 &lt;p&gt;The other new key feature is the addition of modular requirements. New requirements can be customized and added easily. An example of a requirement is needing to hold a certain item to display specific examination information. Another example is needing to stand a certain distance from the object (notice in the video below when examining the poster and ID card, the text is only displayed if the player is more than 1.5 tiles away, but within this distance, an image is also shown).&lt;/p&gt;
 
 &lt;p&gt;The system also now allows for examining items that are in containers that display their content (ex. items on the custodial cart or an item in another player’s hand), it also now allows for examining items in a UI (like an item in your pocket or another type of UI).&lt;/p&gt;
 
-&lt;div&gt;
-  &lt;video controls=&quot;&quot; muted=&quot;&quot; poster=&quot;/assets/img/posts/21.06.01/ExamineUI.png&quot; width=&quot;580px&quot;&gt;&amp;gt;
-    &lt;source src=&quot;/assets/img/posts/21.06.01/ExamineUI.webm&quot; type=&quot;video/webm&quot; /&gt;
-    &lt;source src=&quot;/assets/img/posts/21.06.01/ExamineUI.mp4&quot; type=&quot;video/mp4&quot; /&gt;
-  &lt;/video&gt;
-  &lt;h5&gt;&lt;i&gt;The ID Card's UI art was created by **Eiko**&lt;/i&gt;&lt;/h5&gt;
-&lt;/div&gt;
+&lt;video controls=&quot;&quot; muted=&quot;&quot; poster=&quot;/assets/img/posts/21.06.01/ExamineUI.png&quot; width=&quot;580px&quot;&gt;&amp;gt;
+  &lt;source src=&quot;/assets/img/posts/21.06.01/ExamineUI.webm&quot; type=&quot;video/webm&quot; /&gt;
+  &lt;source src=&quot;/assets/img/posts/21.06.01/ExamineUI.mp4&quot; type=&quot;video/mp4&quot; /&gt;
+&lt;/video&gt;
 
 &lt;p&gt;For the curious, more information on the new examine system can be found in the &lt;a href=&quot;https://drive.google.com/file/d/1xTyRXzi1g7H3SOkw1wkrFFbMcDUA0VEE/view?usp=sharing&quot; target=&quot;_blank&quot;&gt;Examine Design Document&lt;/a&gt; that &lt;strong&gt;Ryan&lt;/strong&gt; included.&lt;/p&gt;
 
