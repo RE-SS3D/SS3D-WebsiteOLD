@@ -34,13 +34,13 @@ The game likely won't be to the playable state SS13 has for a couple years.
 
 ## What engine does it use?
 
-The game is made with Unity, with Mirror for networking. For legal reasons, we don't use assets from the Unity Asset Store, but open-source assets are fine.
+The game is being built in Unity, and uses Mirror for networking. For legal reasons, we don't use assets from the Unity Asset Store, but open-source assets are fine.
 
 ## What license is the project distributed under?
 
-All code assets use the [**MIT license**]({{ site.github_game_url }}/blob/master/LICENSE-CODE.md){:target="_blank"}, only requiring attribution when used.
+All code assets use the [**MIT license**]({{ site.github_game_url }}/blob/master/Documents/LICENSE-CODE.md){:target="_blank"}, only requiring attribution when used.
 
-All art assets use the [**CC BY-NC-SA 4.0 license**]({{ site.github_game_url }}/blob/master/LICENCE-ASSETS.md){:target="_blank"}, requiring attribution, same license, and only for non-commercial uses. Keep in mind that contributions are NOT retractable. Once submitted, the project has the license to use your contribution indefinitely.
+All art assets use the [**CC BY-NC-SA 4.0 license**]({{ site.github_game_url }}/blob/master/Documents/LICENCE-ASSETS.md){:target="_blank"}, requiring attribution, same license, and only for non-commercial uses. Keep in mind that contributions are NOT retractable. Once submitted, the project has the license to use your contribution indefinitely.
 
 ## Will there be "X" feature?
 
