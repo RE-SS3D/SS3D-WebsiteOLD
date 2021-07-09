@@ -1,6 +1,9 @@
-# [RE:SS3D Website (https://ss3d.space)](https://ss3d.space)
-Release: [![Build Status](https://travis-ci.org/RE-SS3D/SS3D-Website.svg?branch=release)](https://travis-ci.org/RE-SS3D/SS3D-Website)
-Develop: [![Build Status](https://travis-ci.org/RE-SS3D/SS3D-Website.svg?branch=develop)](https://travis-ci.org/RE-SS3D/SS3D-Website)
+# RE:SS3D Website
+
+**Located at [https://ss3d.space](https://ss3d.space)**
+
+Release: [![Build Status](https://travis-ci.com/RE-SS3D/SS3D-Website.svg?branch=release)](https://travis-ci.com/RE-SS3D/SS3D-Website)
+Develop: [![Build Status](https://travis-ci.com/RE-SS3D/SS3D-Website.svg?branch=develop)](https://travis-ci.com/RE-SS3D/SS3D-Website)
 
 ## Requirements
 
