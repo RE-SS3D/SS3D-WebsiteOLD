@@ -83,26 +83,6 @@ img {
     vertical-align: middle;
 }
 
-.image-stack {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    position: relative;
-}
-
-.image-stack_top {
-    grid-column: 4 / -4;
-    grid-row: 1; // make this image be on the same row
-    padding-top: 20%; // this pushes the image down, and keeps it proportional as it resizes
-    z-index: 1; // make this image render on top of the bottom
-}
-
-.image-stack_bottom {
-    grid-column: 1 / span 8;
-    grid-row: 1; // must be on the same row as the other image
-    -webkit-filter: blur(.25px) brightness(90%) contrast(90%) saturate(90%); /* Safari 6.0 - 9.0 */
-    filter: blur(.25px) brightness(90%) contrast(90%) saturate(90%);
-}
-
 // Links are coloured appropriately, so they don't look terrible
 a, .link {
     color: $color-link; // CSS3 variable fallback
