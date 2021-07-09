@@ -39,20 +39,6 @@ nav {
         linear-gradient(to right, rgba($color-navbar-scroll-shadow, 0.25), rgba($color-navbar, 0)),
         linear-gradient(to left, rgba($color-navbar-scroll-shadow, 0.25), rgba($color-navbar, 0));
         
-        @media (prefers-color-scheme: light) {
-            background-image :/* Shadows */
-            linear-gradient(to right, $color-navbar-light, $color-navbar-light),
-            linear-gradient(to right, $color-navbar-light, $color-navbar-light),
-            /* Shadow covers */
-            linear-gradient(to right, rgba($color-navbar-scroll-shadow, 0.25), rgba($color-navbar-light, 0)),
-            linear-gradient(to left, rgba($color-navbar-scroll-shadow, 0.25), rgba($color-navbar-light, 0));
-        }
-        //background-image :/* Shadows */
-        //linear-gradient(to right, var(--color-navbar), var(--color-navbar)),
-        //linear-gradient(to right, var(--color-navbar), var(--color-navbar)),
-        ///* Shadow covers */
-        //linear-gradient(to right, rgba(var(--color-navbar-scroll-shadow), 0.25), rgba(var(--color-navbar), 0)),
-        //linear-gradient(to left, rgba(var(--color-navbar-scroll-shadow), 0.25), rgba(var(--color-navbar), 0));
         background-position: left center,
         right center,
         left center,
@@ -118,26 +104,5 @@ nav {
     }
     h2 {
         padding: $pad 0 0 0;
-    }
-}
-
-[data-theme="light"]{
-    nav .ul-container {
-        background-image :/* Shadows */
-        linear-gradient(to right, $color-navbar-light, $color-navbar-light),
-        linear-gradient(to right, $color-navbar-light, $color-navbar-light),
-        /* Shadow covers */
-        linear-gradient(to right, rgba($color-navbar-scroll-shadow, 0.25), rgba($color-navbar-light, 0)),
-        linear-gradient(to left, rgba($color-navbar-scroll-shadow, 0.25), rgba($color-navbar-light, 0));
-    }
-}
-[data-theme="dark"]{
-    nav .ul-container {
-        background-image :/* Shadows */
-        linear-gradient(to right, $color-navbar, $color-navbar),
-        linear-gradient(to right, $color-navbar, $color-navbar),
-        /* Shadow covers */
-        linear-gradient(to right, rgba($color-navbar-scroll-shadow, 0.25), rgba($color-navbar, 0)),
-        linear-gradient(to left, rgba($color-navbar-scroll-shadow, 0.25), rgba($color-navbar, 0));
     }
 }
