@@ -23,11 +23,11 @@ Crypto: spacestation3d.crypto (accepts $BCH, $BTC, $ETH, & $LTC). But some walle
 
 If you're a programmer, 2D artist, 3D modeler, musician, programmer, animator, soundcloud rapper, or *especially* a programmer, we need you!
 
-**To start on any of these, read the appropriate sections below which contains links to guides and task boards for those contribution types. Once you have a task in mind, contact a council member on our [discord]({{ site.discord_url }}){:target="_blank"}.**
+**To start on any of these, read the appropriate sections below which contains links to guides and task boards for those contribution types. Once you have a task in mind, contact a council member on our [Discord]({{ site.discord_url }}){:target="_blank"}.**
 
-The game itself is being developed in the Unity game engine. You can find what version of Unity we use and instructions on setting up our project on our [github contributing guide]({{ site.github_game_url }}/blob/master/Documents/CONTRIBUTING.md#setting-up--running-the-project){:target="_blank"}.
+The game itself is being developed in the Unity game engine. You can find what version of Unity we use and instructions on setting up our project on our [GitHub contributing guide]({{ site.github_game_url }}/blob/master/Documents/CONTRIBUTING.md#setting-up--running-the-project){:target="_blank"}.
 
-Our [github organization]({{ site.github_organization_url }}){:target="_blank"} has 3 repositories.
+Our [GitHub organization]({{ site.github_organization_url }}){:target="_blank"} has 3 repositories.
 - [SS3D]({{ site.github_game_url }}){:target="_blank"} - the game itself, and some documents.
 - [Website]({{ site.github_website_url }}){:target="_blank"} - our (this) website.
 - [CentCom]({{ site.github_server_url }}){:target="_blank"} - central communications server, which manages user registration, authentication, and character storage, similar to what Byond is to SS13.
@@ -64,7 +64,7 @@ We currently do not have any guides for SFX, but if you want to scream like a ps
 
 Technical contributions are submitted to [our main (SS3D) repo via pull request]({{ site.github_game_url }}/pulls){:target="_blank"}.
 
-Art contributions currently are submitted via the art channels on our [discord]({{ site.discord_url }}){:target="_blank"}.
+Art contributions currently are submitted via the art channels on our [Discord]({{ site.discord_url }}){:target="_blank"}.
 
 ### Licensing:
 
