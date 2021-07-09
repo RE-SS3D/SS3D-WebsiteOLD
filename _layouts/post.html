@@ -5,12 +5,14 @@ layout: default
   <div class="image">
     <img src="{{ page.image | prepend: site.baseurl }}" alt="{{ post.title }}">
   </div>
-  <h5><i>{{ page.image_credit }}</i></h5>
+  {% if page.image_credit %}
+  <h5><i>Image credit: {{ page.image_credit }}</i></h5>
+  {% endif %}
 </div>
 
 <h1>{{ page.title }}</h1>
 <h5><i>{{ page.date | date: "%A, %B %-d, %Y" }}</i></h5>
-<h5><i>{{ page.post_credit }}</i></h5>
+<h5><i>Written by: {{ page.author }}</i></h5>
 {% if page.monthly_release %}
 <h2>Monthly Release: 
   <u>

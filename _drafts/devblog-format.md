@@ -4,9 +4,9 @@ title:  "00.00 (year.month) : [insert month] Recap"
 date:   2020-00-05 (year-month-day) 06:30:00 +0100    // The date should be the day the devblog is released and becomes part of the link to the post on the site. Also the website will not post with a future date and time.
 description: |
     "Description goes here."
+author: [insert name]
 image: /assets/img/posts/[insert folder]/Wallpaper.png
-image_credit: Image credit - [insert name]
-post_credit: Written by - [insert name]
+image_credit: [insert name]
 monthly_release: [insert release tag]   // This MUST match the related release tag on GitHub.
 ---
 
