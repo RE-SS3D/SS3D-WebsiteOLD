@@ -11,7 +11,7 @@ There are 2 primary ways you can contribute, either by donating to the project, 
 # Donation Links
 
 [Paypal]({{ site.paypal_url }}){:target="_blank"}
-(or send directly to our email: ress3d.project@gmail.com)
+(or send directly to our email: {{ site.email }})
 
 [Patreon]({{ site.patreon_url }}){:target="_blank"}
 
