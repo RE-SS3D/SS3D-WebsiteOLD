@@ -5,7 +5,7 @@ permalink: /contribute/
 ---
 
 <div class="image-float_right">
-    <img src="{{ site.baseurl}}/assets/img/Engineer.png" alt="RE: SPACE STATION 3D" width="300px">
+    <img src="{{ site.baseurl}}/assets/img/Engineer.png" alt="Engineer" width="300px">
 </div>
 
 ### How to contribute:
@@ -45,7 +45,7 @@ For any other questions, concerns, or unsolicited advice, just ask around on the
 
 Start by familiarizing yourself with our [code (C#) style guide]({{ site.github_game_url }}/blob/master/Documents/C_SHARP.md){:target="_blank"}, and [github contributing guide]({{ site.github_game_url }}/blob/master/Documents/CONTRIBUTING.md){:target="_blank"}.
 
-Feel free to help on any of our 3 repositories as they could all use your help, but since most of you are here to help with the game itself, visit the SS3D [issues page]({{ site.github_game_url }}/issues){:target="_blank"} and use the labels to help find a task you are interested in. 
+Feel free to help on any of our 3 repositories as they could all use your help, but since most of you are here to help with the game itself, visit the SS3D [Issues page]({{ site.github_game_url }}/issues){:target="_blank"} and use the labels to help find a task you are interested in. 
 
 ## 3D modeling tasks:
 
@@ -65,7 +65,7 @@ We currently do not have any guides for 2D art, but you can visit our [2D board]
 
 ## Sound tasks:
 
-We currently do not have any guides for SFX, but if you want to scream like a psychopath or fart into a microphone, check out our [sounds board](https://trello.com/b/k6pWgJE0/ss3d-sound-design){:target="_blank"}.
+We currently do not have any guides for SFX, but if you want to scream like a psychopath or fart into a microphone, check out our [sfx board](https://trello.com/b/k6pWgJE0/ss3d-sound-design){:target="_blank"}.
 
 ## Submissions:
 

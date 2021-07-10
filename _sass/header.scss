@@ -1,7 +1,7 @@
 header {
     text-align: center;
     padding-top: 15px;
-    padding-bottom: 30px;
+    padding-bottom: 15px;
     h1 {
         font-size: 16px;
         font-size: 7.5vw;
@@ -12,50 +12,49 @@ header {
     h6 {
         white-space: nowrap;
         overflow: visible;
-        font-size: 19px;
+        font-size: 4vw;
     }
     div {
         width: 100%;
     }
     img {
-        height: 64px;
-        position: relative;
         right: 5px;
         top: 0px;
+        width: 100%;
         padding: $pad;
-        padding-top: 10px;
+        padding-top: 0px;
         padding-bottom: 0px;
     }
     @include respond-to(small-screen) {
         h6 {
-            font-size: 25px;
+            font-size: 3.7vw;
         }
         img {
-            height: 84px;
+            width: 90%;
         }
     }
     @include respond-to(medium-screen) {
         h6 {
-            font-size: 29px;
+            font-size: 3.4vw;
         }
         img {
-            height: 96px;
+            width: 80%;
         }
     }
     @include respond-to(large-screen) {
         h6 {
-            font-size: 34px;
+            font-size: 2.8vw;
         }
         img {
-            height: 110px;
+            width: 65%;
         }
     }
     @include respond-to(extra-large-screen) {
         h6 {
-            font-size: 39px;
+            font-size: 2vw;
         }
         img {
-            height: 126px;
+            width: 45%;
         }
     }
 }
