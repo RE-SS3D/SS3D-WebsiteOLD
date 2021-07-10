@@ -4,9 +4,19 @@ title: FAQ
 permalink: /faq/
 ---
 
+<div class="image-float_right">
+    <img src="{{ site.baseurl}}/assets/img/Writer.png" alt="Writer" width="400px">
+</div>
+
 ## What is RE:SS3D?
 
-Yet another Space Station 13 remake, but we added extra dimension to this one. More info on our [about page]({{ site.baseurl }}/about/).
+Yet another Space Station 13 remake...<br>
+but we added an extra dimension to this one.<br>
+(More info on our [About page]({{ site.baseurl }}/about/).)
+
+## How much will the game cost?
+
+It's open source and free.
 
 ## What SS13 codebase are you following?
 
@@ -18,13 +28,9 @@ Were staying with the classic top-down but ours will be at a bit of an angle to 
 
 We do not plan to implement first-person/VR or any other camera perspective in our initial release. Although it shouldn't be super difficult for separate server or codebase to make the switch. We do like teasing you though so, in the meantime, enjoy this [1st-person camera test](https://www.youtube.com/watch?v=FfFqxVUzTNo){:target="_blank"} and [isometric camera test](https://www.youtube.com/watch?v=i4HTYUhNcUk){:target="_blank"} made by one of our devs.
 
-## How much will the game cost?
-
-It's open source and free.
-
 ## Is there a playable demo?
 
-Our [download page]({{ site.baseurl }}/download/) will automatically download out latest release, but you can find more detailed info on our [github repo]({{ site.github_game_url }}#downloads){:target="_blank"}.
+Our [Download page]({{ site.baseurl }}/download/) will automatically download out latest release, but you can find more detailed info on our [GitHub repo]({{ site.github_game_url }}#downloads){:target="_blank"}.
 
 Just don't expect much to do yet as the game is currently in a 'pre-alpha' phase as we do some redesigning, documenting, core system work, and basic system implementation. During this early phase there are not many systems, content, or even interactions. What you see in the current project is just the beginning to something much, much greater.
 
@@ -48,10 +54,10 @@ Since the project is open source, if we don't add it, you'll be free to add it y
 
 ## How can I help?
 
-There are several ways you can help, from 2d art, 3d art, sfx, programming, web development and more, just visit our [contribute page]({{ site.baseurl }}/contribute/) and come join our [discord]({{ site.discord_url }}){:target="_blank"}!
+There are several ways you can help, from 2d art, 3d art, sfx, programming, web development and more, just visit our [Contribute page]({{ site.baseurl }}/contribute/) and come join our [Discord]({{ site.discord_url }}){:target="_blank"}!
 
 ## Who is *beep?
 
-*beep is the original creator of SS3D, hence the name RE:SS3D. For more info on his tale check out our [about page]({{ site.baseurl }}/about/).
+*beep is the original creator of SS3D, hence the name RE:SS3D. For more info on his tale check out our [About page]({{ site.baseurl }}/about/).
 
 His current status and whereabouts are still unknown. *If only he had turned his damn suit sensors on...*
