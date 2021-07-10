@@ -62,7 +62,8 @@ body, h1, h2, h3, h4, h5, h6 {
   padding: 0;
   margin: 1.5em 0em 0.25em 0em;
   vertical-align: baseline;
-  line-height: 1em; }
+  line-height: 1em;
+  position: relative; }
 
 h1 {
   margin: 1em 0em 0.5em 0em; }
@@ -145,6 +146,11 @@ img {
   /* Safari 6.0 - 9.0 */
   filter: blur(0.25px) brightness(90%) contrast(90%) saturate(90%); }
 
+.image-float_right {
+  align-self: flex-end;
+  position: absolute;
+  z-index: 0; }
+
 a, .link {
   color: #b83d32;
   color: var(--color-link);
@@ -181,7 +187,8 @@ a, .link {
       margin: 0 auto;
       width: 45%; } }
   .post-content h1, .post-content h2, .post-content h3, .post-content h4, .post-content h5, .post-content p, .post-content ul, .post-content ol {
-    align-self: flex-start; }
+    align-self: flex-start;
+    z-index: 1; }
   .post-content .centred {
     align-self: center; }
 
@@ -325,22 +332,17 @@ nav {
     .contact .social-icons a {
       white-space: normal; }
     .contact .social-icons li {
-      margin-left: 25px;
-      width: 30px; }
+      margin-left: 30px;
+      width: 35px; }
       .contact .social-icons li:first-child {
         margin-left: 0; }
       @media (min-width: 600px) {
         .contact .social-icons li {
-          margin-left: 35px;
-          width: 40px; } }
+          margin-left: 40px;
+          width: 45px; } }
   .contact .legal-list li {
-    margin-top: 16px;
-    margin-left: 0; }
-    @media (min-width: 600px) {
-      .contact .legal-list li {
-        display: inline-block;
-        margin-top: 0;
-        margin-left: 16px; } }
+    display: inline-block;
+    margin-left: 16px; }
 
 .social-icon-bg {
   fill: #dd1d0c; }
@@ -558,3 +560,25 @@ div.image, .post-content video, .post-content .video {
 
 .active, .thumbs:hover {
   opacity: 1; }
+
+.image-stack {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  position: relative; }
+
+.image-stack_top {
+  grid-column: 4 / -4;
+  grid-row: 1;
+  padding-top: 30%;
+  z-index: 1;
+  -webkit-filter: drop-shadow(2px -2px 7px black);
+  /* Safari 6.0 - 9.0 */
+  filter: drop-shadow(2px -2px 7px black); }
+
+.image-stack_bottom {
+  grid-column: 1 / span 8;
+  grid-row: 1;
+  margin-left: -10px;
+  -webkit-filter: blur(0.25px) brightness(90%) contrast(90%) saturate(90%);
+  /* Safari 6.0 - 9.0 */
+  filter: blur(0.25px) brightness(90%) contrast(90%) saturate(90%); }

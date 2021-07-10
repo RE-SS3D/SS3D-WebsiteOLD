@@ -5,35 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="/css/style.css">
         <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
-        <meta name="theme-color" content="#1e4684">
-        <script>
-            //theme toggle
-            //determines if the user has a set theme
-            function detectColorScheme(){
-                var theme="dark";    //default to dark
-
-                //local storage is used to override OS theme settings
-                if(localStorage.getItem("theme")){
-                    if(localStorage.getItem("theme") == "light"){
-                        var theme = "light";
-                    }
-                } else if(!window.matchMedia) {
-                    //matchMedia method not supported
-                    return false;
-                } else if(window.matchMedia("(prefers-color-scheme: light)").matches) {
-                    //OS theme setting detected as dark
-                    var theme = "light";
-                }
-
-                //dark theme preferred, set document with a `data-theme` attribute
-                if (theme=="light") {
-                    document.documentElement.setAttribute("data-theme", "light");
-                } else {
-                    document.documentElement.setAttribute("data-theme", "dark");
-                }
-            }
-            detectColorScheme();
-            
+        <script>            
             // Function to keep the navigation bars scroll offset when changing pages.
             setScroll = function(url, scroll) {
                 if(scroll != 0) {
@@ -160,35 +132,17 @@ window.cookieconsent.initialise({
 
 <div class="image"><a href="/assets/img/art/Bug/Bug_Halloween2020.png" class="image-link" target="_blank"><img src="/" alt="" srcset="    /assets/resized/Bug_Halloween2020-580x326.png 580w,    /assets/resized/Bug_Halloween2020-290x163.png 290w,    /assets/resized/Bug_Halloween2020-170x96.png 170w,    /assets/resized/Bug_Halloween2020-145x82.png 145w, /assets/img/art/Bug/Bug_Halloween2020.png 1920w" sizes="(max-width: 624px) 100vw, 578px, 580px" /></a></div>
 
-<video width="580px" autoplay="autoplay" muted="" loop="loop" poster="/assets/img/art/Bug/Bug_420Hydro.png">
-  <source src="/assets/img/art/Bug/Bug_420Hydro.webm" type="video/webm" />
-  <source src="/assets/img/art/Bug/Bug_420Hydro.mp4" type="video/mp4" />
-</video>
+<iframe class="video" width="580px" height="325px" src="https://www.youtube-nocookie.com/embed/J_NM59nEk4Y" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
 
-<video width="580px" autoplay="autoplay" muted="" loop="loop" poster="/assets/img/art/Bug/BugPandemic.png">
-  <source src="/assets/img/art/Bug/BugPandemic.webm" type="video/webm" />
-  <source src="/assets/img/art/Bug/BugPandemic.mp4" type="video/mp4" />
-</video>
+<iframe class="video" width="580px" height="325px" src="https://www.youtube-nocookie.com/embed/aIruVj0PUlw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
 
-<video width="580px" autoplay="autoplay" muted="" loop="loop" poster="/assets/img/art/Bug/BugSyndie.png">
-  <source src="/assets/img/art/Bug/BugSyndie.webm" type="video/webm" />
-  <source src="/assets/img/art/Bug/BugSyndie.mp4" type="video/mp4" />
-</video>
+<iframe class="video" width="580px" height="325px" src="https://www.youtube-nocookie.com/embed/PtJQUhoiPk0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
 
-<video width="580px" autoplay="autoplay" muted="" loop="loop" poster="/assets/img/art/Bug/BugSpaceJunk.png">
-  <source src="/assets/img/art/Bug/BugSpaceJunk.webm" type="video/webm" />
-  <source src="/assets/img/art/Bug/BugSpaceJunk.mp4" type="video/mp4" />
-</video>
+<iframe class="video" width="580px" height="325px" src="https://www.youtube-nocookie.com/embed/j0CSwDU7itg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
 
-<video width="580px" autoplay="autoplay" muted="" loop="loop" poster="/assets/img/art/Bug/BugHydroponics.png">
-  <source src="/assets/img/art/Bug/BugHydroponics.webm" type="video/webm" />
-  <source src="/assets/img/art/Bug/BugHydroponics.mp4" type="video/mp4" />
-</video>
+<iframe class="video" width="580px" height="325px" src="https://www.youtube-nocookie.com/embed/jHjo0FZ_CdM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
 
-<video width="580px" autoplay="autoplay" muted="" loop="loop" poster="/assets/img/art/Bug/BugWallpaper2.png">
-  <source src="/assets/img/art/Bug/BugAnimation.webm" type="video/webm" />
-  <source src="/assets/img/art/Bug/BugAnimation.mp4" type="video/mp4" />
-</video>
+<iframe class="video" width="580px" height="325px" src="https://www.youtube-nocookie.com/embed/aGmELKhERAA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
 
 <div class="horizontal-2">
 
@@ -222,14 +176,7 @@ window.cookieconsent.initialise({
 
 <div class="horizontal-2">
 
-  <div class="image"><a href="/assets/img/art/CosmicCoincidence/CosmicGrinderA1.png" target="_blank"><img src="/" alt="" srcset="    /assets/resized/CosmicGrinderA1-580x326.png 580w,    /assets/resized/CosmicGrinderA1-290x163.png 290w,    /assets/resized/CosmicGrinderA1-170x96.png 170w,    /assets/resized/CosmicGrinderA1-145x82.png 145w, /assets/img/art/CosmicCoincidence/CosmicGrinderA1.png 3840w" sizes="(max-width: 624px) 50vw, 290px" /></a></div>
-
   <div class="image"><a href="/assets/img/art/CosmicCoincidence/CosmicGrinderA2.png" target="_blank"><img src="/" alt="" srcset="    /assets/resized/CosmicGrinderA2-580x326.png 580w,    /assets/resized/CosmicGrinderA2-290x163.png 290w,    /assets/resized/CosmicGrinderA2-170x96.png 170w,    /assets/resized/CosmicGrinderA2-145x82.png 145w, /assets/img/art/CosmicCoincidence/CosmicGrinderA2.png 3840w" sizes="(max-width: 624px) 50vw, 290px" /></a></div>
-</div>
-
-<div class="horizontal-2">
-
-  <div class="image"><a href="/assets/img/art/CosmicCoincidence/CosmicGrinderB1.png" target="_blank"><img src="/" alt="" srcset="    /assets/resized/CosmicGrinderB1-580x326.png 580w,    /assets/resized/CosmicGrinderB1-290x163.png 290w,    /assets/resized/CosmicGrinderB1-170x96.png 170w,    /assets/resized/CosmicGrinderB1-145x82.png 145w, /assets/img/art/CosmicCoincidence/CosmicGrinderB1.png 3840w" sizes="(max-width: 624px) 50vw, 290px" /></a></div>
 
   <div class="image"><a href="/assets/img/art/CosmicCoincidence/CosmicGrinderB2.png" target="_blank"><img src="/" alt="" srcset="    /assets/resized/CosmicGrinderB2-580x326.png 580w,    /assets/resized/CosmicGrinderB2-290x163.png 290w,    /assets/resized/CosmicGrinderB2-170x96.png 170w,    /assets/resized/CosmicGrinderB2-145x82.png 145w, /assets/img/art/CosmicCoincidence/CosmicGrinderB2.png 3840w" sizes="(max-width: 624px) 50vw, 290px" /></a></div>
 </div>

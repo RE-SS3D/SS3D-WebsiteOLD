@@ -5,35 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="/css/style.css">
         <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
-        <meta name="theme-color" content="#1e4684">
-        <script>
-            //theme toggle
-            //determines if the user has a set theme
-            function detectColorScheme(){
-                var theme="dark";    //default to dark
-
-                //local storage is used to override OS theme settings
-                if(localStorage.getItem("theme")){
-                    if(localStorage.getItem("theme") == "light"){
-                        var theme = "light";
-                    }
-                } else if(!window.matchMedia) {
-                    //matchMedia method not supported
-                    return false;
-                } else if(window.matchMedia("(prefers-color-scheme: light)").matches) {
-                    //OS theme setting detected as dark
-                    var theme = "light";
-                }
-
-                //dark theme preferred, set document with a `data-theme` attribute
-                if (theme=="light") {
-                    document.documentElement.setAttribute("data-theme", "light");
-                } else {
-                    document.documentElement.setAttribute("data-theme", "dark");
-                }
-            }
-            detectColorScheme();
-            
+        <script>            
             // Function to keep the navigation bars scroll offset when changing pages.
             setScroll = function(url, scroll) {
                 if(scroll != 0) {
@@ -154,12 +126,14 @@ window.cookieconsent.initialise({
   <div class="image">
     <img src="/assets/img/posts/19.05.1/InjuredRender.png" alt="">
   </div>
-  <h5><i></i></h5>
+  
+  <h5><i>Image credit: Venom</i></h5>
+  
 </div>
 
 <h1>19.05: May 2019 Devblog</h1>
 <h5><i>Thursday, May 30, 2019</i></h5>
-<h5><i>Written by - Sunberry</i></h5>
+<h5><i>Written by: Sunberry</i></h5>
 
 <br>
 <p>Despite being another slow month, progress continues.</p>
@@ -171,12 +145,10 @@ window.cookieconsent.initialise({
 <p>Some injured animations from our new animator, <strong>Venom</strong>:</p>
 
 <video autoplay="autoplay" muted="" loop="loop" width="580px" poster="/assets/img/posts/19.05.1/InjuredWalk.jpg">
-  <source src="/assets/img/posts/19.05.1/InjuredWalk.webm" type="video/webm" />
   <source src="/assets/img/posts/19.05.1/InjuredWalk.mp4" type="video/mp4" />
 </video>
 
 <video autoplay="autoplay" muted="" loop="loop" width="580px" poster="/assets/img/posts/19.05.1/InjuredIdle.jpg">
-  <source src="/assets/img/posts/19.05.1/InjuredIdle.webm" type="video/webm" />
   <source src="/assets/img/posts/19.05.1/InjuredIdle.mp4" type="video/mp4" />
 </video>
 
@@ -190,7 +162,7 @@ window.cookieconsent.initialise({
 
 <h2 id="eye-candy">EYE CANDY</h2>
 
-<p>Brought to you (mostly) in stunning, 800x600 standard-definition, <strong>LightVelox</strong> has provided some rather bountiful contributions this month:</p>
+<p>Brought to you (mostly) in stunning, 800x600px standard-definition, <strong>LightVelox</strong> has provided some rather bountiful contributions this month:</p>
 
 <div class="horizontal-2">
 
@@ -198,78 +170,91 @@ window.cookieconsent.initialise({
 
   <div class="image"><a href="/assets/img/posts/19.05.1/LightVeloxHealthAnalyzerAdvanced.png" target="_blank"><img src="/" alt="" srcset="    /assets/resized/LightVeloxHealthAnalyzerAdvanced-580x435.png 580w,    /assets/resized/LightVeloxHealthAnalyzerAdvanced-290x218.png 290w,    /assets/resized/LightVeloxHealthAnalyzerAdvanced-170x128.png 170w,    /assets/resized/LightVeloxHealthAnalyzerAdvanced-145x109.png 145w, /assets/img/posts/19.05.1/LightVeloxHealthAnalyzerAdvanced.png 800w" sizes="(max-width: 624px) 50vw, 290px" /></a></div>
 </div>
+
 <div class="horizontal-2">
 
   <div class="image"><a href="/assets/img/posts/19.05.1/LightVeloxAnestheticTank.png" target="_blank"><img src="/" alt="" srcset="    /assets/resized/LightVeloxAnestheticTank-580x435.png 580w,    /assets/resized/LightVeloxAnestheticTank-290x218.png 290w,    /assets/resized/LightVeloxAnestheticTank-170x128.png 170w,    /assets/resized/LightVeloxAnestheticTank-145x109.png 145w, /assets/img/posts/19.05.1/LightVeloxAnestheticTank.png 800w" sizes="(max-width: 624px) 50vw, 290px" /></a></div>
 
   <div class="image"><a href="/assets/img/posts/19.05.1/LightVeloxEmergencyO2Tank.png" target="_blank"><img src="/" alt="" srcset="    /assets/resized/LightVeloxEmergencyO2Tank-580x435.png 580w,    /assets/resized/LightVeloxEmergencyO2Tank-290x218.png 290w,    /assets/resized/LightVeloxEmergencyO2Tank-170x128.png 170w,    /assets/resized/LightVeloxEmergencyO2Tank-145x109.png 145w, /assets/img/posts/19.05.1/LightVeloxEmergencyO2Tank.png 800w" sizes="(max-width: 624px) 50vw, 290px" /></a></div>
 </div>
+
 <div class="horizontal-2">
 
   <div class="image"><a href="/assets/img/posts/19.05.1/LightVeloxAirlockPainter.png" target="_blank"><img src="/" alt="" srcset="    /assets/resized/LightVeloxAirlockPainter-580x435.png 580w,    /assets/resized/LightVeloxAirlockPainter-290x218.png 290w,    /assets/resized/LightVeloxAirlockPainter-170x128.png 170w,    /assets/resized/LightVeloxAirlockPainter-145x109.png 145w, /assets/img/posts/19.05.1/LightVeloxAirlockPainter.png 800w" sizes="(max-width: 624px) 50vw, 290px" /></a></div>
 
   <div class="image"><a href="/assets/img/posts/19.05.1/LightVeloxAnitBreachShielding.png" target="_blank"><img src="/" alt="" srcset="    /assets/resized/LightVeloxAnitBreachShielding-580x435.png 580w,    /assets/resized/LightVeloxAnitBreachShielding-290x218.png 290w,    /assets/resized/LightVeloxAnitBreachShielding-170x128.png 170w,    /assets/resized/LightVeloxAnitBreachShielding-145x109.png 145w, /assets/img/posts/19.05.1/LightVeloxAnitBreachShielding.png 800w" sizes="(max-width: 624px) 50vw, 290px" /></a></div>
 </div>
+
 <div class="horizontal-2">
 
   <div class="image"><a href="/assets/img/posts/19.05.1/LightVeloxCanister.png" target="_blank"><img src="/" alt="" srcset="    /assets/resized/LightVeloxCanister-580x435.png 580w,    /assets/resized/LightVeloxCanister-290x218.png 290w,    /assets/resized/LightVeloxCanister-170x128.png 170w,    /assets/resized/LightVeloxCanister-145x109.png 145w, /assets/img/posts/19.05.1/LightVeloxCanister.png 800w" sizes="(max-width: 624px) 50vw, 290px" /></a></div>
 
   <div class="image"><a href="/assets/img/posts/19.05.1/LightVeloxCartridge.png" target="_blank"><img src="/" alt="" srcset="    /assets/resized/LightVeloxCartridge-580x435.png 580w,    /assets/resized/LightVeloxCartridge-290x218.png 290w,    /assets/resized/LightVeloxCartridge-170x128.png 170w,    /assets/resized/LightVeloxCartridge-145x109.png 145w, /assets/img/posts/19.05.1/LightVeloxCartridge.png 800w" sizes="(max-width: 624px) 50vw, 290px" /></a></div>
 </div>
+
 <div class="horizontal-2">
 
   <div class="image"><a href="/assets/img/posts/19.05.1/LightVeloxChemMaster.png" target="_blank"><img src="/" alt="" srcset="    /assets/resized/LightVeloxChemMaster-580x435.png 580w,    /assets/resized/LightVeloxChemMaster-290x218.png 290w,    /assets/resized/LightVeloxChemMaster-170x128.png 170w,    /assets/resized/LightVeloxChemMaster-145x109.png 145w, /assets/img/posts/19.05.1/LightVeloxChemMaster.png 800w" sizes="(max-width: 624px) 50vw, 290px" /></a></div>
 
   <div class="image"><a href="/assets/img/posts/19.05.1/LightVeloxChemDispenser.png" target="_blank"><img src="/" alt="" srcset="    /assets/resized/LightVeloxChemDispenser-580x435.png 580w,    /assets/resized/LightVeloxChemDispenser-290x218.png 290w,    /assets/resized/LightVeloxChemDispenser-170x128.png 170w,    /assets/resized/LightVeloxChemDispenser-145x109.png 145w, /assets/img/posts/19.05.1/LightVeloxChemDispenser.png 800w" sizes="(max-width: 624px) 50vw, 290px" /></a></div>
 </div>
+
 <div class="horizontal-2">
 
   <div class="image"><a href="/assets/img/posts/19.05.1/LightVeloxCircuitImprinter.png" target="_blank"><img src="/" alt="" srcset="    /assets/resized/LightVeloxCircuitImprinter-580x435.png 580w,    /assets/resized/LightVeloxCircuitImprinter-290x218.png 290w,    /assets/resized/LightVeloxCircuitImprinter-170x128.png 170w,    /assets/resized/LightVeloxCircuitImprinter-145x109.png 145w, /assets/img/posts/19.05.1/LightVeloxCircuitImprinter.png 800w" sizes="(max-width: 624px) 50vw, 290px" /></a></div>
 
   <div class="image"><a href="/assets/img/posts/19.05.1/LightVeloxEnergyGun.png" target="_blank"><img src="/" alt="" srcset="    /assets/resized/LightVeloxEnergyGun-580x435.png 580w,    /assets/resized/LightVeloxEnergyGun-290x218.png 290w,    /assets/resized/LightVeloxEnergyGun-170x128.png 170w,    /assets/resized/LightVeloxEnergyGun-145x109.png 145w, /assets/img/posts/19.05.1/LightVeloxEnergyGun.png 800w" sizes="(max-width: 624px) 50vw, 290px" /></a></div>
 </div>
+
 <div class="horizontal-2">
 
   <div class="image"><a href="/assets/img/posts/19.05.1/LightVeloxHandLabeler.png" target="_blank"><img src="/" alt="" srcset="    /assets/resized/LightVeloxHandLabeler-580x435.png 580w,    /assets/resized/LightVeloxHandLabeler-290x218.png 290w,    /assets/resized/LightVeloxHandLabeler-170x128.png 170w,    /assets/resized/LightVeloxHandLabeler-145x109.png 145w, /assets/img/posts/19.05.1/LightVeloxHandLabeler.png 800w" sizes="(max-width: 624px) 50vw, 290px" /></a></div>
 
   <div class="image"><a href="/assets/img/posts/19.05.1/LightVeloxMultitool.png" target="_blank"><img src="/" alt="" srcset="    /assets/resized/LightVeloxMultitool-580x435.png 580w,    /assets/resized/LightVeloxMultitool-290x218.png 290w,    /assets/resized/LightVeloxMultitool-170x128.png 170w,    /assets/resized/LightVeloxMultitool-145x109.png 145w, /assets/img/posts/19.05.1/LightVeloxMultitool.png 800w" sizes="(max-width: 624px) 50vw, 290px" /></a></div>
 </div>
+
 <div class="horizontal-2">
 
   <div class="image"><a href="/assets/img/posts/19.05.1/LightVeloxGenerator.png" target="_blank"><img src="/" alt="" srcset="    /assets/resized/LightVeloxGenerator-580x435.png 580w,    /assets/resized/LightVeloxGenerator-290x218.png 290w,    /assets/resized/LightVeloxGenerator-170x128.png 170w,    /assets/resized/LightVeloxGenerator-145x109.png 145w, /assets/img/posts/19.05.1/LightVeloxGenerator.png 800w" sizes="(max-width: 624px) 50vw, 290px" /></a></div>
 
   <div class="image"><a href="/assets/img/posts/19.05.1/LightVeloxPAI.png" target="_blank"><img src="/" alt="" srcset="    /assets/resized/LightVeloxPAI-580x435.png 580w,    /assets/resized/LightVeloxPAI-290x218.png 290w,    /assets/resized/LightVeloxPAI-170x128.png 170w,    /assets/resized/LightVeloxPAI-145x109.png 145w, /assets/img/posts/19.05.1/LightVeloxPAI.png 800w" sizes="(max-width: 624px) 50vw, 290px" /></a></div>
 </div>
+
 <div class="horizontal-2">
 
   <div class="image"><a href="/assets/img/posts/19.05.1/LightVeloxPipeDispenser.png" target="_blank"><img src="/" alt="" srcset="    /assets/resized/LightVeloxPipeDispenser-580x435.png 580w,    /assets/resized/LightVeloxPipeDispenser-290x218.png 290w,    /assets/resized/LightVeloxPipeDispenser-170x128.png 170w,    /assets/resized/LightVeloxPipeDispenser-145x109.png 145w, /assets/img/posts/19.05.1/LightVeloxPipeDispenser.png 800w" sizes="(max-width: 624px) 50vw, 290px" /></a></div>
 
   <div class="image"><a href="/assets/img/posts/19.05.1/LightVeloxRCD.png" target="_blank"><img src="/" alt="" srcset="    /assets/resized/LightVeloxRCD-580x435.png 580w,    /assets/resized/LightVeloxRCD-290x218.png 290w,    /assets/resized/LightVeloxRCD-170x128.png 170w,    /assets/resized/LightVeloxRCD-145x109.png 145w, /assets/img/posts/19.05.1/LightVeloxRCD.png 800w" sizes="(max-width: 624px) 50vw, 290px" /></a></div>
 </div>
+
 <div class="horizontal-2">
 
   <div class="image"><a href="/assets/img/posts/19.05.1/LightVeloxSignalJammer.png" target="_blank"><img src="/" alt="" srcset="    /assets/resized/LightVeloxSignalJammer-580x435.png 580w,    /assets/resized/LightVeloxSignalJammer-290x218.png 290w,    /assets/resized/LightVeloxSignalJammer-170x128.png 170w,    /assets/resized/LightVeloxSignalJammer-145x109.png 145w, /assets/img/posts/19.05.1/LightVeloxSignalJammer.png 800w" sizes="(max-width: 624px) 50vw, 290px" /></a></div>
 
   <div class="image"><a href="/assets/img/posts/19.05.1/LightVeloxPlasmaTank.png" target="_blank"><img src="/" alt="" srcset="    /assets/resized/LightVeloxPlasmaTank-580x435.png 580w,    /assets/resized/LightVeloxPlasmaTank-290x218.png 290w,    /assets/resized/LightVeloxPlasmaTank-170x128.png 170w,    /assets/resized/LightVeloxPlasmaTank-145x109.png 145w, /assets/img/posts/19.05.1/LightVeloxPlasmaTank.png 800w" sizes="(max-width: 624px) 50vw, 290px" /></a></div>
 </div>
+
 <div class="horizontal-2">
 
   <div class="image"><a href="/assets/img/posts/19.05.1/LightVeloxWirecutters.png" target="_blank"><img src="/" alt="" srcset="    /assets/resized/LightVeloxWirecutters-580x435.png 580w,    /assets/resized/LightVeloxWirecutters-290x218.png 290w,    /assets/resized/LightVeloxWirecutters-170x128.png 170w,    /assets/resized/LightVeloxWirecutters-145x109.png 145w, /assets/img/posts/19.05.1/LightVeloxWirecutters.png 800w" sizes="(max-width: 624px) 50vw, 290px" /></a></div>
 
   <div class="image"><a href="/assets/img/posts/19.05.1/LightVeloxStamp.png" target="_blank"><img src="/" alt="" srcset="    /assets/resized/LightVeloxStamp-580x435.png 580w,    /assets/resized/LightVeloxStamp-290x218.png 290w,    /assets/resized/LightVeloxStamp-170x128.png 170w,    /assets/resized/LightVeloxStamp-145x109.png 145w, /assets/img/posts/19.05.1/LightVeloxStamp.png 800w" sizes="(max-width: 624px) 50vw, 290px" /></a></div>
 </div>
+
 <div class="horizontal-2">
 
   <div class="image"><a href="/assets/img/posts/19.05.1/LightVeloxProtolathe.png" target="_blank"><img src="/" alt="" srcset="    /assets/resized/LightVeloxProtolathe-290x282.png 290w,    /assets/resized/LightVeloxProtolathe-170x166.png 170w,    /assets/resized/LightVeloxProtolathe-145x141.png 145w, /assets/img/posts/19.05.1/LightVeloxProtolathe.png 384w" sizes="(max-width: 624px) 50vw, 290px" /></a></div>
 
   <div class="image"><a href="/assets/img/posts/19.05.1/LightVeloxSpade.png" target="_blank"><img src="/" alt="" srcset="    /assets/resized/LightVeloxSpade-290x263.png 290w,    /assets/resized/LightVeloxSpade-170x154.png 170w,    /assets/resized/LightVeloxSpade-145x132.png 145w, /assets/img/posts/19.05.1/LightVeloxSpade.png 488w" sizes="(max-width: 624px) 50vw, 290px" /></a></div>
 </div>
+
 <div class="horizontal-2">
 
   <div class="image"><a href="/assets/img/posts/19.05.1/LightVeloxMiningSachel.png" target="_blank"><img src="/" alt="" srcset="    /assets/resized/LightVeloxMiningSachel-290x291.png 290w,    /assets/resized/LightVeloxMiningSachel-170x170.png 170w,    /assets/resized/LightVeloxMiningSachel-145x145.png 145w, /assets/img/posts/19.05.1/LightVeloxMiningSachel.png 359w" sizes="(max-width: 624px) 50vw, 290px" /></a></div>
 
   <div class="image"><a href="/assets/img/posts/19.05.1/LightVeloxOres.png" target="_blank"><img src="/" alt="" srcset="    /assets/resized/LightVeloxOres-170x188.png 170w,    /assets/resized/LightVeloxOres-145x161.png 145w, /assets/img/posts/19.05.1/LightVeloxOres.png 285w" sizes="(max-width: 624px) 50vw, 290px" /></a></div>
 </div>
+
 <div class="horizontal-3">
 
   <div class="image"><a href="/assets/img/posts/19.05.1/LightVeloxClipboard.png" target="_blank"><img src="/" alt="" srcset="    /assets/resized/LightVeloxClipboard-170x302.png 170w,    /assets/resized/LightVeloxClipboard-145x258.png 145w, /assets/img/posts/19.05.1/LightVeloxClipboard.png 194w" sizes="(max-width: 624px) 50vw, 290px" /></a></div>
@@ -287,6 +272,7 @@ window.cookieconsent.initialise({
 
   <div class="image"><a href="/assets/img/posts/19.05.1/BlackoutTimer.png" target="_blank"><img src="/" alt="" srcset="    /assets/resized/BlackoutTimer-580x410.png 580w,    /assets/resized/BlackoutTimer-290x205.png 290w,    /assets/resized/BlackoutTimer-170x120.png 170w,    /assets/resized/BlackoutTimer-145x103.png 145w, /assets/img/posts/19.05.1/BlackoutTimer.png 806w" sizes="(max-width: 624px) 50vw, 290px" /></a></div>
 </div>
+
 <div class="horizontal-3">
 
   <div class="image"><a href="/assets/img/posts/19.05.1/BlackoutDwarfvenTankard.png" target="_blank"><img src="/" alt="" srcset="    /assets/resized/BlackoutDwarfvenTankard-290x341.png 290w,    /assets/resized/BlackoutDwarfvenTankard-170x200.png 170w,    /assets/resized/BlackoutDwarfvenTankard-145x170.png 145w, /assets/img/posts/19.05.1/BlackoutDwarfvenTankard.png 379w" sizes="(max-width: 624px) 50vw, 290px" /></a></div>

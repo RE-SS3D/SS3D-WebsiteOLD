@@ -5,35 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="/css/style.css">
         <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
-        <meta name="theme-color" content="#1e4684">
-        <script>
-            //theme toggle
-            //determines if the user has a set theme
-            function detectColorScheme(){
-                var theme="dark";    //default to dark
-
-                //local storage is used to override OS theme settings
-                if(localStorage.getItem("theme")){
-                    if(localStorage.getItem("theme") == "light"){
-                        var theme = "light";
-                    }
-                } else if(!window.matchMedia) {
-                    //matchMedia method not supported
-                    return false;
-                } else if(window.matchMedia("(prefers-color-scheme: light)").matches) {
-                    //OS theme setting detected as dark
-                    var theme = "light";
-                }
-
-                //dark theme preferred, set document with a `data-theme` attribute
-                if (theme=="light") {
-                    document.documentElement.setAttribute("data-theme", "light");
-                } else {
-                    document.documentElement.setAttribute("data-theme", "dark");
-                }
-            }
-            detectColorScheme();
-            
+        <script>            
             // Function to keep the navigation bars scroll offset when changing pages.
             setScroll = function(url, scroll) {
                 if(scroll != 0) {
@@ -67,6 +39,7 @@
 <title>19.06: June 2019 Devblog | RE:SS3D</title>
 <meta name="generator" content="Jekyll v3.8.5" />
 <meta property="og:title" content="19.06: June 2019 Devblog" />
+<meta name="author" content="Sunberry" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="“A new face appears. An old face vanishes. Gears start to turn again.”" />
 <meta property="og:description" content="“A new face appears. An old face vanishes. Gears start to turn again.”" />
@@ -77,7 +50,7 @@
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2019-07-04T14:30:00+00:00" />
 <script type="application/ld+json">
-{"description":"“A new face appears. An old face vanishes. Gears start to turn again.”","image":"https://ss3d.space/assets/img/posts/19.06.01/EikoEmptyVoid.png","@type":"BlogPosting","headline":"19.06: June 2019 Devblog","dateModified":"2019-07-04T14:30:00+00:00","datePublished":"2019-07-04T14:30:00+00:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://ss3d.space/2019/07/04/19.06.html"},"url":"https://ss3d.space/2019/07/04/19.06.html","@context":"https://schema.org"}</script>
+{"description":"“A new face appears. An old face vanishes. Gears start to turn again.”","image":"https://ss3d.space/assets/img/posts/19.06.01/EikoEmptyVoid.png","@type":"BlogPosting","headline":"19.06: June 2019 Devblog","dateModified":"2019-07-04T14:30:00+00:00","datePublished":"2019-07-04T14:30:00+00:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://ss3d.space/2019/07/04/19.06.html"},"url":"https://ss3d.space/2019/07/04/19.06.html","author":{"@type":"Person","name":"Sunberry"},"@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
         <link type="application/atom+xml" rel="alternate" href="https://ss3d.space/feed.xml" title="RE:SS3D" />
@@ -153,12 +126,14 @@ window.cookieconsent.initialise({
   <div class="image">
     <img src="/assets/img/posts/19.06.01/EikoEmptyVoid.png" alt="">
   </div>
-  <h5><i></i></h5>
+  
+  <h5><i>Image credit: Eiko</i></h5>
+  
 </div>
 
 <h1>19.06: June 2019 Devblog</h1>
 <h5><i>Thursday, July 4, 2019</i></h5>
-<h5><i>Written by - Sunberry</i></h5>
+<h5><i>Written by: Sunberry</i></h5>
 
 <br>
 <p>A new face appears. An old face vanishes. Gears start to turn again.</p>
@@ -167,20 +142,10 @@ window.cookieconsent.initialise({
 
 <h2 id="newer-taller-more-modular-walls">NEWER, TALLER, MORE MODULAR WALLS</h2>
 
-<p>Foreground is example of old walls, background is example of new walls.</p>
-
-<div class="image"><a href="/assets/img/posts/19.06.01/EikoOldWallsNewWalls.png" class="image-link" target="_blank"><img src="/" alt="" srcset="    /assets/resized/EikoOldWallsNewWalls-580x422.png 580w,    /assets/resized/EikoOldWallsNewWalls-290x211.png 290w,    /assets/resized/EikoOldWallsNewWalls-170x124.png 170w,    /assets/resized/EikoOldWallsNewWalls-145x106.png 145w, /assets/img/posts/19.06.01/EikoOldWallsNewWalls.png 960w" sizes="(max-width: 624px) 100vw, 578px, 580px" /></a></div>
-
 <p>Now, these taller walls <em>may or may not</em> be the first step down a slippery slope that might land us in a place with vertical orientation, and they are overall possibly still very much subject to change, but they solve some problems with how certain especially larger entities will navigate the station. Their careful construction as a joint project between <strong>PlayerOne</strong> and our newly ordained Eiko has ensured their flexibility to function as proper building blocks of any station design.</p>
 
 <p>The flexibility is enough to produce  some curiously revolting structures, were an individual motivated enough to make some:</p>
 
-<div class="horizontal-2">
-
-  <div class="image"><a href="/assets/img/posts/19.06.01/EikoRevoltingStructures1.png" target="_blank"><img src="/" alt="" srcset="    /assets/resized/EikoRevoltingStructures1-290x204.png 290w,    /assets/resized/EikoRevoltingStructures1-170x119.png 170w,    /assets/resized/EikoRevoltingStructures1-145x102.png 145w, /assets/img/posts/19.06.01/EikoRevoltingStructures1.png 579w" sizes="(max-width: 624px) 50vw, 290px" /></a></div>
-
-  <div class="image"><a href="/assets/img/posts/19.06.01/EikoRevoltingStructures2.png" target="_blank"><img src="/" alt="" srcset="    /assets/resized/EikoRevoltingStructures2-290x204.png 290w,    /assets/resized/EikoRevoltingStructures2-170x119.png 170w,    /assets/resized/EikoRevoltingStructures2-145x102.png 145w, /assets/img/posts/19.06.01/EikoRevoltingStructures2.png 579w" sizes="(max-width: 624px) 50vw, 290px" /></a></div>
-</div>
 <div class="horizontal-2">
 
   <div class="image"><a href="/assets/img/posts/19.06.01/EikoRevoltingStructures3.png" target="_blank"><img src="/" alt="" srcset="    /assets/resized/EikoRevoltingStructures3-290x204.png 290w,    /assets/resized/EikoRevoltingStructures3-170x119.png 170w,    /assets/resized/EikoRevoltingStructures3-145x102.png 145w, /assets/img/posts/19.06.01/EikoRevoltingStructures3.png 579w" sizes="(max-width: 624px) 50vw, 290px" /></a></div>
@@ -214,6 +179,7 @@ window.cookieconsent.initialise({
 <p>Three new critters join the station. Blame <strong>Eiko</strong>. You’ll have to take my word for it when I say that they’re all adorably animated, though, because I’m not competent enough to display that properly right now.</p>
 
 <div class="image"><a href="/assets/img/posts/19.06.01/EikoSpaceCarp.png" class="image-link" target="_blank"><img src="/" alt="" srcset="    /assets/resized/EikoSpaceCarp-580x435.png 580w,    /assets/resized/EikoSpaceCarp-290x218.png 290w,    /assets/resized/EikoSpaceCarp-170x128.png 170w,    /assets/resized/EikoSpaceCarp-145x109.png 145w, /assets/img/posts/19.06.01/EikoSpaceCarp.png 800w" sizes="(max-width: 624px) 100vw, 578px, 580px" /></a></div>
+
 <div class="horizontal-2">
 
   <div class="image"><a href="/assets/img/posts/19.06.01/EikoCockroach.png" target="_blank"><img src="/" alt="" srcset="    /assets/resized/EikoCockroach-580x435.png 580w,    /assets/resized/EikoCockroach-290x218.png 290w,    /assets/resized/EikoCockroach-170x128.png 170w,    /assets/resized/EikoCockroach-145x109.png 145w, /assets/img/posts/19.06.01/EikoCockroach.png 800w" sizes="(max-width: 624px) 50vw, 290px" /></a></div>
@@ -225,19 +191,22 @@ window.cookieconsent.initialise({
 
 <p>Various other models from <strong>Eiko</strong> this month, beginning with a new update on door design to include panels, and ending with some various foodstuffs.</p>
 
-<div class="image"><a href="/assets/img/posts/19.06.01/EikoDoorPanel.gif" class="image-link" target="_blank"><img src="/assets/img/posts/19.06.01/EikoDoorPanel.gif" alt="" /></a></div>
+<div class="image"><a href="/assets/img/posts/19.06.01/EikoDoorPanel.gif" class="image-link" target="_blank"><img src="/assets/img/posts/19.06.01/EikoDoorPanel.gif" alt="" width="580px" /></a></div>
+
 <div class="horizontal-2">
 
   <div class="image"><a href="/assets/img/posts/19.06.01/EikoDeskLamp.png" target="_blank"><img src="/" alt="" srcset="    /assets/resized/EikoDeskLamp-580x435.png 580w,    /assets/resized/EikoDeskLamp-290x218.png 290w,    /assets/resized/EikoDeskLamp-170x128.png 170w,    /assets/resized/EikoDeskLamp-145x109.png 145w, /assets/img/posts/19.06.01/EikoDeskLamp.png 800w" sizes="(max-width: 624px) 50vw, 290px" /></a></div>
 
   <div class="image"><a href="/assets/img/posts/19.06.01/EikoHolopad.png" target="_blank"><img src="/" alt="" srcset="    /assets/resized/EikoHolopad-580x435.png 580w,    /assets/resized/EikoHolopad-290x218.png 290w,    /assets/resized/EikoHolopad-170x128.png 170w,    /assets/resized/EikoHolopad-145x109.png 145w, /assets/img/posts/19.06.01/EikoHolopad.png 800w" sizes="(max-width: 624px) 50vw, 290px" /></a></div>
 </div>
+
 <div class="horizontal-2">
 
   <div class="image"><a href="/assets/img/posts/19.06.01/EikoPianoAndStool.png" target="_blank"><img src="/" alt="" srcset="    /assets/resized/EikoPianoAndStool-580x435.png 580w,    /assets/resized/EikoPianoAndStool-290x218.png 290w,    /assets/resized/EikoPianoAndStool-170x128.png 170w,    /assets/resized/EikoPianoAndStool-145x109.png 145w, /assets/img/posts/19.06.01/EikoPianoAndStool.png 800w" sizes="(max-width: 624px) 50vw, 290px" /></a></div>
 
   <div class="image"><a href="/assets/img/posts/19.06.01/EikoPottedPlant.png" target="_blank"><img src="/" alt="" srcset="    /assets/resized/EikoPottedPlant-580x435.png 580w,    /assets/resized/EikoPottedPlant-290x218.png 290w,    /assets/resized/EikoPottedPlant-170x128.png 170w,    /assets/resized/EikoPottedPlant-145x109.png 145w, /assets/img/posts/19.06.01/EikoPottedPlant.png 800w" sizes="(max-width: 624px) 50vw, 290px" /></a></div>
 </div>
+
 <div class="horizontal-2">
 
   <div class="image"><a href="/assets/img/posts/19.06.01/EikoSpaceHeaterOff.png" target="_blank"><img src="/" alt="" srcset="    /assets/resized/EikoSpaceHeaterOff-580x435.png 580w,    /assets/resized/EikoSpaceHeaterOff-290x218.png 290w,    /assets/resized/EikoSpaceHeaterOff-170x128.png 170w,    /assets/resized/EikoSpaceHeaterOff-145x109.png 145w, /assets/img/posts/19.06.01/EikoSpaceHeaterOff.png 800w" sizes="(max-width: 624px) 50vw, 290px" /></a></div>
@@ -247,25 +216,15 @@ window.cookieconsent.initialise({
 
 <div class="image"><a href="/assets/img/posts/19.06.01/EikoFoods.png" class="image-link" target="_blank"><img src="/" alt="" srcset="    /assets/resized/EikoFoods-580x292.png 580w,    /assets/resized/EikoFoods-290x146.png 290w,    /assets/resized/EikoFoods-170x85.png 170w,    /assets/resized/EikoFoods-145x73.png 145w, /assets/img/posts/19.06.01/EikoFoods.png 915w" sizes="(max-width: 624px) 100vw, 578px, 580px" /></a></div>
 
-<p>Some splendid machinery and furniture brought to us by <strong>deBARBA</strong>, some within some Sketchfab embeds. Click on the embeds, because they look way better than my lousy Blender screenshots, and the two machines have amazing animations.</p>
+<p>Some splendid machinery and furniture brought to us by <strong>deBARBA</strong>.</p>
 
-<div class="sketchfab-embed-wrapper"><iframe width="600" height="400" src="https://sketchfab.com/models/a7f210103cf14821ac1a22624357cd18/embed?camera=0" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true" style="width:100%"></iframe>
-  <p style="font-size: 13px; font-weight: normal; margin: 5px; color: #4A4A4A;"></p>
-</div>
+<div class="image"><a href="/assets/img/posts/19.06.01/ComfyChair.png" class="image-link" target="_blank"><img src="/" alt="" srcset="    /assets/resized/ComfyChair-580x435.png 580w,    /assets/resized/ComfyChair-290x218.png 290w,    /assets/resized/ComfyChair-170x128.png 170w,    /assets/resized/ComfyChair-145x109.png 145w, /assets/img/posts/19.06.01/ComfyChair.png 800w" sizes="(max-width: 624px) 100vw, 578px, 580px" /></a></div>
 
-<div class="horizontal-2-direct-children-desktop">
-  <div class="sketchfab-embed-wrapper">
-    <p>
-      <iframe width="320" height="200" src="https://sketchfab.com/models/35c1a18000e648019bf66803e9c49b98/embed" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true" style="width:100%"></iframe>
-    </p>
-  </div>
-</div>
-<div class="horizontal-2-direct-children-desktop">
-  <div class="sketchfab-embed-wrapper">
-    <p>
-      <iframe width="320" height="200" src="https://sketchfab.com/models/374d59cc92b440d089a9152cf07c6f50/embed" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true" style="width:100%"></iframe>
-    </p>
-  </div>
+<div class="horizontal-2">
+
+  <div class="image"><a href="/assets/img/posts/19.06.01/Gibber.png" target="_blank"><img src="/" alt="" srcset="    /assets/resized/Gibber-580x435.png 580w,    /assets/resized/Gibber-290x218.png 290w,    /assets/resized/Gibber-170x128.png 170w,    /assets/resized/Gibber-145x109.png 145w, /assets/img/posts/19.06.01/Gibber.png 800w" sizes="(max-width: 624px) 50vw, 290px" /></a></div>
+
+  <div class="image"><a href="/assets/img/posts/19.06.01/FoodProcessor.png" target="_blank"><img src="/" alt="" srcset="    /assets/resized/FoodProcessor-580x435.png 580w,    /assets/resized/FoodProcessor-290x218.png 290w,    /assets/resized/FoodProcessor-170x128.png 170w,    /assets/resized/FoodProcessor-145x109.png 145w, /assets/img/posts/19.06.01/FoodProcessor.png 800w" sizes="(max-width: 624px) 50vw, 290px" /></a></div>
 </div>
 
 <div class="horizontal-2">
@@ -275,24 +234,15 @@ window.cookieconsent.initialise({
   <div class="image"><a href="/assets/img/posts/19.06.01/deBARBAStationBouncedRadio.png" target="_blank"><img src="/" alt="" srcset="    /assets/resized/deBARBAStationBouncedRadio-580x435.png 580w,    /assets/resized/deBARBAStationBouncedRadio-290x218.png 290w,    /assets/resized/deBARBAStationBouncedRadio-170x128.png 170w,    /assets/resized/deBARBAStationBouncedRadio-145x109.png 145w, /assets/img/posts/19.06.01/deBARBAStationBouncedRadio.png 800w" sizes="(max-width: 624px) 50vw, 290px" /></a></div>
 </div>
 
-<p>Capacitors, brought to us by <strong>Goao</strong>, in standard, advanced, and super capacities.</p>
+<p>Capacitors, brought to us by <strong>Goao</strong>.</p>
 
-<div class="image"><a href="/assets/img/posts/19.06.01/goaoCapacitorSuper.png" class="image-link" target="_blank"><img src="/" alt="" srcset="    /assets/resized/goaoCapacitorSuper-580x435.png 580w,    /assets/resized/goaoCapacitorSuper-290x218.png 290w,    /assets/resized/goaoCapacitorSuper-170x128.png 170w,    /assets/resized/goaoCapacitorSuper-145x109.png 145w, /assets/img/posts/19.06.01/goaoCapacitorSuper.png 800w" sizes="(max-width: 624px) 100vw, 578px, 580px" /></a></div>
-
-<div class="horizontal-2">
-
-  <div class="image"><a href="/assets/img/posts/19.06.01/goaoCapacitor.png" target="_blank"><img src="/" alt="" srcset="    /assets/resized/goaoCapacitor-580x435.png 580w,    /assets/resized/goaoCapacitor-290x218.png 290w,    /assets/resized/goaoCapacitor-170x128.png 170w,    /assets/resized/goaoCapacitor-145x109.png 145w, /assets/img/posts/19.06.01/goaoCapacitor.png 800w" sizes="(max-width: 624px) 50vw, 290px" /></a></div>
-
-  <div class="image"><a href="/assets/img/posts/19.06.01/goaoCapacitorAdvanced.png" target="_blank"><img src="/" alt="" srcset="    /assets/resized/goaoCapacitorAdvanced-580x435.png 580w,    /assets/resized/goaoCapacitorAdvanced-290x218.png 290w,    /assets/resized/goaoCapacitorAdvanced-170x128.png 170w,    /assets/resized/goaoCapacitorAdvanced-145x109.png 145w, /assets/img/posts/19.06.01/goaoCapacitorAdvanced.png 800w" sizes="(max-width: 624px) 50vw, 290px" /></a></div>
-</div>
+<div class="image"><a href="/assets/img/posts/19.06.01/goaoCapacitor.png" class="image-link" target="_blank"><img src="/" alt="" srcset="    /assets/resized/goaoCapacitor-580x435.png 580w,    /assets/resized/goaoCapacitor-290x218.png 290w,    /assets/resized/goaoCapacitor-170x128.png 170w,    /assets/resized/goaoCapacitor-145x109.png 145w, /assets/img/posts/19.06.01/goaoCapacitor.png 800w" sizes="(max-width: 624px) 100vw, 578px, 580px" /></a></div>
 
 <h3 id="notes">NOTES</h3>
 
 <p>This one came out a few days late, because I am the weak link of the devblogs, and some things may’ve not gotten the proper mention they deserve, including new hairstyles and new expressions for the playermodel.</p>
 
-<p>This is our monthly devblog, standing as proof that we’re still here breathing and working, even when only one of us is pulling all the weight.
-Come visit us on <a href="https://discord.gg/3ny9tdH" target="_blank">Discord</a>, if you’re into that.
-Fun things happen on the Discord, sometimes.</p>
+<p>This is our monthly devblog, standing as proof that we’re still here breathing and working, even when only one of us is pulling all the weight. Come visit us on <a href="https://discord.gg/3ny9tdH" target="_blank">Discord</a>, if you’re into that. Fun things happen on the Discord, sometimes.</p>
 
 
             </main>

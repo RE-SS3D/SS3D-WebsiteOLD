@@ -5,35 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="/css/style.css">
         <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
-        <meta name="theme-color" content="#1e4684">
-        <script>
-            //theme toggle
-            //determines if the user has a set theme
-            function detectColorScheme(){
-                var theme="dark";    //default to dark
-
-                //local storage is used to override OS theme settings
-                if(localStorage.getItem("theme")){
-                    if(localStorage.getItem("theme") == "light"){
-                        var theme = "light";
-                    }
-                } else if(!window.matchMedia) {
-                    //matchMedia method not supported
-                    return false;
-                } else if(window.matchMedia("(prefers-color-scheme: light)").matches) {
-                    //OS theme setting detected as dark
-                    var theme = "light";
-                }
-
-                //dark theme preferred, set document with a `data-theme` attribute
-                if (theme=="light") {
-                    document.documentElement.setAttribute("data-theme", "light");
-                } else {
-                    document.documentElement.setAttribute("data-theme", "dark");
-                }
-            }
-            detectColorScheme();
-            
+        <script>            
             // Function to keep the navigation bars scroll offset when changing pages.
             setScroll = function(url, scroll) {
                 if(scroll != 0) {
@@ -67,6 +39,7 @@
 <title>19.08: August 2019 Devblog | RE:SS3D</title>
 <meta name="generator" content="Jekyll v3.8.5" />
 <meta property="og:title" content="19.08: August 2019 Devblog" />
+<meta name="author" content="Sunberry" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="“One step back, one and a half steps forward, but this time, faster.”" />
 <meta property="og:description" content="“One step back, one and a half steps forward, but this time, faster.”" />
@@ -77,7 +50,7 @@
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2019-09-06T14:30:00+00:00" />
 <script type="application/ld+json">
-{"description":"“One step back, one and a half steps forward, but this time, faster.”","image":"https://ss3d.space/assets/img/posts/19.08.01/EikoPipes.png","@type":"BlogPosting","headline":"19.08: August 2019 Devblog","dateModified":"2019-09-06T14:30:00+00:00","datePublished":"2019-09-06T14:30:00+00:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://ss3d.space/2019/09/06/19.08.html"},"url":"https://ss3d.space/2019/09/06/19.08.html","@context":"https://schema.org"}</script>
+{"description":"“One step back, one and a half steps forward, but this time, faster.”","image":"https://ss3d.space/assets/img/posts/19.08.01/EikoPipes.png","@type":"BlogPosting","headline":"19.08: August 2019 Devblog","dateModified":"2019-09-06T14:30:00+00:00","datePublished":"2019-09-06T14:30:00+00:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://ss3d.space/2019/09/06/19.08.html"},"url":"https://ss3d.space/2019/09/06/19.08.html","author":{"@type":"Person","name":"Sunberry"},"@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
         <link type="application/atom+xml" rel="alternate" href="https://ss3d.space/feed.xml" title="RE:SS3D" />
@@ -153,12 +126,14 @@ window.cookieconsent.initialise({
   <div class="image">
     <img src="/assets/img/posts/19.08.01/EikoPipes.png" alt="">
   </div>
-  <h5><i></i></h5>
+  
+  <h5><i>Image credit: Eiko</i></h5>
+  
 </div>
 
 <h1>19.08: August 2019 Devblog</h1>
 <h5><i>Friday, September 6, 2019</i></h5>
-<h5><i>Written by - Sunberry</i></h5>
+<h5><i>Written by: Sunberry</i></h5>
 
 <br>
 <p>One step back, one and a half steps forward, but this time, faster.</p>
@@ -179,8 +154,7 @@ window.cookieconsent.initialise({
 
 <p>Specifically the cause for our this month’s scrapping, the networking solution that we were using before took an absurdly long amount of time to compile, which was awful for every obvious reason. We rebuilt using Mirror for our networking, and have since pretty much surpassed where we were before.</p>
 
-<video autoplay="autoplay" muted="" loop="loop" width="580px" poster="/assets/img/posts/19.08.01/AugustNetworkingThumbnail.png">
-  <source src="/assets/img/posts/19.08.01/AugustNetworking.webm" type="video/webm" />
+<video autoplay="autoplay" muted="" loop="loop" width="580px" poster="/assets/img/posts/19.08.01/AugustNetworking.png">
   <source src="/assets/img/posts/19.08.01/AugustNetworking.mp4" type="video/mp4" />
 </video>
 
@@ -190,28 +164,27 @@ window.cookieconsent.initialise({
 
 <p>Lighting is kinda in a weird place for RE:SS3D due to it being intentionally unrealistic sometimes. There’s a bit of a balance between having light and dark work in ways that make sense without overwhelming the otherwise “flat pastel” visual design. Still WIP.</p>
 
-<div class="image"><a href="/assets/img/posts/19.08.01/AugustLighting.png" class="image-link" target="_blank"><img src="/" alt="" srcset="    /assets/resized/AugustLighting-580x274.png 580w,    /assets/resized/AugustLighting-290x137.png 290w,    /assets/resized/AugustLighting-170x80.png 170w,    /assets/resized/AugustLighting-145x69.png 145w, /assets/img/posts/19.08.01/AugustLighting.png 1920w" sizes="(max-width: 624px) 100vw, 578px, 580px" /></a></div>
+<div class="image"><a href="/assets/img/posts/19.08.01/AugustLighting.png" class="image-link" target="_blank"><img src="/" alt="" srcset="    /assets/resized/AugustLighting-580x435.png 580w,    /assets/resized/AugustLighting-290x218.png 290w,    /assets/resized/AugustLighting-170x128.png 170w,    /assets/resized/AugustLighting-145x109.png 145w, /assets/img/posts/19.08.01/AugustLighting.png 800w" sizes="(max-width: 624px) 100vw, 578px, 580px" /></a></div>
 
 <h2 id="fov">FoV</h2>
 
 <p>Once again from <strong>Milly</strong>, some brand new WIP FoV, displayed here, akin to the prior-designed FoV, but better.</p>
 
-<video autoplay="autoplay" muted="" loop="loop" width="580px" poster="/assets/img/posts/19.08.01/AugustFoVTest.png">
-  <source src="/assets/img/posts/19.08.01/AugustFoVTest.webm" type="video/webm" />
-  <source src="/assets/img/posts/19.08.01/AugustFoVTest.mp4" type="video/mp4" />
-</video>
-
-<video autoplay="autoplay" muted="" loop="loop" width="580px" poster="/assets/img/posts/19.08.01/AugustFoVStation.png">
-  <source src="/assets/img/posts/19.08.01/AugustFoVStation.webm" type="video/webm" />
-  <source src="/assets/img/posts/19.08.01/AugustFoVStation.mp4" type="video/mp4" />
-</video>
+<div id="doublevid"> 
+    <video id="vid1" width="285" height="285" poster="/assets/img/posts/19.08.01/AugustFoVTest.png" autoplay="" loop="" muted=""> 
+      <source src="/assets/img/posts/19.08.01/AugustFoVTest.mp4" type="video/mp4" />
+    </video>
+    <video id="vid2" width="285" height="285" poster="/assets/img/posts/19.08.01/AugustFoVStation.png" autoplay="" loop="" muted=""> 
+      <source src="/assets/img/posts/19.08.01/AugustFoVStation.mp4" type="video/mp4" />
+    </video>
+    <div class="vidclear"></div> 
+</div>
 
 <h2 id="player-inventory">Player Inventory</h2>
 
 <p>Also from <strong>Milly</strong> this month, WIP player inventory management:</p>
 
-<video autoplay="autoplay" muted="" loop="loop" width="580px" poster="/assets/img/posts/19.08.01/AugustNetworkingThumbnail.png">
-  <source src="/assets/img/posts/19.08.01/AugustItems.webm" type="video/webm" />
+<video autoplay="autoplay" muted="" loop="loop" width="580px" poster="/assets/img/posts/19.08.01/AugustItems.png">
   <source src="/assets/img/posts/19.08.01/AugustItems.mp4" type="video/mp4" />
 </video>
 
@@ -225,56 +198,30 @@ window.cookieconsent.initialise({
 
 <p>While continuing our frustrating tradition of overhauling walls, <strong>Eiko</strong> has also designed walls-in-progress, reinforced walls, reinforced windows, counters, and countertop windows/shutters.</p>
 
-<div class="image"><a href="/assets/img/posts/19.08.01/EikoWallworks.png" class="image-link" target="_blank"><img src="/" alt="" srcset="    /assets/resized/EikoWallworks-580x285.png 580w,    /assets/resized/EikoWallworks-290x142.png 290w,    /assets/resized/EikoWallworks-170x83.png 170w,    /assets/resized/EikoWallworks-145x71.png 145w, /assets/img/posts/19.08.01/EikoWallworks.png 1441w" sizes="(max-width: 624px) 100vw, 578px, 580px" /></a></div>
-<p>Detail on the shutters:</p>
 <div class="horizontal-2">
 
   <div class="image"><a href="/assets/img/posts/19.08.01/EikoSecureWindow.png" target="_blank"><img src="/" alt="" srcset="    /assets/resized/EikoSecureWindow-290x221.png 290w,    /assets/resized/EikoSecureWindow-170x130.png 170w,    /assets/resized/EikoSecureWindow-145x111.png 145w, /assets/img/posts/19.08.01/EikoSecureWindow.png 561w" sizes="(max-width: 624px) 50vw, 290px" /></a></div>
 
-  <div class="image"><a href="/assets/img/posts/19.08.01/EikoShutters.png" target="_blank"><img src="/" alt="" srcset="    /assets/resized/EikoShutters-580x427.png 580w,    /assets/resized/EikoShutters-290x214.png 290w,    /assets/resized/EikoShutters-170x125.png 170w,    /assets/resized/EikoShutters-145x107.png 145w, /assets/img/posts/19.08.01/EikoShutters.png 804w" sizes="(max-width: 624px) 50vw, 290px" /></a></div>
+  <div class="image"><a href="/assets/img/posts/19.08.01/EikoReinforcedWindowDisplay.png" target="_blank"><img src="/" alt="" srcset="    /assets/resized/EikoReinforcedWindowDisplay-580x493.png 580w,    /assets/resized/EikoReinforcedWindowDisplay-290x247.png 290w,    /assets/resized/EikoReinforcedWindowDisplay-170x145.png 170w,    /assets/resized/EikoReinforcedWindowDisplay-145x123.png 145w, /assets/img/posts/19.08.01/EikoReinforcedWindowDisplay.png 749w" sizes="(max-width: 624px) 50vw, 290px" /></a></div>
 </div>
-<p>Reinforced windows detail:</p>
-
-<div class="image"><a href="/assets/img/posts/19.08.01/EikoReinforcedWindowDisplay.png" class="image-link" target="_blank"><img src="/" alt="" srcset="    /assets/resized/EikoReinforcedWindowDisplay-580x493.png 580w,    /assets/resized/EikoReinforcedWindowDisplay-290x247.png 290w,    /assets/resized/EikoReinforcedWindowDisplay-170x145.png 170w,    /assets/resized/EikoReinforcedWindowDisplay-145x123.png 145w, /assets/img/posts/19.08.01/EikoReinforcedWindowDisplay.png 749w" sizes="(max-width: 624px) 100vw, 578px, 580px" /></a></div>
 
 <h2 id="site-improvements">Site Improvements</h2>
 
-<p>We now have a lovely <a href="/contribute/">Contribute</a> page, specifically designed to help model centralize resources for model contributors! The resources there are quite neat to look at, even if you don’t have any specific modeling knowledge or background. We also updated the <a href="/about/">About</a> page (finally)! We also updated the <a href="/faq/">FAQ</a> page (finally), too! Images load faster as thumbnails and can be clicked on for full-resolution!
-Site-specific writing courtesy of me (<strong>Sunberry</strong>), documents mostly courtesy of <strong>Eiko</strong>, and the site existing and improving to begin with as a whole is a continued effort courtesy of <strong>Stubenhocker</strong>.</p>
+<p>We now have a lovely <a href="/contribute/">Contribute page</a>, specifically designed to help model centralize resources for model contributors! The resources there are quite neat to look at, even if you don’t have any specific modeling knowledge or background. We also updated the <a href="/about/">About page</a> (finally)! We also updated the <a href="/faq/">FAQ page</a> (finally), too! Images load faster as thumbnails and can be clicked on for full-resolution! Site-specific writing courtesy of me (<strong>Sunberry</strong>), documents mostly courtesy of <strong>Eiko</strong>, and the site existing and improving to begin with as a whole is a continued effort courtesy of <strong>Stubenhocker</strong>.</p>
 
 <h2 id="eye-candy">EYE CANDY</h2>
 
-<p>From <strong>Grimmie</strong>, some wallpaper shots from what the teaser video was once intended to include.</p>
-
-<div class="image"><a href="/assets/img/art/Grimmie/GrimmieTimeAssassinLight.png" class="image-link" target="_blank"><img src="/" alt="" srcset="    /assets/resized/GrimmieTimeAssassinLight-580x326.png 580w,    /assets/resized/GrimmieTimeAssassinLight-290x163.png 290w,    /assets/resized/GrimmieTimeAssassinLight-170x96.png 170w,    /assets/resized/GrimmieTimeAssassinLight-145x82.png 145w, /assets/img/art/Grimmie/GrimmieTimeAssassinLight.png 1920w" sizes="(max-width: 624px) 100vw, 578px, 580px" /></a></div>
-
-<div class="image"><a href="/assets/img/art/Grimmie/GrimmieTimeAssassinDark.png" class="image-link" target="_blank"><img src="/" alt="" srcset="    /assets/resized/GrimmieTimeAssassinDark-580x326.png 580w,    /assets/resized/GrimmieTimeAssassinDark-290x163.png 290w,    /assets/resized/GrimmieTimeAssassinDark-170x96.png 170w,    /assets/resized/GrimmieTimeAssassinDark-145x82.png 145w, /assets/img/art/Grimmie/GrimmieTimeAssassinDark.png 1920w" sizes="(max-width: 624px) 100vw, 578px, 580px" /></a></div>
-
-<p><strong>Probably Not’s</strong> inspired art pieces:</p>
-
-<div class="image"><a href="/assets/img/art/ProbablyNot/ProbablyNotClownHall.jpg" class="image-link" target="_blank"><img src="/" alt="" srcset="    /assets/resized/ProbablyNotClownHall-580x326.jpg 580w,    /assets/resized/ProbablyNotClownHall-290x163.jpg 290w,    /assets/resized/ProbablyNotClownHall-170x96.jpg 170w,    /assets/resized/ProbablyNotClownHall-145x82.jpg 145w, /assets/img/art/ProbablyNot/ProbablyNotClownHall.jpg 1920w" sizes="(max-width: 624px) 100vw, 578px, 580px" /></a></div>
-
-<div class="image"><a href="/assets/img/posts/19.08.01/ProbablyNotSpook.jpg" class="image-link" target="_blank"><img src="/" alt="" srcset="    /assets/resized/ProbablyNotSpook-580x463.jpg 580w,    /assets/resized/ProbablyNotSpook-290x232.jpg 290w,    /assets/resized/ProbablyNotSpook-170x136.jpg 170w,    /assets/resized/ProbablyNotSpook-145x116.jpg 145w, /assets/img/posts/19.08.01/ProbablyNotSpook.jpg 1200w" sizes="(max-width: 624px) 100vw, 578px, 580px" /></a></div>
-
 <p>In another step towards ensuring that the standard spessman can be properly disassembled, <strong>Eiko</strong> has now made it so that the ears can be removed.</p>
 
-<div class="image"><a href="/assets/img/posts/19.08.01/ear.gif" class="image-link" target="_blank"><img src="/assets/img/posts/19.08.01/ear.gif" alt="" /></a></div>
+<div class="image"><a href="/assets/img/posts/19.08.01/ear.gif" class="image-link" target="_blank"><img src="/assets/img/posts/19.08.01/ear.gif" alt="" width="580px" /></a></div>
 
-<p>Console as a joint piece between <strong>Eiko</strong> and <strong>Goao</strong>. At one point this thing was fully animated with nothing but shapekey sorcery, but then <strong>Eiko</strong> made an animation to strap onto it. I still don’t know which one approach is more concerning anymore.</p>
-<div class="horizontal-2">
+<p>Console as a joint piece between <strong>Eiko</strong> and <strong>Goao</strong>.</p>
 
-  <div class="image"><a href="/assets/img/posts/19.08.01/ConsoleEiko.png" target="_blank"><img src="/" alt="" srcset="    /assets/resized/ConsoleEiko-580x435.png 580w,    /assets/resized/ConsoleEiko-290x218.png 290w,    /assets/resized/ConsoleEiko-170x128.png 170w,    /assets/resized/ConsoleEiko-145x109.png 145w, /assets/img/posts/19.08.01/ConsoleEiko.png 800w" sizes="(max-width: 624px) 50vw, 290px" /></a></div>
-
-  <div class="image"><a href="/assets/img/posts/19.08.01/ConsoleGoao.png" target="_blank"><img src="/" alt="" srcset="    /assets/resized/ConsoleGoao-580x435.png 580w,    /assets/resized/ConsoleGoao-290x218.png 290w,    /assets/resized/ConsoleGoao-170x128.png 170w,    /assets/resized/ConsoleGoao-145x109.png 145w, /assets/img/posts/19.08.01/ConsoleGoao.png 800w" sizes="(max-width: 624px) 50vw, 290px" /></a></div>
-</div>
+<div class="image"><a href="/assets/img/posts/19.08.01/ConsoleGoao.png" class="image-link" target="_blank"><img src="/" alt="" srcset="    /assets/resized/ConsoleGoao-580x435.png 580w,    /assets/resized/ConsoleGoao-290x218.png 290w,    /assets/resized/ConsoleGoao-170x128.png 170w,    /assets/resized/ConsoleGoao-145x109.png 145w, /assets/img/posts/19.08.01/ConsoleGoao.png 800w" sizes="(max-width: 624px) 100vw, 578px, 580px" /></a></div>
 
 <p>More various items from <strong>Goao</strong>:</p>
-<div class="horizontal-2">
 
-  <div class="image"><a href="/assets/img/posts/19.08.01/Goao1.png" target="_blank"><img src="/" alt="" srcset="    /assets/resized/Goao1-580x491.png 580w,    /assets/resized/Goao1-290x245.png 290w,    /assets/resized/Goao1-170x144.png 170w,    /assets/resized/Goao1-145x123.png 145w, /assets/img/posts/19.08.01/Goao1.png 793w" sizes="(max-width: 624px) 50vw, 290px" /></a></div>
-
-  <div class="image"><a href="/assets/img/posts/19.08.01/Goao2.png" target="_blank"><img src="/" alt="" srcset="    /assets/resized/Goao2-580x511.png 580w,    /assets/resized/Goao2-290x255.png 290w,    /assets/resized/Goao2-170x150.png 170w,    /assets/resized/Goao2-145x128.png 145w, /assets/img/posts/19.08.01/Goao2.png 753w" sizes="(max-width: 624px) 50vw, 290px" /></a></div>
-</div>
+<div class="image"><a href="/assets/img/posts/19.08.01/Goao2.png" class="image-link" target="_blank"><img src="/" alt="" srcset="    /assets/resized/Goao2-580x511.png 580w,    /assets/resized/Goao2-290x255.png 290w,    /assets/resized/Goao2-170x150.png 170w,    /assets/resized/Goao2-145x128.png 145w, /assets/img/posts/19.08.01/Goao2.png 753w" sizes="(max-width: 624px) 100vw, 578px, 580px" /></a></div>
 
 <div class="horizontal-2">
 
@@ -284,6 +231,7 @@ Site-specific writing courtesy of me (<strong>Sunberry</strong>), documents most
 </div>
 
 <p>From <strong>Lightvelox</strong>, that one old mining satchel you might recall, a blowtorch, and the CMO hardsuit.</p>
+
 <div class="horizontal-2">
 
   <div class="image"><a href="/assets/img/posts/19.08.01/LightVeloxMiningSatchelAndWeldingTool.png" target="_blank"><img src="/" alt="" srcset="    /assets/resized/LightVeloxMiningSatchelAndWeldingTool-580x435.png 580w,    /assets/resized/LightVeloxMiningSatchelAndWeldingTool-290x218.png 290w,    /assets/resized/LightVeloxMiningSatchelAndWeldingTool-170x128.png 170w,    /assets/resized/LightVeloxMiningSatchelAndWeldingTool-145x109.png 145w, /assets/img/posts/19.08.01/LightVeloxMiningSatchelAndWeldingTool.png 800w" sizes="(max-width: 624px) 50vw, 290px" /></a></div>
@@ -306,6 +254,21 @@ Site-specific writing courtesy of me (<strong>Sunberry</strong>), documents most
 <p>A new poster from <strong>Konstantin</strong>, this time depicting the automated menace of the station, Beepsky.</p>
 
 <div class="image"><a href="/assets/img/posts/19.08.01/KonstantinBeepsky.png" class="image-link" target="_blank"><img src="/" alt="" srcset="    /assets/resized/KonstantinBeepsky-580x870.png 580w,    /assets/resized/KonstantinBeepsky-290x435.png 290w,    /assets/resized/KonstantinBeepsky-170x255.png 170w,    /assets/resized/KonstantinBeepsky-145x218.png 145w, /assets/img/posts/19.08.01/KonstantinBeepsky.png 600w" sizes="(max-width: 624px) 100vw, 578px, 580px" /></a></div>
+
+<p>From <strong>Grimmie</strong>, some wallpaper shots from what the teaser video was once intended to include.</p>
+
+<div class="horizontal-2">
+
+  <div class="image"><a href="/assets/img/art/Grimmie/GrimmieTimeAssassinLight.png" target="_blank"><img src="/" alt="" srcset="    /assets/resized/GrimmieTimeAssassinLight-580x326.png 580w,    /assets/resized/GrimmieTimeAssassinLight-290x163.png 290w,    /assets/resized/GrimmieTimeAssassinLight-170x96.png 170w,    /assets/resized/GrimmieTimeAssassinLight-145x82.png 145w, /assets/img/art/Grimmie/GrimmieTimeAssassinLight.png 1920w" sizes="(max-width: 624px) 50vw, 290px" /></a></div>
+
+  <div class="image"><a href="/assets/img/art/Grimmie/GrimmieTimeAssassinDark.png" target="_blank"><img src="/" alt="" srcset="    /assets/resized/GrimmieTimeAssassinDark-580x326.png 580w,    /assets/resized/GrimmieTimeAssassinDark-290x163.png 290w,    /assets/resized/GrimmieTimeAssassinDark-170x96.png 170w,    /assets/resized/GrimmieTimeAssassinDark-145x82.png 145w, /assets/img/art/Grimmie/GrimmieTimeAssassinDark.png 1920w" sizes="(max-width: 624px) 50vw, 290px" /></a></div>
+</div>
+
+<p><strong>Probably Not</strong>’s inspired art pieces:</p>
+
+<div class="image"><a href="/assets/img/art/ProbablyNot/ProbablyNotClownHall.jpg" class="image-link" target="_blank"><img src="/" alt="" srcset="    /assets/resized/ProbablyNotClownHall-580x326.jpg 580w,    /assets/resized/ProbablyNotClownHall-290x163.jpg 290w,    /assets/resized/ProbablyNotClownHall-170x96.jpg 170w,    /assets/resized/ProbablyNotClownHall-145x82.jpg 145w, /assets/img/art/ProbablyNot/ProbablyNotClownHall.jpg 1920w" sizes="(max-width: 624px) 100vw, 578px, 580px" /></a></div>
+
+<div class="image"><a href="/assets/img/posts/19.08.01/ProbablyNotSpook.jpg" class="image-link" target="_blank"><img src="/" alt="" srcset="    /assets/resized/ProbablyNotSpook-580x463.jpg 580w,    /assets/resized/ProbablyNotSpook-290x232.jpg 290w,    /assets/resized/ProbablyNotSpook-170x136.jpg 170w,    /assets/resized/ProbablyNotSpook-145x116.jpg 145w, /assets/img/posts/19.08.01/ProbablyNotSpook.jpg 1200w" sizes="(max-width: 624px) 100vw, 578px, 580px" /></a></div>
 
 <h3 id="notes">NOTES</h3>
 

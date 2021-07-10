@@ -5,35 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="/css/style.css">
         <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
-        <meta name="theme-color" content="#1e4684">
-        <script>
-            //theme toggle
-            //determines if the user has a set theme
-            function detectColorScheme(){
-                var theme="dark";    //default to dark
-
-                //local storage is used to override OS theme settings
-                if(localStorage.getItem("theme")){
-                    if(localStorage.getItem("theme") == "light"){
-                        var theme = "light";
-                    }
-                } else if(!window.matchMedia) {
-                    //matchMedia method not supported
-                    return false;
-                } else if(window.matchMedia("(prefers-color-scheme: light)").matches) {
-                    //OS theme setting detected as dark
-                    var theme = "light";
-                }
-
-                //dark theme preferred, set document with a `data-theme` attribute
-                if (theme=="light") {
-                    document.documentElement.setAttribute("data-theme", "light");
-                } else {
-                    document.documentElement.setAttribute("data-theme", "dark");
-                }
-            }
-            detectColorScheme();
-            
+        <script>            
             // Function to keep the navigation bars scroll offset when changing pages.
             setScroll = function(url, scroll) {
                 if(scroll != 0) {
@@ -67,6 +39,7 @@
 <title>19.07: July 2019 Devblog | RE:SS3D</title>
 <meta name="generator" content="Jekyll v3.8.5" />
 <meta property="og:title" content="19.07: July 2019 Devblog" />
+<meta name="author" content="Sunberry" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="“Models, models, models models…”" />
 <meta property="og:description" content="“Models, models, models models…”" />
@@ -77,7 +50,7 @@
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2019-08-06T14:30:00+00:00" />
 <script type="application/ld+json">
-{"description":"“Models, models, models models…”","image":"https://ss3d.space/assets/img/art/Eiko/EikoPromoGibber.png","@type":"BlogPosting","headline":"19.07: July 2019 Devblog","dateModified":"2019-08-06T14:30:00+00:00","datePublished":"2019-08-06T14:30:00+00:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://ss3d.space/2019/08/06/19.07.html"},"url":"https://ss3d.space/2019/08/06/19.07.html","@context":"https://schema.org"}</script>
+{"description":"“Models, models, models models…”","image":"https://ss3d.space/assets/img/art/Eiko/EikoPromoGibber.png","@type":"BlogPosting","headline":"19.07: July 2019 Devblog","dateModified":"2019-08-06T14:30:00+00:00","datePublished":"2019-08-06T14:30:00+00:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://ss3d.space/2019/08/06/19.07.html"},"url":"https://ss3d.space/2019/08/06/19.07.html","author":{"@type":"Person","name":"Sunberry"},"@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
         <link type="application/atom+xml" rel="alternate" href="https://ss3d.space/feed.xml" title="RE:SS3D" />
@@ -153,12 +126,14 @@ window.cookieconsent.initialise({
   <div class="image">
     <img src="/assets/img/art/Eiko/EikoPromoGibber.png" alt="">
   </div>
-  <h5><i></i></h5>
+  
+  <h5><i>Image credit: Eiko</i></h5>
+  
 </div>
 
 <h1>19.07: July 2019 Devblog</h1>
 <h5><i>Tuesday, August 6, 2019</i></h5>
-<h5><i>Written by - Sunberry</i></h5>
+<h5><i>Written by: Sunberry</i></h5>
 
 <br>
 <p>Models, models, models models…</p>
@@ -169,9 +144,7 @@ window.cookieconsent.initialise({
 
 <h2 id="modelers-kit">Modeler’s Kit</h2>
 
-<p>Courtesy of the diligent <strong>Eiko</strong>, we now have a modeller’s kit, making contributing models literally easier than ever! Contains a Blender 2.8 template file with materials and settings properly set up, so that people stop making models with backface culling disabled or sending stuff in with their normals facing the wrong way, *beep’s original SS3D Style Guide, a brand new model formatting guide, a simple character turnaround for planning clothes and equipables, and the original Items-18-2-22b to serve as a collection of example models.</p>
-
-<div class="image"><a href="/assets/img/posts/19.07.01/ModelersKit.png" class="image-link" target="_blank"><img src="/" alt="" srcset="    /assets/resized/ModelersKit-580x287.png 580w,    /assets/resized/ModelersKit-290x143.png 290w,    /assets/resized/ModelersKit-170x84.png 170w,    /assets/resized/ModelersKit-145x72.png 145w, /assets/img/posts/19.07.01/ModelersKit.png 1920w" sizes="(max-width: 624px) 100vw, 578px, 580px" /></a></div>
+<p>Courtesy of the diligent <strong>Eiko</strong>, we now have a <a href="https://drive.google.com/drive/folders/1fUn42ATEWXKvAGoWoCpN9EoURFW_7ppX?usp=sharing" target="_blank">3D modeler’s kit</a>, making contributing models literally easier than ever! Contains a Blender 2.8 template file with materials and settings properly set up, so that people stop making models with backface culling disabled or sending stuff in with their normals facing the wrong way, *beep’s original SS3D Style Guide, a brand new model formatting guide, a simple character turnaround for designing clothes and equipables, and the original Items-18-2-22b to serve as a collection of example models.</p>
 
 <h2 id="shape-key-magic">SHAPE KEY MAGIC</h2>
 
@@ -180,10 +153,11 @@ Here we have two examples of shapekey use: player eye states, and hair/headpiece
 
 <div class="horizontal-2">
 
-  <div class="image"><a href="/assets/img/posts/19.07.01/EikoHatShapeKeys.gif" class="image-link" target="_blank"><img src="/assets/img/posts/19.07.01/EikoHatShapeKeys.gif" alt="" /></a></div>
+  <div class="image"><a href="/assets/img/posts/19.07.01/EikoHatShapeKeys.gif" class="image-link" target="_blank"><img src="/assets/img/posts/19.07.01/EikoHatShapeKeys.gif" alt="" width="580px" /></a></div>
 
-  <div class="image"><a href="/assets/img/posts/19.07.01/EikoExpressions.gif" class="image-link" target="_blank"><img src="/assets/img/posts/19.07.01/EikoExpressions.gif" alt="" /></a></div>
+  <div class="image"><a href="/assets/img/posts/19.07.01/EikoExpressions.gif" class="image-link" target="_blank"><img src="/assets/img/posts/19.07.01/EikoExpressions.gif" alt="" width="580px" /></a></div>
 </div>
+
 <p>Not groundbreaking, but a bit of insight on how character customization will work. Not pictured is how shapekeys are used for player body proportion sliders.</p>
 
 <h2 id="eye-candy">EYE CANDY</h2>
@@ -192,37 +166,16 @@ Here we have two examples of shapekey use: player eye states, and hair/headpiece
 
 <div class="horizontal-2">
 
-  <div class="image"><a href="/assets/img/posts/19.07.01/EikoOrgans1.png" target="_blank"><img src="/" alt="" srcset="    /assets/resized/EikoOrgans1-580x631.png 580w,    /assets/resized/EikoOrgans1-290x316.png 290w,    /assets/resized/EikoOrgans1-170x185.png 170w,    /assets/resized/EikoOrgans1-145x158.png 145w, /assets/img/posts/19.07.01/EikoOrgans1.png 621w" sizes="(max-width: 624px) 50vw, 290px" /></a></div>
+  <div class="image"><a href="/assets/img/posts/19.07.01/EikoOrgans.png" target="_blank"><img src="/" alt="" srcset="    /assets/resized/EikoOrgans-580x435.png 580w,    /assets/resized/EikoOrgans-290x218.png 290w,    /assets/resized/EikoOrgans-170x128.png 170w,    /assets/resized/EikoOrgans-145x109.png 145w, /assets/img/posts/19.07.01/EikoOrgans.png 800w" sizes="(max-width: 624px) 50vw, 290px" /></a></div>
 
-  <div class="image"><a href="/assets/img/posts/19.07.01/EikoOrgans2.png" target="_blank"><img src="/" alt="" srcset="    /assets/resized/EikoOrgans2-580x631.png 580w,    /assets/resized/EikoOrgans2-290x316.png 290w,    /assets/resized/EikoOrgans2-170x185.png 170w,    /assets/resized/EikoOrgans2-145x158.png 145w, /assets/img/posts/19.07.01/EikoOrgans2.png 621w" sizes="(max-width: 624px) 50vw, 290px" /></a></div>
+  <div class="image"><a href="/assets/img/posts/19.07.01/EikoSpiralbound.png" target="_blank"><img src="/" alt="" srcset="    /assets/resized/EikoSpiralbound-580x435.png 580w,    /assets/resized/EikoSpiralbound-290x218.png 290w,    /assets/resized/EikoSpiralbound-170x128.png 170w,    /assets/resized/EikoSpiralbound-145x109.png 145w, /assets/img/posts/19.07.01/EikoSpiralbound.png 800w" sizes="(max-width: 624px) 50vw, 290px" /></a></div>
 </div>
 
 <div class="horizontal-2">
 
-  <div class="image"><a href="/assets/img/posts/19.07.01/EikoSpiralbound1.png" target="_blank"><img src="/" alt="" srcset="    /assets/resized/EikoSpiralbound1-580x435.png 580w,    /assets/resized/EikoSpiralbound1-290x218.png 290w,    /assets/resized/EikoSpiralbound1-170x128.png 170w,    /assets/resized/EikoSpiralbound1-145x109.png 145w, /assets/img/posts/19.07.01/EikoSpiralbound1.png 800w" sizes="(max-width: 624px) 50vw, 290px" /></a></div>
+  <div class="image"><a href="/assets/img/posts/19.07.01/EikoCrates.png" target="_blank"><img src="/" alt="" srcset="    /assets/resized/EikoCrates-580x435.png 580w,    /assets/resized/EikoCrates-290x218.png 290w,    /assets/resized/EikoCrates-170x128.png 170w,    /assets/resized/EikoCrates-145x109.png 145w, /assets/img/posts/19.07.01/EikoCrates.png 800w" sizes="(max-width: 624px) 50vw, 290px" /></a></div>
 
-  <div class="image"><a href="/assets/img/posts/19.07.01/EikoSpiralbound2.png" target="_blank"><img src="/" alt="" srcset="    /assets/resized/EikoSpiralbound2-580x435.png 580w,    /assets/resized/EikoSpiralbound2-290x218.png 290w,    /assets/resized/EikoSpiralbound2-170x128.png 170w,    /assets/resized/EikoSpiralbound2-145x109.png 145w, /assets/img/posts/19.07.01/EikoSpiralbound2.png 800w" sizes="(max-width: 624px) 50vw, 290px" /></a></div>
-</div>
-
-<div class="horizontal-2">
-
-  <div class="image"><a href="/assets/img/posts/19.07.01/EikoCrates1.png" target="_blank"><img src="/" alt="" srcset="    /assets/resized/EikoCrates1-580x435.png 580w,    /assets/resized/EikoCrates1-290x218.png 290w,    /assets/resized/EikoCrates1-170x128.png 170w,    /assets/resized/EikoCrates1-145x109.png 145w, /assets/img/posts/19.07.01/EikoCrates1.png 800w" sizes="(max-width: 624px) 50vw, 290px" /></a></div>
-
-  <div class="image"><a href="/assets/img/posts/19.07.01/EikoCrates2.png" target="_blank"><img src="/" alt="" srcset="    /assets/resized/EikoCrates2-580x435.png 580w,    /assets/resized/EikoCrates2-290x218.png 290w,    /assets/resized/EikoCrates2-170x128.png 170w,    /assets/resized/EikoCrates2-145x109.png 145w, /assets/img/posts/19.07.01/EikoCrates2.png 800w" sizes="(max-width: 624px) 50vw, 290px" /></a></div>
-</div>
-
-<div class="horizontal-2">
-
-  <div class="image"><a href="/assets/img/posts/19.07.01/EikoBed1.png" target="_blank"><img src="/" alt="" srcset="    /assets/resized/EikoBed1-580x435.png 580w,    /assets/resized/EikoBed1-290x218.png 290w,    /assets/resized/EikoBed1-170x128.png 170w,    /assets/resized/EikoBed1-145x109.png 145w, /assets/img/posts/19.07.01/EikoBed1.png 800w" sizes="(max-width: 624px) 50vw, 290px" /></a></div>
-
-  <div class="image"><a href="/assets/img/posts/19.07.01/EikoBed2.png" target="_blank"><img src="/" alt="" srcset="    /assets/resized/EikoBed2-580x435.png 580w,    /assets/resized/EikoBed2-290x218.png 290w,    /assets/resized/EikoBed2-170x128.png 170w,    /assets/resized/EikoBed2-145x109.png 145w, /assets/img/posts/19.07.01/EikoBed2.png 800w" sizes="(max-width: 624px) 50vw, 290px" /></a></div>
-</div>
-
-<div class="horizontal-2">
-
-  <div class="image"><a href="/assets/img/posts/19.07.01/EikoGrass2.png" target="_blank"><img src="/" alt="" srcset="    /assets/resized/EikoGrass2-580x435.png 580w,    /assets/resized/EikoGrass2-290x218.png 290w,    /assets/resized/EikoGrass2-170x128.png 170w,    /assets/resized/EikoGrass2-145x109.png 145w, /assets/img/posts/19.07.01/EikoGrass2.png 800w" sizes="(max-width: 624px) 50vw, 290px" /></a></div>
-
-  <div class="image"><a href="/assets/img/posts/19.07.01/EikoGrass1.png" target="_blank"><img src="/" alt="" srcset="    /assets/resized/EikoGrass1-580x435.png 580w,    /assets/resized/EikoGrass1-290x218.png 290w,    /assets/resized/EikoGrass1-170x128.png 170w,    /assets/resized/EikoGrass1-145x109.png 145w, /assets/img/posts/19.07.01/EikoGrass1.png 800w" sizes="(max-width: 624px) 50vw, 290px" /></a></div>
+  <div class="image"><a href="/assets/img/posts/19.07.01/EikoBed.png" target="_blank"><img src="/" alt="" srcset="    /assets/resized/EikoBed-580x435.png 580w,    /assets/resized/EikoBed-290x218.png 290w,    /assets/resized/EikoBed-170x128.png 170w,    /assets/resized/EikoBed-145x109.png 145w, /assets/img/posts/19.07.01/EikoBed.png 800w" sizes="(max-width: 624px) 50vw, 290px" /></a></div>
 </div>
 
 <div class="horizontal-2">
@@ -234,24 +187,19 @@ Here we have two examples of shapekey use: player eye states, and hair/headpiece
 
 <div class="horizontal-2">
 
-  <div class="image"><a href="/assets/img/posts/19.07.01/EikoPenguins.png" target="_blank"><img src="/" alt="" srcset="    /assets/resized/EikoPenguins-580x435.png 580w,    /assets/resized/EikoPenguins-290x218.png 290w,    /assets/resized/EikoPenguins-170x128.png 170w,    /assets/resized/EikoPenguins-145x109.png 145w, /assets/img/posts/19.07.01/EikoPenguins.png 800w" sizes="(max-width: 624px) 50vw, 290px" /></a></div>
+  <div class="image"><a href="/assets/img/posts/19.07.01/EikoGrass.png" target="_blank"><img src="/" alt="" srcset="    /assets/resized/EikoGrass-580x435.png 580w,    /assets/resized/EikoGrass-290x218.png 290w,    /assets/resized/EikoGrass-170x128.png 170w,    /assets/resized/EikoGrass-145x109.png 145w, /assets/img/posts/19.07.01/EikoGrass.png 800w" sizes="(max-width: 624px) 50vw, 290px" /></a></div>
 
   <div class="image"><a href="/assets/img/posts/19.07.01/EikoWashingMachine.png" target="_blank"><img src="/" alt="" srcset="    /assets/resized/EikoWashingMachine-580x435.png 580w,    /assets/resized/EikoWashingMachine-290x218.png 290w,    /assets/resized/EikoWashingMachine-170x128.png 170w,    /assets/resized/EikoWashingMachine-145x109.png 145w, /assets/img/posts/19.07.01/EikoWashingMachine.png 800w" sizes="(max-width: 624px) 50vw, 290px" /></a></div>
 </div>
 
 <div class="horizontal-2">
 
-  <div class="image"><a href="/assets/img/posts/19.07.01/EikoWebbed1.png" target="_blank"><img src="/" alt="" srcset="    /assets/resized/EikoWebbed1-580x435.png 580w,    /assets/resized/EikoWebbed1-290x218.png 290w,    /assets/resized/EikoWebbed1-170x128.png 170w,    /assets/resized/EikoWebbed1-145x109.png 145w, /assets/img/posts/19.07.01/EikoWebbed1.png 800w" sizes="(max-width: 624px) 50vw, 290px" /></a></div>
+  <div class="image"><a href="/assets/img/posts/19.07.01/EikoArcade.png" target="_blank"><img src="/" alt="" srcset="    /assets/resized/EikoArcade-580x435.png 580w,    /assets/resized/EikoArcade-290x218.png 290w,    /assets/resized/EikoArcade-170x128.png 170w,    /assets/resized/EikoArcade-145x109.png 145w, /assets/img/posts/19.07.01/EikoArcade.png 800w" sizes="(max-width: 624px) 50vw, 290px" /></a></div>
 
-  <div class="image"><a href="/assets/img/posts/19.07.01/EikoWebbed2.png" target="_blank"><img src="/" alt="" srcset="    /assets/resized/EikoWebbed2-580x435.png 580w,    /assets/resized/EikoWebbed2-290x218.png 290w,    /assets/resized/EikoWebbed2-170x128.png 170w,    /assets/resized/EikoWebbed2-145x109.png 145w, /assets/img/posts/19.07.01/EikoWebbed2.png 800w" sizes="(max-width: 624px) 50vw, 290px" /></a></div>
+  <div class="image"><a href="/assets/img/posts/19.07.01/EikoWebbed.png" target="_blank"><img src="/" alt="" srcset="    /assets/resized/EikoWebbed-580x435.png 580w,    /assets/resized/EikoWebbed-290x218.png 290w,    /assets/resized/EikoWebbed-170x128.png 170w,    /assets/resized/EikoWebbed-145x109.png 145w, /assets/img/posts/19.07.01/EikoWebbed.png 800w" sizes="(max-width: 624px) 50vw, 290px" /></a></div>
 </div>
 
-<div class="horizontal-2">
-
-  <div class="image"><a href="/assets/img/posts/19.07.01/EikoArcade1.png" target="_blank"><img src="/" alt="" srcset="    /assets/resized/EikoArcade1-580x435.png 580w,    /assets/resized/EikoArcade1-290x218.png 290w,    /assets/resized/EikoArcade1-170x128.png 170w,    /assets/resized/EikoArcade1-145x109.png 145w, /assets/img/posts/19.07.01/EikoArcade1.png 800w" sizes="(max-width: 624px) 50vw, 290px" /></a></div>
-
-  <div class="image"><a href="/assets/img/posts/19.07.01/EikoArcade2.png" target="_blank"><img src="/" alt="" srcset="    /assets/resized/EikoArcade2-580x435.png 580w,    /assets/resized/EikoArcade2-290x218.png 290w,    /assets/resized/EikoArcade2-170x128.png 170w,    /assets/resized/EikoArcade2-145x109.png 145w, /assets/img/posts/19.07.01/EikoArcade2.png 800w" sizes="(max-width: 624px) 50vw, 290px" /></a></div>
-</div>
+<div class="image"><a href="/assets/img/posts/19.07.01/EikoPenguins.png" class="image-link" target="_blank"><img src="/" alt="" srcset="    /assets/resized/EikoPenguins-580x435.png 580w,    /assets/resized/EikoPenguins-290x218.png 290w,    /assets/resized/EikoPenguins-170x128.png 170w,    /assets/resized/EikoPenguins-145x109.png 145w, /assets/img/posts/19.07.01/EikoPenguins.png 800w" sizes="(max-width: 624px) 100vw, 578px, 580px" /></a></div>
 
 <p><strong>Enclave</strong> was inspired to make some of the cultist items this month, as well as some wizard staffs and other miscellaneous station items.</p>
 
@@ -294,31 +242,17 @@ Here we have two examples of shapekey use: player eye states, and hair/headpiece
 
 <p>From <strong>deBARBA</strong>, some birds and a blender, all animated, but not to imply those things should categorically mix.</p>
 
-<div class="horizontal-2-direct-children-desktop">
-  <div class="sketchfab-embed-wrapper">
-    <p>
-      <iframe width="320" height="200" src="https://sketchfab.com/models/1ac51f5f691a4986a5ac1e415da0c7d9/embed" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true" style="width:100%"></iframe>
-    </p>
-  </div>
-  <div class="sketchfab-embed-wrapper">
-    <p>
-      <iframe width="320" height="200" src="https://sketchfab.com/models/2434dc57e8594e80b80cd28c1b19a24e/embed" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true" style="width:100%"></iframe>
-    </p>
-  </div>
+<div id="doublevid"> 
+  <iframe width="320" height="200" src="https://sketchfab.com/models/1ac51f5f691a4986a5ac1e415da0c7d9/embed" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true" style="width:49%"></iframe>
+  <iframe width="320" height="200" src="https://sketchfab.com/models/2434dc57e8594e80b80cd28c1b19a24e/embed" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true" style="width:49%"></iframe>
 </div>
 
-<div class="horizontal-2-direct-children-desktop">
-  <div class="sketchfab-embed-wrapper">
-    <p>
-      <iframe width="320" height="200" src="https://sketchfab.com/models/19ccdf5f26a243f3bd3b47ccbe00e0ea/embed" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true" style="width:100%"></iframe>
-    </p>
-  </div>
-  <div class="sketchfab-embed-wrapper">
-    <p>
-      <iframe width="320" height="200" src="https://sketchfab.com/models/15567352b4a44d739e5c2dc966202b29/embed" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true" style="width:100%"></iframe>
-    </p>
-  </div>
+<div id="doublevid"> 
+  <iframe width="320" height="200" src="https://sketchfab.com/models/19ccdf5f26a243f3bd3b47ccbe00e0ea/embed" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true" style="width:49%"></iframe>
+  <iframe width="320" height="200" src="https://sketchfab.com/models/15567352b4a44d739e5c2dc966202b29/embed" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true" style="width:49%"></iframe>
 </div>
+
+<div class="image"><a href="/assets/img/posts/19.07.01/deBARBAPunchingBag.png" class="image-link" target="_blank"><img src="/" alt="" srcset="    /assets/resized/deBARBAPunchingBag-580x435.png 580w,    /assets/resized/deBARBAPunchingBag-290x218.png 290w,    /assets/resized/deBARBAPunchingBag-170x128.png 170w,    /assets/resized/deBARBAPunchingBag-145x109.png 145w, /assets/img/posts/19.07.01/deBARBAPunchingBag.png 800w" sizes="(max-width: 624px) 100vw, 578px, 580px" /></a></div>
 
 <p>From <strong>Goao</strong> this month, a particular interest in instruments, and more.</p>
 
@@ -359,14 +293,11 @@ Here we have two examples of shapekey use: player eye states, and hair/headpiece
 
 <div class="image"><a href="/assets/img/posts/19.07.01/GoaoCamera.png" class="image-link" target="_blank"><img src="/" alt="" srcset="    /assets/resized/GoaoCamera-580x435.png 580w,    /assets/resized/GoaoCamera-290x218.png 290w,    /assets/resized/GoaoCamera-170x128.png 170w,    /assets/resized/GoaoCamera-145x109.png 145w, /assets/img/posts/19.07.01/GoaoCamera.png 800w" sizes="(max-width: 624px) 100vw, 578px, 580px" /></a></div>
 
-<p>Finally, we have a grinder and conveyer belts from <strong>Milly</strong>, and reinforced tiles from <strong>Chanoc</strong>.</p>
+<p>Finally, we have conveyer belts and the <em>recycler</em> from <strong>Milly</strong>, and reinforced tiles from <strong>Chanoc</strong>.</p>
 
-<div class="horizontal-2">
+<div class="image"><a href="/assets/img/posts/19.07.01/MillyGrinder.png" class="image-link" target="_blank"><img src="/" alt="" srcset="    /assets/resized/MillyGrinder-580x435.png 580w,    /assets/resized/MillyGrinder-290x218.png 290w,    /assets/resized/MillyGrinder-170x128.png 170w,    /assets/resized/MillyGrinder-145x109.png 145w, /assets/img/posts/19.07.01/MillyGrinder.png 800w" sizes="(max-width: 624px) 100vw, 578px, 580px" /></a></div>
 
-  <div class="image"><a href="/assets/img/posts/19.07.01/MillyGrinder.png" target="_blank"><img src="/" alt="" srcset="    /assets/resized/MillyGrinder-580x435.png 580w,    /assets/resized/MillyGrinder-290x218.png 290w,    /assets/resized/MillyGrinder-170x128.png 170w,    /assets/resized/MillyGrinder-145x109.png 145w, /assets/img/posts/19.07.01/MillyGrinder.png 800w" sizes="(max-width: 624px) 50vw, 290px" /></a></div>
-
-  <div class="image"><a href="/assets/img/posts/19.07.01/ChanocReinforcedTiles.png" target="_blank"><img src="/" alt="" srcset="    /assets/resized/ChanocReinforcedTiles-580x435.png 580w,    /assets/resized/ChanocReinforcedTiles-290x218.png 290w,    /assets/resized/ChanocReinforcedTiles-170x128.png 170w,    /assets/resized/ChanocReinforcedTiles-145x109.png 145w, /assets/img/posts/19.07.01/ChanocReinforcedTiles.png 800w" sizes="(max-width: 624px) 50vw, 290px" /></a></div>
-</div>
+<div class="image"><a href="/assets/img/posts/19.07.01/ChanocReinforcedTiles.png" class="image-link" target="_blank"><img src="/" alt="" srcset="    /assets/resized/ChanocReinforcedTiles-580x435.png 580w,    /assets/resized/ChanocReinforcedTiles-290x218.png 290w,    /assets/resized/ChanocReinforcedTiles-170x128.png 170w,    /assets/resized/ChanocReinforcedTiles-145x109.png 145w, /assets/img/posts/19.07.01/ChanocReinforcedTiles.png 800w" sizes="(max-width: 624px) 100vw, 578px, 580px" /></a></div>
 
 <h3 id="notes">NOTES</h3>
 

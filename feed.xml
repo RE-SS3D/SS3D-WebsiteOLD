@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://ss3d.space/feed.xml" rel="self" type="application/atom+xml" /><link href="https://ss3d.space/" rel="alternate" type="text/html" /><updated>2021-07-09T03:08:26+00:00</updated><id>https://ss3d.space/feed.xml</id><title type="html">RE:SS3D</title><subtitle>This is a 3D recreation of Space Station 13, on the Unity engine, which will come with its own set of gameplay/graphical improvements. </subtitle><entry><title type="html">21.06: June 2021 Devblog</title><link href="https://ss3d.space/2021/07/06/21.06.html" rel="alternate" type="text/html" title="21.06: June 2021 Devblog" /><published>2021-07-06T11:30:00+00:00</published><updated>2021-07-06T11:30:00+00:00</updated><id>https://ss3d.space/2021/07/06/21.06</id><content type="html" xml:base="https://ss3d.space/2021/07/06/21.06.html">&lt;p&gt;&lt;em&gt;“The Devil grows inside the hearts of the selfish and wicked.&lt;br /&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://ss3d.space/feed.xml" rel="self" type="application/atom+xml" /><link href="https://ss3d.space/" rel="alternate" type="text/html" /><updated>2021-07-10T03:00:54+00:00</updated><id>https://ss3d.space/feed.xml</id><title type="html">RE:SS3D</title><subtitle>This is a 3D recreation of Space Station 13, on the Unity engine, which will come with its own set of gameplay/graphical improvements. </subtitle><entry><title type="html">21.06: June 2021 Devblog</title><link href="https://ss3d.space/2021/07/06/21.06.html" rel="alternate" type="text/html" title="21.06: June 2021 Devblog" /><published>2021-07-06T11:30:00+00:00</published><updated>2021-07-06T11:30:00+00:00</updated><id>https://ss3d.space/2021/07/06/21.06</id><content type="html" xml:base="https://ss3d.space/2021/07/06/21.06.html">&lt;p&gt;&lt;em&gt;“The Devil grows inside the hearts of the selfish and wicked.&lt;br /&gt;
 White, brown, yellow, and black — color is not restricted.&lt;br /&gt;
 You have a self-destructive destiny when you’re inflicted.&lt;br /&gt;
 And you’ll be one of God’s children that fell from the top.&lt;br /&gt;
@@ -21,7 +21,6 @@ Because a dance with the Devil might last you forever…”&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;The system also now allows for examining items that are in containers that display their content (ex. items on the custodial cart or an item in another player’s hand), it also now allows for examining items in a UI (like an item in your pocket or another type of UI).&lt;/p&gt;
 
 &lt;video controls=&quot;&quot; muted=&quot;&quot; poster=&quot;/assets/img/posts/21.06.01/ExamineUI.png&quot; width=&quot;580px&quot;&gt;&amp;gt;
-  &lt;source src=&quot;/assets/img/posts/21.06.01/ExamineUI.webm&quot; type=&quot;video/webm&quot; /&gt;
   &lt;source src=&quot;/assets/img/posts/21.06.01/ExamineUI.mp4&quot; type=&quot;video/mp4&quot; /&gt;
 &lt;/video&gt;
 
@@ -108,24 +107,20 @@ Because a dance with the Devil might last you forever…”&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;New this month, &lt;strong&gt;Jadetea&lt;/strong&gt; made these simple animated textures to use on the PDA.&lt;/p&gt;
 
 &lt;div id=&quot;doublevid&quot;&gt; 
-    &lt;video id=&quot;vid1&quot; width=&quot;285&quot; height=&quot;285&quot; poster=&quot;/assets/img/posts/21.06.01/PDA_Alert.png&quot; autoplay=&quot;&quot; loop=&quot;&quot; muted=&quot;&quot;&gt; 
-      &lt;source src=&quot;/assets/img/posts/21.06.01/PDA_Alert.webm&quot; type=&quot;video/webm&quot; /&gt;
+    &lt;video id=&quot;vid1&quot; width=&quot;285&quot; height=&quot;285&quot; poster=&quot;/assets/img/posts/21.06.01/PDA_Alert.png&quot; autoplay=&quot;&quot; loop=&quot;&quot; muted=&quot;&quot;&gt;
       &lt;source src=&quot;/assets/img/posts/21.06.01/PDA_Alert.mp4&quot; type=&quot;video/mp4&quot; /&gt;
     &lt;/video&gt;
-    &lt;video id=&quot;vid2&quot; width=&quot;285&quot; height=&quot;285&quot; poster=&quot;/assets/img/posts/21.06.01/PDA_Flashlight.png&quot; autoplay=&quot;&quot; loop=&quot;&quot; muted=&quot;&quot;&gt; 
-      &lt;source src=&quot;/assets/img/posts/21.06.01/PDA_Flashlight.webm&quot; type=&quot;video/webm&quot; /&gt;
+    &lt;video id=&quot;vid2&quot; width=&quot;285&quot; height=&quot;285&quot; poster=&quot;/assets/img/posts/21.06.01/PDA_Flashlight.png&quot; autoplay=&quot;&quot; loop=&quot;&quot; muted=&quot;&quot;&gt;
       &lt;source src=&quot;/assets/img/posts/21.06.01/PDA_Flashlight.mp4&quot; type=&quot;video/mp4&quot; /&gt;
     &lt;/video&gt;
     &lt;div class=&quot;vidclear&quot;&gt;&lt;/div&gt; 
 &lt;/div&gt;
 
 &lt;div id=&quot;doublevid&quot;&gt; 
-    &lt;video id=&quot;vid1&quot; width=&quot;285&quot; height=&quot;285&quot; poster=&quot;/assets/img/posts/21.06.01/PDA_Text.png&quot; autoplay=&quot;&quot; loop=&quot;&quot; muted=&quot;&quot;&gt; 
-      &lt;source src=&quot;/assets/img/posts/21.06.01/PDA_Text.webm&quot; type=&quot;video/webm&quot; /&gt;
+    &lt;video id=&quot;vid1&quot; width=&quot;285&quot; height=&quot;285&quot; poster=&quot;/assets/img/posts/21.06.01/PDA_Text.png&quot; autoplay=&quot;&quot; loop=&quot;&quot; muted=&quot;&quot;&gt;
       &lt;source src=&quot;/assets/img/posts/21.06.01/PDA_Text.mp4&quot; type=&quot;video/mp4&quot; /&gt;
     &lt;/video&gt;
-    &lt;video id=&quot;vid2&quot; width=&quot;285&quot; height=&quot;285&quot; poster=&quot;/assets/img/posts/21.06.01/PDA_Mail.png&quot; autoplay=&quot;&quot; loop=&quot;&quot; muted=&quot;&quot;&gt; 
-      &lt;source src=&quot;/assets/img/posts/21.06.01/PDA_Mail.webm&quot; type=&quot;video/webm&quot; /&gt;
+    &lt;video id=&quot;vid2&quot; width=&quot;285&quot; height=&quot;285&quot; poster=&quot;/assets/img/posts/21.06.01/PDA_Mail.png&quot; autoplay=&quot;&quot; loop=&quot;&quot; muted=&quot;&quot;&gt;
       &lt;source src=&quot;/assets/img/posts/21.06.01/PDA_Mail.mp4&quot; type=&quot;video/mp4&quot; /&gt;
     &lt;/video&gt;
     &lt;div class=&quot;vidclear&quot;&gt;&lt;/div&gt; 
@@ -152,7 +147,6 @@ Because a dance with the Devil might last you forever…”&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;Implemented by &lt;strong&gt;peeB&lt;/strong&gt;, cigarettes and joints are now consumed when lit, currently lasting just 10 seconds. Even includes an extinguish interaction. Fine-tuning will come later.&lt;/p&gt;
 
 &lt;video controls=&quot;&quot; muted=&quot;&quot; poster=&quot;/assets/img/posts/21.05.01/Smokin.png&quot; width=&quot;580px&quot;&gt;&amp;gt;
-  &lt;source src=&quot;/assets/img/posts/21.05.01/Smokin.webm&quot; type=&quot;video/webm&quot; /&gt;
   &lt;source src=&quot;/assets/img/posts/21.05.01/Smokin.mp4&quot; type=&quot;video/mp4&quot; /&gt;
 &lt;/video&gt;
 
@@ -242,9 +236,9 @@ Because a dance with the Devil might last you forever…”&lt;/em&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
 
-&lt;p&gt;Lastly, although we have a download link for each monthy version at the top of each blog post, and keep a link to the latest version on the homepage, we also added a new &lt;a href=&quot;/download/&quot;&gt;download page&lt;/a&gt; that links to the latest release as well. It’s handier to link to externally and will download the game automatically.&lt;/p&gt;
+&lt;p&gt;Lastly, although we have a download link for each monthy version at the top of each blog post, and keep a link to the latest version on the homepage, we also added a new &lt;a href=&quot;/download/&quot;&gt;Download page&lt;/a&gt; that links to the latest release as well. It’s handier to link to externally and will download the game automatically.&lt;/p&gt;
 
-&lt;p&gt;We’re still over here working so, as always, you know where to find us if you want to follow us closer or come contribute (on &lt;a href=&quot;https://discord.gg/3ny9tdH&quot; target=&quot;_blank&quot;&gt;Discord&lt;/a&gt;).&lt;/p&gt;</content><author><name></name></author><summary type="html">“What could we accomplish if we knew we could not fail?”</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://ss3d.space/assets/img/art/ProbablyNot/ProbablyNot_Janitor.png" /></entry><entry><title type="html">21.04: April 2021 Devblog</title><link href="https://ss3d.space/2021/05/06/21.04.html" rel="alternate" type="text/html" title="21.04: April 2021 Devblog" /><published>2021-05-06T11:30:00+00:00</published><updated>2021-05-06T11:30:00+00:00</updated><id>https://ss3d.space/2021/05/06/21.04</id><content type="html" xml:base="https://ss3d.space/2021/05/06/21.04.html">&lt;p&gt;Surely everything happens for a reason, right?&lt;/p&gt;
+&lt;p&gt;We’re still over here working so, as always, you know where to find us if you want to follow us closer or come contribute (on &lt;a href=&quot;https://discord.gg/3ny9tdH&quot; target=&quot;_blank&quot;&gt;Discord&lt;/a&gt;).&lt;/p&gt;</content><author><name>CosmicCoincidence</name></author><summary type="html">“What could we accomplish if we knew we could not fail?”</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://ss3d.space/assets/img/art/ProbablyNot/ProbablyNot_Janitor.png" /></entry><entry><title type="html">21.04: April 2021 Devblog</title><link href="https://ss3d.space/2021/05/06/21.04.html" rel="alternate" type="text/html" title="21.04: April 2021 Devblog" /><published>2021-05-06T11:30:00+00:00</published><updated>2021-05-06T11:30:00+00:00</updated><id>https://ss3d.space/2021/05/06/21.04</id><content type="html" xml:base="https://ss3d.space/2021/05/06/21.04.html">&lt;p&gt;Surely everything happens for a reason, right?&lt;/p&gt;
 
 &lt;h1 id=&quot;april-recap&quot;&gt;April Recap&lt;/h1&gt;
 
@@ -328,25 +322,18 @@ Because a dance with the Devil might last you forever…”&lt;/em&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;art&quot;&gt;Art&lt;/h2&gt;
 
-&lt;p&gt;This month’s dev blog art is also brought to you by the &lt;strong&gt;CosmicCoincidence&lt;/strong&gt;, who couldn’t decide how to finish his piece and thus made a few final variations.&lt;/p&gt;
+&lt;p&gt;This month’s dev blog art is also brought to you by the &lt;strong&gt;CosmicCoincidence&lt;/strong&gt;, who couldn’t decide how to finish his piece and thus made a couple final variations.&lt;/p&gt;
 
 &lt;div class=&quot;horizontal-2&quot;&gt;
-
-  &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/art/CosmicCoincidence/CosmicGrinderA1.png&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/CosmicGrinderA1-580x326.png 580w,    /assets/resized/CosmicGrinderA1-290x163.png 290w,    /assets/resized/CosmicGrinderA1-170x96.png 170w,    /assets/resized/CosmicGrinderA1-145x82.png 145w, /assets/img/art/CosmicCoincidence/CosmicGrinderA1.png 3840w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
 
   &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/art/CosmicCoincidence/CosmicGrinderA2.png&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/CosmicGrinderA2-580x326.png 580w,    /assets/resized/CosmicGrinderA2-290x163.png 290w,    /assets/resized/CosmicGrinderA2-170x96.png 170w,    /assets/resized/CosmicGrinderA2-145x82.png 145w, /assets/img/art/CosmicCoincidence/CosmicGrinderA2.png 3840w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;div class=&quot;horizontal-2&quot;&gt;
-
-  &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/art/CosmicCoincidence/CosmicGrinderB1.png&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/CosmicGrinderB1-580x326.png 580w,    /assets/resized/CosmicGrinderB1-290x163.png 290w,    /assets/resized/CosmicGrinderB1-170x96.png 170w,    /assets/resized/CosmicGrinderB1-145x82.png 145w, /assets/img/art/CosmicCoincidence/CosmicGrinderB1.png 3840w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
 
   &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/art/CosmicCoincidence/CosmicGrinderB2.png&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/CosmicGrinderB2-580x326.png 580w,    /assets/resized/CosmicGrinderB2-290x163.png 290w,    /assets/resized/CosmicGrinderB2-170x96.png 170w,    /assets/resized/CosmicGrinderB2-145x82.png 145w, /assets/img/art/CosmicCoincidence/CosmicGrinderB2.png 3840w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
 &lt;/div&gt;
 
 &lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
 
-&lt;p&gt;If you’re new here, come join the discord happening over at our &lt;a href=&quot;https://discord.gg/3ny9tdH&quot; target=&quot;_blank&quot;&gt;Discord&lt;/a&gt;.&lt;/p&gt;</content><author><name></name></author><summary type="html">Surely everything happens for a reason, right?</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://ss3d.space/assets/img/art/CosmicCoincidence/CosmicGrinderB2.png" /></entry><entry><title type="html">21.03: March 2021 Devblog</title><link href="https://ss3d.space/2021/04/01/21.03.html" rel="alternate" type="text/html" title="21.03: March 2021 Devblog" /><published>2021-04-01T11:30:00+00:00</published><updated>2021-04-01T11:30:00+00:00</updated><id>https://ss3d.space/2021/04/01/21.03</id><content type="html" xml:base="https://ss3d.space/2021/04/01/21.03.html">&lt;p&gt;Big plans require big action.&lt;/p&gt;
+&lt;p&gt;If you’re new here, come join the discord happening over at our &lt;a href=&quot;https://discord.gg/3ny9tdH&quot; target=&quot;_blank&quot;&gt;Discord&lt;/a&gt;.&lt;/p&gt;</content><author><name>CosmicCoincidence</name></author><summary type="html">Surely everything happens for a reason, right?</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://ss3d.space/assets/img/art/CosmicCoincidence/CosmicGrinderB2.png" /></entry><entry><title type="html">21.03: March 2021 Devblog</title><link href="https://ss3d.space/2021/04/01/21.03.html" rel="alternate" type="text/html" title="21.03: March 2021 Devblog" /><published>2021-04-01T11:30:00+00:00</published><updated>2021-04-01T11:30:00+00:00</updated><id>https://ss3d.space/2021/04/01/21.03</id><content type="html" xml:base="https://ss3d.space/2021/04/01/21.03.html">&lt;p&gt;Big plans require big action.&lt;/p&gt;
 
 &lt;h1 id=&quot;march-recap&quot;&gt;March Recap&lt;/h1&gt;
 
@@ -358,7 +345,7 @@ Because a dance with the Devil might last you forever…”&lt;/em&gt;&lt;/p&gt;
 
 &lt;p&gt;We had a team meeting in discord this week (with the added presence from Jack Trachea from UnityStation) discussing these topics. With the added insight from Jack on UnityStation’s development, we concluded it would be highly beneficial to create a ‘game slice’ or a basic playable round to release as a sort of alpha or demo (we decided to focus on the traitor gamemode first). This would hopefully attract some new players, testers, or even developers. And to help achieve this goal in as short of time period as possible, it would be advisable to not include some systems, or in some cases include incomplete systems. But this will likely cause them to need rework later.&lt;/p&gt;
 
-&lt;p&gt;So we broke up the milestone into a &lt;a href=&quot;https://github.com/RE-SS3D/SS3D/wiki/Roadmap-to-a-playable-round&quot; target=&quot;_blank&quot;&gt;5-step process&lt;/a&gt; that we believe balances releasing a playable game loop ASAP and reducing future rework. Each part of this process also has its own &lt;a href=&quot;https://github.com/RE-SS3D/SS3D/milestones&quot;&gt;milestone page on our github&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;So we broke up the milestone into a 5-step process that we believe balances releasing a playable game loop ASAP and reducing future rework. Each part of this process also has its own &lt;a href=&quot;https://github.com/RE-SS3D/SS3D/milestones&quot;&gt;milestone page on our github&lt;/a&gt;.&lt;/p&gt;
 &lt;ul&gt;
   &lt;li&gt;First and foremost, we need to design our major systems to all be future-proof even if we aren’t implementing them fully yet. The core systems we do need to be fully robust initially are at least interactions, containers, &amp;amp; tilemap. Currently, the tilemap system needs an overhaul due to trouble scaling. Interactions may need some upgrades too.&lt;/li&gt;
   &lt;li&gt;Secondly, we need a few new systems like animation, clothing, &amp;amp; basic health. Health is one of those that we will have a complex design for but our first implementation will be basic. We need some form of health in our demo for playability, but we will plan for its future replacement.&lt;/li&gt;
@@ -494,11 +481,11 @@ Because a dance with the Devil might last you forever…”&lt;/em&gt;&lt;/p&gt;
 
 &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/art/Bug/Bug_CargoAnimals.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/Bug_CargoAnimals-580x326.png 580w,    /assets/resized/Bug_CargoAnimals-290x163.png 290w,    /assets/resized/Bug_CargoAnimals-170x96.png 170w,    /assets/resized/Bug_CargoAnimals-145x82.png 145w, /assets/img/art/Bug/Bug_CargoAnimals.png 1920w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
 
-&lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
+&lt;h3 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h3&gt;
 
 &lt;p&gt;First and foremost, thank you to everyone who has donated to the project over the last month! We have raised a little over $325 our first month, and every dollar is much appreciated! Look forward to hearing from us this next month on how these funds will be allocated for bounties (the health system will likely be one).&lt;/p&gt;
 
-&lt;p&gt;So stay tuned, and check out our &lt;a href=&quot;https://discord.gg/3ny9tdH&quot; target=&quot;_blank&quot;&gt;Discord&lt;/a&gt; for more info.&lt;/p&gt;</content><author><name></name></author><summary type="html">What is this, a zoo in space?</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://ss3d.space/assets/img/art/Bug/Bug_CargoAnimals.png" /></entry><entry><title type="html">21.01: January 2021 Devblog</title><link href="https://ss3d.space/2021/02/04/21.01.html" rel="alternate" type="text/html" title="21.01: January 2021 Devblog" /><published>2021-02-04T11:30:00+00:00</published><updated>2021-02-04T11:30:00+00:00</updated><id>https://ss3d.space/2021/02/04/21.01</id><content type="html" xml:base="https://ss3d.space/2021/02/04/21.01.html">&lt;p&gt;Spatial awareness is a necessary skill to do your job.&lt;/p&gt;
+&lt;p&gt;So stay tuned, and check out our &lt;a href=&quot;https://discord.gg/3ny9tdH&quot; target=&quot;_blank&quot;&gt;Discord&lt;/a&gt; for more info.&lt;/p&gt;</content><author><name>CosmicCoincidence</name></author><summary type="html">What is this, a zoo in space?</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://ss3d.space/assets/img/art/Bug/Bug_CargoAnimals.png" /></entry><entry><title type="html">21.01: January 2021 Devblog</title><link href="https://ss3d.space/2021/02/04/21.01.html" rel="alternate" type="text/html" title="21.01: January 2021 Devblog" /><published>2021-02-04T11:30:00+00:00</published><updated>2021-02-04T11:30:00+00:00</updated><id>https://ss3d.space/2021/02/04/21.01</id><content type="html" xml:base="https://ss3d.space/2021/02/04/21.01.html">&lt;p&gt;Spatial awareness is a necessary skill to do your job.&lt;/p&gt;
 
 &lt;h1 id=&quot;january-recap&quot;&gt;January Recap&lt;/h1&gt;
 
@@ -511,7 +498,6 @@ Because a dance with the Devil might last you forever…”&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;Connecting players will now be initially greeted with a basic lobby to hang out in (character customization and chat will eventually be added in here) until they’re ready to join. The game host also now has access to an admin menu to control various parameters for the game. This ranges from changing the map, game mode (just for show currently), and setting a timer for the length of time until the next round starts.&lt;/p&gt;
 
 &lt;video controls=&quot;&quot; muted=&quot;&quot; poster=&quot;/assets/img/posts/21.01.01/LobbyMenu.png&quot; width=&quot;580px&quot;&gt;&amp;gt;
-  &lt;source src=&quot;/assets/img/posts/21.01.01/LobbyMenu.webm&quot; type=&quot;video/webm&quot; /&gt;
   &lt;source src=&quot;/assets/img/posts/21.01.01/LobbyMenu.mp4&quot; type=&quot;video/mp4&quot; /&gt;
 &lt;/video&gt;
 
@@ -524,7 +510,6 @@ Because a dance with the Devil might last you forever…”&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;The other big improvement is the addition of tilemap rotations. As we did not have proper tilemap rotations built into the editor before, the user would have to manually edit the Y-axis rotation on each prefab after adding it to the map. Now the user can simply select a cardinal direction for the object to face before adding it to the map. Many small bugs related to the tilemap were also taken care of with this new tilemap editor.&lt;/p&gt;
 
 &lt;video controls=&quot;&quot; muted=&quot;&quot; poster=&quot;/assets/img/posts/21.01.01/TilemapEditor.png&quot; width=&quot;580px&quot;&gt;&amp;gt;
-  &lt;source src=&quot;/assets/img/posts/21.01.01/TilemapEditor.webm&quot; type=&quot;video/webm&quot; /&gt;
   &lt;source src=&quot;/assets/img/posts/21.01.01/TilemapEditor.mp4&quot; type=&quot;video/mp4&quot; /&gt;
 &lt;/video&gt;
 
@@ -552,15 +537,15 @@ Because a dance with the Devil might last you forever…”&lt;/em&gt;&lt;/p&gt;
 
 &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/art/ProbablyNot/ProbablyNot_PDA.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/ProbablyNot_PDA-580x326.png 580w,    /assets/resized/ProbablyNot_PDA-290x163.png 290w,    /assets/resized/ProbablyNot_PDA-170x96.png 170w,    /assets/resized/ProbablyNot_PDA-145x82.png 145w, /assets/img/art/ProbablyNot/ProbablyNot_PDA.png 3842w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
 
-&lt;h2 id=&quot;updates&quot;&gt;Updates&lt;/h2&gt;
+&lt;h3 id=&quot;updates&quot;&gt;Updates&lt;/h3&gt;
 
-&lt;p&gt;To kick off this new year, we are finally launching a means to support the development of this game via donations. We have launched a &lt;a href=&quot;https://www.patreon.com/ss3d&quot;&gt;Patreon&lt;/a&gt;, &lt;a href=&quot;https://www.subscribestar.com/space-station-3d&quot;&gt;SubscribeStar&lt;/a&gt;, and even a multi-chain crypto wallet + .crypto domain (SpaceStation3D.crypto) which accepts multiple cryptocurrencies, see the full list of accepted cryptos &lt;a href=&quot;https://github.com/RE-SS3D/SS3D/wiki/Related-Sites-&amp;amp;-Resources#donation-links&quot;&gt;at the bottom of this page&lt;/a&gt; or at the top of &lt;a href=&quot;/contribute/&quot;&gt;our contribute page&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;To kick off this new year, we are finally launching a means to support the development of this game via donations. We have launched a &lt;a href=&quot;https://www.patreon.com/ss3d&quot; target=&quot;_blank&quot;&gt;Patreon&lt;/a&gt;, &lt;a href=&quot;https://www.subscribestar.com/space-station-3d&quot; target=&quot;_blank&quot;&gt;SubscribeStar&lt;/a&gt;, and even a multi-chain crypto wallet + .crypto domain (SpaceStation3D.crypto) which accepts multiple cryptocurrencies, but not all wallets accept this format so you can find the full blockchain addresses at &lt;a href=&quot;https://github.com/RE-SS3D/SS3D/wiki/Related-Sites-&amp;amp;-Resources#donation-links&quot; target=&quot;_blank&quot;&gt;the bottom of this page&lt;/a&gt; or at the top of our &lt;a href=&quot;/contribute/&quot;&gt;Contribute page&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;The money gathered from our donations will primarily be used for paying technical bounties which we will launch once we have received adequate initial funds. Eventually, the donations will also be used to help cover any costs to continue developing &amp;amp; hosting this game (like paying to host servers).&lt;/p&gt;
 
 &lt;p&gt;One &lt;em&gt;very&lt;/em&gt; important thing we want to ensure is that we are COMPLETELY transparent about how we use your donations for this project. So we have set up a #money-log channel on our discord which will log our donations and how they are spent.&lt;/p&gt;
 
-&lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
+&lt;h3 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h3&gt;
 
 &lt;p&gt;It has been a rough past year. But 2021 is already showing some promise, especially for SS3D. Stay safe and stay tuned everyone.&lt;/p&gt;
 
@@ -612,9 +597,9 @@ Because a dance with the Devil might last you forever…”&lt;/em&gt;&lt;/p&gt;
 
 &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/art/Eiko/Eiko_Friends.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/Eiko_Friends-580x326.png 580w,    /assets/resized/Eiko_Friends-290x163.png 290w,    /assets/resized/Eiko_Friends-170x96.png 170w,    /assets/resized/Eiko_Friends-145x82.png 145w, /assets/img/art/Eiko/Eiko_Friends.png 1920w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
 
-&lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
+&lt;h3 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h3&gt;
 
-&lt;p&gt;Want to get more updates or interact with our community? Then join us at our &lt;a href=&quot;https://discord.gg/3ny9tdH&quot; target=&quot;_blank&quot;&gt;Discord&lt;/a&gt;!&lt;/p&gt;</content><author><name></name></author><summary type="html">Cheers to the new years, let hope this one is better than the last!</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://ss3d.space/assets/img/art/Eiko/Eiko_Friends.png" /></entry><entry><title type="html">20.11: November 2020 Devblog</title><link href="https://ss3d.space/2020/12/08/20.11.html" rel="alternate" type="text/html" title="20.11: November 2020 Devblog" /><published>2020-12-08T05:30:00+00:00</published><updated>2020-12-08T05:30:00+00:00</updated><id>https://ss3d.space/2020/12/08/20.11</id><content type="html" xml:base="https://ss3d.space/2020/12/08/20.11.html">&lt;p&gt;The community we share brings us joy and robustness for years to come!&lt;/p&gt;
+&lt;p&gt;Want to get more updates or interact with our community? Then join us at our &lt;a href=&quot;https://discord.gg/3ny9tdH&quot; target=&quot;_blank&quot;&gt;Discord&lt;/a&gt;!&lt;/p&gt;</content><author><name>CosmicCoincidence</name></author><summary type="html">Cheers to the new years, let hope this one is better than the last!</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://ss3d.space/assets/img/art/Eiko/Eiko_Friends.png" /></entry><entry><title type="html">20.11: November 2020 Devblog</title><link href="https://ss3d.space/2020/12/08/20.11.html" rel="alternate" type="text/html" title="20.11: November 2020 Devblog" /><published>2020-12-08T05:30:00+00:00</published><updated>2020-12-08T05:30:00+00:00</updated><id>https://ss3d.space/2020/12/08/20.11</id><content type="html" xml:base="https://ss3d.space/2020/12/08/20.11.html">&lt;p&gt;The community we share brings us joy and robustness for years to come!&lt;/p&gt;
 
 &lt;h1 id=&quot;november-recap&quot;&gt;November Recap&lt;/h1&gt;
 
@@ -638,13 +623,13 @@ Because a dance with the Devil might last you forever…”&lt;/em&gt;&lt;/p&gt;
 
 &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/art/Bug/Bug_Spacegiving.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/Bug_Spacegiving-580x326.png 580w,    /assets/resized/Bug_Spacegiving-290x163.png 290w,    /assets/resized/Bug_Spacegiving-170x96.png 170w,    /assets/resized/Bug_Spacegiving-145x82.png 145w, /assets/img/art/Bug/Bug_Spacegiving.png 1920w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
 
-&lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
+&lt;h3 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h3&gt;
 
 &lt;p&gt;These last few months have indeed been slow, but they seem slower than they actually are. We have things that are slowly in the works, but we do not post that progress here, we only display implemented progress in these updates. So…&lt;/p&gt;
 
 &lt;p&gt;Join community discussions, ideas, and see WIP content from us over at our &lt;a href=&quot;https://discord.gg/3ny9tdH&quot; target=&quot;_blank&quot;&gt;Discord&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;See you back next month!&lt;/p&gt;</content><author><name></name></author><summary type="html">The community we share brings us joy and robustness for years to come!</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://ss3d.space/assets/img/art/Bug/Bug_Spacegiving.png" /></entry><entry><title type="html">20.10: October 2020 Devblog</title><link href="https://ss3d.space/2020/11/08/20.10.html" rel="alternate" type="text/html" title="20.10: October 2020 Devblog" /><published>2020-11-08T05:30:00+00:00</published><updated>2020-11-08T05:30:00+00:00</updated><id>https://ss3d.space/2020/11/08/20.10</id><content type="html" xml:base="https://ss3d.space/2020/11/08/20.10.html">&lt;p&gt;Hope you all had a SpOOky halloween!&lt;/p&gt;
+&lt;p&gt;See you back next month!&lt;/p&gt;</content><author><name>CosmicCoincidence</name></author><summary type="html">The community we share brings us joy and robustness for years to come!</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://ss3d.space/assets/img/art/Bug/Bug_Spacegiving.png" /></entry><entry><title type="html">20.10: October 2020 Devblog</title><link href="https://ss3d.space/2020/11/08/20.10.html" rel="alternate" type="text/html" title="20.10: October 2020 Devblog" /><published>2020-11-08T05:30:00+00:00</published><updated>2020-11-08T05:30:00+00:00</updated><id>https://ss3d.space/2020/11/08/20.10</id><content type="html" xml:base="https://ss3d.space/2020/11/08/20.10.html">&lt;p&gt;Hope you all had a SpOOky halloween!&lt;/p&gt;
 
 &lt;h1 id=&quot;october-recap&quot;&gt;October Recap&lt;/h1&gt;
 
@@ -734,9 +719,9 @@ Because a dance with the Devil might last you forever…”&lt;/em&gt;&lt;/p&gt;
 
 &lt;p&gt;Congratulations winners, to recieve your prizes contact &lt;strong&gt;ProbablyNot&lt;/strong&gt; on discord.&lt;/p&gt;
 
-&lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
+&lt;h3 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h3&gt;
 
-&lt;p&gt;Missed the art contest? Well join our &lt;a href=&quot;https://discord.gg/3ny9tdH&quot; target=&quot;_blank&quot;&gt;Discord&lt;/a&gt; so you dont miss out on any future contests!&lt;/p&gt;</content><author><name></name></author><summary type="html">Hope you all had a SpOOky halloween!</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://ss3d.space/assets/img/art/ProbablyNot/ProbablyNot_Harvest.png" /></entry><entry><title type="html">20.09: September 2020 Devblog</title><link href="https://ss3d.space/2020/10/10/20.09.html" rel="alternate" type="text/html" title="20.09: September 2020 Devblog" /><published>2020-10-10T05:30:00+00:00</published><updated>2020-10-10T05:30:00+00:00</updated><id>https://ss3d.space/2020/10/10/20.09</id><content type="html" xml:base="https://ss3d.space/2020/10/10/20.09.html">&lt;p&gt;Bastin’ off!&lt;/p&gt;
+&lt;p&gt;Missed the art contest? Well join our &lt;a href=&quot;https://discord.gg/3ny9tdH&quot; target=&quot;_blank&quot;&gt;Discord&lt;/a&gt; so you dont miss out on any future contests!&lt;/p&gt;</content><author><name>CosmicCoincidence</name></author><summary type="html">Hope you all had a SpOOky halloween!</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://ss3d.space/assets/img/art/ProbablyNot/ProbablyNot_Harvest.png" /></entry><entry><title type="html">20.09: September 2020 Devblog</title><link href="https://ss3d.space/2020/10/10/20.09.html" rel="alternate" type="text/html" title="20.09: September 2020 Devblog" /><published>2020-10-10T05:30:00+00:00</published><updated>2020-10-10T05:30:00+00:00</updated><id>https://ss3d.space/2020/10/10/20.09</id><content type="html" xml:base="https://ss3d.space/2020/10/10/20.09.html">&lt;p&gt;Bastin’ off!&lt;/p&gt;
 
 &lt;h1 id=&quot;september-recap&quot;&gt;September Recap&lt;/h1&gt;
 
@@ -755,7 +740,7 @@ Because a dance with the Devil might last you forever…”&lt;/em&gt;&lt;/p&gt;
   &lt;li&gt;Fixed an issue with the tilemap where is would delete many fixtures and recreate during loadup.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&quot;updates&quot;&gt;Updates&lt;/h2&gt;
+&lt;h3 id=&quot;updates&quot;&gt;Updates&lt;/h3&gt;
 
 &lt;p&gt;&lt;strong&gt;Probably Not&lt;/strong&gt; will be hosting a Halloween themed art contest with cash prizes.&lt;/p&gt;
 
@@ -791,7 +776,7 @@ as they’re usable in the game and are &lt;strong&gt;&lt;em&gt;submitted and ap
 
 &lt;p&gt;Also, we will feature any reasonable submissions (regardless if you win or lose) in our October blogpost next month, with the artists’ permission of course.&lt;/p&gt;
 
-&lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
+&lt;h3 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h3&gt;
 
 &lt;p&gt;It seems everyone’s lives are concentrated elsewhere lately, and as a result, the last 2 months have not been as fruitful as we have all hoped. But we will remind you, we have not gone anyway, we are still chugging along (albeit slowly), and we will see you all here again next month!&lt;/p&gt;
 

@@ -5,35 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="/css/style.css">
         <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
-        <meta name="theme-color" content="#1e4684">
-        <script>
-            //theme toggle
-            //determines if the user has a set theme
-            function detectColorScheme(){
-                var theme="dark";    //default to dark
-
-                //local storage is used to override OS theme settings
-                if(localStorage.getItem("theme")){
-                    if(localStorage.getItem("theme") == "light"){
-                        var theme = "light";
-                    }
-                } else if(!window.matchMedia) {
-                    //matchMedia method not supported
-                    return false;
-                } else if(window.matchMedia("(prefers-color-scheme: light)").matches) {
-                    //OS theme setting detected as dark
-                    var theme = "light";
-                }
-
-                //dark theme preferred, set document with a `data-theme` attribute
-                if (theme=="light") {
-                    document.documentElement.setAttribute("data-theme", "light");
-                } else {
-                    document.documentElement.setAttribute("data-theme", "dark");
-                }
-            }
-            detectColorScheme();
-            
+        <script>            
             // Function to keep the navigation bars scroll offset when changing pages.
             setScroll = function(url, scroll) {
                 if(scroll != 0) {
@@ -67,6 +39,7 @@
 <title>19.10: Spooktober 2019 Devblog | RE:SS3D</title>
 <meta name="generator" content="Jekyll v3.8.5" />
 <meta property="og:title" content="19.10: Spooktober 2019 Devblog" />
+<meta name="author" content="Sunberry" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="“Did I scare you?”" />
 <meta property="og:description" content="“Did I scare you?”" />
@@ -77,7 +50,7 @@
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2019-11-11T14:30:00+00:00" />
 <script type="application/ld+json">
-{"description":"“Did I scare you?”","image":"https://ss3d.space/assets/img/art/CosmicCoincidence/CosmicHalloween.png","@type":"BlogPosting","headline":"19.10: Spooktober 2019 Devblog","dateModified":"2019-11-11T14:30:00+00:00","datePublished":"2019-11-11T14:30:00+00:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://ss3d.space/2019/11/11/19.10.html"},"url":"https://ss3d.space/2019/11/11/19.10.html","@context":"https://schema.org"}</script>
+{"description":"“Did I scare you?”","image":"https://ss3d.space/assets/img/art/CosmicCoincidence/CosmicHalloween.png","@type":"BlogPosting","headline":"19.10: Spooktober 2019 Devblog","dateModified":"2019-11-11T14:30:00+00:00","datePublished":"2019-11-11T14:30:00+00:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://ss3d.space/2019/11/11/19.10.html"},"url":"https://ss3d.space/2019/11/11/19.10.html","author":{"@type":"Person","name":"Sunberry"},"@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
         <link type="application/atom+xml" rel="alternate" href="https://ss3d.space/feed.xml" title="RE:SS3D" />
@@ -153,12 +126,14 @@ window.cookieconsent.initialise({
   <div class="image">
     <img src="/assets/img/art/CosmicCoincidence/CosmicHalloween.png" alt="">
   </div>
-  <h5><i>Image credit - CosmicCoincidence</i></h5>
+  
+  <h5><i>Image credit: CosmicCoincidence</i></h5>
+  
 </div>
 
 <h1>19.10: Spooktober 2019 Devblog</h1>
 <h5><i>Monday, November 11, 2019</i></h5>
-<h5><i>Written by - Sunberry</i></h5>
+<h5><i>Written by: Sunberry</i></h5>
 
 <br>
 <p><em>I was a little afraid, myself, to be frank.</em></p>
@@ -169,7 +144,7 @@ window.cookieconsent.initialise({
 
 <h2 id="tiles">Tiles</h2>
 
-<p><a href="/assets/img/posts/19.10.01/EikoTileInfographic.png" target="_blank">Here’s an infographic courtesy of <strong>Eiko</strong> that describes how tiles are intended to work in RE:SS3D.</a></p>
+<p><a href="/assets/img/posts/19.10.01/EikoTileInfographic.png" target="_blank">Here’s an infographic</a> courtesy of <strong>Eiko</strong> that describes how tiles are intended to work in RE:SS3D.</p>
 
 <p><strong>Definitely Not Eric</strong> has sorted out the tile-based system and gotten tiles and tile changes networked, and prototyped tile serialization/deserialization. Autoconnect systems are working again, and are presently being used to autoconnect walls (even different types of walls) and individual layers of pipe, though autoconnecting pipe might probably change later on. Different types of floors and the states of said floors (see infographic) are networked.</p>
 
@@ -185,9 +160,9 @@ window.cookieconsent.initialise({
 
 <div class="horizontal-2">
 
-  <div class="image"><a href="/assets/img/posts/19.10.01/SinguloForwardsSlip.gif" class="image-link" target="_blank"><img src="/assets/img/posts/19.10.01/SinguloForwardsSlip.gif" alt="" /></a></div>
+  <div class="image"><a href="/assets/img/posts/19.10.01/SinguloForwardsSlip.gif" class="image-link" target="_blank"><img src="/assets/img/posts/19.10.01/SinguloForwardsSlip.gif" alt="" width="580px" /></a></div>
 
-  <div class="image"><a href="/assets/img/posts/19.10.01/SinguloBackwardsSlip.gif" class="image-link" target="_blank"><img src="/assets/img/posts/19.10.01/SinguloBackwardsSlip.gif" alt="" /></a></div>
+  <div class="image"><a href="/assets/img/posts/19.10.01/SinguloBackwardsSlip.gif" class="image-link" target="_blank"><img src="/assets/img/posts/19.10.01/SinguloBackwardsSlip.gif" alt="" width="580px" /></a></div>
 </div>
 
 <h2 id="human-model-finalizations">Human Model Finalizations</h2>
@@ -200,60 +175,47 @@ window.cookieconsent.initialise({
 
 <p>Also, we have a jawline slider, now.</p>
 
-<video autoplay="autoplay" muted="" loop="loop" width="580px" poster="/assets/img/posts/19.10.01/EikoJawline.gif">
-  <source src="/assets/img/posts/19.10.01/EikoJawline.gif" type="video/webm" />
-  <source src="/assets/img/posts/19.10.01/EikoJawline.gif" type="video/mp4" />
+<video autoplay="autoplay" muted="" loop="loop" width="580px" poster="/assets/img/posts/19.10.01/EikoJawline.png">
+  <source src="/assets/img/posts/19.10.01/EikoJawline.mp4" type="video/mp4" />
 </video>
 
 <h2 id="z-dreams">Z-Dreams</h2>
 
-<video autoplay="autoplay" muted="" loop="loop" width="580px" poster="/assets/img/posts/19.10.01/EikoZSwapThumbnail.PNG">
-  <source src="/assets/img/posts/19.10.01/EikoZSwap.webm" type="video/webm" />
+<video autoplay="autoplay" muted="" loop="loop" width="580px" poster="/assets/img/posts/19.10.01/EikoZSwap.PNG">
   <source src="/assets/img/posts/19.10.01/EikoZSwap.mp4" type="video/mp4" />
 </video>
 
 <p>Also from <strong>Eiko</strong> this month, more dabbling into the dreams of having RE:SS3D but in 3D. Actually integrating Z-levels into the game continues to remain a serious issue for mostly the purely mechanical issues involving the camera perspective and how information is displayed or isn’t displayed to the player. At the time of writing, these problems have no adequate solution that doesn’t involve changing the player perspective entirely.</p>
 
-<div class="horizontal-2">
-
-  <div class="image"><a href="/assets/img/posts/19.10.01/EikoZ1.png" target="_blank"><img src="/" alt="" srcset="    /assets/resized/EikoZ1-580x310.png 580w,    /assets/resized/EikoZ1-290x155.png 290w,    /assets/resized/EikoZ1-170x91.png 170w,    /assets/resized/EikoZ1-145x78.png 145w, /assets/img/posts/19.10.01/EikoZ1.png 1446w" sizes="(max-width: 624px) 50vw, 290px" /></a></div>
-
-  <div class="image"><a href="/assets/img/posts/19.10.01/EikoZ2.png" target="_blank"><img src="/" alt="" srcset="    /assets/resized/EikoZ2-580x349.png 580w,    /assets/resized/EikoZ2-290x174.png 290w,    /assets/resized/EikoZ2-170x102.png 170w,    /assets/resized/EikoZ2-145x87.png 145w, /assets/img/posts/19.10.01/EikoZ2.png 1196w" sizes="(max-width: 624px) 50vw, 290px" /></a></div>
-</div>
-
 <p>Nevertheless, we frequently find ourselves considering Z-levels into design, for if’n the day comes that those mechanical issues are provided solutions. This month, walls have been modified to be receptive to the possibility of z-layers.</p>
+
+<div class="image"><a href="/assets/img/posts/19.10.01/EikoZ1.png" class="image-link" target="_blank"><img src="/" alt="" srcset="    /assets/resized/EikoZ1-580x310.png 580w,    /assets/resized/EikoZ1-290x155.png 290w,    /assets/resized/EikoZ1-170x91.png 170w,    /assets/resized/EikoZ1-145x78.png 145w, /assets/img/posts/19.10.01/EikoZ1.png 1446w" sizes="(max-width: 624px) 100vw, 578px, 580px" /></a></div>
 
 <h2 id="shader-magic">Shader Magic</h2>
 
 <p>Amongst our new faces is one <strong>Erythro</strong>, who has proven themselves capable of some rather jarring shader witchcraftery. Product of this shader witchcraftery is some new fire WIP. Last month’s fire from <strong>Eiko</strong>, if you may remember, was good and fit the artstyle extremely well, but wasn’t quite appropriate for “object on fire” and “hallway engulfed in flames” types of fire. This month, <strong>Erythro</strong> appeared and provided a solution in the form of a procedural fire shader, made with vertex displacement and perlin noise for the flame effect, and fresnel and emissive to fake the volumetric aspect.</p>
 
-<video autoplay="autoplay" muted="" loop="loop" poster="/assets/img/posts/19.10.01/ErythroFireWipThumbnail.PNG">
-  <source src="/assets/img/posts/19.10.01/ErythroFireWip.webm" type="video/webm" />
-  <source src="/assets/img/posts/19.10.01/ErythroFireWip.mp4" type="video/mp4" />
-</video>
-
-<video autoplay="autoplay" muted="" loop="loop" poster="/assets/img/posts/19.10.01/ErythroFireballWIP.gif">
-  <source src="/assets/img/posts/19.10.01/ErythroFireballWIP.webm" type="video/webm" />
+<video autoplay="autoplay" muted="" loop="loop" poster="/assets/img/posts/19.10.01/ErythroFireballWIP.png">
   <source src="/assets/img/posts/19.10.01/ErythroFireballWIP.mp4" type="video/mp4" />
 </video>
 
 <p>Also courtesy of <strong>Erythro</strong>, some WIP singulo and some WIP bloodied item shaders:</p>
 
-<video autoplay="autoplay" muted="" loop="loop" poster="/assets/img/posts/19.10.01/ErythroSingularityWIPThumbnail.PNG">
-  <source src="/assets/img/posts/19.10.01/ErythroSingularityWIP.webm" type="video/webm" />
-  <source src="/assets/img/posts/19.10.01/ErythroSingularityWIP.mp4" type="video/mp4" />
-</video>
-<video autoplay="autoplay" muted="" loop="loop" poster="/assets/img/posts/19.10.01/ErythroBloodShaderWIPThumbnail.PNG">
-  <source src="/assets/img/posts/19.10.01/ErythroBloodShaderWIP.webm" type="video/webm" />
-  <source src="/assets/img/posts/19.10.01/ErythroBloodShaderWIP.mp4" type="video/mp4" />
-</video>
+<div id="doublevid"> 
+    <video id="vid1" width="285" height="285" poster="/assets/img/posts/19.10.01/ErythroSingularityWIPThumbnail.PNG" autoplay="" loop="" muted=""> 
+      <source src="/assets/img/posts/19.10.01/ErythroSingularityWIP.mp4" type="video/mp4" />
+    </video>
+    <video id="vid2" width="285" height="285" poster="/assets/img/posts/19.10.01/ErythroBloodShaderWIPThumbnail.PNG" autoplay="" loop="" muted=""> 
+      &lt;source src="/assets/img/posts/19.10.01/ErythroBloodShaderWIP.mp4 type="video/mp4"&gt;
+    </video>
+    <div class="vidclear"></div> 
+</div>
 
 <h2 id="ghosts-wip">Ghosts WIP</h2>
 
 <p>While we don’t have networked dead players to show you at the moment, we’ve got a ghost model from <strong>Eiko</strong> and concept stuff ranging from “adorably spooky” to “lovecraftian nightmare” from Honkette, which finds itself more than appropriate for the Spooktober setting.</p>
 
-<video autoplay="autoplay" muted="" loop="loop" width="580px" poster="/assets/img/posts/19.10.01/EikoGhostRotate.webm">
-  <source src="/assets/img/posts/19.10.01/EikoGhostRotate.webm" type="video/webm" />
+<video autoplay="autoplay" muted="" loop="loop" width="580px" poster="/assets/img/posts/19.10.01/EikoGhostRotate.PNG">
   <source src="/assets/img/posts/19.10.01/EikoGhostRotate.mp4" type="video/mp4" />
 </video>
 
@@ -284,33 +246,36 @@ window.cookieconsent.initialise({
   <div class="image"><a href="/assets/img/posts/19.10.01/GoaoPandemic.png" target="_blank"><img src="/" alt="" srcset="    /assets/resized/GoaoPandemic-170x231.png 170w,    /assets/resized/GoaoPandemic-145x197.png 145w, /assets/img/posts/19.10.01/GoaoPandemic.png 221w" sizes="(max-width: 624px) 50vw, 290px" /></a></div>
 </div>
 
-<p>From <strong>Eiko</strong> this month: ambrosia, glass and mirrors, monkeystuff, seedpackets,  packages, cold hard cash, the gate, and a poster model which properly displays <a href="/assets/img/posts/19.10.01/EikoEdPoster.png" target="_blank">poster images.</a>
-<em>(From Eiko last month: a PAI made of shapekey wizardry)</em></p>
+<p>From <strong>Eiko</strong> this month: ambrosia, glass and mirrors, monkeystuff, seedpackets,  packages, cold hard cash, the gate, the PAI, and a poster model which properly displays <a href="/assets/img/posts/19.10.01/EikoEdPoster.png" target="_blank">poster images</a>.</p>
 
 <div class="horizontal-2">
 
   <div class="image"><a href="/assets/img/posts/19.10.01/EikoAmbrosia.png" target="_blank"><img src="/" alt="" srcset="    /assets/resized/EikoAmbrosia-580x435.png 580w,    /assets/resized/EikoAmbrosia-290x218.png 290w,    /assets/resized/EikoAmbrosia-170x128.png 170w,    /assets/resized/EikoAmbrosia-145x109.png 145w, /assets/img/posts/19.10.01/EikoAmbrosia.png 800w" sizes="(max-width: 624px) 50vw, 290px" /></a></div>
 
-  <div class="image"><a href="/assets/img/posts/19.10.01/EikoAmbrosiaDark.png" target="_blank"><img src="/" alt="" srcset="    /assets/resized/EikoAmbrosiaDark-580x435.png 580w,    /assets/resized/EikoAmbrosiaDark-290x218.png 290w,    /assets/resized/EikoAmbrosiaDark-170x128.png 170w,    /assets/resized/EikoAmbrosiaDark-145x109.png 145w, /assets/img/posts/19.10.01/EikoAmbrosiaDark.png 800w" sizes="(max-width: 624px) 50vw, 290px" /></a></div>
+  <div class="image"><a href="/assets/img/posts/19.10.01/EikoPoster.png" target="_blank"><img src="/" alt="" srcset="    /assets/resized/EikoPoster-580x435.png 580w,    /assets/resized/EikoPoster-290x218.png 290w,    /assets/resized/EikoPoster-170x128.png 170w,    /assets/resized/EikoPoster-145x109.png 145w, /assets/img/posts/19.10.01/EikoPoster.png 800w" sizes="(max-width: 624px) 50vw, 290px" /></a></div>
 </div>
+
 <div class="horizontal-2">
 
   <div class="image"><a href="/assets/img/posts/19.10.01/EikoMonkeyCube.png" target="_blank"><img src="/" alt="" srcset="    /assets/resized/EikoMonkeyCube-580x435.png 580w,    /assets/resized/EikoMonkeyCube-290x218.png 290w,    /assets/resized/EikoMonkeyCube-170x128.png 170w,    /assets/resized/EikoMonkeyCube-145x109.png 145w, /assets/img/posts/19.10.01/EikoMonkeyCube.png 800w" sizes="(max-width: 624px) 50vw, 290px" /></a></div>
 
   <div class="image"><a href="/assets/img/posts/19.10.01/EikoMonkey.png" target="_blank"><img src="/" alt="" srcset="    /assets/resized/EikoMonkey-580x435.png 580w,    /assets/resized/EikoMonkey-290x218.png 290w,    /assets/resized/EikoMonkey-170x128.png 170w,    /assets/resized/EikoMonkey-145x109.png 145w, /assets/img/posts/19.10.01/EikoMonkey.png 800w" sizes="(max-width: 624px) 50vw, 290px" /></a></div>
 </div>
+
 <div class="horizontal-2">
 
   <div class="image"><a href="/assets/img/posts/19.10.01/EikoSinkAndMirror.png" target="_blank"><img src="/" alt="" srcset="    /assets/resized/EikoSinkAndMirror-580x435.png 580w,    /assets/resized/EikoSinkAndMirror-290x218.png 290w,    /assets/resized/EikoSinkAndMirror-170x128.png 170w,    /assets/resized/EikoSinkAndMirror-145x109.png 145w, /assets/img/posts/19.10.01/EikoSinkAndMirror.png 800w" sizes="(max-width: 624px) 50vw, 290px" /></a></div>
 
   <div class="image"><a href="/assets/img/posts/19.10.01/EikoGlassAndShards.png" target="_blank"><img src="/" alt="" srcset="    /assets/resized/EikoGlassAndShards-580x435.png 580w,    /assets/resized/EikoGlassAndShards-290x218.png 290w,    /assets/resized/EikoGlassAndShards-170x128.png 170w,    /assets/resized/EikoGlassAndShards-145x109.png 145w, /assets/img/posts/19.10.01/EikoGlassAndShards.png 800w" sizes="(max-width: 624px) 50vw, 290px" /></a></div>
 </div>
+
 <div class="horizontal-2">
 
   <div class="image"><a href="/assets/img/posts/19.10.01/EikoPackages.png" target="_blank"><img src="/" alt="" srcset="    /assets/resized/EikoPackages-580x435.png 580w,    /assets/resized/EikoPackages-290x218.png 290w,    /assets/resized/EikoPackages-170x128.png 170w,    /assets/resized/EikoPackages-145x109.png 145w, /assets/img/posts/19.10.01/EikoPackages.png 800w" sizes="(max-width: 624px) 50vw, 290px" /></a></div>
 
   <div class="image"><a href="/assets/img/posts/19.10.01/EikoGate.png" target="_blank"><img src="/" alt="" srcset="    /assets/resized/EikoGate-580x435.png 580w,    /assets/resized/EikoGate-290x218.png 290w,    /assets/resized/EikoGate-170x128.png 170w,    /assets/resized/EikoGate-145x109.png 145w, /assets/img/posts/19.10.01/EikoGate.png 800w" sizes="(max-width: 624px) 50vw, 290px" /></a></div>
 </div>
+
 <div class="horizontal-2">
 
   <div class="image"><a href="/assets/img/posts/19.10.01/EikoCash.png" target="_blank"><img src="/" alt="" srcset="    /assets/resized/EikoCash-580x435.png 580w,    /assets/resized/EikoCash-290x218.png 290w,    /assets/resized/EikoCash-170x128.png 170w,    /assets/resized/EikoCash-145x109.png 145w, /assets/img/posts/19.10.01/EikoCash.png 800w" sizes="(max-width: 624px) 50vw, 290px" /></a></div>
@@ -318,10 +283,7 @@ window.cookieconsent.initialise({
   <div class="image"><a href="/assets/img/posts/19.10.01/EikoSeedPackets.png" target="_blank"><img src="/" alt="" srcset="    /assets/resized/EikoSeedPackets-580x435.png 580w,    /assets/resized/EikoSeedPackets-290x218.png 290w,    /assets/resized/EikoSeedPackets-170x128.png 170w,    /assets/resized/EikoSeedPackets-145x109.png 145w, /assets/img/posts/19.10.01/EikoSeedPackets.png 800w" sizes="(max-width: 624px) 50vw, 290px" /></a></div>
 </div>
 
-<div class="image"><a href="/assets/img/posts/19.10.01/EikoPoster.png" class="image-link" target="_blank"><img src="/" alt="" srcset="    /assets/resized/EikoPoster-580x435.png 580w,    /assets/resized/EikoPoster-290x218.png 290w,    /assets/resized/EikoPoster-170x128.png 170w,    /assets/resized/EikoPoster-145x109.png 145w, /assets/img/posts/19.10.01/EikoPoster.png 800w" sizes="(max-width: 624px) 100vw, 578px, 580px" /></a></div>
-
-<video autoplay="autoplay" muted="" loop="loop" width="580px" poster="/assets/img/posts/19.10.01/EikoPAI.gif">
-  <source src="/assets/img/posts/19.10.01/EikoPAI.webm" type="video/webm" />
+<video autoplay="autoplay" muted="" loop="loop" width="580px" poster="/assets/img/posts/19.10.01/EikoPAI.png">
   <source src="/assets/img/posts/19.10.01/EikoPAI.mp4" type="video/mp4" />
 </video>
 
@@ -366,11 +328,9 @@ window.cookieconsent.initialise({
 
 <p>From <strong>Erythro</strong>, suit storage, shuttle engine, and some various items of varying degrees of danger.</p>
 
-<div class="image"><a href="/assets/img/posts/19.10.01/ErythroSuitStorage.png" class="image-link" target="_blank"><img src="/" alt="" srcset="    /assets/resized/ErythroSuitStorage-580x275.png 580w,    /assets/resized/ErythroSuitStorage-290x138.png 290w,    /assets/resized/ErythroSuitStorage-170x81.png 170w,    /assets/resized/ErythroSuitStorage-145x69.png 145w, /assets/img/posts/19.10.01/ErythroSuitStorage.png 674w" sizes="(max-width: 624px) 100vw, 578px, 580px" /></a></div>
-
 <div class="horizontal-2">
 
-  <div class="image"><a href="/assets/img/posts/19.10.01/ErythroSuitStorageAnimation.gif" class="image-link" target="_blank"><img src="/assets/img/posts/19.10.01/ErythroSuitStorageAnimation.gif" alt="" /></a></div>
+  <div class="image"><a href="/assets/img/posts/19.10.01/ErythroSuitStorage.png" class="image-link" target="_blank"><img src="/" alt="" srcset="    /assets/resized/ErythroSuitStorage-290x249.png 290w,    /assets/resized/ErythroSuitStorage-170x146.png 170w,    /assets/resized/ErythroSuitStorage-145x125.png 145w, /assets/img/posts/19.10.01/ErythroSuitStorage.png 350w" sizes="(max-width: 624px) 100vw, 578px, 580px" /></a></div>
 
   <div class="image"><a href="/assets/img/posts/19.10.01/ErythroShuttleEngine.png" target="_blank"><img src="/" alt="" srcset="    /assets/resized/ErythroShuttleEngine-290x249.png 290w,    /assets/resized/ErythroShuttleEngine-170x146.png 170w,    /assets/resized/ErythroShuttleEngine-145x125.png 145w, /assets/img/posts/19.10.01/ErythroShuttleEngine.png 350w" sizes="(max-width: 624px) 50vw, 290px" /></a></div>
 </div>
@@ -402,7 +362,7 @@ window.cookieconsent.initialise({
 <p>Come get toolboxed early on our <a href="https://discord.gg/3ny9tdH" target="_blank">Discord</a>.<br />
 Since literally just asking nicely for programmers worked so effectively last time, please send programmers.</p>
 
-<p>Remember, folks, Spooktober might be over, but skeletons last forever.</p>
+<p>Remember folks, Spooktober might be over, but skeletons last forever.</p>
 
 
             </main>

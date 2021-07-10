@@ -5,35 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="/css/style.css">
         <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
-        <meta name="theme-color" content="#1e4684">
-        <script>
-            //theme toggle
-            //determines if the user has a set theme
-            function detectColorScheme(){
-                var theme="dark";    //default to dark
-
-                //local storage is used to override OS theme settings
-                if(localStorage.getItem("theme")){
-                    if(localStorage.getItem("theme") == "light"){
-                        var theme = "light";
-                    }
-                } else if(!window.matchMedia) {
-                    //matchMedia method not supported
-                    return false;
-                } else if(window.matchMedia("(prefers-color-scheme: light)").matches) {
-                    //OS theme setting detected as dark
-                    var theme = "light";
-                }
-
-                //dark theme preferred, set document with a `data-theme` attribute
-                if (theme=="light") {
-                    document.documentElement.setAttribute("data-theme", "light");
-                } else {
-                    document.documentElement.setAttribute("data-theme", "dark");
-                }
-            }
-            detectColorScheme();
-            
+        <script>            
             // Function to keep the navigation bars scroll offset when changing pages.
             setScroll = function(url, scroll) {
                 if(scroll != 0) {
@@ -153,12 +125,14 @@ window.cookieconsent.initialise({
   <div class="image">
     <img src="/assets/img/art/ProbablyNot/ProbablyNot_PDA.png" alt="">
   </div>
-  <h5><i>Image credit - Probably Not</i></h5>
+  
+  <h5><i>Image credit: ProbablyNot</i></h5>
+  
 </div>
 
 <h1>21.01: January 2021 Devblog</h1>
 <h5><i>Thursday, February 4, 2021</i></h5>
-<h5><i>Written by – Probably Not / CosmicCoincidence</i></h5>
+<h5><i>Written by: </i></h5>
 
 <h2>Monthly Release: 
   <u>
@@ -180,7 +154,6 @@ window.cookieconsent.initialise({
 <p>Connecting players will now be initially greeted with a basic lobby to hang out in (character customization and chat will eventually be added in here) until they’re ready to join. The game host also now has access to an admin menu to control various parameters for the game. This ranges from changing the map, game mode (just for show currently), and setting a timer for the length of time until the next round starts.</p>
 
 <video controls="" muted="" poster="/assets/img/posts/21.01.01/LobbyMenu.png" width="580px">&gt;
-  <source src="/assets/img/posts/21.01.01/LobbyMenu.webm" type="video/webm" />
   <source src="/assets/img/posts/21.01.01/LobbyMenu.mp4" type="video/mp4" />
 </video>
 
@@ -193,7 +166,6 @@ window.cookieconsent.initialise({
 <p>The other big improvement is the addition of tilemap rotations. As we did not have proper tilemap rotations built into the editor before, the user would have to manually edit the Y-axis rotation on each prefab after adding it to the map. Now the user can simply select a cardinal direction for the object to face before adding it to the map. Many small bugs related to the tilemap were also taken care of with this new tilemap editor.</p>
 
 <video controls="" muted="" poster="/assets/img/posts/21.01.01/TilemapEditor.png" width="580px">&gt;
-  <source src="/assets/img/posts/21.01.01/TilemapEditor.webm" type="video/webm" />
   <source src="/assets/img/posts/21.01.01/TilemapEditor.mp4" type="video/mp4" />
 </video>
 
@@ -221,15 +193,15 @@ window.cookieconsent.initialise({
 
 <div class="image"><a href="/assets/img/art/ProbablyNot/ProbablyNot_PDA.png" class="image-link" target="_blank"><img src="/" alt="" srcset="    /assets/resized/ProbablyNot_PDA-580x326.png 580w,    /assets/resized/ProbablyNot_PDA-290x163.png 290w,    /assets/resized/ProbablyNot_PDA-170x96.png 170w,    /assets/resized/ProbablyNot_PDA-145x82.png 145w, /assets/img/art/ProbablyNot/ProbablyNot_PDA.png 3842w" sizes="(max-width: 624px) 100vw, 578px, 580px" /></a></div>
 
-<h2 id="updates">Updates</h2>
+<h3 id="updates">Updates</h3>
 
-<p>To kick off this new year, we are finally launching a means to support the development of this game via donations. We have launched a <a href="https://www.patreon.com/ss3d">Patreon</a>, <a href="https://www.subscribestar.com/space-station-3d">SubscribeStar</a>, and even a multi-chain crypto wallet + .crypto domain (SpaceStation3D.crypto) which accepts multiple cryptocurrencies, see the full list of accepted cryptos <a href="https://github.com/RE-SS3D/SS3D/wiki/Related-Sites-&amp;-Resources#donation-links">at the bottom of this page</a> or at the top of <a href="/contribute/">our contribute page</a>.</p>
+<p>To kick off this new year, we are finally launching a means to support the development of this game via donations. We have launched a <a href="https://www.patreon.com/ss3d" target="_blank">Patreon</a>, <a href="https://www.subscribestar.com/space-station-3d" target="_blank">SubscribeStar</a>, and even a multi-chain crypto wallet + .crypto domain (SpaceStation3D.crypto) which accepts multiple cryptocurrencies, but not all wallets accept this format so you can find the full blockchain addresses at <a href="https://github.com/RE-SS3D/SS3D/wiki/Related-Sites-&amp;-Resources#donation-links" target="_blank">the bottom of this page</a> or at the top of our <a href="/contribute/">Contribute page</a>.</p>
 
 <p>The money gathered from our donations will primarily be used for paying technical bounties which we will launch once we have received adequate initial funds. Eventually, the donations will also be used to help cover any costs to continue developing &amp; hosting this game (like paying to host servers).</p>
 
 <p>One <em>very</em> important thing we want to ensure is that we are COMPLETELY transparent about how we use your donations for this project. So we have set up a #money-log channel on our discord which will log our donations and how they are spent.</p>
 
-<h2 id="conclusion">Conclusion</h2>
+<h3 id="conclusion">Conclusion</h3>
 
 <p>It has been a rough past year. But 2021 is already showing some promise, especially for SS3D. Stay safe and stay tuned everyone.</p>
 

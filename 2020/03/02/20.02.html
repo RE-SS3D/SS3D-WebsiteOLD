@@ -5,35 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="/css/style.css">
         <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
-        <meta name="theme-color" content="#1e4684">
-        <script>
-            //theme toggle
-            //determines if the user has a set theme
-            function detectColorScheme(){
-                var theme="dark";    //default to dark
-
-                //local storage is used to override OS theme settings
-                if(localStorage.getItem("theme")){
-                    if(localStorage.getItem("theme") == "light"){
-                        var theme = "light";
-                    }
-                } else if(!window.matchMedia) {
-                    //matchMedia method not supported
-                    return false;
-                } else if(window.matchMedia("(prefers-color-scheme: light)").matches) {
-                    //OS theme setting detected as dark
-                    var theme = "light";
-                }
-
-                //dark theme preferred, set document with a `data-theme` attribute
-                if (theme=="light") {
-                    document.documentElement.setAttribute("data-theme", "light");
-                } else {
-                    document.documentElement.setAttribute("data-theme", "dark");
-                }
-            }
-            detectColorScheme();
-            
+        <script>            
             // Function to keep the navigation bars scroll offset when changing pages.
             setScroll = function(url, scroll) {
                 if(scroll != 0) {
@@ -67,6 +39,7 @@
 <title>20.02: February 2020 Devblog | RE:SS3D</title>
 <meta name="generator" content="Jekyll v3.8.5" />
 <meta property="og:title" content="20.02: February 2020 Devblog" />
+<meta name="author" content="CosmicCoincidence" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="“Success we want, patience we must have.”" />
 <meta property="og:description" content="“Success we want, patience we must have.”" />
@@ -77,7 +50,7 @@
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2020-03-02T23:30:00+00:00" />
 <script type="application/ld+json">
-{"description":"“Success we want, patience we must have.”","image":"https://ss3d.space/assets/img/art/Bug/BugSpaceJunk.png","@type":"BlogPosting","headline":"20.02: February 2020 Devblog","dateModified":"2020-03-02T23:30:00+00:00","datePublished":"2020-03-02T23:30:00+00:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://ss3d.space/2020/03/02/20.02.html"},"url":"https://ss3d.space/2020/03/02/20.02.html","@context":"https://schema.org"}</script>
+{"description":"“Success we want, patience we must have.”","image":"https://ss3d.space/assets/img/art/Bug/BugSpaceJunk.png","@type":"BlogPosting","headline":"20.02: February 2020 Devblog","dateModified":"2020-03-02T23:30:00+00:00","datePublished":"2020-03-02T23:30:00+00:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://ss3d.space/2020/03/02/20.02.html"},"url":"https://ss3d.space/2020/03/02/20.02.html","author":{"@type":"Person","name":"CosmicCoincidence"},"@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
         <link type="application/atom+xml" rel="alternate" href="https://ss3d.space/feed.xml" title="RE:SS3D" />
@@ -153,12 +126,14 @@ window.cookieconsent.initialise({
   <div class="image">
     <img src="/assets/img/art/Bug/BugSpaceJunk.png" alt="">
   </div>
-  <h5><i>Image credit - Bug</i></h5>
+  
+  <h5><i>Image credit: Bug</i></h5>
+  
 </div>
 
 <h1>20.02: February 2020 Devblog</h1>
 <h5><i>Monday, March 2, 2020</i></h5>
-<h5><i>Written by - CosmicCoincidence</i></h5>
+<h5><i>Written by: CosmicCoincidence</i></h5>
 
 <br>
 <p>Slow, steady, and humble, we shall not stumble.</p>
@@ -174,7 +149,6 @@ window.cookieconsent.initialise({
 <p><strong>Em3rgency</strong>, after being an absolute workhorse last month, has slowed down a bit this month but still decided to invest the time to implement basic rounds for the game. The round time starts right after the server is launched and you can see a timer in the top right corner. Currently, the rounds are limited to just 5 minutes before the server resets, due to there not being much to do right now anyway. If you can’t wait the 5 minutes, there is also a manual server reset button, but is only visible to the hosting player.</p>
 
 <video controls="" muted="" poster="/assets/img/posts/20.02.01/Em3rgencyRounds.png" width="580px">
-  <source src="/assets/img/posts/20.02.01/Em3rgencyRounds.webm" type="video/webm" />
   <source src="/assets/img/posts/20.02.01/Em3rgencyRounds.mp4" type="video/mp4" />
 </video>
 
@@ -183,7 +157,6 @@ window.cookieconsent.initialise({
 <p>New this month, <strong>Lazerballs</strong> has decided to address blob shadows and deferred lighting. After adding a hint of ambient occlusion on top and it really changes the atmosphere of the station. If you don’t remember what it looked like before, just look at the video above.</p>
 
 <video controls="" muted="" poster="/assets/img/posts/20.02.01/LazerballsLighting.png" width="580px">
-  <source src="/assets/img/posts/20.02.01/LazerballsLighting.webm" type="video/webm" />
   <source src="/assets/img/posts/20.02.01/LazerballsLighting.mp4" type="video/mp4" />
 </video>
 
@@ -194,7 +167,6 @@ window.cookieconsent.initialise({
 <p>Currently, the primary things that are implemented in the new interaction system are, picking up/dropping items, using storage containers, and constructing/deconstructing walls (crowbar) and tables (wrench). Unfortunately, the new system doesn’t include our drawing system like the old one yet, nor does it reintroduce our basic combat system yet.</p>
 
 <video controls="" muted="" poster="/assets/img/posts/20.02.01/NonanonInteraction.png" width="580px">
-  <source src="/assets/img/posts/20.02.01/NonanonInteraction.webm" type="video/webm" />
   <source src="/assets/img/posts/20.02.01/NonanonInteraction.mp4" type="video/mp4" />
 </video>
 
@@ -222,7 +194,6 @@ window.cookieconsent.initialise({
 <div class="image"><a href="/assets/img/posts/20.02.01/EikoBots.png" class="image-link" target="_blank"><img src="/" alt="" srcset="    /assets/resized/EikoBots-580x435.png 580w,    /assets/resized/EikoBots-290x218.png 290w,    /assets/resized/EikoBots-170x128.png 170w,    /assets/resized/EikoBots-145x109.png 145w, /assets/img/posts/20.02.01/EikoBots.png 800w" sizes="(max-width: 624px) 100vw, 578px, 580px" /></a></div>
 
 <video autoplay="autoplay" muted="" loop="loop" poster="/assets/img/posts/20.02.01/EikoNews.png" width="580px">
-  <source src="/assets/img/posts/20.02.01/EikoNews.webm" type="video/webm" />
   <source src="/assets/img/posts/20.02.01/EikoNews.mp4" type="video/mp4" />
 </video>
 
@@ -257,8 +228,7 @@ window.cookieconsent.initialise({
 
 <div class="image"><a href="/assets/img/posts/20.02.01/BugMelons.png" class="image-link" target="_blank"><img src="/" alt="" srcset="    /assets/resized/BugMelons-580x435.png 580w,    /assets/resized/BugMelons-290x218.png 290w,    /assets/resized/BugMelons-170x128.png 170w,    /assets/resized/BugMelons-145x109.png 145w, /assets/img/posts/20.02.01/BugMelons.png 800w" sizes="(max-width: 624px) 100vw, 578px, 580px" /></a></div>
 
-<video controls="" muted="" poster="/assets/img/posts/20.02.01/BugCannabis.png" width="580px">
-  <source src="/assets/img/posts/20.02.01/BugCannabis.webm" type="video/webm" />
+<video autoplay="autoplay" muted="" loop="loop" poster="/assets/img/posts/20.02.01/BugCannabis.png" width="580px">
   <source src="/assets/img/posts/20.02.01/BugCannabis.mp4" type="video/mp4" />
 </video>
 
@@ -294,15 +264,9 @@ window.cookieconsent.initialise({
 
 <p><strong>Bug</strong> simply won’t stop making really cool animations, regardless of how many times we tell him to.</p>
 
-<video autoplay="autoplay" muted="" loop="loop" poster="/assets/img/art/Bug/BugSpaceJunk.png" width="580px">
-  <source src="/assets/img/art/Bug/BugSpaceJunk.webm" type="video/webm" />
-  <source src="/assets/img/art/Bug/BugSpaceJunk.mp4" type="video/mp4" />
-</video>
+<iframe class="video" width="580px" height="325px" src="https://www.youtube-nocookie.com/embed/j0CSwDU7itg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
 
-<video autoplay="autoplay" muted="" loop="loop" poster="/assets/img/art/Bug/BugSyndie.png" width="580px">
-  <source src="/assets/img/art/Bug/BugSyndie.webm" type="video/webm" />
-  <source src="/assets/img/art/Bug/BugSyndie.mp4" type="video/mp4" />
-</video>
+<iframe class="video" width="580px" height="325px" src="https://www.youtube-nocookie.com/embed/PtJQUhoiPk0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
 
 <div class="horizontal-2">
 
@@ -313,7 +277,7 @@ window.cookieconsent.initialise({
 
 <h3 id="website">Website</h3>
 
-<p>Something that gets less attention, but deserves some every now and again is our website. Over the last couple of months, it has received formatting and documentation updates from both <strong>Nonanon</strong> and <strong>CosmicCoincidence</strong>, while <strong>Cosmic</strong> added the <a href="/art/">art page</a> and has still been tackling the blog posts. A few other updates from <strong>Cosmic</strong>, specific to this month, include a new header using the logo he made last month, a new <a href="/404/">404 page</a>, and updates to all of our primary pages. The most notable one being our home page, which now includes a big link for downloads, and provides an appropriate home for our (unofficial) trailer.</p>
+<p>Something that gets less attention, but deserves some every now and again is our website. Over the last couple of months, it has received formatting and documentation updates from both <strong>Nonanon</strong> and <strong>CosmicCoincidence</strong>. A few other updates this month, include a new header using the logo he made last month, a new <a href="/404/">404 page</a>, <a href="/art/">art page</a>, and updates to all of our primary pages. The most notable one being our home page, which now includes a big link for downloads, and provides an appropriate home for our (unofficial) trailer.</p>
 
 <h3 id="notes">Notes</h3>
 

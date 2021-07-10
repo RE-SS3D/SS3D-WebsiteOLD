@@ -5,35 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="/css/style.css">
         <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
-        <meta name="theme-color" content="#1e4684">
-        <script>
-            //theme toggle
-            //determines if the user has a set theme
-            function detectColorScheme(){
-                var theme="dark";    //default to dark
-
-                //local storage is used to override OS theme settings
-                if(localStorage.getItem("theme")){
-                    if(localStorage.getItem("theme") == "light"){
-                        var theme = "light";
-                    }
-                } else if(!window.matchMedia) {
-                    //matchMedia method not supported
-                    return false;
-                } else if(window.matchMedia("(prefers-color-scheme: light)").matches) {
-                    //OS theme setting detected as dark
-                    var theme = "light";
-                }
-
-                //dark theme preferred, set document with a `data-theme` attribute
-                if (theme=="light") {
-                    document.documentElement.setAttribute("data-theme", "light");
-                } else {
-                    document.documentElement.setAttribute("data-theme", "dark");
-                }
-            }
-            detectColorScheme();
-            
+        <script>            
             // Function to keep the navigation bars scroll offset when changing pages.
             setScroll = function(url, scroll) {
                 if(scroll != 0) {
@@ -153,12 +125,14 @@ window.cookieconsent.initialise({
   <div class="image">
     <img src="/assets/img/art/ProbablyNot/ProbablyNot_Sec.png" alt="">
   </div>
-  <h5><i>Image credit - ProbablyNot</i></h5>
+  
+  <h5><i>Image credit: Image credit - ProbablyNot</i></h5>
+  
 </div>
 
 <h1>21.03: March 2021 Devblog</h1>
 <h5><i>Thursday, April 1, 2021</i></h5>
-<h5><i>Written by – CosmicCoincidence</i></h5>
+<h5><i>Written by: </i></h5>
 
 <h2>Monthly Release: 
   <u>
@@ -179,7 +153,7 @@ window.cookieconsent.initialise({
 
 <p>We had a team meeting in discord this week (with the added presence from Jack Trachea from UnityStation) discussing these topics. With the added insight from Jack on UnityStation’s development, we concluded it would be highly beneficial to create a ‘game slice’ or a basic playable round to release as a sort of alpha or demo (we decided to focus on the traitor gamemode first). This would hopefully attract some new players, testers, or even developers. And to help achieve this goal in as short of time period as possible, it would be advisable to not include some systems, or in some cases include incomplete systems. But this will likely cause them to need rework later.</p>
 
-<p>So we broke up the milestone into a <a href="https://github.com/RE-SS3D/SS3D/wiki/Roadmap-to-a-playable-round" target="_blank">5-step process</a> that we believe balances releasing a playable game loop ASAP and reducing future rework. Each part of this process also has its own <a href="https://github.com/RE-SS3D/SS3D/milestones">milestone page on our github</a>.</p>
+<p>So we broke up the milestone into a 5-step process that we believe balances releasing a playable game loop ASAP and reducing future rework. Each part of this process also has its own <a href="https://github.com/RE-SS3D/SS3D/milestones">milestone page on our github</a>.</p>
 <ul>
   <li>First and foremost, we need to design our major systems to all be future-proof even if we aren’t implementing them fully yet. The core systems we do need to be fully robust initially are at least interactions, containers, &amp; tilemap. Currently, the tilemap system needs an overhaul due to trouble scaling. Interactions may need some upgrades too.</li>
   <li>Secondly, we need a few new systems like animation, clothing, &amp; basic health. Health is one of those that we will have a complex design for but our first implementation will be basic. We need some form of health in our demo for playability, but we will plan for its future replacement.</li>

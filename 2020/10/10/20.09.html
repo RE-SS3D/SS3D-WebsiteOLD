@@ -5,35 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="/css/style.css">
         <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
-        <meta name="theme-color" content="#1e4684">
-        <script>
-            //theme toggle
-            //determines if the user has a set theme
-            function detectColorScheme(){
-                var theme="dark";    //default to dark
-
-                //local storage is used to override OS theme settings
-                if(localStorage.getItem("theme")){
-                    if(localStorage.getItem("theme") == "light"){
-                        var theme = "light";
-                    }
-                } else if(!window.matchMedia) {
-                    //matchMedia method not supported
-                    return false;
-                } else if(window.matchMedia("(prefers-color-scheme: light)").matches) {
-                    //OS theme setting detected as dark
-                    var theme = "light";
-                }
-
-                //dark theme preferred, set document with a `data-theme` attribute
-                if (theme=="light") {
-                    document.documentElement.setAttribute("data-theme", "light");
-                } else {
-                    document.documentElement.setAttribute("data-theme", "dark");
-                }
-            }
-            detectColorScheme();
-            
+        <script>            
             // Function to keep the navigation bars scroll offset when changing pages.
             setScroll = function(url, scroll) {
                 if(scroll != 0) {
@@ -153,12 +125,14 @@ window.cookieconsent.initialise({
   <div class="image">
     <img src="/assets/img/art/Goao/GoaoLiftoff.png" alt="">
   </div>
-  <h5><i>Image credit - Goao</i></h5>
+  
+  <h5><i>Image credit: Goao</i></h5>
+  
 </div>
 
 <h1>20.09: September 2020 Devblog</h1>
 <h5><i>Saturday, October 10, 2020</i></h5>
-<h5><i>Written by – Probably Not / CosmicCoincidence</i></h5>
+<h5><i>Written by: </i></h5>
 
 <h2>Monthly Release: 
   <u>
@@ -186,7 +160,7 @@ window.cookieconsent.initialise({
   <li>Fixed an issue with the tilemap where is would delete many fixtures and recreate during loadup.</li>
 </ul>
 
-<h2 id="updates">Updates</h2>
+<h3 id="updates">Updates</h3>
 
 <p><strong>Probably Not</strong> will be hosting a Halloween themed art contest with cash prizes.</p>
 
@@ -222,7 +196,7 @@ as they’re usable in the game and are <strong><em>submitted and approved</em><
 
 <p>Also, we will feature any reasonable submissions (regardless if you win or lose) in our October blogpost next month, with the artists’ permission of course.</p>
 
-<h2 id="conclusion">Conclusion</h2>
+<h3 id="conclusion">Conclusion</h3>
 
 <p>It seems everyone’s lives are concentrated elsewhere lately, and as a result, the last 2 months have not been as fruitful as we have all hoped. But we will remind you, we have not gone anyway, we are still chugging along (albeit slowly), and we will see you all here again next month!</p>
 

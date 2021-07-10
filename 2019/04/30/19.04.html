@@ -5,35 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="/css/style.css">
         <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
-        <meta name="theme-color" content="#1e4684">
-        <script>
-            //theme toggle
-            //determines if the user has a set theme
-            function detectColorScheme(){
-                var theme="dark";    //default to dark
-
-                //local storage is used to override OS theme settings
-                if(localStorage.getItem("theme")){
-                    if(localStorage.getItem("theme") == "light"){
-                        var theme = "light";
-                    }
-                } else if(!window.matchMedia) {
-                    //matchMedia method not supported
-                    return false;
-                } else if(window.matchMedia("(prefers-color-scheme: light)").matches) {
-                    //OS theme setting detected as dark
-                    var theme = "light";
-                }
-
-                //dark theme preferred, set document with a `data-theme` attribute
-                if (theme=="light") {
-                    document.documentElement.setAttribute("data-theme", "light");
-                } else {
-                    document.documentElement.setAttribute("data-theme", "dark");
-                }
-            }
-            detectColorScheme();
-            
+        <script>            
             // Function to keep the navigation bars scroll offset when changing pages.
             setScroll = function(url, scroll) {
                 if(scroll != 0) {
@@ -154,12 +126,12 @@ window.cookieconsent.initialise({
   <div class="image">
     <img src="/assets/img/posts/19.04.1/Singulo.png" alt="">
   </div>
-  <h5><i></i></h5>
+  
 </div>
 
 <h1>19.04: April 2019 Devblog</h1>
 <h5><i>Tuesday, April 30, 2019</i></h5>
-<h5><i>Written by - Sunberry</i></h5>
+<h5><i>Written by: Sunberry</i></h5>
 
 <br>
 <p>Despite being a slow month, continued evidence of our accomplishments continues to prove that we are not dead.</p>
@@ -170,32 +142,31 @@ window.cookieconsent.initialise({
 
 <p>Ol’ Singulo is here, complete with containment fields, courtesy of <strong>PlayerOne</strong>. Experience the horror of a containing an erratic and malevolent force of destruction to power basic utilities.</p>
 
-<video width="580px" autoplay="autoplay" muted="" loop="loop" poster="/assets/img/posts/19.04.1/SinguloTest.jpg">
-  <source src="/assets/img/posts/19.04.1/SinguloTest.webm" type="video/webm" />
-  <source src="/assets/img/posts/19.04.1/SinguloTest.mp4" type="video/mp4" />
-</video>
+<div class="horizontal-2">
 
-<div class="image"><a href="/assets/img/posts/19.04.1/SinguloTestBirdseye.png" class="image-link" target="_blank"><img src="/" alt="Singlarity bird's eye" srcset="    /assets/resized/SinguloTestBirdseye-580x580.png 580w,    /assets/resized/SinguloTestBirdseye-290x290.png 290w,    /assets/resized/SinguloTestBirdseye-170x170.png 170w,    /assets/resized/SinguloTestBirdseye-145x145.png 145w, /assets/img/posts/19.04.1/SinguloTestBirdseye.png 683w" sizes="(max-width: 624px) 100vw, 578px, 580px" /></a></div>
+  <div class="image"><a href="/assets/img/posts/19.04.1/SinguloTest.png" target="_blank"><img src="/" alt="" srcset="    /assets/resized/SinguloTest-580x582.png 580w,    /assets/resized/SinguloTest-290x291.png 290w,    /assets/resized/SinguloTest-170x171.png 170w,    /assets/resized/SinguloTest-145x146.png 145w, /assets/img/posts/19.04.1/SinguloTest.png 1061w" sizes="(max-width: 624px) 50vw, 290px" /></a></div>
+
+  <div class="image"><a href="/assets/img/posts/19.04.1/SinguloTestBirdseye.png" target="_blank"><img src="/" alt="" srcset="    /assets/resized/SinguloTestBirdseye-580x580.png 580w,    /assets/resized/SinguloTestBirdseye-290x290.png 290w,    /assets/resized/SinguloTestBirdseye-170x170.png 170w,    /assets/resized/SinguloTestBirdseye-145x145.png 145w, /assets/img/posts/19.04.1/SinguloTestBirdseye.png 683w" sizes="(max-width: 624px) 50vw, 290px" /></a></div>
+</div>
 
 <h3 id="atmos">ATMOS</h3>
 
 <p>After the mantle had been left sitting on the floor in a half-finished state months ago, <strong>Dyhr</strong> has picked up Atmos this month and is bringing it into a state of completion. While it hasn’t reached that completion yet, we’re still inclined to share our progress. Pictured here is nitrogen and oxygen.</p>
 
-<div class="image"><a href="/assets/img/posts/19.04.1/AtmosTestApril19.gif" class="image-link" target="_blank"><img src="/assets/img/posts/19.04.1/AtmosTestApril19.gif" alt="Atmos Test" /></a></div>
+<div class="image"><a href="/assets/img/posts/19.04.1/AtmosTestApril19.gif" class="image-link" target="_blank"><img src="/assets/img/posts/19.04.1/AtmosTestApril19.gif" alt="" width="580px" /></a></div>
 
 <h3 id="model-list">MODEL LIST</h3>
 
-<p>As one of the first steps to properly creating a good system for intaking model community submissions, we now have a big list of what models have and haven’t been explicitly accepted into the project. Most of the credit for this one goes to <strong>White Eagle</strong>, who made the majority of this twenty-something page document of items.</p>
-
-<div class="image"><a href="/assets/img/posts/19.04.1/ModelListWIP.gif" class="image-link" target="_blank"><img src="/assets/img/posts/19.04.1/ModelListWIP.gif" alt="A terrifyingly long gif of a scrolling model list" /></a></div>
+<p>As one of the first steps to properly creating a good system for intaking model community submissions, we now have a big list of what models have and haven’t been explicitly accepted into the project. Most of the credit for this one goes to <strong>White Eagle</strong>, who made the majority of this twenty-something page document of items. Only a fraction of the list is seen <a href="/assets/img/posts/19.04.1/ModelListWIP.png" target="_blank">here</a>.</p>
 
 <h1 id="eye-candy">EYE CANDY</h1>
 
 <p>From <strong>White Eagle</strong>, we have cameras. These cameras were going to be for something special, but you will have to wait for the next devblog post for that detail.</p>
 
-<div class="image"><a href="/assets/img/posts/19.04.1/WhiteEagleCameras.png" class="image-link" target="_blank"><img src="/" alt="Two pretty, fully rigged cameras." srcset="    /assets/resized/WhiteEagleCameras-580x368.png 580w,    /assets/resized/WhiteEagleCameras-290x184.png 290w,    /assets/resized/WhiteEagleCameras-170x108.png 170w,    /assets/resized/WhiteEagleCameras-145x92.png 145w, /assets/img/posts/19.04.1/WhiteEagleCameras.png 1136w" sizes="(max-width: 624px) 100vw, 578px, 580px" /></a></div>
+<div class="image"><a href="/assets/img/posts/19.04.1/WhiteEagleCameras.png" class="image-link" target="_blank"><img src="/" alt="" srcset="    /assets/resized/WhiteEagleCameras-580x368.png 580w,    /assets/resized/WhiteEagleCameras-290x184.png 290w,    /assets/resized/WhiteEagleCameras-170x108.png 170w,    /assets/resized/WhiteEagleCameras-145x92.png 145w, /assets/img/posts/19.04.1/WhiteEagleCameras.png 1136w" sizes="(max-width: 624px) 100vw, 578px, 580px" /></a></div>
 
-<p>From the combined efforts of <strong>Konstantin</strong> and <strong>Sunberry</strong>, we have Ian flying into the sun.</p>
+<p>From the combined efforts of <strong>Konstantin</strong> and <strong>Sunberry</strong> respectively, we have Ian flying into the sun.</p>
+
 <div class="horizontal-2">
 
   <div class="image"><a href="/assets/img/art/Konstantin3001/KonstantinIanSunsetPoster.png" target="_blank"><img src="/" alt="" srcset="    /assets/resized/KonstantinIanSunsetPoster-580x870.png 580w,    /assets/resized/KonstantinIanSunsetPoster-290x435.png 290w,    /assets/resized/KonstantinIanSunsetPoster-170x255.png 170w,    /assets/resized/KonstantinIanSunsetPoster-145x218.png 145w, /assets/img/art/Konstantin3001/KonstantinIanSunsetPoster.png 600w" sizes="(max-width: 624px) 50vw, 290px" /></a></div>
@@ -212,7 +183,7 @@ window.cookieconsent.initialise({
 <p>We have also very recently changed our leadership in the project, complete with a total restructuring of internal management into a system of teams, with our most competent members at the lead of them.</p>
 
 <p>This is our monthly devblog, here to assure you that we have yet to die.
-Come visit us on Discord, if you’re into that.</p>
+Come visit us on <a href="https://discord.gg/3ny9tdH" target="_blank">Discord</a>, if you’re into that.</p>
 
 
             </main>

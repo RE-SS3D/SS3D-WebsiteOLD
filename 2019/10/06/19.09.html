@@ -5,35 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="/css/style.css">
         <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
-        <meta name="theme-color" content="#1e4684">
-        <script>
-            //theme toggle
-            //determines if the user has a set theme
-            function detectColorScheme(){
-                var theme="dark";    //default to dark
-
-                //local storage is used to override OS theme settings
-                if(localStorage.getItem("theme")){
-                    if(localStorage.getItem("theme") == "light"){
-                        var theme = "light";
-                    }
-                } else if(!window.matchMedia) {
-                    //matchMedia method not supported
-                    return false;
-                } else if(window.matchMedia("(prefers-color-scheme: light)").matches) {
-                    //OS theme setting detected as dark
-                    var theme = "light";
-                }
-
-                //dark theme preferred, set document with a `data-theme` attribute
-                if (theme=="light") {
-                    document.documentElement.setAttribute("data-theme", "light");
-                } else {
-                    document.documentElement.setAttribute("data-theme", "dark");
-                }
-            }
-            detectColorScheme();
-            
+        <script>            
             // Function to keep the navigation bars scroll offset when changing pages.
             setScroll = function(url, scroll) {
                 if(scroll != 0) {
@@ -67,6 +39,7 @@
 <title>19.09: September 2019 Devblog | RE:SS3D</title>
 <meta name="generator" content="Jekyll v3.8.5" />
 <meta property="og:title" content="19.09: September 2019 Devblog" />
+<meta name="author" content="Sunberry" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="“Opening up has paid off, but the fruit still unripe.”" />
 <meta property="og:description" content="“Opening up has paid off, but the fruit still unripe.”" />
@@ -77,7 +50,7 @@
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2019-10-06T14:30:00+00:00" />
 <script type="application/ld+json">
-{"description":"“Opening up has paid off, but the fruit still unripe.”","image":"https://ss3d.space/assets/img/art/Goao/GoaoSeptember19Diorama.png","@type":"BlogPosting","headline":"19.09: September 2019 Devblog","dateModified":"2019-10-06T14:30:00+00:00","datePublished":"2019-10-06T14:30:00+00:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://ss3d.space/2019/10/06/19.09.html"},"url":"https://ss3d.space/2019/10/06/19.09.html","@context":"https://schema.org"}</script>
+{"description":"“Opening up has paid off, but the fruit still unripe.”","image":"https://ss3d.space/assets/img/art/Goao/GoaoSeptember19Diorama.png","@type":"BlogPosting","headline":"19.09: September 2019 Devblog","dateModified":"2019-10-06T14:30:00+00:00","datePublished":"2019-10-06T14:30:00+00:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://ss3d.space/2019/10/06/19.09.html"},"url":"https://ss3d.space/2019/10/06/19.09.html","author":{"@type":"Person","name":"Sunberry"},"@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
         <link type="application/atom+xml" rel="alternate" href="https://ss3d.space/feed.xml" title="RE:SS3D" />
@@ -153,12 +126,14 @@ window.cookieconsent.initialise({
   <div class="image">
     <img src="/assets/img/art/Goao/GoaoSeptember19Diorama.png" alt="">
   </div>
-  <h5><i>Image credit - Goao</i></h5>
+  
+  <h5><i>Image credit: Goao</i></h5>
+  
 </div>
 
 <h1>19.09: September 2019 Devblog</h1>
 <h5><i>Sunday, October 6, 2019</i></h5>
-<h5><i>Written by - Sunberry</i></h5>
+<h5><i>Written by: Sunberry</i></h5>
 
 <br>
 <p>Opening up has paid off, but the fruit still unripe.</p>
@@ -170,38 +145,30 @@ window.cookieconsent.initialise({
 <h2 id="chatlog">Chatlog</h2>
 
 <p>Excellent WIP from <strong>Milly</strong> this month; work has begun on a feature-rich chatlog. For all your communications-based multitasking woes, this chatlog is to support multiple tabs, windows, and filters for said windows and tabs. The video puts it better, however.</p>
-<video autoplay="autoplay" muted="" loop="loop" poster="/assets/img/posts/19.09.01/MillyChatThumbnail.png" width="580px">
-  <source src="/assets/img/posts/19.09.01/MillyChatWIPSept.webm" type="video/webm" />
+
+<video autoplay="autoplay" muted="" loop="loop" poster="/assets/img/posts/19.09.01/MillyChat.png" width="580px">
   <source src="/assets/img/posts/19.09.01/MillyChatWIPSept.mp4" type="video/mp4" />
 </video>
 
 <h2 id="moving-and-shooting">Moving and Shooting</h2>
 
 <p>From <strong>LightVelox</strong> this month, early implementation of strafe-based movement and an aiming system. This will obviously end up being the base for the shooting system moving forward.</p>
-<video autoplay="autoplay" muted="" loop="loop" poster="/assets/img/posts/19.09.01/LightVeloxThumbnail.png" width="580px">
-  <source src="/assets/img/posts/19.09.01/LightVeloxSidewalk.webm" type="video/webm" />
-  <source src="/assets/img/posts/19.09.01/LightVeloxSidewalk.mp4" type="video/mp4" />
-</video>
-<video autoplay="autoplay" muted="" loop="loop" poster="/assets/img/posts/19.09.01/LightVeloxThumbnail.png" width="580px">
-  <source src="/assets/img/posts/19.09.01/LightVeloxSidewalkShoot.webm" type="video/webm" />
+
+<video autoplay="autoplay" muted="" loop="loop" poster="/assets/img/posts/19.09.01/LightVeloxSidewalkShoot.png" width="580px">
   <source src="/assets/img/posts/19.09.01/LightVeloxSidewalkShoot.mp4" type="video/mp4" />
 </video>
 
 <h2 id="animations">Animations</h2>
 
 <p>Though not included in the above work, <strong>Probably Not</strong> has finished up some new directional movement animations and then some.</p>
-<video autoplay="autoplay" muted="" loop="loop" poster="/assets/img/posts/19.09.01/ProbablyNotThumbnail.png" width="580px">
-  <source src="/assets/img/posts/19.09.01/ProbAnimations.webm" type="video/webm" />
+
+<video autoplay="autoplay" muted="" loop="loop" poster="/assets/img/posts/19.09.01/ProbAnimations.png" width="580px">
   <source src="/assets/img/posts/19.09.01/ProbAnimations.mp4" type="video/mp4" />
 </video>
 
 <h2 id="lavaland-aesthetics">Lavaland Aesthetics</h2>
 
 <p>Bridging the gap between everything else and Eye Candy, <strong>Milly</strong> has designed some lovely walls and ore walls for Lavaland, accompanied by matching ores and materials.The wall formations have different faces on each side, intended to be rotated randomly to easily mix up the environment to keep the lavaland tiles from looking too uniform.</p>
-<video autoplay="autoplay" muted="" loop="loop" poster="/assets/img/posts/19.09.01/MillyRockStuff.png" width="580px">
-  <source src="/assets/img/posts/19.09.01/MillyOreWallTrimShowcase.webm" type="video/webm" />
-  <source src="/assets/img/posts/19.09.01/MillyOreWallTrimShowcase.mp4" type="video/mp4" />
-</video>
 
 <div class="image"><a href="/assets/img/posts/19.09.01/MillyRockStuff.png" class="image-link" target="_blank"><img src="/" alt="" srcset="    /assets/resized/MillyRockStuff-580x435.png 580w,    /assets/resized/MillyRockStuff-290x218.png 290w,    /assets/resized/MillyRockStuff-170x128.png 170w,    /assets/resized/MillyRockStuff-145x109.png 145w, /assets/img/posts/19.09.01/MillyRockStuff.png 800w" sizes="(max-width: 624px) 100vw, 578px, 580px" /></a></div>
 
@@ -209,23 +176,36 @@ window.cookieconsent.initialise({
 
 <p>From <strong>Goao</strong>, an excellent compilation of items, alongside the diorama for this month’s title art.</p>
 
-<div class="image"><a href="/assets/img/posts/19.09.01/GoaoCigarettes.png" class="image-link" target="_blank"><img src="/" alt="" srcset="    /assets/resized/GoaoCigarettes-580x326.png 580w,    /assets/resized/GoaoCigarettes-290x163.png 290w,    /assets/resized/GoaoCigarettes-170x96.png 170w,    /assets/resized/GoaoCigarettes-145x82.png 145w, /assets/img/posts/19.09.01/GoaoCigarettes.png 1920w" sizes="(max-width: 624px) 100vw, 578px, 580px" /></a></div>
+<div class="horizontal-2">
 
-<div class="image"><a href="/assets/img/posts/19.09.01/GoaoIDs.png" class="image-link" target="_blank"><img src="/" alt="" srcset="    /assets/resized/GoaoIDs-580x326.png 580w,    /assets/resized/GoaoIDs-290x163.png 290w,    /assets/resized/GoaoIDs-170x96.png 170w,    /assets/resized/GoaoIDs-145x82.png 145w, /assets/img/posts/19.09.01/GoaoIDs.png 1920w" sizes="(max-width: 624px) 100vw, 578px, 580px" /></a></div>
+  <div class="image"><a href="/assets/img/posts/19.09.01/GoaoCigarettes.png" target="_blank"><img src="/" alt="" srcset="    /assets/resized/GoaoCigarettes-580x326.png 580w,    /assets/resized/GoaoCigarettes-290x163.png 290w,    /assets/resized/GoaoCigarettes-170x96.png 170w,    /assets/resized/GoaoCigarettes-145x82.png 145w, /assets/img/posts/19.09.01/GoaoCigarettes.png 1920w" sizes="(max-width: 624px) 50vw, 290px" /></a></div>
 
-<div class="image"><a href="/assets/img/posts/19.09.01/GoaoPDAs.png" class="image-link" target="_blank"><img src="/" alt="" srcset="    /assets/resized/GoaoPDAs-580x435.png 580w,    /assets/resized/GoaoPDAs-290x218.png 290w,    /assets/resized/GoaoPDAs-170x128.png 170w,    /assets/resized/GoaoPDAs-145x109.png 145w, /assets/img/posts/19.09.01/GoaoPDAs.png 800w" sizes="(max-width: 624px) 100vw, 578px, 580px" /></a></div>
+  <div class="image"><a href="/assets/img/posts/19.09.01/GoaoEnergySwordsAndPen.png" target="_blank"><img src="/" alt="" srcset="    /assets/resized/GoaoEnergySwordsAndPen-580x435.png 580w,    /assets/resized/GoaoEnergySwordsAndPen-290x218.png 290w,    /assets/resized/GoaoEnergySwordsAndPen-170x128.png 170w,    /assets/resized/GoaoEnergySwordsAndPen-145x109.png 145w, /assets/img/posts/19.09.01/GoaoEnergySwordsAndPen.png 800w" sizes="(max-width: 624px) 50vw, 290px" /></a></div>
+</div>
 
-<div class="image"><a href="/assets/img/posts/19.09.01/GoaoBooks.png" class="image-link" target="_blank"><img src="/" alt="" srcset="    /assets/resized/GoaoBooks-580x435.png 580w,    /assets/resized/GoaoBooks-290x218.png 290w,    /assets/resized/GoaoBooks-170x128.png 170w,    /assets/resized/GoaoBooks-145x109.png 145w, /assets/img/posts/19.09.01/GoaoBooks.png 800w" sizes="(max-width: 624px) 100vw, 578px, 580px" /></a></div>
+<div class="horizontal-2">
 
-<div class="image"><a href="/assets/img/posts/19.09.01/GoaoVendings.png" class="image-link" target="_blank"><img src="/" alt="" srcset="    /assets/resized/GoaoVendings-580x435.png 580w,    /assets/resized/GoaoVendings-290x218.png 290w,    /assets/resized/GoaoVendings-170x128.png 170w,    /assets/resized/GoaoVendings-145x109.png 145w, /assets/img/posts/19.09.01/GoaoVendings.png 800w" sizes="(max-width: 624px) 100vw, 578px, 580px" /></a></div>
+  <div class="image"><a href="/assets/img/posts/19.09.01/GoaoIDs.png" target="_blank"><img src="/" alt="" srcset="    /assets/resized/GoaoIDs-580x326.png 580w,    /assets/resized/GoaoIDs-290x163.png 290w,    /assets/resized/GoaoIDs-170x96.png 170w,    /assets/resized/GoaoIDs-145x82.png 145w, /assets/img/posts/19.09.01/GoaoIDs.png 1920w" sizes="(max-width: 624px) 50vw, 290px" /></a></div>
 
-<div class="image"><a href="/assets/img/posts/19.09.01/GoaoDrinks.png" class="image-link" target="_blank"><img src="/" alt="" srcset="    /assets/resized/GoaoDrinks-580x435.png 580w,    /assets/resized/GoaoDrinks-290x218.png 290w,    /assets/resized/GoaoDrinks-170x128.png 170w,    /assets/resized/GoaoDrinks-145x109.png 145w, /assets/img/posts/19.09.01/GoaoDrinks.png 800w" sizes="(max-width: 624px) 100vw, 578px, 580px" /></a></div>
+  <div class="image"><a href="/assets/img/posts/19.09.01/GoaoPDAs.png" target="_blank"><img src="/" alt="" srcset="    /assets/resized/GoaoPDAs-580x435.png 580w,    /assets/resized/GoaoPDAs-290x218.png 290w,    /assets/resized/GoaoPDAs-170x128.png 170w,    /assets/resized/GoaoPDAs-145x109.png 145w, /assets/img/posts/19.09.01/GoaoPDAs.png 800w" sizes="(max-width: 624px) 50vw, 290px" /></a></div>
+</div>
 
-<div class="image"><a href="/assets/img/posts/19.09.01/GoaoEnergySwordsAndPen.png" class="image-link" target="_blank"><img src="/" alt="" srcset="    /assets/resized/GoaoEnergySwordsAndPen-580x435.png 580w,    /assets/resized/GoaoEnergySwordsAndPen-290x218.png 290w,    /assets/resized/GoaoEnergySwordsAndPen-170x128.png 170w,    /assets/resized/GoaoEnergySwordsAndPen-145x109.png 145w, /assets/img/posts/19.09.01/GoaoEnergySwordsAndPen.png 800w" sizes="(max-width: 624px) 100vw, 578px, 580px" /></a></div>
+<div class="horizontal-2">
 
-<div class="image"><a href="/assets/img/posts/19.09.01/GoaoElectricChair.png" class="image-link" target="_blank"><img src="/" alt="" srcset="    /assets/resized/GoaoElectricChair-580x435.png 580w,    /assets/resized/GoaoElectricChair-290x218.png 290w,    /assets/resized/GoaoElectricChair-170x128.png 170w,    /assets/resized/GoaoElectricChair-145x109.png 145w, /assets/img/posts/19.09.01/GoaoElectricChair.png 800w" sizes="(max-width: 624px) 100vw, 578px, 580px" /></a></div>
+  <div class="image"><a href="/assets/img/posts/19.09.01/GoaoVendings.png" target="_blank"><img src="/" alt="" srcset="    /assets/resized/GoaoVendings-580x435.png 580w,    /assets/resized/GoaoVendings-290x218.png 290w,    /assets/resized/GoaoVendings-170x128.png 170w,    /assets/resized/GoaoVendings-145x109.png 145w, /assets/img/posts/19.09.01/GoaoVendings.png 800w" sizes="(max-width: 624px) 50vw, 290px" /></a></div>
+
+  <div class="image"><a href="/assets/img/posts/19.09.01/GoaoDrinks.png" target="_blank"><img src="/" alt="" srcset="    /assets/resized/GoaoDrinks-580x435.png 580w,    /assets/resized/GoaoDrinks-290x218.png 290w,    /assets/resized/GoaoDrinks-170x128.png 170w,    /assets/resized/GoaoDrinks-145x109.png 145w, /assets/img/posts/19.09.01/GoaoDrinks.png 800w" sizes="(max-width: 624px) 50vw, 290px" /></a></div>
+</div>
+
+<div class="horizontal-2">
+
+  <div class="image"><a href="/assets/img/posts/19.09.01/GoaoBooks.png" target="_blank"><img src="/" alt="" srcset="    /assets/resized/GoaoBooks-580x435.png 580w,    /assets/resized/GoaoBooks-290x218.png 290w,    /assets/resized/GoaoBooks-170x128.png 170w,    /assets/resized/GoaoBooks-145x109.png 145w, /assets/img/posts/19.09.01/GoaoBooks.png 800w" sizes="(max-width: 624px) 50vw, 290px" /></a></div>
+
+  <div class="image"><a href="/assets/img/posts/19.09.01/GoaoElectricChair.png" target="_blank"><img src="/" alt="" srcset="    /assets/resized/GoaoElectricChair-580x435.png 580w,    /assets/resized/GoaoElectricChair-290x218.png 290w,    /assets/resized/GoaoElectricChair-170x128.png 170w,    /assets/resized/GoaoElectricChair-145x109.png 145w, /assets/img/posts/19.09.01/GoaoElectricChair.png 800w" sizes="(max-width: 624px) 50vw, 290px" /></a></div>
+</div>
 
 <p>From <strong>Kiwav</strong>, a shotgun, some riot armor, and fully rigged solar panels.</p>
+
 <div class="horizontal-2">
 
   <div class="image"><a href="/assets/img/posts/19.09.01/KiwavShotgun.png" target="_blank"><img src="/" alt="" srcset="    /assets/resized/KiwavShotgun-580x435.png 580w,    /assets/resized/KiwavShotgun-290x218.png 290w,    /assets/resized/KiwavShotgun-170x128.png 170w,    /assets/resized/KiwavShotgun-145x109.png 145w, /assets/img/posts/19.09.01/KiwavShotgun.png 800w" sizes="(max-width: 624px) 50vw, 290px" /></a></div>
@@ -236,16 +216,13 @@ window.cookieconsent.initialise({
 <div class="image"><a href="/assets/img/posts/19.09.01/KiwavSolarPanel.png" class="image-link" target="_blank"><img src="/" alt="" srcset="    /assets/resized/KiwavSolarPanel-580x435.png 580w,    /assets/resized/KiwavSolarPanel-290x218.png 290w,    /assets/resized/KiwavSolarPanel-170x128.png 170w,    /assets/resized/KiwavSolarPanel-145x109.png 145w, /assets/img/posts/19.09.01/KiwavSolarPanel.png 800w" sizes="(max-width: 624px) 100vw, 578px, 580px" /></a></div>
 
 <p>From <strong>Eiko</strong>, delicious canisters and fire, two things that mix surprisingly well.</p>
-<div class="horizontal-2">
 
-  <div class="image"><a href="/assets/img/posts/19.09.01/EikoCanisters3.png" target="_blank"><img src="/" alt="" srcset="    /assets/resized/EikoCanisters3-580x452.png 580w,    /assets/resized/EikoCanisters3-290x226.png 290w,    /assets/resized/EikoCanisters3-170x133.png 170w,    /assets/resized/EikoCanisters3-145x113.png 145w, /assets/img/posts/19.09.01/EikoCanisters3.png 848w" sizes="(max-width: 624px) 50vw, 290px" /></a></div>
+<div class="image"><a href="/assets/img/posts/19.09.01/EikoCanisters3.png" class="image-link" target="_blank"><img src="/" alt="" srcset="    /assets/resized/EikoCanisters3-580x452.png 580w,    /assets/resized/EikoCanisters3-290x226.png 290w,    /assets/resized/EikoCanisters3-170x133.png 170w,    /assets/resized/EikoCanisters3-145x113.png 145w, /assets/img/posts/19.09.01/EikoCanisters3.png 848w" sizes="(max-width: 624px) 100vw, 578px, 580px" /></a></div>
 
-  <div class="image"><a href="/assets/img/posts/19.09.01/EikoCanistersDark.png" target="_blank"><img src="/" alt="" srcset="    /assets/resized/EikoCanistersDark-580x415.png 580w,    /assets/resized/EikoCanistersDark-290x207.png 290w,    /assets/resized/EikoCanistersDark-170x122.png 170w,    /assets/resized/EikoCanistersDark-145x104.png 145w, /assets/img/posts/19.09.01/EikoCanistersDark.png 853w" sizes="(max-width: 624px) 50vw, 290px" /></a></div>
-</div>
-
-<div class="image"><a href="/assets/img/posts/19.09.01/EikoFire2.gif" class="image-link" target="_blank"><img src="/" alt="" srcset="    /assets/resized/EikoFire2-290x291.gif 290w,    /assets/resized/EikoFire2-170x171.gif 170w,    /assets/resized/EikoFire2-145x146.gif 145w, /assets/img/posts/19.09.01/EikoFire2.gif 533w" sizes="(max-width: 624px) 100vw, 578px, 580px" /></a></div>
+<div class="image"><a href="/assets/img/posts/19.09.01/EikoFire2.gif" class="image-link" target="_blank"><img src="/assets/img/posts/19.09.01/EikoFire2.gif" alt="" width="580px" /></a></div>
 
 <p>From <strong>CosmicCoincidence</strong>, a colorful set of screwdrivers, some tanks, and some angry eggs.</p>
+
 <div class="horizontal-2">
 
   <div class="image"><a href="/assets/img/posts/19.09.01/CosmicCoincidenceScrewdrivers.png" target="_blank"><img src="/" alt="" srcset="    /assets/resized/CosmicCoincidenceScrewdrivers-580x435.png 580w,    /assets/resized/CosmicCoincidenceScrewdrivers-290x218.png 290w,    /assets/resized/CosmicCoincidenceScrewdrivers-170x128.png 170w,    /assets/resized/CosmicCoincidenceScrewdrivers-145x109.png 145w, /assets/img/posts/19.09.01/CosmicCoincidenceScrewdrivers.png 800w" sizes="(max-width: 624px) 50vw, 290px" /></a></div>

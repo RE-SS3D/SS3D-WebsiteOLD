@@ -5,35 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="/css/style.css">
         <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
-        <meta name="theme-color" content="#1e4684">
-        <script>
-            //theme toggle
-            //determines if the user has a set theme
-            function detectColorScheme(){
-                var theme="dark";    //default to dark
-
-                //local storage is used to override OS theme settings
-                if(localStorage.getItem("theme")){
-                    if(localStorage.getItem("theme") == "light"){
-                        var theme = "light";
-                    }
-                } else if(!window.matchMedia) {
-                    //matchMedia method not supported
-                    return false;
-                } else if(window.matchMedia("(prefers-color-scheme: light)").matches) {
-                    //OS theme setting detected as dark
-                    var theme = "light";
-                }
-
-                //dark theme preferred, set document with a `data-theme` attribute
-                if (theme=="light") {
-                    document.documentElement.setAttribute("data-theme", "light");
-                } else {
-                    document.documentElement.setAttribute("data-theme", "dark");
-                }
-            }
-            detectColorScheme();
-            
+        <script>            
             // Function to keep the navigation bars scroll offset when changing pages.
             setScroll = function(url, scroll) {
                 if(scroll != 0) {
@@ -67,6 +39,7 @@
 <title>20.04: April 2020 Devblog | RE:SS3D</title>
 <meta name="generator" content="Jekyll v3.8.5" />
 <meta property="og:title" content="20.04: April 2020 Devblog" />
+<meta name="author" content="CosmicCoincidence" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="“Don’t panic, it’s organic!”" />
 <meta property="og:description" content="“Don’t panic, it’s organic!”" />
@@ -77,7 +50,7 @@
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2020-05-04T05:30:00+00:00" />
 <script type="application/ld+json">
-{"description":"“Don’t panic, it’s organic!”","image":"https://ss3d.space/assets/img/art/Bug/Bug_420Hydro.png","@type":"BlogPosting","headline":"20.04: April 2020 Devblog","dateModified":"2020-05-04T05:30:00+00:00","datePublished":"2020-05-04T05:30:00+00:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://ss3d.space/2020/05/04/20.04.html"},"url":"https://ss3d.space/2020/05/04/20.04.html","@context":"https://schema.org"}</script>
+{"description":"“Don’t panic, it’s organic!”","image":"https://ss3d.space/assets/img/art/Bug/Bug_420Hydro.png","@type":"BlogPosting","headline":"20.04: April 2020 Devblog","dateModified":"2020-05-04T05:30:00+00:00","datePublished":"2020-05-04T05:30:00+00:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://ss3d.space/2020/05/04/20.04.html"},"url":"https://ss3d.space/2020/05/04/20.04.html","author":{"@type":"Person","name":"CosmicCoincidence"},"@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
         <link type="application/atom+xml" rel="alternate" href="https://ss3d.space/feed.xml" title="RE:SS3D" />
@@ -153,12 +126,14 @@ window.cookieconsent.initialise({
   <div class="image">
     <img src="/assets/img/art/Bug/Bug_420Hydro.png" alt="">
   </div>
-  <h5><i>Image credit - Bug</i></h5>
+  
+  <h5><i>Image credit: Bug</i></h5>
+  
 </div>
 
 <h1>20.04: April 2020 Devblog</h1>
 <h5><i>Monday, May 4, 2020</i></h5>
-<h5><i>Written by - CosmicCoincidence</i></h5>
+<h5><i>Written by: CosmicCoincidence</i></h5>
 
 <br>
 <p><em>“They’ve outlawed the No. 1 vegetable on the planet.”</em></p>
@@ -174,7 +149,6 @@ window.cookieconsent.initialise({
 <p><strong>TheLife</strong> implemented a basic interaction distance for construction, to prevent the player from building at an infinite distance. The new build distance is 1.5 meters/tiles. He also fixed some bugs allowing the player to construct various objects over other objects.</p>
 
 <video controls="" muted="" poster="/assets/img/posts/20.04.01/TheLife_BuildDistance.png" width="580px">
-  <source src="/assets/img/posts/20.04.01/TheLife_BuildDistance.webm" type="video/webm" />
   <source src="/assets/img/posts/20.04.01/TheLife_BuildDistance.mp4" type="video/mp4" />
 </video>
 
@@ -185,7 +159,6 @@ window.cookieconsent.initialise({
 <p>This month, <strong>Eiko</strong> decided to make some more console screen animations. The far left one (<a href="/assets/img/posts/20.04.01/crew_monitor.mp4" target="_blank">crew monitor</a>) was his first one which was made many moons ago. The next 4 (<a href="/assets/img/posts/20.04.01/cargo_1.mp4" target="_blank">supply</a>, <a href="/assets/img/posts/20.04.01/slime.mp4" target="_blank">slime management</a>, <a href="/assets/img/posts/20.04.01/cloning.mp4" target="_blank">cloning</a>, and <a href="/assets/img/posts/20.04.01/security_records.mp4" target="_blank">security records</a>) are his new ones this month. The final console (<a href="/assets/img/posts/20.04.01/cmd.mp4" target="_blank">cmd</a>) was made by <strong>Goao</strong> along with the touchpad displays on each of the consoles.</p>
 
 <video autoplay="autoplay" muted="" loop="loop" poster="/assets/img/posts/20.04.01/Consoles.png" width="580px">
-  <source src="/assets/img/posts/20.04.01/Consoles.webm" type="video/webm" />
   <source src="/assets/img/posts/20.04.01/Consoles.mp4" type="video/mp4" />
 </video>
 
@@ -195,18 +168,21 @@ window.cookieconsent.initialise({
 
 <p><strong>Basecode</strong> is back, providing a deep-fryer, request console, illuminated floors, shuttle floors &amp; windows, and a redesign of our old shuttle engine and compressor. Besides making these new models, he also helped a lot this month cleaning &amp; fixing older models to get them up-to-date, including a bit of organizing.</p>
 
-<div class="horizontal-3">
+<div class="horizontal-2">
 
   <div class="image"><a href="/assets/img/posts/20.04.01/Basecode_DeepFryer.png" target="_blank"><img src="/" alt="" srcset="    /assets/resized/Basecode_DeepFryer-580x435.png 580w,    /assets/resized/Basecode_DeepFryer-290x218.png 290w,    /assets/resized/Basecode_DeepFryer-170x128.png 170w,    /assets/resized/Basecode_DeepFryer-145x109.png 145w, /assets/img/posts/20.04.01/Basecode_DeepFryer.png 800w" sizes="(max-width: 624px) 50vw, 290px" /></a></div>
 
   <div class="image"><a href="/assets/img/posts/20.04.01/Basecode_RequestConsole.png" target="_blank"><img src="/" alt="" srcset="    /assets/resized/Basecode_RequestConsole-580x435.png 580w,    /assets/resized/Basecode_RequestConsole-290x218.png 290w,    /assets/resized/Basecode_RequestConsole-170x128.png 170w,    /assets/resized/Basecode_RequestConsole-145x109.png 145w, /assets/img/posts/20.04.01/Basecode_RequestConsole.png 800w" sizes="(max-width: 624px) 50vw, 290px" /></a></div>
-
-  <div class="image"><a href="/assets/img/posts/20.04.01/Basecode_LightTile.png" target="_blank"><img src="/" alt="" srcset="    /assets/resized/Basecode_LightTile-580x435.png 580w,    /assets/resized/Basecode_LightTile-290x218.png 290w,    /assets/resized/Basecode_LightTile-170x128.png 170w,    /assets/resized/Basecode_LightTile-145x109.png 145w, /assets/img/posts/20.04.01/Basecode_LightTile.png 800w" sizes="(max-width: 624px) 50vw, 290px" /></a></div>
 </div>
 
-<div class="horizontal-3">
+<div class="horizontal-2">
+
+  <div class="image"><a href="/assets/img/posts/20.04.01/Basecode_LightTile.png" target="_blank"><img src="/" alt="" srcset="    /assets/resized/Basecode_LightTile-580x435.png 580w,    /assets/resized/Basecode_LightTile-290x218.png 290w,    /assets/resized/Basecode_LightTile-170x128.png 170w,    /assets/resized/Basecode_LightTile-145x109.png 145w, /assets/img/posts/20.04.01/Basecode_LightTile.png 800w" sizes="(max-width: 624px) 50vw, 290px" /></a></div>
 
   <div class="image"><a href="/assets/img/posts/20.04.01/Basecode_ShuttleFloors.png" target="_blank"><img src="/" alt="" srcset="    /assets/resized/Basecode_ShuttleFloors-580x435.png 580w,    /assets/resized/Basecode_ShuttleFloors-290x218.png 290w,    /assets/resized/Basecode_ShuttleFloors-170x128.png 170w,    /assets/resized/Basecode_ShuttleFloors-145x109.png 145w, /assets/img/posts/20.04.01/Basecode_ShuttleFloors.png 800w" sizes="(max-width: 624px) 50vw, 290px" /></a></div>
+</div>
+
+<div class="horizontal-2">
 
   <div class="image"><a href="/assets/img/posts/20.04.01/Basecode_Windows_LightShuttle.png" target="_blank"><img src="/" alt="" srcset="    /assets/resized/Basecode_Windows_LightShuttle-580x435.png 580w,    /assets/resized/Basecode_Windows_LightShuttle-290x218.png 290w,    /assets/resized/Basecode_Windows_LightShuttle-170x128.png 170w,    /assets/resized/Basecode_Windows_LightShuttle-145x109.png 145w, /assets/img/posts/20.04.01/Basecode_Windows_LightShuttle.png 800w" sizes="(max-width: 624px) 50vw, 290px" /></a></div>
 
@@ -225,16 +201,13 @@ window.cookieconsent.initialise({
 
 <p>I imagine that many of you can relate to <strong>Bug’s</strong> artwork this month!</p>
 
-<video autoplay="autoplay" muted="" loop="loop" poster="/assets/img/art/Bug/Bug_420Hydro.png" width="580px">
-  <source src="/assets/img/art/Bug/Bug_420Hydro.webm" type="video/webm" />
-  <source src="/assets/img/art/Bug/Bug_420Hydro.mp4" type="video/mp4" />
-</video>
+<iframe class="video" width="580px" height="325px" src="https://www.youtube-nocookie.com/embed/J_NM59nEk4Y" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
 
 <div class="image"><a href="/assets/img/art/Bug/Bug_420Hydro.png" class="image-link" target="_blank"><img src="/" alt="" srcset="    /assets/resized/Bug_420Hydro-580x326.png 580w,    /assets/resized/Bug_420Hydro-290x163.png 290w,    /assets/resized/Bug_420Hydro-170x96.png 170w,    /assets/resized/Bug_420Hydro-145x82.png 145w, /assets/img/art/Bug/Bug_420Hydro.png 1920w" sizes="(max-width: 624px) 100vw, 578px, 580px" /></a></div>
 
 <h3 id="notes">Notes</h3>
 
-<p>If you haven’t already, come join our <a href="https://discord.gg/3ny9tdH" target="_blank">discord</a> to get a greater insight on our development!</p>
+<p>If you haven’t already, come join our <a href="https://discord.gg/3ny9tdH" target="_blank">Discord</a> to get a greater insight on our development!</p>
 
 
             </main>

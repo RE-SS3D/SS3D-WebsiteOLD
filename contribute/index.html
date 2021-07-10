@@ -5,35 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="/css/style.css">
         <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
-        <meta name="theme-color" content="#1e4684">
-        <script>
-            //theme toggle
-            //determines if the user has a set theme
-            function detectColorScheme(){
-                var theme="dark";    //default to dark
-
-                //local storage is used to override OS theme settings
-                if(localStorage.getItem("theme")){
-                    if(localStorage.getItem("theme") == "light"){
-                        var theme = "light";
-                    }
-                } else if(!window.matchMedia) {
-                    //matchMedia method not supported
-                    return false;
-                } else if(window.matchMedia("(prefers-color-scheme: light)").matches) {
-                    //OS theme setting detected as dark
-                    var theme = "light";
-                }
-
-                //dark theme preferred, set document with a `data-theme` attribute
-                if (theme=="light") {
-                    document.documentElement.setAttribute("data-theme", "light");
-                } else {
-                    document.documentElement.setAttribute("data-theme", "dark");
-                }
-            }
-            detectColorScheme();
-            
+        <script>            
             // Function to keep the navigation bars scroll offset when changing pages.
             setScroll = function(url, scroll) {
                 if(scroll != 0) {
@@ -146,30 +118,39 @@ window.cookieconsent.initialise({
 </header>
 
             <main class="post-content">
-                <h3 id="how-to-contribute">How to contribute:</h3>
+                <div class="image-float_right">
+    <img src="/assets/img/Engineer.png" alt="RE: SPACE STATION 3D" width="300px" />
+</div>
 
-<p>There are 2 primary ways you can contribute, either by donating to the project, or by directly helping with the development.</p>
+<h3 id="how-to-contribute">How to contribute:</h3>
+
+<p>There are 2 primary ways you can contribute;</p>
+<ul>
+  <li>donating to the project,</li>
+  <li>helping with development.</li>
+</ul>
 
 <h1 id="donation-links">Donation Links</h1>
 
-<p><a href="https://www.paypal.me/SpaceStation3D" target="_blank">Paypal</a>
-(or send directly to our email: ress3d.project@gmail.com)</p>
+<p><a href="https://www.paypal.me/SpaceStation3D" target="_blank">Paypal</a><br />
+(or send directly here: “RESS3D.project@gmail.com”)</p>
 
 <p><a href="https://www.patreon.com/ss3d" target="_blank">Patreon</a></p>
 
 <p><a href="https://www.subscribestar.com/space-station-3d" target="_blank">Subscribestar</a></p>
 
-<p>Crypto: spacestation3d.crypto (accepts $BCH, $BTC, $ETH, &amp; $LTC). But some wallets don’t accept that format so you can find our wallet adrresses at the bottom of <a href="https://github.com/RE-SS3D/SS3D/wiki/Sites-&amp;-Resources#donation-links" target="_blank">this page</a>.</p>
+<p>Crypto: “spacestation3d.crypto” (accepts $BCH, $BTC, $ETH, &amp; $LTC)<br />
+But some wallets don’t accept that format so our full addresses can be found <a href="https://github.com/RE-SS3D/SS3D/wiki/Sites-&amp;-Resources#donation-links" target="_blank">here</a>.</p>
 
 <h1 id="development">Development</h1>
 
 <p>If you’re a programmer, 2D artist, 3D modeler, musician, programmer, animator, soundcloud rapper, or <em>especially</em> a programmer, we need you!</p>
 
-<p><strong>To start on any of these, read the appropriate sections below which contains links to guides and task boards for those contribution types. Once you have a task in mind, contact a council member on our <a href="https://discord.gg/3ny9tdH" target="_blank">discord</a>.</strong></p>
+<p><strong>To start on any of these, read the appropriate sections below which contains links to guides and task boards for those contribution types. Once you have a task in mind, contact a council member on our <a href="https://discord.gg/3ny9tdH" target="_blank">Discord</a>.</strong></p>
 
-<p>The game itself is being developed in the Unity game engine. You can find what version of Unity we use and instructions on setting up our project on our <a href="https://github.com/RE-SS3D/SS3D/blob/master/Documents/CONTRIBUTING.md#setting-up--running-the-project" target="_blank">github contributing guide</a>.</p>
+<p>The game itself is being developed in the Unity game engine. You can find what version of Unity we use and instructions on setting up our project on our <a href="https://github.com/RE-SS3D/SS3D/blob/master/Documents/CONTRIBUTING.md#setting-up--running-the-project" target="_blank">GitHub contributing guide</a>.</p>
 
-<p>Our <a href="https://github.com/RE-SS3D" target="_blank">github organization</a> has 3 repositories.</p>
+<p>Our <a href="https://github.com/RE-SS3D" target="_blank">GitHub organization</a> has 3 repositories.</p>
 <ul>
   <li><a href="https://github.com/RE-SS3D/SS3D" target="_blank">SS3D</a> - the game itself, and some documents.</li>
   <li><a href="https://github.com/RE-SS3D/SS3D-Website" target="_blank">Website</a> - our (this) website.</li>
@@ -208,7 +189,7 @@ window.cookieconsent.initialise({
 
 <p>Technical contributions are submitted to <a href="https://github.com/RE-SS3D/SS3D/pulls" target="_blank">our main (SS3D) repo via pull request</a>.</p>
 
-<p>Art contributions currently are submitted via the art channels on our <a href="https://discord.gg/3ny9tdH" target="_blank">discord</a>.</p>
+<p>Art contributions currently are submitted via the art channels on our <a href="https://discord.gg/3ny9tdH" target="_blank">Discord</a>.</p>
 
 <h3 id="licensing">Licensing:</h3>
 

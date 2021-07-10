@@ -5,35 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="/css/style.css">
         <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
-        <meta name="theme-color" content="#1e4684">
-        <script>
-            //theme toggle
-            //determines if the user has a set theme
-            function detectColorScheme(){
-                var theme="dark";    //default to dark
-
-                //local storage is used to override OS theme settings
-                if(localStorage.getItem("theme")){
-                    if(localStorage.getItem("theme") == "light"){
-                        var theme = "light";
-                    }
-                } else if(!window.matchMedia) {
-                    //matchMedia method not supported
-                    return false;
-                } else if(window.matchMedia("(prefers-color-scheme: light)").matches) {
-                    //OS theme setting detected as dark
-                    var theme = "light";
-                }
-
-                //dark theme preferred, set document with a `data-theme` attribute
-                if (theme=="light") {
-                    document.documentElement.setAttribute("data-theme", "light");
-                } else {
-                    document.documentElement.setAttribute("data-theme", "dark");
-                }
-            }
-            detectColorScheme();
-            
+        <script>            
             // Function to keep the navigation bars scroll offset when changing pages.
             setScroll = function(url, scroll) {
                 if(scroll != 0) {
@@ -153,12 +125,14 @@ window.cookieconsent.initialise({
   <div class="image">
     <img src="/assets/img/art/Bug/BugCult.png" alt="">
   </div>
-  <h5><i>Image credit - Bug</i></h5>
+  
+  <h5><i>Image credit: Image credit - Bug</i></h5>
+  
 </div>
 
 <h1>21.06: June 2021 Devblog</h1>
 <h5><i>Tuesday, July 6, 2021</i></h5>
-<h5><i>Written by – CosmicCoincidence</i></h5>
+<h5><i>Written by: </i></h5>
 
 <h2>Monthly Release: 
   <u>
@@ -190,7 +164,6 @@ Because a dance with the Devil might last you forever…”</em></p>
 <p>The system also now allows for examining items that are in containers that display their content (ex. items on the custodial cart or an item in another player’s hand), it also now allows for examining items in a UI (like an item in your pocket or another type of UI).</p>
 
 <video controls="" muted="" poster="/assets/img/posts/21.06.01/ExamineUI.png" width="580px">&gt;
-  <source src="/assets/img/posts/21.06.01/ExamineUI.webm" type="video/webm" />
   <source src="/assets/img/posts/21.06.01/ExamineUI.mp4" type="video/mp4" />
 </video>
 
@@ -277,24 +250,20 @@ Because a dance with the Devil might last you forever…”</em></p>
 <p>New this month, <strong>Jadetea</strong> made these simple animated textures to use on the PDA.</p>
 
 <div id="doublevid"> 
-    <video id="vid1" width="285" height="285" poster="/assets/img/posts/21.06.01/PDA_Alert.png" autoplay="" loop="" muted=""> 
-      <source src="/assets/img/posts/21.06.01/PDA_Alert.webm" type="video/webm" />
+    <video id="vid1" width="285" height="285" poster="/assets/img/posts/21.06.01/PDA_Alert.png" autoplay="" loop="" muted="">
       <source src="/assets/img/posts/21.06.01/PDA_Alert.mp4" type="video/mp4" />
     </video>
-    <video id="vid2" width="285" height="285" poster="/assets/img/posts/21.06.01/PDA_Flashlight.png" autoplay="" loop="" muted=""> 
-      <source src="/assets/img/posts/21.06.01/PDA_Flashlight.webm" type="video/webm" />
+    <video id="vid2" width="285" height="285" poster="/assets/img/posts/21.06.01/PDA_Flashlight.png" autoplay="" loop="" muted="">
       <source src="/assets/img/posts/21.06.01/PDA_Flashlight.mp4" type="video/mp4" />
     </video>
     <div class="vidclear"></div> 
 </div>
 
 <div id="doublevid"> 
-    <video id="vid1" width="285" height="285" poster="/assets/img/posts/21.06.01/PDA_Text.png" autoplay="" loop="" muted=""> 
-      <source src="/assets/img/posts/21.06.01/PDA_Text.webm" type="video/webm" />
+    <video id="vid1" width="285" height="285" poster="/assets/img/posts/21.06.01/PDA_Text.png" autoplay="" loop="" muted="">
       <source src="/assets/img/posts/21.06.01/PDA_Text.mp4" type="video/mp4" />
     </video>
-    <video id="vid2" width="285" height="285" poster="/assets/img/posts/21.06.01/PDA_Mail.png" autoplay="" loop="" muted=""> 
-      <source src="/assets/img/posts/21.06.01/PDA_Mail.webm" type="video/webm" />
+    <video id="vid2" width="285" height="285" poster="/assets/img/posts/21.06.01/PDA_Mail.png" autoplay="" loop="" muted="">
       <source src="/assets/img/posts/21.06.01/PDA_Mail.mp4" type="video/mp4" />
     </video>
     <div class="vidclear"></div> 

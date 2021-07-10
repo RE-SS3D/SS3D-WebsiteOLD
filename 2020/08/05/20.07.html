@@ -5,35 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="/css/style.css">
         <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
-        <meta name="theme-color" content="#1e4684">
-        <script>
-            //theme toggle
-            //determines if the user has a set theme
-            function detectColorScheme(){
-                var theme="dark";    //default to dark
-
-                //local storage is used to override OS theme settings
-                if(localStorage.getItem("theme")){
-                    if(localStorage.getItem("theme") == "light"){
-                        var theme = "light";
-                    }
-                } else if(!window.matchMedia) {
-                    //matchMedia method not supported
-                    return false;
-                } else if(window.matchMedia("(prefers-color-scheme: light)").matches) {
-                    //OS theme setting detected as dark
-                    var theme = "light";
-                }
-
-                //dark theme preferred, set document with a `data-theme` attribute
-                if (theme=="light") {
-                    document.documentElement.setAttribute("data-theme", "light");
-                } else {
-                    document.documentElement.setAttribute("data-theme", "dark");
-                }
-            }
-            detectColorScheme();
-            
+        <script>            
             // Function to keep the navigation bars scroll offset when changing pages.
             setScroll = function(url, scroll) {
                 if(scroll != 0) {
@@ -67,6 +39,7 @@
 <title>20.07: July 2020 Devblog | RE:SS3D</title>
 <meta name="generator" content="Jekyll v3.8.5" />
 <meta property="og:title" content="20.07: July 2020 Devblog" />
+<meta name="author" content="CosmicCoincidence" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="“The clown’s greatest gift comes in the form of a banana.”" />
 <meta property="og:description" content="“The clown’s greatest gift comes in the form of a banana.”" />
@@ -77,7 +50,7 @@
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2020-08-05T05:30:00+00:00" />
 <script type="application/ld+json">
-{"description":"“The clown’s greatest gift comes in the form of a banana.”","image":"https://ss3d.space/assets/img/art/Bug/Bug_TheLastBrunch.png","@type":"BlogPosting","headline":"20.07: July 2020 Devblog","dateModified":"2020-08-05T05:30:00+00:00","datePublished":"2020-08-05T05:30:00+00:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://ss3d.space/2020/08/05/20.07.html"},"url":"https://ss3d.space/2020/08/05/20.07.html","@context":"https://schema.org"}</script>
+{"description":"“The clown’s greatest gift comes in the form of a banana.”","image":"https://ss3d.space/assets/img/art/Bug/Bug_TheLastBrunch.png","@type":"BlogPosting","headline":"20.07: July 2020 Devblog","dateModified":"2020-08-05T05:30:00+00:00","datePublished":"2020-08-05T05:30:00+00:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://ss3d.space/2020/08/05/20.07.html"},"url":"https://ss3d.space/2020/08/05/20.07.html","author":{"@type":"Person","name":"CosmicCoincidence"},"@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
         <link type="application/atom+xml" rel="alternate" href="https://ss3d.space/feed.xml" title="RE:SS3D" />
@@ -153,12 +126,14 @@ window.cookieconsent.initialise({
   <div class="image">
     <img src="/assets/img/art/Bug/Bug_TheLastBrunch.png" alt="">
   </div>
-  <h5><i>Image credit - Bug</i></h5>
+  
+  <h5><i>Image credit: Bug</i></h5>
+  
 </div>
 
 <h1>20.07: July 2020 Devblog</h1>
 <h5><i>Wednesday, August 5, 2020</i></h5>
-<h5><i>Written by - CosmicCoincidence</i></h5>
+<h5><i>Written by: CosmicCoincidence</i></h5>
 
 <h2>Monthly Release: 
   <u>
@@ -188,7 +163,6 @@ window.cookieconsent.initialise({
 <p>We now have basic material construction courtesy of <strong>Alainx277</strong>. For now, the player can use metal sheets to build a wall girder or metal table, use the glass sheets to build a glass table, or use the wood planks to build a wood table.</p>
 
 <video controls="" muted="" poster="/assets/img/posts/20.07.01/Alain_Construction.png" width="580px">
-  <source src="/assets/img/posts/20.07.01/Alain_Construction.webm" type="video/webm" />
   <source src="/assets/img/posts/20.07.01/Alain_Construction.mp4" type="video/mp4" />
 </video>
 
@@ -203,7 +177,6 @@ window.cookieconsent.initialise({
 <p>Also from <strong>Goao</strong> (and with help from <strong>Alainx277</strong> bug fixing), we now have a consumption interaction for eating and drinking. You can feed yourself as well as others!</p>
 
 <video controls="" poster="/assets/img/posts/20.07.01/Consumption.png" width="580px">
-  <source src="/assets/img/posts/20.07.01/Consumption.webm" type="video/webm" />
   <source src="/assets/img/posts/20.07.01/Consumption.mp4" type="video/mp4" />
 </video>
 
@@ -293,7 +266,7 @@ window.cookieconsent.initialise({
 
 <h3 id="notes">Notes</h3>
 
-<p>Haven’t joined the party yet? Then come visit us on our <a href="https://discord.gg/3ny9tdH" target="_blank">discord</a>!</p>
+<p>Haven’t joined the party yet? Then come visit us on our <a href="https://discord.gg/3ny9tdH" target="_blank">Discord</a>!</p>
 
 
             </main>

@@ -5,35 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="/css/style.css">
         <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
-        <meta name="theme-color" content="#1e4684">
-        <script>
-            //theme toggle
-            //determines if the user has a set theme
-            function detectColorScheme(){
-                var theme="dark";    //default to dark
-
-                //local storage is used to override OS theme settings
-                if(localStorage.getItem("theme")){
-                    if(localStorage.getItem("theme") == "light"){
-                        var theme = "light";
-                    }
-                } else if(!window.matchMedia) {
-                    //matchMedia method not supported
-                    return false;
-                } else if(window.matchMedia("(prefers-color-scheme: light)").matches) {
-                    //OS theme setting detected as dark
-                    var theme = "light";
-                }
-
-                //dark theme preferred, set document with a `data-theme` attribute
-                if (theme=="light") {
-                    document.documentElement.setAttribute("data-theme", "light");
-                } else {
-                    document.documentElement.setAttribute("data-theme", "dark");
-                }
-            }
-            detectColorScheme();
-            
+        <script>            
             // Function to keep the navigation bars scroll offset when changing pages.
             setScroll = function(url, scroll) {
                 if(scroll != 0) {
@@ -67,6 +39,7 @@
 <title>20.06: June 2020 Devblog | RE:SS3D</title>
 <meta name="generator" content="Jekyll v3.8.5" />
 <meta property="og:title" content="20.06: June 2020 Devblog" />
+<meta name="author" content="CosmicCoincidence" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="“The Creation of the Greytide 380 B.C.”" />
 <meta property="og:description" content="“The Creation of the Greytide 380 B.C.”" />
@@ -77,7 +50,7 @@
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2020-07-03T05:30:00+00:00" />
 <script type="application/ld+json">
-{"description":"“The Creation of the Greytide 380 B.C.”","image":"https://ss3d.space/assets/img/art/ProbablyNot/CreationOfGreytide.png","@type":"BlogPosting","headline":"20.06: June 2020 Devblog","dateModified":"2020-07-03T05:30:00+00:00","datePublished":"2020-07-03T05:30:00+00:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://ss3d.space/2020/07/03/20.06.html"},"url":"https://ss3d.space/2020/07/03/20.06.html","@context":"https://schema.org"}</script>
+{"description":"“The Creation of the Greytide 380 B.C.”","image":"https://ss3d.space/assets/img/art/ProbablyNot/CreationOfGreytide.png","@type":"BlogPosting","headline":"20.06: June 2020 Devblog","dateModified":"2020-07-03T05:30:00+00:00","datePublished":"2020-07-03T05:30:00+00:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://ss3d.space/2020/07/03/20.06.html"},"url":"https://ss3d.space/2020/07/03/20.06.html","author":{"@type":"Person","name":"CosmicCoincidence"},"@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
         <link type="application/atom+xml" rel="alternate" href="https://ss3d.space/feed.xml" title="RE:SS3D" />
@@ -153,12 +126,14 @@ window.cookieconsent.initialise({
   <div class="image">
     <img src="/assets/img/art/ProbablyNot/CreationOfGreytide.png" alt="">
   </div>
-  <h5><i>Image credit - ProbablyNot</i></h5>
+  
+  <h5><i>Image credit: ProbablyNot</i></h5>
+  
 </div>
 
 <h1>20.06: June 2020 Devblog</h1>
 <h5><i>Friday, July 3, 2020</i></h5>
-<h5><i>Written by - CosmicCoincidence</i></h5>
+<h5><i>Written by: CosmicCoincidence</i></h5>
 
 <h2>Monthly Release: 
   <u>
@@ -175,15 +150,13 @@ window.cookieconsent.initialise({
 
 <h2 id="fov">FOV</h2>
 
-<p>Early in the month <strong>Milly</strong> added a volumetric shader-based FOV system. Which has customizable variables for color, transparency, radius, &amp; POV which can be useful for different effects like optical meson goggles, x-ray, blindness, etc. After receiving some view obstacles, fixes, and other tweaks from Seteron, it’s looking really great!</p>
+<p>Early in the month <strong>Milly</strong> added a volumetric shader-based FOV system. Which has customizable variables for color, transparency, radius, &amp; POV which can be useful for different effects like optical meson goggles, x-ray, blindness, etc. After receiving some view obstacles, fixes, and other tweaks from <strong>Seteron</strong>, it’s looking really great!</p>
 
 <video controls="" muted="" poster="/assets/img/posts/20.06.01/FOV.png" width="580px">
-  <source src="/assets/img/posts/20.06.01/FOV.webm" type="video/webm" />
   <source src="/assets/img/posts/20.06.01/FOV.mp4" type="video/mp4" />
 </video>
 
 <video controls="" muted="" poster="/assets/img/posts/20.06.01/FOV_Colors.png" width="580px">
-  <source src="/assets/img/posts/20.06.01/FOV_Colors.webm" type="video/webm" />
   <source src="/assets/img/posts/20.06.01/FOV_Colors.mp4" type="video/mp4" />
 </video>
 
@@ -191,7 +164,7 @@ window.cookieconsent.initialise({
 
 <p>Last month we implemented the microwave and a single simple recipe (microwave a flat dough to make a tortilla) for proof of concept which had some issues. <strong>Alainx277</strong> fixed the issues so you can make tortillas again. Also, if you have an incorrect recipe the contents will turn to ash.</p>
 
-<p>This month <strong>Alainx277</strong> has added another proof of concept recipe, but this one being with reagents. You can now dispense various booze types from the booze dispenser in the kitchen and when mixing 3 parts Vodka with 2 parts Kahlua it will make a Black Russian mixed drink.</p>
+<p>This month he has added another proof of concept recipe, but this one being with reagents. You can now dispense various booze types from the booze dispenser in the kitchen and when mixing 3 parts Vodka with 2 parts Kahlua it will make a Black Russian mixed drink.</p>
 
 <h2 id="atmospherics">Atmospherics</h2>
 
@@ -200,19 +173,16 @@ window.cookieconsent.initialise({
 <p>(In the videos below the transparent grey cubes represent the gas on that tile, the taller the greater the pressure on that tile. When there is a change in the atmosphere the tiles turn white to show they are updating but will turn back to transparent grey once they are done equalizing.)</p>
 
 <video controls="" muted="" poster="/assets/img/posts/20.06.01/Atmos_Pressure.png" width="580px">
-  <source src="/assets/img/posts/20.06.01/Atmos_Pressure.webm" type="video/webm" />
   <source src="/assets/img/posts/20.06.01/Atmos_Pressure.mp4" type="video/mp4" />
 </video>
 
 <video controls="" muted="" poster="/assets/img/posts/20.06.01/Atmos_Wind.png" width="580px">
-  <source src="/assets/img/posts/20.06.01/Atmos_Wind.webm" type="video/webm" />
   <source src="/assets/img/posts/20.06.01/Atmos_Wind.mp4" type="video/mp4" />
 </video>
 
 <p>After basic area atmospherics were in <strong>BroodjeKipcorn</strong> decided to work on the basics for atmos pipes and their machinery as well. Currently implemented pipe machines include, manual valves, pressure pumps, volume pumps, gas mixers, &amp; gas injectors. (Note that the pipes were not yet updated in the video below, hence we many of the connections on them are incorrect.)</p>
 
 <video controls="" muted="" poster="/assets/img/posts/20.06.01/Atmos_Pipes.png" width="580px">
-  <source src="/assets/img/posts/20.06.01/Atmos_Pipes.webm" type="video/webm" />
   <source src="/assets/img/posts/20.06.01/Atmos_Pipes.mp4" type="video/mp4" />
 </video>
 
@@ -223,14 +193,12 @@ window.cookieconsent.initialise({
 <p>Another thing <strong>Alainx277</strong> implemented last month but was not shown due to not working at the time of the blog, was ragdolls. This month he re-added player-item collision, fixing the issues with the ragdolls so you can now slip (or watch your friends slip) on banana peels and soap. Currently, the implementation is not perfect as sometimes it’s difficult to trigger a slip but we have considered other collider methods on how to improve this already.</p>
 
 <video controls="" muted="" poster="/assets/img/posts/20.06.01/Ragdolls.png" width="580px">
-  <source src="/assets/img/posts/20.06.01/Ragdolls.webm" type="video/webm" />
   <source src="/assets/img/posts/20.06.01/Ragdolls.mp4" type="video/mp4" />
 </video>
 
 <p>And with the recent atmospherics work where items get pushed around by ‘wind’, <strong>Alainx277</strong> made the player ragdoll upon hitting such wind as well. The threshold for this can be adjusted or potentially changed based on what gear the player is wearing.</p>
 
 <video controls="" muted="" poster="/assets/img/posts/20.06.01/Ragdolls_Atmos.png" width="580px">
-  <source src="/assets/img/posts/20.06.01/Ragdolls_Atmos.webm" type="video/webm" />
   <source src="/assets/img/posts/20.06.01/Ragdolls_Atmos.mp4" type="video/mp4" />
 </video>
 
@@ -264,8 +232,7 @@ window.cookieconsent.initialise({
 
 <p>Basic disposals are now in thanks to <strong>Goao</strong>. He has updated the model itself a few times and added a script and sound for basic item flushing, though there are many kinks to work out still.</p>
 
-<video controls="" muted="" poster="/assets/img/posts/20.06.01/Disposals.png" width="580px">
-  <source src="/assets/img/posts/20.06.01/Disposals.webm" type="video/webm" />
+<video controls="" poster="/assets/img/posts/20.06.01/Disposals.png" width="580px">
   <source src="/assets/img/posts/20.06.01/Disposals.mp4" type="video/mp4" />
 </video>
 
@@ -365,12 +332,7 @@ warning cone, toilet plungers, a cyborg charging station, and an oddly creative 
 
 <p>And a Gnoll race by <strong>LocalHyena</strong>.</p>
 
-<div class="horizontal-2">
-
-  <div class="image"><a href="/assets/img/posts/20.06.01/LocalHyena_Gnoll.png" target="_blank"><img src="/" alt="" srcset="    /assets/resized/LocalHyena_Gnoll-580x435.png 580w,    /assets/resized/LocalHyena_Gnoll-290x218.png 290w,    /assets/resized/LocalHyena_Gnoll-170x128.png 170w,    /assets/resized/LocalHyena_Gnoll-145x109.png 145w, /assets/img/posts/20.06.01/LocalHyena_Gnoll.png 800w" sizes="(max-width: 624px) 50vw, 290px" /></a></div>
-
-  <div class="image"><a href="/assets/img/posts/20.06.01/LocalHyena_Gnoll2.png" target="_blank"><img src="/" alt="" srcset="    /assets/resized/LocalHyena_Gnoll2-580x435.png 580w,    /assets/resized/LocalHyena_Gnoll2-290x218.png 290w,    /assets/resized/LocalHyena_Gnoll2-170x128.png 170w,    /assets/resized/LocalHyena_Gnoll2-145x109.png 145w, /assets/img/posts/20.06.01/LocalHyena_Gnoll2.png 800w" sizes="(max-width: 624px) 50vw, 290px" /></a></div>
-</div>
+<div class="image"><a href="/assets/img/posts/20.06.01/LocalHyena_Gnoll.png" class="image-link" target="_blank"><img src="/" alt="" srcset="    /assets/resized/LocalHyena_Gnoll-580x435.png 580w,    /assets/resized/LocalHyena_Gnoll-290x218.png 290w,    /assets/resized/LocalHyena_Gnoll-170x128.png 170w,    /assets/resized/LocalHyena_Gnoll-145x109.png 145w, /assets/img/posts/20.06.01/LocalHyena_Gnoll.png 800w" sizes="(max-width: 624px) 100vw, 578px, 580px" /></a></div>
 
 <h2 id="textures">Textures</h2>
 
@@ -403,7 +365,7 @@ warning cone, toilet plungers, a cyborg charging station, and an oddly creative 
 
 <h3 id="notes">Notes</h3>
 
-<p>Hey you. Are you still not in the <a href="https://discord.gg/3ny9tdH" target="_blank">discord</a>? If not, come on down and join us in the development process. The developers love to hear ideas from the community, as well as appreciate any feedback.</p>
+<p>Hey you. Are you still not in the <a href="https://discord.gg/3ny9tdH" target="_blank">Discord</a>? If not, come on down and join us in the development process. The developers love to hear ideas from the community, as well as appreciate any feedback.</p>
 
 
             </main>

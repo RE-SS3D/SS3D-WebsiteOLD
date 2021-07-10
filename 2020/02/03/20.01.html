@@ -5,35 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="/css/style.css">
         <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
-        <meta name="theme-color" content="#1e4684">
-        <script>
-            //theme toggle
-            //determines if the user has a set theme
-            function detectColorScheme(){
-                var theme="dark";    //default to dark
-
-                //local storage is used to override OS theme settings
-                if(localStorage.getItem("theme")){
-                    if(localStorage.getItem("theme") == "light"){
-                        var theme = "light";
-                    }
-                } else if(!window.matchMedia) {
-                    //matchMedia method not supported
-                    return false;
-                } else if(window.matchMedia("(prefers-color-scheme: light)").matches) {
-                    //OS theme setting detected as dark
-                    var theme = "light";
-                }
-
-                //dark theme preferred, set document with a `data-theme` attribute
-                if (theme=="light") {
-                    document.documentElement.setAttribute("data-theme", "light");
-                } else {
-                    document.documentElement.setAttribute("data-theme", "dark");
-                }
-            }
-            detectColorScheme();
-            
+        <script>            
             // Function to keep the navigation bars scroll offset when changing pages.
             setScroll = function(url, scroll) {
                 if(scroll != 0) {
@@ -67,6 +39,7 @@
 <title>20.01: January 2020 Devblog | RE:SS3D</title>
 <meta name="generator" content="Jekyll v3.8.5" />
 <meta property="og:title" content="20.01: January 2020 Devblog" />
+<meta name="author" content="CosmicCoincidence" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="“Laying the foundation, one brick at a time.”" />
 <meta property="og:description" content="“Laying the foundation, one brick at a time.”" />
@@ -77,7 +50,7 @@
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2020-02-03T14:30:00+00:00" />
 <script type="application/ld+json">
-{"description":"“Laying the foundation, one brick at a time.”","image":"https://ss3d.space/assets/img/art/Bug/BugHydroponics.png","@type":"BlogPosting","headline":"20.01: January 2020 Devblog","dateModified":"2020-02-03T14:30:00+00:00","datePublished":"2020-02-03T14:30:00+00:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://ss3d.space/2020/02/03/20.01.html"},"url":"https://ss3d.space/2020/02/03/20.01.html","@context":"https://schema.org"}</script>
+{"description":"“Laying the foundation, one brick at a time.”","image":"https://ss3d.space/assets/img/art/Bug/BugHydroponics.png","@type":"BlogPosting","headline":"20.01: January 2020 Devblog","dateModified":"2020-02-03T14:30:00+00:00","datePublished":"2020-02-03T14:30:00+00:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://ss3d.space/2020/02/03/20.01.html"},"url":"https://ss3d.space/2020/02/03/20.01.html","author":{"@type":"Person","name":"CosmicCoincidence"},"@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
         <link type="application/atom+xml" rel="alternate" href="https://ss3d.space/feed.xml" title="RE:SS3D" />
@@ -153,12 +126,14 @@ window.cookieconsent.initialise({
   <div class="image">
     <img src="/assets/img/art/Bug/BugHydroponics.png" alt="">
   </div>
-  <h5><i>Image credit - Bug</i></h5>
+  
+  <h5><i>Image credit: Bug</i></h5>
+  
 </div>
 
 <h1>20.01: January 2020 Devblog</h1>
 <h5><i>Monday, February 3, 2020</i></h5>
-<h5><i>Written by - CosmicCoincidence</i></h5>
+<h5><i>Written by: CosmicCoincidence</i></h5>
 
 <br>
 <p>A new month, a new year, a new decade, a new hope.</p>
@@ -174,14 +149,12 @@ window.cookieconsent.initialise({
 <p>Back again with progress on core systems, <strong>Nonanon</strong> has updated the tilemap system to auto-connect prefabs (like walls or tables) both in-game and in the editor in Unity. It works by correctly choosing the appropriate prefab variant and applying rotation. With accurate modeling, this system can be attributed to other connectables like pipes, multi-tile floor patterns, etc.</p>
 
 <video controls="" muted="" poster="/assets/img/posts/20.01.01/NonanonTilemap.png" width="580px">
-  <source src="/assets/img/posts/20.01.01/NonanonTilemap.webm" type="video/webm" />
   <source src="/assets/img/posts/20.01.01/NonanonTilemap.mp4" type="video/mp4" />
 </video>
 
 <p>He also made improvements to the tile editor to allow for saving and editing innumerous tile configurations. Currently, a tile configuration supports a ‘turf’ (floors, windows, walls, etc.) and a ‘fixture’ (wall lights, airlocks, tables, etc.). Both the turf and the fixture are placed when placing a tile configuration. Placing tiles in the editor is smoother now too, with the added ability to be able to click and drag them to place multiple quickly. There is still some work to be done and bugs to flush out, but the system looks very promising.</p>
 
 <video controls="" muted="" poster="/assets/img/posts/20.01.01/NonanonTilemap2.png" width="580px">
-  <source src="/assets/img/posts/20.01.01/NonanonTilemap2.webm" type="video/webm" />
   <source src="/assets/img/posts/20.01.01/NonanonTilemap2.mp4" type="video/mp4" />
 </video>
 
@@ -191,7 +164,7 @@ window.cookieconsent.initialise({
 
 <h2 id="chat">Chat</h2>
 
-<p>If you remember our <a href="/2019/10/06/19.09.html">September devblog</a>, you may also remember the <a href="/assets/img/posts/19.09.01/MillyChatWIPSept.webm" target="_blank">WIP chat system made by <strong>Milly</strong></a>, which sadly got left behind and never merged. That is, until the beginning of January where <strong>Em3rgency</strong> picked it up, dusted it off, and slapped networking on it as well as a few quality of life things. It’s still incomplete as there are no channel permissions yet, but it’s a good start.</p>
+<p>If you remember our <a href="/2019/10/06/19.09.html">September devblog</a>, you may also remember the <a href="/assets/img/posts/19.09.01/MillyChat.mp4" target="_blank">WIP chat system made by <strong>Milly</strong></a>, which sadly got left behind and never merged. That is, until the beginning of January where <strong>Em3rgency</strong> picked it up, dusted it off, and slapped networking on it as well as a few quality of life things. It’s still incomplete as there are no channel permissions yet, but it’s a good start.</p>
 
 <h2 id="healthdamage">Health/Damage</h2>
 
@@ -200,7 +173,6 @@ window.cookieconsent.initialise({
 <p>Limbs now track their damage as well as track status effects like crippled, bruised, bleeding, etc. They will even detach given enough damage. Unfortunately, this cannot be tested currently as a result of the interaction system which merged shortly after this (mentioned above).</p>
 
 <video controls="" muted="" poster="/assets/img/posts/20.01.01/Em3rgencyDamage.png" width="580px">
-  <source src="/assets/img/posts/20.01.01/Em3rgencyDamage.webm" type="video/webm" />
   <source src="/assets/img/posts/20.01.01/Em3rgencyDamage.mp4" type="video/mp4" />
 </video>
 
@@ -217,7 +189,6 @@ window.cookieconsent.initialise({
 <p>If you don’t want to download Unity and build the most recent development changes yourself, you can instead <a href="https://github.com/RE-SS3D/SS3D/releases/download/0.3.0/RESS3D_0.3.0.zip" target="_blank"><strong>download our latest build (v0.3.0) here</strong></a>, which has been updated recently. And we also hope to update it frequently by integrating automated builds in the future for each minor release.</p>
 
 <video controls="" muted="" poster="/assets/img/posts/20.01.01/Em3rgencyLogin.png" width="580px">
-  <source src="/assets/img/posts/20.01.01/Em3rgencyLogin.webm" type="video/webm" />
   <source src="/assets/img/posts/20.01.01/Em3rgencyLogin.mp4" type="video/mp4" />
 </video>
 
@@ -227,15 +198,9 @@ window.cookieconsent.initialise({
 
 <p>The fuel system simply acts as the amount of what we’re calling “fuel”, but the system can be made to work with other objects such as crayons that will deplete over time, or even objects that store ammo, charge, propellent, etc. You can see how much remaining fuel your crayon has in the small progress bar in the hand its held in.</p>
 
-<video controls="" muted="" poster="/assets/img/posts/20.01.01/Em3rgencyDrawing1.png" width="580px">
-  <source src="/assets/img/posts/20.01.01/Em3rgencyDrawing1.webm" type="video/webm" />
-  <source src="/assets/img/posts/20.01.01/Em3rgencyDrawing1.mp4" type="video/mp4" />
-</video>
-
 <p>The system is fun to play with and in his own words, “drawing lets you, quite literally, leave a mark on the world”. Currently, only some major surfaces can be drawn on, like floors, walls, tables, and lockers, but we plan to significantly add to that list.</p>
 
 <video controls="" muted="" poster="/assets/img/posts/20.01.01/Em3rgencyDrawing2.png" width="580px">
-  <source src="/assets/img/posts/20.01.01/Em3rgencyDrawing2.webm" type="video/webm" />
   <source src="/assets/img/posts/20.01.01/Em3rgencyDrawing2.mp4" type="video/mp4" />
 </video>
 
@@ -286,7 +251,6 @@ window.cookieconsent.initialise({
 <p><strong>Nicola</strong> put a lot of focus on atmospheric parts and engineering machines this month, with some pumps, filters, and mixers, etc, that we were missing, as well as gravity generator and a shield generator.</p>
 
 <video autoplay="autoplay" muted="" loop="loop" poster="/assets/img/posts/20.01.01/NicolaAtmosParts.png" width="580px">
-  <source src="/assets/img/posts/20.01.01/NicolaAtmosParts.webm" type="video/webm" />
   <source src="/assets/img/posts/20.01.01/NicolaAtmosParts.mp4" type="video/mp4" />
 </video>
 
@@ -341,16 +305,15 @@ window.cookieconsent.initialise({
 
 <p>Again this month, <strong>Bug</strong> has made another interesting animation to spark your curiosity!</p>
 
-<video autoplay="autoplay" muted="" loop="loop" poster="/assets/img/art/Bug/BugHydroponics.png" width="580px">
-  <source src="/assets/img/art/Bug/BugHydroponics.webm" type="video/webm" />
-  <source src="/assets/img/art/Bug/BugHydroponics.mp4" type="video/mp4" />
-</video>
+<iframe class="video" width="580px" height="325px" src="https://www.youtube-nocookie.com/embed/jHjo0FZ_CdM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+
+<div class="image"><a href="/assets/img/art/Bug/BugHydroponics.png" class="image-link" target="_blank"><img src="/" alt="" srcset="    /assets/resized/BugHydroponics-580x326.png 580w,    /assets/resized/BugHydroponics-290x163.png 290w,    /assets/resized/BugHydroponics-170x96.png 170w,    /assets/resized/BugHydroponics-145x82.png 145w, /assets/img/art/Bug/BugHydroponics.png 1920w" sizes="(max-width: 624px) 100vw, 578px, 580px" /></a></div>
 
 <p>And from <strong>CosmicCoincidence</strong> a couple of new logos using our iconic toolbox icon!</p>
 
-<div class="image"><a href="/assets/img/posts/20.01.01/RESPACESTATION3D.png" class="image-link" target="_blank"><img src="/" alt="" srcset="    /assets/resized/RESPACESTATION3D-580x91.png 580w,    /assets/resized/RESPACESTATION3D-290x45.png 290w,    /assets/resized/RESPACESTATION3D-170x27.png 170w,    /assets/resized/RESPACESTATION3D-145x23.png 145w, /assets/img/posts/20.01.01/RESPACESTATION3D.png 1920w" sizes="(max-width: 624px) 100vw, 578px, 580px" /></a></div>
+<div class="image"><a href="/assets/img/RESPACESTATION3D.png" class="image-link" target="_blank"><img src="/" alt="" srcset="    /assets/resized/RESPACESTATION3D-580x91.png 580w,    /assets/resized/RESPACESTATION3D-290x45.png 290w,    /assets/resized/RESPACESTATION3D-170x27.png 170w,    /assets/resized/RESPACESTATION3D-145x23.png 145w, /assets/img/RESPACESTATION3D.png 1920w" sizes="(max-width: 624px) 100vw, 578px, 580px" /></a></div>
 
-<div class="image"><a href="/assets/img/posts/20.01.01/RESS3D.png" class="image-link" target="_blank"><img src="/" alt="" srcset="    /assets/resized/RESS3D-580x290.png 580w,    /assets/resized/RESS3D-290x145.png 290w,    /assets/resized/RESS3D-170x85.png 170w,    /assets/resized/RESS3D-145x73.png 145w, /assets/img/posts/20.01.01/RESS3D.png 1280w" sizes="(max-width: 624px) 100vw, 578px, 580px" /></a></div>
+<div class="image"><a href="/assets/img/RESS3D.png" class="image-link" target="_blank"><img src="/" alt="" srcset="    /assets/resized/RESS3D-580x290.png 580w,    /assets/resized/RESS3D-290x145.png 290w,    /assets/resized/RESS3D-170x85.png 170w,    /assets/resized/RESS3D-145x73.png 145w, /assets/img/RESS3D.png 1280w" sizes="(max-width: 624px) 100vw, 578px, 580px" /></a></div>
 
 <h3 id="notes">Notes</h3>
 
@@ -360,7 +323,7 @@ window.cookieconsent.initialise({
 
 <p>Also, in the past, we have showcased work in these blogs that was never submitted in one form or another. This has resulted in us not actually having some ‘progress’ despite us having previously displaying it in a blog post. From here on, we intend to only show progress that has been submitted and accepted to the project in our blog posts. More wip content can be found on our reddit and discord.</p>
 
-<p>For more information on these recent changes, our progress, or how to contribute, come say hello in our <a href="https://discord.gg/3ny9tdH" target="_blank">discord</a>!</p>
+<p>For more information on these recent changes, our progress, or how to contribute, come say hello in our <a href="https://discord.gg/3ny9tdH" target="_blank">Discord</a>!</p>
 
 
             </main>

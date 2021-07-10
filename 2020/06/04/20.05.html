@@ -5,35 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="/css/style.css">
         <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
-        <meta name="theme-color" content="#1e4684">
-        <script>
-            //theme toggle
-            //determines if the user has a set theme
-            function detectColorScheme(){
-                var theme="dark";    //default to dark
-
-                //local storage is used to override OS theme settings
-                if(localStorage.getItem("theme")){
-                    if(localStorage.getItem("theme") == "light"){
-                        var theme = "light";
-                    }
-                } else if(!window.matchMedia) {
-                    //matchMedia method not supported
-                    return false;
-                } else if(window.matchMedia("(prefers-color-scheme: light)").matches) {
-                    //OS theme setting detected as dark
-                    var theme = "light";
-                }
-
-                //dark theme preferred, set document with a `data-theme` attribute
-                if (theme=="light") {
-                    document.documentElement.setAttribute("data-theme", "light");
-                } else {
-                    document.documentElement.setAttribute("data-theme", "dark");
-                }
-            }
-            detectColorScheme();
-            
+        <script>            
             // Function to keep the navigation bars scroll offset when changing pages.
             setScroll = function(url, scroll) {
                 if(scroll != 0) {
@@ -67,6 +39,7 @@
 <title>20.05: May 2020 Devblog | RE:SS3D</title>
 <meta name="generator" content="Jekyll v3.8.5" />
 <meta property="og:title" content="20.05: May 2020 Devblog" />
+<meta name="author" content="CosmicCoincidence" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="“It takes NOTHING to join the crowd, it takes EVERYTHING to stand alone.”" />
 <meta property="og:description" content="“It takes NOTHING to join the crowd, it takes EVERYTHING to stand alone.”" />
@@ -77,7 +50,7 @@
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2020-06-04T05:30:00+00:00" />
 <script type="application/ld+json">
-{"description":"“It takes NOTHING to join the crowd, it takes EVERYTHING to stand alone.”","image":"https://ss3d.space/assets/img/art/ProbablyNot/ProbablyNot_Chase.png","@type":"BlogPosting","headline":"20.05: May 2020 Devblog","dateModified":"2020-06-04T05:30:00+00:00","datePublished":"2020-06-04T05:30:00+00:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://ss3d.space/2020/06/04/20.05.html"},"url":"https://ss3d.space/2020/06/04/20.05.html","@context":"https://schema.org"}</script>
+{"description":"“It takes NOTHING to join the crowd, it takes EVERYTHING to stand alone.”","image":"https://ss3d.space/assets/img/art/ProbablyNot/ProbablyNot_Chase.png","@type":"BlogPosting","headline":"20.05: May 2020 Devblog","dateModified":"2020-06-04T05:30:00+00:00","datePublished":"2020-06-04T05:30:00+00:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://ss3d.space/2020/06/04/20.05.html"},"url":"https://ss3d.space/2020/06/04/20.05.html","author":{"@type":"Person","name":"CosmicCoincidence"},"@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
         <link type="application/atom+xml" rel="alternate" href="https://ss3d.space/feed.xml" title="RE:SS3D" />
@@ -153,12 +126,14 @@ window.cookieconsent.initialise({
   <div class="image">
     <img src="/assets/img/art/ProbablyNot/ProbablyNot_Chase.png" alt="">
   </div>
-  <h5><i>Image credit - ProbablyNot</i></h5>
+  
+  <h5><i>Image credit: ProbablyNot</i></h5>
+  
 </div>
 
 <h1>20.05: May 2020 Devblog</h1>
 <h5><i>Thursday, June 4, 2020</i></h5>
-<h5><i>Written by - CosmicCoincidence</i></h5>
+<h5><i>Written by: CosmicCoincidence</i></h5>
 
 <h2>Monthly Release: 
   <u>
@@ -173,11 +148,11 @@ window.cookieconsent.initialise({
 
 <h1 id="may-recap">May Recap</h1>
 
-<p>In May, the same as every month, we received more new contributors, but this month it seems to have been more programmers than artists which is a change for us. These new programmers are highly responsible for a large increase of momentum in the development of the game. As a result, the game looks totally different now than it did just <a href="/assets/img/posts/20.04.01/TheLife_BuildDistance.webm" target="_blank">one month ago</a>!</p>
+<p>In May, the same as every month, we received more new contributors, but this month it seems to have been more programmers than artists which is a change for us. These new programmers are highly responsible for a large increase of momentum in the development of the game. As a result, the game looks totally different now than it did just <a href="/assets/img/posts/20.04.01/TheLife_BuildDistance.mp4" target="_blank">one month ago</a>!</p>
 
 <p>This month, we also made a new <a href="https://www.youtube.com/channel/UCJT-bVqDOYfyxF3oxECceZg" target="_blank">YouTube account</a> where we have begun uploading animations and gameplay/teaser videos. Are you curious what RE:SS3D would look like from another perspective? Then check out the first-person &amp; isometric camera teaser tests on our YouTube channel (note: we will not be implementing either of those camera perspectives ourselves, we will be going for a more traditional top-down-ish perspective).</p>
 
-<p>Also, we have gotten many questions regarding when our next public release will be… and that answer to that is… RIGHT NOW! You can <a href="https://github.com/RE-SS3D/SS3D/releases/latest" target="_blank">DOWNLOAD our latest release (v0.3.5 built on June 1st) here!</a>. Last month we intended to begin releasing a monthly build that would coincide with our monthly devblogs, but we had issues with our automated build and never got last month’s release made. Although we still have not resolved the issues with the automated build, we will begin to put out monthly releases with our devblogs even if we have to do so manually (which is what we did this month).</p>
+<p>Also, we have gotten many questions regarding when our next public release will be… and that answer to that is… RIGHT NOW! You can <a href="https://github.com/RE-SS3D/SS3D/releases/download/0.3.5/RESS3D_0.3.5.zip" target="_blank">DOWNLOAD our latest release (v0.3.5 built on June 1st) here!</a>. Last month we intended to begin releasing a monthly build that would coincide with our monthly devblogs, but we had issues with our automated build and never got last month’s release made. Although we still have not resolved the issues with the automated build, we will begin to put out monthly releases with our devblogs even if we have to do so manually (which is what we did this month).</p>
 
 <h2 id="added-content">Added Content</h2>
 
@@ -194,7 +169,6 @@ window.cookieconsent.initialise({
 <p>After adding a new wrapped BRDF lighting model, added drop shadows, changed out our glass shader, added sceen-space raytracing, and made tweaks to light values, material settings, tone mapping/color grading, and post-processing, he decided he could finally call it good. <a href="/assets/img/posts/20.04.01/TheLife_BuildDistance.png" target="_blank">Before (last month)</a> and <a href="/assets/img/posts/20.05.01/Seteron_Lighting.png" target="_blank">after (Seteron’s rework)</a></p>
 
 <video controls="" muted="" poster="/assets/img/posts/20.05.01/Seteron_Lighting_Vid.png" width="580px">
-  <source src="/assets/img/posts/20.05.01/Seteron_Lighting_Vid.webm" type="video/webm" />
   <source src="/assets/img/posts/20.05.01/Seteron_Lighting_Vid.mp4" type="video/mp4" />
 </video>
 
@@ -207,7 +181,6 @@ window.cookieconsent.initialise({
 <p>Currently dropping an item will give it the same orientation as when placing it, but that may change in the future to the item dropping with the same orientation it had when it was being held, which will look more natural.</p>
 
 <video controls="" muted="" poster="/assets/img/posts/20.05.01/ItemOrientations.png" width="580px">
-  <source src="/assets/img/posts/20.05.01/ItemOrientations.webm" type="video/webm" />
   <source src="/assets/img/posts/20.05.01/ItemOrientations.mp4" type="video/mp4" />
 </video>
 
@@ -218,7 +191,6 @@ window.cookieconsent.initialise({
 <p>After reworking the system, he added in-hand interactions so you can press ‘Z’ or now click on the item in-hand to activate/use it. This required the addition of interaction priorities, so a crowbar, for example, knows to construct a table as a priority instead of being placed on the floor.</p>
 
 <video controls="" muted="" poster="/assets/img/posts/20.05.01/Alainx_Interactions.png" width="580px">
-  <source src="/assets/img/posts/20.05.01/Alainx_Interactions.webm" type="video/webm" />
   <source src="/assets/img/posts/20.05.01/Alainx_Interactions.mp4" type="video/mp4" />
 </video>
 
@@ -233,7 +205,6 @@ window.cookieconsent.initialise({
 <p>Coded by <strong>Onebi</strong> and implemented by <strong>Goao</strong>, we now have a spiffy radial context menu, which looks and operates much nicer than <a href="/assets/img/posts/20.05.01/OldContextMenu.png" target="_blank">our old context menu</a>. The new menu uses the new interaction icons (some need to be added still) and should be quicker to operate when in a hurry.</p>
 
 <video controls="" muted="" poster="/assets/img/posts/20.05.01/ContextMenu.png" width="580px">
-  <source src="/assets/img/posts/20.05.01/ContextMenu.webm" type="video/webm" />
   <source src="/assets/img/posts/20.05.01/ContextMenu.mp4" type="video/mp4" />
 </video>
 
@@ -243,7 +214,6 @@ window.cookieconsent.initialise({
 
 <div>
   <video controls="" muted="" poster="/assets/img/posts/20.05.01/OldMovement.png" width="580px">
-    <source src="/assets/img/posts/20.05.01/OldMovement.webm" type="video/webm" />
     <source src="/assets/img/posts/20.05.01/OldMovement.mp4" type="video/mp4" />
   </video>
   <h5><i>Old character movement</i></h5>
@@ -255,7 +225,6 @@ window.cookieconsent.initialise({
 
 <div>
   <video controls="" muted="" poster="/assets/img/posts/20.05.01/NewMovement.png" width="580px">
-    <source src="/assets/img/posts/20.05.01/NewMovement.webm" type="video/webm" />
     <source src="/assets/img/posts/20.05.01/NewMovement.mp4" type="video/mp4" />
   </video>
   <h5><i>New character movement</i></h5>
@@ -267,7 +236,6 @@ window.cookieconsent.initialise({
 
 <div>
   <video controls="" poster="/assets/img/posts/20.05.01/Sounds.png" width="580px">
-    <source src="/assets/img/posts/20.05.01/Sounds.webm" type="video/webm" />
     <source src="/assets/img/posts/20.05.01/Sounds.mp4" type="video/mp4" />
   </video>
   <h5><i>Turn your audio on</i></h5>
@@ -283,8 +251,7 @@ window.cookieconsent.initialise({
 
 <p>To start, only 2 of the vending machines are operational (the soda and tool vendors), which currently dispense a random item from a list and have a set number of items they can dispense. Their functionality will likely expand once we begin getting proper interfaces for them.</p>
 
-<video controls="" muted="" poster="/assets/img/posts/20.05.01/Alainx_Interactions2.png" width="580px">
-  <source src="/assets/img/posts/20.05.01/Alainx_Interactions2.webm" type="video/webm" />
+<video controls="" poster="/assets/img/posts/20.05.01/Alainx_Interactions2.png" width="580px">
   <source src="/assets/img/posts/20.05.01/Alainx_Interactions2.mp4" type="video/mp4" />
 </video>
 
@@ -369,7 +336,7 @@ window.cookieconsent.initialise({
 
 <div class="image"><a href="/assets/img/posts/20.05.01/Beach_Holodeck.png" class="image-link" target="_blank"><img src="/" alt="" srcset="    /assets/resized/Beach_Holodeck-580x435.png 580w,    /assets/resized/Beach_Holodeck-290x217.png 290w,    /assets/resized/Beach_Holodeck-170x127.png 170w,    /assets/resized/Beach_Holodeck-145x109.png 145w, /assets/img/posts/20.05.01/Beach_Holodeck.png 1366w" sizes="(max-width: 624px) 100vw, 578px, 580px" /></a></div>
 
-<p>And <strong>Eiko</strong> made a great <a href="/assets/img/posts/20.05.01/HonkGraffiti.png" target="_blank">graffiti texture of the word “honk”</a> which can also be seen in this months blog art.</p>
+<p>And <strong>Eiko</strong> made a great <a href="/assets/img/posts/20.05.01/HonkGraffiti.png" target="_blank">graffiti texture of the word “honk”</a>, which can be seen in this months blog art.</p>
 
 <h2 id="art">Art</h2>
 
@@ -379,7 +346,7 @@ window.cookieconsent.initialise({
 
 <h3 id="notes">Notes</h3>
 
-<p>Still not part of our community? Well, better late than never to come hop in our community <a href="https://discord.gg/3ny9tdH" target="_blank">discord</a> to share your opinions, see WIP content/systems, or vote on polls that influence the design of the game!</p>
+<p>Still not part of our community? Well, better late than never to come hop in our community <a href="https://discord.gg/3ny9tdH" target="_blank">Discord</a> to share your opinions, see WIP content/systems, or vote on polls that influence the design of the game!</p>
 
 <p>See you here again next month!</p>
 

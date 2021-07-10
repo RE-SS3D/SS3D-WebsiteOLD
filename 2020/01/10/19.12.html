@@ -5,35 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="/css/style.css">
         <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
-        <meta name="theme-color" content="#1e4684">
-        <script>
-            //theme toggle
-            //determines if the user has a set theme
-            function detectColorScheme(){
-                var theme="dark";    //default to dark
-
-                //local storage is used to override OS theme settings
-                if(localStorage.getItem("theme")){
-                    if(localStorage.getItem("theme") == "light"){
-                        var theme = "light";
-                    }
-                } else if(!window.matchMedia) {
-                    //matchMedia method not supported
-                    return false;
-                } else if(window.matchMedia("(prefers-color-scheme: light)").matches) {
-                    //OS theme setting detected as dark
-                    var theme = "light";
-                }
-
-                //dark theme preferred, set document with a `data-theme` attribute
-                if (theme=="light") {
-                    document.documentElement.setAttribute("data-theme", "light");
-                } else {
-                    document.documentElement.setAttribute("data-theme", "dark");
-                }
-            }
-            detectColorScheme();
-            
+        <script>            
             // Function to keep the navigation bars scroll offset when changing pages.
             setScroll = function(url, scroll) {
                 if(scroll != 0) {
@@ -67,6 +39,7 @@
 <title>19.12: December 2019 Devblog | RE:SS3D</title>
 <meta name="generator" content="Jekyll v3.8.5" />
 <meta property="og:title" content="19.12: December 2019 Devblog" />
+<meta name="author" content="CosmicCoincidence" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="“A shift toward smoother progression.”" />
 <meta property="og:description" content="“A shift toward smoother progression.”" />
@@ -77,7 +50,7 @@
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2020-01-10T14:30:00+00:00" />
 <script type="application/ld+json">
-{"description":"“A shift toward smoother progression.”","image":"https://ss3d.space/assets/img/art/Bug/BugWallpaper2.png","@type":"BlogPosting","headline":"19.12: December 2019 Devblog","dateModified":"2020-01-10T14:30:00+00:00","datePublished":"2020-01-10T14:30:00+00:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://ss3d.space/2020/01/10/19.12.html"},"url":"https://ss3d.space/2020/01/10/19.12.html","@context":"https://schema.org"}</script>
+{"description":"“A shift toward smoother progression.”","image":"https://ss3d.space/assets/img/art/Bug/BugWallpaper2.png","@type":"BlogPosting","headline":"19.12: December 2019 Devblog","dateModified":"2020-01-10T14:30:00+00:00","datePublished":"2020-01-10T14:30:00+00:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://ss3d.space/2020/01/10/19.12.html"},"url":"https://ss3d.space/2020/01/10/19.12.html","author":{"@type":"Person","name":"CosmicCoincidence"},"@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
         <link type="application/atom+xml" rel="alternate" href="https://ss3d.space/feed.xml" title="RE:SS3D" />
@@ -153,12 +126,14 @@ window.cookieconsent.initialise({
   <div class="image">
     <img src="/assets/img/art/Bug/BugWallpaper2.png" alt="">
   </div>
-  <h5><i>Image credit - Bug</i></h5>
+  
+  <h5><i>Image credit: Bug</i></h5>
+  
 </div>
 
 <h1>19.12: December 2019 Devblog</h1>
 <h5><i>Friday, January 10, 2020</i></h5>
-<h5><i>Written by - CosmicCoincidence</i></h5>
+<h5><i>Written by: CosmicCoincidence</i></h5>
 
 <br>
 <p><em>“A good system shortens the road to the goal.”</em></p>
@@ -174,7 +149,6 @@ window.cookieconsent.initialise({
 <p><strong>Probably Not</strong>, who has been with us since beep’s SS3D days, continues to patiently craft character animations for us without loosing stride or getting discouraged when we are slow. This month he has provided 4 more unique animations (opening cig pack and removing a cig, placing cig in mouth, opening lighter, using lighter). These animations will be associated with indiviual actions, but will be smoothed together when the player queues several actions quickly.</p>
 
 <video autoplay="autoplay" muted="" loop="loop" width="580px" poster="/assets/img/posts/19.12.01/ProbablyNotSmoke.png">
-  <source src="/assets/img/posts/19.12.01/ProbablyNotSmoke.webm" type="video/webm" />
   <source src="/assets/img/posts/19.12.01/ProbablyNotSmoke.mp4" type="video/mp4" />
 </video>
 
@@ -187,7 +161,6 @@ window.cookieconsent.initialise({
 <p>Animated textures can be just as fun. Here is a positronic brain from <strong>CosmicCoincidence</strong> with an electrifying video texture!</p>
 
 <video autoplay="autoplay" muted="" loop="loop" width="580px" poster="/assets/img/posts/19.12.01/CosmicPositronicBrain.png">
-  <source src="/assets/img/posts/19.12.01/CosmicPositronicBrain.webm" type="video/webm" />
   <source src="/assets/img/posts/19.12.01/CosmicPositronicBrain.mp4" type="video/mp4" />
 </video>
 
@@ -287,10 +260,7 @@ window.cookieconsent.initialise({
 
 <p>This month, <strong>Bug</strong> has spent as much time making art as he has models. Here is an awesome looping animation from him, as well as a few wallpapers!</p>
 
-<video autoplay="autoplay" muted="" loop="loop" width="580px" poster="/assets/img/art/Bug/BugWallpaper2.png">
-  <source src="/assets/img/art/Bug/BugAnimation.webm" type="video/webm" />
-  <source src="/assets/img/art/Bug/BugAnimation.mp4" type="video/mp4" />
-</video>
+<iframe class="video" width="580px" height="325px" src="https://www.youtube-nocookie.com/embed/aGmELKhERAA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
 
 <div class="horizontal-2">
 

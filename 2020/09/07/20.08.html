@@ -5,35 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="/css/style.css">
         <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
-        <meta name="theme-color" content="#1e4684">
-        <script>
-            //theme toggle
-            //determines if the user has a set theme
-            function detectColorScheme(){
-                var theme="dark";    //default to dark
-
-                //local storage is used to override OS theme settings
-                if(localStorage.getItem("theme")){
-                    if(localStorage.getItem("theme") == "light"){
-                        var theme = "light";
-                    }
-                } else if(!window.matchMedia) {
-                    //matchMedia method not supported
-                    return false;
-                } else if(window.matchMedia("(prefers-color-scheme: light)").matches) {
-                    //OS theme setting detected as dark
-                    var theme = "light";
-                }
-
-                //dark theme preferred, set document with a `data-theme` attribute
-                if (theme=="light") {
-                    document.documentElement.setAttribute("data-theme", "light");
-                } else {
-                    document.documentElement.setAttribute("data-theme", "dark");
-                }
-            }
-            detectColorScheme();
-            
+        <script>            
             // Function to keep the navigation bars scroll offset when changing pages.
             setScroll = function(url, scroll) {
                 if(scroll != 0) {
@@ -153,12 +125,14 @@ window.cookieconsent.initialise({
   <div class="image">
     <img src="/assets/img/art/Goao/GoaoSpessGothic.png" alt="">
   </div>
-  <h5><i>Image credit - Goao</i></h5>
+  
+  <h5><i>Image credit: Image credit - Goao</i></h5>
+  
 </div>
 
 <h1>20.08: August 2020 Devblog</h1>
 <h5><i>Monday, September 7, 2020</i></h5>
-<h5><i>Written by – Probably Not / CosmicCoincidence</i></h5>
+<h5><i>Written by: </i></h5>
 
 <h2>Monthly Release: 
   <u>
@@ -187,7 +161,6 @@ window.cookieconsent.initialise({
 
 <div>
   <video controls="" muted="" poster="/assets/img/posts/20.08.01/BroodjePipeAtmos1.png" width="580px">
-    <source src="/assets/img/posts/20.08.01/BroodjePipeAtmos1.webm" type="video/webm" />
     <source src="/assets/img/posts/20.08.01/BroodjePipeAtmos1.mp4" type="video/mp4" />
   </video>
   <h5><i>CO2 being scrubbed from a room</i></h5>
@@ -195,7 +168,6 @@ window.cookieconsent.initialise({
 
 <div>
   <video controls="" muted="" poster="/assets/img/posts/20.08.01/BroodjePipeAtmos2.png" width="580px">
-    <source src="/assets/img/posts/20.08.01/BroodjePipeAtmos2.webm" type="video/webm" />
     <source src="/assets/img/posts/20.08.01/BroodjePipeAtmos2.mp4" type="video/mp4" />
   </video>
   <h5><i>CO2 moving through a pipe, passing through a 4-way pipe manifold, and splitting into 4 different pipes each on different layers</i></h5>
@@ -230,13 +202,7 @@ window.cookieconsent.initialise({
 
 <div class="image"><a href="/assets/img/posts/20.08.01/Konstantin_BodyDamage.png" class="image-link" target="_blank"><img src="/" alt="" srcset="    /assets/resized/Konstantin_BodyDamage-580x435.png 580w,    /assets/resized/Konstantin_BodyDamage-290x218.png 290w,    /assets/resized/Konstantin_BodyDamage-170x128.png 170w,    /assets/resized/Konstantin_BodyDamage-145x109.png 145w, /assets/img/posts/20.08.01/Konstantin_BodyDamage.png 800w" sizes="(max-width: 624px) 100vw, 578px, 580px" /></a></div>
 
-<h2 id="updates">Updates</h2>
-
-<p>It ain’t a secret that the server has been a little on the quiet side lately, so to remedy this we are going to start hosting events. At the moment we will only be doing movie nights, as well as Jackbox nights. So, if you are up for watching a cool spacey movie or having fun with the developers and other members of the community in a game of <em>Push the Button</em>, check out <a href="https://calendar.google.com/calendar/u/2/r?tab=oc&amp;pli=1" target="_blank">our google calendar</a> for the next upcoming event (they will also be posted in our #events channel on our discord).</p>
-
-<iframe src="https://calendar.google.com/calendar/embed?src=f7ttpb0t68tst1feejt9k02660%40group.calendar.google.com&amp;ctz=America%2FLos_Angeles" style="border: 0" width="580" height="435" frameborder="0" scrolling="no"></iframe>
-
-<h2 id="conclusion">Conclusion</h2>
+<h3 id="conclusion">Conclusion</h3>
 
 <p>While the previous month may have been excruciatingly slow, we are not going anywhere. Here is to a more active September.</p>
 
