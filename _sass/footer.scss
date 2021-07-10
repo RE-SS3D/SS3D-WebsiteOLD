@@ -13,27 +13,22 @@
             white-space: normal;
         }
         li {
-            margin-left: 25px;
-            width: 30px;
+            margin-left: 30px;
+            width: 35px;
             &:first-child {
                 margin-left: 0;
             }
             @include respond-to(small-screen) {
-                margin-left: 35px;
-                width: 40px;
+                margin-left: 40px;
+                width: 45px;
             }
         }
     }
 
     .legal-list {
         li {
-            margin-top: 16px;
-            margin-left: 0;
-            @include respond-to(small-screen) {
-                display: inline-block;
-                margin-top: 0;
-                margin-left: 16px;
-            }
+            display: inline-block;
+            margin-left: 16px;
         }
     }
 }

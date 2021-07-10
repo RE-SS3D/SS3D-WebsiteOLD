@@ -20,35 +20,17 @@ permalink: /art/
 
 {% responsive_image path: assets/img/art/Bug/Bug_Halloween2020.png template: _includes/srcset.html %}
 
-<video width="580px" autoplay="autoplay" muted loop="loop" poster="{{ site.baseurl }}/assets/img/art/Bug/Bug_420Hydro.png">
-  <source src="{{ site.baseurl }}/assets/img/art/Bug/Bug_420Hydro.webm" type="video/webm">
-  <source src="{{ site.baseurl }}/assets/img/art/Bug/Bug_420Hydro.mp4" type="video/mp4">
-</video>
+<iframe class="video" width="580px" height="325px" src="https://www.youtube-nocookie.com/embed/J_NM59nEk4Y" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-<video width="580px" autoplay="autoplay" muted loop="loop" poster="{{ site.baseurl }}/assets/img/art/Bug/BugPandemic.png">
-  <source src="{{ site.baseurl }}/assets/img/art/Bug/BugPandemic.webm" type="video/webm">
-  <source src="{{ site.baseurl }}/assets/img/art/Bug/BugPandemic.mp4" type="video/mp4">
-</video>
+<iframe class="video" width="580px" height="325px" src="https://www.youtube-nocookie.com/embed/aIruVj0PUlw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-<video width="580px" autoplay="autoplay" muted loop="loop" poster="{{ site.baseurl }}/assets/img/art/Bug/BugSyndie.png">
-  <source src="{{ site.baseurl }}/assets/img/art/Bug/BugSyndie.webm" type="video/webm">
-  <source src="{{ site.baseurl }}/assets/img/art/Bug/BugSyndie.mp4" type="video/mp4">
-</video>
+<iframe class="video" width="580px" height="325px" src="https://www.youtube-nocookie.com/embed/PtJQUhoiPk0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-<video width="580px" autoplay="autoplay" muted loop="loop" poster="{{ site.baseurl }}/assets/img/art/Bug/BugSpaceJunk.png">
-  <source src="{{ site.baseurl }}/assets/img/art/Bug/BugSpaceJunk.webm" type="video/webm">
-  <source src="{{ site.baseurl }}/assets/img/art/Bug/BugSpaceJunk.mp4" type="video/mp4">
-</video>
+<iframe class="video" width="580px" height="325px" src="https://www.youtube-nocookie.com/embed/j0CSwDU7itg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-<video width="580px" autoplay="autoplay" muted loop="loop" poster="{{ site.baseurl }}/assets/img/art/Bug/BugHydroponics.png">
-  <source src="{{ site.baseurl }}/assets/img/art/Bug/BugHydroponics.webm" type="video/webm">
-  <source src="{{ site.baseurl }}/assets/img/art/Bug/BugHydroponics.mp4" type="video/mp4">
-</video>
+<iframe class="video" width="580px" height="325px" src="https://www.youtube-nocookie.com/embed/jHjo0FZ_CdM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-<video width="580px" autoplay="autoplay" muted loop="loop" poster="{{ site.baseurl }}/assets/img/art/Bug/BugWallpaper2.png">
-  <source src="{{ site.baseurl }}/assets/img/art/Bug/BugAnimation.webm" type="video/webm">
-  <source src="{{ site.baseurl }}/assets/img/art/Bug/BugAnimation.mp4" type="video/mp4">
-</video>
+<iframe class="video" width="580px" height="325px" src="https://www.youtube-nocookie.com/embed/aGmELKhERAA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <div class='horizontal-2' markdown='1'>
 {% responsive_image path: assets/img/art/Bug/Bug_420Hydro.png %}
@@ -74,12 +56,7 @@ permalink: /art/
 {: class="centred" }
 
 <div class='horizontal-2' markdown='1'>
-{% responsive_image path: assets/img/art/CosmicCoincidence/CosmicGrinderA1.png %}
 {% responsive_image path: assets/img/art/CosmicCoincidence/CosmicGrinderA2.png %}
-</div>
-
-<div class='horizontal-2' markdown='1'>
-{% responsive_image path: assets/img/art/CosmicCoincidence/CosmicGrinderB1.png %}
 {% responsive_image path: assets/img/art/CosmicCoincidence/CosmicGrinderB2.png %}
 </div>
 

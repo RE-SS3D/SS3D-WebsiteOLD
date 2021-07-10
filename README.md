@@ -4,6 +4,7 @@
 
 Release: [![Build Status](https://travis-ci.com/RE-SS3D/SS3D-Website.svg?branch=release)](https://travis-ci.com/RE-SS3D/SS3D-Website)
 Develop: [![Build Status](https://travis-ci.com/RE-SS3D/SS3D-Website.svg?branch=develop)](https://travis-ci.com/RE-SS3D/SS3D-Website)
+<img src="https://img.shields.io/github/repo-size/RE-SS3D/SS3D-Website?color=gold&style=flat-round" alt="repo size" align="right">
 
 ## Requirements
 
