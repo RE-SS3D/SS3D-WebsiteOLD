@@ -4,6 +4,7 @@ body, h1, h2, h3, h4, h5, h6 {
     margin: 1.5em 0em 0.25em 0em;
     vertical-align: baseline;
     line-height: 1em;
+    position: relative;
 }
 
 h1 {
@@ -103,6 +104,12 @@ img {
     filter: blur(.25px) brightness(90%) contrast(90%) saturate(90%);
 }
 
+.image-float_right {
+    align-self: flex-end;
+    position: absolute;
+    z-index: 0;
+}
+
 // Links are coloured appropriately, so they don't look terrible
 a, .link {
     color: $color-link; // CSS3 variable fallback
@@ -148,6 +155,7 @@ a, .link {
 
     h1, h2, h3, h4, h5, p, ul, ol {
         align-self: flex-start;
+        z-index: 1;
     }
     .centred {
         align-self: center;
