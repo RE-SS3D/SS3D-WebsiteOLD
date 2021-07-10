@@ -202,7 +202,7 @@ a, .link {
 header {
   text-align: center;
   padding-top: 15px;
-  padding-bottom: 30px; }
+  padding-bottom: 15px; }
   header h1 {
     font-size: 16px;
     font-size: 7.5vw;
@@ -212,37 +212,36 @@ header {
   header h6 {
     white-space: nowrap;
     overflow: visible;
-    font-size: 19px; }
+    font-size: 4vw; }
   header div {
     width: 100%; }
   header img {
-    height: 64px;
-    position: relative;
     right: 5px;
     top: 0px;
+    width: 100%;
     padding: 1em;
-    padding-top: 10px;
+    padding-top: 0px;
     padding-bottom: 0px; }
   @media (min-width: 600px) {
     header h6 {
-      font-size: 25px; }
+      font-size: 3.7vw; }
     header img {
-      height: 84px; } }
+      width: 90%; } }
   @media (min-width: 840px) {
     header h6 {
-      font-size: 29px; }
+      font-size: 3.4vw; }
     header img {
-      height: 96px; } }
+      width: 80%; } }
   @media (min-width: 1080px) {
     header h6 {
-      font-size: 34px; }
+      font-size: 2.8vw; }
     header img {
-      height: 110px; } }
+      width: 65%; } }
   @media (min-width: 1600px) {
     header h6 {
-      font-size: 39px; }
+      font-size: 2vw; }
     header img {
-      height: 126px; } }
+      width: 45%; } }
 
 nav, nav ul {
   width: 100vw;
