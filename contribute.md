@@ -4,20 +4,27 @@ title: Contribute
 permalink: /contribute/
 ---
 
+<div class="image-float_right">
+    <img src="{{ site.baseurl}}/assets/img/Engineer.png" alt="RE: SPACE STATION 3D" width="300px">
+</div>
+
 ### How to contribute:
 
-There are 2 primary ways you can contribute, either by donating to the project, or by directly helping with the development.
+There are 2 primary ways you can contribute;
+- donating to the project, 
+- helping with development.
 
 # Donation Links
 
-[Paypal]({{ site.paypal_url }}){:target="_blank"}
-(or send directly to our email: "{{ site.email }}")
+[Paypal]({{ site.paypal_url }}){:target="_blank"}<br>
+(or send directly here: "{{ site.email }}")
 
 [Patreon]({{ site.patreon_url }}){:target="_blank"}
 
 [Subscribestar]({{ site.subscribestar_url }}){:target="_blank"}
 
-Crypto: "spacestation3d.crypto" (accepts $BCH, $BTC, $ETH, & $LTC). But some wallets don't accept that format so you can find our wallet adrresses at the bottom of [this page]({{ site.github_game_url }}/wiki/Sites-&-Resources#donation-links){:target="_blank"}.
+Crypto: "spacestation3d.crypto" (accepts $BCH, $BTC, $ETH, & $LTC)<br>
+But some wallets don't accept that format so our full addresses can be found [here]({{ site.github_game_url }}/wiki/Sites-&-Resources#donation-links){:target="_blank"}.
 
 # Development
 
