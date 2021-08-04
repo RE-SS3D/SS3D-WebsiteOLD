@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://ss3d.space/feed.xml" rel="self" type="application/atom+xml" /><link href="https://ss3d.space/" rel="alternate" type="text/html" /><updated>2021-08-04T19:35:31+00:00</updated><id>https://ss3d.space/feed.xml</id><title type="html">RE:SS3D</title><subtitle>This is a 3D recreation of Space Station 13, on the Unity engine, which will come with its own set of gameplay/graphical improvements. </subtitle><entry><title type="html">21.07: July 2021 Devblog</title><link href="https://ss3d.space/2021/08/04/21.07.html" rel="alternate" type="text/html" title="21.07: July 2021 Devblog" /><published>2021-08-04T11:30:00+00:00</published><updated>2021-08-04T11:30:00+00:00</updated><id>https://ss3d.space/2021/08/04/21.07</id><content type="html" xml:base="https://ss3d.space/2021/08/04/21.07.html">&lt;p&gt;“Nurse! We need 5 litres of blood stat, doesn’t matter where you get it, just get it!”&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://ss3d.space/feed.xml" rel="self" type="application/atom+xml" /><link href="https://ss3d.space/" rel="alternate" type="text/html" /><updated>2021-08-04T23:23:50+00:00</updated><id>https://ss3d.space/feed.xml</id><title type="html">RE:SS3D</title><subtitle>This is a 3D recreation of Space Station 13, on the Unity engine, which will come with its own set of gameplay/graphical improvements. </subtitle><entry><title type="html">21.07: July 2021 Devblog</title><link href="https://ss3d.space/2021/08/04/21.07.html" rel="alternate" type="text/html" title="21.07: July 2021 Devblog" /><published>2021-08-04T11:30:00+00:00</published><updated>2021-08-04T11:30:00+00:00</updated><id>https://ss3d.space/2021/08/04/21.07</id><content type="html" xml:base="https://ss3d.space/2021/08/04/21.07.html">&lt;p&gt;“Nurse! We need 5 litres of blood stat, doesn’t matter where you get it, just get it!”&lt;/p&gt;
 
 &lt;h1 id=&quot;july-recap&quot;&gt;July Recap&lt;/h1&gt;
 
@@ -51,7 +51,7 @@
 &lt;a class=&quot;prevRow&quot; onclick=&quot;plusRows(-1)&quot;&gt;❮&lt;/a&gt;
 &lt;a class=&quot;nextRow&quot; onclick=&quot;plusRows(1)&quot;&gt;❯&lt;/a&gt;
   &lt;div class=&quot;mySlides&quot;&gt;
-    &lt;div class=&quot;slide-number&quot;&gt;1 / 30&lt;/div&gt;
+    &lt;div class=&quot;slide-number&quot;&gt;1 / 10&lt;/div&gt;
     
 
 
@@ -59,7 +59,7 @@
 &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/21.07.01/Baga_BST.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/Baga_BST-580x435.png 580w,    /assets/resized/Baga_BST-290x218.png 290w,    /assets/resized/Baga_BST-170x128.png 170w,    /assets/resized/Baga_BST-145x109.png 145w, /assets/img/posts/21.07.01/Baga_BST.png 800w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
   &lt;/div&gt;
   &lt;div class=&quot;mySlides&quot;&gt;
-    &lt;div class=&quot;slide-number&quot;&gt;2 / 30&lt;/div&gt;
+    &lt;div class=&quot;slide-number&quot;&gt;2 / 10&lt;/div&gt;
     
 
 
@@ -67,7 +67,7 @@
 &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/21.07.01/Baga_DS1.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/Baga_DS1-580x435.png 580w,    /assets/resized/Baga_DS1-290x218.png 290w,    /assets/resized/Baga_DS1-170x128.png 170w,    /assets/resized/Baga_DS1-145x109.png 145w, /assets/img/posts/21.07.01/Baga_DS1.png 800w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
   &lt;/div&gt;
   &lt;div class=&quot;mySlides&quot;&gt;
-    &lt;div class=&quot;slide-number&quot;&gt;3 / 30&lt;/div&gt;
+    &lt;div class=&quot;slide-number&quot;&gt;3 / 10&lt;/div&gt;
     
 
 
@@ -75,7 +75,7 @@
 &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/21.07.01/Baga_ERT.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/Baga_ERT-580x435.png 580w,    /assets/resized/Baga_ERT-290x218.png 290w,    /assets/resized/Baga_ERT-170x128.png 170w,    /assets/resized/Baga_ERT-145x109.png 145w, /assets/img/posts/21.07.01/Baga_ERT.png 800w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
   &lt;/div&gt;
   &lt;div class=&quot;mySlides&quot;&gt;
-    &lt;div class=&quot;slide-number&quot;&gt;4 / 30&lt;/div&gt;
+    &lt;div class=&quot;slide-number&quot;&gt;4 / 10&lt;/div&gt;
     
 
 
@@ -83,7 +83,7 @@
 &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/21.07.01/Baga_SWAT1.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/Baga_SWAT1-580x435.png 580w,    /assets/resized/Baga_SWAT1-290x218.png 290w,    /assets/resized/Baga_SWAT1-170x128.png 170w,    /assets/resized/Baga_SWAT1-145x109.png 145w, /assets/img/posts/21.07.01/Baga_SWAT1.png 800w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
   &lt;/div&gt;
   &lt;div class=&quot;mySlides&quot;&gt;
-    &lt;div class=&quot;slide-number&quot;&gt;5 / 30&lt;/div&gt;
+    &lt;div class=&quot;slide-number&quot;&gt;5 / 10&lt;/div&gt;
     
 
 
@@ -91,7 +91,7 @@
 &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/21.07.01/Baga_SWAT2.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/Baga_SWAT2-580x435.png 580w,    /assets/resized/Baga_SWAT2-290x218.png 290w,    /assets/resized/Baga_SWAT2-170x128.png 170w,    /assets/resized/Baga_SWAT2-145x109.png 145w, /assets/img/posts/21.07.01/Baga_SWAT2.png 800w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
   &lt;/div&gt;
   &lt;div class=&quot;mySlides&quot;&gt;
-    &lt;div class=&quot;slide-number&quot;&gt;6 / 30&lt;/div&gt;
+    &lt;div class=&quot;slide-number&quot;&gt;6 / 10&lt;/div&gt;
     
 
 
@@ -99,7 +99,7 @@
 &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/21.07.01/Baga_Syndicate.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/Baga_Syndicate-580x435.png 580w,    /assets/resized/Baga_Syndicate-290x218.png 290w,    /assets/resized/Baga_Syndicate-170x128.png 170w,    /assets/resized/Baga_Syndicate-145x109.png 145w, /assets/img/posts/21.07.01/Baga_Syndicate.png 800w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
   &lt;/div&gt;
   &lt;div class=&quot;mySlides&quot;&gt;
-    &lt;div class=&quot;slide-number&quot;&gt;7 / 30&lt;/div&gt;
+    &lt;div class=&quot;slide-number&quot;&gt;7 / 10&lt;/div&gt;
     
 
 
@@ -108,7 +108,7 @@
     &lt;div id=&quot;description&quot; class=&quot;slide-description&quot;&gt;20mm Cannon &amp;amp; 7.62mm Rifles&lt;/div&gt;
   &lt;/div&gt;
   &lt;div class=&quot;mySlides&quot;&gt;
-    &lt;div class=&quot;slide-number&quot;&gt;8 / 30&lt;/div&gt;
+    &lt;div class=&quot;slide-number&quot;&gt;8 / 10&lt;/div&gt;
     
 
 
@@ -116,7 +116,7 @@
 &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/21.07.01/Baga_L105.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/Baga_L105-580x435.png 580w,    /assets/resized/Baga_L105-290x218.png 290w,    /assets/resized/Baga_L105-170x128.png 170w,    /assets/resized/Baga_L105-145x109.png 145w, /assets/img/posts/21.07.01/Baga_L105.png 800w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
   &lt;/div&gt;
   &lt;div class=&quot;mySlides&quot;&gt;
-    &lt;div class=&quot;slide-number&quot;&gt;9 / 30&lt;/div&gt;
+    &lt;div class=&quot;slide-number&quot;&gt;9 / 10&lt;/div&gt;
     
 
 
@@ -124,7 +124,7 @@
 &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/21.07.01/Baga_PistolsPack.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/Baga_PistolsPack-580x435.png 580w,    /assets/resized/Baga_PistolsPack-290x218.png 290w,    /assets/resized/Baga_PistolsPack-170x128.png 170w,    /assets/resized/Baga_PistolsPack-145x109.png 145w, /assets/img/posts/21.07.01/Baga_PistolsPack.png 800w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
   &lt;/div&gt;
   &lt;div class=&quot;mySlides&quot;&gt;
-    &lt;div class=&quot;slide-number&quot;&gt;10 / 30&lt;/div&gt;
+    &lt;div class=&quot;slide-number&quot;&gt;10 / 10&lt;/div&gt;
     
 
 
@@ -134,38 +134,38 @@
   &lt;div class=&quot;myRows&quot;&gt;
     &lt;div class=&quot;row&quot;&gt;
       &lt;div class=&quot;column&quot;&gt;
-        &lt;img class=&quot;thumbs cursor&quot; src=&quot;/assets/img/posts/21.07.01/Baga_BST.png&quot; style=&quot;width:100%&quot; alt=&quot;Biohazard Stabilization Team Gear&quot; onclick=&quot;currentSlide(1)&quot; /&gt;
+        &lt;img class=&quot;thumbs cursor&quot; src=&quot;/assets/img/posts/21.07.01/Baga_BST.png&quot; alt=&quot;Biohazard Stabilization Team Gear&quot; onclick=&quot;currentSlide(1)&quot; /&gt;
       &lt;/div&gt;
       &lt;div class=&quot;column&quot;&gt;
-        &lt;img class=&quot;thumbs cursor&quot; src=&quot;/assets/img/posts/21.07.01/Baga_DS1.png&quot; style=&quot;width:100%&quot; alt=&quot;Death Squad Gear&quot; onclick=&quot;currentSlide(2)&quot; /&gt;
+        &lt;img class=&quot;thumbs cursor&quot; src=&quot;/assets/img/posts/21.07.01/Baga_DS1.png&quot; alt=&quot;Death Squad Gear&quot; onclick=&quot;currentSlide(2)&quot; /&gt;
       &lt;/div&gt;
       &lt;div class=&quot;column&quot;&gt;
-        &lt;img class=&quot;thumbs cursor&quot; src=&quot;/assets/img/posts/21.07.01/Baga_ERT.png&quot; style=&quot;width:100%&quot; alt=&quot;Emergency Response Team Gear&quot; onclick=&quot;currentSlide(3)&quot; /&gt;
+        &lt;img class=&quot;thumbs cursor&quot; src=&quot;/assets/img/posts/21.07.01/Baga_ERT.png&quot; alt=&quot;Emergency Response Team Gear&quot; onclick=&quot;currentSlide(3)&quot; /&gt;
       &lt;/div&gt;
       &lt;div class=&quot;column&quot;&gt;
-        &lt;img class=&quot;thumbs cursor&quot; src=&quot;/assets/img/posts/21.07.01/Baga_SWAT1.png&quot; style=&quot;width:100%&quot; alt=&quot;SWAT Gear&quot; onclick=&quot;currentSlide(4)&quot; /&gt;
+        &lt;img class=&quot;thumbs cursor&quot; src=&quot;/assets/img/posts/21.07.01/Baga_SWAT1.png&quot; alt=&quot;SWAT Gear&quot; onclick=&quot;currentSlide(4)&quot; /&gt;
       &lt;/div&gt;
       &lt;div class=&quot;column&quot;&gt;
-        &lt;img class=&quot;thumbs cursor&quot; src=&quot;/assets/img/posts/21.07.01/Baga_SWAT2.png&quot; style=&quot;width:100%&quot; alt=&quot;More SWAT Gear&quot; onclick=&quot;currentSlide(5)&quot; /&gt;
+        &lt;img class=&quot;thumbs cursor&quot; src=&quot;/assets/img/posts/21.07.01/Baga_SWAT2.png&quot; alt=&quot;More SWAT Gear&quot; onclick=&quot;currentSlide(5)&quot; /&gt;
       &lt;/div&gt;
       &lt;div class=&quot;column&quot;&gt;
-        &lt;img class=&quot;thumbs cursor&quot; src=&quot;/assets/img/posts/21.07.01/Baga_Syndicate.png&quot; style=&quot;width:100%&quot; alt=&quot;Syndicate Gear&quot; onclick=&quot;currentSlide(6)&quot; /&gt;
+        &lt;img class=&quot;thumbs cursor&quot; src=&quot;/assets/img/posts/21.07.01/Baga_Syndicate.png&quot; alt=&quot;Syndicate Gear&quot; onclick=&quot;currentSlide(6)&quot; /&gt;
       &lt;/div&gt;
     &lt;/div&gt;
   &lt;/div&gt;
   &lt;div class=&quot;myRows&quot;&gt;
     &lt;div class=&quot;row&quot;&gt;
       &lt;div class=&quot;column&quot;&gt;
-        &lt;img class=&quot;thumbs cursor&quot; src=&quot;/assets/img/posts/21.07.01/Baga_DS2.png&quot; style=&quot;width:100%&quot; alt=&quot;Death Squad Weapons&quot; onclick=&quot;currentSlide(7)&quot; /&gt;
+        &lt;img class=&quot;thumbs cursor&quot; src=&quot;/assets/img/posts/21.07.01/Baga_DS2.png&quot; alt=&quot;Death Squad Weapons&quot; onclick=&quot;currentSlide(7)&quot; /&gt;
       &lt;/div&gt;
       &lt;div class=&quot;column&quot;&gt;
-        &lt;img class=&quot;thumbs cursor&quot; src=&quot;/assets/img/posts/21.07.01/Baga_L105.png&quot; style=&quot;width:100%&quot; alt=&quot;L105 Rifles&quot; onclick=&quot;currentSlide(8)&quot; /&gt;
+        &lt;img class=&quot;thumbs cursor&quot; src=&quot;/assets/img/posts/21.07.01/Baga_L105.png&quot; alt=&quot;L105 Rifles&quot; onclick=&quot;currentSlide(8)&quot; /&gt;
       &lt;/div&gt;
       &lt;div class=&quot;column&quot;&gt;
-        &lt;img class=&quot;thumbs cursor&quot; src=&quot;/assets/img/posts/21.07.01/Baga_PistolsPack.png&quot; style=&quot;width:100%&quot; alt=&quot;Officer's Pistol Pack&quot; onclick=&quot;currentSlide(9)&quot; /&gt;
+        &lt;img class=&quot;thumbs cursor&quot; src=&quot;/assets/img/posts/21.07.01/Baga_PistolsPack.png&quot; alt=&quot;Officer's Pistol Pack&quot; onclick=&quot;currentSlide(9)&quot; /&gt;
       &lt;/div&gt;
       &lt;div class=&quot;column&quot;&gt;
-        &lt;img class=&quot;thumbs cursor&quot; src=&quot;/assets/img/posts/21.07.01/Baga_SolarTracker.png&quot; style=&quot;width:100%&quot; alt=&quot;Solar Tracking Beacon&quot; onclick=&quot;currentSlide(10)&quot; /&gt;
+        &lt;img class=&quot;thumbs cursor&quot; src=&quot;/assets/img/posts/21.07.01/Baga_SolarTracker.png&quot; alt=&quot;Solar Tracking Beacon&quot; onclick=&quot;currentSlide(10)&quot; /&gt;
       &lt;/div&gt;
     &lt;/div&gt;
   &lt;/div&gt;
