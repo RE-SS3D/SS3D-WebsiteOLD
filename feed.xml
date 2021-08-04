@@ -1,4 +1,224 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://ss3d.space/feed.xml" rel="self" type="application/atom+xml" /><link href="https://ss3d.space/" rel="alternate" type="text/html" /><updated>2021-07-14T00:36:29+00:00</updated><id>https://ss3d.space/feed.xml</id><title type="html">RE:SS3D</title><subtitle>This is a 3D recreation of Space Station 13, on the Unity engine, which will come with its own set of gameplay/graphical improvements. </subtitle><entry><title type="html">21.06: June 2021 Devblog</title><link href="https://ss3d.space/2021/07/06/21.06.html" rel="alternate" type="text/html" title="21.06: June 2021 Devblog" /><published>2021-07-06T11:30:00+00:00</published><updated>2021-07-06T11:30:00+00:00</updated><id>https://ss3d.space/2021/07/06/21.06</id><content type="html" xml:base="https://ss3d.space/2021/07/06/21.06.html">&lt;p&gt;&lt;em&gt;“The Devil grows inside the hearts of the selfish and wicked.&lt;br /&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://ss3d.space/feed.xml" rel="self" type="application/atom+xml" /><link href="https://ss3d.space/" rel="alternate" type="text/html" /><updated>2021-08-04T19:35:31+00:00</updated><id>https://ss3d.space/feed.xml</id><title type="html">RE:SS3D</title><subtitle>This is a 3D recreation of Space Station 13, on the Unity engine, which will come with its own set of gameplay/graphical improvements. </subtitle><entry><title type="html">21.07: July 2021 Devblog</title><link href="https://ss3d.space/2021/08/04/21.07.html" rel="alternate" type="text/html" title="21.07: July 2021 Devblog" /><published>2021-08-04T11:30:00+00:00</published><updated>2021-08-04T11:30:00+00:00</updated><id>https://ss3d.space/2021/08/04/21.07</id><content type="html" xml:base="https://ss3d.space/2021/08/04/21.07.html">&lt;p&gt;“Nurse! We need 5 litres of blood stat, doesn’t matter where you get it, just get it!”&lt;/p&gt;
+
+&lt;h1 id=&quot;july-recap&quot;&gt;July Recap&lt;/h1&gt;
+
+&lt;p&gt;Although SS3D is still in a very early state, every month brings us a few steps closer to a playable game, this month is no exception.&lt;/p&gt;
+
+&lt;h2 id=&quot;cell-charger-display&quot;&gt;Cell Charger Display&lt;/h2&gt;
+
+&lt;p&gt;Thanks to &lt;strong&gt;StenBone&lt;/strong&gt; (new this month) the powercell charger now displays the attached powercell’s charge level.&lt;/p&gt;
+
+&lt;video controls=&quot;&quot; muted=&quot;&quot; poster=&quot;/assets/img/posts/21.07.01/CellCharger.png&quot; width=&quot;580px&quot;&gt;&amp;gt;
+  &lt;source src=&quot;/assets/img/posts/21.07.01/CellCharger.mp4&quot; type=&quot;video/mp4&quot; /&gt;
+&lt;/video&gt;
+
+&lt;h2 id=&quot;details&quot;&gt;Details&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;Singulo&lt;/strong&gt; (back contributing after ~2 years!)&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Added toggling of the targeting doll UI.&lt;/li&gt;
+  &lt;li&gt;Re-enabled the chat system and made it toggleable.&lt;/li&gt;
+  &lt;li&gt;Fixed the unwanted looping on the space cleaner interaction.&lt;/li&gt;
+  &lt;li&gt;Made it easier to see selected options in the settings menu.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Notterox&lt;/strong&gt; (new this month)&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Fixed client freezing upon closing bug.&lt;/li&gt;
+  &lt;li&gt;Added missing examination components to several items.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Ryan&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;/assets/img/posts/21.07.01/SkinnedMeshBug.png&quot; target=&quot;_blank&quot;&gt;Fixed a rendering bug with skinned meshes when examined.&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Fixed a couple of small bugs within the login system.&lt;/li&gt;
+  &lt;li&gt;Corrected some items existing on the wrong layer.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;CosmicCoincidence&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Fixed a rendering bug on the chairs and stools.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;3d-fun&quot;&gt;3D Fun&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;Baga&lt;/strong&gt; has once again provided a nice assortment of 3D fun for us.&lt;/p&gt;
+
+&lt;div class=&quot;slideshow&quot;&gt;
+  &lt;div class=&quot;slide-title&quot; id=&quot;title&quot;&gt;&lt;/div&gt;
+&lt;a class=&quot;prevSlide&quot; onclick=&quot;plusSlides(-1)&quot;&gt;❮&lt;/a&gt;
+&lt;a class=&quot;nextSlide&quot; onclick=&quot;plusSlides(1)&quot;&gt;❯&lt;/a&gt;
+&lt;a class=&quot;prevRow&quot; onclick=&quot;plusRows(-1)&quot;&gt;❮&lt;/a&gt;
+&lt;a class=&quot;nextRow&quot; onclick=&quot;plusRows(1)&quot;&gt;❯&lt;/a&gt;
+  &lt;div class=&quot;mySlides&quot;&gt;
+    &lt;div class=&quot;slide-number&quot;&gt;1 / 30&lt;/div&gt;
+    
+
+
+
+&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/21.07.01/Baga_BST.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/Baga_BST-580x435.png 580w,    /assets/resized/Baga_BST-290x218.png 290w,    /assets/resized/Baga_BST-170x128.png 170w,    /assets/resized/Baga_BST-145x109.png 145w, /assets/img/posts/21.07.01/Baga_BST.png 800w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;mySlides&quot;&gt;
+    &lt;div class=&quot;slide-number&quot;&gt;2 / 30&lt;/div&gt;
+    
+
+
+
+&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/21.07.01/Baga_DS1.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/Baga_DS1-580x435.png 580w,    /assets/resized/Baga_DS1-290x218.png 290w,    /assets/resized/Baga_DS1-170x128.png 170w,    /assets/resized/Baga_DS1-145x109.png 145w, /assets/img/posts/21.07.01/Baga_DS1.png 800w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;mySlides&quot;&gt;
+    &lt;div class=&quot;slide-number&quot;&gt;3 / 30&lt;/div&gt;
+    
+
+
+
+&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/21.07.01/Baga_ERT.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/Baga_ERT-580x435.png 580w,    /assets/resized/Baga_ERT-290x218.png 290w,    /assets/resized/Baga_ERT-170x128.png 170w,    /assets/resized/Baga_ERT-145x109.png 145w, /assets/img/posts/21.07.01/Baga_ERT.png 800w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;mySlides&quot;&gt;
+    &lt;div class=&quot;slide-number&quot;&gt;4 / 30&lt;/div&gt;
+    
+
+
+
+&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/21.07.01/Baga_SWAT1.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/Baga_SWAT1-580x435.png 580w,    /assets/resized/Baga_SWAT1-290x218.png 290w,    /assets/resized/Baga_SWAT1-170x128.png 170w,    /assets/resized/Baga_SWAT1-145x109.png 145w, /assets/img/posts/21.07.01/Baga_SWAT1.png 800w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;mySlides&quot;&gt;
+    &lt;div class=&quot;slide-number&quot;&gt;5 / 30&lt;/div&gt;
+    
+
+
+
+&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/21.07.01/Baga_SWAT2.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/Baga_SWAT2-580x435.png 580w,    /assets/resized/Baga_SWAT2-290x218.png 290w,    /assets/resized/Baga_SWAT2-170x128.png 170w,    /assets/resized/Baga_SWAT2-145x109.png 145w, /assets/img/posts/21.07.01/Baga_SWAT2.png 800w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;mySlides&quot;&gt;
+    &lt;div class=&quot;slide-number&quot;&gt;6 / 30&lt;/div&gt;
+    
+
+
+
+&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/21.07.01/Baga_Syndicate.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/Baga_Syndicate-580x435.png 580w,    /assets/resized/Baga_Syndicate-290x218.png 290w,    /assets/resized/Baga_Syndicate-170x128.png 170w,    /assets/resized/Baga_Syndicate-145x109.png 145w, /assets/img/posts/21.07.01/Baga_Syndicate.png 800w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;mySlides&quot;&gt;
+    &lt;div class=&quot;slide-number&quot;&gt;7 / 30&lt;/div&gt;
+    
+
+
+
+&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/21.07.01/Baga_DS2.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/Baga_DS2-580x435.png 580w,    /assets/resized/Baga_DS2-290x218.png 290w,    /assets/resized/Baga_DS2-170x128.png 170w,    /assets/resized/Baga_DS2-145x109.png 145w, /assets/img/posts/21.07.01/Baga_DS2.png 800w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+    &lt;div id=&quot;description&quot; class=&quot;slide-description&quot;&gt;20mm Cannon &amp;amp; 7.62mm Rifles&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;mySlides&quot;&gt;
+    &lt;div class=&quot;slide-number&quot;&gt;8 / 30&lt;/div&gt;
+    
+
+
+
+&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/21.07.01/Baga_L105.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/Baga_L105-580x435.png 580w,    /assets/resized/Baga_L105-290x218.png 290w,    /assets/resized/Baga_L105-170x128.png 170w,    /assets/resized/Baga_L105-145x109.png 145w, /assets/img/posts/21.07.01/Baga_L105.png 800w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;mySlides&quot;&gt;
+    &lt;div class=&quot;slide-number&quot;&gt;9 / 30&lt;/div&gt;
+    
+
+
+
+&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/21.07.01/Baga_PistolsPack.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/Baga_PistolsPack-580x435.png 580w,    /assets/resized/Baga_PistolsPack-290x218.png 290w,    /assets/resized/Baga_PistolsPack-170x128.png 170w,    /assets/resized/Baga_PistolsPack-145x109.png 145w, /assets/img/posts/21.07.01/Baga_PistolsPack.png 800w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;mySlides&quot;&gt;
+    &lt;div class=&quot;slide-number&quot;&gt;10 / 30&lt;/div&gt;
+    
+
+
+
+&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/21.07.01/Baga_SolarTracker.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/Baga_SolarTracker-580x435.png 580w,    /assets/resized/Baga_SolarTracker-290x218.png 290w,    /assets/resized/Baga_SolarTracker-170x128.png 170w,    /assets/resized/Baga_SolarTracker-145x109.png 145w, /assets/img/posts/21.07.01/Baga_SolarTracker.png 800w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;myRows&quot;&gt;
+    &lt;div class=&quot;row&quot;&gt;
+      &lt;div class=&quot;column&quot;&gt;
+        &lt;img class=&quot;thumbs cursor&quot; src=&quot;/assets/img/posts/21.07.01/Baga_BST.png&quot; style=&quot;width:100%&quot; alt=&quot;Biohazard Stabilization Team Gear&quot; onclick=&quot;currentSlide(1)&quot; /&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;column&quot;&gt;
+        &lt;img class=&quot;thumbs cursor&quot; src=&quot;/assets/img/posts/21.07.01/Baga_DS1.png&quot; style=&quot;width:100%&quot; alt=&quot;Death Squad Gear&quot; onclick=&quot;currentSlide(2)&quot; /&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;column&quot;&gt;
+        &lt;img class=&quot;thumbs cursor&quot; src=&quot;/assets/img/posts/21.07.01/Baga_ERT.png&quot; style=&quot;width:100%&quot; alt=&quot;Emergency Response Team Gear&quot; onclick=&quot;currentSlide(3)&quot; /&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;column&quot;&gt;
+        &lt;img class=&quot;thumbs cursor&quot; src=&quot;/assets/img/posts/21.07.01/Baga_SWAT1.png&quot; style=&quot;width:100%&quot; alt=&quot;SWAT Gear&quot; onclick=&quot;currentSlide(4)&quot; /&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;column&quot;&gt;
+        &lt;img class=&quot;thumbs cursor&quot; src=&quot;/assets/img/posts/21.07.01/Baga_SWAT2.png&quot; style=&quot;width:100%&quot; alt=&quot;More SWAT Gear&quot; onclick=&quot;currentSlide(5)&quot; /&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;column&quot;&gt;
+        &lt;img class=&quot;thumbs cursor&quot; src=&quot;/assets/img/posts/21.07.01/Baga_Syndicate.png&quot; style=&quot;width:100%&quot; alt=&quot;Syndicate Gear&quot; onclick=&quot;currentSlide(6)&quot; /&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;myRows&quot;&gt;
+    &lt;div class=&quot;row&quot;&gt;
+      &lt;div class=&quot;column&quot;&gt;
+        &lt;img class=&quot;thumbs cursor&quot; src=&quot;/assets/img/posts/21.07.01/Baga_DS2.png&quot; style=&quot;width:100%&quot; alt=&quot;Death Squad Weapons&quot; onclick=&quot;currentSlide(7)&quot; /&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;column&quot;&gt;
+        &lt;img class=&quot;thumbs cursor&quot; src=&quot;/assets/img/posts/21.07.01/Baga_L105.png&quot; style=&quot;width:100%&quot; alt=&quot;L105 Rifles&quot; onclick=&quot;currentSlide(8)&quot; /&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;column&quot;&gt;
+        &lt;img class=&quot;thumbs cursor&quot; src=&quot;/assets/img/posts/21.07.01/Baga_PistolsPack.png&quot; style=&quot;width:100%&quot; alt=&quot;Officer's Pistol Pack&quot; onclick=&quot;currentSlide(9)&quot; /&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;column&quot;&gt;
+        &lt;img class=&quot;thumbs cursor&quot; src=&quot;/assets/img/posts/21.07.01/Baga_SolarTracker.png&quot; style=&quot;width:100%&quot; alt=&quot;Solar Tracking Beacon&quot; onclick=&quot;currentSlide(10)&quot; /&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;Kollator&lt;/strong&gt; (new this month) provided broken variants of our alcohol bottles, boxes for our donuts, a wall cabinet for the fire extinguisher, a standup and wall-mounted ATM, as well as a Nagant revolver &amp;amp; Stechkin pistol.&lt;/p&gt;
+
+&lt;div class=&quot;horizontal-2&quot;&gt;
+
+  &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/21.07.01/Kollator_BrokenBottles.png&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/Kollator_BrokenBottles-580x435.png 580w,    /assets/resized/Kollator_BrokenBottles-290x218.png 290w,    /assets/resized/Kollator_BrokenBottles-170x128.png 170w,    /assets/resized/Kollator_BrokenBottles-145x109.png 145w, /assets/img/posts/21.07.01/Kollator_BrokenBottles.png 800w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+
+  &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/21.07.01/Kollator_Donutbox.png&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/Kollator_Donutbox-580x435.png 580w,    /assets/resized/Kollator_Donutbox-290x218.png 290w,    /assets/resized/Kollator_Donutbox-170x128.png 170w,    /assets/resized/Kollator_Donutbox-145x109.png 145w, /assets/img/posts/21.07.01/Kollator_Donutbox.png 800w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;horizontal-2&quot;&gt;
+
+  &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/21.07.01/Kollator_FireExtinguisherCabinet.png&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/Kollator_FireExtinguisherCabinet-580x435.png 580w,    /assets/resized/Kollator_FireExtinguisherCabinet-290x218.png 290w,    /assets/resized/Kollator_FireExtinguisherCabinet-170x128.png 170w,    /assets/resized/Kollator_FireExtinguisherCabinet-145x109.png 145w, /assets/img/posts/21.07.01/Kollator_FireExtinguisherCabinet.png 800w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+
+  &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/21.07.01/Kollator_ATMs.png&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/Kollator_ATMs-580x435.png 580w,    /assets/resized/Kollator_ATMs-290x218.png 290w,    /assets/resized/Kollator_ATMs-170x128.png 170w,    /assets/resized/Kollator_ATMs-145x109.png 145w, /assets/img/posts/21.07.01/Kollator_ATMs.png 800w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;horizontal-2&quot;&gt;
+
+  &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/21.07.01/Kollator_Pistol-Nagant.png&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/Kollator_Pistol-Nagant-580x435.png 580w,    /assets/resized/Kollator_Pistol-Nagant-290x218.png 290w,    /assets/resized/Kollator_Pistol-Nagant-170x128.png 170w,    /assets/resized/Kollator_Pistol-Nagant-145x109.png 145w, /assets/img/posts/21.07.01/Kollator_Pistol-Nagant.png 800w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+
+  &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/21.07.01/Kollator_Stechkin.png&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/Kollator_Stechkin-580x435.png 580w,    /assets/resized/Kollator_Stechkin-290x218.png 290w,    /assets/resized/Kollator_Stechkin-170x128.png 170w,    /assets/resized/Kollator_Stechkin-145x109.png 145w, /assets/img/posts/21.07.01/Kollator_Stechkin.png 800w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;gen&lt;/strong&gt; (new this month) made a classic diner booth seat, and &lt;strong&gt;CosmicCoincidence&lt;/strong&gt; assisted by making it into modular pieces.&lt;/p&gt;
+
+&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/21.07.01/gen_Booth.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/gen_Booth-580x435.png 580w,    /assets/resized/gen_Booth-290x218.png 290w,    /assets/resized/gen_Booth-170x128.png 170w,    /assets/resized/gen_Booth-145x109.png 145w, /assets/img/posts/21.07.01/gen_Booth.png 800w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+
+&lt;p&gt;The creative mind that is &lt;strong&gt;Eiko&lt;/strong&gt; dropped off this adorable gondola for us.&lt;/p&gt;
+
+&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/21.07.01/Eiko_Gondola.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/Eiko_Gondola-580x435.png 580w,    /assets/resized/Eiko_Gondola-290x218.png 290w,    /assets/resized/Eiko_Gondola-170x128.png 170w,    /assets/resized/Eiko_Gondola-145x109.png 145w, /assets/img/posts/21.07.01/Eiko_Gondola.png 800w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;2d-fun&quot;&gt;2D Fun&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;NazarDoe&lt;/strong&gt; is back and contributed these awesome UNO card textures.&lt;/p&gt;
+
+&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/21.07.01/NazarDoe_UNO.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/NazarDoe_UNO-580x435.png 580w,    /assets/resized/NazarDoe_UNO-290x218.png 290w,    /assets/resized/NazarDoe_UNO-170x128.png 170w,    /assets/resized/NazarDoe_UNO-145x109.png 145w, /assets/img/posts/21.07.01/NazarDoe_UNO.png 800w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;Konstantin3001&lt;/strong&gt; is also back, this month with a &lt;a href=&quot;/assets/img/posts/21.07.01/Konstantin_Chat.png&quot; target=&quot;_blank&quot;&gt;chat UI icon&lt;/a&gt; and some splatter/spill decals (which can be colored in the game engine).&lt;/p&gt;
+
+&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/21.07.01/Konstantin_Splatters.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/Konstantin_Splatters-580x435.png 580w,    /assets/resized/Konstantin_Splatters-290x218.png 290w,    /assets/resized/Konstantin_Splatters-170x128.png 170w,    /assets/resized/Konstantin_Splatters-145x109.png 145w, /assets/img/posts/21.07.01/Konstantin_Splatters.png 800w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
+
+&lt;p&gt;This month’s great cover art comes from the talented &lt;strong&gt;ProbablyNot&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/art/ProbablyNot/ProbablyNot_Medic.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/ProbablyNot_Medic-580x326.png 580w,    /assets/resized/ProbablyNot_Medic-290x163.png 290w,    /assets/resized/ProbablyNot_Medic-170x96.png 170w,    /assets/resized/ProbablyNot_Medic-145x82.png 145w, /assets/img/art/ProbablyNot/ProbablyNot_Medic.png 3840w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+
+&lt;p&gt;More work-in-progress content can be found on our &lt;a href=&quot;https://discord.gg/3ny9tdH&quot; target=&quot;_blank&quot;&gt;Discord&lt;/a&gt; so be sure to stop by!&lt;/p&gt;</content><author><name>CosmicCoincidence</name></author><summary type="html">“Nurse! We need 5 litres of blood stat, doesn’t matter where you get it, just get it!”</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://ss3d.space/assets/img/art/ProbablyNot/ProbablyNot_Medic.png" /></entry><entry><title type="html">21.06: June 2021 Devblog</title><link href="https://ss3d.space/2021/07/06/21.06.html" rel="alternate" type="text/html" title="21.06: June 2021 Devblog" /><published>2021-07-06T11:30:00+00:00</published><updated>2021-07-06T11:30:00+00:00</updated><id>https://ss3d.space/2021/07/06/21.06</id><content type="html" xml:base="https://ss3d.space/2021/07/06/21.06.html">&lt;p&gt;&lt;em&gt;“The Devil grows inside the hearts of the selfish and wicked.&lt;br /&gt;
 White, brown, yellow, and black — color is not restricted.&lt;br /&gt;
 You have a self-destructive destiny when you’re inflicted.&lt;br /&gt;
 And you’ll be one of God’s children that fell from the top.&lt;br /&gt;
@@ -721,69 +941,4 @@ Because a dance with the Devil might last you forever…”&lt;/em&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h3&gt;
 
-&lt;p&gt;Missed the art contest? Well join our &lt;a href=&quot;https://discord.gg/3ny9tdH&quot; target=&quot;_blank&quot;&gt;Discord&lt;/a&gt; so you dont miss out on any future contests!&lt;/p&gt;</content><author><name>CosmicCoincidence</name></author><summary type="html">Hope you all had a SpOOky halloween!</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://ss3d.space/assets/img/art/ProbablyNot/ProbablyNot_Harvest.png" /></entry><entry><title type="html">20.09: September 2020 Devblog</title><link href="https://ss3d.space/2020/10/10/20.09.html" rel="alternate" type="text/html" title="20.09: September 2020 Devblog" /><published>2020-10-10T05:30:00+00:00</published><updated>2020-10-10T05:30:00+00:00</updated><id>https://ss3d.space/2020/10/10/20.09</id><content type="html" xml:base="https://ss3d.space/2020/10/10/20.09.html">&lt;p&gt;Bastin’ off!&lt;/p&gt;
-
-&lt;h1 id=&quot;september-recap&quot;&gt;September Recap&lt;/h1&gt;
-
-&lt;p&gt;It seems development around here slows as the warm weather shifts from the northern hemisphere to the southern. But like global weather patterns, project development can oftentimes be cyclical.&lt;/p&gt;
-
-&lt;p&gt;Although no new systems were added this month, there has been progression on a few WIP systems. Unfortunately, we are going to continue reserving showing WIP content here, so you will have to wait for them to be merged to see them here.&lt;/p&gt;
-
-&lt;h2 id=&quot;fixes&quot;&gt;Fixes&lt;/h2&gt;
-
-&lt;p&gt;&lt;strong&gt;Ryan&lt;/strong&gt; has been amazing this month and fixed several irritating bugs we’ve had crawling around.&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Fixed not being able to examine pipes, wires, and other tile-based objects that had inaccessible colliders by changing the examine function to work with tiles by component, rather than overall collider.&lt;/li&gt;
-  &lt;li&gt;Fixed a UI bug with mobile containers where twice as many inventory slots would appear as were actual slots attributed to the container.&lt;/li&gt;
-  &lt;li&gt;Fixed items appearing on the ground when moved to inside a container.&lt;/li&gt;
-  &lt;li&gt;Fixed an issue with the tilemap where is would delete many fixtures and recreate during loadup.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;updates&quot;&gt;Updates&lt;/h3&gt;
-
-&lt;p&gt;&lt;strong&gt;Probably Not&lt;/strong&gt; will be hosting a Halloween themed art contest with cash prizes.&lt;/p&gt;
-
-&lt;p&gt;Rules:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;&lt;em&gt;Must&lt;/em&gt;&lt;/strong&gt; be SS3D related.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;&lt;em&gt;Must&lt;/em&gt;&lt;/strong&gt; be Halloween/horror related.&lt;/li&gt;
-  &lt;li&gt;A common resolution (like 720p, 1080p, 2k, or 4k).&lt;/li&gt;
-  &lt;li&gt;Can be either 2D/3D.&lt;/li&gt;
-  &lt;li&gt;If the artwork is 3D you must use SS3D art assets (ask for a link to our assets in our Discord if you don’t know where to find it already).
-    &lt;ul&gt;
-      &lt;li&gt;You can also create your own SS3D styled assets for this contest as long 
-as they’re usable in the game and are &lt;strong&gt;&lt;em&gt;submitted and approved&lt;/em&gt;&lt;/strong&gt; beforehand.&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Centcom members are disqualified.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Prizes:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;First place: $50 USD&lt;/li&gt;
-  &lt;li&gt;Second place: $25 USD&lt;/li&gt;
-  &lt;li&gt;Third place: $10 USD&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Submissions should be submitted to the halloween channel on our discord (#spooktober-extravaganza) and entries will be accepted from now til the end of the month.&lt;/p&gt;
-
-&lt;p&gt;Winners will be decided by our Centcom members and possibly some external artists.&lt;/p&gt;
-
-&lt;p&gt;Winners will be announced in the halloween channel on our discord (#spooktober-extravaganza).&lt;/p&gt;
-
-&lt;p&gt;Also, we will feature any reasonable submissions (regardless if you win or lose) in our October blogpost next month, with the artists’ permission of course.&lt;/p&gt;
-
-&lt;h3 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h3&gt;
-
-&lt;p&gt;It seems everyone’s lives are concentrated elsewhere lately, and as a result, the last 2 months have not been as fruitful as we have all hoped. But we will remind you, we have not gone anyway, we are still chugging along (albeit slowly), and we will see you all here again next month!&lt;/p&gt;
-
-&lt;p&gt;.&lt;/p&gt;
-
-&lt;p&gt;.&lt;/p&gt;
-
-&lt;p&gt;.&lt;/p&gt;
-
-&lt;p&gt;Oh yeah we have a &lt;a href=&quot;https://discord.gg/3ny9tdH&quot; target=&quot;_blank&quot;&gt;Discord&lt;/a&gt;, so if you haven’t already, join that.&lt;/p&gt;</content><author><name></name></author><summary type="html">Bastin’ off!</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://ss3d.space/assets/img/art/Goao/GoaoLiftoff.png" /></entry></feed>
+&lt;p&gt;Missed the art contest? Well join our &lt;a href=&quot;https://discord.gg/3ny9tdH&quot; target=&quot;_blank&quot;&gt;Discord&lt;/a&gt; so you dont miss out on any future contests!&lt;/p&gt;</content><author><name>CosmicCoincidence</name></author><summary type="html">Hope you all had a SpOOky halloween!</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://ss3d.space/assets/img/art/ProbablyNot/ProbablyNot_Harvest.png" /></entry></feed>

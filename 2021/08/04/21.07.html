@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="/css/style.css">
+        <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+        <script>            
+            // Function to keep the navigation bars scroll offset when changing pages.
+            setScroll = function(url, scroll) {
+                if(scroll != 0) {
+                    window.location.href = url + '?scroll=' + scroll;
+                    return;
+                }
+                window.location.href = url;
+            }
+            // Set navigation bar scroll offset, if it exists.
+            getScroll = function() {
+                var url = new URL(window.location.href);
+                var scroll = url.searchParams.get("scroll");
+                if (scroll != 0) {
+                    var el = document.getElementById('scroll');
+                    el.scrollLeft = scroll;
+                }
+            }
+            if (window.addEventListener) {
+                window.addEventListener('load', getScroll, false);
+            }
+            else if (window.attachEvent) {
+                window.attachEvent('onload', getScroll);
+            }
+        </script>
+        <script>
+            /*! modernizr 3.6.0 (Custom Build) | MIT *
+            * https://modernizr.com/download/?-webp-setclasses !*/
+            !function(e,n,A){function o(e,n){return typeof e===n}function t(){var e,n,A,t,a,i,l;for(var f in r)if(r.hasOwnProperty(f)){if(e=[],n=r[f],n.name&&(e.push(n.name.toLowerCase()),n.options&&n.options.aliases&&n.options.aliases.length))for(A=0;A<n.options.aliases.length;A++)e.push(n.options.aliases[A].toLowerCase());for(t=o(n.fn,"function")?n.fn():n.fn,a=0;a<e.length;a++)i=e[a],l=i.split("."),1===l.length?Modernizr[l[0]]=t:(!Modernizr[l[0]]||Modernizr[l[0]]instanceof Boolean||(Modernizr[l[0]]=new Boolean(Modernizr[l[0]])),Modernizr[l[0]][l[1]]=t),s.push((t?"":"no-")+l.join("-"))}}function a(e){var n=u.className,A=Modernizr._config.classPrefix||"";if(c&&(n=n.baseVal),Modernizr._config.enableJSClass){var o=new RegExp("(^|\\s)"+A+"no-js(\\s|$)");n=n.replace(o,"$1"+A+"js$2")}Modernizr._config.enableClasses&&(n+=" "+A+e.join(" "+A),c?u.className.baseVal=n:u.className=n)}function i(e,n){if("object"==typeof e)for(var A in e)f(e,A)&&i(A,e[A]);else{e=e.toLowerCase();var o=e.split("."),t=Modernizr[o[0]];if(2==o.length&&(t=t[o[1]]),"undefined"!=typeof t)return Modernizr;n="function"==typeof n?n():n,1==o.length?Modernizr[o[0]]=n:(!Modernizr[o[0]]||Modernizr[o[0]]instanceof Boolean||(Modernizr[o[0]]=new Boolean(Modernizr[o[0]])),Modernizr[o[0]][o[1]]=n),a([(n&&0!=n?"":"no-")+o.join("-")]),Modernizr._trigger(e,n)}return Modernizr}var s=[],r=[],l={_version:"3.6.0",_config:{classPrefix:"",enableClasses:!0,enableJSClass:!0,usePrefixes:!0},_q:[],on:function(e,n){var A=this;setTimeout(function(){n(A[e])},0)},addTest:function(e,n,A){r.push({name:e,fn:n,options:A})},addAsyncTest:function(e){r.push({name:null,fn:e})}},Modernizr=function(){};Modernizr.prototype=l,Modernizr=new Modernizr;var f,u=n.documentElement,c="svg"===u.nodeName.toLowerCase();!function(){var e={}.hasOwnProperty;f=o(e,"undefined")||o(e.call,"undefined")?function(e,n){return n in e&&o(e.constructor.prototype[n],"undefined")}:function(n,A){return e.call(n,A)}}(),l._l={},l.on=function(e,n){this._l[e]||(this._l[e]=[]),this._l[e].push(n),Modernizr.hasOwnProperty(e)&&setTimeout(function(){Modernizr._trigger(e,Modernizr[e])},0)},l._trigger=function(e,n){if(this._l[e]){var A=this._l[e];setTimeout(function(){var e,o;for(e=0;e<A.length;e++)(o=A[e])(n)},0),delete this._l[e]}},Modernizr._q.push(function(){l.addTest=i}),Modernizr.addAsyncTest(function(){function e(e,n,A){function o(n){var o=n&&"load"===n.type?1==t.width:!1,a="webp"===e;i(e,a&&o?new Boolean(o):o),A&&A(n)}var t=new Image;t.onerror=o,t.onload=o,t.src=n}var n=[{uri:"data:image/webp;base64,UklGRiQAAABXRUJQVlA4IBgAAAAwAQCdASoBAAEAAwA0JaQAA3AA/vuUAAA=",name:"webp"},{uri:"data:image/webp;base64,UklGRkoAAABXRUJQVlA4WAoAAAAQAAAAAAAAAAAAQUxQSAwAAAABBxAR/Q9ERP8DAABWUDggGAAAADABAJ0BKgEAAQADADQlpAADcAD++/1QAA==",name:"webp.alpha"},{uri:"data:image/webp;base64,UklGRlIAAABXRUJQVlA4WAoAAAASAAAAAAAAAAAAQU5JTQYAAAD/////AABBTk1GJgAAAAAAAAAAAAAAAAAAAGQAAABWUDhMDQAAAC8AAAAQBxAREYiI/gcA",name:"webp.animation"},{uri:"data:image/webp;base64,UklGRh4AAABXRUJQVlA4TBEAAAAvAAAAAAfQ//73v/+BiOh/AAA=",name:"webp.lossless"}],A=n.shift();e(A.name,A.uri,function(A){if(A&&"load"===A.type)for(var o=0;o<n.length;o++)e(n[o].name,n[o].uri)})}),t(),a(s),delete l.addTest,delete l.addAsyncTest;for(var p=0;p<Modernizr._q.length;p++)Modernizr._q[p]();e.Modernizr=Modernizr}(window,document);
+        </script>
+        <!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>21.07: July 2021 Devblog | RE:SS3D</title>
+<meta name="generator" content="Jekyll v3.8.5" />
+<meta property="og:title" content="21.07: July 2021 Devblog" />
+<meta name="author" content="CosmicCoincidence" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="“They don’t pay me enough for this, I should pick up dancing instead.”" />
+<meta property="og:description" content="“They don’t pay me enough for this, I should pick up dancing instead.”" />
+<link rel="canonical" href="https://ss3d.space/2021/08/04/21.07.html" />
+<meta property="og:url" content="https://ss3d.space/2021/08/04/21.07.html" />
+<meta property="og:site_name" content="RE:SS3D" />
+<meta property="og:image" content="https://ss3d.space/assets/img/art/ProbablyNot/ProbablyNot_Medic.png" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2021-08-04T11:30:00+00:00" />
+<script type="application/ld+json">
+{"@type":"BlogPosting","image":"https://ss3d.space/assets/img/art/ProbablyNot/ProbablyNot_Medic.png","headline":"21.07: July 2021 Devblog","dateModified":"2021-08-04T11:30:00+00:00","url":"https://ss3d.space/2021/08/04/21.07.html","datePublished":"2021-08-04T11:30:00+00:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://ss3d.space/2021/08/04/21.07.html"},"author":{"@type":"Person","name":"CosmicCoincidence"},"description":"“They don’t pay me enough for this, I should pick up dancing instead.”","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+        <link type="application/atom+xml" rel="alternate" href="https://ss3d.space/feed.xml" title="RE:SS3D" />
+        <link rel="stylesheet" type="text/css" href="/assets/css/cookieconsent.min.css" />
+<script src="/assets/js/cookieconsent.min.js"></script>
+<script>
+window.addEventListener("load", function(){
+window.cookieconsent.initialise({
+"palette": {
+    "popup": {
+    "background": "#1e4684",
+    "text": "#dadada"
+    },
+    "button": {
+    "background": "#b83d32",
+    "text": "#ffffff"
+    }
+},
+"theme": "classic",
+"content": {
+    "message": "This website uses cookies for analytics.",
+    "dismiss": "Ok",
+    "href": "/privacy"
+}
+})});
+</script>
+        <!-- Analytics -->
+        
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-140169746-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-140169746-1');
+</script>
+
+        
+    </head>
+    <body class="preload">
+        <div class="nav-background">
+            <nav>
+                <div id="scroll" class="ul-container">
+    <ul class="ul-reset">
+        
+        <li><a onclick="setScroll('/',parentNode.parentNode.parentNode.scrollLeft); return false;" class="" href="/">Home</a></li>
+        
+        <li><a onclick="setScroll('/devblog/',parentNode.parentNode.parentNode.scrollLeft); return false;" class="" href="/devblog/">Devblog</a></li>
+        
+        <li><a onclick="setScroll('/art/',parentNode.parentNode.parentNode.scrollLeft); return false;" class="" href="/art/">Art</a></li>
+        
+        <li><a onclick="setScroll('/faq/',parentNode.parentNode.parentNode.scrollLeft); return false;" class="" href="/faq/">FAQ</a></li>
+        
+        <li><a onclick="setScroll('/about/',parentNode.parentNode.parentNode.scrollLeft); return false;" class="" href="/about/">About</a></li>
+        
+        <li><a onclick="setScroll('/contribute/',parentNode.parentNode.parentNode.scrollLeft); return false;" class="" href="/contribute/">Contribute</a></li>
+        
+    </ul>
+</div>
+            </nav>
+        </div>
+        <div class="body-content">
+            <header class="header">
+    <div class="image">
+        <img src="/assets/img/RESPACESTATION3D.png" alt="RE: SPACE STATION 3D">
+    </div>
+    <div><h6>A 3D recreation of Space Station 13</h6></div>
+</header>
+
+            <main class="post-content">
+                <div>
+  <div class="image">
+    <img src="/assets/img/art/ProbablyNot/ProbablyNot_Medic.png" alt="">
+  </div>
+  
+  <h5><i>Image credit: ProbablyNot</i></h5>
+  
+</div>
+
+<h1>21.07: July 2021 Devblog</h1>
+<h5><i>Wednesday, August 4, 2021</i></h5>
+<h5><i>Written by: CosmicCoincidence</i></h5>
+
+<h2>Monthly Release: 
+  <u>
+    <a href="https://github.com/RE-SS3D/SS3D/releases/download/0.3.95f/RESS3D_0.3.95f.zip" target="_blank">v0.3.95f</a>
+  </u>
+</h2>
+
+<br>
+<p>“Nurse! We need 5 litres of blood stat, doesn’t matter where you get it, just get it!”</p>
+
+<h1 id="july-recap">July Recap</h1>
+
+<p>Although SS3D is still in a very early state, every month brings us a few steps closer to a playable game, this month is no exception.</p>
+
+<h2 id="cell-charger-display">Cell Charger Display</h2>
+
+<p>Thanks to <strong>StenBone</strong> (new this month) the powercell charger now displays the attached powercell’s charge level.</p>
+
+<video controls="" muted="" poster="/assets/img/posts/21.07.01/CellCharger.png" width="580px">&gt;
+  <source src="/assets/img/posts/21.07.01/CellCharger.mp4" type="video/mp4" />
+</video>
+
+<h2 id="details">Details</h2>
+
+<p><strong>Singulo</strong> (back contributing after ~2 years!)</p>
+<ul>
+  <li>Added toggling of the targeting doll UI.</li>
+  <li>Re-enabled the chat system and made it toggleable.</li>
+  <li>Fixed the unwanted looping on the space cleaner interaction.</li>
+  <li>Made it easier to see selected options in the settings menu.</li>
+</ul>
+
+<p><strong>Notterox</strong> (new this month)</p>
+<ul>
+  <li>Fixed client freezing upon closing bug.</li>
+  <li>Added missing examination components to several items.</li>
+</ul>
+
+<p><strong>Ryan</strong></p>
+<ul>
+  <li><a href="/assets/img/posts/21.07.01/SkinnedMeshBug.png" target="_blank">Fixed a rendering bug with skinned meshes when examined.</a></li>
+  <li>Fixed a couple of small bugs within the login system.</li>
+  <li>Corrected some items existing on the wrong layer.</li>
+</ul>
+
+<p><strong>CosmicCoincidence</strong></p>
+<ul>
+  <li>Fixed a rendering bug on the chairs and stools.</li>
+</ul>
+
+<h2 id="3d-fun">3D Fun</h2>
+
+<p><strong>Baga</strong> has once again provided a nice assortment of 3D fun for us.</p>
+
+<div class="slideshow">
+  <div class="slide-title" id="title"></div>
+<a class="prevSlide" onclick="plusSlides(-1)">❮</a>
+<a class="nextSlide" onclick="plusSlides(1)">❯</a>
+<a class="prevRow" onclick="plusRows(-1)">❮</a>
+<a class="nextRow" onclick="plusRows(1)">❯</a>
+  <div class="mySlides">
+    <div class="slide-number">1 / 30</div>
+    
+
+
+
+<div class="image"><a href="/assets/img/posts/21.07.01/Baga_BST.png" class="image-link" target="_blank"><img src="/" alt="" srcset="    /assets/resized/Baga_BST-580x435.png 580w,    /assets/resized/Baga_BST-290x218.png 290w,    /assets/resized/Baga_BST-170x128.png 170w,    /assets/resized/Baga_BST-145x109.png 145w, /assets/img/posts/21.07.01/Baga_BST.png 800w" sizes="(max-width: 624px) 100vw, 578px, 580px" /></a></div>
+  </div>
+  <div class="mySlides">
+    <div class="slide-number">2 / 30</div>
+    
+
+
+
+<div class="image"><a href="/assets/img/posts/21.07.01/Baga_DS1.png" class="image-link" target="_blank"><img src="/" alt="" srcset="    /assets/resized/Baga_DS1-580x435.png 580w,    /assets/resized/Baga_DS1-290x218.png 290w,    /assets/resized/Baga_DS1-170x128.png 170w,    /assets/resized/Baga_DS1-145x109.png 145w, /assets/img/posts/21.07.01/Baga_DS1.png 800w" sizes="(max-width: 624px) 100vw, 578px, 580px" /></a></div>
+  </div>
+  <div class="mySlides">
+    <div class="slide-number">3 / 30</div>
+    
+
+
+
+<div class="image"><a href="/assets/img/posts/21.07.01/Baga_ERT.png" class="image-link" target="_blank"><img src="/" alt="" srcset="    /assets/resized/Baga_ERT-580x435.png 580w,    /assets/resized/Baga_ERT-290x218.png 290w,    /assets/resized/Baga_ERT-170x128.png 170w,    /assets/resized/Baga_ERT-145x109.png 145w, /assets/img/posts/21.07.01/Baga_ERT.png 800w" sizes="(max-width: 624px) 100vw, 578px, 580px" /></a></div>
+  </div>
+  <div class="mySlides">
+    <div class="slide-number">4 / 30</div>
+    
+
+
+
+<div class="image"><a href="/assets/img/posts/21.07.01/Baga_SWAT1.png" class="image-link" target="_blank"><img src="/" alt="" srcset="    /assets/resized/Baga_SWAT1-580x435.png 580w,    /assets/resized/Baga_SWAT1-290x218.png 290w,    /assets/resized/Baga_SWAT1-170x128.png 170w,    /assets/resized/Baga_SWAT1-145x109.png 145w, /assets/img/posts/21.07.01/Baga_SWAT1.png 800w" sizes="(max-width: 624px) 100vw, 578px, 580px" /></a></div>
+  </div>
+  <div class="mySlides">
+    <div class="slide-number">5 / 30</div>
+    
+
+
+
+<div class="image"><a href="/assets/img/posts/21.07.01/Baga_SWAT2.png" class="image-link" target="_blank"><img src="/" alt="" srcset="    /assets/resized/Baga_SWAT2-580x435.png 580w,    /assets/resized/Baga_SWAT2-290x218.png 290w,    /assets/resized/Baga_SWAT2-170x128.png 170w,    /assets/resized/Baga_SWAT2-145x109.png 145w, /assets/img/posts/21.07.01/Baga_SWAT2.png 800w" sizes="(max-width: 624px) 100vw, 578px, 580px" /></a></div>
+  </div>
+  <div class="mySlides">
+    <div class="slide-number">6 / 30</div>
+    
+
+
+
+<div class="image"><a href="/assets/img/posts/21.07.01/Baga_Syndicate.png" class="image-link" target="_blank"><img src="/" alt="" srcset="    /assets/resized/Baga_Syndicate-580x435.png 580w,    /assets/resized/Baga_Syndicate-290x218.png 290w,    /assets/resized/Baga_Syndicate-170x128.png 170w,    /assets/resized/Baga_Syndicate-145x109.png 145w, /assets/img/posts/21.07.01/Baga_Syndicate.png 800w" sizes="(max-width: 624px) 100vw, 578px, 580px" /></a></div>
+  </div>
+  <div class="mySlides">
+    <div class="slide-number">7 / 30</div>
+    
+
+
+
+<div class="image"><a href="/assets/img/posts/21.07.01/Baga_DS2.png" class="image-link" target="_blank"><img src="/" alt="" srcset="    /assets/resized/Baga_DS2-580x435.png 580w,    /assets/resized/Baga_DS2-290x218.png 290w,    /assets/resized/Baga_DS2-170x128.png 170w,    /assets/resized/Baga_DS2-145x109.png 145w, /assets/img/posts/21.07.01/Baga_DS2.png 800w" sizes="(max-width: 624px) 100vw, 578px, 580px" /></a></div>
+    <div id="description" class="slide-description">20mm Cannon &amp; 7.62mm Rifles</div>
+  </div>
+  <div class="mySlides">
+    <div class="slide-number">8 / 30</div>
+    
+
+
+
+<div class="image"><a href="/assets/img/posts/21.07.01/Baga_L105.png" class="image-link" target="_blank"><img src="/" alt="" srcset="    /assets/resized/Baga_L105-580x435.png 580w,    /assets/resized/Baga_L105-290x218.png 290w,    /assets/resized/Baga_L105-170x128.png 170w,    /assets/resized/Baga_L105-145x109.png 145w, /assets/img/posts/21.07.01/Baga_L105.png 800w" sizes="(max-width: 624px) 100vw, 578px, 580px" /></a></div>
+  </div>
+  <div class="mySlides">
+    <div class="slide-number">9 / 30</div>
+    
+
+
+
+<div class="image"><a href="/assets/img/posts/21.07.01/Baga_PistolsPack.png" class="image-link" target="_blank"><img src="/" alt="" srcset="    /assets/resized/Baga_PistolsPack-580x435.png 580w,    /assets/resized/Baga_PistolsPack-290x218.png 290w,    /assets/resized/Baga_PistolsPack-170x128.png 170w,    /assets/resized/Baga_PistolsPack-145x109.png 145w, /assets/img/posts/21.07.01/Baga_PistolsPack.png 800w" sizes="(max-width: 624px) 100vw, 578px, 580px" /></a></div>
+  </div>
+  <div class="mySlides">
+    <div class="slide-number">10 / 30</div>
+    
+
+
+
+<div class="image"><a href="/assets/img/posts/21.07.01/Baga_SolarTracker.png" class="image-link" target="_blank"><img src="/" alt="" srcset="    /assets/resized/Baga_SolarTracker-580x435.png 580w,    /assets/resized/Baga_SolarTracker-290x218.png 290w,    /assets/resized/Baga_SolarTracker-170x128.png 170w,    /assets/resized/Baga_SolarTracker-145x109.png 145w, /assets/img/posts/21.07.01/Baga_SolarTracker.png 800w" sizes="(max-width: 624px) 100vw, 578px, 580px" /></a></div>
+  </div>
+  <div class="myRows">
+    <div class="row">
+      <div class="column">
+        <img class="thumbs cursor" src="/assets/img/posts/21.07.01/Baga_BST.png" style="width:100%" alt="Biohazard Stabilization Team Gear" onclick="currentSlide(1)" />
+      </div>
+      <div class="column">
+        <img class="thumbs cursor" src="/assets/img/posts/21.07.01/Baga_DS1.png" style="width:100%" alt="Death Squad Gear" onclick="currentSlide(2)" />
+      </div>
+      <div class="column">
+        <img class="thumbs cursor" src="/assets/img/posts/21.07.01/Baga_ERT.png" style="width:100%" alt="Emergency Response Team Gear" onclick="currentSlide(3)" />
+      </div>
+      <div class="column">
+        <img class="thumbs cursor" src="/assets/img/posts/21.07.01/Baga_SWAT1.png" style="width:100%" alt="SWAT Gear" onclick="currentSlide(4)" />
+      </div>
+      <div class="column">
+        <img class="thumbs cursor" src="/assets/img/posts/21.07.01/Baga_SWAT2.png" style="width:100%" alt="More SWAT Gear" onclick="currentSlide(5)" />
+      </div>
+      <div class="column">
+        <img class="thumbs cursor" src="/assets/img/posts/21.07.01/Baga_Syndicate.png" style="width:100%" alt="Syndicate Gear" onclick="currentSlide(6)" />
+      </div>
+    </div>
+  </div>
+  <div class="myRows">
+    <div class="row">
+      <div class="column">
+        <img class="thumbs cursor" src="/assets/img/posts/21.07.01/Baga_DS2.png" style="width:100%" alt="Death Squad Weapons" onclick="currentSlide(7)" />
+      </div>
+      <div class="column">
+        <img class="thumbs cursor" src="/assets/img/posts/21.07.01/Baga_L105.png" style="width:100%" alt="L105 Rifles" onclick="currentSlide(8)" />
+      </div>
+      <div class="column">
+        <img class="thumbs cursor" src="/assets/img/posts/21.07.01/Baga_PistolsPack.png" style="width:100%" alt="Officer's Pistol Pack" onclick="currentSlide(9)" />
+      </div>
+      <div class="column">
+        <img class="thumbs cursor" src="/assets/img/posts/21.07.01/Baga_SolarTracker.png" style="width:100%" alt="Solar Tracking Beacon" onclick="currentSlide(10)" />
+      </div>
+    </div>
+  </div>
+</div>
+
+<p><strong>Kollator</strong> (new this month) provided broken variants of our alcohol bottles, boxes for our donuts, a wall cabinet for the fire extinguisher, a standup and wall-mounted ATM, as well as a Nagant revolver &amp; Stechkin pistol.</p>
+
+<div class="horizontal-2">
+
+  <div class="image"><a href="/assets/img/posts/21.07.01/Kollator_BrokenBottles.png" target="_blank"><img src="/" alt="" srcset="    /assets/resized/Kollator_BrokenBottles-580x435.png 580w,    /assets/resized/Kollator_BrokenBottles-290x218.png 290w,    /assets/resized/Kollator_BrokenBottles-170x128.png 170w,    /assets/resized/Kollator_BrokenBottles-145x109.png 145w, /assets/img/posts/21.07.01/Kollator_BrokenBottles.png 800w" sizes="(max-width: 624px) 50vw, 290px" /></a></div>
+
+  <div class="image"><a href="/assets/img/posts/21.07.01/Kollator_Donutbox.png" target="_blank"><img src="/" alt="" srcset="    /assets/resized/Kollator_Donutbox-580x435.png 580w,    /assets/resized/Kollator_Donutbox-290x218.png 290w,    /assets/resized/Kollator_Donutbox-170x128.png 170w,    /assets/resized/Kollator_Donutbox-145x109.png 145w, /assets/img/posts/21.07.01/Kollator_Donutbox.png 800w" sizes="(max-width: 624px) 50vw, 290px" /></a></div>
+</div>
+
+<div class="horizontal-2">
+
+  <div class="image"><a href="/assets/img/posts/21.07.01/Kollator_FireExtinguisherCabinet.png" target="_blank"><img src="/" alt="" srcset="    /assets/resized/Kollator_FireExtinguisherCabinet-580x435.png 580w,    /assets/resized/Kollator_FireExtinguisherCabinet-290x218.png 290w,    /assets/resized/Kollator_FireExtinguisherCabinet-170x128.png 170w,    /assets/resized/Kollator_FireExtinguisherCabinet-145x109.png 145w, /assets/img/posts/21.07.01/Kollator_FireExtinguisherCabinet.png 800w" sizes="(max-width: 624px) 50vw, 290px" /></a></div>
+
+  <div class="image"><a href="/assets/img/posts/21.07.01/Kollator_ATMs.png" target="_blank"><img src="/" alt="" srcset="    /assets/resized/Kollator_ATMs-580x435.png 580w,    /assets/resized/Kollator_ATMs-290x218.png 290w,    /assets/resized/Kollator_ATMs-170x128.png 170w,    /assets/resized/Kollator_ATMs-145x109.png 145w, /assets/img/posts/21.07.01/Kollator_ATMs.png 800w" sizes="(max-width: 624px) 50vw, 290px" /></a></div>
+</div>
+
+<div class="horizontal-2">
+
+  <div class="image"><a href="/assets/img/posts/21.07.01/Kollator_Pistol-Nagant.png" target="_blank"><img src="/" alt="" srcset="    /assets/resized/Kollator_Pistol-Nagant-580x435.png 580w,    /assets/resized/Kollator_Pistol-Nagant-290x218.png 290w,    /assets/resized/Kollator_Pistol-Nagant-170x128.png 170w,    /assets/resized/Kollator_Pistol-Nagant-145x109.png 145w, /assets/img/posts/21.07.01/Kollator_Pistol-Nagant.png 800w" sizes="(max-width: 624px) 50vw, 290px" /></a></div>
+
+  <div class="image"><a href="/assets/img/posts/21.07.01/Kollator_Stechkin.png" target="_blank"><img src="/" alt="" srcset="    /assets/resized/Kollator_Stechkin-580x435.png 580w,    /assets/resized/Kollator_Stechkin-290x218.png 290w,    /assets/resized/Kollator_Stechkin-170x128.png 170w,    /assets/resized/Kollator_Stechkin-145x109.png 145w, /assets/img/posts/21.07.01/Kollator_Stechkin.png 800w" sizes="(max-width: 624px) 50vw, 290px" /></a></div>
+</div>
+
+<p><strong>gen</strong> (new this month) made a classic diner booth seat, and <strong>CosmicCoincidence</strong> assisted by making it into modular pieces.</p>
+
+<div class="image"><a href="/assets/img/posts/21.07.01/gen_Booth.png" class="image-link" target="_blank"><img src="/" alt="" srcset="    /assets/resized/gen_Booth-580x435.png 580w,    /assets/resized/gen_Booth-290x218.png 290w,    /assets/resized/gen_Booth-170x128.png 170w,    /assets/resized/gen_Booth-145x109.png 145w, /assets/img/posts/21.07.01/gen_Booth.png 800w" sizes="(max-width: 624px) 100vw, 578px, 580px" /></a></div>
+
+<p>The creative mind that is <strong>Eiko</strong> dropped off this adorable gondola for us.</p>
+
+<div class="image"><a href="/assets/img/posts/21.07.01/Eiko_Gondola.png" class="image-link" target="_blank"><img src="/" alt="" srcset="    /assets/resized/Eiko_Gondola-580x435.png 580w,    /assets/resized/Eiko_Gondola-290x218.png 290w,    /assets/resized/Eiko_Gondola-170x128.png 170w,    /assets/resized/Eiko_Gondola-145x109.png 145w, /assets/img/posts/21.07.01/Eiko_Gondola.png 800w" sizes="(max-width: 624px) 100vw, 578px, 580px" /></a></div>
+
+<h2 id="2d-fun">2D Fun</h2>
+
+<p><strong>NazarDoe</strong> is back and contributed these awesome UNO card textures.</p>
+
+<div class="image"><a href="/assets/img/posts/21.07.01/NazarDoe_UNO.png" class="image-link" target="_blank"><img src="/" alt="" srcset="    /assets/resized/NazarDoe_UNO-580x435.png 580w,    /assets/resized/NazarDoe_UNO-290x218.png 290w,    /assets/resized/NazarDoe_UNO-170x128.png 170w,    /assets/resized/NazarDoe_UNO-145x109.png 145w, /assets/img/posts/21.07.01/NazarDoe_UNO.png 800w" sizes="(max-width: 624px) 100vw, 578px, 580px" /></a></div>
+
+<p><strong>Konstantin3001</strong> is also back, this month with a <a href="/assets/img/posts/21.07.01/Konstantin_Chat.png" target="_blank">chat UI icon</a> and some splatter/spill decals (which can be colored in the game engine).</p>
+
+<div class="image"><a href="/assets/img/posts/21.07.01/Konstantin_Splatters.png" class="image-link" target="_blank"><img src="/" alt="" srcset="    /assets/resized/Konstantin_Splatters-580x435.png 580w,    /assets/resized/Konstantin_Splatters-290x218.png 290w,    /assets/resized/Konstantin_Splatters-170x128.png 170w,    /assets/resized/Konstantin_Splatters-145x109.png 145w, /assets/img/posts/21.07.01/Konstantin_Splatters.png 800w" sizes="(max-width: 624px) 100vw, 578px, 580px" /></a></div>
+
+<h2 id="conclusion">Conclusion</h2>
+
+<p>This month’s great cover art comes from the talented <strong>ProbablyNot</strong>.</p>
+
+<div class="image"><a href="/assets/img/art/ProbablyNot/ProbablyNot_Medic.png" class="image-link" target="_blank"><img src="/" alt="" srcset="    /assets/resized/ProbablyNot_Medic-580x326.png 580w,    /assets/resized/ProbablyNot_Medic-290x163.png 290w,    /assets/resized/ProbablyNot_Medic-170x96.png 170w,    /assets/resized/ProbablyNot_Medic-145x82.png 145w, /assets/img/art/ProbablyNot/ProbablyNot_Medic.png 3840w" sizes="(max-width: 624px) 100vw, 578px, 580px" /></a></div>
+
+<p>More work-in-progress content can be found on our <a href="https://discord.gg/3ny9tdH" target="_blank">Discord</a> so be sure to stop by!</p>
+
+
+            </main>
+            <footer>
+                <div class="contact">
+    <ul class="ul-reset social-icons">
+        
+        <li>
+            
+            <a class="social-icon--link" href="https://github.com/RE-SS3D" target="_blank" aria-label="GitHub">
+                <span class="social-icon">
+                    <svg id="b6fd44a9-6022-4bad-9aba-751db567612b" xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 64 62.43"><path class="social-icon-bg" d="M32,.8A32,32,0,0,0,21.88,63.16c1.6.3,2.19-.7,2.19-1.54s0-3.29,0-6c-8.91,1.94-10.78-3.77-10.78-3.77-1.46-3.7-3.56-4.69-3.56-4.69-2.9-2,.22-1.94.22-1.94,3.22.22,4.91,3.29,4.91,3.29,2.85,4.9,7.49,3.48,9.31,2.66a6.88,6.88,0,0,1,2-4.28c-7.11-.8-14.58-3.55-14.58-15.81a12.42,12.42,0,0,1,3.3-8.59,11.5,11.5,0,0,1,.31-8.47s2.68-.86,8.8,3.28a31,31,0,0,1,8-1.07,30.52,30.52,0,0,1,8,1.07c6.11-4.14,8.79-3.28,8.79-3.28a11.52,11.52,0,0,1,.32,8.47,12.37,12.37,0,0,1,3.29,8.59c0,12.29-7.48,15-14.61,15.78C39,47.9,40,49.84,40,52.83c0,4.28,0,7.73,0,8.78,0,.85.57,1.85,2.2,1.53A32,32,0,0,0,32,.79Z" transform="translate(0 -0.79)" fill-rule="evenodd"/></svg></span
+                >
+            </a>
+        </li>
+
+        
+        <li>
+            
+            <a class="social-icon--link" href="https://discord.gg/3ny9tdH" target="_blank" aria-label="Discord">
+                <span class="social-icon">
+                    
+<svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 294334 333333" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeSpeed" fill-rule="evenodd" clip-rule="evenodd"><g id="Layer_x0020_1"><g id="_489768256"><path class="social-icon-bg" d="M178012 139855c-9581 0-17146 8237-17146 18491s7733 18491 17146 18491c9581 0 17146-8237 17146-18491s-7733-18491-17146-18491zm-61354 0c-9581 0-17146 8237-17146 18491s7733 18491 17146 18491c9581 0 17146-8237 17146-18491 168-10254-7564-18491-17146-18491z"/><path class="social-icon-bg" d="M259706 0H34459C15465 0 0 15465 0 34459v225247c0 18995 15465 34459 34459 34459h190620l-8909-30761 21516 19835 20339 18659 36309 31434V34458C294166 15464 278701-1 259706-1zm-64885 217683s-6052-7228-11094-13448c22020-6219 30425-19835 30425-19835-6892 4539-13448 7733-19331 9918-8405 3530-16474 5715-24374 7228-16137 3026-30929 2185-43537-168-9581-1849-17818-4370-24710-7228-3866-1513-8068-3362-12271-5715-504-336-1009-504-1513-840-336-168-504-337-672-337-3026-1681-4707-2857-4707-2857s8068 13280 29417 19667c-5043 6388-11263 13784-11263 13784-37149-1177-51269-25383-51269-25383 0-53622 24205-97159 24205-97159 24206-17986 47067-17482 47067-17482l1681 2017c-30257 8573-44041 21853-44041 21853s3698-2017 9918-4707c17987-7901 32274-9918 38158-10590 1009-168 1849-336 2857-336 10254-1345 21853-1681 33955-337 15969 1849 33115 6556 50596 15969 0 0-13280-12607-41855-21180l2354-2689s23029-504 47066 17482c0 0 24206 43537 24206 97159 0-168-14120 24038-51269 25215z"/></g></g></svg></span
+                >
+            </a>
+        </li>
+
+        
+        <li>
+            
+            <a class="social-icon--link" href="https://reddit.com/r/RESS3D" target="_blank" aria-label="Reddit">
+                <span class="social-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 24 24"><path class="social-icon-bg" d="M14.238 15.348c.085.084.085.221 0 .306-.465.462-1.194.687-2.231.687l-.008-.002-.008.002c-1.036 0-1.766-.225-2.231-.688-.085-.084-.085-.221 0-.305.084-.084.222-.084.307 0 .379.377 1.008.561 1.924.561l.008.002.008-.002c.915 0 1.544-.184 1.924-.561.085-.084.223-.084.307 0zm-3.44-2.418c0-.507-.414-.919-.922-.919-.509 0-.923.412-.923.919 0 .506.414.918.923.918.508.001.922-.411.922-.918zm13.202-.93c0 6.627-5.373 12-12 12s-12-5.373-12-12 5.373-12 12-12 12 5.373 12 12zm-5-.129c0-.851-.695-1.543-1.55-1.543-.417 0-.795.167-1.074.435-1.056-.695-2.485-1.137-4.066-1.194l.865-2.724 2.343.549-.003.034c0 .696.569 1.262 1.268 1.262.699 0 1.267-.566 1.267-1.262s-.568-1.262-1.267-1.262c-.537 0-.994.335-1.179.804l-2.525-.592c-.11-.027-.223.037-.257.145l-.965 3.038c-1.656.02-3.155.466-4.258 1.181-.277-.255-.644-.415-1.05-.415-.854.001-1.549.693-1.549 1.544 0 .566.311 1.056.768 1.325-.03.164-.05.331-.05.5 0 2.281 2.805 4.137 6.253 4.137s6.253-1.856 6.253-4.137c0-.16-.017-.317-.044-.472.486-.261.82-.766.82-1.353zm-4.872.141c-.509 0-.922.412-.922.919 0 .506.414.918.922.918s.922-.412.922-.918c0-.507-.413-.919-.922-.919z"/></svg></span
+                >
+            </a>
+        </li>
+
+        
+        <li>
+            
+            <a class="social-icon--link" href="https://www.youtube.com/channel/UCJT-bVqDOYfyxF3oxECceZg" target="_blank" aria-label="YouTube">
+                <span class="social-icon">
+                    
+<svg xmlns="http://www.w3.org/2000/svg"  width="100%" viewBox="0 0 333333 333333" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd"><path class="social-icon-bg" d="M329930 100020s-3254-22976-13269-33065c-12691-13269-26901-13354-33397-14124-46609-3396-116614-3396-116614-3396h-122s-69973 0-116608 3396c-6522 793-20712 848-33397 14124C6501 77044 3316 100020 3316 100020S-1 126982-1 154001v25265c0 26962 3315 53979 3315 53979s3254 22976 13207 33082c12685 13269 29356 12838 36798 14254 26685 2547 113354 3315 113354 3315s70065-124 116675-3457c6522-770 20706-848 33397-14124 10021-10089 13269-33090 13269-33090s3319-26962 3319-53979v-25263c-67-26962-3384-53979-3384-53979l-18 18-2-2zM132123 209917v-93681l90046 46997-90046 46684z"/></svg></span
+                >
+            </a>
+        </li>
+
+        
+        <li>
+            
+            <a class="social-icon--link" href="https://www.patreon.com/ss3d" target="_blank" aria-label="Patreon">
+                <span class="social-icon">
+                    <svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" version="1.1" x="0px" y="0px" width="100%" viewBox="0 0 122.88 122.88" style="enable-background:new 0 0 122.88 122.88" xml:space="preserve"><g><path class="social-icon-bg" d="M 0 0 L 0 122.88086 L 122.88086 122.88086 L 122.88086 0 L 0 0 z M 30.960938 32.179688 L 41.679688 32.179688 L 41.679688 90.699219 L 30.960938 90.699219 L 30.960938 32.179688 z M 70.039062 32.179688 C 82.109062 32.179688 91.919922 42.040391 91.919922 54.150391 C 91.919922 66.220391 82.109063 76.050781 70.039062 76.050781 C 57.939063 76.050781 48.089844 66.230391 48.089844 54.150391 C 48.089844 42.030391 57.939062 32.179688 70.039062 32.179688 z "/></g></svg>
+</span
+                >
+            </a>
+        </li>
+
+        
+        <li>
+            
+            <a class="social-icon--link" href="https://twitter.com/SpaceStation3D" target="_blank" aria-label="Twitter">
+                <span class="social-icon">
+                    <svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 48 48" version="1.1" width="100%" viewBox="0 0 48 48" xml:space="preserve"><g><path class="social-icon-bg" d="m 36.8,15.4 c -0.9,0.5 -2,0.8 -3,0.9 1.1,-0.7 1.9,-1.8 2.3,-3.1 -1,0.6 -2.1,1.1 -3.4,1.4 -1,-1.1 -2.3,-1.8 -3.8,-1.8 -2.9,0 -5.3,2.5 -5.3,5.7 0,0.4 0,0.9 0.1,1.3 -4.4,-0.2 -8.3,-2.5 -10.9,-5.9 -0.5,0.8 -0.7,1.8 -0.7,2.9 0,2 0.9,3.7 2.3,4.7 -0.9,0 -1.7,-0.3 -2.4,-0.7 0,0 0,0.1 0,0.1 0,2.7 1.8,5 4.2,5.6 -0.4,0.1 -0.9,0.2 -1.4,0.2 -0.3,0 -0.7,0 -1,-0.1 0.7,2.3 2.6,3.9 4.9,3.9 -1.8,1.5 -4.1,2.4 -6.5,2.4 -0.4,0 -0.8,0 -1.3,-0.1 2.3,1.6 5.1,2.6 8.1,2.6 9.7,0 15,-8.6 15,-16.1 0,-0.2 0,-0.5 0,-0.7 1.2,-1 2.1,-2 2.8,-3.2 z M 48,24 A 24,24 0 0 1 24,48 24,24 0 0 1 0,24 24,24 0 0 1 24,0 24,24 0 0 1 48,24 Z" /></g></svg>
+</span
+                >
+            </a>
+        </li>
+
+        
+    </ul>
+    <ul class="ul-reset legal-list">
+        <li>
+            <h5><a href="/privacy">Privacy Policy</a></h5>
+        </li>
+        <li>
+            <h5><a type="application/atom+xml" href="/feed.xml">Atom (RSS)</a></h5>
+        </li>
+    </ul>
+</div>
+
+            </footer>
+        </div>
+        <script>
+            
+            // Fix flashing buttons by only allowing the css animations to play after a slight delay.
+            setTimeout(function() {
+                document.getElementsByTagName('body')[0].classList.remove('preload');
+            }, 50);
+
+            //theme toggle
+            //identify the toggle switch HTML element
+            const toggleSwitch = document.querySelector('#theme-switch input[type="checkbox"]');
+    
+            //function that changes the theme, and sets a localStorage variable to track the theme between page loads
+            function switchTheme(e) {
+                if (e.target.checked) {
+                    localStorage.setItem('theme', 'light');
+                    document.documentElement.setAttribute('data-theme', 'light');
+                    toggleSwitch.checked = true;
+                } else {
+                    localStorage.setItem('theme', 'dark');
+                    document.documentElement.setAttribute('data-theme', 'dark');
+                    toggleSwitch.checked = false;
+                }    
+            }
+    
+            //listener for changing themes
+            toggleSwitch.addEventListener('change', switchTheme, false);
+    
+            //pre-check the dark-theme checkbox if dark-theme is set
+            if (document.documentElement.getAttribute("data-theme") == "light"){
+                toggleSwitch.checked = true;
+            }
+        </script>
+        <script>
+
+            // changes slide show slides and title
+            var slideIndex = 1;
+            showSlides(slideIndex);
+            
+            function plusSlides(n) {
+                showSlides(slideIndex += n);
+            }
+            
+            function currentSlide(n) {
+                showSlides(slideIndex = n);
+            }
+            
+            function showSlides(n) {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                var dots = document.getElementsByClassName("thumbs");
+                var titleText = document.getElementById("title");
+                if (n > slides.length) {
+                    slideIndex = 1;
+                    showRows(rowIndex = 1);
+                }
+                if (n < 1) {
+                    slideIndex = slides.length;
+  	                showRows(rowIndex = -1);
+                }
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                showRows(rowIndex = Math.floor((n-1)/6) + 1) 
+                slides[slideIndex-1].style.display = "block";
+                dots[slideIndex-1].className += " active";
+                titleText.innerHTML = dots[slideIndex-1].alt;
+            }
+            
+            // changes slide show rows
+            var rowIndex = 1;
+            showRows(rowIndex);
+
+            function plusRows(n) {
+                showRows(rowIndex += n);
+            }
+
+            function currentRow(n) {
+            showRows(rowIndex = n);
+            }
+
+            function showRows(n) {
+                var i;
+                var rows = document.getElementsByClassName("myRows");
+                var dots = document.getElementsByClassName("thumbs");
+                if (n > rows.length) {rowIndex = 1}
+                if (n < 1) {rowIndex = rows.length}
+                for (i = 0; i < rows.length; i++) {
+                    rows[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                rows[rowIndex-1].style.display = "block";
+                dots[rowIndex-1].className += " active";
+            }
+        </script>
+    </body>
+</html>
