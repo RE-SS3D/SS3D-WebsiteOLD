@@ -49,7 +49,7 @@ Feel free to help on any of our 3 repositories as they could all use your help, 
 
 ## 3D modeling tasks:
 
-Start by downloading our [Modeler’s Kit v1.4](https://drive.google.com/drive/folders/1fUn42ATEWXKvAGoWoCpN9EoURFW_7ppX?usp=sharing){:target="_blank"} folder, and make sure to read the [SS3D Style Guide.pdf](https://drive.google.com/file/d/1bBwFSBXxDkAUSFpyJyidRbGPqIjBPxTo/view?usp=sharing){:target="_blank"} and [SS3D Model Format Guide.pdf](https://drive.google.com/file/d/1fx3B8N5exKNefXuRCYbV1hTZTg6HB0j9/view?usp=sharing){:target="_blank"} files contained within.
+Start by downloading our [Modeler’s Kit v1.7]({{ site.modelers_kit_url }}){:target="_blank"} folder, and make sure to read the "SS3D Style Guide.pdf" and "SS3D Model Format Guide.pdf" files contained within.
 
 Then visit our [models board](https://trello.com/b/ZVcDitv0/ss3d-model-list){:target="_blank"} for general models and the [rig models board](https://trello.com/b/cyDuUYyv/ss3d-rig-models){:target="_blank"} for models related to rigging (characters, clothes, vehicles, etc.)
 
@@ -57,7 +57,7 @@ We recommend using [Blender v2.8](https://www.blender.org/download/releases/){:t
 
 ## Animation tasks:
 
-Start by deciding on a task from our [animations board](https://trello.com/b/xZ5bhNWw/ss3d-animations){:target="_blank"}. If it's related to the character rig, we have a [Character Animation Kit v1.0](https://drive.google.com/drive/folders/1V8QAE9651nYJffCSz9zjjygextDHN-GQ?usp=sharing){:target="_blank"} but it's currently only set up for Maya users, although you can use Blender to animate too.
+Start by deciding on a task from our [animations board](https://trello.com/b/xZ5bhNWw/ss3d-animations){:target="_blank"}. If it's related to the character rig, we have a [Character Animation Kit v1.0]({{ site.animators_kit_url }}){:target="_blank"} but it's currently only set up for Maya users, although you can use Blender to animate too.
 
 ## 2D art tasks:
 
