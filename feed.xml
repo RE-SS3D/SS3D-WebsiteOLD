@@ -1,4 +1,278 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://ss3d.space/feed.xml" rel="self" type="application/atom+xml" /><link href="https://ss3d.space/" rel="alternate" type="text/html" /><updated>2021-08-04T23:23:50+00:00</updated><id>https://ss3d.space/feed.xml</id><title type="html">RE:SS3D</title><subtitle>This is a 3D recreation of Space Station 13, on the Unity engine, which will come with its own set of gameplay/graphical improvements. </subtitle><entry><title type="html">21.07: July 2021 Devblog</title><link href="https://ss3d.space/2021/08/04/21.07.html" rel="alternate" type="text/html" title="21.07: July 2021 Devblog" /><published>2021-08-04T11:30:00+00:00</published><updated>2021-08-04T11:30:00+00:00</updated><id>https://ss3d.space/2021/08/04/21.07</id><content type="html" xml:base="https://ss3d.space/2021/08/04/21.07.html">&lt;p&gt;“Nurse! We need 5 litres of blood stat, doesn’t matter where you get it, just get it!”&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://ss3d.space/feed.xml" rel="self" type="application/atom+xml" /><link href="https://ss3d.space/" rel="alternate" type="text/html" /><updated>2021-09-03T18:45:32+00:00</updated><id>https://ss3d.space/feed.xml</id><title type="html">RE:SS3D</title><subtitle>This is a 3D recreation of Space Station 13, on the Unity engine, which will come with its own set of gameplay/graphical improvements. </subtitle><entry><title type="html">21.08: August 2021 Devblog</title><link href="https://ss3d.space/2021/09/03/21.08.html" rel="alternate" type="text/html" title="21.08: August 2021 Devblog" /><published>2021-09-03T11:30:00+00:00</published><updated>2021-09-03T11:30:00+00:00</updated><id>https://ss3d.space/2021/09/03/21.08</id><content type="html" xml:base="https://ss3d.space/2021/09/03/21.08.html">&lt;p&gt;&lt;em&gt;“One day I will find the right words, and they will be simple.”&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;– Jack Kerouac&lt;/p&gt;
+
+&lt;h1 id=&quot;august-recap&quot;&gt;August Recap&lt;/h1&gt;
+
+&lt;p&gt;Another steady month here at RE:SS3D, as we continue to get a trickling of new contributors each month, both in the art and programming departments! Though, it’s actually a special month because as of just a couple of days ago we (RE:SS3D) had our 3rd anniversary, which many of us have difficulty believing it has already been that long. These last few years have produced huge amounts of discussion which sparked hundreds of ideas that have helped pave the way toward actually making 3D SS13 feasible.&lt;/p&gt;
+
+&lt;p&gt;Also, a big roadblock was lifted this month with the merging of our latest (and hopefully last ever) tilemap rework. From here we can finally begin a deeper discussion into systems we otherwise were holding off due to them relying on such a rework. We’re not out of the woods yet though, because after you clear one fallen tree there will surely be another.&lt;/p&gt;
+
+&lt;h2 id=&quot;contributors-kit-updates&quot;&gt;Contributors’ Kit Updates&lt;/h2&gt;
+
+&lt;p&gt;This month &lt;strong&gt;ProbablyNot&lt;/strong&gt; updated the animator’s kit by adding some additions &amp;amp; optimizations to the character rig as well as updated some meshes. Note that the animator’s kit is currently Maya only and not for Blender.&lt;/p&gt;
+
+&lt;p&gt;The updated animator’s kit (v1.5) can be found &lt;a href=&quot;https://drive.google.com/drive/folders/1V8QAE9651nYJffCSz9zjjygextDHN-GQ?usp=sharing&quot; target=&quot;_blank&quot;&gt;here&lt;/a&gt; (download the whole folder).&lt;/p&gt;
+
+&lt;p&gt;We’ve also been long overdue for a new modeler’s kit update, so it feels good to finally get this update out. If you are an active modeler, please update your kit as the changes are fairly significant.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Spongie&lt;/strong&gt; adjusted the burgundy reds on the Palette05, the colors are more similar now and the shades have a smoother gradient.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Eiko&lt;/strong&gt; added a rigging template (.blend) and an accompanying guide pdf. The rigging template file contains template models for most general clothing objects both in item form and worn on the body form; while the guide goes into the details on how to make the clothing and hair work correctly with the player model and game design.&lt;/p&gt;
+
+&lt;p&gt;Finally, &lt;strong&gt;CosmicCoincidence&lt;/strong&gt; added an file full of &lt;a href=&quot;/assets/img/posts/21.08.01/ExampleModels.png&quot; target=&quot;_blank&quot;&gt;example models&lt;/a&gt; (.blend) which can be used as a quick reference for scale, styling, etc.&lt;/p&gt;
+
+&lt;p&gt;The updated modeler’s kit (v2.0) can be found &lt;a href=&quot;https://drive.google.com/drive/folders/11SMsOzh78-vNTq3Az5c-mUFpFw-5EOb8?usp=sharing&quot; target=&quot;_blank&quot;&gt;here&lt;/a&gt; (download the whole folder).&lt;/p&gt;
+
+&lt;h2 id=&quot;chat-system&quot;&gt;Chat System&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;Singulo&lt;/strong&gt; significantly repaired and upgraded the chat system this month. He repaired the send controls and prevented the player from inputting rich text. He prevented chat windows from having no tabs and made the selected tab easier to identify. He got the channel selector to properly update. The close tab button works now and you can also re-order your tabs like a web browser. He did some repositioning and scaling of the chat UI. And he added the key ‘C’ to toggle the chat window open/close.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Calmilamsy&lt;/strong&gt; (new this month) added a similar control, press ‘T’ to focus the chat window to quickly start typing (it will also toggle the window open if closed).&lt;/p&gt;
+
+&lt;h2 id=&quot;tilemap-rework&quot;&gt;Tilemap Rework&lt;/h2&gt;
+
+&lt;p&gt;I think this is like our 3rd or 4th tilemap rework now, I don’t even know anymore. But &lt;strong&gt;BroodjeKipcorn&lt;/strong&gt; has once again done God’s work by upgrading our previous tilemap system with many new features. Some of these features were necessary for us to move forward on dependent systems like electricity, gravity, shuttles, and more. The reworking process also resolved numerous tilemap-related bugs and even improves on our previous tilemap editor as well.&lt;/p&gt;
+
+&lt;p&gt;The design for the reworked system was finalized by &lt;strong&gt;Broodje&lt;/strong&gt;, but many people had a part in helping with the brainstorming. One very notable individual who did a lot of work on the design initially is &lt;strong&gt;Onebi&lt;/strong&gt; who spent a good amount of time conceptualizing and documenting a new design prior to it being scrutinized by the community and being finished up by &lt;strong&gt;Broodje&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;The upgraded system is still tile-based but leverages collections more to process through objects on the same layer a bit faster. It also now divides the tilemap into &lt;a href=&quot;/assets/img/posts/21.08.01/TilemapChunks.png&quot; target=&quot;_blank&quot;&gt;16 x 16 chunks&lt;/a&gt; which should allow for a more optimized system as well.&lt;/p&gt;
+
+&lt;p&gt;The tilemap is now fully serialized and can be both saved and loaded at will. This should not only make resolving Github merging conflicts on the map easier but will also allow for a wide assortment of possibilities like saving a broken down or chaotic station to load at the beginning of a new round for a rescue or clean-up mission. This could also be used to save multiple layouts of certain rooms, so areas of a station could be randomized between rounds while other areas remain consistent. (Currently saving and loading is only possible in the tilemap editor in Unity but we plan for the function to be possible in-game as well.)&lt;/p&gt;
+
+&lt;p&gt;Multi-tiled objects (ex. the cryotube is 2x2 tiles) are now supported by the tilemap and can no longer be placed in ways that clip into other nearby tile-based objects (structures/furniture). This on the surface seems fairly trivial but proved rather difficult with the possibility that a multi-tiled object could overlap multiple tilemap chunks.&lt;/p&gt;
+
+&lt;p&gt;Another huge fix is that the tile object networking is no longer broken which fixed a few bugs but most notably where certain tile object states were not synced across server and client (like the jukebox being turned on for 1 player but not the other).&lt;/p&gt;
+
+&lt;p&gt;Probably my favorite part of the tilemap rework is the addition of multiple tilemap support, this means that we are no longer are limited to just 1 tilemap per map. This allows for things like shuttles/ships/pods to have their own tilemap and move and rotate irrespectively of one another. Although we do not have tilemap movement or rotation implemented yet, this will allow for truly pilotable ships (which we have many ideas for). The support for multiple tilemaps within a singular map may allow for us to even break apart ships/stations into multiple separate objects which drift apart instead of staying locked in place.&lt;/p&gt;
+
+&lt;p&gt;The Tilemap editor also received many upgrades to complement the system upgrades it also still includes all the great features from before. Since we can now have multiple tilemaps within a map file, you can easily switch your active tilemap with a click of a button to switch between them and a setting to mark one of these tilemaps as the primary tilemap. The editor tells you how many map chunks your tilemap is made up of and can outline them on the map with a toggle setting. Another toggle setting that was added is the overwrite setting which means you can easily replace an object with another object of the same layer type in one action instead of having to delete the first object and then place the new object. Finally, it is also now possible to &lt;a href=&quot;/assets/img/posts/21.08.01/TilemapLayers.png&quot; target=&quot;_blank&quot;&gt;visibly toggle tilemap layers&lt;/a&gt; to make it easier to see and work on other layers.&lt;/p&gt;
+
+&lt;p&gt;Although the rework resulted in us having to toss out our old maps, &lt;strong&gt;Broodje&lt;/strong&gt; kindly built us a new “ministation” map which has a secondary “shuttle” tilemap included. There’s a BUNCH more little improvements and fixes that were included in this rework that I simply didn’t cover here too. I wanted to include a clip of the tilemap system to visually show it off a bit more, but there isn’t much to show at this time besides looking at a map. Once we get tilemap movement implemented that will change and I promise to get you guys that clip then.&lt;/p&gt;
+
+&lt;h2 id=&quot;details&quot;&gt;Details&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;Singulo&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Added a game controls page to the settings menu and listed all current controls.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Ryan&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Added a &lt;a href=&quot;/assets/img/posts/21.08.01/HoverExamine.png&quot; target=&quot;_blank&quot;&gt;new hover-based examination feature&lt;/a&gt; which only displays object names as opposed to the detailed examine which can have a description, a UI, or other additions.&lt;/li&gt;
+  &lt;li&gt;Added an outline to examination texts to make them contrast the background and make them easier to read.&lt;/li&gt;
+  &lt;li&gt;Fixed a bug that sometimes prevented players from joining mid-round.&lt;/li&gt;
+  &lt;li&gt;Half-fixed a bug that when the player fell any items they held would disappear, now only 1 item disappears, and the other drops to the ground… Progress!&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Liam&lt;/strong&gt; (new this month)&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Updated the humanoid animator to prevent the character from continuously running into stuff, the character will now stop moving when up against an obstacle.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;models&quot;&gt;Models&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;Cornelius&lt;/strong&gt; stopped by momentarily this month to drop off some plants, you may recognize some of them from your favorite SS13 servers!&lt;/p&gt;
+
+&lt;div class=&quot;horizontal-2&quot;&gt;
+
+  &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/21.08.01/Cornelius_Plants1.png&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/Cornelius_Plants1-580x435.png 580w,    /assets/resized/Cornelius_Plants1-290x218.png 290w,    /assets/resized/Cornelius_Plants1-170x128.png 170w,    /assets/resized/Cornelius_Plants1-145x109.png 145w, /assets/img/posts/21.08.01/Cornelius_Plants1.png 800w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+
+  &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/21.08.01/Cornelius_Plants2.png&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/Cornelius_Plants2-580x435.png 580w,    /assets/resized/Cornelius_Plants2-290x218.png 290w,    /assets/resized/Cornelius_Plants2-170x128.png 170w,    /assets/resized/Cornelius_Plants2-145x109.png 145w, /assets/img/posts/21.08.01/Cornelius_Plants2.png 800w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;I (&lt;strong&gt;CosmicCoincidence&lt;/strong&gt;) decided to model and submit these basic wooden fences. Why? &lt;em&gt;shrug&lt;/em&gt;&lt;/p&gt;
+
+&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/21.08.01/Cosmic_WoodFences.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/Cosmic_WoodFences-580x435.png 580w,    /assets/resized/Cosmic_WoodFences-290x218.png 290w,    /assets/resized/Cosmic_WoodFences-170x128.png 170w,    /assets/resized/Cosmic_WoodFences-145x109.png 145w, /assets/img/posts/21.08.01/Cosmic_WoodFences.png 800w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;Eiko&lt;/strong&gt; kindly resubmitted his adorable penguins from 2 years ago that seemed to have gotten lost with time.&lt;/p&gt;
+
+&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/19.07.01/EikoPenguins.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/EikoPenguins-580x435.png 580w,    /assets/resized/EikoPenguins-290x218.png 290w,    /assets/resized/EikoPenguins-170x128.png 170w,    /assets/resized/EikoPenguins-145x109.png 145w, /assets/img/posts/19.07.01/EikoPenguins.png 800w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;Spongie&lt;/strong&gt; (new this month) submitted a bunch of awesome models!&lt;/p&gt;
+
+&lt;div class=&quot;slideshow&quot;&gt;
+  &lt;div class=&quot;slide-title&quot; id=&quot;title&quot;&gt;&lt;/div&gt;
+&lt;a class=&quot;prevSlide&quot; onclick=&quot;plusSlides(-1)&quot;&gt;❮&lt;/a&gt;
+&lt;a class=&quot;nextSlide&quot; onclick=&quot;plusSlides(1)&quot;&gt;❯&lt;/a&gt;
+&lt;a class=&quot;prevRow&quot; onclick=&quot;plusRows(-1)&quot;&gt;❮&lt;/a&gt;
+&lt;a class=&quot;nextRow&quot; onclick=&quot;plusRows(1)&quot;&gt;❯&lt;/a&gt;
+  &lt;div class=&quot;mySlides&quot;&gt;
+    &lt;div class=&quot;slide-number&quot;&gt;1 / 12&lt;/div&gt;
+    
+
+
+
+&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/21.08.01/Spongie_Bandages.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/Spongie_Bandages-580x435.png 580w,    /assets/resized/Spongie_Bandages-290x218.png 290w,    /assets/resized/Spongie_Bandages-170x128.png 170w,    /assets/resized/Spongie_Bandages-145x109.png 145w, /assets/img/posts/21.08.01/Spongie_Bandages.png 800w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;mySlides&quot;&gt;
+    &lt;div class=&quot;slide-number&quot;&gt;2 / 12&lt;/div&gt;
+    
+
+
+
+&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/21.08.01/Spongie_Hypospray.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/Spongie_Hypospray-580x435.png 580w,    /assets/resized/Spongie_Hypospray-290x218.png 290w,    /assets/resized/Spongie_Hypospray-170x128.png 170w,    /assets/resized/Spongie_Hypospray-145x109.png 145w, /assets/img/posts/21.08.01/Spongie_Hypospray.png 800w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;mySlides&quot;&gt;
+    &lt;div class=&quot;slide-number&quot;&gt;3 / 12&lt;/div&gt;
+    
+
+
+
+&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/21.08.01/Spongie_Tools.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/Spongie_Tools-580x435.png 580w,    /assets/resized/Spongie_Tools-290x218.png 290w,    /assets/resized/Spongie_Tools-170x128.png 170w,    /assets/resized/Spongie_Tools-145x109.png 145w, /assets/img/posts/21.08.01/Spongie_Tools.png 800w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;mySlides&quot;&gt;
+    &lt;div class=&quot;slide-number&quot;&gt;4 / 12&lt;/div&gt;
+    
+
+
+
+&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/21.08.01/Spongie_CaptainHat.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/Spongie_CaptainHat-580x435.png 580w,    /assets/resized/Spongie_CaptainHat-290x218.png 290w,    /assets/resized/Spongie_CaptainHat-170x128.png 170w,    /assets/resized/Spongie_CaptainHat-145x109.png 145w, /assets/img/posts/21.08.01/Spongie_CaptainHat.png 800w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;mySlides&quot;&gt;
+    &lt;div class=&quot;slide-number&quot;&gt;5 / 12&lt;/div&gt;
+    
+
+
+
+&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/21.08.01/Spongie_Shoes.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/Spongie_Shoes-580x435.png 580w,    /assets/resized/Spongie_Shoes-290x218.png 290w,    /assets/resized/Spongie_Shoes-170x128.png 170w,    /assets/resized/Spongie_Shoes-145x109.png 145w, /assets/img/posts/21.08.01/Spongie_Shoes.png 800w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;mySlides&quot;&gt;
+    &lt;div class=&quot;slide-number&quot;&gt;6 / 12&lt;/div&gt;
+    
+
+
+
+&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/21.08.01/Spongie_Boots.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/Spongie_Boots-580x435.png 580w,    /assets/resized/Spongie_Boots-290x218.png 290w,    /assets/resized/Spongie_Boots-170x128.png 170w,    /assets/resized/Spongie_Boots-145x109.png 145w, /assets/img/posts/21.08.01/Spongie_Boots.png 800w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;mySlides&quot;&gt;
+    &lt;div class=&quot;slide-number&quot;&gt;7 / 12&lt;/div&gt;
+    
+
+
+
+&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/21.08.01/Spongie_EngineerHardsuit.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/Spongie_EngineerHardsuit-580x435.png 580w,    /assets/resized/Spongie_EngineerHardsuit-290x218.png 290w,    /assets/resized/Spongie_EngineerHardsuit-170x128.png 170w,    /assets/resized/Spongie_EngineerHardsuit-145x109.png 145w, /assets/img/posts/21.08.01/Spongie_EngineerHardsuit.png 800w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;mySlides&quot;&gt;
+    &lt;div class=&quot;slide-number&quot;&gt;8 / 12&lt;/div&gt;
+    
+
+
+
+&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/21.08.01/Spongie_AtmosHardsuit.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/Spongie_AtmosHardsuit-580x435.png 580w,    /assets/resized/Spongie_AtmosHardsuit-290x218.png 290w,    /assets/resized/Spongie_AtmosHardsuit-170x128.png 170w,    /assets/resized/Spongie_AtmosHardsuit-145x109.png 145w, /assets/img/posts/21.08.01/Spongie_AtmosHardsuit.png 800w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;mySlides&quot;&gt;
+    &lt;div class=&quot;slide-number&quot;&gt;9 / 12&lt;/div&gt;
+    
+
+
+
+&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/21.08.01/Spongie_ChiefEngineerHardsuit.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/Spongie_ChiefEngineerHardsuit-580x435.png 580w,    /assets/resized/Spongie_ChiefEngineerHardsuit-290x218.png 290w,    /assets/resized/Spongie_ChiefEngineerHardsuit-170x128.png 170w,    /assets/resized/Spongie_ChiefEngineerHardsuit-145x109.png 145w, /assets/img/posts/21.08.01/Spongie_ChiefEngineerHardsuit.png 800w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;mySlides&quot;&gt;
+    &lt;div class=&quot;slide-number&quot;&gt;10 / 12&lt;/div&gt;
+    
+
+
+
+&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/21.08.01/Spongie_MiningHardsuit.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/Spongie_MiningHardsuit-580x435.png 580w,    /assets/resized/Spongie_MiningHardsuit-290x218.png 290w,    /assets/resized/Spongie_MiningHardsuit-170x128.png 170w,    /assets/resized/Spongie_MiningHardsuit-145x109.png 145w, /assets/img/posts/21.08.01/Spongie_MiningHardsuit.png 800w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;mySlides&quot;&gt;
+    &lt;div class=&quot;slide-number&quot;&gt;11 / 12&lt;/div&gt;
+    
+
+
+
+&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/21.08.01/Spongie_SecurityHardsuit.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/Spongie_SecurityHardsuit-580x435.png 580w,    /assets/resized/Spongie_SecurityHardsuit-290x218.png 290w,    /assets/resized/Spongie_SecurityHardsuit-170x128.png 170w,    /assets/resized/Spongie_SecurityHardsuit-145x109.png 145w, /assets/img/posts/21.08.01/Spongie_SecurityHardsuit.png 800w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;mySlides&quot;&gt;
+    &lt;div class=&quot;slide-number&quot;&gt;12 / 12&lt;/div&gt;
+    
+
+
+
+&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/21.08.01/Spongie_SyndicateHardsuit.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/Spongie_SyndicateHardsuit-580x435.png 580w,    /assets/resized/Spongie_SyndicateHardsuit-290x218.png 290w,    /assets/resized/Spongie_SyndicateHardsuit-170x128.png 170w,    /assets/resized/Spongie_SyndicateHardsuit-145x109.png 145w, /assets/img/posts/21.08.01/Spongie_SyndicateHardsuit.png 800w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;myRows&quot;&gt;
+    &lt;div class=&quot;row&quot;&gt;
+      &lt;div class=&quot;column&quot;&gt;
+        &lt;img class=&quot;thumbs cursor&quot; src=&quot;/assets/img/posts/21.08.01/Spongie_Bandages.png&quot; alt=&quot;Splint, Bandage, Gauze&quot; onclick=&quot;currentSlide(1)&quot; /&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;column&quot;&gt;
+        &lt;img class=&quot;thumbs cursor&quot; src=&quot;/assets/img/posts/21.08.01/Spongie_Hypospray.png&quot; alt=&quot;Hypospray&quot; onclick=&quot;currentSlide(2)&quot; /&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;column&quot;&gt;
+        &lt;img class=&quot;thumbs cursor&quot; src=&quot;/assets/img/posts/21.08.01/Spongie_Tools.png&quot; alt=&quot;Plasma Cutter, Fire Axe&quot; onclick=&quot;currentSlide(3)&quot; /&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;column&quot;&gt;
+        &lt;img class=&quot;thumbs cursor&quot; src=&quot;/assets/img/posts/21.08.01/Spongie_CaptainHat.png&quot; alt=&quot;Captain's Fancy Hat&quot; onclick=&quot;currentSlide(4)&quot; /&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;column&quot;&gt;
+        &lt;img class=&quot;thumbs cursor&quot; src=&quot;/assets/img/posts/21.08.01/Spongie_Shoes.png&quot; alt=&quot;Ducky + Bunny Slippers &amp;amp; Lace-Up Shoes&quot; onclick=&quot;currentSlide(5)&quot; /&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;column&quot;&gt;
+        &lt;img class=&quot;thumbs cursor&quot; src=&quot;/assets/img/posts/21.08.01/Spongie_Boots.png&quot; alt=&quot;Engineer &amp;amp; Mining Work Boots&quot; onclick=&quot;currentSlide(6)&quot; /&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;myRows&quot;&gt;
+    &lt;div class=&quot;row&quot;&gt;
+      &lt;div class=&quot;column&quot;&gt;
+        &lt;img class=&quot;thumbs cursor&quot; src=&quot;/assets/img/posts/21.08.01/Spongie_EngineerHardsuit.png&quot; alt=&quot;Engineer Hardsuit&quot; onclick=&quot;currentSlide(7)&quot; /&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;column&quot;&gt;
+        &lt;img class=&quot;thumbs cursor&quot; src=&quot;/assets/img/posts/21.08.01/Spongie_AtmosHardsuit.png&quot; alt=&quot;Atmospheric Technician  Hardsuit&quot; onclick=&quot;currentSlide(8)&quot; /&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;column&quot;&gt;
+        &lt;img class=&quot;thumbs cursor&quot; src=&quot;/assets/img/posts/21.08.01/Spongie_ChiefEngineerHardsuit.png&quot; alt=&quot;Chief Engineer Hardsuit&quot; onclick=&quot;currentSlide(9)&quot; /&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;column&quot;&gt;
+        &lt;img class=&quot;thumbs cursor&quot; src=&quot;/assets/img/posts/21.08.01/Spongie_MiningHardsuit.png&quot; alt=&quot;Mining  Hardsuit&quot; onclick=&quot;currentSlide(10)&quot; /&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;column&quot;&gt;
+        &lt;img class=&quot;thumbs cursor&quot; src=&quot;/assets/img/posts/21.08.01/Spongie_SecurityHardsuit.png&quot; alt=&quot;Security Hardsuit&quot; onclick=&quot;currentSlide(11)&quot; /&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;column&quot;&gt;
+        &lt;img class=&quot;thumbs cursor&quot; src=&quot;/assets/img/posts/21.08.01/Spongie_SyndicateHardsuit.png&quot; alt=&quot;Syndicate Hardsuit&quot; onclick=&quot;currentSlide(12)&quot; /&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;textures&quot;&gt;Textures&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;Konstantin&lt;/strong&gt; is always dominating this section and this month he did so be these fantastic bullet hole overlays and this totally not Mr. House AI screen.&lt;/p&gt;
+
+&lt;div class=&quot;horizontal-2&quot;&gt;
+
+  &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/21.08.01/Konstantin_BulletHoles.png&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/Konstantin_BulletHoles-580x435.png 580w,    /assets/resized/Konstantin_BulletHoles-290x218.png 290w,    /assets/resized/Konstantin_BulletHoles-170x128.png 170w,    /assets/resized/Konstantin_BulletHoles-145x109.png 145w, /assets/img/posts/21.08.01/Konstantin_BulletHoles.png 800w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+
+  &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/21.08.01/Konstantin_House.png&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/Konstantin_House-580x435.png 580w,    /assets/resized/Konstantin_House-290x218.png 290w,    /assets/resized/Konstantin_House-170x128.png 170w,    /assets/resized/Konstantin_House-145x109.png 145w, /assets/img/posts/21.08.01/Konstantin_House.png 800w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;music&quot;&gt;Music&lt;/h2&gt;
+
+&lt;p&gt;We don’t get audio submissions too often so it’s always fun when we do; from &lt;strong&gt;John&lt;/strong&gt; this month, &lt;a href=&quot;https://soundcloud.com/joao-pedro-buratto/breach&quot; target=&quot;_blank&quot;&gt;“Breach”&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;art&quot;&gt;Art&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;Spongie&lt;/strong&gt; also made these wonderfully immersive wallpapers using the new engineer hardsuit and plasmacutter they made.&lt;/p&gt;
+
+&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/art/Spongie/SpongieSpaceEngineer1.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/SpongieSpaceEngineer1-580x326.png 580w,    /assets/resized/SpongieSpaceEngineer1-290x163.png 290w,    /assets/resized/SpongieSpaceEngineer1-170x96.png 170w,    /assets/resized/SpongieSpaceEngineer1-145x82.png 145w, /assets/img/art/Spongie/SpongieSpaceEngineer1.png 3840w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+
+&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/art/Spongie/SpongieSpaceEngineer2.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/SpongieSpaceEngineer2-580x326.png 580w,    /assets/resized/SpongieSpaceEngineer2-290x163.png 290w,    /assets/resized/SpongieSpaceEngineer2-170x96.png 170w,    /assets/resized/SpongieSpaceEngineer2-145x82.png 145w, /assets/img/art/Spongie/SpongieSpaceEngineer2.png 3840w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+
+&lt;p&gt;Again &lt;strong&gt;ProbablyNot&lt;/strong&gt; blessed us with another great blog cover art, as well as a bonus render to tease you on the new trailer he is working on.&lt;/p&gt;
+
+&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/art/ProbablyNot/ProbablyNot_Reply.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/ProbablyNot_Reply-580x326.png 580w,    /assets/resized/ProbablyNot_Reply-290x163.png 290w,    /assets/resized/ProbablyNot_Reply-170x96.png 170w,    /assets/resized/ProbablyNot_Reply-145x82.png 145w, /assets/img/art/ProbablyNot/ProbablyNot_Reply.png 3840w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+
+&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/art/ProbablyNot/ProbablyNot_TrailerPreview.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/ProbablyNot_TrailerPreview-580x326.png 580w,    /assets/resized/ProbablyNot_TrailerPreview-290x163.png 290w,    /assets/resized/ProbablyNot_TrailerPreview-170x96.png 170w,    /assets/resized/ProbablyNot_TrailerPreview-145x82.png 145w, /assets/img/art/ProbablyNot/ProbablyNot_TrailerPreview.png 1920w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
+
+&lt;p&gt;These eventful months are always a blast, and with the tilemap roadblock now lifted these active months &lt;em&gt;should&lt;/em&gt; start becoming more common for us. We also want to thank all of our supporters, contributors, and idea guys over the last 3 years. As a contributor and maintainer for the last 2 years, it’s been a hell of a blast and I know the other developers will say the same thing!&lt;/p&gt;
+
+&lt;p&gt;If you’re interested in joining the discussions surrounding design and development or simply lurking to check out content as it’s being made, please feel free to join us on our &lt;a href=&quot;https://discord.gg/3ny9tdH&quot; target=&quot;_blank&quot;&gt;Discord&lt;/a&gt;.&lt;/p&gt;</content><author><name>CosmicCoincidence</name></author><summary type="html">“One day I will find the right words, and they will be simple.”</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://ss3d.space/assets/img/art/ProbablyNot/ProbablyNot_Reply.png" /></entry><entry><title type="html">21.07: July 2021 Devblog</title><link href="https://ss3d.space/2021/08/04/21.07.html" rel="alternate" type="text/html" title="21.07: July 2021 Devblog" /><published>2021-08-04T11:30:00+00:00</published><updated>2021-08-04T11:30:00+00:00</updated><id>https://ss3d.space/2021/08/04/21.07</id><content type="html" xml:base="https://ss3d.space/2021/08/04/21.07.html">&lt;p&gt;“Nurse! We need 5 litres of blood stat, doesn’t matter where you get it, just get it!”&lt;/p&gt;
 
 &lt;h1 id=&quot;july-recap&quot;&gt;July Recap&lt;/h1&gt;
 
@@ -849,96 +1123,4 @@ Because a dance with the Devil might last you forever…”&lt;/em&gt;&lt;/p&gt;
 
 &lt;p&gt;Join community discussions, ideas, and see WIP content from us over at our &lt;a href=&quot;https://discord.gg/3ny9tdH&quot; target=&quot;_blank&quot;&gt;Discord&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;See you back next month!&lt;/p&gt;</content><author><name>CosmicCoincidence</name></author><summary type="html">The community we share brings us joy and robustness for years to come!</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://ss3d.space/assets/img/art/Bug/Bug_Spacegiving.png" /></entry><entry><title type="html">20.10: October 2020 Devblog</title><link href="https://ss3d.space/2020/11/08/20.10.html" rel="alternate" type="text/html" title="20.10: October 2020 Devblog" /><published>2020-11-08T05:30:00+00:00</published><updated>2020-11-08T05:30:00+00:00</updated><id>https://ss3d.space/2020/11/08/20.10</id><content type="html" xml:base="https://ss3d.space/2020/11/08/20.10.html">&lt;p&gt;Hope you all had a SpOOky halloween!&lt;/p&gt;
-
-&lt;h1 id=&quot;october-recap&quot;&gt;October Recap&lt;/h1&gt;
-
-&lt;p&gt;This month was a bit slow in development again, but we have had a fun time in the discord with this month’s art contest (winners announced below)!&lt;/p&gt;
-
-&lt;h2 id=&quot;fixes&quot;&gt;Fixes&lt;/h2&gt;
-
-&lt;p&gt;&lt;strong&gt;Macoron&lt;/strong&gt;, a new contributor this month, separated the game logic from the UI views with individual prefabs which should help decrease future spaghetti code.&lt;/p&gt;
-
-&lt;h2 id=&quot;models&quot;&gt;Models&lt;/h2&gt;
-
-&lt;p&gt;&lt;strong&gt;Eiko&lt;/strong&gt; never seems to dissapoint with his 3D art! This month he contributed a boxing mat, boxing ring, throwing knives &amp;amp; stars, and a few adorable plushies!&lt;/p&gt;
-
-&lt;div class=&quot;horizontal-2&quot;&gt;
-
-  &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/20.10.01/Eiko_BoxingMat.png&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/Eiko_BoxingMat-580x435.png 580w,    /assets/resized/Eiko_BoxingMat-290x218.png 290w,    /assets/resized/Eiko_BoxingMat-170x128.png 170w,    /assets/resized/Eiko_BoxingMat-145x109.png 145w, /assets/img/posts/20.10.01/Eiko_BoxingMat.png 800w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-
-  &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/20.10.01/Eiko_BoxingRing.png&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/Eiko_BoxingRing-580x435.png 580w,    /assets/resized/Eiko_BoxingRing-290x218.png 290w,    /assets/resized/Eiko_BoxingRing-170x128.png 170w,    /assets/resized/Eiko_BoxingRing-145x109.png 145w, /assets/img/posts/20.10.01/Eiko_BoxingRing.png 800w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/20.10.01/Eiko_Shuriken.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/Eiko_Shuriken-580x435.png 580w,    /assets/resized/Eiko_Shuriken-290x218.png 290w,    /assets/resized/Eiko_Shuriken-170x128.png 170w,    /assets/resized/Eiko_Shuriken-145x109.png 145w, /assets/img/posts/20.10.01/Eiko_Shuriken.png 800w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-
-&lt;div class=&quot;horizontal-2&quot;&gt;
-
-  &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/20.10.01/Eiko_Plushie.png&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/Eiko_Plushie-580x435.png 580w,    /assets/resized/Eiko_Plushie-290x218.png 290w,    /assets/resized/Eiko_Plushie-170x128.png 170w,    /assets/resized/Eiko_Plushie-145x109.png 145w, /assets/img/posts/20.10.01/Eiko_Plushie.png 800w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-
-  &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/20.10.01/Eiko_Plushies.png&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/Eiko_Plushies-580x435.png 580w,    /assets/resized/Eiko_Plushies-290x218.png 290w,    /assets/resized/Eiko_Plushies-170x128.png 170w,    /assets/resized/Eiko_Plushies-145x109.png 145w, /assets/img/posts/20.10.01/Eiko_Plushies.png 800w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;h2 id=&quot;ui&quot;&gt;UI&lt;/h2&gt;
-
-&lt;p&gt;&lt;strong&gt;Konstantin3001&lt;/strong&gt; is back with more UI graphics, specifically with a targetting doll.&lt;/p&gt;
-
-&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/20.10.01/Konstantin_TargetDoll.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/Konstantin_TargetDoll-580x435.png 580w,    /assets/resized/Konstantin_TargetDoll-290x218.png 290w,    /assets/resized/Konstantin_TargetDoll-170x128.png 170w,    /assets/resized/Konstantin_TargetDoll-145x109.png 145w, /assets/img/posts/20.10.01/Konstantin_TargetDoll.png 800w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-
-&lt;h2 id=&quot;art&quot;&gt;Art&lt;/h2&gt;
-
-&lt;p&gt;And the moment many of you have been waiting for, we are announcing the winners of the Halloween 2020 Art Contest! But first, this month’s blog cover art is by &lt;strong&gt;ProbablyNot&lt;/strong&gt;, whom was disqualified from the art contest for being a member of Centcom.&lt;/p&gt;
-
-&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/art/ProbablyNot/ProbablyNot_Harvest.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/ProbablyNot_Harvest-580x326.png 580w,    /assets/resized/ProbablyNot_Harvest-290x163.png 290w,    /assets/resized/ProbablyNot_Harvest-170x96.png 170w,    /assets/resized/ProbablyNot_Harvest-145x82.png 145w, /assets/img/art/ProbablyNot/ProbablyNot_Harvest.png 3840w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-
-&lt;p&gt;Contest submissions below!&lt;/p&gt;
-
-&lt;div&gt;
-    
-
-
-
-&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/art/Bug/Bug_Halloween2020.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/Bug_Halloween2020-580x326.png 580w,    /assets/resized/Bug_Halloween2020-290x163.png 290w,    /assets/resized/Bug_Halloween2020-170x96.png 170w,    /assets/resized/Bug_Halloween2020-145x82.png 145w, /assets/img/art/Bug/Bug_Halloween2020.png 1920w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-    &lt;h5&gt;&lt;i&gt;Artist - Bug&lt;/i&gt;&lt;/h5&gt;
-&lt;/div&gt;
-
-&lt;div&gt;
-    
-
-
-
-&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/art/Igiari/Igiari_Halloween2020.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/Igiari_Halloween2020-580x326.png 580w,    /assets/resized/Igiari_Halloween2020-290x163.png 290w,    /assets/resized/Igiari_Halloween2020-170x96.png 170w,    /assets/resized/Igiari_Halloween2020-145x82.png 145w, /assets/img/art/Igiari/Igiari_Halloween2020.png 3840w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-    &lt;h5&gt;&lt;i&gt;Artist - Igiari&lt;/i&gt;&lt;/h5&gt;
-&lt;/div&gt;
-
-&lt;div&gt;
-    
-
-
-
-&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/art/Sice/Sice_Halloween2020.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/Sice_Halloween2020-580x326.png 580w,    /assets/resized/Sice_Halloween2020-290x163.png 290w,    /assets/resized/Sice_Halloween2020-170x96.png 170w,    /assets/resized/Sice_Halloween2020-145x82.png 145w, /assets/img/art/Sice/Sice_Halloween2020.png 1920w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-    &lt;h5&gt;&lt;i&gt;Artist - Sice&lt;/i&gt;&lt;/h5&gt;
-&lt;/div&gt;
-
-&lt;div&gt;
-    
-
-
-
-&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/art/Turkey/Turkey_Halloween2020.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/Turkey_Halloween2020-580x326.png 580w,    /assets/resized/Turkey_Halloween2020-290x163.png 290w,    /assets/resized/Turkey_Halloween2020-170x96.png 170w,    /assets/resized/Turkey_Halloween2020-145x82.png 145w, /assets/img/art/Turkey/Turkey_Halloween2020.png 3840w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-    &lt;h5&gt;&lt;i&gt;Artist - Turkey&lt;/i&gt;&lt;/h5&gt;
-&lt;/div&gt;
-
-&lt;p&gt;Contest winners:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;1st Place ($50): &lt;strong&gt;Turkey&lt;/strong&gt;&lt;/li&gt;
-  &lt;li&gt;2nd Place ($25): &lt;strong&gt;Bug&lt;/strong&gt;&lt;/li&gt;
-  &lt;li&gt;3rd Place ($10): &lt;strong&gt;Sice&lt;/strong&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Congratulations winners, to recieve your prizes contact &lt;strong&gt;ProbablyNot&lt;/strong&gt; on discord.&lt;/p&gt;
-
-&lt;h3 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h3&gt;
-
-&lt;p&gt;Missed the art contest? Well join our &lt;a href=&quot;https://discord.gg/3ny9tdH&quot; target=&quot;_blank&quot;&gt;Discord&lt;/a&gt; so you dont miss out on any future contests!&lt;/p&gt;</content><author><name>CosmicCoincidence</name></author><summary type="html">Hope you all had a SpOOky halloween!</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://ss3d.space/assets/img/art/ProbablyNot/ProbablyNot_Harvest.png" /></entry></feed>
+&lt;p&gt;See you back next month!&lt;/p&gt;</content><author><name>CosmicCoincidence</name></author><summary type="html">The community we share brings us joy and robustness for years to come!</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://ss3d.space/assets/img/art/Bug/Bug_Spacegiving.png" /></entry></feed>
