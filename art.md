@@ -78,6 +78,9 @@ permalink: /art/
 # Goao (John)
 {: class="centred" }
 
+### [Breach](https://soundcloud.com/joao-pedro-buratto/breach){:target="_blank"}
+{: class="centred" }
+
 ### [Title 3 - Tin Tin REMIX](https://soundcloud.com/joao-pedro-buratto/tin-tin-title3-mix-7-version-6){:target="_blank"}
 {: class="centred" }
 
@@ -136,6 +139,10 @@ permalink: /art/
 # Probably Not
 {: class="centred" }
 
+{% responsive_image path: assets/img/art/ProbablyNot/ProbablyNot_Reply.png template: _includes/srcset.html %}
+
+{% responsive_image path: assets/img/art/ProbablyNot/ProbablyNot_TrailerPreview.png template: _includes/srcset.html %}
+
 {% responsive_image path: assets/img/art/ProbablyNot/ProbablyNot_Medic.png template: _includes/srcset.html %}
 
 {% responsive_image path: assets/img/art/ProbablyNot/ProbablyNot_Janitor.png template: _includes/srcset.html %}
@@ -160,6 +167,12 @@ permalink: /art/
 {: class="centred" }
 
 {% responsive_image path: assets/img/art/Sice/Sice_Halloween2020.png template: _includes/srcset.html %}
+
+# Spongie
+
+{% responsive_image path: assets/img/art/Spongie/SpongieSpaceEngineer1.png template: _includes/srcset.html %}
+
+{% responsive_image path: assets/img/art/Spongie/SpongieSpaceEngineer2.png template: _includes/srcset.html %}
 
 # Sunberry
 {: class="centred" }
