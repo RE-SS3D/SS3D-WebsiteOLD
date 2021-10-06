@@ -168,7 +168,13 @@ permalink: /art/
 
 {% responsive_image path: assets/img/art/Sice/Sice_Halloween2020.png template: _includes/srcset.html %}
 
+# Smoking Man
+{: class="centred" }
+
+{% responsive_image path: assets/img/art/SmokingMan/SmokingMan_Closet.png template: _includes/srcset.html %}
+
 # Spongie
+{: class="centred" }
 
 {% responsive_image path: assets/img/art/Spongie/SpongieSpaceEngineer1.png template: _includes/srcset.html %}
 
