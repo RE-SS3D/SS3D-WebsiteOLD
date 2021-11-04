@@ -1,4 +1,36 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://ss3d.space/feed.xml" rel="self" type="application/atom+xml" /><link href="https://ss3d.space/" rel="alternate" type="text/html" /><updated>2021-10-06T21:11:56+00:00</updated><id>https://ss3d.space/feed.xml</id><title type="html">RE:SS3D</title><subtitle>This is a 3D recreation of Space Station 13, on the Unity engine, which will come with its own set of gameplay/graphical improvements. </subtitle><entry><title type="html">21.09: September 2021 Devblog</title><link href="https://ss3d.space/2021/10/06/21.09.html" rel="alternate" type="text/html" title="21.09: September 2021 Devblog" /><published>2021-10-06T11:30:00+00:00</published><updated>2021-10-06T11:30:00+00:00</updated><id>https://ss3d.space/2021/10/06/21.09</id><content type="html" xml:base="https://ss3d.space/2021/10/06/21.09.html">&lt;p&gt;&lt;em&gt;“The world is indeed comic, but the joke is on mankind.”&lt;/em&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://ss3d.space/feed.xml" rel="self" type="application/atom+xml" /><link href="https://ss3d.space/" rel="alternate" type="text/html" /><updated>2021-11-04T17:48:25+00:00</updated><id>https://ss3d.space/feed.xml</id><title type="html">RE:SS3D</title><subtitle>This is a 3D recreation of Space Station 13, on the Unity engine, which will come with its own set of gameplay/graphical improvements. </subtitle><entry><title type="html">21.10: October 2021 Devblog</title><link href="https://ss3d.space/2021/11/04/21.10.html" rel="alternate" type="text/html" title="21.10: October 2021 Devblog" /><published>2021-11-04T11:30:00+00:00</published><updated>2021-11-04T11:30:00+00:00</updated><id>https://ss3d.space/2021/11/04/21.10</id><content type="html" xml:base="https://ss3d.space/2021/11/04/21.10.html">&lt;p&gt;Small changes with a big impact.&lt;/p&gt;
+
+&lt;h1 id=&quot;october-recap&quot;&gt;October Recap&lt;/h1&gt;
+
+&lt;p&gt;Very few merged changes this month, but none were lacking in importance as they are all related to networking or core system performance.&lt;/p&gt;
+
+&lt;h2 id=&quot;details&quot;&gt;Details&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;Alainx277&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;GREATLY improved the performance of the examine system.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Ryan&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Updated the Mirror version for the project, to v49.0.1.&lt;/li&gt;
+  &lt;li&gt;Fixed a bug where clients weren’t reinitializing the map after it loaded.&lt;/li&gt;
+  &lt;li&gt;Fixed an issue preventing child objects from being found during reinitialization.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;art&quot;&gt;Art&lt;/h2&gt;
+
+&lt;p&gt;As per usual, this month’s blog cover was contributed by &lt;strong&gt;ProbablyNot&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/art/ProbablyNot/ProbablyNot_Heck.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/ProbablyNot_Heck-580x326.png 580w,    /assets/resized/ProbablyNot_Heck-290x163.png 290w,    /assets/resized/ProbablyNot_Heck-170x96.png 170w,    /assets/resized/ProbablyNot_Heck-145x82.png 145w, /assets/img/art/ProbablyNot/ProbablyNot_Heck.png 3840w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+
+&lt;p&gt;And another was bestowed on us by &lt;strong&gt;John&lt;/strong&gt; this month too.&lt;/p&gt;
+
+&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/art/Goao/JohnDrifting.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/JohnDrifting-580x326.png 580w,    /assets/resized/JohnDrifting-290x163.png 290w,    /assets/resized/JohnDrifting-170x96.png 170w,    /assets/resized/JohnDrifting-145x82.png 145w, /assets/img/art/Goao/JohnDrifting.png 1920w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
+
+&lt;p&gt;Another month with little progress to show but don’t let that discourage your hopes for this game, if you want to see more intermittent progress, feel free to join us in our &lt;a href=&quot;https://discord.gg/3ny9tdH&quot; target=&quot;_blank&quot;&gt;Discord&lt;/a&gt; server.&lt;/p&gt;</content><author><name>CosmicCoincidence</name></author><summary type="html">Small changes with a big impact.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://ss3d.space/assets/img/art/ProbablyNot/ProbablyNot_Heck.png" /></entry><entry><title type="html">21.09: September 2021 Devblog</title><link href="https://ss3d.space/2021/10/06/21.09.html" rel="alternate" type="text/html" title="21.09: September 2021 Devblog" /><published>2021-10-06T11:30:00+00:00</published><updated>2021-10-06T11:30:00+00:00</updated><id>https://ss3d.space/2021/10/06/21.09</id><content type="html" xml:base="https://ss3d.space/2021/10/06/21.09.html">&lt;p&gt;&lt;em&gt;“The world is indeed comic, but the joke is on mankind.”&lt;/em&gt;&lt;/p&gt;
 
 &lt;p&gt;– H. P. Lovecraft&lt;/p&gt;
 
@@ -1089,54 +1121,4 @@ Because a dance with the Devil might last you forever…”&lt;/em&gt;&lt;/p&gt;
 
 &lt;p&gt;It has been a rough past year. But 2021 is already showing some promise, especially for SS3D. Stay safe and stay tuned everyone.&lt;/p&gt;
 
-&lt;p&gt;Also join our &lt;a href=&quot;https://discord.gg/3ny9tdH&quot; target=&quot;_blank&quot;&gt;Discord&lt;/a&gt; if you haven’t already, por favor.&lt;/p&gt;</content><author><name></name></author><summary type="html">Spatial awareness is a necessary skill to do your job.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://ss3d.space/assets/img/art/ProbablyNot/ProbablyNot_PDA.png" /></entry><entry><title type="html">20.12: December 2020 Devblog</title><link href="https://ss3d.space/2021/01/13/20.12.html" rel="alternate" type="text/html" title="20.12: December 2020 Devblog" /><published>2021-01-13T05:30:00+00:00</published><updated>2021-01-13T05:30:00+00:00</updated><id>https://ss3d.space/2021/01/13/20.12</id><content type="html" xml:base="https://ss3d.space/2021/01/13/20.12.html">&lt;p&gt;Cheers to the new years, let hope this one is better than the last!&lt;/p&gt;
-
-&lt;h1 id=&quot;december-recap&quot;&gt;December Recap&lt;/h1&gt;
-
-&lt;p&gt;Apologies for the delay in gettting this month’s blog post made, but we hope everyone had a great holiday season despite what we are all going through in this crazy world.&lt;/p&gt;
-
-&lt;h2 id=&quot;fixes&quot;&gt;Fixes&lt;/h2&gt;
-
-&lt;p&gt;&lt;strong&gt;Seteron&lt;/strong&gt; Retimed the move cycle to fix the symmetry of the run/walk animations. He also fixed the inverted SSRT when using OpenGL drivers.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;John&lt;/strong&gt; made countless small fixes to many of our models again this month, regarding topology, shading, style, and more.&lt;/p&gt;
-
-&lt;h2 id=&quot;details&quot;&gt;Details&lt;/h2&gt;
-
-&lt;p&gt;&lt;strong&gt;CosmicCoincidence&lt;/strong&gt; moved several more art assets into the game, most notably some botany-related furniture, items, and plants (and added a botany room to the station).&lt;/p&gt;
-
-&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/20.12.01/BotanyMap.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/BotanyMap-580x435.png 580w,    /assets/resized/BotanyMap-290x218.png 290w,    /assets/resized/BotanyMap-170x128.png 170w,    /assets/resized/BotanyMap-145x109.png 145w, /assets/img/posts/20.12.01/BotanyMap.png 800w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-
-&lt;h2 id=&quot;models&quot;&gt;Models&lt;/h2&gt;
-
-&lt;p&gt;This month, &lt;strong&gt;UnevenPrankster&lt;/strong&gt; returned with a new wall-mounted safe!&lt;/p&gt;
-
-&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/20.12.01/UnevenPrankster_WallSafe.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/UnevenPrankster_WallSafe-580x435.png 580w,    /assets/resized/UnevenPrankster_WallSafe-290x218.png 290w,    /assets/resized/UnevenPrankster_WallSafe-170x128.png 170w,    /assets/resized/UnevenPrankster_WallSafe-145x109.png 145w, /assets/img/posts/20.12.01/UnevenPrankster_WallSafe.png 800w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-
-&lt;p&gt;&lt;strong&gt;Goao&lt;/strong&gt; also submitted a few things this month, including a keg, wire cutters, an action figure, a toy spaceship, and a full assortment of grenades!&lt;/p&gt;
-
-&lt;div class=&quot;horizontal-2&quot;&gt;
-
-  &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/20.12.01/GoaoKeg.png&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/GoaoKeg-580x435.png 580w,    /assets/resized/GoaoKeg-290x218.png 290w,    /assets/resized/GoaoKeg-170x128.png 170w,    /assets/resized/GoaoKeg-145x109.png 145w, /assets/img/posts/20.12.01/GoaoKeg.png 800w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-
-  &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/20.12.01/GoaoWirecutters.png&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/GoaoWirecutters-580x435.png 580w,    /assets/resized/GoaoWirecutters-290x218.png 290w,    /assets/resized/GoaoWirecutters-170x128.png 170w,    /assets/resized/GoaoWirecutters-145x109.png 145w, /assets/img/posts/20.12.01/GoaoWirecutters.png 800w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;div class=&quot;horizontal-2&quot;&gt;
-
-  &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/20.12.01/GoaoActionFigure.png&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/GoaoActionFigure-580x435.png 580w,    /assets/resized/GoaoActionFigure-290x218.png 290w,    /assets/resized/GoaoActionFigure-170x128.png 170w,    /assets/resized/GoaoActionFigure-145x109.png 145w, /assets/img/posts/20.12.01/GoaoActionFigure.png 800w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-
-  &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/20.12.01/GoaoFighterToy.png&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/GoaoFighterToy-580x435.png 580w,    /assets/resized/GoaoFighterToy-290x218.png 290w,    /assets/resized/GoaoFighterToy-170x128.png 170w,    /assets/resized/GoaoFighterToy-145x109.png 145w, /assets/img/posts/20.12.01/GoaoFighterToy.png 800w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/20.12.01/GoaoExplosives.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/GoaoExplosives-580x435.png 580w,    /assets/resized/GoaoExplosives-290x218.png 290w,    /assets/resized/GoaoExplosives-170x128.png 170w,    /assets/resized/GoaoExplosives-145x109.png 145w, /assets/img/posts/20.12.01/GoaoExplosives.png 800w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-
-&lt;h2 id=&quot;art&quot;&gt;Art&lt;/h2&gt;
-
-&lt;p&gt;This month’s friendly blog cover-art is brought to us by &lt;strong&gt;Eiko&lt;/strong&gt;!&lt;/p&gt;
-
-&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/art/Eiko/Eiko_Friends.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/Eiko_Friends-580x326.png 580w,    /assets/resized/Eiko_Friends-290x163.png 290w,    /assets/resized/Eiko_Friends-170x96.png 170w,    /assets/resized/Eiko_Friends-145x82.png 145w, /assets/img/art/Eiko/Eiko_Friends.png 1920w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-
-&lt;h3 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h3&gt;
-
-&lt;p&gt;Want to get more updates or interact with our community? Then join us at our &lt;a href=&quot;https://discord.gg/3ny9tdH&quot; target=&quot;_blank&quot;&gt;Discord&lt;/a&gt;!&lt;/p&gt;</content><author><name>CosmicCoincidence</name></author><summary type="html">Cheers to the new years, let hope this one is better than the last!</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://ss3d.space/assets/img/art/Eiko/Eiko_Friends.png" /></entry></feed>
+&lt;p&gt;Also join our &lt;a href=&quot;https://discord.gg/3ny9tdH&quot; target=&quot;_blank&quot;&gt;Discord&lt;/a&gt; if you haven’t already, por favor.&lt;/p&gt;</content><author><name></name></author><summary type="html">Spatial awareness is a necessary skill to do your job.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://ss3d.space/assets/img/art/ProbablyNot/ProbablyNot_PDA.png" /></entry></feed>
