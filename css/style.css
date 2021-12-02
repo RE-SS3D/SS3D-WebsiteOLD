@@ -83,9 +83,8 @@ h6 {
   font-size: 36px;
   font-family: "Spessman", sans-serif; }
 @font-face {
-  h6 {
-    font-family: "Spessman";
-    src: url("../assets/misc/spessmanfont.tff"); } }
+  font-family: "Spessman";
+  src: url("../assets/misc/spessmanfont.ttf"); }
 p {
   margin-bottom: 10px; }
 
