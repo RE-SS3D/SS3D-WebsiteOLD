@@ -27,9 +27,11 @@ h6 {
     color: $color-header;
     font-size: 36px;
     font-family: "Spessman", sans-serif;
-    @font-face {
-        font-family: "Spessman";
-        src: url("../assets/misc/spessmanfont.tff");
+    @at-root {
+        @font-face {
+            font-family: "Spessman";
+            src: url("../assets/misc/spessmanfont.ttf");
+        }
     }
 }
 
