@@ -175,6 +175,8 @@ permalink: /art/
 # Smoking Man
 {: class="centred" }
 
+{% responsive_image path: assets/img/art/SmokingMan/SmokingMan_EngineeringGang.png template: _includes/srcset.html %}
+
 {% responsive_image path: assets/img/art/SmokingMan/SmokingMan_Closet.png template: _includes/srcset.html %}
 
 # Spongie
