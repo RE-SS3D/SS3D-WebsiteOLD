@@ -1,4 +1,33 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://ss3d.space/feed.xml" rel="self" type="application/atom+xml" /><link href="https://ss3d.space/" rel="alternate" type="text/html" /><updated>2021-12-02T23:52:49+00:00</updated><id>https://ss3d.space/feed.xml</id><title type="html">RE:SS3D</title><subtitle>This is a 3D recreation of Space Station 13, on the Unity engine, which will come with its own set of gameplay/graphical improvements. </subtitle><entry><title type="html">21.10: October 2021 Devblog</title><link href="https://ss3d.space/2021/11/04/21.10.html" rel="alternate" type="text/html" title="21.10: October 2021 Devblog" /><published>2021-11-04T11:30:00+00:00</published><updated>2021-11-04T11:30:00+00:00</updated><id>https://ss3d.space/2021/11/04/21.10</id><content type="html" xml:base="https://ss3d.space/2021/11/04/21.10.html">&lt;p&gt;Small changes with a big impact.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://ss3d.space/feed.xml" rel="self" type="application/atom+xml" /><link href="https://ss3d.space/" rel="alternate" type="text/html" /><updated>2021-12-05T18:25:23+00:00</updated><id>https://ss3d.space/feed.xml</id><title type="html">RE:SS3D</title><subtitle>This is a 3D recreation of Space Station 13, on the Unity engine, which will come with its own set of gameplay/graphical improvements. </subtitle><entry><title type="html">21.11: November 2021 Devblog</title><link href="https://ss3d.space/2021/12/05/21.11.html" rel="alternate" type="text/html" title="21.11: November 2021 Devblog" /><published>2021-12-05T11:30:00+00:00</published><updated>2021-12-05T11:30:00+00:00</updated><id>https://ss3d.space/2021/12/05/21.11</id><content type="html" xml:base="https://ss3d.space/2021/12/05/21.11.html">&lt;p&gt;&lt;em&gt;“People say nothing is impossible, but I do nothing every day.”&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;– Winnie The Pooh&lt;/p&gt;
+
+&lt;h1 id=&quot;november-recap&quot;&gt;November Recap&lt;/h1&gt;
+
+&lt;p&gt;Another month of meticulously brainstorming over core-system design choices. These months often feel uneventful but are laying the groundwork for an entire user experience above them, so we are putting great time and attention to detail into them. Without spoiling too much, one of these systems should be featured in next month’s blog if we have it ironed out and merged before then, so stay tuned.&lt;/p&gt;
+
+&lt;h2 id=&quot;details&quot;&gt;Details&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;Notterox&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Disabled users from using rich text in chat.&lt;/li&gt;
+  &lt;li&gt;Fixed custom font issue on the website.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Ryan&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Fixed multiple issues with the basic substance system and related machinery.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;art&quot;&gt;Art&lt;/h2&gt;
+
+&lt;p&gt;This month’s blog cover art is brought to us by &lt;strong&gt;SmokingMan&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/art/SmokingMan/SmokingMan_EngineeringGang.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/SmokingMan_EngineeringGang-580x326.png 580w,    /assets/resized/SmokingMan_EngineeringGang-290x163.png 290w,    /assets/resized/SmokingMan_EngineeringGang-170x96.png 170w,    /assets/resized/SmokingMan_EngineeringGang-145x82.png 145w, /assets/img/art/SmokingMan/SmokingMan_EngineeringGang.png 3840w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
+
+&lt;p&gt;If you are interested in joining the team and helping to contribute to our great game, please join us over at our &lt;a href=&quot;https://discord.gg/3ny9tdH&quot; target=&quot;_blank&quot;&gt;Discord&lt;/a&gt; server.&lt;/p&gt;</content><author><name>CosmicCoincidence</name></author><summary type="html">“People say nothing is impossible, but I do nothing every day.”</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://ss3d.space/assets/img/art/SmokingMan/SmokingMan_EngineeringGang.png" /></entry><entry><title type="html">21.10: October 2021 Devblog</title><link href="https://ss3d.space/2021/11/04/21.10.html" rel="alternate" type="text/html" title="21.10: October 2021 Devblog" /><published>2021-11-04T11:30:00+00:00</published><updated>2021-11-04T11:30:00+00:00</updated><id>https://ss3d.space/2021/11/04/21.10</id><content type="html" xml:base="https://ss3d.space/2021/11/04/21.10.html">&lt;p&gt;Small changes with a big impact.&lt;/p&gt;
 
 &lt;h1 id=&quot;october-recap&quot;&gt;October Recap&lt;/h1&gt;
 
@@ -1057,68 +1086,4 @@ Because a dance with the Devil might last you forever…”&lt;/em&gt;&lt;/p&gt;
 
 &lt;p&gt;First and foremost, thank you to everyone who has donated to the project over the last month! We have raised a little over $325 our first month, and every dollar is much appreciated! Look forward to hearing from us this next month on how these funds will be allocated for bounties (the health system will likely be one).&lt;/p&gt;
 
-&lt;p&gt;So stay tuned, and check out our &lt;a href=&quot;https://discord.gg/3ny9tdH&quot; target=&quot;_blank&quot;&gt;Discord&lt;/a&gt; for more info.&lt;/p&gt;</content><author><name>CosmicCoincidence</name></author><summary type="html">What is this, a zoo in space?</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://ss3d.space/assets/img/art/Bug/Bug_CargoAnimals.png" /></entry><entry><title type="html">21.01: January 2021 Devblog</title><link href="https://ss3d.space/2021/02/04/21.01.html" rel="alternate" type="text/html" title="21.01: January 2021 Devblog" /><published>2021-02-04T11:30:00+00:00</published><updated>2021-02-04T11:30:00+00:00</updated><id>https://ss3d.space/2021/02/04/21.01</id><content type="html" xml:base="https://ss3d.space/2021/02/04/21.01.html">&lt;p&gt;Spatial awareness is a necessary skill to do your job.&lt;/p&gt;
-
-&lt;h1 id=&quot;january-recap&quot;&gt;January Recap&lt;/h1&gt;
-
-&lt;p&gt;It’s a new year, and we have a new wave of contributions. Strap in yall.&lt;/p&gt;
-
-&lt;h2 id=&quot;lobby--main-menu&quot;&gt;Lobby &amp;amp; Main Menu&lt;/h2&gt;
-
-&lt;p&gt;Our biggest and probably most important feature this month has got to be our fancy new lobby system. &lt;strong&gt;John&lt;/strong&gt; was hard at work this month separating the map, primary menus, and lobby from a unified scene to individual scenes. The result is more modular in the sense that the editor can more easily work on these systems without impacting the others as much. It also allows us to quickly swap between map scenes now both in the Unity editor but now in-game, getting us 1 more step closer to a complete game loop.&lt;/p&gt;
-
-&lt;p&gt;Connecting players will now be initially greeted with a basic lobby to hang out in (character customization and chat will eventually be added in here) until they’re ready to join. The game host also now has access to an admin menu to control various parameters for the game. This ranges from changing the map, game mode (just for show currently), and setting a timer for the length of time until the next round starts.&lt;/p&gt;
-
-&lt;video controls=&quot;&quot; muted=&quot;&quot; poster=&quot;/assets/img/posts/21.01.01/LobbyMenu.png&quot; width=&quot;580px&quot;&gt;&amp;gt;
-  &lt;source src=&quot;/assets/img/posts/21.01.01/LobbyMenu.mp4&quot; type=&quot;video/mp4&quot; /&gt;
-&lt;/video&gt;
-
-&lt;h2 id=&quot;tilemap-editor&quot;&gt;TileMap Editor&lt;/h2&gt;
-
-&lt;p&gt;Originally started by &lt;strong&gt;DefNotEric&lt;/strong&gt; many moons ago, but recently resurrected and expanded by &lt;strong&gt;BroodjeKipcorn&lt;/strong&gt;, our new tilemap editor is a significant improvement over our previous one. Now the editor can edit/add tilemap layers individually rather than having to rebuild all layers on a tile if a single layer on that tile needs a change. You can even hide the visibility of layers in the editor to make it easier to see what you are working on.&lt;/p&gt;
-
-&lt;p&gt;The map editor also now has an object search functionality and the objects have a small thumbnail display so the user can find what they are looking for more quickly.&lt;/p&gt;
-
-&lt;p&gt;The other big improvement is the addition of tilemap rotations. As we did not have proper tilemap rotations built into the editor before, the user would have to manually edit the Y-axis rotation on each prefab after adding it to the map. Now the user can simply select a cardinal direction for the object to face before adding it to the map. Many small bugs related to the tilemap were also taken care of with this new tilemap editor.&lt;/p&gt;
-
-&lt;video controls=&quot;&quot; muted=&quot;&quot; poster=&quot;/assets/img/posts/21.01.01/TilemapEditor.png&quot; width=&quot;580px&quot;&gt;&amp;gt;
-  &lt;source src=&quot;/assets/img/posts/21.01.01/TilemapEditor.mp4&quot; type=&quot;video/mp4&quot; /&gt;
-&lt;/video&gt;
-
-&lt;h2 id=&quot;container-system&quot;&gt;Container System&lt;/h2&gt;
-
-&lt;p&gt;&lt;strong&gt;Alainx&lt;/strong&gt; did a great job over the last couple of months, overhauling our existing system for containers. This new system uses a Resident Evil-like 2-dimensional modular approach, allowing things like containers on child objects, multiple containers per object, and more. The system also adds functionality for things like wearables (clothing) for mobs. The system is server authoritative, which should be robust when protecting against cheating. This new system flushed out some lingering inventory-related bugs as well.&lt;/p&gt;
-
-&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/21.01.01/ModularContainers.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/ModularContainers-580x326.png 580w,    /assets/resized/ModularContainers-290x163.png 290w,    /assets/resized/ModularContainers-170x96.png 170w,    /assets/resized/ModularContainers-145x82.png 145w, /assets/img/posts/21.01.01/ModularContainers.png 1280w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-
-&lt;h2 id=&quot;details&quot;&gt;Details&lt;/h2&gt;
-
-&lt;p&gt;&lt;strong&gt;BroodjeKipcorn&lt;/strong&gt; improved the atmospheric loop performance, drastically reducing the CPU time and memory allocations needed to run it.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;John&lt;/strong&gt; cleaned up many more models this month.&lt;/p&gt;
-
-&lt;h2 id=&quot;textures&quot;&gt;Textures&lt;/h2&gt;
-
-&lt;p&gt;&lt;strong&gt;Konstatin&lt;/strong&gt; made a nice new texture for the station AI. You probably recognize her.&lt;/p&gt;
-
-&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/21.01.01/shodan_white.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/shodan_white-580x579.png 580w,    /assets/resized/shodan_white-290x290.png 290w,    /assets/resized/shodan_white-170x170.png 170w,    /assets/resized/shodan_white-145x145.png 145w, /assets/img/posts/21.01.01/shodan_white.png 4896w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-
-&lt;h2 id=&quot;art&quot;&gt;Art&lt;/h2&gt;
-
-&lt;p&gt;&lt;strong&gt;ProbablyNot&lt;/strong&gt; is back to being this month’s cover artist.&lt;/p&gt;
-
-&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/art/ProbablyNot/ProbablyNot_PDA.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/ProbablyNot_PDA-580x326.png 580w,    /assets/resized/ProbablyNot_PDA-290x163.png 290w,    /assets/resized/ProbablyNot_PDA-170x96.png 170w,    /assets/resized/ProbablyNot_PDA-145x82.png 145w, /assets/img/art/ProbablyNot/ProbablyNot_PDA.png 3842w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-
-&lt;h3 id=&quot;updates&quot;&gt;Updates&lt;/h3&gt;
-
-&lt;p&gt;To kick off this new year, we are finally launching a means to support the development of this game via donations. We have launched a &lt;a href=&quot;https://www.patreon.com/ss3d&quot; target=&quot;_blank&quot;&gt;Patreon&lt;/a&gt;, &lt;a href=&quot;https://www.subscribestar.com/space-station-3d&quot; target=&quot;_blank&quot;&gt;SubscribeStar&lt;/a&gt;, and even a multi-chain crypto wallet + .crypto domain (SpaceStation3D.crypto) which accepts multiple cryptocurrencies, but not all wallets accept this format so you can find the full blockchain addresses at &lt;a href=&quot;https://github.com/RE-SS3D/SS3D/wiki/Related-Sites-&amp;amp;-Resources#donation-links&quot; target=&quot;_blank&quot;&gt;the bottom of this page&lt;/a&gt; or at the top of our &lt;a href=&quot;/contribute/&quot;&gt;Contribute page&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;The money gathered from our donations will primarily be used for paying technical bounties which we will launch once we have received adequate initial funds. Eventually, the donations will also be used to help cover any costs to continue developing &amp;amp; hosting this game (like paying to host servers).&lt;/p&gt;
-
-&lt;p&gt;One &lt;em&gt;very&lt;/em&gt; important thing we want to ensure is that we are COMPLETELY transparent about how we use your donations for this project. So we have set up a #money-log channel on our discord which will log our donations and how they are spent.&lt;/p&gt;
-
-&lt;h3 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h3&gt;
-
-&lt;p&gt;It has been a rough past year. But 2021 is already showing some promise, especially for SS3D. Stay safe and stay tuned everyone.&lt;/p&gt;
-
-&lt;p&gt;Also join our &lt;a href=&quot;https://discord.gg/3ny9tdH&quot; target=&quot;_blank&quot;&gt;Discord&lt;/a&gt; if you haven’t already, por favor.&lt;/p&gt;</content><author><name></name></author><summary type="html">Spatial awareness is a necessary skill to do your job.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://ss3d.space/assets/img/art/ProbablyNot/ProbablyNot_PDA.png" /></entry></feed>
+&lt;p&gt;So stay tuned, and check out our &lt;a href=&quot;https://discord.gg/3ny9tdH&quot; target=&quot;_blank&quot;&gt;Discord&lt;/a&gt; for more info.&lt;/p&gt;</content><author><name>CosmicCoincidence</name></author><summary type="html">What is this, a zoo in space?</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://ss3d.space/assets/img/art/Bug/Bug_CargoAnimals.png" /></entry></feed>
