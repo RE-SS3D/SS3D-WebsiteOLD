@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://ss3d.space/feed.xml" rel="self" type="application/atom+xml" /><link href="https://ss3d.space/" rel="alternate" type="text/html" /><updated>2022-04-05T22:22:20+00:00</updated><id>https://ss3d.space/feed.xml</id><title type="html">RE:SS3D</title><subtitle>This is a 3D recreation of Space Station 13, on the Unity engine, which will come with its own set of gameplay/graphical improvements. </subtitle><entry><title type="html">22.01-03: 2022 1st Quarter Devblog</title><link href="https://ss3d.space/2022/04/05/22.03.html" rel="alternate" type="text/html" title="22.01-03: 2022 1st Quarter Devblog" /><published>2022-04-05T11:30:00+00:00</published><updated>2022-04-05T11:30:00+00:00</updated><id>https://ss3d.space/2022/04/05/22.03</id><content type="html" xml:base="https://ss3d.space/2022/04/05/22.03.html">&lt;p&gt;&lt;em&gt;“Ah yes, the moons are bright, the space carp are singing, and the radioactive solar winds are even calm. What a beautiful day in space.”&lt;/em&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://ss3d.space/feed.xml" rel="self" type="application/atom+xml" /><link href="https://ss3d.space/" rel="alternate" type="text/html" /><updated>2022-04-05T23:45:59+00:00</updated><id>https://ss3d.space/feed.xml</id><title type="html">RE:SS3D</title><subtitle>This is a 3D recreation of Space Station 13, on the Unity engine, which will come with its own set of gameplay/graphical improvements. </subtitle><entry><title type="html">22.01-03: 2022 1st Quarter Devblog</title><link href="https://ss3d.space/2022/04/05/22.03.html" rel="alternate" type="text/html" title="22.01-03: 2022 1st Quarter Devblog" /><published>2022-04-05T11:30:00+00:00</published><updated>2022-04-05T11:30:00+00:00</updated><id>https://ss3d.space/2022/04/05/22.03</id><content type="html" xml:base="https://ss3d.space/2022/04/05/22.03.html">&lt;p&gt;&lt;em&gt;“Ah yes, the moons are bright, the space carp are singing, and the radioactive solar winds are calm. What a beautiful day in space.”&lt;/em&gt;&lt;/p&gt;
 
 &lt;p&gt;– Nanotrasen Employee #76044&lt;/p&gt;
 
@@ -27,8 +27,8 @@
 
 &lt;p&gt;&lt;strong&gt;Em3rgency&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
-  &lt;li&gt;Reorganized the editor-related files, excluded some from builds, and fixed some related compiler errors.&lt;/li&gt;
-  &lt;li&gt;Fixed some missing connection type values on some connectable objects.&lt;/li&gt;
+  &lt;li&gt;Reorganized the editor-related files, excluded some from builds, and fixed related compiler errors.&lt;/li&gt;
+  &lt;li&gt;Fixed missing connection type values on some connectable objects.&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;&lt;strong&gt;Stilnat&lt;/strong&gt;&lt;/p&gt;
@@ -58,11 +58,11 @@
 
 &lt;h2 id=&quot;models&quot;&gt;Models&lt;/h2&gt;
 
-&lt;p&gt;&lt;strong&gt;Gen&lt;/strong&gt; submitted a few machines late last month but were missed and are being featured now. A wall-mounted button, nanite programmer, nanite cloud server, and a nanite controller hub.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Gen&lt;/strong&gt; submitted a few machines late last year but were missed and are being featured now. A wall-mounted button, nanite programmer, nanite cloud server, and a nanite controller hub.&lt;/p&gt;
 
 &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/22.01-03/GenMachines.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/GenMachines-580x435.png 580w,    /assets/resized/GenMachines-290x218.png 290w,    /assets/resized/GenMachines-170x128.png 170w,    /assets/resized/GenMachines-145x109.png 145w, /assets/img/posts/22.01-03/GenMachines.png 800w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
 
-&lt;p&gt;More HOS clothing now thanks to &lt;strong&gt;Baga&lt;/strong&gt;!&lt;/p&gt;
+&lt;p&gt;More Head of Security clothing now thanks to &lt;strong&gt;Baga&lt;/strong&gt;!&lt;/p&gt;
 
 &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/22.01-03/BagaHOS.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/BagaHOS-580x435.png 580w,    /assets/resized/BagaHOS-290x218.png 290w,    /assets/resized/BagaHOS-170x128.png 170w,    /assets/resized/BagaHOS-145x109.png 145w, /assets/img/posts/22.01-03/BagaHOS.png 800w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
 
@@ -72,7 +72,7 @@
 
 &lt;h2 id=&quot;sounds&quot;&gt;Sounds&lt;/h2&gt;
 
-&lt;p&gt;New this year, &lt;strong&gt;a Ghost&lt;/strong&gt; has provided us with a few more sound effects including a couple of male gasping, a few male gulping, one male sneezing, as well as a couple of bone snapping. The sneeze is quite good!&lt;/p&gt;
+&lt;p&gt;New this year, &lt;strong&gt;a Ghost&lt;/strong&gt; has provided us with a few more sound effects including male gasping, male gulping, male sneezing, as well as some for bone snapping. The sneeze is quite good!&lt;/p&gt;
 
 &lt;audio controls=&quot;&quot;&gt;
   &lt;source src=&quot;/assets/sfx/Male_Sneeze.mp3&quot; type=&quot;audio/mpeg&quot; /&gt;
@@ -91,7 +91,7 @@ Your browser does not support the audio element.
 
 &lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
 
-&lt;p&gt;We should have more to share in Q2 as we continue to rework some of our game loop plans, in the meantime you are always welcome to join our &lt;a href=&quot;https://discord.gg/3ny9tdH&quot; target=&quot;_blank&quot;&gt;Discord&lt;/a&gt; to check out more of what we’re doing or to contribute yourself!&lt;/p&gt;</content><author><name>CosmicCoincidence</name></author><summary type="html">“Ah yes, the moons are bright, the space carp are singing, and the radioactive solar winds are even calm. What a beautiful day in space.”</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://ss3d.space/assets/img/art/ProbablyNot/ProbablyNot_Spaced.png" /></entry><entry><title type="html">21.12: December 2021 Devblog</title><link href="https://ss3d.space/2022/01/06/21.12.html" rel="alternate" type="text/html" title="21.12: December 2021 Devblog" /><published>2022-01-06T11:30:00+00:00</published><updated>2022-01-06T11:30:00+00:00</updated><id>https://ss3d.space/2022/01/06/21.12</id><content type="html" xml:base="https://ss3d.space/2022/01/06/21.12.html">&lt;p&gt;Born too late to explore the earth.&lt;br /&gt;
+&lt;p&gt;We should have more to share in Q2 as we continue to rework some of our game loop plans, in the meantime you are always welcome to join our &lt;a href=&quot;https://discord.gg/3ny9tdH&quot; target=&quot;_blank&quot;&gt;Discord&lt;/a&gt; to check out more of what we’re doing or to contribute yourself!&lt;/p&gt;</content><author><name>CosmicCoincidence</name></author><summary type="html">“Ah yes, the moons are bright, the space carp are singing, and the radioactive solar winds are calm. What a beautiful day in space.”</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://ss3d.space/assets/img/art/ProbablyNot/ProbablyNot_Spaced.png" /></entry><entry><title type="html">21.12: December 2021 Devblog</title><link href="https://ss3d.space/2022/01/06/21.12.html" rel="alternate" type="text/html" title="21.12: December 2021 Devblog" /><published>2022-01-06T11:30:00+00:00</published><updated>2022-01-06T11:30:00+00:00</updated><id>https://ss3d.space/2022/01/06/21.12</id><content type="html" xml:base="https://ss3d.space/2022/01/06/21.12.html">&lt;p&gt;Born too late to explore the earth.&lt;br /&gt;
 Born too soon to explore the galaxy.&lt;br /&gt;
 Born just in time to help make SS3D.&lt;/p&gt;
 
