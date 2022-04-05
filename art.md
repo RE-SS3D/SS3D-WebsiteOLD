@@ -141,6 +141,8 @@ permalink: /art/
 # Probably Not
 {: class="centred" }
 
+{% responsive_image path: assets/img/art/ProbablyNot/ProbablyNot_Spaced.png template: _includes/srcset.html %}
+
 {% responsive_image path: assets/img/art/ProbablyNot/ProbablyNot_Campfire.png template: _includes/srcset.html %}
 
 {% responsive_image path: assets/img/art/ProbablyNot/ProbablyNot_Heck.png template: _includes/srcset.html %}
@@ -176,6 +178,10 @@ permalink: /art/
 
 # Smoking Man
 {: class="centred" }
+
+<iframe class="video" width="580px" height="325px" src="https://www.youtube-nocookie.com/embed/bOB6af_ZCj0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+{% responsive_image path: assets/img/art/SmokingMan/SmokingMan_GreyGuy.png template: _includes/srcset.html %}
 
 {% responsive_image path: assets/img/art/SmokingMan/SmokingMan_EngineeringGang.png template: _includes/srcset.html %}
 
