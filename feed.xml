@@ -1,4 +1,97 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://ss3d.space/feed.xml" rel="self" type="application/atom+xml" /><link href="https://ss3d.space/" rel="alternate" type="text/html" /><updated>2022-01-06T20:41:27+00:00</updated><id>https://ss3d.space/feed.xml</id><title type="html">RE:SS3D</title><subtitle>This is a 3D recreation of Space Station 13, on the Unity engine, which will come with its own set of gameplay/graphical improvements. </subtitle><entry><title type="html">21.12: December 2021 Devblog</title><link href="https://ss3d.space/2022/01/06/21.12.html" rel="alternate" type="text/html" title="21.12: December 2021 Devblog" /><published>2022-01-06T11:30:00+00:00</published><updated>2022-01-06T11:30:00+00:00</updated><id>https://ss3d.space/2022/01/06/21.12</id><content type="html" xml:base="https://ss3d.space/2022/01/06/21.12.html">&lt;p&gt;Born too late to explore the earth.&lt;br /&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://ss3d.space/feed.xml" rel="self" type="application/atom+xml" /><link href="https://ss3d.space/" rel="alternate" type="text/html" /><updated>2022-04-05T22:22:20+00:00</updated><id>https://ss3d.space/feed.xml</id><title type="html">RE:SS3D</title><subtitle>This is a 3D recreation of Space Station 13, on the Unity engine, which will come with its own set of gameplay/graphical improvements. </subtitle><entry><title type="html">22.01-03: 2022 1st Quarter Devblog</title><link href="https://ss3d.space/2022/04/05/22.03.html" rel="alternate" type="text/html" title="22.01-03: 2022 1st Quarter Devblog" /><published>2022-04-05T11:30:00+00:00</published><updated>2022-04-05T11:30:00+00:00</updated><id>https://ss3d.space/2022/04/05/22.03</id><content type="html" xml:base="https://ss3d.space/2022/04/05/22.03.html">&lt;p&gt;&lt;em&gt;“Ah yes, the moons are bright, the space carp are singing, and the radioactive solar winds are even calm. What a beautiful day in space.”&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;– Nanotrasen Employee #76044&lt;/p&gt;
+
+&lt;h1 id=&quot;q1-recap&quot;&gt;Q1 Recap&lt;/h1&gt;
+
+&lt;div&gt;
+    &lt;iframe class=&quot;video&quot; width=&quot;580px&quot; height=&quot;325px&quot; src=&quot;https://www.youtube-nocookie.com/embed/bOB6af_ZCj0&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+    &lt;h5&gt;&lt;i&gt;Video credit - SmokingMan&lt;/i&gt;&lt;/h5&gt;
+&lt;/div&gt;
+
+&lt;p&gt;This year we are changing up our blog schedule a little bit, by switching from monthly updates to quarterly updates. This is due to our sometimes slow development which can result in some months having short and nearly empty blog posts. I know many of you won’t like this decision as you would prefer to see more frequent updates even if they are packed with less content, but hopefully this will take a little bit of repetitive work off our small management team. If the frequency of our content output increases in the future we may come back to monthly updates though.&lt;/p&gt;
+
+&lt;p&gt;On the topic of small teams, it seems we have set our goals a bit too ambitiously again. We have been trying to work toward a playable game loop so players can have something to do and a goal, and although this goal hasn’t changed, it seems we have set our standard of a minimal game loop a bit high. We wanted to have all our core systems mostly fleshed out, like an intricate container system, complex atmospherics, electrical grid, etc. But we have now realized that spending so much time on this has prevented the players from having something fun to do in game. I don’t want to say too much yet as this discussion is still ongoing currently, but we are planning on simplifying the game loop requirements to push out a more simple playable game mode quicker, which will hopefully help draw in some players and maybe more contributors.&lt;/p&gt;
+
+&lt;h2 id=&quot;documentation&quot;&gt;Documentation&lt;/h2&gt;
+
+&lt;p&gt;Another issue that has been plaguing our development has been our lack of concrete designs for our core systems. Even now we are still lacking a couple of designs, but the beginning of this year has seen some good progress in this area. &lt;strong&gt;Konstantin3001&lt;/strong&gt; has been consolidating much of our ideas about the health, combat, and crafting systems into respective documents, while &lt;strong&gt;Eiko&lt;/strong&gt; has been working on our &lt;a href=&quot;https://docs.google.com/document/d/1-sNmXI6qiCdkSwvmM5sI5rsOVOfwhvFGY1NrCbwtqu8/edit&quot; target=&quot;_blank&quot;&gt;game design document&lt;/a&gt; which details the basic overview of the game we are building (things aren’t set in stone and some things in the document may still change or get added later).&lt;/p&gt;
+
+&lt;h2 id=&quot;collision-sounds&quot;&gt;Collision Sounds&lt;/h2&gt;
+
+&lt;p&gt;In February, &lt;strong&gt;Eiko&lt;/strong&gt; added scripts for managing object collision sound effects and added several sounds as well. He also recorded the demonstration below.&lt;/p&gt;
+
+&lt;iframe class=&quot;video&quot; width=&quot;580px&quot; height=&quot;325px&quot; src=&quot;https://www.youtube-nocookie.com/embed/qk4BJldVDHY&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;h2 id=&quot;details&quot;&gt;Details&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;Em3rgency&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Reorganized the editor-related files, excluded some from builds, and fixed some related compiler errors.&lt;/li&gt;
+  &lt;li&gt;Fixed some missing connection type values on some connectable objects.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Stilnat&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Added feature to allow for child objects to have containers. So not only can a refrigerator object have a container, but now also the fridge’s door which is attached can have its own isolated container.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;JJtheGerman&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Made tweaks to the chat close button so it behaves more intuitively.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;textures&quot;&gt;Textures&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;Eiko&lt;/strong&gt; made a set of textures from the department symbols he made and has been using them on his 3D models.&lt;/p&gt;
+
+&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/22.01-03/EikoDepartments.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/EikoDepartments-580x435.png 580w,    /assets/resized/EikoDepartments-290x218.png 290w,    /assets/resized/EikoDepartments-170x128.png 170w,    /assets/resized/EikoDepartments-145x109.png 145w, /assets/img/posts/22.01-03/EikoDepartments.png 800w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;Konstantin3001&lt;/strong&gt; is back again with more new textures, this time with new vehicle tracks as well as xeno footprints and recycle/dispose icons that were missed from late last year.&lt;/p&gt;
+
+&lt;div class=&quot;horizontal-2&quot;&gt;
+
+  &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/22.01-03/KonstantinTracks.png&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/KonstantinTracks-580x435.png 580w,    /assets/resized/KonstantinTracks-290x218.png 290w,    /assets/resized/KonstantinTracks-170x128.png 170w,    /assets/resized/KonstantinTracks-145x109.png 145w, /assets/img/posts/22.01-03/KonstantinTracks.png 800w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+
+  &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/22.01-03/KonstantinRecycle.png&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/KonstantinRecycle-580x435.png 580w,    /assets/resized/KonstantinRecycle-290x218.png 290w,    /assets/resized/KonstantinRecycle-170x128.png 170w,    /assets/resized/KonstantinRecycle-145x109.png 145w, /assets/img/posts/22.01-03/KonstantinRecycle.png 800w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;models&quot;&gt;Models&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;Gen&lt;/strong&gt; submitted a few machines late last month but were missed and are being featured now. A wall-mounted button, nanite programmer, nanite cloud server, and a nanite controller hub.&lt;/p&gt;
+
+&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/22.01-03/GenMachines.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/GenMachines-580x435.png 580w,    /assets/resized/GenMachines-290x218.png 290w,    /assets/resized/GenMachines-170x128.png 170w,    /assets/resized/GenMachines-145x109.png 145w, /assets/img/posts/22.01-03/GenMachines.png 800w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+
+&lt;p&gt;More HOS clothing now thanks to &lt;strong&gt;Baga&lt;/strong&gt;!&lt;/p&gt;
+
+&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/22.01-03/BagaHOS.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/BagaHOS-580x435.png 580w,    /assets/resized/BagaHOS-290x218.png 290w,    /assets/resized/BagaHOS-170x128.png 170w,    /assets/resized/BagaHOS-145x109.png 145w, /assets/img/posts/22.01-03/BagaHOS.png 800w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;Eiko&lt;/strong&gt; submitted a new set of airlocks resembling more of the classic ss13 style many of us are familiar with.&lt;/p&gt;
+
+&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/22.01-03/EikoAirlocks.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/EikoAirlocks-580x435.png 580w,    /assets/resized/EikoAirlocks-290x218.png 290w,    /assets/resized/EikoAirlocks-170x128.png 170w,    /assets/resized/EikoAirlocks-145x109.png 145w, /assets/img/posts/22.01-03/EikoAirlocks.png 800w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;sounds&quot;&gt;Sounds&lt;/h2&gt;
+
+&lt;p&gt;New this year, &lt;strong&gt;a Ghost&lt;/strong&gt; has provided us with a few more sound effects including a couple of male gasping, a few male gulping, one male sneezing, as well as a couple of bone snapping. The sneeze is quite good!&lt;/p&gt;
+
+&lt;audio controls=&quot;&quot;&gt;
+  &lt;source src=&quot;/assets/sfx/Male_Sneeze.mp3&quot; type=&quot;audio/mpeg&quot; /&gt;
+Your browser does not support the audio element.
+&lt;/audio&gt;
+
+&lt;h2 id=&quot;art&quot;&gt;Art&lt;/h2&gt;
+
+&lt;p&gt;2022’s first blog art was brought to us by sir &lt;strong&gt;ProbablyNot&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/art/ProbablyNot/ProbablyNot_Spaced.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/ProbablyNot_Spaced-580x326.png 580w,    /assets/resized/ProbablyNot_Spaced-290x163.png 290w,    /assets/resized/ProbablyNot_Spaced-170x96.png 170w,    /assets/resized/ProbablyNot_Spaced-145x82.png 145w, /assets/img/art/ProbablyNot/ProbablyNot_Spaced.png 3840w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;SmokingMan&lt;/strong&gt; returned with some more artwork as well. A close-up image of our favorite grey-clad individual getting in (or out of) some trouble. He also made the wholesome captain animation (seen up in the Q1 recap) which I believe has become an instant classic.&lt;/p&gt;
+
+&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/art/SmokingMan/SmokingMan_GreyGuy.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/SmokingMan_GreyGuy-580x326.png 580w,    /assets/resized/SmokingMan_GreyGuy-290x163.png 290w,    /assets/resized/SmokingMan_GreyGuy-170x96.png 170w,    /assets/resized/SmokingMan_GreyGuy-145x82.png 145w, /assets/img/art/SmokingMan/SmokingMan_GreyGuy.png 3840w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
+
+&lt;p&gt;We should have more to share in Q2 as we continue to rework some of our game loop plans, in the meantime you are always welcome to join our &lt;a href=&quot;https://discord.gg/3ny9tdH&quot; target=&quot;_blank&quot;&gt;Discord&lt;/a&gt; to check out more of what we’re doing or to contribute yourself!&lt;/p&gt;</content><author><name>CosmicCoincidence</name></author><summary type="html">“Ah yes, the moons are bright, the space carp are singing, and the radioactive solar winds are even calm. What a beautiful day in space.”</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://ss3d.space/assets/img/art/ProbablyNot/ProbablyNot_Spaced.png" /></entry><entry><title type="html">21.12: December 2021 Devblog</title><link href="https://ss3d.space/2022/01/06/21.12.html" rel="alternate" type="text/html" title="21.12: December 2021 Devblog" /><published>2022-01-06T11:30:00+00:00</published><updated>2022-01-06T11:30:00+00:00</updated><id>https://ss3d.space/2022/01/06/21.12</id><content type="html" xml:base="https://ss3d.space/2022/01/06/21.12.html">&lt;p&gt;Born too late to explore the earth.&lt;br /&gt;
 Born too soon to explore the galaxy.&lt;br /&gt;
 Born just in time to help make SS3D.&lt;/p&gt;
 
@@ -1010,61 +1103,4 @@ Because a dance with the Devil might last you forever…”&lt;/em&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
 
-&lt;p&gt;If you’re new here, come join the discord happening over at our &lt;a href=&quot;https://discord.gg/3ny9tdH&quot; target=&quot;_blank&quot;&gt;Discord&lt;/a&gt;.&lt;/p&gt;</content><author><name>CosmicCoincidence</name></author><summary type="html">Surely everything happens for a reason, right?</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://ss3d.space/assets/img/art/CosmicCoincidence/CosmicGrinderB2.png" /></entry><entry><title type="html">21.03: March 2021 Devblog</title><link href="https://ss3d.space/2021/04/01/21.03.html" rel="alternate" type="text/html" title="21.03: March 2021 Devblog" /><published>2021-04-01T11:30:00+00:00</published><updated>2021-04-01T11:30:00+00:00</updated><id>https://ss3d.space/2021/04/01/21.03</id><content type="html" xml:base="https://ss3d.space/2021/04/01/21.03.html">&lt;p&gt;Big plans require big action.&lt;/p&gt;
-
-&lt;h1 id=&quot;march-recap&quot;&gt;March Recap&lt;/h1&gt;
-
-&lt;p&gt;Thanks again to all our lovely supporters, it’s because of you guys we have put forth the effort to make a new plan of action to make a working prototype of a game loop as our new milestone.&lt;/p&gt;
-
-&lt;h2 id=&quot;new-milestone&quot;&gt;New Milestone&lt;/h2&gt;
-
-&lt;p&gt;We saw that now that money is a factor, we could no longer continue developing randomly. We don’t want to throw bounty money at tasks they may end up completely broken if the underlying systems need future rework. To completely avoid future rework, it would be ideal to develop the game linearly, starting with the most core pieces and working up. This, however, is a very slow process and it’s no secret our development has already been quite slow.&lt;/p&gt;
-
-&lt;p&gt;We had a team meeting in discord this week (with the added presence from Jack Trachea from UnityStation) discussing these topics. With the added insight from Jack on UnityStation’s development, we concluded it would be highly beneficial to create a ‘game slice’ or a basic playable round to release as a sort of alpha or demo (we decided to focus on the traitor gamemode first). This would hopefully attract some new players, testers, or even developers. And to help achieve this goal in as short of time period as possible, it would be advisable to not include some systems, or in some cases include incomplete systems. But this will likely cause them to need rework later.&lt;/p&gt;
-
-&lt;p&gt;So we broke up the milestone into a 5-step process that we believe balances releasing a playable game loop ASAP and reducing future rework. Each part of this process also has its own &lt;a href=&quot;https://github.com/RE-SS3D/SS3D/milestones&quot;&gt;milestone page on our github&lt;/a&gt;.&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;First and foremost, we need to design our major systems to all be future-proof even if we aren’t implementing them fully yet. The core systems we do need to be fully robust initially are at least interactions, containers, &amp;amp; tilemap. Currently, the tilemap system needs an overhaul due to trouble scaling. Interactions may need some upgrades too.&lt;/li&gt;
-  &lt;li&gt;Secondly, we need a few new systems like animation, clothing, &amp;amp; basic health. Health is one of those that we will have a complex design for but our first implementation will be basic. We need some form of health in our demo for playability, but we will plan for its future replacement.&lt;/li&gt;
-  &lt;li&gt;Third we need some complementary systems like basic construction, crafting, &amp;amp; combat.&lt;/li&gt;
-  &lt;li&gt;Fourth, we need to dump in some content for jobs so the player has things to do.&lt;/li&gt;
-  &lt;li&gt;Finally, a server hub and a traitor gamemode makes it a fairly complete loop.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;From here we have begun creating tasks for this process and will be adding bounties values to many of them soon. So although we do not have any bounties made just yet, if you have been wondering where your donation money will be going, it will first be distributed to tasks in step-1 of our milestone process once we conclude their bounty worth.&lt;/p&gt;
-
-&lt;h2 id=&quot;details&quot;&gt;Details&lt;/h2&gt;
-
-&lt;p&gt;&lt;strong&gt;Goao (John)&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Added some basic graphic quality settings to the lobby menu, this may help those with slower PCs test our current game.&lt;/li&gt;
-  &lt;li&gt;Went through and commented on lots of our undocumented code.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;models&quot;&gt;Models&lt;/h2&gt;
-
-&lt;p&gt;&lt;strong&gt;Cornelius&lt;/strong&gt; still on a roll, contributing some apples, bbq sauce, and a very badass and very large &lt;del&gt;xeno&lt;/del&gt; alien queen!&lt;/p&gt;
-
-&lt;div class=&quot;horizontal-2&quot;&gt;
-
-  &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/21.03.01/Cornelius_Apples.png&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/Cornelius_Apples-580x435.png 580w,    /assets/resized/Cornelius_Apples-290x218.png 290w,    /assets/resized/Cornelius_Apples-170x128.png 170w,    /assets/resized/Cornelius_Apples-145x109.png 145w, /assets/img/posts/21.03.01/Cornelius_Apples.png 800w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-
-  &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/21.03.01/Cornelius_BBQ.png&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/Cornelius_BBQ-580x435.png 580w,    /assets/resized/Cornelius_BBQ-290x218.png 290w,    /assets/resized/Cornelius_BBQ-170x128.png 170w,    /assets/resized/Cornelius_BBQ-145x109.png 145w, /assets/img/posts/21.03.01/Cornelius_BBQ.png 800w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/21.03.01/Cornelius_XenoQueen.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/Cornelius_XenoQueen-580x435.png 580w,    /assets/resized/Cornelius_XenoQueen-290x218.png 290w,    /assets/resized/Cornelius_XenoQueen-170x128.png 170w,    /assets/resized/Cornelius_XenoQueen-145x109.png 145w, /assets/img/posts/21.03.01/Cornelius_XenoQueen.png 800w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-
-&lt;p&gt;&lt;strong&gt;Onebi&lt;/strong&gt; is back after several moons and brings us these modular cyberdecks. Not sure what a cyberdeck is? Think of it as a sci-fi hacking tool that connects with the user’s brain.&lt;/p&gt;
-
-&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/21.03.01/CyberDecks.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/CyberDecks-580x435.png 580w,    /assets/resized/CyberDecks-290x218.png 290w,    /assets/resized/CyberDecks-170x128.png 170w,    /assets/resized/CyberDecks-145x109.png 145w, /assets/img/posts/21.03.01/CyberDecks.png 800w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-
-&lt;h2 id=&quot;art&quot;&gt;Art&lt;/h2&gt;
-
-&lt;p&gt;&lt;strong&gt;Probably Not&lt;/strong&gt; can be credited again with this month’s awesome blog art.&lt;/p&gt;
-
-&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/art/ProbablyNot/ProbablyNot_Sec.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/ProbablyNot_Sec-580x326.png 580w,    /assets/resized/ProbablyNot_Sec-290x163.png 290w,    /assets/resized/ProbablyNot_Sec-170x96.png 170w,    /assets/resized/ProbablyNot_Sec-145x82.png 145w, /assets/img/art/ProbablyNot/ProbablyNot_Sec.png 3840w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-
-&lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
-
-&lt;p&gt;We will be having another dev meeting in the &lt;a href=&quot;https://discord.gg/3ny9tdH&quot; target=&quot;_blank&quot;&gt;Discord&lt;/a&gt; if you want to follow along close with our next moves. It will be on April 3rd (today) at 8pm UST. A great man once said, “be there, or be square”.&lt;/p&gt;</content><author><name></name></author><summary type="html">Big plans require big action.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://ss3d.space/assets/img/art/ProbablyNot/ProbablyNot_Sec.png" /></entry></feed>
+&lt;p&gt;If you’re new here, come join the discord happening over at our &lt;a href=&quot;https://discord.gg/3ny9tdH&quot; target=&quot;_blank&quot;&gt;Discord&lt;/a&gt;.&lt;/p&gt;</content><author><name>CosmicCoincidence</name></author><summary type="html">Surely everything happens for a reason, right?</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://ss3d.space/assets/img/art/CosmicCoincidence/CosmicGrinderB2.png" /></entry></feed>
