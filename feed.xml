@@ -1,4 +1,52 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://ss3d.space/feed.xml" rel="self" type="application/atom+xml" /><link href="https://ss3d.space/" rel="alternate" type="text/html" /><updated>2022-04-05T23:45:59+00:00</updated><id>https://ss3d.space/feed.xml</id><title type="html">RE:SS3D</title><subtitle>This is a 3D recreation of Space Station 13, on the Unity engine, which will come with its own set of gameplay/graphical improvements. </subtitle><entry><title type="html">22.01-03: 2022 1st Quarter Devblog</title><link href="https://ss3d.space/2022/04/05/22.03.html" rel="alternate" type="text/html" title="22.01-03: 2022 1st Quarter Devblog" /><published>2022-04-05T11:30:00+00:00</published><updated>2022-04-05T11:30:00+00:00</updated><id>https://ss3d.space/2022/04/05/22.03</id><content type="html" xml:base="https://ss3d.space/2022/04/05/22.03.html">&lt;p&gt;&lt;em&gt;“Ah yes, the moons are bright, the space carp are singing, and the radioactive solar winds are calm. What a beautiful day in space.”&lt;/em&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://ss3d.space/feed.xml" rel="self" type="application/atom+xml" /><link href="https://ss3d.space/" rel="alternate" type="text/html" /><updated>2022-07-09T08:08:28+00:00</updated><id>https://ss3d.space/feed.xml</id><title type="html">RE:SS3D</title><subtitle>This is a 3D recreation of Space Station 13, on the Unity engine, which will come with its own set of gameplay/graphical improvements. </subtitle><entry><title type="html">22.04-06: 2022 2st Quarter Devblog</title><link href="https://ss3d.space/2022/06/09/22.06.html" rel="alternate" type="text/html" title="22.04-06: 2022 2st Quarter Devblog" /><published>2022-06-09T11:30:00+00:00</published><updated>2022-06-09T11:30:00+00:00</updated><id>https://ss3d.space/2022/06/09/22.06</id><content type="html" xml:base="https://ss3d.space/2022/06/09/22.06.html">&lt;p&gt;“Starting over isn’t starting from scratch, it’s starting with experience.”&lt;/p&gt;
+
+&lt;p&gt;– random motivational website&lt;/p&gt;
+
+&lt;h1 id=&quot;q2-recap&quot;&gt;Q2 Recap&lt;/h1&gt;
+
+&lt;div&gt;
+    &lt;iframe class=&quot;video&quot; width=&quot;580px&quot; height=&quot;325px&quot; src=&quot;https://www.youtube-nocookie.com/embed/85hqKsNXOTQ&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+    &lt;h5&gt;&lt;i&gt;Credit - Otome&lt;/i&gt;&lt;/h5&gt;
+&lt;/div&gt;
+
+&lt;p&gt;In the 1st quarter, I mentioned that we were making some changes mainly related to narrowing our focus down to a simpler initial game mode to get a minimal viable product (mvp) out, as well as some other upcoming changes that weren’t elaborated on at the time. After narrowing our goals we reviewed our current game and decided that some things were over-engineered, others inadequately designed, and some poorly implemented. There’s also a lot of extra content that frankly isn’t NEEDED in an mvp, so… we started another rework. It took some time to get organized and we have slowed our productivity on the current build and begun starting the rework.&lt;/p&gt;
+
+&lt;h2 id=&quot;rework&quot;&gt;Rework&lt;/h2&gt;
+
+&lt;p&gt;We’ve critiqued our past mistakes and what has led to us having spouts of stagnation and hopefully have learned from these decisions and that it will benefit the rework. The rework is being led by &lt;strong&gt;John (Goao)&lt;/strong&gt; and is going to be a complete rehaul of the codebase. He has made several documents recently to prepare us. He made a new document template and remade our old art guides and our GDD in the new template. He also made a document outlining the &lt;a href=&quot;https://docs.google.com/document/d/19-9G9lOs08ASp-7PPbZNZxd5BkOpdgaQ/edit?usp=sharing&amp;amp;ouid=108272549702843855013&amp;amp;rtpof=true&amp;amp;sd=true&quot;&gt;development plan&lt;/a&gt; for the rework thus far.&lt;/p&gt;
+
+&lt;p&gt;Project architecture and code quality (organization, proper usage, &amp;amp; modularity) are two of the big things that should substantially improve with the rehaul. We hope to not lose anything in the process and port over systems from our current codebase to the rework branch as we need them. So far it only supports a basic lobby system, player authentication, and underlying hub integration. So far it has mostly been &lt;strong&gt;John&lt;/strong&gt; working on the rework but we have several eager souls waiting for him to start delegating more tasks for it. In the meantime, we have halted all major system work on the current branch but allowing smaller contributions to still be made that can be ported over to the rework when the time comes.&lt;/p&gt;
+
+&lt;h2 id=&quot;sound&quot;&gt;Sound&lt;/h2&gt;
+
+&lt;p&gt;This quarter &lt;strong&gt;Eiko&lt;/strong&gt; created an audio manager to manage our various audio scripts, and in doing so he transitioned all our current sounds over to using this new audio manager. He also added mixer groups for sfx, music, and ambiance so these can be adjusted separately in the settings menu (not added here). He also switched the audio panning so it’s relative to the camera now instead of the player.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Eiko&lt;/strong&gt; also created a new ambiance script that uses variables to adjust the intensity of ambient sounds. Each variable is configured separately and will choose a random audio clip when applicable. The 3 variables &lt;strong&gt;Eiko&lt;/strong&gt; added for now are ‘air’, ‘wind’, and ‘power’. These variables aren’t tied to anything in-game yet but are designed to fit the player’s environment. The ‘power’ ambiance will naturally be more intense the closer you are to a machine or the more machines running at once in a small space. ‘Wind’ will be used when there is atmospheric movement and ‘air’ represents the atmospheric density which will actually play ‘space’ ambiance when set to 0. The SFX sound group is also affected by lack of atmosphere and becomes extremely muffled (maybe some servers will turn it off altogether).&lt;/p&gt;
+
+&lt;iframe class=&quot;video&quot; width=&quot;580px&quot; height=&quot;325px&quot; src=&quot;https://user-images.githubusercontent.com/53350053/168268021-f14a0570-64df-4d15-b8f5-9522f14311ab.mp4&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;h2 id=&quot;models&quot;&gt;Models&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;a Ghost&lt;/strong&gt; who despite not being a regular modeler, is our only modeler this quarter. Contributing the classic Manly Dorf mug as well as adding liquid contents and some accessories to our old drinking glass set.&lt;/p&gt;
+
+&lt;div class=&quot;horizontal-2&quot;&gt;
+
+  &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/22.04-06/aGhost_ManlyDorf.png&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/aGhost_ManlyDorf-580x435.png 580w,    /assets/resized/aGhost_ManlyDorf-290x218.png 290w,    /assets/resized/aGhost_ManlyDorf-170x128.png 170w,    /assets/resized/aGhost_ManlyDorf-145x109.png 145w, /assets/img/posts/22.04-06/aGhost_ManlyDorf.png 800w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+
+  &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/22.04-06/aGhost_DrinkingGlassEdit.png&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/aGhost_DrinkingGlassEdit-580x435.png 580w,    /assets/resized/aGhost_DrinkingGlassEdit-290x218.png 290w,    /assets/resized/aGhost_DrinkingGlassEdit-170x128.png 170w,    /assets/resized/aGhost_DrinkingGlassEdit-145x109.png 145w, /assets/img/posts/22.04-06/aGhost_DrinkingGlassEdit.png 800w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;art&quot;&gt;Art&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;ProbablyNot&lt;/strong&gt; continues his reputation for having the best blog art!&lt;/p&gt;
+
+&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/art/ProbablyNot/ProbablyNot_Drunk.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/ProbablyNot_Drunk-580x326.png 580w,    /assets/resized/ProbablyNot_Drunk-290x163.png 290w,    /assets/resized/ProbablyNot_Drunk-170x96.png 170w,    /assets/resized/ProbablyNot_Drunk-145x82.png 145w, /assets/img/art/ProbablyNot/ProbablyNot_Drunk.png 3840w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+
+&lt;p&gt;And &lt;strong&gt;Otome&lt;/strong&gt; surprised us with a funny remix of &lt;strong&gt;Grimmie’s&lt;/strong&gt; classic teaser (the remix is seen at the top of this post while the original can be found on our &lt;a href=&quot;&quot;&gt;homepage&lt;/a&gt;).&lt;/p&gt;
+
+&lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
+
+&lt;p&gt;This is the part where I tell you to join our &lt;a href=&quot;https://discord.gg/3ny9tdH&quot; target=&quot;_blank&quot;&gt;Discord&lt;/a&gt; for more frequent updates or whatever.&lt;/p&gt;</content><author><name>CosmicCoincidence</name></author><summary type="html">“Starting over isn’t starting from scratch, it’s starting with experience.”</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://ss3d.space/assets/img/art/ProbablyNot/ProbablyNot_Drunk.png" /></entry><entry><title type="html">22.01-03: 2022 1st Quarter Devblog</title><link href="https://ss3d.space/2022/04/05/22.03.html" rel="alternate" type="text/html" title="22.01-03: 2022 1st Quarter Devblog" /><published>2022-04-05T11:30:00+00:00</published><updated>2022-04-05T11:30:00+00:00</updated><id>https://ss3d.space/2022/04/05/22.03</id><content type="html" xml:base="https://ss3d.space/2022/04/05/22.03.html">&lt;p&gt;&lt;em&gt;“Ah yes, the moons are bright, the space carp are singing, and the radioactive solar winds are calm. What a beautiful day in space.”&lt;/em&gt;&lt;/p&gt;
 
 &lt;p&gt;– Nanotrasen Employee #76044&lt;/p&gt;
 
@@ -1008,99 +1056,4 @@ Because a dance with the Devil might last you forever…”&lt;/em&gt;&lt;/p&gt;
 
 &lt;p&gt;Lastly, although we have a download link for each monthy version at the top of each blog post, and keep a link to the latest version on the homepage, we also added a new &lt;a href=&quot;/download/&quot;&gt;Download page&lt;/a&gt; that links to the latest release as well. It’s handier to link to externally and will download the game automatically.&lt;/p&gt;
 
-&lt;p&gt;We’re still over here working so, as always, you know where to find us if you want to follow us closer or come contribute (on &lt;a href=&quot;https://discord.gg/3ny9tdH&quot; target=&quot;_blank&quot;&gt;Discord&lt;/a&gt;).&lt;/p&gt;</content><author><name>CosmicCoincidence</name></author><summary type="html">“What could we accomplish if we knew we could not fail?”</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://ss3d.space/assets/img/art/ProbablyNot/ProbablyNot_Janitor.png" /></entry><entry><title type="html">21.04: April 2021 Devblog</title><link href="https://ss3d.space/2021/05/06/21.04.html" rel="alternate" type="text/html" title="21.04: April 2021 Devblog" /><published>2021-05-06T11:30:00+00:00</published><updated>2021-05-06T11:30:00+00:00</updated><id>https://ss3d.space/2021/05/06/21.04</id><content type="html" xml:base="https://ss3d.space/2021/05/06/21.04.html">&lt;p&gt;Surely everything happens for a reason, right?&lt;/p&gt;
-
-&lt;h1 id=&quot;april-recap&quot;&gt;April Recap&lt;/h1&gt;
-
-&lt;p&gt;This month’s technical contributions were fairly uneventful, currently we are in the process still of reworking the core system designs, and then implementing some of those systems, most notably the tilemap system.&lt;/p&gt;
-
-&lt;h2 id=&quot;details&quot;&gt;Details&lt;/h2&gt;
-
-&lt;p&gt;&lt;strong&gt;Madasski&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;fixed a bug preventing interactions with light fixtures.&lt;/li&gt;
-  &lt;li&gt;fixed a bug with the examine camera causing inaccurate examinations.&lt;/li&gt;
-  &lt;li&gt;improved the in-game camera controls.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;strong&gt;mjboth&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;added a light and emission materials to the inside of the microwave that turns on when it’s active.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/21.04.01/MicrowaveLights.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/MicrowaveLights-580x435.png 580w,    /assets/resized/MicrowaveLights-290x218.png 290w,    /assets/resized/MicrowaveLights-170x128.png 170w,    /assets/resized/MicrowaveLights-145x109.png 145w, /assets/img/posts/21.04.01/MicrowaveLights.png 800w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-
-&lt;h2 id=&quot;models&quot;&gt;Models&lt;/h2&gt;
-
-&lt;p&gt;&lt;strong&gt;Baga&lt;/strong&gt; is back this month, contributing a welder, a cookie man, some handcuffs, a set of awesome syringe guns, and finally a collection of PDA cartridges.&lt;/p&gt;
-
-&lt;div class=&quot;horizontal-2&quot;&gt;
-
-  &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/21.04.01/BagaWelder.png&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/BagaWelder-580x435.png 580w,    /assets/resized/BagaWelder-290x218.png 290w,    /assets/resized/BagaWelder-170x128.png 170w,    /assets/resized/BagaWelder-145x109.png 145w, /assets/img/posts/21.04.01/BagaWelder.png 800w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-
-  &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/21.04.01/BagaCookie.png&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/BagaCookie-580x435.png 580w,    /assets/resized/BagaCookie-290x218.png 290w,    /assets/resized/BagaCookie-170x128.png 170w,    /assets/resized/BagaCookie-145x109.png 145w, /assets/img/posts/21.04.01/BagaCookie.png 800w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;div class=&quot;horizontal-2&quot;&gt;
-
-  &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/21.04.01/BagaHandcuffs.png&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/BagaHandcuffs-580x435.png 580w,    /assets/resized/BagaHandcuffs-290x218.png 290w,    /assets/resized/BagaHandcuffs-170x128.png 170w,    /assets/resized/BagaHandcuffs-145x109.png 145w, /assets/img/posts/21.04.01/BagaHandcuffs.png 800w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-
-  &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/21.04.01/BagaSyringeGuns.png&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/BagaSyringeGuns-580x435.png 580w,    /assets/resized/BagaSyringeGuns-290x218.png 290w,    /assets/resized/BagaSyringeGuns-170x128.png 170w,    /assets/resized/BagaSyringeGuns-145x109.png 145w, /assets/img/posts/21.04.01/BagaSyringeGuns.png 800w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/21.04.01/BagaCartridges.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/BagaCartridges-580x435.png 580w,    /assets/resized/BagaCartridges-290x218.png 290w,    /assets/resized/BagaCartridges-170x128.png 170w,    /assets/resized/BagaCartridges-145x109.png 145w, /assets/img/posts/21.04.01/BagaCartridges.png 800w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-
-&lt;p&gt;&lt;strong&gt;Basecode&lt;/strong&gt; starting making us a wall-mounted security camera, but someone how managed to combine it with our old IPC, creating a security IPC.&lt;/p&gt;
-
-&lt;div class=&quot;horizontal-2&quot;&gt;
-
-  &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/21.04.01/BasecodeCamera.png&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/BasecodeCamera-580x435.png 580w,    /assets/resized/BasecodeCamera-290x218.png 290w,    /assets/resized/BasecodeCamera-170x128.png 170w,    /assets/resized/BasecodeCamera-145x109.png 145w, /assets/img/posts/21.04.01/BasecodeCamera.png 800w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-
-  &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/21.04.01/BasecodeIPC.png&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/BasecodeIPC-580x435.png 580w,    /assets/resized/BasecodeIPC-290x218.png 290w,    /assets/resized/BasecodeIPC-170x128.png 170w,    /assets/resized/BasecodeIPC-145x109.png 145w, /assets/img/posts/21.04.01/BasecodeIPC.png 800w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;p&gt;&lt;strong&gt;Cornelius&lt;/strong&gt; also made a security camera, as well as a human heart, and several new facial hairstyles.&lt;/p&gt;
-
-&lt;div class=&quot;horizontal-2&quot;&gt;
-
-  &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/21.04.01/CorneliusCamera.png&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/CorneliusCamera-580x435.png 580w,    /assets/resized/CorneliusCamera-290x218.png 290w,    /assets/resized/CorneliusCamera-170x128.png 170w,    /assets/resized/CorneliusCamera-145x109.png 145w, /assets/img/posts/21.04.01/CorneliusCamera.png 800w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-
-  &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/21.04.01/CorneliusHeart.png&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/CorneliusHeart-580x435.png 580w,    /assets/resized/CorneliusHeart-290x218.png 290w,    /assets/resized/CorneliusHeart-170x128.png 170w,    /assets/resized/CorneliusHeart-145x109.png 145w, /assets/img/posts/21.04.01/CorneliusHeart.png 800w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/21.04.01/CorneliusHair.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/CorneliusHair-580x435.png 580w,    /assets/resized/CorneliusHair-290x218.png 290w,    /assets/resized/CorneliusHair-170x128.png 170w,    /assets/resized/CorneliusHair-145x109.png 145w, /assets/img/posts/21.04.01/CorneliusHair.png 800w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-
-&lt;p&gt;&lt;strong&gt;CosmicCoincidence&lt;/strong&gt; improved upon an old ai core model and made several colorful face textures to go with it.&lt;/p&gt;
-
-&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/21.04.01/AICores.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/AICores-580x435.png 580w,    /assets/resized/AICores-290x218.png 290w,    /assets/resized/AICores-170x128.png 170w,    /assets/resized/AICores-145x109.png 145w, /assets/img/posts/21.04.01/AICores.png 800w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-
-&lt;h2 id=&quot;textures&quot;&gt;Textures&lt;/h2&gt;
-
-&lt;p&gt;With an ai core to now test on, &lt;strong&gt;Konstantin3001&lt;/strong&gt; created &lt;a href=&quot;/assets/img/posts/21.04.01/shodan_simple.png&quot; target=&quot;_blank&quot;&gt;this simple Shodan face texture&lt;/a&gt; to use on the ai core.&lt;/p&gt;
-
-&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/21.04.01/AIShodan.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/AIShodan-580x435.png 580w,    /assets/resized/AIShodan-290x218.png 290w,    /assets/resized/AIShodan-170x128.png 170w,    /assets/resized/AIShodan-145x109.png 145w, /assets/img/posts/21.04.01/AIShodan.png 800w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-
-&lt;p&gt;And when asked if he could produce some toony footprints, he promptly obliged.&lt;/p&gt;
-
-&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/21.04.01/Footprints.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/Footprints-580x435.png 580w,    /assets/resized/Footprints-290x218.png 290w,    /assets/resized/Footprints-170x128.png 170w,    /assets/resized/Footprints-145x109.png 145w, /assets/img/posts/21.04.01/Footprints.png 800w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-
-&lt;p&gt;He also scanned &lt;a href=&quot;/assets/img/posts/21.04.01/ss3d_butt_scan.png&quot; target=&quot;_blank&quot;&gt;this picture of his butt for us…&lt;/a&gt; only kidding, &lt;em&gt;but&lt;/em&gt; seriously this will be the image created when you scan your bare bottom on the photocopier.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;CosmicCoincidence&lt;/strong&gt; contributed models for a playing card and its box, as well as 2 full sets of card textures (one nantotrasen themed, one syndicate themed).&lt;/p&gt;
-
-&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/21.04.01/CosmicCards.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/CosmicCards-580x435.png 580w,    /assets/resized/CosmicCards-290x218.png 290w,    /assets/resized/CosmicCards-170x128.png 170w,    /assets/resized/CosmicCards-145x109.png 145w, /assets/img/posts/21.04.01/CosmicCards.png 800w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-
-&lt;h2 id=&quot;art&quot;&gt;Art&lt;/h2&gt;
-
-&lt;p&gt;This month’s dev blog art is also brought to you by the &lt;strong&gt;CosmicCoincidence&lt;/strong&gt;, who couldn’t decide how to finish his piece and thus made a couple final variations.&lt;/p&gt;
-
-&lt;div class=&quot;horizontal-2&quot;&gt;
-
-  &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/art/CosmicCoincidence/CosmicGrinderA2.png&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/CosmicGrinderA2-580x326.png 580w,    /assets/resized/CosmicGrinderA2-290x163.png 290w,    /assets/resized/CosmicGrinderA2-170x96.png 170w,    /assets/resized/CosmicGrinderA2-145x82.png 145w, /assets/img/art/CosmicCoincidence/CosmicGrinderA2.png 3840w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-
-  &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/art/CosmicCoincidence/CosmicGrinderB2.png&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/CosmicGrinderB2-580x326.png 580w,    /assets/resized/CosmicGrinderB2-290x163.png 290w,    /assets/resized/CosmicGrinderB2-170x96.png 170w,    /assets/resized/CosmicGrinderB2-145x82.png 145w, /assets/img/art/CosmicCoincidence/CosmicGrinderB2.png 3840w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
-
-&lt;p&gt;If you’re new here, come join the discord happening over at our &lt;a href=&quot;https://discord.gg/3ny9tdH&quot; target=&quot;_blank&quot;&gt;Discord&lt;/a&gt;.&lt;/p&gt;</content><author><name>CosmicCoincidence</name></author><summary type="html">Surely everything happens for a reason, right?</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://ss3d.space/assets/img/art/CosmicCoincidence/CosmicGrinderB2.png" /></entry></feed>
+&lt;p&gt;We’re still over here working so, as always, you know where to find us if you want to follow us closer or come contribute (on &lt;a href=&quot;https://discord.gg/3ny9tdH&quot; target=&quot;_blank&quot;&gt;Discord&lt;/a&gt;).&lt;/p&gt;</content><author><name>CosmicCoincidence</name></author><summary type="html">“What could we accomplish if we knew we could not fail?”</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://ss3d.space/assets/img/art/ProbablyNot/ProbablyNot_Janitor.png" /></entry></feed>
