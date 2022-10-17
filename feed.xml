@@ -1,13 +1,83 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://ss3d.space/feed.xml" rel="self" type="application/atom+xml" /><link href="https://ss3d.space/" rel="alternate" type="text/html" /><updated>2022-07-27T18:46:32+00:00</updated><id>https://ss3d.space/feed.xml</id><title type="html">RE:SS3D</title><subtitle>This is a 3D recreation of Space Station 13, on the Unity engine, which will come with its own set of gameplay/graphical improvements. </subtitle><entry><title type="html">22.04-06: 2022 2st Quarter Devblog</title><link href="https://ss3d.space/2022/06/09/22.06.html" rel="alternate" type="text/html" title="22.04-06: 2022 2st Quarter Devblog" /><published>2022-06-09T11:30:00+00:00</published><updated>2022-06-09T11:30:00+00:00</updated><id>https://ss3d.space/2022/06/09/22.06</id><content type="html" xml:base="https://ss3d.space/2022/06/09/22.06.html">&lt;p&gt;“Starting over isn’t starting from scratch, it’s starting with experience.”&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://ss3d.space/feed.xml" rel="self" type="application/atom+xml" /><link href="https://ss3d.space/" rel="alternate" type="text/html" /><updated>2022-10-17T17:17:13+00:00</updated><id>https://ss3d.space/feed.xml</id><title type="html">RE:SS3D</title><subtitle>This is a 3D recreation of Space Station 13, on the Unity engine, which will come with its own set of gameplay/graphical improvements. </subtitle><entry><title type="html">22.07-09: 2022 3rd Quarter Devblog</title><link href="https://ss3d.space/2022/10/17/22.09.html" rel="alternate" type="text/html" title="22.07-09: 2022 3rd Quarter Devblog" /><published>2022-10-17T11:30:00+00:00</published><updated>2022-10-17T11:30:00+00:00</updated><id>https://ss3d.space/2022/10/17/22.09</id><content type="html" xml:base="https://ss3d.space/2022/10/17/22.09.html">&lt;p&gt;&lt;em&gt;“The pain you feel today will be the profit we earn tomorrow.”&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;– Nanotrasen CEO&lt;/p&gt;
+
+&lt;h1 id=&quot;q3-recap&quot;&gt;Q3 Recap&lt;/h1&gt;
+
+&lt;p&gt;We continue to cheer on &lt;strong&gt;John&lt;/strong&gt; from our padded recliners as he slogs away at the rework, hoping that he may find solid footing in the wastewater run-offs of the derelict constructions of our past, to one day set the foundation of our future.&lt;/p&gt;
+
+&lt;h2 id=&quot;rework&quot;&gt;Rework&lt;/h2&gt;
+
+&lt;p&gt;As you know we’ve been undergoing a major rework of our technical foundation, which is being spearheaded by &lt;strong&gt;John&lt;/strong&gt;. He’s been slowly porting over some systems while reworking others. This quarter he rebuilt the Lobby UI making it neater and more user-friendly. Note that it still isn’t featureful yet.&lt;/p&gt;
+
+&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/22.07-09/NewLobbyUI.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/NewLobbyUI-580x326.png 580w,    /assets/resized/NewLobbyUI-290x163.png 290w,    /assets/resized/NewLobbyUI-170x96.png 170w,    /assets/resized/NewLobbyUI-145x82.png 145w, /assets/img/posts/22.07-09/NewLobbyUI.png 1280w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+
+&lt;p&gt;The round system has seen improvements by &lt;strong&gt;John&lt;/strong&gt; recently as well. First he ported over our current basic implementation and changed the netwroking from Mirror to FishNet. Also, Users can now set/cancel a readiness state before the start of a round. Admins can now cancel the startup phase of a round. When the startup phase completes and the round begins, only the ready players are spawned. The player and camera movements have been ported over now. Lastly, the mechanics of the underlying entity you control (the soul) is in place and can change between mobs it controls mid-round as seen in this rudimentary test below.&lt;/p&gt;
+
+&lt;iframe class=&quot;video&quot; width=&quot;580px&quot; height=&quot;325px&quot; src=&quot;https://www.youtube-nocookie.com/embed/jMqsR7673yg&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;h2 id=&quot;details&quot;&gt;Details&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;Seteron&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Updated documents &amp;amp; cleaned up extra git files.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Ryan&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Created a basic configuration test to be used to check if objects are placed on the correct layers and functioning properly.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;textures&quot;&gt;Textures&lt;/h2&gt;
+
+&lt;p&gt;After a hiatus of contribution, &lt;strong&gt;Hummus&lt;/strong&gt; blessed us with a new in-game poster texture referencing my favorite 90s Sci-Fi, Stargate-SG1.&lt;/p&gt;
+
+&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/22.07-09/HummusTakeMeHome.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/HummusTakeMeHome-580x870.png 580w,    /assets/resized/HummusTakeMeHome-290x435.png 290w,    /assets/resized/HummusTakeMeHome-170x255.png 170w,    /assets/resized/HummusTakeMeHome-145x218.png 145w, /assets/img/posts/22.07-09/HummusTakeMeHome.png 600w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;models&quot;&gt;Models&lt;/h2&gt;
+
+&lt;p&gt;A new contributor this quarter, &lt;strong&gt;Danny&lt;/strong&gt; made these wonderful potted plants and some growable plump helmet shrooms!&lt;/p&gt;
+
+&lt;div class=&quot;horizontal-2&quot;&gt;
+
+  &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/22.07-09/Danny_DecorativePlant.png&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/Danny_DecorativePlant-580x435.png 580w,    /assets/resized/Danny_DecorativePlant-290x218.png 290w,    /assets/resized/Danny_DecorativePlant-170x128.png 170w,    /assets/resized/Danny_DecorativePlant-145x109.png 145w, /assets/img/posts/22.07-09/Danny_DecorativePlant.png 800w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+
+  &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/22.07-09/Danny_Plant14.png&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/Danny_Plant14-580x435.png 580w,    /assets/resized/Danny_Plant14-290x218.png 290w,    /assets/resized/Danny_Plant14-170x128.png 170w,    /assets/resized/Danny_Plant14-145x109.png 145w, /assets/img/posts/22.07-09/Danny_Plant14.png 800w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/22.07-09/Danny_PlumpHelmets.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/Danny_PlumpHelmets-580x435.png 580w,    /assets/resized/Danny_PlumpHelmets-290x218.png 290w,    /assets/resized/Danny_PlumpHelmets-170x128.png 170w,    /assets/resized/Danny_PlumpHelmets-145x109.png 145w, /assets/img/posts/22.07-09/Danny_PlumpHelmets.png 800w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;StaBre&lt;/strong&gt;, who is also new this quarter, contributed a medical crutch and an expanding trash bag for the janitor!&lt;/p&gt;
+
+&lt;div class=&quot;horizontal-2&quot;&gt;
+
+  &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/22.07-09/StaBre_Crutch.png&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/StaBre_Crutch-580x435.png 580w,    /assets/resized/StaBre_Crutch-290x218.png 290w,    /assets/resized/StaBre_Crutch-170x128.png 170w,    /assets/resized/StaBre_Crutch-145x109.png 145w, /assets/img/posts/22.07-09/StaBre_Crutch.png 800w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+
+  &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/22.07-09/StaBre_Trashbag.png&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/StaBre_Trashbag-580x435.png 580w,    /assets/resized/StaBre_Trashbag-290x218.png 290w,    /assets/resized/StaBre_Trashbag-170x128.png 170w,    /assets/resized/StaBre_Trashbag-145x109.png 145w, /assets/img/posts/22.07-09/StaBre_Trashbag.png 800w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;art&quot;&gt;Art&lt;/h2&gt;
+
+&lt;p&gt;This is basically &lt;strong&gt;ProbablyNot’s&lt;/strong&gt; meaning in life now, to make SS3D blog cover art.&lt;/p&gt;
+
+&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/art/ProbablyNot/ProbablyNot_Station1.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/ProbablyNot_Station1-580x326.png 580w,    /assets/resized/ProbablyNot_Station1-290x163.png 290w,    /assets/resized/ProbablyNot_Station1-170x96.png 170w,    /assets/resized/ProbablyNot_Station1-145x82.png 145w, /assets/img/art/ProbablyNot/ProbablyNot_Station1.png 3840w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;ProbablyNot&lt;/strong&gt; also recently received an encoded signal coming through one of our bluespace time dilation devices. After decoding and isolating the message it appears to be an &lt;a href=&quot;/assets/img/art/ProbablyNot/Janiborg1stPerson.png&quot; target=&quot;_blank&quot;&gt;image taken from a Janiborg’s perspective aboard an empty station&lt;/a&gt;, waiting for its crew.&lt;/p&gt;
+
+&lt;h2 id=&quot;footnotes&quot;&gt;Footnotes&lt;/h2&gt;
+
+&lt;p&gt;Also, &lt;strong&gt;ProbablyNot&lt;/strong&gt; updated our &lt;a href=&quot;https://drive.google.com/drive/u/0/folders/1gAqPkdEb6VeVT-oSx_rtvCh1x4EB0d4i&quot; target=&quot;_blank&quot;&gt;Character Animation Rig (V3.0)&lt;/a&gt; last quarter but I forgot to mention it. The new rig features foot roll, face controls, body shape controls, IK head, FK/IK switching, updated colors, character cosmetics, and includes a sample character file. Note that the rig is made in and for Maya, NOT blender like many of our other contributor kits.&lt;/p&gt;
+
+&lt;p&gt;Something something join our &lt;a href=&quot;https://discord.gg/3ny9tdH&quot; target=&quot;_blank&quot;&gt;Discord&lt;/a&gt; and stay tuned for future updates from us!&lt;/p&gt;</content><author><name>CosmicCoincidence</name></author><summary type="html">“The pain you feel today will be the profit we earn tomorrow.”</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://ss3d.space/assets/img/art/ProbablyNot/ProbablyNot_Station1.png" /></entry><entry><title type="html">22.04-06: 2022 2nd Quarter Devblog</title><link href="https://ss3d.space/2022/06/09/22.06.html" rel="alternate" type="text/html" title="22.04-06: 2022 2nd Quarter Devblog" /><published>2022-06-09T11:30:00+00:00</published><updated>2022-06-09T11:30:00+00:00</updated><id>https://ss3d.space/2022/06/09/22.06</id><content type="html" xml:base="https://ss3d.space/2022/06/09/22.06.html">&lt;p&gt;“Starting over isn’t starting from scratch, it’s starting with experience.”&lt;/p&gt;
 
 &lt;p&gt;– random motivational website&lt;/p&gt;
 
-&lt;h1 id=&quot;q2-recap&quot;&gt;Q2 Recap&lt;/h1&gt;
-
 &lt;div&gt;
     &lt;iframe class=&quot;video&quot; width=&quot;580px&quot; height=&quot;325px&quot; src=&quot;https://www.youtube-nocookie.com/embed/85hqKsNXOTQ&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
-    &lt;h5&gt;&lt;i&gt;Credit - Otome&lt;/i&gt;&lt;/h5&gt;
+    &lt;h5&gt;&lt;i&gt;Video credit - Otome&lt;/i&gt;&lt;/h5&gt;
 &lt;/div&gt;
+
+&lt;h1 id=&quot;q2-recap&quot;&gt;Q2 Recap&lt;/h1&gt;
 
 &lt;p&gt;In the 1st quarter, I mentioned that we were making some changes mainly related to narrowing our focus down to a simpler initial game mode to get a minimal viable product (mvp) out, as well as some other upcoming changes that weren’t elaborated on at the time. After narrowing our goals we reviewed our current game and decided that some things were over-engineered, others inadequately designed, and some poorly implemented. There’s also a lot of extra content that frankly isn’t NEEDED in an mvp, so… we started another rework. It took some time to get organized and we have slowed our productivity on the current build and begun starting the rework.&lt;/p&gt;
 
@@ -50,12 +120,12 @@
 
 &lt;p&gt;– Nanotrasen Employee #76044&lt;/p&gt;
 
-&lt;h1 id=&quot;q1-recap&quot;&gt;Q1 Recap&lt;/h1&gt;
-
 &lt;div&gt;
     &lt;iframe class=&quot;video&quot; width=&quot;580px&quot; height=&quot;325px&quot; src=&quot;https://www.youtube-nocookie.com/embed/bOB6af_ZCj0&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
     &lt;h5&gt;&lt;i&gt;Video credit - SmokingMan&lt;/i&gt;&lt;/h5&gt;
 &lt;/div&gt;
+
+&lt;h1 id=&quot;q1-recap&quot;&gt;Q1 Recap&lt;/h1&gt;
 
 &lt;p&gt;This year we are changing up our blog schedule a little bit, by switching from monthly updates to quarterly updates. This is due to our sometimes slow development which can result in some months having short and nearly empty blog posts. I know many of you won’t like this decision as you would prefer to see more frequent updates even if they are packed with less content, but hopefully this will take a little bit of repetitive work off our small management team. If the frequency of our content output increases in the future we may come back to monthly updates though.&lt;/p&gt;
 
@@ -952,108 +1022,4 @@ Because a dance with the Devil might last you forever…”&lt;/em&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
 
-&lt;p&gt;If you missed the party invite, just ask the people over at our &lt;a href=&quot;https://discord.gg/3ny9tdH&quot; target=&quot;_blank&quot;&gt;Discord&lt;/a&gt;, they should let you in.&lt;/p&gt;</content><author><name>CosmicCoincidence</name></author><summary type="html">“The Devil grows inside the hearts of the selfish and wicked. White, brown, yellow, and black — color is not restricted. You have a self-destructive destiny when you’re inflicted. And you’ll be one of God’s children that fell from the top. There’s no diversity because we’re burnin’ in the melting pot. So when the Devil wants to dance with you, you better say never. Because a dance with the Devil might last you forever…”</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://ss3d.space/assets/img/art/Bug/BugCult.png" /></entry><entry><title type="html">21.05: May 2021 Devblog</title><link href="https://ss3d.space/2021/06/04/21.05.html" rel="alternate" type="text/html" title="21.05: May 2021 Devblog" /><published>2021-06-04T11:30:00+00:00</published><updated>2021-06-04T11:30:00+00:00</updated><id>https://ss3d.space/2021/06/04/21.05</id><content type="html" xml:base="https://ss3d.space/2021/06/04/21.05.html">&lt;p&gt;&lt;em&gt;“What could we accomplish if we knew we could not fail?”&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;– Eleanor Roosevelt&lt;/p&gt;
-
-&lt;h1 id=&quot;may-recap&quot;&gt;May Recap&lt;/h1&gt;
-
-&lt;p&gt;While we are still reworking the tilemap design we made some progress this month with fixing and cleaning the project up. We also made a Twitter account this month so if you are active there, go give &lt;a href=&quot;https://twitter.com/SpaceStation3D&quot; target=&quot;_blank&quot;&gt;us a follow&lt;/a&gt;! Related to that, &lt;strong&gt;viniciusueharaweb&lt;/strong&gt; added some nice vector graphics for our social media links in the footer of this website (see bottom of page).&lt;/p&gt;
-
-&lt;h2 id=&quot;lung-cancer&quot;&gt;Lung Cancer&lt;/h2&gt;
-
-&lt;p&gt;Implemented by &lt;strong&gt;peeB&lt;/strong&gt;, cigarettes and joints are now consumed when lit, currently lasting just 10 seconds. Even includes an extinguish interaction. Fine-tuning will come later.&lt;/p&gt;
-
-&lt;video controls=&quot;&quot; muted=&quot;&quot; poster=&quot;/assets/img/posts/21.05.01/Smokin.png&quot; width=&quot;580px&quot;&gt;&amp;gt;
-  &lt;source src=&quot;/assets/img/posts/21.05.01/Smokin.mp4&quot; type=&quot;video/mp4&quot; /&gt;
-&lt;/video&gt;
-
-&lt;h2 id=&quot;details&quot;&gt;Details&lt;/h2&gt;
-
-&lt;p&gt;&lt;strong&gt;LightVelox&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;Added a secondary hold point for certain objects, fixing a problem where certain items clipped into the character when held.&lt;/li&gt;
-  &lt;li&gt;Added starting filters for specific container types to prevent certain items in them.&lt;/li&gt;
-  &lt;li&gt;Fixed a bug in the container UI that when you drag the UI the slots of the container move but not the items which caused a glitch.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;strong&gt;CosmicCoincidence&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;Renamed many files for consistency and removed some outdated ones.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;strong&gt;Eiko&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;Added a new Unity gizmo to help visualize the placement and orientation of our hold points on objects.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;strong&gt;mjboth&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;Re-encoded our Surgery Console animated texture, fixing the stutter it had.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;strong&gt;Seteron&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;Reduced the medkit and toolbox animations so they open less and prevent clipping.&lt;/li&gt;
-  &lt;li&gt;Updated UI slot image, preventing the issue of not being able to see which hand is selected.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;strong&gt;BroodjeKipcorn&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;Updated the delete function in the tilemap editor so it only deletes the active layer instead of the whole tile.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;strong&gt;Ryan&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;Updated a few game controls.&lt;/li&gt;
-  &lt;li&gt;Renamed a couple of interaction methods to reduce confusion.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;models&quot;&gt;Models&lt;/h2&gt;
-
-&lt;p&gt;&lt;strong&gt;Turkey&lt;/strong&gt; who is a long-time community member but doesn’t often contribute, surprised us with a cute maintenance drone this month.&lt;/p&gt;
-
-&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/21.05.01/TurkeyMaintDrone.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/TurkeyMaintDrone-580x435.png 580w,    /assets/resized/TurkeyMaintDrone-290x218.png 290w,    /assets/resized/TurkeyMaintDrone-170x128.png 170w,    /assets/resized/TurkeyMaintDrone-145x109.png 145w, /assets/img/posts/21.05.01/TurkeyMaintDrone.png 800w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-
-&lt;p&gt;The great &lt;strong&gt;Cornelius&lt;/strong&gt; is back this month with some nostalgic squirt guns and intriguing xeno egg.&lt;/p&gt;
-
-&lt;div class=&quot;horizontal-2&quot;&gt;
-
-  &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/21.05.01/SquirtGuns.png&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/SquirtGuns-580x435.png 580w,    /assets/resized/SquirtGuns-290x218.png 290w,    /assets/resized/SquirtGuns-170x128.png 170w,    /assets/resized/SquirtGuns-145x109.png 145w, /assets/img/posts/21.05.01/SquirtGuns.png 800w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-
-  &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/21.05.01/XenoEgg.png&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/XenoEgg-580x435.png 580w,    /assets/resized/XenoEgg-290x218.png 290w,    /assets/resized/XenoEgg-170x128.png 170w,    /assets/resized/XenoEgg-145x109.png 145w, /assets/img/posts/21.05.01/XenoEgg.png 800w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;p&gt;&lt;strong&gt;Eiko&lt;/strong&gt; is back this month as well with a goofy cardboard cutout and a new set of airlocks, including secure airlocks and a fire-lock.&lt;/p&gt;
-
-&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/21.05.01/CardboardCutout.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/CardboardCutout-580x435.png 580w,    /assets/resized/CardboardCutout-290x218.png 290w,    /assets/resized/CardboardCutout-170x128.png 170w,    /assets/resized/CardboardCutout-145x109.png 145w, /assets/img/posts/21.05.01/CardboardCutout.png 800w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-
-&lt;div class=&quot;horizontal-2&quot;&gt;
-
-  &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/21.05.01/Airlocks.png&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/Airlocks-580x435.png 580w,    /assets/resized/Airlocks-290x218.png 290w,    /assets/resized/Airlocks-170x128.png 170w,    /assets/resized/Airlocks-145x109.png 145w, /assets/img/posts/21.05.01/Airlocks.png 800w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-
-  &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/21.05.01/AirlocksSpecial.png&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/AirlocksSpecial-580x435.png 580w,    /assets/resized/AirlocksSpecial-290x218.png 290w,    /assets/resized/AirlocksSpecial-170x128.png 170w,    /assets/resized/AirlocksSpecial-145x109.png 145w, /assets/img/posts/21.05.01/AirlocksSpecial.png 800w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;h2 id=&quot;textures&quot;&gt;Textures&lt;/h2&gt;
-
-&lt;p&gt;Also from &lt;strong&gt;Eiko&lt;/strong&gt; this month, are these hilarious posters.&lt;/p&gt;
-
-&lt;div class=&quot;horizontal-2&quot;&gt;
-
-  &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/21.05.01/ERPNO.png&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/ERPNO-580x870.png 580w,    /assets/resized/ERPNO-290x435.png 290w,    /assets/resized/ERPNO-170x255.png 170w,    /assets/resized/ERPNO-145x218.png 145w, /assets/img/posts/21.05.01/ERPNO.png 600w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-
-  &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/21.05.01/ERPYES.png&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/ERPYES-580x870.png 580w,    /assets/resized/ERPYES-290x435.png 290w,    /assets/resized/ERPYES-170x255.png 170w,    /assets/resized/ERPYES-145x218.png 145w, /assets/img/posts/21.05.01/ERPYES.png 600w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;h2 id=&quot;art&quot;&gt;Art&lt;/h2&gt;
-
-&lt;p&gt;&lt;strong&gt;ProbablyNot&lt;/strong&gt; is back this month with his infamous 3D scenes.&lt;/p&gt;
-
-&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/art/ProbablyNot/ProbablyNot_Janitor.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/ProbablyNot_Janitor-580x326.png 580w,    /assets/resized/ProbablyNot_Janitor-290x163.png 290w,    /assets/resized/ProbablyNot_Janitor-170x96.png 170w,    /assets/resized/ProbablyNot_Janitor-145x82.png 145w, /assets/img/art/ProbablyNot/ProbablyNot_Janitor.png 3840w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-
-&lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
-
-&lt;p&gt;Lastly, although we have a download link for each monthy version at the top of each blog post, and keep a link to the latest version on the homepage, we also added a new &lt;a href=&quot;/download/&quot;&gt;Download page&lt;/a&gt; that links to the latest release as well. It’s handier to link to externally and will download the game automatically.&lt;/p&gt;
-
-&lt;p&gt;We’re still over here working so, as always, you know where to find us if you want to follow us closer or come contribute (on &lt;a href=&quot;https://discord.gg/3ny9tdH&quot; target=&quot;_blank&quot;&gt;Discord&lt;/a&gt;).&lt;/p&gt;</content><author><name>CosmicCoincidence</name></author><summary type="html">“What could we accomplish if we knew we could not fail?”</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://ss3d.space/assets/img/art/ProbablyNot/ProbablyNot_Janitor.png" /></entry></feed>
+&lt;p&gt;If you missed the party invite, just ask the people over at our &lt;a href=&quot;https://discord.gg/3ny9tdH&quot; target=&quot;_blank&quot;&gt;Discord&lt;/a&gt;, they should let you in.&lt;/p&gt;</content><author><name>CosmicCoincidence</name></author><summary type="html">“The Devil grows inside the hearts of the selfish and wicked. White, brown, yellow, and black — color is not restricted. You have a self-destructive destiny when you’re inflicted. And you’ll be one of God’s children that fell from the top. There’s no diversity because we’re burnin’ in the melting pot. So when the Devil wants to dance with you, you better say never. Because a dance with the Devil might last you forever…”</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://ss3d.space/assets/img/art/Bug/BugCult.png" /></entry></feed>
