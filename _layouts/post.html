@@ -14,9 +14,16 @@ layout: default
 <h5><i>{{ page.date | date: "%A, %B %-d, %Y" }}</i></h5>
 <h5><i>Written by: {{ page.author }}</i></h5>
 {% if page.monthly_release %}
-<h2>RE:SS3D Build: 
+<h2>SS3D Build: 
   <u>
     <a href="{{ site.github_game_url }}/releases/download/{{ page.monthly_release }}/RESS3D_{{ page.monthly_release }}.zip" target="_blank">v{{ page.monthly_release }}</a>
+  </u>
+</h2>
+{% endif %}
+{% if page.release %}
+<h2>SS3D Build: 
+  <u>
+    <a href="{{ site.github_game_url }}/releases/download/{{ page.release }}/SS3D_{{ page.release }}.zip" target="_blank">v{{ page.release }}</a>
   </u>
 </h2>
 {% endif %}
