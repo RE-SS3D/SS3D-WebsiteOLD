@@ -14,7 +14,7 @@ One day in early 2018, an individual by the name of *beep decided to create a ga
 
 <div>
     <iframe class="video" width="580px" height="325px" src="https://www.youtube.com/embed/videoseries?list=PLTkyYJ6zDmhoiQv5PJYT6oI766G4s60Av" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    <h5><i>These videos are reuploads of *beep's original SS3D and are NOT representitive of RE:SS3D or it's progress!</i></h5>
+    <h5><i>These videos are reuploads of *beep's original SS3D and are NOT representitive of RE:SS3D or its progress!</i></h5>
 </div>
 
 But when the world needed him most, he vanished... No trace, no word, no *beep. The only thing left behind were a couple of files, a .blend, and a .pdf... Though *beep had intended to release the game open source, all of the development up to that point was still private and had vanished along with him.
