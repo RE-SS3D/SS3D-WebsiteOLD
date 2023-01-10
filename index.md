@@ -14,6 +14,6 @@ RE:SS3D is a resurrection of SS3D (a 3D demo of SS13), and is being developed in
 
 <centred>
     <h6>
-        <u><a href="{{ site.github_game_url }}/releases/download/{{ site.posts.first.release }}/SS3D_{{ site.posts.first.release }}.zip" target="_blank">SS3D v{{ site.posts.first.release }}</a></u>
+        <u><a href="{{ site.github_game_url }}/releases/download/{{ site.posts.first.release }}/SS3D_{{ site.posts.first.release }}.zip" target="_blank">ss3d v{{ site.posts.first.release }}</a></u>
     </h6>
 </centred>
