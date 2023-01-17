@@ -8,7 +8,7 @@ permalink: /faq/
     <img src="{{ site.baseurl}}/assets/img/Writer.png" alt="Writer" width="400px">
 </div>
 
-## What is RE:SS3D?
+## What is SS3D?
 
 Yet another Space Station 13 remake...<br>
 but we added an extra dimension to this one.<br>
@@ -40,7 +40,7 @@ The game likely won't be to the playable state SS13 has for a couple years.
 
 ## What engine does it use?
 
-The game is being built in Unity, and uses Mirror for networking. For legal reasons, we don't use assets from the Unity Asset Store, but open-source assets are fine.
+The game is being built in Unity, and uses FishNet for networking. For legal reasons, we don't use assets from the Unity Asset Store, but open-source assets are fine.
 
 ## What license is the project distributed under?
 
@@ -58,6 +58,6 @@ There are several ways you can help, from 2d art, 3d art, sfx, programming, web 
 
 ## Who is *beep?
 
-*beep is the original creator of SS3D, hence the name RE:SS3D. For more info on his tale check out our [About page]({{ site.baseurl }}/about/).
+*beep is the individual who started the first SS3D, our project is a ressurection of his. For more info on his tale check out our [About page]({{ site.baseurl }}/about/).
 
 His current status and whereabouts are still unknown. *If only he had turned his damn suit sensors on...*

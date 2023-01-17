@@ -1,12 +1,12 @@
 - title: GitHub
   name: github_organization
-- title: Discord
-  name: discord
-- title: Reddit
-  name: reddit
-- title: YouTube
-  name: youtube
 - title: Patreon
   name: patreon
+- title: Discord
+  name: discord
+- title: YouTube
+  name: youtube
+- title: Reddit
+  name: reddit
 - title: Twitter
   name: twitter

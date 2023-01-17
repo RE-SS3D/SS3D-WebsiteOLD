@@ -3,7 +3,7 @@ title: Privacy policy
 layout: default
 ---
 
-# Privacy policy
+# Privacy Policy
 
 This website uses Google Analytics for analytics, most importantly a visitor counter.  
 [How Google uses data as a partner.](https://www.google.com/policies/privacy/partners/){:target="_blank"}
