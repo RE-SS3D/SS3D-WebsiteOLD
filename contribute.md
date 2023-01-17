@@ -17,14 +17,9 @@ There are 2 primary ways you can contribute;
 # Donation Links
 
 [Paypal]({{ site.paypal_url }}){:target="_blank"}<br>
-(or send directly here: "{{ site.email }}")
+(or send directly to: "{{ site.email }}")
 
 [Patreon]({{ site.patreon_url }}){:target="_blank"}
-
-[Subscribestar]({{ site.subscribestar_url }}){:target="_blank"}
-
-Crypto: "spacestation3d.crypto" (accepts $BCH, $BTC, $ETH, & $LTC)<br>
-But some wallets don't accept that format so our full addresses can be found [here]({{ site.github_game_url }}/wiki/Sites-&-Resources#donation-links){:target="_blank"}.
 
 # Development
 
@@ -32,7 +27,7 @@ If you're a programmer, 2D artist, 3D modeler, musician, programmer, animator, s
 
 **To start on any of these, read the appropriate sections below which contains links to guides and task boards for those contribution types. Once you have a task in mind, contact a council member on our [Discord]({{ site.discord_url }}){:target="_blank"}.**
 
-The game itself is being developed in the Unity game engine. You can find what version of Unity we use and instructions on setting up our project on our [GitHub contributing guide]({{ site.github_game_url }}/blob/master/Documents/CONTRIBUTING.md#setting-up--running-the-project){:target="_blank"}.
+The game itself is being developed in the Unity game engine. You can find what version of Unity we use and instructions on setting up our project on our [developer guide](https://ss3d.gitbook.io/programming/){:target="_blank"}.
 
 Our [GitHub organization]({{ site.github_organization_url }}){:target="_blank"} has 3 repositories.
 - [SS3D]({{ site.github_game_url }}){:target="_blank"} - the game itself, and some documents.
@@ -43,7 +38,7 @@ For any other questions, concerns, or unsolicited advice, just ask around on the
 
 ## Coding tasks:
 
-Start by familiarizing yourself with our [code (C#) style guide]({{ site.github_game_url }}/blob/master/Documents/C_SHARP.md){:target="_blank"}, and [github contributing guide]({{ site.github_game_url }}/blob/master/Documents/CONTRIBUTING.md){:target="_blank"}.
+Start by familiarizing yourself with our [C# style guide](https://ss3d.gitbook.io/programming/guidelines/the-c-style-guide){:target="_blank"}, and the rest of our [developer guide](https://ss3d.gitbook.io/programming/){:target="_blank"}.
 
 Feel free to help on any of our 3 repositories as they could all use your help, but since most of you are here to help with the game itself, visit the SS3D [Issues page]({{ site.github_game_url }}/issues){:target="_blank"} and use the labels to help find a task you are interested in. 
 
@@ -53,7 +48,7 @@ Start by downloading our [Modeler’s Kit v2.0]({{ site.modelers_kit_url }}){:ta
 
 Then visit our [models board](https://trello.com/b/ZVcDitv0/ss3d-model-list){:target="_blank"} for general models and the [rig models board](https://trello.com/b/cyDuUYyv/ss3d-rig-models){:target="_blank"} for models related to rigging (characters, clothes, vehicles, etc.)
 
-We recommend using [Blender v2.8](https://www.blender.org/download/releases/){:target="_blank"} or newer as it's free and open-source (like the game we are making) thus it's easily accessible by most people, and as a result our modeler's kit is mostly designed for use with Blender.
+We recommend using [Blender v2.8](https://www.blender.org/download/releases/){:target="_blank"} (or newer) as it's free and open-source, thus it's easily accessible by most people, and as a result our modeler's kit is mostly designed for use with Blender.
 
 ## Animation tasks:
 
@@ -69,9 +64,9 @@ We currently do not have any guides for SFX, but if you want to scream like a ps
 
 ## Submissions:
 
-Technical contributions are submitted to [our main (SS3D) repo via pull request]({{ site.github_game_url }}/pulls){:target="_blank"}.
+Technical contributions are submitted to [our game repo via pull request]({{ site.github_game_url }}/pulls){:target="_blank"}.
 
-Art contributions currently are submitted via the art channels on our [Discord]({{ site.discord_url }}){:target="_blank"}.
+Art contributions currently are submitted via the art channels in our [Discord]({{ site.discord_url }}){:target="_blank"} server.
 
 ### Licensing:
 
