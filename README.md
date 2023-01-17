@@ -1,4 +1,4 @@
-# RE:SS3D Website
+# SS3D Website
 
 **Located at [https://ss3d.space](https://ss3d.space)**
 
