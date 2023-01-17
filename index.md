@@ -2,7 +2,6 @@
 layout: home
 title: Home
 ---
-
 <centred><h4><i>"Welcome to the station crew. Enjoy your stay."</i></h4></centred>
 
 <div>
