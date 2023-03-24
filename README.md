@@ -1,4 +1,4 @@
-# SS3D Website
+<h3 align="center"><img src="assets/img/SS3DBanner3.png" alt="SS3D_Banner">Website repository for <a href="https://ss3d.space/">Space Station 3D</a></h3>
 
 **Located at [https://ss3d.space](https://ss3d.space)**
 
