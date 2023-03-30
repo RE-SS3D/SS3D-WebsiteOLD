@@ -21,16 +21,12 @@ description: >- # this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://ss3d.space" # the base hostname & protocol for your site, e.g. http://example.com
 discord_url: https://discord.gg/3ny9tdH
-github_organization_url: https://github.com/RE-SS3D
-github_game_url: https://github.com/RE-SS3D/SS3D
-github_website_url: https://github.com/RE-SS3D/SS3D-Website
-github_server_url: https://github.com/RE-SS3D/SS3D-CentCom
+github_url: https://github.com/RE-SS3D
+gitbook_url: https://ss3d.gitbook.io/
 google_drive_url: https://drive.google.com/drive/folders/16WCAVGAE_lPYF5l9avK2C0o045xNx0zI?usp=sharing
-modelers_kit_url: https://drive.google.com/drive/folders/11SMsOzh78-vNTq3Az5c-mUFpFw-5EOb8?usp=sharing
-animators_kit_url: https://drive.google.com/drive/folders/1V8QAE9651nYJffCSz9zjjygextDHN-GQ?usp=sharing
 trello_url: https://trello.com/ress3d
 reddit_url: https://reddit.com/r/RESS3D
-youtube_url: https://www.youtube.com/channel/spacestation3d
+youtube_url: https://www.youtube.com/@spacestation3d
 twitter_url: https://twitter.com/SpaceStation3D
 paypal_url: https://www.paypal.me/SpaceStation3D
 patreon_url: https://www.patreon.com/ss3d

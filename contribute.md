@@ -29,10 +29,10 @@ If you're a programmer, 2D artist, 3D modeler, musician, programmer, animator, s
 
 The game itself is being developed in the Unity game engine. You can find what version of Unity we use and instructions on setting up our project on our [developer guide](https://ss3d.gitbook.io/programming/){:target="_blank"}.
 
-Our [GitHub organization]({{ site.github_organization_url }}){:target="_blank"} has 3 repositories.
-- [SS3D]({{ site.github_game_url }}){:target="_blank"} - the game itself, and some documents.
-- [Website]({{ site.github_website_url }}){:target="_blank"} - our (this) website.
-- [CentCom]({{ site.github_server_url }}){:target="_blank"} - central communications server, which manages user registration, authentication, and character storage, similar to what Byond is to SS13.
+Our [GitHub organization]({{ site.github_url }}){:target="_blank"} has 3 repositories.
+- [SS3D]({{ site.github_url }}/SS3D){:target="_blank"} - the game itself, and some documents.
+- [Website]({{ site.github_url }}/SS3D-Website){:target="_blank"} - our (this) website.
+- [CentCom]({{ site.github_url }}/SS3D-CentCom){:target="_blank"} - central communications server, which manages user registration, authentication, and character storage, similar to what Byond is to SS13.
 
 For any other questions, concerns, or unsolicited advice, just ask around on the discord and someone will likely help you out.
 
@@ -40,7 +40,7 @@ For any other questions, concerns, or unsolicited advice, just ask around on the
 
 Start by familiarizing yourself with our [C# style guide](https://ss3d.gitbook.io/programming/guidelines/the-c-style-guide){:target="_blank"}, and the rest of our [developer guide](https://ss3d.gitbook.io/programming/){:target="_blank"}.
 
-Feel free to help on any of our 3 repositories as they could all use your help, but since most of you are here to help with the game itself, visit the SS3D [Issues page]({{ site.github_game_url }}/issues){:target="_blank"} and use the labels to help find a task you are interested in. 
+Feel free to help on any of our 3 repositories as they could all use your help, but since most of you are here to help with the game itself, visit the SS3D [Issues page]({{ site.github_url }}/SS3D/issues){:target="_blank"} and use the labels to help find a task you are interested in. 
 
 ## 3D modeling tasks:
 
@@ -64,12 +64,12 @@ We currently do not have any guides for SFX, but if you want to scream like a ps
 
 ## Submissions:
 
-Technical contributions are submitted to [our game repo via pull request]({{ site.github_game_url }}/pulls){:target="_blank"}.
+Technical contributions are submitted to [our game repo via pull request]({{ site.github_url }}/SS3D/pulls){:target="_blank"}.
 
 Art contributions currently are submitted via the art channels in our [Discord]({{ site.discord_url }}){:target="_blank"} server.
 
 ### Licensing:
 
-**This project and its code** fall under the [**MIT license**]({{ site.github_game_url }}/blob/master/Documents/LICENSE-CODE.md){:target="_blank"}.
+**This project and its code** fall under the [**MIT license**]({{ site.github_url }}/SS3D/blob/master/Documents/LICENSE-CODE.md){:target="_blank"}.
 
-**All asset contributions** fall under the [**CC BY-NC-SA 4.0 license**]({{ site.github_game_url }}/blob/master/Documents/LICENSE-ASSETS.md){:target="_blank"}.
+**All asset contributions** fall under the [**CC BY-NC-SA 4.0 license**]({{ site.github_url }}/SS3D/blob/master/Documents/LICENSE-ASSETS.md){:target="_blank"}.
