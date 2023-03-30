@@ -27,7 +27,7 @@ In the ashes immediately following the abandonment of the project to the horribl
 
 ## What's the state of the current SS3D?
 
-SS3D is fully open-source and is located on [GitHub]({{ site.github_game_url }}){:target="_blank"}. We have quite a few dedicated contributors of different types, although, admittedly our art departments move a bit faster than the technical ones. See our progress on our [Devblog page]({{ site.baseurl }}/devblog/).
+SS3D is fully open-source and is located on [GitHub]({{ site.github_url }}/SS3D){:target="_blank"}. We have quite a few dedicated contributors of different types, although, admittedly our art departments move a bit faster than the technical ones. See our progress on our [Devblog page]({{ site.baseurl }}/devblog/).
 
 ## I want to help!
 
