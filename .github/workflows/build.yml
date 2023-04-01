@@ -8,12 +8,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - uses: awalsh128/cache-apt-pkgs-action@v1.3.0
-        with:
-          packages: imagemagick libmagickcore-dev libmagickwand-dev
-          version: 2 # Only used as a cache key
       - name: Configure rmagick dependency
         run: |
+          sudo apt-get install imagemagick libmagickcore-dev libmagickwand-dev
           sudo ln -s /usr/lib/x86_64-linux-gnu/ImageMagick-6.9.11/bin-Q16/Magick-config /usr/bin/Magick-config
       - uses: actions/cache@v2
         with:
