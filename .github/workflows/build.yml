@@ -12,6 +12,9 @@ jobs:
         with:
           packages: imagemagick libmagickcore-dev libmagickwand-dev
           version: 2 # Only used as a cache key
+      - name: Configure rmagick dependency
+        run: |
+          sudo ln -s /usr/lib/x86_64-linux-gnu/ImageMagick-6.9.11/bin-Q16/Magick-config /usr/bin/Magick-config
       - uses: actions/cache@v2
         with:
           path: vendor/bundle
@@ -22,3 +25,5 @@ jobs:
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           target_branch: 'master'
+        env:
+          PKG_CONFIG_PATH: "/usr/lib/x86_64-linux-gnu/pkgconfig"
