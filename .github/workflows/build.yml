@@ -8,10 +8,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - name: Configure rmagick dependency
-        run: |
-          sudo apt-get install imagemagick libmagickcore-dev libmagickwand-dev
-          sudo ln -s /usr/lib/x86_64-linux-gnu/ImageMagick-6.9.11/bin-Q16/Magick-config /usr/bin/Magick-config
       - uses: actions/cache@v2
         with:
           path: vendor/bundle
@@ -22,5 +18,4 @@ jobs:
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           target_branch: 'master'
-        env:
-          PKG_CONFIG_PATH: "/usr/lib/x86_64-linux-gnu/pkgconfig"
+          pre_build_commands: apk --update add imagemagick
