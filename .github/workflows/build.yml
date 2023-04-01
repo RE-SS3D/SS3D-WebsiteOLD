@@ -10,8 +10,8 @@ jobs:
       - uses: actions/checkout@v2
       - uses: awalsh128/cache-apt-pkgs-action@v1.3.0
         with:
-          packages: libmagickwand-dev
-          version: 1.0 # Only used as a cache key
+          packages: imagemagick libmagickcore-dev libmagickwand-dev
+          version: 2 # Only used as a cache key
       - uses: actions/cache@v2
         with:
           path: vendor/bundle
