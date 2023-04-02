@@ -9,10 +9,10 @@ title: Home
     <h5><i>Video credit - Grimmie</i></h5>
 </div>
 
-RE:SS3D is a resurrection of SS3D (a 3D demo of SS13), and is being developed in Unity. It is in pre-alpha still so there isn't much to do yet, but if you want to play-test it, the download link below is for the latest release.
+Space Station 3D is a 3D take on the ingamous Space Station 13 (tm). It is in pre-alpha still so there isn't much content yet, but if you want to play-test it, the download link below is for the latest release.
 
 <centred>
     <h6>
-        <u><a href="{{ site.github_game_url }}/releases/download/{{ site.posts.first.release }}/SS3D_{{ site.posts.first.release }}.zip" target="_blank">ss3d v{{ site.posts.first.release }}</a></u>
+        <u><a href="{{ site.github_url }}/SS3D/releases/download/{{ site.pages | where: "name", "download" | first | release_latest }}/SS3D_{{ site.pages | where: "name", "download" | first | release_latest }}.zip" target="_blank">ss3d v{{ site.pages | where: "name", "download" | first | release_latest }}</a></u>
     </h6>
 </centred>

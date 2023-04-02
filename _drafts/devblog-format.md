@@ -7,7 +7,7 @@ description: |
 author: [insert name]
 image: /assets/img/posts/[insert folder]/Wallpaper.png
 image_credit: [insert name]
-monthly_release: [insert release tag]   // This MUST match the related release tag on GitHub.
+release: [insert release tag]   // This MUST match the related release tag on GitHub.
 ---
 
 Cute phrase/quote goes here.
