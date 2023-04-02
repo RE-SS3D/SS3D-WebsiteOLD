@@ -13,6 +13,6 @@ Space Station 3D is a 3D take on the ingamous Space Station 13 (tm). It is in pr
 
 <centred>
     <h6>
-        <u><a href="{{ site.github_url }}/SS3D/releases/download/{{ site.download.release_latest }}/SS3D_{{ site.download.release_latest }}.zip" target="_blank">ss3d v{{ site.download.release_latest }}</a></u>
+        <u><a href="{{ site.github_url }}/SS3D/releases/download/{{ site.pages | where: "name", "download" | first | release_latest }}/SS3D_{{ site.pages | where: "name", "download" | first | release_latest }}.zip" target="_blank">ss3d v{{ site.pages | where: "name", "download" | first | release_latest }}</a></u>
     </h6>
 </centred>
