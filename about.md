@@ -6,7 +6,7 @@ permalink: /about/
 
 # What is SS3D?
 
-SS3D is a resurrection of *beep's original SS3D. If you go digging for the original SS3D, you'll find bits and pieces, but you will ultimately find a trail that ends in silence.
+Space Station 3D is a resurrection of *beep's original SS3D. If you go digging for the original SS3D, you'll find bits and pieces, but you will ultimately find a trail that ends in silence.
 
 ## What is the original SS3D and who is *beep?
 
