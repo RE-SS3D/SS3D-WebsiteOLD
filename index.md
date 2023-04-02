@@ -12,12 +12,8 @@ title: Home
 Space Station 3D is a 3D take on the ingamous Space Station 13 (tm). It is in pre-alpha still so there isn't much content yet, but if you want to play-test it, the download link below is for the latest release.
 
 {% assign download_page = site.pages | where: "title", "Download" | first %}
-
 <centred>
     <h6>
-        <u><a href="{{ site.github_url }}/SS3D/releases/download/{{ site.pages | where: "Title", "Download" | first | release_latest }}/SS3D_{{ site.pages | where: "Title", "Download" | first | release_latest }}.zip" target="_blank">ss3d v{{ site.pages | where: "Title", "Download" | first | release_latest }}</a></u>
+        <u><a href="{{ site.github_url }}/SS3D/releases/download/{{ download_page.release_latest }}/SS3D_{{ download_page.release_latest }}.zip" target="_blank">ss3d v{{ download_page.release_latest }}</a></u>
     </h6>
 </centred>
-
---{{ download_page.release_latest }}--a
---{{ download_pageb.release_latest }}--b
