@@ -2,6 +2,7 @@ header {
     text-align: center;
     padding-top: 15px;
     padding-bottom: 15px;
+    width: 100%;
     h1 {
         font-size: 16px;
         font-size: 7.5vw;
@@ -15,12 +16,14 @@ header {
         font-size: 4vw;
     }
     div {
-        width: 85%;
+        width: 75%;
+        margin-left: auto;
+        margin-right: auto;
     }
     img {
         right: 5px;
         top: 0px;
-        width: 85%;
+        width: 100%;
         padding: $pad;
         padding-top: 0px;
         padding-bottom: 0px;
