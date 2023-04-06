@@ -16,10 +16,10 @@ There are 2 primary ways you can contribute;
 
 # Donation Links
 
+**[Patreon]({{ site.patreon_url }}){:target="_blank"}**
+
 **[Paypal]({{ site.paypal_url }}){:target="_blank"}**<br>
 (or send directly to: "{{ site.email }}")
-
-**[Patreon]({{ site.patreon_url }}){:target="_blank"}**
 
 # Development
 
@@ -29,8 +29,9 @@ If you're a programmer, 2D artist, 3D modeler, musician, programmer, animator, s
 
 The game itself is being developed in the Unity game engine. You can find what version of Unity we use and instructions on setting up our project on our [developer guide]({{ site.gitbook_url }}/dev-guide/){:target="_blank"}.
 
-Our [GitHub organization]({{ site.github_url }}){:target="_blank"} has 3 repositories.
+Our [GitHub organization]({{ site.github_url }}){:target="_blank"} has 4 main repositories.
 - [SS3D]({{ site.github_url }}/SS3D){:target="_blank"} - the game itself, and some documents.
+- [Art]({{ site.github_url }}/SS3D-Art){:target="_blank"} - art storage, with source files.
 - [Website]({{ site.github_url }}/SS3D-Website){:target="_blank"} - our (this) website.
 - [CentCom]({{ site.github_url }}/SS3D-CentCom){:target="_blank"} - central communications server, which manages user registration, authentication, and character storage, similar to what Byond is to SS13.
 

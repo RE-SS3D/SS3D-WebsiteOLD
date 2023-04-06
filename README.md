@@ -1,10 +1,8 @@
-# SS3D Website
+<h3 align="center"><img src="assets/img/SS3DBanner3.png" alt="SS3D_Banner">Website repository for <a href="https://ss3d.space/">Space Station 3D</a>!</h3>
 
-**Located at [https://ss3d.space](https://ss3d.space)**
+<br>
 
-Release: [![Build Status](https://travis-ci.com/RE-SS3D/SS3D-Website.svg?branch=release)](https://travis-ci.com/RE-SS3D/SS3D-Website)
-Develop: [![Build Status](https://travis-ci.com/RE-SS3D/SS3D-Website.svg?branch=develop)](https://travis-ci.com/RE-SS3D/SS3D-Website)
-<img src="https://img.shields.io/github/repo-size/RE-SS3D/SS3D-Website?color=gold&style=flat-round" alt="repo size" align="right">
+**Located at [https://ss3d.space](https://ss3d.space)** <img src="https://img.shields.io/github/repo-size/RE-SS3D/SS3D-Website?color=gold&style=flat-round" alt="repo size" align="right">
 
 ## Requirements
 
