@@ -61,4 +61,6 @@ Website should be accessible at <http://localhost:4000/>
 
 ## Creating the Devblog
 
-A template for the devblog's .md file exists at [./_drafts/devblog-format.md](./_drafts/devblog-format.md), that you can fill in with details. A checklist regarding the process of the devblog can be found [on our management board](https://trello.com/c/jLB9dKJH).
+A template for the blog posts exists at [./_drafts/devblog-format.md](./_drafts/devblog-format.md).
+
+A checklist regarding the process of the devblog can be found on our[management board](https://trello.com/c/jLB9dKJH).
