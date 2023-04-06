@@ -1,20 +1,20 @@
 ---
 layout: post
-title:  "00.00 (year.month) : [insert month] Recap"
+title:  "00.00 (year.month) : [insert month/quarter] Recap"
 date:   2020-00-05 (year-month-day) 06:30:00 +0100    // The date should be the day the devblog is released and becomes part of the link to the post on the site. Also the website will not post with a future date and time.
 description: |
     "Description goes here."
-author: [insert name]
-image: /assets/img/posts/[insert folder]/Wallpaper.png
-image_credit: [insert name]
+author: [insert author name]
+image: /assets/img/posts/[insert folder]/[insert wallpaper].png
+image_credit: [insert artist name]
 release: [insert release tag]   // This MUST match the related release tag on GitHub.
 ---
 
 Cute phrase/quote goes here.
 
 // The devblog is mostly laid out in sections. With the titles of the sections going from large = # (recap section), to medium = ## (content sections), to small = ### (info sections). These are not rules but more like guidelines, take liberty in moving or renaming sections as well as deleting/merging unneeded sections.
+
 // Bold any **names** when referencing someone in a description.
-// Use the lines below to include links.
 
 // Linking to internal file:
 [Text]({{ site.baseurl }}/[insert folder]/File.format)
@@ -22,7 +22,7 @@ Cute phrase/quote goes here.
 // Linking to external file:
 [Text](File.Link)
 
-# [Insert Month] Recap
+# [Insert Month/Quarter] Recap
 
 [Insert Recap Summary]
 
@@ -35,10 +35,9 @@ Cute phrase/quote goes here.
 [Insert Media]
 
 // Avoid gifs if possible and ensure reasonable file size if you do.
-// Use the lines below to format your media by inserting file paths and names.
 
 // Displaying an image:
-{% responsive_image path: assets/img/posts/[insert folder]/image1.png template: _includes/srcset.html %}
+{% responsive_image path: assets/img/posts/[insert folder]/Image1.png template: _includes/srcset.html %}
 
 // Displaying 2 images horizontally:
 <div class='horizontal-2' markdown='1'>
@@ -96,27 +95,17 @@ Cute phrase/quote goes here.
 
 ## Core-Systems
 
-// 'Core-Systems' is what it sounds like, but I usually change the section name to the name of the system (interaction, atmospherics, tilemaps, chat, etc).
-
-## Sub-Systems
-
-// 'Sub-Systems' is what it sounds like, but I usually change the section name to the name of the system (specific interactions, surgery, jobs, etc).
+// 'Systems' is what it sounds like, but I usually change the section name to the name of the system (interaction, atmospherics, tilemaps, chat, etc).
 
 ## Fixes
 
-## Animations
+## 3D Assets
 
-## VFX
-
-## Textures
-
-## Models
-
-## 2D
+## 2D Assets
 
 // '2D' is logos, graphics, decals, etc.
 
-## SFX
+## Sound
 
 // 'Sounds' is sound effects, music, noises, etc.
 
@@ -132,17 +121,11 @@ Cute phrase/quote goes here.
 
 // 'Other' is any assets not fit for another section.
 
-// In the future, when submissions are more abundent, consider adding a 'Upcoming' section below this.
-
-### Updates
+### Updates/Notes/Conclusion
 
 // 'Updates' is updates events or changes relating to management, systems, or other logistics.
 
-### Notes
-
 // 'Notes' is miscellaneous info that may be of interest (e.g. )
-
-### Conclusion
 
 // 'Conclusion' is the final wrap-up and goodbye, and include the discord link, as tradition.
 
