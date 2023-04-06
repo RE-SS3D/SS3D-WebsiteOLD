@@ -210,7 +210,7 @@ permalink: /art/
 </div>
 
 <div class='horizontal-2' markdown='1'>
-{% responsive_image path: assets/img/art/SmokingMan_EngineeringGang.png %}
+{% responsive_image path: assets/img/art/SmokingMan/SmokingMan_EngineeringGang.png %}
 {% responsive_image path: assets/img/art/SmokingMan/SmokingMan_Closet.png %}
 </div>
 
