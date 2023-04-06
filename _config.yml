@@ -22,7 +22,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://ss3d.space" # the base hostname & protocol for your site, e.g. http://example.com
 discord_url: https://discord.gg/3ny9tdH
 github_url: https://github.com/RE-SS3D
-gitbook_url: https://ss3d.gitbook.io/
+gitbook_url: https://ss3d.gitbook.io
 google_drive_url: https://drive.google.com/drive/folders/16WCAVGAE_lPYF5l9avK2C0o045xNx0zI?usp=sharing
 trello_url: https://trello.com/ress3d
 reddit_url: https://reddit.com/r/RESS3D

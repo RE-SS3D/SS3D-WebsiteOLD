@@ -53,7 +53,9 @@ We recommend using [Blender](https://www.blender.org/download/releases/){:target
 
 ## 3D Animation Tasks:
 
-Start by deciding on a task from our [animations board](https://trello.com/b/xZ5bhNWw/ss3d-animations){:target="_blank"}. If it's related to the character rig, we have a [Character Animation Kit](https://drive.google.com/drive/folders/1V8QAE9651nYJffCSz9zjjygextDHN-GQ?usp=share_link){:target="_blank"} but it's currently only set up for Maya users, although you can use Blender to animate too.
+Start by deciding on a task from our [animations board](https://trello.com/b/xZ5bhNWw/ss3d-animations){:target="_blank"}. Then see our [Animation Guide]({{ site.gitbook_url }}/art-guide/3d/animating).
+
+If it's related to the character rig, we have a [Character Animation Kit](https://drive.google.com/drive/folders/1V8QAE9651nYJffCSz9zjjygextDHN-GQ?usp=share_link){:target="_blank"} but it's currently only set up for Maya users, although you can use Blender to animate too.
 
 ## 2D Art Tasks:
 
