@@ -147,6 +147,8 @@ permalink: /art/
 # Probably Not
 {: class="centred" }
 
+{% responsive_image path: assets/img/art/ProbablyNot/ProbablyNot_QM.png template: _includes/srcset.html %}
+
 <div class='horizontal-2' markdown='1'>
 {% responsive_image path: assets/img/art/ProbablyNot/ProbablyNot_Slime.png %}
 {% responsive_image path: assets/img/art/ProbablyNot/ProbablyNot_Station1.png %}
