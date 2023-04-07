@@ -157,5 +157,52 @@
                 dots[rowIndex-1].className += " active";
             }
         </script>
+        <script>
+            // Check if a "pageCounter" cookie already exists
+            var pageCounter = parseInt(getCookie("pageCounter")) || 0;
+            
+            // Check if a "visitorId" cookie already exists
+            var visitorId = getCookie("visitorId") || generateVisitorId();
+            
+            // Increment the page counter and set the "pageCounter" cookie
+            pageCounter++;
+            setCookie("pageCounter", pageCounter, 365);
+            
+            // Set the "visitorId" cookie if it doesn't already exist
+            if (!getCookie("visitorId")) {
+              setCookie("visitorId", visitorId, 365);
+            }
+            
+            // Display the value of the page counter and visitor ID in the "page-counter" element
+            document.getElementById("page-counter").innerHTML = "Unique visitors: " + visitorId + " | Page views: " + pageCounter;
+            
+            // Function to generate a unique visitor ID
+            function generateVisitorId() {
+              return Math.random().toString(36).substring(2, 15) + Math.random().toString(36).substring(2, 15);
+            }
+            
+            // Function to set a cookie
+            function setCookie(name, value, days) {
+              var expires = "";
+              if (days) {
+                var date = new Date();
+                date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+                expires = "; expires=" + date.toUTCString();
+              }
+              document.cookie = name + "=" + (value || "") + expires + "; path=/";
+            }
+            
+            // Function to get the value of a cookie
+            function getCookie(name) {
+              var nameEQ = name + "=";
+              var ca = document.cookie.split(';');
+              for (var i = 0; i < ca.length; i++) {
+                var c = ca[i];
+                while (c.charAt(0) == ' ') c = c.substring(1, c.length);
+                if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length, c.length);
+              }
+              return null;
+            }
+          </script>
     </body>
 </html>
