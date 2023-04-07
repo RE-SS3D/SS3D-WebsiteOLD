@@ -174,7 +174,8 @@
             }
             
             // Display the value of the page counter and visitor ID in the "page-counter" element
-            document.getElementById("page-counter").innerHTML = "Unique visitors: " + visitorId + " | Page views: " + pageCounter;
+            document.querySelector("#page-counter .unique-visitors").innerHTML = visitorId;
+            document.querySelector("#page-counter .page-views").innerHTML = pageCounter;
             
             // Function to generate a unique visitor ID
             function generateVisitorId() {
