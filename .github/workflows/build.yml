@@ -3,6 +3,10 @@ on:
   push:
     branches:
       - release
+    paths-ignore:
+      - '_drafts/**'
+      - '.gitignore'
+      - 'README.md'
 jobs:
   github-pages:
     runs-on: ubuntu-latest
