@@ -3,8 +3,8 @@
 <br>
 
 **Located at [https://ss3d.space](https://ss3d.space)**
-<img src="https://img.shields.io/github/actions/workflow/status/RE-SS3D/SS3D-Website/build.yml alt="repo size" align="right">
-<img src="https://img.shields.io/website?down_color=red&down_message=offline&up_color=green&up_message=online&url=https%3A%2F%2Fss3d.space alt="repo size" align="right">
+<img src="https://img.shields.io/github/actions/workflow/status/RE-SS3D/SS3D-Website/build.yml" alt="build status" align="right">
+<img src="https://img.shields.io/website?down_color=red&down_message=offline&up_color=green&up_message=online&url=https%3A%2F%2Fss3d.space" alt="website status" align="right">
 <img src="https://img.shields.io/github/repo-size/RE-SS3D/SS3D-Website" alt="repo size" align="right">
 
 ## Requirements
