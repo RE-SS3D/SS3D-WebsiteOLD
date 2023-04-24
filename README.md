@@ -2,7 +2,7 @@
 
 <br>
 
-<b>Located at: <a href="https://ss3d.space/"><img src="https://img.shields.io/website?down_color=red&down_message=offline&label=ss3d.space&up_color=green&up_message=online&url=https%3A%2F%2Fss3d.space" alt="website status"></a><b>
+<h3>Located at: <a href="https://ss3d.space/"><img src="https://img.shields.io/website?down_color=red&down_message=offline&label=ss3d.space&up_color=green&up_message=online&url=https%3A%2F%2Fss3d.space" alt="website status"></a><h3>
 <a href="https://github.com/RE-SS3D/SS3D-Website"><img src="https://img.shields.io/github/repo-size/RE-SS3D/SS3D-Website" alt="repo size" align="right"></a>
 <a href="https://github.com/RE-SS3D/SS3D-Website/blob/release/.github/workflows/build.yml"><img src="https://img.shields.io/github/actions/workflow/status/RE-SS3D/SS3D-Website/build.yml" alt="build status" align="right"></a>
 
