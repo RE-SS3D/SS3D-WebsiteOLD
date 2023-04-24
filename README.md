@@ -65,4 +65,4 @@ Website should be accessible at <http://localhost:4000/>
 
 A template for the blog posts exists at [./_drafts/devblog-format.md](./_drafts/devblog-format.md).
 
-A checklist regarding the process of the devblog can be found on our[management board](https://trello.com/c/jLB9dKJH).
+A checklist regarding the process of the devblog can be found on our [management board](https://trello.com/c/jLB9dKJH).
