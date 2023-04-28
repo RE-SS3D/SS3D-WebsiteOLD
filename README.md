@@ -1,4 +1,4 @@
-<h3 align="center"><img src="assets/img/SS3DBanner3.png" alt="SS3D_Banner">Website repository for <a href="https://ss3d.space/">Space Station 3D</a>!</h3>
+<h3 align="center"><img src="https://raw.githubusercontent.com/RE-SS3D/SS3D-Art/main/Artwork/Banners/BorderedBanners/SS3DBanner3.png" alt="SS3D Banner">Website repository for <a href="https://ss3d.space/">Space Station 3D</a>!</h3>
 
 <br>
 
