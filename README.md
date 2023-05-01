@@ -1,8 +1,12 @@
-<h3 align="center"><img src="assets/img/SS3DBanner3.png" alt="SS3D_Banner">Website repository for <a href="https://ss3d.space/">Space Station 3D</a>!</h3>
+<h3 align="center"><img src="https://raw.githubusercontent.com/RE-SS3D/SS3D-Art/main/Artwork/Banners/BorderedBanners/SS3DBanner3.png" alt="SS3D Banner">Website repository for <a href="https://ss3d.space/">Space Station 3D</a>!</h3>
 
 <br>
 
-**Located at [https://ss3d.space](https://ss3d.space)** <img src="https://img.shields.io/github/repo-size/RE-SS3D/SS3D-Website?color=gold&style=flat-round" alt="repo size" align="right">
+<h3>Located at:
+<a href="https://ss3d.space/"><img src="https://img.shields.io/website?down_color=red&down_message=offline&label=ss3d.space&up_color=green&style=plastic&up_message=online&url=https%3A%2F%2Fss3d.space" alt="website status"></a>
+<a href="https://github.com/RE-SS3D/SS3D-Website"><img src="https://img.shields.io/github/repo-size/RE-SS3D/SS3D-Website?color=gold&style=plastic" alt="repo size" align="right"></a>
+<a href="https://github.com/RE-SS3D/SS3D-Website/blob/release/.github/workflows/build.yml"><img src="https://img.shields.io/github/actions/workflow/status/RE-SS3D/SS3D-Website/build.yml?style=plastic" alt="build status" align="right"></a>
+<h3>
 
 ## Requirements
 
@@ -63,4 +67,10 @@ Website should be accessible at <http://localhost:4000/>
 
 A template for the blog posts exists at [./_drafts/devblog-format.md](./_drafts/devblog-format.md).
 
-A checklist regarding the process of the devblog can be found on our[management board](https://trello.com/c/jLB9dKJH).
+A checklist regarding the process of the devblog can be found on our [management board](https://trello.com/c/jLB9dKJH).
+
+## LICENSE
+
+All **CODE** falls under the **[MIT](https://github.com/RE-SS3D/.github/blob/main/LICENSE-CODE.md)** license.
+
+All **ASSETS** fall under the **[CC BY-NC-SA 4.0](https://github.com/RE-SS3D/.github/blob/main/LICENSE-ASSETS.md)** license.
