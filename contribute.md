@@ -33,7 +33,7 @@ Our [GitHub organization]({{ site.github_url }}){:target="_blank"} has 4 main re
 - [SS3D]({{ site.github_url }}/SS3D){:target="_blank"} - the game itself, and some documents.
 - [Art]({{ site.github_url }}/SS3D-Art){:target="_blank"} - art storage, with source files.
 - [Website]({{ site.github_url }}/SS3D-Website){:target="_blank"} - our (this) website.
-- [CentCom]({{ site.github_url }}/SS3D-CentCom){:target="_blank"} - central communications server, which manages user registration, authentication, and character storage, similar to what Byond is to SS13.
+- [CentCom]({{ site.github_url }}/SS3D-CentCom){:target="_blank"} - api which manages user registration, authentication, and character storage.
 
 For any other questions, concerns, or unsolicited advice, just ask around on the discord and someone will likely help you out.
 
