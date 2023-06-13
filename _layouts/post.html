@@ -14,18 +14,16 @@ layout: default
 <h5><i>{{ page.date | date: "%A, %B %-d, %Y" }}</i></h5>
 <h5><i>Written by: {{ page.author }}</i></h5>
 {% if page.release_old %}
-<h2>SS3D Build (Outdated): 
+<h2>SS3D (Outdated):
   <u>
-    <a href="{{ site.github_url }}/SS3D/releases/download/{{ page.release_old }}/RESS3D_{{ page.release_old }}.zip">v{{ page.release_old }}</a>
+    <a href="{{ site.github_url }}/SS3D/releases/download/{{ page.release_old }}/RESS3D_{{ page.release_old }}.zip"> {{ page.release_old }}</a>
   </u>
 </h2>
 {% endif %}
 {% if page.release %}
-<h2>SS3D Build: 
-  <u>
-    <a href="{{ site.github_url }}/SS3D/releases/download/{{ page.release }}/SS3D_{{ page.release }}.zip">v{{ page.release }}</a>
-  </u>
-</h2>
+<h2>SS3D {{ page.release }}</h2>
+<a href="{{ site.github_url }}/SS3D/releases/tag/{{ page.release }}">Changelog</a></h3> - 
+<a href="{{ site.github_url }}/SS3D/releases/download/{{ page.release }}/SS3D_{{ page.release }}.zip">Download</a>
 {% endif %}
 <br>
 {{ content }}
