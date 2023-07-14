@@ -22,8 +22,9 @@ layout: default
 {% endif %}
 {% if page.release %}
 <h2>SS3D {{ page.release }}</h2>
-<a href="{{ site.github_url }}/SS3D/releases/tag/{{ page.release }}">Changelog</a></h3> - 
-<a href="{{ site.github_url }}/SS3D/releases/download/{{ page.release }}/SS3D_{{ page.release }}.zip">Download</a>
+<h4>
+  <a href="{{ site.github_url }}/SS3D/releases/download/{{ page.release }}/SS3D_{{ page.release }}.zip">Download</a> - <a href="{{ site.github_url }}/SS3D/releases/tag/{{ page.release }}">Changelog</a>
+</h4>
 {% endif %}
 <br>
 {{ content }}
