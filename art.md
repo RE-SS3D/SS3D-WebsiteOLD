@@ -147,7 +147,10 @@ permalink: /art/
 # Probably Not
 {: class="centred" }
 
-{% responsive_image path: assets/img/art/ProbablyNot/ProbablyNot_QM.png template: _includes/srcset.html %}
+<div class='horizontal-2' markdown='1'>
+{% responsive_image path: assets/img/art/ProbablyNot/Researcher.png %}
+{% responsive_image path: assets/img/art/ProbablyNot/ProbablyNot_QM.png %}
+</div>
 
 <div class='horizontal-2' markdown='1'>
 {% responsive_image path: assets/img/art/ProbablyNot/ProbablyNot_Slime.png %}
@@ -203,6 +206,11 @@ permalink: /art/
 {: class="centred" }
 
 <iframe class="video" width="580px" height="325px" src="https://www.youtube-nocookie.com/embed/bOB6af_ZCj0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<div class='horizontal-2' markdown='1'>
+{% responsive_image path: assets/img/art/SmokingMan/ShoeStealer.png %}
+{% responsive_image path: assets/img/art/SmokingMan/Spessmen.png %}
+</div>
 
 <div class='horizontal-2' markdown='1'>
 {% responsive_image path: assets/img/art/SmokingMan/SmokingMan_Beeer.png %}
