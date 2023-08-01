@@ -2,7 +2,7 @@
 layout: default
 title: Download
 permalink: /download/
-release_latest: 0.0.6.4
+release_latest: 0.0.6.5
 ---
 
 <style type="text/css" media="screen">
