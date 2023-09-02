@@ -3,7 +3,6 @@ layout: default
 title: Download
 permalink: /download/
 release_latest: 0.0.6.6
----
 
 <style type="text/css" media="screen">
   .container {
