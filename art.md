@@ -207,6 +207,8 @@ permalink: /art/
 
 <iframe class="video" width="580px" height="325px" src="https://www.youtube-nocookie.com/embed/bOB6af_ZCj0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+{% responsive_image path: assets/img/art/SmokingMan/MedicalScience.png template: _includes/srcset.html %}
+
 <div class='horizontal-2' markdown='1'>
 {% responsive_image path: assets/img/art/SmokingMan/ShoeStealer.png %}
 {% responsive_image path: assets/img/art/SmokingMan/Spessmen.png %}
