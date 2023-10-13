@@ -4,10 +4,6 @@ title: Contribute
 permalink: /contribute/
 ---
 
-<div class="image-float_right">
-    <img src="{{ site.baseurl}}/assets/img/Engineer.png" alt="Engineer" width="300px">
-</div>
-
 ### How to contribute:
 
 There are 2 primary ways you can contribute;
