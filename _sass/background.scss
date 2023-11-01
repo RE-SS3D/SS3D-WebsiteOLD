@@ -34,7 +34,7 @@ body {
     &::before {
         content: " ";
         display: block;
-        background: url("/assets/img/stars.png");
+        background: url("{{ site.artwork_url }}/Wallpapers/Square/Space/Stars.png");
         opacity: 0.1;
         top: 0;
         left: 0;

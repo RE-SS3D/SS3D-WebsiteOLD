@@ -4,10 +4,6 @@ title: FAQ
 permalink: /faq/
 ---
 
-<div class="image-float_right">
-    <img src="{{ site.baseurl}}/assets/img/Writer.png" alt="Writer" width="400px">
-</div>
-
 ## What is SS3D?
 
 Yet another Space Station 13 remake...<br>

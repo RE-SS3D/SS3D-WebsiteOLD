@@ -15,7 +15,7 @@ release_latest: 0.0.6.7
 <div class="container">
   <div>
     <picture class="logo">
-      <img src="{{ site.baseurl }}/assets/img/beep.png" alt="beep">
+      <img src="{{ site.artwork_url }}/Banners/ClassicBanners/BeepBanner.png" alt="beep banner">
     </picture>
   </div>
   <meta http-equiv="refresh" content="5; URL={{ site.github_url }}/SS3D/releases/download/{{ page.release_latest }}/SS3D_{{ page.release_latest }}.zip" />
