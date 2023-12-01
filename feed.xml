@@ -1,0 +1,823 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://ss3d.space/feed.xml" rel="self" type="application/atom+xml" /><link href="https://ss3d.space/" rel="alternate" type="text/html" /><updated>2023-12-01T17:12:02+00:00</updated><id>https://ss3d.space/feed.xml</id><title type="html">SS3D</title><subtitle>This is a 3D recreation of Space Station 13, on the Unity engine, which will come with its own set of gameplay/graphical improvements. </subtitle><entry><title type="html">23.07-09: 2023 3rd Quarter Devblog</title><link href="https://ss3d.space/2023/10/07/23.09.html" rel="alternate" type="text/html" title="23.07-09: 2023 3rd Quarter Devblog" /><published>2023-10-07T11:30:00+00:00</published><updated>2023-10-07T11:30:00+00:00</updated><id>https://ss3d.space/2023/10/07/23.09</id><content type="html" xml:base="https://ss3d.space/2023/10/07/23.09.html">&lt;p&gt;&lt;em&gt;“Medicine is a science of uncertainty and an art of probability.”&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;– William Osler&lt;/p&gt;
+
+&lt;h1 id=&quot;q3-recap&quot;&gt;Q3 Recap&lt;/h1&gt;
+
+&lt;p&gt;This quarter we have some fun things to show, albeit they are still in their infancy. We made further progress on the clothing system, started a health system, and made lots of fixes.&lt;/p&gt;
+
+&lt;h1 id=&quot;inventory-rework-and-basic-clothing&quot;&gt;Inventory Rework and Basic Clothing&lt;/h1&gt;
+
+&lt;p&gt;In preparation for his health system, &lt;strong&gt;Nath&lt;/strong&gt; made some changes to the clothing and inventory systems. He made the inventory dynamic and now the slots are based on your limbs and clothing.&lt;/p&gt;
+
+&lt;p&gt;If a player loses a hand, they will lose that ui slot. No left hand, no left-hand slot. No torso, no backpack slot. If the player grows a third arm/hand, they get a 3rd hand slot.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Nath&lt;/strong&gt; also set up some basic clothing to pair with the inventory rework. Similar to the limbs, if a player is wearing a jumpsuit, they will notice two pocket slots in their inventory UI. If they remove their jumpsuit, the pocket slots will be removed. In fact, they remain attached to the jumpsuit. So if you place an object in your pocket and remove the jumpsuit, the object stays in the jumpsuit. Articles of clothing are now searchable containers and different types will have different quantities of pockets in the future.&lt;/p&gt;
+
+&lt;div&gt;
+  &lt;iframe class=&quot;video&quot; width=&quot;580px&quot; height=&quot;325px&quot; src=&quot;https://www.youtube-nocookie.com/embed/Xm1Fw9bgCRc&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+  &lt;h5&gt;Currently gloves/shoes must be equipped separately due to the constraints of the system as is, but we intend to make that more intuitive in the future. Also, some bugs to fix.&lt;/h5&gt;
+&lt;/div&gt;
+
+&lt;h1 id=&quot;basic-health&quot;&gt;Basic Health&lt;/h1&gt;
+
+&lt;p&gt;&lt;strong&gt;Nath&lt;/strong&gt;, inspired by past medical systems we had, wanted to make something more robust and is doing just that based on our &lt;a href=&quot;https://ss3d.gitbook.io/design/entities/health&quot; target=&quot;_blank&quot;&gt;recent designs&lt;/a&gt;. The system uses a combination of body parts and body layers to create a modular health system.&lt;/p&gt;
+
+&lt;p&gt;Body parts are what they sound like, that’s the character’s limbs, head, torso, organs, etc.. They are fully autonomous networked objects. The only special body part is the brain. If the brain dies, the character dies.&lt;/p&gt;
+
+&lt;p&gt;Body layers are essentially the separate sub-systems within the character. Body layers have their own health (can be damaged individually) and will eventually have special behaviors. A human has several biological sub-systems such as muscular, nervous, skeletal, circulatory, and organs which all work in various ways to keep the human alive. Whereas a cyborg may have various electrical sub-systems that keep them operating (cyborgs not implemented yet).&lt;/p&gt;
+
+&lt;p&gt;He also added detachable limbs and different types of damage; brute, energy, chemical, and oxygen loss. Body layers can have resistances or vulnerabilities to different damage types. Damages all behave the same, they contribute to the total damage amount of a body part. If the body part takes enough damage it is destroyed (simply vanishes for now). Body parts can be severed however as long as it is not destroyed first. Severing hands prevents the character from using hands in any way. Severing feet currently prevents the character from walking/running. If the head is severed, the “soul” stays with the head since that is where the brain resides. If the brain dies somehow the soul becomes a ghost.&lt;/p&gt;
+
+&lt;p&gt;Since combat hasn’t been worked on yet, &lt;strong&gt;Nath&lt;/strong&gt; simply added some basic ‘click to add damage’ actions and console commands to use as testing for now.&lt;/p&gt;
+
+&lt;iframe class=&quot;video&quot; width=&quot;580px&quot; height=&quot;325px&quot; src=&quot;https://user-images.githubusercontent.com/14344825/264783405-63f1a999-fc81-4f36-bafc-1bb6dae2a3be.mp4&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;h1 id=&quot;container-system-simplification&quot;&gt;Container System Simplification&lt;/h1&gt;
+
+&lt;p&gt;First, &lt;strong&gt;Nath&lt;/strong&gt; merged our Container and AttachedContainer scripts since there were very few situations we may need a container not attached to a game object. Then he removed the size feature on items which allowed them to take up different amounts of space in a container. This feature is nice in theory but as of now, we haven’t agreed on how that should be visualized and can be re-added in the future.&lt;/p&gt;
+
+&lt;p&gt;Finally, he fixed several bugs with the system; item sprites no longer glitching when moving them, dropping item sprite on container window edges no longer causes glitching, removed redundant calls and events, and items now get placed in containers where the mouse released them.&lt;/p&gt;
+
+&lt;h2 id=&quot;details&quot;&gt;Details&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;Nath&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Fixed held item rotations.&lt;/li&gt;
+  &lt;li&gt;Fixed the command system not being able to be called on clients.&lt;/li&gt;
+  &lt;li&gt;Updated fishnet from 2.6.6 to 3.10.&lt;/li&gt;
+  &lt;li&gt;Added stylecop for linting scripts.&lt;/li&gt;
+  &lt;li&gt;Moved some things to editor-only to fix build errors.&lt;/li&gt;
+  &lt;li&gt;Fixed issue with containers causing a possible stack overflow.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;John&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Added an editor configuration file.&lt;/li&gt;
+  &lt;li&gt;Refactored game screens and smoothed the embarking process.&lt;/li&gt;
+  &lt;li&gt;Refactored Save and Tile systems to be more log-friendly.&lt;/li&gt;
+  &lt;li&gt;Added a missing asset in the project settings.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;IAmTeapot&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Added Runtime Inspector, Runtime Hierarchy, &amp;amp; Inspect Plus plugins.&lt;/li&gt;
+  &lt;li&gt;Fixed commands failing to execute.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;assets&quot;&gt;Assets&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;Konstantin&lt;/strong&gt; is keeping the asset section alive this quarter with a couple of AI faces based on JC Denton from Deus Ex.&lt;/p&gt;
+
+&lt;div class=&quot;horizontal-2&quot;&gt;
+
+  &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/23.07-09/JCDenton.png&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/JCDenton-580x580.png 580w,    /assets/resized/JCDenton-290x290.png 290w,    /assets/resized/JCDenton-170x170.png 170w,    /assets/resized/JCDenton-145x145.png 145w, /assets/img/posts/23.07-09/JCDenton.png 700w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+
+  &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/23.07-09/JCDentonSimple.png&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/JCDentonSimple-580x580.png 580w,    /assets/resized/JCDentonSimple-290x290.png 290w,    /assets/resized/JCDentonSimple-170x170.png 170w,    /assets/resized/JCDentonSimple-145x145.png 145w, /assets/img/posts/23.07-09/JCDentonSimple.png 700w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;art&quot;&gt;Art&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;SmokingMan&lt;/strong&gt; made this month’s blog art!&lt;/p&gt;
+
+&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/art/SmokingMan/MedicalScience.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/MedicalScience-580x326.png 580w,    /assets/resized/MedicalScience-290x163.png 290w,    /assets/resized/MedicalScience-170x96.png 170w,    /assets/resized/MedicalScience-145x82.png 145w, /assets/img/art/SmokingMan/MedicalScience.png 1920w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;footnotes&quot;&gt;Footnotes&lt;/h2&gt;
+
+&lt;p&gt;Interested in more frequent updates or hanging out with our community? Join our &lt;a href=&quot;https://discord.gg/3ny9tdH&quot; target=&quot;_blank&quot;&gt;Discord&lt;/a&gt;!&lt;/p&gt;</content><author><name>CosmicCoincidence</name></author><summary type="html">“Medicine is a science of uncertainty and an art of probability.”</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://ss3d.space/assets/img/art/SmokingMan/MedicalScience.png" /></entry><entry><title type="html">23.04-06: 2023 2nd Quarter Devblog</title><link href="https://ss3d.space/2023/07/05/23.06.html" rel="alternate" type="text/html" title="23.04-06: 2023 2nd Quarter Devblog" /><published>2023-07-05T11:30:00+00:00</published><updated>2023-07-05T11:30:00+00:00</updated><id>https://ss3d.space/2023/07/05/23.06</id><content type="html" xml:base="https://ss3d.space/2023/07/05/23.06.html">&lt;p&gt;&lt;em&gt;“We will follow the science no matter where it leads, even to death or destruction.”&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;– RD&lt;/p&gt;
+
+&lt;h1 id=&quot;q2-recap&quot;&gt;Q2 Recap&lt;/h1&gt;
+
+&lt;p&gt;This past quarter has been a slow one, but we are still working hard!&lt;/p&gt;
+
+&lt;p&gt;A few months ago we started the slow process of reviewing and moving game assets from our GoogleDrive to our new GitHub &lt;a href=&quot;https://github.com/RE-SS3D/SS3D-art&quot; target=&quot;_blank&quot;&gt;art repo&lt;/a&gt;, the process is slow going but we’ve made decent progress over the last few months. It’s a good time to work on this because a lot of our assets haven’t been examined by anyone in a long time and it’s advantageous to have them reviewed now while they are not needed in-game yet. Eventually we plan to embed the art repo into the game repo so that the assets do not need to be updated at multiple locations.&lt;/p&gt;
+
+&lt;h2 id=&quot;details&quot;&gt;Details&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;LightVelox&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Applied humble object pattern on items.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;iamteapot&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Added lights to lockers based on lock status.&lt;/li&gt;
+  &lt;li&gt;Changed the IngameDebugConsole location.&lt;/li&gt;
+  &lt;li&gt;Fixed stored items being rendered.&lt;/li&gt;
+  &lt;li&gt;Added camera rotation with mouse drag.&lt;/li&gt;
+  &lt;li&gt;Reworked inconsistent icon rendering in the tilemap editor.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;mchlopecki&lt;/strong&gt; (new contributor)&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Fixed skybox connections.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;CiciSpace&lt;/strong&gt; (new contributor)&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Normalized movement speed.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Ryan&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Added summarized test results with CI.&lt;/li&gt;
+  &lt;li&gt;Automated self-assigning issues.&lt;/li&gt;
+  &lt;li&gt;Automated opening project boards based on milestones.&lt;/li&gt;
+  &lt;li&gt;Automated adding issues/prs to project boards and moving PRs to certain columns.&lt;/li&gt;
+  &lt;li&gt;Fixed stamina bar display on the host.&lt;/li&gt;
+  &lt;li&gt;Resolved warnings caused by hiding inherited members.&lt;/li&gt;
+  &lt;li&gt;Added more tests for the containers system.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;CosmicCoincidence&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Updated startup logo.&lt;/li&gt;
+  &lt;li&gt;Updated the human, hair, organs, and clothing models.&lt;/li&gt;
+  &lt;li&gt;Added some basic items &amp;amp; furniture from the old branch.&lt;/li&gt;
+  &lt;li&gt;Moved many assets from GoogleDrive to GitHub.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;xk0fe&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Added collider checks for child objects.&lt;/li&gt;
+  &lt;li&gt;Renamed code, prefabs, objects, and inputs.&lt;/li&gt;
+  &lt;li&gt;Changed object display names in the log.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Nath&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Fixed duplicate player key bug.&lt;/li&gt;
+  &lt;li&gt;Applied humble object pattern on substance containers.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;John&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Reworked how network settings are loaded.&lt;/li&gt;
+  &lt;li&gt;Fixed overrides in the Engiborg prefab?&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;assets&quot;&gt;Assets&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;Kruzn&lt;/strong&gt; returned with a couple more models for us, a modular stone altar for the chapel, and two variations on the status display monitor.&lt;/p&gt;
+
+&lt;div class=&quot;horizontal-2&quot;&gt;
+
+  &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/23.04-06/StatusMonitor.png&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/StatusMonitor-580x387.png 580w,    /assets/resized/StatusMonitor-290x193.png 290w,    /assets/resized/StatusMonitor-170x113.png 170w,    /assets/resized/StatusMonitor-145x97.png 145w, /assets/img/posts/23.04-06/StatusMonitor.png 900w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+
+  &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/23.04-06/StoneChapelAltar.png&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/StoneChapelAltar-580x387.png 580w,    /assets/resized/StoneChapelAltar-290x193.png 290w,    /assets/resized/StoneChapelAltar-170x113.png 170w,    /assets/resized/StoneChapelAltar-145x97.png 145w, /assets/img/posts/23.04-06/StoneChapelAltar.png 900w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;art&quot;&gt;Art&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;ProbablyNot&lt;/strong&gt; purpose in life is making these fabulous wallpapers for us!&lt;/p&gt;
+
+&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/art/ProbablyNot/Researcher.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/Researcher-580x326.png 580w,    /assets/resized/Researcher-290x163.png 290w,    /assets/resized/Researcher-170x96.png 170w,    /assets/resized/Researcher-145x82.png 145w, /assets/img/art/ProbablyNot/Researcher.png 3840w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+
+&lt;p&gt;And &lt;strong&gt;SmokingMan&lt;/strong&gt; enjoys doing some chaotic/comedic scenes for us too!&lt;/p&gt;
+
+&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/art/SmokingMan/Spessmen.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/Spessmen-580x326.png 580w,    /assets/resized/Spessmen-290x163.png 290w,    /assets/resized/Spessmen-170x96.png 170w,    /assets/resized/Spessmen-145x82.png 145w, /assets/img/art/SmokingMan/Spessmen.png 2112w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+
+&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/art/SmokingMan/ShoeStealer.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/ShoeStealer-580x326.png 580w,    /assets/resized/ShoeStealer-290x163.png 290w,    /assets/resized/ShoeStealer-170x96.png 170w,    /assets/resized/ShoeStealer-145x82.png 145w, /assets/img/art/SmokingMan/ShoeStealer.png 2112w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;footnotes&quot;&gt;Footnotes&lt;/h2&gt;
+
+&lt;p&gt;If you want to contribute or take part in community discussions, join us in our &lt;a href=&quot;https://discord.gg/3ny9tdH&quot; target=&quot;_blank&quot;&gt;Discord&lt;/a&gt; server.&lt;/p&gt;</content><author><name>CosmicCoincidence</name></author><summary type="html">“We will follow the science no matter where it leads, even to death or destruction.”</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://ss3d.space/assets/img/art/ProbablyNot/Researcher.png" /></entry><entry><title type="html">23.01-03: 2023 1st Quarter Devblog</title><link href="https://ss3d.space/2023/04/06/23.03.html" rel="alternate" type="text/html" title="23.01-03: 2023 1st Quarter Devblog" /><published>2023-04-06T11:30:00+00:00</published><updated>2023-04-06T11:30:00+00:00</updated><id>https://ss3d.space/2023/04/06/23.03</id><content type="html" xml:base="https://ss3d.space/2023/04/06/23.03.html">&lt;p&gt;&lt;em&gt;“The Line between disorder and order lies in Logistics.”&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;– Sun Tzu&lt;/p&gt;
+
+&lt;h1 id=&quot;q1-recap&quot;&gt;Q1 Recap&lt;/h1&gt;
+
+&lt;p&gt;This quarter has been our most productive quarter in at least a year. This includes new documentation, promising progress on the core rework, and even some new features we didn’t have before the rework like addressable asset data and character roles.&lt;/p&gt;
+
+&lt;p&gt;Also, a big thanks to our maintainers; none of these contributions would make it into the game without proper review and testing by them. I feel it is important to remember and thank them as they do a lot of work but sometimes get forgotten in these blogs. So, thanks again to our maintainers!&lt;/p&gt;
+
+&lt;h2 id=&quot;documentation&quot;&gt;Documentation&lt;/h2&gt;
+
+&lt;p&gt;Due to &lt;strong&gt;John’s&lt;/strong&gt; initiative, we made a huge improvement recently that impacts every aspect of our development. Which is us finally having a quality documentation solution. Before this year, we have been using Google documents in folders on our Google Drive, but now, we are using GitBook (&lt;a href=&quot;https://ss3d.gitbook.io&quot; target=&quot;_blank&quot;&gt;https://ss3d.gitbook.io&lt;/a&gt;). Thanks to GitBook for sponsoring us with a free premium account via their open-source program!&lt;/p&gt;
+
+&lt;p&gt;Our GitBook, being new, may see some restructuring and lots of additions still. Currently, we have 4 main spaces; Design, Art Guide, Dev Guide, &amp;amp; Systems. “Design” is our game design documentation. “Art Guide” &amp;amp; “Dev Guide” are our contributor guidelines. While “Systems” is similar to “Design” but is for the technical documentation related to implementation.&lt;/p&gt;
+
+&lt;p&gt;Since the game we are making is community-oriented, feel free to read up on our &lt;a href=&quot;https://ss3d.gitbook.io/design/&quot; target=&quot;_blank&quot;&gt;Design page&lt;/a&gt; and share your thoughts on our Discord or GitHub.&lt;/p&gt;
+
+&lt;p&gt;Also, if you’re curious about seeing our development progress in the form of a plan and where we are in that plan, see our &lt;a href=&quot;https://ss3d.gitbook.io/dev-guide/roadmap&quot; target=&quot;_blank&quot;&gt;Roadmap page&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;rework&quot;&gt;Rework&lt;/h2&gt;
+
+&lt;p&gt;As you likely know if you read our last blog or are active in our Discord, we have recently been overhauling the under-belly (underhauling?) of the game itself.&lt;/p&gt;
+
+&lt;p&gt;This process began about 1 year ago with &lt;strong&gt;John&lt;/strong&gt; starting on his own branch, then about 5-6 months ago he reached a point with his “underhaul” that more contributors started to assist. About a month after that we officially swapped over to using his branch as our new primary development branch.&lt;/p&gt;
+
+&lt;p&gt;As of now, the rework is still incomplete but continues to shuffle forward as we port over our game systems &amp;amp; assets to the new branch.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;John&lt;/strong&gt; readded the interaction wheel for secondary interactions. He also readded item spawning from vending machines.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Broodje&lt;/strong&gt; readded and reworked his previous tilemap system, fixing several bugs in the process. It is now play-mode only and no longer can be used in the editor. It also now has a simple UI window and hologram to show where and what tile you are placing. The system also now supports items embedded in the tilemap which means they can now be saved to the tilemap save file.&lt;/p&gt;
+
+&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/23.01-03/TilemapEditor.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/TilemapEditor-580x435.png 580w,    /assets/resized/TilemapEditor-290x218.png 290w,    /assets/resized/TilemapEditor-170x128.png 170w,    /assets/resized/TilemapEditor-145x109.png 145w, /assets/img/posts/23.01-03/TilemapEditor.png 800w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;CosmicCoincidence&lt;/strong&gt; readded many objects including structures, wall-mounts, furniture, floor textures, etc.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Nath&lt;/strong&gt; readded the basic player inventory and item sprite generation, while also fixing several bugs in the process. He readded our basic substance system with a few testable substances and fixed a few bugs. He also readded the container system and fixed bugs with it as well.&lt;/p&gt;
+
+&lt;h2 id=&quot;containers&quot;&gt;Containers&lt;/h2&gt;
+
+&lt;p&gt;After redoing the old container system, &lt;strong&gt;Nath&lt;/strong&gt; introduced basic pockets, then went about rehauling the whole system. The rehaul makes the system more independent, easier to use, and more organized and efficient.&lt;/p&gt;
+
+&lt;h2 id=&quot;asset-data&quot;&gt;Asset Data&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;John&lt;/strong&gt; implemented a new asset data system. The new system automates much of the process for contributors. The system uses addressable groups to determine how the assets are referenced, loaded, and used.&lt;/p&gt;
+
+&lt;h2 id=&quot;stamina&quot;&gt;Stamina&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;Ryan&lt;/strong&gt; added a stamina sub-system. Ultimately it is a sub-system to the player health system but we do not have that yet so the stamina system currently is standalone.&lt;/p&gt;
+
+&lt;p&gt;The specifics of the system may change over time, but currently, stamina decreases through various movements (eventually combat too), can regenerate over time, and can be trained through usage.&lt;/p&gt;
+
+&lt;h2 id=&quot;roles&quot;&gt;Roles&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;LightVelox&lt;/strong&gt; implemented a new role system recently. For now, there are currently only 2 roles; security and assistant. Players can now start the round with a role (though there is currently no way to select what role they want), and the player will start with an item loadout based on that role (currently only spawns an ID and PDA). ID cards have even been given permission traits so they can do things such as unlock lockers or use certain doors.&lt;/p&gt;
+
+&lt;h2 id=&quot;controls&quot;&gt;Controls&lt;/h2&gt;
+
+&lt;p&gt;After replacing the input manager with a new input action asset, &lt;strong&gt;IAmTeapot&lt;/strong&gt; reworked the input/controls system to now use toggling methods and input consumption which fixed several issues we had with the system. A short list of these issues includes; overlapping control schemes conflicting with each other, unwanted interactions happening while UI elements were focused, and drag and dropping item icons not working properly.&lt;/p&gt;
+
+&lt;h2 id=&quot;details&quot;&gt;Details&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;Ryan&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Readded the in-game console which got removed.&lt;/li&gt;
+  &lt;li&gt;Fixed the pickup interaction using the wrong sprite.&lt;/li&gt;
+  &lt;li&gt;Fixed player list on the host.&lt;/li&gt;
+  &lt;li&gt;Fixed issue with items not dispensing on the host.&lt;/li&gt;
+  &lt;li&gt;Fixed bug with the lobby menu not closing when joining a round.&lt;/li&gt;
+  &lt;li&gt;Fixed bug with clients returning duplicate ckeys.&lt;/li&gt;
+  &lt;li&gt;Fixed server list not updating when players left.&lt;/li&gt;
+  &lt;li&gt;Applied new permission calls.&lt;/li&gt;
+  &lt;li&gt;Added editor testing!&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Notterox&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Upgraded our FishNet version.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Nath&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Added basic ghosts. When the player dies, they become a ghost.&lt;/li&gt;
+  &lt;li&gt;Added serilog as our new logging library.&lt;/li&gt;
+  &lt;li&gt;Fixed bug when trying to join a round that already started.&lt;/li&gt;
+  &lt;li&gt;Fixed busy port bug in the editor.&lt;/li&gt;
+  &lt;li&gt;Fixed a container collection error.&lt;/li&gt;
+  &lt;li&gt;Fixed bug in server-only mode where clients couldn’t pick up items more than once.&lt;/li&gt;
+  &lt;li&gt;Added new tools folder in the editor.&lt;/li&gt;
+  &lt;li&gt;Fixed failure when building the project.&lt;/li&gt;
+  &lt;li&gt;Helped move documentation to GitBook.&lt;/li&gt;
+  &lt;li&gt;Fixed client-side input system issues.&lt;/li&gt;
+  &lt;li&gt;Fixed client-side container UI issues.&lt;/li&gt;
+  &lt;li&gt;Moved observer condition folder.&lt;/li&gt;
+  &lt;li&gt;Updated hack files.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;John&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Fixed the ‘ready up’ button on non-admin clients.&lt;/li&gt;
+  &lt;li&gt;Added minds to entity workflow to better separate entity control.&lt;/li&gt;
+  &lt;li&gt;Reworked the game build workflow.&lt;/li&gt;
+  &lt;li&gt;Updated our Unity version, and fixes several errors.&lt;/li&gt;
+  &lt;li&gt;Fixed clients not being able to join an editor-based server.&lt;/li&gt;
+  &lt;li&gt;Fixed missing input system and inconsistent game UI.&lt;/li&gt;
+  &lt;li&gt;Cleaned up many files in the project.&lt;/li&gt;
+  &lt;li&gt;Reworked and documented the Actor GameObjects.&lt;/li&gt;
+  &lt;li&gt;Helped move documentation to GitBook.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;CosmicCoincidence&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Organized &amp;amp; renamed many Github assets and documents.&lt;/li&gt;
+  &lt;li&gt;Moved &amp;amp; updated documentation on GitBook.&lt;/li&gt;
+  &lt;li&gt;Small fixes to game info UI text.&lt;/li&gt;
+  &lt;li&gt;Fixed a few item colliders.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;SirReginald1&lt;/strong&gt; (new contributor)&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Added a checking method for authorization in the permission system.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;IAmTeapot&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Fixed camera snap rotation snapping in the wrong direction.&lt;/li&gt;
+  &lt;li&gt;Fixed issue with the camera zooming when scrolling in a UI window.&lt;/li&gt;
+  &lt;li&gt;Reworked the in-game command console, and made several improvements.&lt;/li&gt;
+  &lt;li&gt;Helped move and organize some files.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;LightVelox&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Documented multiple systems and move them to GitBook.&lt;/li&gt;
+  &lt;li&gt;Fixed the start button not updating properly.&lt;/li&gt;
+  &lt;li&gt;Fixed the hand containers breaking depending on the item transfer method.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Alainx277&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Added ability for tests to run on forked repositories!&lt;/li&gt;
+  &lt;li&gt;Moved the website builds from TravisCI to GitHub Actions.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Seteron&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Fixed the occupied port problem?&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Konstantin3001&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Moved &amp;amp; updated &lt;em&gt;lots&lt;/em&gt; of documentation on GitBook.&lt;/li&gt;
+  &lt;li&gt;Created a &lt;a href=&quot;https://ss3d.gitbook.io/art-guide/2d&quot; target=&quot;_blank&quot;&gt;2D art guide&lt;/a&gt; and added it to GitBook.&lt;/li&gt;
+  &lt;li&gt;Added several new design documents to the GitBook.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;k0fe&lt;/strong&gt; (new contributor)&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Disabled physics for construction holograms.&lt;/li&gt;
+  &lt;li&gt;Removed inventory and interactions from ghosts.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;assets&quot;&gt;Assets&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;Konstantin3001&lt;/strong&gt;, the go-to 2D lad at SS3D, refuses to quit delivering pure quality assets for us. Recently he submitted a new winter skybox for the holodeck (&lt;a href=&quot;/assets/img/posts/20.05.01/Beach_Holodeck.png&quot; target=&quot;_blank&quot;&gt;see his beach one here&lt;/a&gt;), and new food &amp;amp; glass particles!&lt;/p&gt;
+
+&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/23.01-03/Konstantin_HolodeckWinter.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/Konstantin_HolodeckWinter-580x435.png 580w,    /assets/resized/Konstantin_HolodeckWinter-290x218.png 290w,    /assets/resized/Konstantin_HolodeckWinter-170x128.png 170w,    /assets/resized/Konstantin_HolodeckWinter-145x109.png 145w, /assets/img/posts/23.01-03/Konstantin_HolodeckWinter.png 1300w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+
+&lt;div class=&quot;horizontal-2&quot;&gt;
+
+  &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/23.01-03/KonFoodParticles.png&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/KonFoodParticles-580x435.png 580w,    /assets/resized/KonFoodParticles-290x218.png 290w,    /assets/resized/KonFoodParticles-170x128.png 170w,    /assets/resized/KonFoodParticles-145x109.png 145w, /assets/img/posts/23.01-03/KonFoodParticles.png 800w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+
+  &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/23.01-03/KonGlassParticles.png&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/KonGlassParticles-580x435.png 580w,    /assets/resized/KonGlassParticles-290x218.png 290w,    /assets/resized/KonGlassParticles-170x128.png 170w,    /assets/resized/KonGlassParticles-145x109.png 145w, /assets/img/posts/23.01-03/KonGlassParticles.png 800w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;Grimmie&lt;/strong&gt; popped in for a visit and decided to submit this directional grille model.&lt;/p&gt;
+
+&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/23.01-03/Grimmie_Grille.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/Grimmie_Grille-580x435.png 580w,    /assets/resized/Grimmie_Grille-290x218.png 290w,    /assets/resized/Grimmie_Grille-170x128.png 170w,    /assets/resized/Grimmie_Grille-145x109.png 145w, /assets/img/posts/23.01-03/Grimmie_Grille.png 800w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;Kruzn&lt;/strong&gt; (new contributor) made this simple but sweet meteoroid for us!&lt;/p&gt;
+
+&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/23.01-03/Kruzn_Meteoroid.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/Kruzn_Meteoroid-580x435.png 580w,    /assets/resized/Kruzn_Meteoroid-290x218.png 290w,    /assets/resized/Kruzn_Meteoroid-170x128.png 170w,    /assets/resized/Kruzn_Meteoroid-145x109.png 145w, /assets/img/posts/23.01-03/Kruzn_Meteoroid.png 800w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;art&quot;&gt;Art&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;SmokingMan&lt;/strong&gt; spontaneously rendered another image for us!&lt;/p&gt;
+
+&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/art/SmokingMan/SmokingMan_Beeer.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/SmokingMan_Beeer-580x326.png 580w,    /assets/resized/SmokingMan_Beeer-290x163.png 290w,    /assets/resized/SmokingMan_Beeer-170x96.png 170w,    /assets/resized/SmokingMan_Beeer-145x82.png 145w, /assets/img/art/SmokingMan/SmokingMan_Beeer.png 1920w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+
+&lt;p&gt;Did you really expect this masterful render to be done by anyone other &lt;strong&gt;ProbablyNot&lt;/strong&gt;?&lt;/p&gt;
+
+&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/art/ProbablyNot/ProbablyNot_QM.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/ProbablyNot_QM-580x326.png 580w,    /assets/resized/ProbablyNot_QM-290x163.png 290w,    /assets/resized/ProbablyNot_QM-170x96.png 170w,    /assets/resized/ProbablyNot_QM-145x82.png 145w, /assets/img/art/ProbablyNot/ProbablyNot_QM.png 3840w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+
+&lt;p&gt;And &lt;strong&gt;CosmicCoincidence&lt;/strong&gt; made a 3D variant of SS13’s classic logo and some banners using previously submitted wallpapers.&lt;/p&gt;
+
+&lt;div class=&quot;horizontal-2&quot;&gt;
+  &lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/RE-SS3D/SS3D-Art/main/Artwork/Logos/SS3D/SpaceStation3D.png&quot; alt=&quot;beep banner&quot; /&gt;
+  &lt;img src=&quot;https://raw.githubusercontent.com/RE-SS3D/SS3D-Art/main/Artwork/Logos/SS3D/SS3D.png&quot; alt=&quot;beep banner&quot; /&gt;&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/RE-SS3D/SS3D-Art/main/Artwork/Banners/BorderedBanners/SS3DBanner1.png&quot; alt=&quot;SS3D Banner 1&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/RE-SS3D/SS3D-Art/main/Artwork/Banners/BorderedBanners/SS3DBanner2.png&quot; alt=&quot;SS3D Banner 2&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/RE-SS3D/SS3D-Art/main/Artwork/Banners/BorderedBanners/SS3DBanner3.png&quot; alt=&quot;SS3D Banner 3&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/RE-SS3D/SS3D-Art/main/Artwork/Banners/BorderedBanners/SS3DBanner4.png&quot; alt=&quot;SS3D Banner 4&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;footnotes&quot;&gt;Footnotes&lt;/h2&gt;
+
+&lt;p&gt;As always, if you want to follow along with our development &amp;amp; community, joining our &lt;a href=&quot;https://discord.gg/3ny9tdH&quot; target=&quot;_blank&quot;&gt;Discord&lt;/a&gt; is the best way to do so.&lt;/p&gt;</content><author><name>CosmicCoincidence</name></author><summary type="html">“The Line between disorder and order lies in Logistics.”</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://ss3d.space/assets/img/art/ProbablyNot/ProbablyNot_QM.png" /></entry><entry><title type="html">22.10-12: 2022 4th Quarter Devblog</title><link href="https://ss3d.space/2023/01/08/22.12.html" rel="alternate" type="text/html" title="22.10-12: 2022 4th Quarter Devblog" /><published>2023-01-08T11:30:00+00:00</published><updated>2023-01-08T11:30:00+00:00</updated><id>https://ss3d.space/2023/01/08/22.12</id><content type="html" xml:base="https://ss3d.space/2023/01/08/22.12.html">&lt;p&gt;We here at SS3D hope you all enjoyed your holidays despite being the naughty little boys and girls we know many of you are. After dropping off a large chunk of coal for us, Santa did actually bring us something great this year, he brought us &lt;em&gt;closer together&lt;/em&gt;. Thanks, Santa!&lt;/p&gt;
+
+&lt;h1 id=&quot;q4-recap&quot;&gt;Q4 Recap&lt;/h1&gt;
+
+&lt;p&gt;The 4th quarter of 2022 saw an uptick in productivity as a result of &lt;strong&gt;John’s&lt;/strong&gt; progress on the rework.&lt;/p&gt;
+
+&lt;p&gt;As a result of the large rework, we have now reset our release versioning as well. This should have been done earlier in the year when we switched to the rework branch as our primary developing branch but we got ahead of ourselves I guess.&lt;/p&gt;
+
+&lt;p&gt;I’m pleased to say that, despite a lot of work to do still on the rework, we have moved to the point where we can begin working on other systems not included or directly relating to said rework. Gamemodes being the first big one.&lt;/p&gt;
+
+&lt;h2 id=&quot;rework&quot;&gt;Rework&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;John&lt;/strong&gt; has been still porting over our old systems to the new branch and recently has been getting help from a few other contributors. One of the main tweaks he did recently was converting our networking system from Mirror over to FishNet.&lt;/p&gt;
+
+&lt;p&gt;He made more progress with player spawning from last quarter. Players now despawn at the end of a round. Players now have ‘minds’ (consciousness, soul, w/e), so now a player’s mind can be transferred to another entity, become a ghost when their body dies, etc..&lt;/p&gt;
+
+&lt;p&gt;He also managed to port over the interaction system, mostly. So basic interactions should be working again, mostly.&lt;/p&gt;
+
+&lt;h2 id=&quot;gamemodes&quot;&gt;Gamemodes&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;LightVelox&lt;/strong&gt; implemented our first functioning gamemode system. The system is fairly basic but allows for traitors to occur, traitors have objectives, and now a proper way to end a round. The round ends when the objectives are complete. Objectives can also fail. Currently, the traitor gamemode is rudimentary with just 1 objective (try to detonate the nuke) but will be expanded with time.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Ryan&lt;/strong&gt; refactored the above system to separate domain layer from application services and implemented unit testing for domain layer. He later added functionality for group-based objectives, including both cooperative and competitive types.&lt;/p&gt;
+
+&lt;h2 id=&quot;details&quot;&gt;Details&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;John&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;reworked our application settings.&lt;/li&gt;
+  &lt;li&gt;improved asset data handling.&lt;/li&gt;
+  &lt;li&gt;removed duplicate event system.&lt;/li&gt;
+  &lt;li&gt;repaired the false start issue (admins could start a round after it already started).&lt;/li&gt;
+  &lt;li&gt;updated various programming documentation.&lt;/li&gt;
+  &lt;li&gt;fixed &lt;em&gt;many&lt;/em&gt; bugs.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;iamteapot&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;fixed a problem not being able to make builds.&lt;/li&gt;
+  &lt;li&gt;added a command console to allow various debug commands to assist testing.&lt;/li&gt;
+  &lt;li&gt;fixed the camera so it smoothly follows the player, now accounting for minds.&lt;/li&gt;
+  &lt;li&gt;fixed discord integration.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Ryan&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;fixed the item layer requirements.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;LightVelox&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;fixed drop interaction not showing in the interaction wheel.&lt;/li&gt;
+  &lt;li&gt;fixed memory leak caused by event listeners.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;textures&quot;&gt;Textures&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;CosmicCoincidence&lt;/strong&gt; rendered the classic &lt;a href=&quot;/assets/img/posts/22.10-12/ss13sign.png&quot; target=&quot;_blank&quot;&gt;SS13 floor plaque&lt;/a&gt; as textures, with normal maps.&lt;/p&gt;
+
+&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/22.10-12/SS13SignTextures.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/SS13SignTextures-580x435.png 580w,    /assets/resized/SS13SignTextures-290x218.png 290w,    /assets/resized/SS13SignTextures-170x128.png 170w,    /assets/resized/SS13SignTextures-145x109.png 145w, /assets/img/posts/22.10-12/SS13SignTextures.png 800w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;ProbablyNot&lt;/strong&gt; gave some more love to our floor tiles by rendering a new normal map and even an ambient occlusion map, both of which have regular and inverted variations.&lt;/p&gt;
+
+&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/22.10-12/PNTileMaps.jpg&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/PNTileMaps-580x435.jpg 580w,    /assets/resized/PNTileMaps-290x218.jpg 290w,    /assets/resized/PNTileMaps-170x128.jpg 170w,    /assets/resized/PNTileMaps-145x109.jpg 145w, /assets/img/posts/22.10-12/PNTileMaps.jpg 800w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;models&quot;&gt;Models&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;ProbablyNot&lt;/strong&gt; also made a reinforced light for security.&lt;/p&gt;
+
+&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/22.10-12/PNSecLight.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/PNSecLight-580x435.png 580w,    /assets/resized/PNSecLight-290x218.png 290w,    /assets/resized/PNSecLight-170x128.png 170w,    /assets/resized/PNSecLight-145x109.png 145w, /assets/img/posts/22.10-12/PNSecLight.png 800w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;art&quot;&gt;Art&lt;/h2&gt;
+
+&lt;p&gt;Normally &lt;strong&gt;ProbablyNot&lt;/strong&gt; likes to hide the slime in his blog artwork (go back through previous months to see if you can find the slime hidden in his blog covers) but decided to mix it up this time.&lt;/p&gt;
+
+&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/art/ProbablyNot/ProbablyNot_Slime.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/ProbablyNot_Slime-580x326.png 580w,    /assets/resized/ProbablyNot_Slime-290x163.png 290w,    /assets/resized/ProbablyNot_Slime-170x96.png 170w,    /assets/resized/ProbablyNot_Slime-145x82.png 145w, /assets/img/art/ProbablyNot/ProbablyNot_Slime.png 3840w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;footnotes&quot;&gt;Footnotes&lt;/h2&gt;
+
+&lt;p&gt;If you’re curious about seeing more development from us, or contributing yourself, come join our &lt;a href=&quot;https://discord.gg/3ny9tdH&quot; target=&quot;_blank&quot;&gt;Discord&lt;/a&gt; and say “Hello”!&lt;/p&gt;</content><author><name>CosmicCoincidence</name></author><summary type="html">We here at SS3D hope you all enjoyed your holidays despite being the naughty little boys and girls we know many of you are. After dropping off a large chunk of coal for us, Santa did actually bring us something great this year, he brought us closer together. Thanks, Santa!</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://ss3d.space/assets/img/art/ProbablyNot/ProbablyNot_Slime.png" /></entry><entry><title type="html">22.07-09: 2022 3rd Quarter Devblog</title><link href="https://ss3d.space/2022/10/17/22.09.html" rel="alternate" type="text/html" title="22.07-09: 2022 3rd Quarter Devblog" /><published>2022-10-17T11:30:00+00:00</published><updated>2022-10-17T11:30:00+00:00</updated><id>https://ss3d.space/2022/10/17/22.09</id><content type="html" xml:base="https://ss3d.space/2022/10/17/22.09.html">&lt;p&gt;&lt;em&gt;“The pain you feel today will be the profit we earn tomorrow.”&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;– Nanotrasen CEO&lt;/p&gt;
+
+&lt;h1 id=&quot;q3-recap&quot;&gt;Q3 Recap&lt;/h1&gt;
+
+&lt;p&gt;We continue to cheer on &lt;strong&gt;John&lt;/strong&gt; from our padded recliners as he slogs away at the rework, hoping that he may find solid footing in the wastewater run-offs of the derelict constructions of our past, to one day set the foundation of our future.&lt;/p&gt;
+
+&lt;h2 id=&quot;rework&quot;&gt;Rework&lt;/h2&gt;
+
+&lt;p&gt;As you know we’ve been undergoing a major rework of our technical foundation, which is being spearheaded by &lt;strong&gt;John&lt;/strong&gt;. He’s been slowly porting over some systems while reworking others. This quarter he rebuilt the Lobby UI making it neater and more user-friendly. Note that it still isn’t featureful yet.&lt;/p&gt;
+
+&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/22.07-09/NewLobbyUI.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/NewLobbyUI-580x326.png 580w,    /assets/resized/NewLobbyUI-290x163.png 290w,    /assets/resized/NewLobbyUI-170x96.png 170w,    /assets/resized/NewLobbyUI-145x82.png 145w, /assets/img/posts/22.07-09/NewLobbyUI.png 1280w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+
+&lt;p&gt;The round system has seen improvements by &lt;strong&gt;John&lt;/strong&gt; recently as well. First he ported over our current basic implementation and changed the netwroking from Mirror to FishNet. Also, Users can now set/cancel a readiness state before the start of a round. Admins can now cancel the startup phase of a round. When the startup phase completes and the round begins, only the ready players are spawned. The player and camera movements have been ported over now. Lastly, the mechanics of the underlying entity you control (the soul) is in place and can change between mobs it controls mid-round as seen in this rudimentary test below.&lt;/p&gt;
+
+&lt;iframe class=&quot;video&quot; width=&quot;580px&quot; height=&quot;325px&quot; src=&quot;https://www.youtube-nocookie.com/embed/jMqsR7673yg&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;h2 id=&quot;details&quot;&gt;Details&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;Seteron&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Updated documents &amp;amp; cleaned up extra git files.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Ryan&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Created a basic configuration test to be used to check if objects are placed on the correct layers and functioning properly.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;textures&quot;&gt;Textures&lt;/h2&gt;
+
+&lt;p&gt;After a hiatus of contribution, &lt;strong&gt;Hummus&lt;/strong&gt; blessed us with a new in-game poster texture referencing my favorite 90s Sci-Fi, Stargate-SG1.&lt;/p&gt;
+
+&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/22.07-09/HummusTakeMeHome.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/HummusTakeMeHome-580x870.png 580w,    /assets/resized/HummusTakeMeHome-290x435.png 290w,    /assets/resized/HummusTakeMeHome-170x255.png 170w,    /assets/resized/HummusTakeMeHome-145x218.png 145w, /assets/img/posts/22.07-09/HummusTakeMeHome.png 600w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;models&quot;&gt;Models&lt;/h2&gt;
+
+&lt;p&gt;A new contributor this quarter, &lt;strong&gt;Danny&lt;/strong&gt; made these wonderful potted plants and some growable plump helmet shrooms!&lt;/p&gt;
+
+&lt;div class=&quot;horizontal-2&quot;&gt;
+
+  &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/22.07-09/Danny_DecorativePlant.png&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/Danny_DecorativePlant-580x435.png 580w,    /assets/resized/Danny_DecorativePlant-290x218.png 290w,    /assets/resized/Danny_DecorativePlant-170x128.png 170w,    /assets/resized/Danny_DecorativePlant-145x109.png 145w, /assets/img/posts/22.07-09/Danny_DecorativePlant.png 800w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+
+  &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/22.07-09/Danny_Plant14.png&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/Danny_Plant14-580x435.png 580w,    /assets/resized/Danny_Plant14-290x218.png 290w,    /assets/resized/Danny_Plant14-170x128.png 170w,    /assets/resized/Danny_Plant14-145x109.png 145w, /assets/img/posts/22.07-09/Danny_Plant14.png 800w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/22.07-09/Danny_PlumpHelmets.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/Danny_PlumpHelmets-580x435.png 580w,    /assets/resized/Danny_PlumpHelmets-290x218.png 290w,    /assets/resized/Danny_PlumpHelmets-170x128.png 170w,    /assets/resized/Danny_PlumpHelmets-145x109.png 145w, /assets/img/posts/22.07-09/Danny_PlumpHelmets.png 800w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;StaBre&lt;/strong&gt;, who is also new this quarter, contributed a medical crutch and an expanding trash bag for the janitor!&lt;/p&gt;
+
+&lt;div class=&quot;horizontal-2&quot;&gt;
+
+  &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/22.07-09/StaBre_Crutch.png&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/StaBre_Crutch-580x435.png 580w,    /assets/resized/StaBre_Crutch-290x218.png 290w,    /assets/resized/StaBre_Crutch-170x128.png 170w,    /assets/resized/StaBre_Crutch-145x109.png 145w, /assets/img/posts/22.07-09/StaBre_Crutch.png 800w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+
+  &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/22.07-09/StaBre_Trashbag.png&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/StaBre_Trashbag-580x435.png 580w,    /assets/resized/StaBre_Trashbag-290x218.png 290w,    /assets/resized/StaBre_Trashbag-170x128.png 170w,    /assets/resized/StaBre_Trashbag-145x109.png 145w, /assets/img/posts/22.07-09/StaBre_Trashbag.png 800w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;art&quot;&gt;Art&lt;/h2&gt;
+
+&lt;p&gt;This is basically &lt;strong&gt;ProbablyNot’s&lt;/strong&gt; meaning in life now, to make SS3D blog cover art.&lt;/p&gt;
+
+&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/art/ProbablyNot/ProbablyNot_Station1.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/ProbablyNot_Station1-580x326.png 580w,    /assets/resized/ProbablyNot_Station1-290x163.png 290w,    /assets/resized/ProbablyNot_Station1-170x96.png 170w,    /assets/resized/ProbablyNot_Station1-145x82.png 145w, /assets/img/art/ProbablyNot/ProbablyNot_Station1.png 3840w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;ProbablyNot&lt;/strong&gt; also recently received an encoded signal coming through one of our bluespace time dilation devices. After decoding and isolating the message it appears to be an &lt;a href=&quot;/assets/img/art/ProbablyNot/Janiborg1stPerson.jpg&quot; target=&quot;_blank&quot;&gt;image taken from a Janiborg’s perspective aboard an empty station&lt;/a&gt;, waiting for its crew.&lt;/p&gt;
+
+&lt;h2 id=&quot;footnotes&quot;&gt;Footnotes&lt;/h2&gt;
+
+&lt;p&gt;Also, &lt;strong&gt;ProbablyNot&lt;/strong&gt; updated our &lt;a href=&quot;https://drive.google.com/drive/u/0/folders/1gAqPkdEb6VeVT-oSx_rtvCh1x4EB0d4i&quot; target=&quot;_blank&quot;&gt;Character Animation Rig (V3.0)&lt;/a&gt; last quarter but I forgot to mention it. The new rig features foot roll, face controls, body shape controls, IK head, FK/IK switching, updated colors, character cosmetics, and includes a sample character file. Note that the rig is made in and for Maya, NOT blender like many of our other contributor kits.&lt;/p&gt;
+
+&lt;p&gt;Something something join our &lt;a href=&quot;https://discord.gg/3ny9tdH&quot; target=&quot;_blank&quot;&gt;Discord&lt;/a&gt; and stay tuned for future updates from us!&lt;/p&gt;</content><author><name>CosmicCoincidence</name></author><summary type="html">“The pain you feel today will be the profit we earn tomorrow.”</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://ss3d.space/assets/img/art/ProbablyNot/ProbablyNot_Station1.png" /></entry><entry><title type="html">22.04-06: 2022 2nd Quarter Devblog</title><link href="https://ss3d.space/2022/06/09/22.06.html" rel="alternate" type="text/html" title="22.04-06: 2022 2nd Quarter Devblog" /><published>2022-06-09T11:30:00+00:00</published><updated>2022-06-09T11:30:00+00:00</updated><id>https://ss3d.space/2022/06/09/22.06</id><content type="html" xml:base="https://ss3d.space/2022/06/09/22.06.html">&lt;p&gt;“Starting over isn’t starting from scratch, it’s starting with experience.”&lt;/p&gt;
+
+&lt;p&gt;– random motivational website&lt;/p&gt;
+
+&lt;div&gt;
+    &lt;iframe class=&quot;video&quot; width=&quot;580px&quot; height=&quot;325px&quot; src=&quot;https://www.youtube-nocookie.com/embed/85hqKsNXOTQ&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+    &lt;h5&gt;&lt;i&gt;Video credit - Otome&lt;/i&gt;&lt;/h5&gt;
+&lt;/div&gt;
+
+&lt;h1 id=&quot;q2-recap&quot;&gt;Q2 Recap&lt;/h1&gt;
+
+&lt;p&gt;In the 1st quarter, I mentioned that we were making some changes mainly related to narrowing our focus down to a simpler initial game mode to get a minimal viable product (mvp) out, as well as some other upcoming changes that weren’t elaborated on at the time. After narrowing our goals we reviewed our current game and decided that some things were over-engineered, others inadequately designed, and some poorly implemented. There’s also a lot of extra content that frankly isn’t NEEDED in an mvp, so… we started another rework. It took some time to get organized and we have slowed our productivity on the current build and begun starting the rework.&lt;/p&gt;
+
+&lt;h2 id=&quot;rework&quot;&gt;Rework&lt;/h2&gt;
+
+&lt;p&gt;We’ve critiqued our past mistakes and what has led to us having spouts of stagnation and hopefully have learned from these decisions and that it will benefit the rework. The rework is being led by &lt;strong&gt;John (Goao)&lt;/strong&gt; and is going to be a complete rehaul of the codebase. He has made several documents recently to prepare us. He made a new document template and remade our old art guides and our GDD in the new template. He also made a document outlining the &lt;a href=&quot;https://docs.google.com/document/d/19-9G9lOs08ASp-7PPbZNZxd5BkOpdgaQ/edit?usp=sharing&amp;amp;ouid=108272549702843855013&amp;amp;rtpof=true&amp;amp;sd=true&quot;&gt;development plan&lt;/a&gt; for the rework thus far.&lt;/p&gt;
+
+&lt;p&gt;Project architecture and code quality (organization, proper usage, &amp;amp; modularity) are two of the big things that should substantially improve with the rehaul. We hope to not lose anything in the process and port over systems from our current codebase to the rework branch as we need them. So far it only supports a basic lobby system, player authentication, and underlying hub integration. So far it has mostly been &lt;strong&gt;John&lt;/strong&gt; working on the rework but we have several eager souls waiting for him to start delegating more tasks for it. In the meantime, we have halted all major system work on the current branch but allowing smaller contributions to still be made that can be ported over to the rework when the time comes.&lt;/p&gt;
+
+&lt;h2 id=&quot;sound&quot;&gt;Sound&lt;/h2&gt;
+
+&lt;p&gt;This quarter &lt;strong&gt;Eiko&lt;/strong&gt; created an audio manager to manage our various audio scripts, and in doing so he transitioned all our current sounds over to using this new audio manager. He also added mixer groups for sfx, music, and ambiance so these can be adjusted separately in the settings menu (not added here). He also switched the audio panning so it’s relative to the camera now instead of the player.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Eiko&lt;/strong&gt; also created a new ambiance script that uses variables to adjust the intensity of ambient sounds. Each variable is configured separately and will choose a random audio clip when applicable. The 3 variables &lt;strong&gt;Eiko&lt;/strong&gt; added for now are ‘air’, ‘wind’, and ‘power’. These variables aren’t tied to anything in-game yet but are designed to fit the player’s environment. The ‘power’ ambiance will naturally be more intense the closer you are to a machine or the more machines running at once in a small space. ‘Wind’ will be used when there is atmospheric movement and ‘air’ represents the atmospheric density which will actually play ‘space’ ambiance when set to 0. The SFX sound group is also affected by lack of atmosphere and becomes extremely muffled (maybe some servers will turn it off altogether).&lt;/p&gt;
+
+&lt;iframe class=&quot;video&quot; width=&quot;580px&quot; height=&quot;325px&quot; src=&quot;https://user-images.githubusercontent.com/53350053/168268021-f14a0570-64df-4d15-b8f5-9522f14311ab.mp4&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;h2 id=&quot;models&quot;&gt;Models&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;a Ghost&lt;/strong&gt; who despite not being a regular modeler, is our only modeler this quarter. Contributing the classic Manly Dorf mug as well as adding liquid contents and some accessories to our old drinking glass set.&lt;/p&gt;
+
+&lt;div class=&quot;horizontal-2&quot;&gt;
+
+  &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/22.04-06/aGhost_ManlyDorf.png&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/aGhost_ManlyDorf-580x435.png 580w,    /assets/resized/aGhost_ManlyDorf-290x218.png 290w,    /assets/resized/aGhost_ManlyDorf-170x128.png 170w,    /assets/resized/aGhost_ManlyDorf-145x109.png 145w, /assets/img/posts/22.04-06/aGhost_ManlyDorf.png 800w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+
+  &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/22.04-06/aGhost_DrinkingGlassEdit.png&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/aGhost_DrinkingGlassEdit-580x435.png 580w,    /assets/resized/aGhost_DrinkingGlassEdit-290x218.png 290w,    /assets/resized/aGhost_DrinkingGlassEdit-170x128.png 170w,    /assets/resized/aGhost_DrinkingGlassEdit-145x109.png 145w, /assets/img/posts/22.04-06/aGhost_DrinkingGlassEdit.png 800w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;art&quot;&gt;Art&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;ProbablyNot&lt;/strong&gt; continues his reputation for having the best blog art!&lt;/p&gt;
+
+&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/art/ProbablyNot/ProbablyNot_DrunkOfficer.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/ProbablyNot_DrunkOfficer-580x326.png 580w,    /assets/resized/ProbablyNot_DrunkOfficer-290x163.png 290w,    /assets/resized/ProbablyNot_DrunkOfficer-170x96.png 170w,    /assets/resized/ProbablyNot_DrunkOfficer-145x82.png 145w, /assets/img/art/ProbablyNot/ProbablyNot_DrunkOfficer.png 3840w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+
+&lt;p&gt;And &lt;strong&gt;Otome&lt;/strong&gt; surprised us with a funny remix of &lt;strong&gt;Grimmie’s&lt;/strong&gt; classic teaser (the remix is seen at the top of this post while the original can be found &lt;a href=&quot;https://www.youtube.com/watch?v=uzLdgxOBPrc&quot; target=&quot;_blank&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
+
+&lt;p&gt;This is the part where I tell you to join our &lt;a href=&quot;https://discord.gg/3ny9tdH&quot; target=&quot;_blank&quot;&gt;Discord&lt;/a&gt; for more frequent updates or just hang out with the crew, er whatever.&lt;/p&gt;</content><author><name>CosmicCoincidence</name></author><summary type="html">“Starting over isn’t starting from scratch, it’s starting with experience.”</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://ss3d.space/assets/img/art/ProbablyNot/ProbablyNot_DrunkOfficer.png" /></entry><entry><title type="html">22.01-03: 2022 1st Quarter Devblog</title><link href="https://ss3d.space/2022/04/05/22.03.html" rel="alternate" type="text/html" title="22.01-03: 2022 1st Quarter Devblog" /><published>2022-04-05T11:30:00+00:00</published><updated>2022-04-05T11:30:00+00:00</updated><id>https://ss3d.space/2022/04/05/22.03</id><content type="html" xml:base="https://ss3d.space/2022/04/05/22.03.html">&lt;p&gt;&lt;em&gt;“Ah yes, the moons are bright, the space carp are singing, and the radioactive solar winds are calm. What a beautiful day in space.”&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;– Nanotrasen Employee #76044&lt;/p&gt;
+
+&lt;div&gt;
+    &lt;iframe class=&quot;video&quot; width=&quot;580px&quot; height=&quot;325px&quot; src=&quot;https://www.youtube-nocookie.com/embed/bOB6af_ZCj0&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+    &lt;h5&gt;&lt;i&gt;Video credit - SmokingMan&lt;/i&gt;&lt;/h5&gt;
+&lt;/div&gt;
+
+&lt;h1 id=&quot;q1-recap&quot;&gt;Q1 Recap&lt;/h1&gt;
+
+&lt;p&gt;This year we are changing up our blog schedule a little bit, by switching from monthly updates to quarterly updates. This is due to our sometimes slow development which can result in some months having short and nearly empty blog posts. I know many of you won’t like this decision as you would prefer to see more frequent updates even if they are packed with less content, but hopefully this will take a little bit of repetitive work off our small management team. If the frequency of our content output increases in the future we may come back to monthly updates though.&lt;/p&gt;
+
+&lt;p&gt;On the topic of small teams, it seems we have set our goals a bit too ambitiously again. We have been trying to work toward a playable game loop so players can have something to do and a goal, and although this goal hasn’t changed, it seems we have set our standard of a minimal game loop a bit high. We wanted to have all our core systems mostly fleshed out, like an intricate container system, complex atmospherics, electrical grid, etc. But we have now realized that spending so much time on this has prevented the players from having something fun to do in game. I don’t want to say too much yet as this discussion is still ongoing currently, but we are planning on simplifying the game loop requirements to push out a more simple playable game mode quicker, which will hopefully help draw in some players and maybe more contributors.&lt;/p&gt;
+
+&lt;h2 id=&quot;documentation&quot;&gt;Documentation&lt;/h2&gt;
+
+&lt;p&gt;Another issue that has been plaguing our development has been our lack of concrete designs for our core systems. Even now we are still lacking a couple of designs, but the beginning of this year has seen some good progress in this area. &lt;strong&gt;Konstantin3001&lt;/strong&gt; has been consolidating much of our ideas about the health, combat, and crafting systems into respective documents, while &lt;strong&gt;Eiko&lt;/strong&gt; has been working on our &lt;a href=&quot;https://ss3d.gitbook.io/design/&quot; target=&quot;_blank&quot;&gt;game design document&lt;/a&gt; which details the basic overview of the game we are building (things aren’t set in stone and some things in the document may still change or get added later).&lt;/p&gt;
+
+&lt;h2 id=&quot;collision-sounds&quot;&gt;Collision Sounds&lt;/h2&gt;
+
+&lt;p&gt;In February, &lt;strong&gt;Eiko&lt;/strong&gt; added scripts for managing object collision sound effects and added several sounds as well. He also recorded the demonstration below.&lt;/p&gt;
+
+&lt;iframe class=&quot;video&quot; width=&quot;580px&quot; height=&quot;325px&quot; src=&quot;https://www.youtube-nocookie.com/embed/qk4BJldVDHY&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;h2 id=&quot;details&quot;&gt;Details&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;Em3rgency&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Reorganized the editor-related files, excluded some from builds, and fixed related compiler errors.&lt;/li&gt;
+  &lt;li&gt;Fixed missing connection type values on some connectable objects.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Stilnat&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Added feature to allow for child objects to have containers. So not only can a refrigerator object have a container, but now also the fridge’s door which is attached can have its own isolated container.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;JJtheGerman&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Made tweaks to the chat close button so it behaves more intuitively.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;textures&quot;&gt;Textures&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;Eiko&lt;/strong&gt; made a set of textures from the department symbols he made and has been using them on his 3D models.&lt;/p&gt;
+
+&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/22.01-03/EikoDepartments.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/EikoDepartments-580x435.png 580w,    /assets/resized/EikoDepartments-290x218.png 290w,    /assets/resized/EikoDepartments-170x128.png 170w,    /assets/resized/EikoDepartments-145x109.png 145w, /assets/img/posts/22.01-03/EikoDepartments.png 800w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;Konstantin3001&lt;/strong&gt; is back again with more new textures, this time with new vehicle tracks as well as xeno footprints and recycle/dispose icons that were missed from late last year.&lt;/p&gt;
+
+&lt;div class=&quot;horizontal-2&quot;&gt;
+
+  &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/22.01-03/KonstantinTracks.png&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/KonstantinTracks-580x435.png 580w,    /assets/resized/KonstantinTracks-290x218.png 290w,    /assets/resized/KonstantinTracks-170x128.png 170w,    /assets/resized/KonstantinTracks-145x109.png 145w, /assets/img/posts/22.01-03/KonstantinTracks.png 800w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+
+  &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/22.01-03/KonstantinRecycle.png&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/KonstantinRecycle-580x435.png 580w,    /assets/resized/KonstantinRecycle-290x218.png 290w,    /assets/resized/KonstantinRecycle-170x128.png 170w,    /assets/resized/KonstantinRecycle-145x109.png 145w, /assets/img/posts/22.01-03/KonstantinRecycle.png 800w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;models&quot;&gt;Models&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;Gen&lt;/strong&gt; submitted a few machines late last year but were missed and are being featured now. A wall-mounted button, nanite programmer, nanite cloud server, and a nanite controller hub.&lt;/p&gt;
+
+&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/22.01-03/GenMachines.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/GenMachines-580x435.png 580w,    /assets/resized/GenMachines-290x218.png 290w,    /assets/resized/GenMachines-170x128.png 170w,    /assets/resized/GenMachines-145x109.png 145w, /assets/img/posts/22.01-03/GenMachines.png 800w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+
+&lt;p&gt;More Head of Security clothing now thanks to &lt;strong&gt;Baga&lt;/strong&gt;!&lt;/p&gt;
+
+&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/22.01-03/BagaHOS.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/BagaHOS-580x435.png 580w,    /assets/resized/BagaHOS-290x218.png 290w,    /assets/resized/BagaHOS-170x128.png 170w,    /assets/resized/BagaHOS-145x109.png 145w, /assets/img/posts/22.01-03/BagaHOS.png 800w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;Eiko&lt;/strong&gt; submitted a new set of airlocks resembling more of the classic ss13 style many of us are familiar with.&lt;/p&gt;
+
+&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/22.01-03/EikoAirlocks.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/EikoAirlocks-580x435.png 580w,    /assets/resized/EikoAirlocks-290x218.png 290w,    /assets/resized/EikoAirlocks-170x128.png 170w,    /assets/resized/EikoAirlocks-145x109.png 145w, /assets/img/posts/22.01-03/EikoAirlocks.png 800w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;sounds&quot;&gt;Sounds&lt;/h2&gt;
+
+&lt;p&gt;New this year, &lt;strong&gt;a Ghost&lt;/strong&gt; has provided us with a few more sound effects including male gasping, male gulping, male sneezing, as well as some for bone snapping. The sneeze is quite good!&lt;/p&gt;
+
+&lt;audio controls=&quot;&quot;&gt;
+  &lt;source src=&quot;/assets/sfx/Male_Sneeze.mp3&quot; type=&quot;audio/mpeg&quot; /&gt;
+Your browser does not support the audio element.
+&lt;/audio&gt;
+
+&lt;h2 id=&quot;art&quot;&gt;Art&lt;/h2&gt;
+
+&lt;p&gt;2022’s first blog art was brought to us by sir &lt;strong&gt;ProbablyNot&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/art/ProbablyNot/ProbablyNot_Spaced.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/ProbablyNot_Spaced-580x326.png 580w,    /assets/resized/ProbablyNot_Spaced-290x163.png 290w,    /assets/resized/ProbablyNot_Spaced-170x96.png 170w,    /assets/resized/ProbablyNot_Spaced-145x82.png 145w, /assets/img/art/ProbablyNot/ProbablyNot_Spaced.png 3840w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;SmokingMan&lt;/strong&gt; returned with some more artwork as well. A close-up image of our favorite grey-clad individual getting in (or out of) some trouble. He also made the wholesome captain animation (seen up in the Q1 recap) which I believe has become an instant classic.&lt;/p&gt;
+
+&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/art/SmokingMan/SmokingMan_GreyGuy.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/SmokingMan_GreyGuy-580x326.png 580w,    /assets/resized/SmokingMan_GreyGuy-290x163.png 290w,    /assets/resized/SmokingMan_GreyGuy-170x96.png 170w,    /assets/resized/SmokingMan_GreyGuy-145x82.png 145w, /assets/img/art/SmokingMan/SmokingMan_GreyGuy.png 3840w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
+
+&lt;p&gt;We should have more to share in Q2 as we continue to rework some of our game loop plans, in the meantime you are always welcome to join our &lt;a href=&quot;https://discord.gg/3ny9tdH&quot; target=&quot;_blank&quot;&gt;Discord&lt;/a&gt; to check out more of what we’re doing or to contribute yourself!&lt;/p&gt;</content><author><name>CosmicCoincidence</name></author><summary type="html">“Ah yes, the moons are bright, the space carp are singing, and the radioactive solar winds are calm. What a beautiful day in space.”</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://ss3d.space/assets/img/art/ProbablyNot/ProbablyNot_Spaced.png" /></entry><entry><title type="html">21.12: December 2021 Devblog</title><link href="https://ss3d.space/2022/01/06/21.12.html" rel="alternate" type="text/html" title="21.12: December 2021 Devblog" /><published>2022-01-06T11:30:00+00:00</published><updated>2022-01-06T11:30:00+00:00</updated><id>https://ss3d.space/2022/01/06/21.12</id><content type="html" xml:base="https://ss3d.space/2022/01/06/21.12.html">&lt;p&gt;Born too late to explore the earth.&lt;br /&gt;
+Born too soon to explore the galaxy.&lt;br /&gt;
+Born just in time to help make SS3D.&lt;/p&gt;
+
+&lt;h1 id=&quot;december-recap&quot;&gt;December Recap&lt;/h1&gt;
+
+&lt;p&gt;We hope you all enjoyed your holidays and had a happy new year!&lt;/p&gt;
+
+&lt;p&gt;December was more active for us than some of our recent months. Maybe it was due to the holiday breaks, or maybe it was coincidental timing of multiple factors being completed in the same month, regardless we’ll take it.&lt;/p&gt;
+
+&lt;h2 id=&quot;appearance&quot;&gt;Appearance&lt;/h2&gt;
+
+&lt;p&gt;Several improvements to the game’s appearance have been made this month. This first one was voted for in a poll we had a while back in our discord. It’s a cutout shader for insetting objects into the floor. Trying to lower a machine into the floor prior to this would clip the floor tile and machine through each other and any part of the machine that was below the floor would not be visible. We can now have &lt;a href=&quot;/assets/img/posts/21.12.01/FloorShader.png&quot; target=&quot;_blank&quot;&gt;machines that are inset into the floor&lt;/a&gt; thanks to &lt;strong&gt;Seteron&lt;/strong&gt; submitting this new floor tile cutout shader.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Seteron&lt;/strong&gt; once again tweaked our lighting by adding new shaders, new post processing, adjusted values, and fixed bugs. The &lt;a href=&quot;https://user-images.githubusercontent.com/38957910/146114991-d3cfd4ca-df31-432a-a6df-aecce69fadb0.PNG&quot; target=&quot;_blank&quot;&gt;old&lt;/a&gt; is a bit brighter, while the &lt;a href=&quot;https://user-images.githubusercontent.com/38957910/146115003-5b76c603-3480-43cc-bd89-734df0795f26.PNG&quot; target=&quot;_blank&quot;&gt;new&lt;/a&gt; emphasizes shadows more (this likly isn’t final).&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Seteron&lt;/strong&gt; also &lt;a href=&quot;/assets/img/posts/21.12.01/ItemRender.png&quot; target=&quot;_blank&quot;&gt;improved our item icon renderer&lt;/a&gt; immensely. He improved the lighting/shadows, added an outline to the items, and fixed the bug causing our transparent and emission materials to not render properly.&lt;/p&gt;
+
+&lt;p&gt;A controversial change, &lt;strong&gt;CosmicCoincidence&lt;/strong&gt; raised the height of walls to give more space for various mobs and machines while fitting within the height of a room. &lt;a href=&quot;https://user-images.githubusercontent.com/41941008/147019311-28dabad8-c6c8-40c7-803a-f80cad13ed3a.png&quot; target=&quot;_blank&quot;&gt;Before&lt;/a&gt; and &lt;a href=&quot;https://user-images.githubusercontent.com/41941008/147019002-c40195a7-3d6a-497d-ae73-52b97c443732.png&quot; target=&quot;_blank&quot;&gt;after&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;connectables&quot;&gt;Connectables&lt;/h2&gt;
+
+&lt;p&gt;This month we had a lot of progress on our connectables, which are an integral part of the tilemap system. Connectables are objects that connect from one tile to another in specific ways. &lt;strong&gt;CosmicCoincidence&lt;/strong&gt; has been working on &lt;a href=&quot;https://ss3d.gitbook.io/design/environment/connectables&quot;&gt;redesigning the connectables&lt;/a&gt; and is mostly finished now, but some things still may change. In addition to the document, &lt;strong&gt;Cosmic&lt;/strong&gt; also updated most of the connectable models and created missing ones to provide with this design.&lt;/p&gt;
+
+&lt;p&gt;To prepare for the new (and complex) adjacency scripts that are required in the above design, &lt;strong&gt;Em3rgency&lt;/strong&gt; restructured much of the underlying logic used by the adjacency scripts.&lt;/p&gt;
+
+&lt;h2 id=&quot;details&quot;&gt;Details&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;BroodjeKipcorn&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Removed unwanted rotations on tile objects.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Em3rgency&lt;/strong&gt; (returning after 2 years!)&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Fixed our github actions automated build setup.&lt;/li&gt;
+  &lt;li&gt;Added an automated test workflow on github for each commit.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;SteindelSE&lt;/strong&gt; (new this month)&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Removed unnecessary colliders on aesthetic doors (like locker doors).&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Seteron&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Fixed the lobby character preview from twitching.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;models&quot;&gt;Models&lt;/h2&gt;
+
+&lt;p&gt;Yes, we still have more modeling happening… &lt;strong&gt;Medji&lt;/strong&gt; who is new this month, contributed a teleprod, pyrogrenade, and porcini mushrooms.&lt;/p&gt;
+
+&lt;div class=&quot;horizontal-2&quot;&gt;
+
+  &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/21.12.01/Medji_TeleProd.png&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/Medji_TeleProd-580x435.png 580w,    /assets/resized/Medji_TeleProd-290x218.png 290w,    /assets/resized/Medji_TeleProd-170x128.png 170w,    /assets/resized/Medji_TeleProd-145x109.png 145w, /assets/img/posts/21.12.01/Medji_TeleProd.png 800w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+
+  &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/21.12.01/Medji_PyroGrenade.png&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/Medji_PyroGrenade-580x435.png 580w,    /assets/resized/Medji_PyroGrenade-290x218.png 290w,    /assets/resized/Medji_PyroGrenade-170x128.png 170w,    /assets/resized/Medji_PyroGrenade-145x109.png 145w, /assets/img/posts/21.12.01/Medji_PyroGrenade.png 800w&quot; sizes=&quot;(max-width: 624px) 50vw, 290px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/21.12.01/Medji_Porcini.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/Medji_Porcini-580x435.png 580w,    /assets/resized/Medji_Porcini-290x218.png 290w,    /assets/resized/Medji_Porcini-170x128.png 170w,    /assets/resized/Medji_Porcini-145x109.png 145w, /assets/img/posts/21.12.01/Medji_Porcini.png 800w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+
+&lt;p&gt;From &lt;strong&gt;John&lt;/strong&gt; this month, a neat foldable chair.&lt;/p&gt;
+
+&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/posts/21.12.01/John_FoldableChair.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/John_FoldableChair-580x435.png 580w,    /assets/resized/John_FoldableChair-290x218.png 290w,    /assets/resized/John_FoldableChair-170x128.png 170w,    /assets/resized/John_FoldableChair-145x109.png 145w, /assets/img/posts/21.12.01/John_FoldableChair.png 800w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;art&quot;&gt;Art&lt;/h2&gt;
+
+&lt;p&gt;And this month’s blog cover was made by &lt;strong&gt;ProbablyNot&lt;/strong&gt;, once again.&lt;/p&gt;
+
+&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/art/ProbablyNot/ProbablyNot_Campfire.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/ProbablyNot_Campfire-580x326.png 580w,    /assets/resized/ProbablyNot_Campfire-290x163.png 290w,    /assets/resized/ProbablyNot_Campfire-170x96.png 170w,    /assets/resized/ProbablyNot_Campfire-145x82.png 145w, /assets/img/art/ProbablyNot/ProbablyNot_Campfire.png 3840w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
+
+&lt;p&gt;As each core system gets designed and implemented we slowly creep one step closer to having the game we are all dreaming of.&lt;/p&gt;
+
+&lt;p&gt;As always, stay tuned with us by joining the discord happening over on our &lt;a href=&quot;https://discord.gg/3ny9tdH&quot; target=&quot;_blank&quot;&gt;Discord&lt;/a&gt;.&lt;/p&gt;</content><author><name>CosmicCoincidence</name></author><summary type="html">Born too late to explore the earth. Born too soon to explore the galaxy. Born just in time to help make SS3D.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://ss3d.space/assets/img/art/ProbablyNot/ProbablyNot_Campfire.png" /></entry><entry><title type="html">21.11: November 2021 Devblog</title><link href="https://ss3d.space/2021/12/05/21.11.html" rel="alternate" type="text/html" title="21.11: November 2021 Devblog" /><published>2021-12-05T11:30:00+00:00</published><updated>2021-12-05T11:30:00+00:00</updated><id>https://ss3d.space/2021/12/05/21.11</id><content type="html" xml:base="https://ss3d.space/2021/12/05/21.11.html">&lt;p&gt;&lt;em&gt;“People say nothing is impossible, but I do nothing every day.”&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;– Winnie The Pooh&lt;/p&gt;
+
+&lt;h1 id=&quot;november-recap&quot;&gt;November Recap&lt;/h1&gt;
+
+&lt;p&gt;Another month of meticulously brainstorming over core-system design choices. These months often feel uneventful but are laying the groundwork for an entire user experience above them, so we are putting great time and attention to detail into them. Without spoiling too much, one of these systems should be featured in next month’s blog if we have it ironed out and merged before then, so stay tuned.&lt;/p&gt;
+
+&lt;h2 id=&quot;details&quot;&gt;Details&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;Notterox&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Disabled users from using rich text in chat.&lt;/li&gt;
+  &lt;li&gt;Fixed custom font issue on the website.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Ryan&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Fixed multiple issues with the basic substance system and related machinery.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;art&quot;&gt;Art&lt;/h2&gt;
+
+&lt;p&gt;This month’s blog cover art is brought to us by &lt;strong&gt;SmokingMan&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/art/SmokingMan/SmokingMan_EngineeringGang.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/SmokingMan_EngineeringGang-580x326.png 580w,    /assets/resized/SmokingMan_EngineeringGang-290x163.png 290w,    /assets/resized/SmokingMan_EngineeringGang-170x96.png 170w,    /assets/resized/SmokingMan_EngineeringGang-145x82.png 145w, /assets/img/art/SmokingMan/SmokingMan_EngineeringGang.png 3840w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
+
+&lt;p&gt;If you are interested in joining the team and helping to contribute to our great game, please join us over at our &lt;a href=&quot;https://discord.gg/3ny9tdH&quot; target=&quot;_blank&quot;&gt;Discord&lt;/a&gt; server.&lt;/p&gt;</content><author><name>CosmicCoincidence</name></author><summary type="html">“People say nothing is impossible, but I do nothing every day.”</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://ss3d.space/assets/img/art/SmokingMan/SmokingMan_EngineeringGang.png" /></entry><entry><title type="html">21.10: October 2021 Devblog</title><link href="https://ss3d.space/2021/11/04/21.10.html" rel="alternate" type="text/html" title="21.10: October 2021 Devblog" /><published>2021-11-04T11:30:00+00:00</published><updated>2021-11-04T11:30:00+00:00</updated><id>https://ss3d.space/2021/11/04/21.10</id><content type="html" xml:base="https://ss3d.space/2021/11/04/21.10.html">&lt;p&gt;Small changes with a big impact.&lt;/p&gt;
+
+&lt;h1 id=&quot;october-recap&quot;&gt;October Recap&lt;/h1&gt;
+
+&lt;p&gt;Very few merged changes this month, but none were lacking in importance as they are all related to networking or core system performance.&lt;/p&gt;
+
+&lt;h2 id=&quot;details&quot;&gt;Details&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;Alainx277&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;GREATLY improved the performance of the examine system.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Ryan&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Updated the Mirror version for the project, to v49.0.1.&lt;/li&gt;
+  &lt;li&gt;Fixed a bug where clients weren’t reinitializing the map after it loaded.&lt;/li&gt;
+  &lt;li&gt;Fixed an issue preventing child objects from being found during reinitialization.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;art&quot;&gt;Art&lt;/h2&gt;
+
+&lt;p&gt;As per usual, this month’s blog cover was contributed by &lt;strong&gt;ProbablyNot&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/art/ProbablyNot/ProbablyNot_Heck.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/ProbablyNot_Heck-580x326.png 580w,    /assets/resized/ProbablyNot_Heck-290x163.png 290w,    /assets/resized/ProbablyNot_Heck-170x96.png 170w,    /assets/resized/ProbablyNot_Heck-145x82.png 145w, /assets/img/art/ProbablyNot/ProbablyNot_Heck.png 3840w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+
+&lt;p&gt;And another was bestowed on us by &lt;strong&gt;John&lt;/strong&gt; this month too.&lt;/p&gt;
+
+&lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;/assets/img/art/Goao/JohnDrifting.png&quot; class=&quot;image-link&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; srcset=&quot;    /assets/resized/JohnDrifting-580x326.png 580w,    /assets/resized/JohnDrifting-290x163.png 290w,    /assets/resized/JohnDrifting-170x96.png 170w,    /assets/resized/JohnDrifting-145x82.png 145w, /assets/img/art/Goao/JohnDrifting.png 1920w&quot; sizes=&quot;(max-width: 624px) 100vw, 578px, 580px&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
+
+&lt;p&gt;Another month with little progress to show but don’t let that discourage your hopes for this game, if you want to see more intermittent progress, feel free to join us in our &lt;a href=&quot;https://discord.gg/3ny9tdH&quot; target=&quot;_blank&quot;&gt;Discord&lt;/a&gt; server.&lt;/p&gt;</content><author><name>CosmicCoincidence</name></author><summary type="html">Small changes with a big impact.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://ss3d.space/assets/img/art/ProbablyNot/ProbablyNot_Heck.png" /></entry></feed>

@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="/css/style.css">
+        <link rel="shortcut icon" type="image/x-icon" href="/toolbox.ico">
+        <script>            
+            // Function to keep the navigation bars scroll offset when changing pages.
+            setScroll = function(url, scroll) {
+                if(scroll != 0) {
+                    window.location.href = url + '?scroll=' + scroll;
+                    return;
+                }
+                window.location.href = url;
+            }
+            // Set navigation bar scroll offset, if it exists.
+            getScroll = function() {
+                var url = new URL(window.location.href);
+                var scroll = url.searchParams.get("scroll");
+                if (scroll != 0) {
+                    var el = document.getElementById('scroll');
+                    el.scrollLeft = scroll;
+                }
+            }
+            if (window.addEventListener) {
+                window.addEventListener('load', getScroll, false);
+            }
+            else if (window.attachEvent) {
+                window.attachEvent('onload', getScroll);
+            }
+        </script>
+        <script>
+            /*! modernizr 3.6.0 (Custom Build) | MIT *
+            * https://modernizr.com/download/?-webp-setclasses !*/
+            !function(e,n,A){function o(e,n){return typeof e===n}function t(){var e,n,A,t,a,i,l;for(var f in r)if(r.hasOwnProperty(f)){if(e=[],n=r[f],n.name&&(e.push(n.name.toLowerCase()),n.options&&n.options.aliases&&n.options.aliases.length))for(A=0;A<n.options.aliases.length;A++)e.push(n.options.aliases[A].toLowerCase());for(t=o(n.fn,"function")?n.fn():n.fn,a=0;a<e.length;a++)i=e[a],l=i.split("."),1===l.length?Modernizr[l[0]]=t:(!Modernizr[l[0]]||Modernizr[l[0]]instanceof Boolean||(Modernizr[l[0]]=new Boolean(Modernizr[l[0]])),Modernizr[l[0]][l[1]]=t),s.push((t?"":"no-")+l.join("-"))}}function a(e){var n=u.className,A=Modernizr._config.classPrefix||"";if(c&&(n=n.baseVal),Modernizr._config.enableJSClass){var o=new RegExp("(^|\\s)"+A+"no-js(\\s|$)");n=n.replace(o,"$1"+A+"js$2")}Modernizr._config.enableClasses&&(n+=" "+A+e.join(" "+A),c?u.className.baseVal=n:u.className=n)}function i(e,n){if("object"==typeof e)for(var A in e)f(e,A)&&i(A,e[A]);else{e=e.toLowerCase();var o=e.split("."),t=Modernizr[o[0]];if(2==o.length&&(t=t[o[1]]),"undefined"!=typeof t)return Modernizr;n="function"==typeof n?n():n,1==o.length?Modernizr[o[0]]=n:(!Modernizr[o[0]]||Modernizr[o[0]]instanceof Boolean||(Modernizr[o[0]]=new Boolean(Modernizr[o[0]])),Modernizr[o[0]][o[1]]=n),a([(n&&0!=n?"":"no-")+o.join("-")]),Modernizr._trigger(e,n)}return Modernizr}var s=[],r=[],l={_version:"3.6.0",_config:{classPrefix:"",enableClasses:!0,enableJSClass:!0,usePrefixes:!0},_q:[],on:function(e,n){var A=this;setTimeout(function(){n(A[e])},0)},addTest:function(e,n,A){r.push({name:e,fn:n,options:A})},addAsyncTest:function(e){r.push({name:null,fn:e})}},Modernizr=function(){};Modernizr.prototype=l,Modernizr=new Modernizr;var f,u=n.documentElement,c="svg"===u.nodeName.toLowerCase();!function(){var e={}.hasOwnProperty;f=o(e,"undefined")||o(e.call,"undefined")?function(e,n){return n in e&&o(e.constructor.prototype[n],"undefined")}:function(n,A){return e.call(n,A)}}(),l._l={},l.on=function(e,n){this._l[e]||(this._l[e]=[]),this._l[e].push(n),Modernizr.hasOwnProperty(e)&&setTimeout(function(){Modernizr._trigger(e,Modernizr[e])},0)},l._trigger=function(e,n){if(this._l[e]){var A=this._l[e];setTimeout(function(){var e,o;for(e=0;e<A.length;e++)(o=A[e])(n)},0),delete this._l[e]}},Modernizr._q.push(function(){l.addTest=i}),Modernizr.addAsyncTest(function(){function e(e,n,A){function o(n){var o=n&&"load"===n.type?1==t.width:!1,a="webp"===e;i(e,a&&o?new Boolean(o):o),A&&A(n)}var t=new Image;t.onerror=o,t.onload=o,t.src=n}var n=[{uri:"data:image/webp;base64,UklGRiQAAABXRUJQVlA4IBgAAAAwAQCdASoBAAEAAwA0JaQAA3AA/vuUAAA=",name:"webp"},{uri:"data:image/webp;base64,UklGRkoAAABXRUJQVlA4WAoAAAAQAAAAAAAAAAAAQUxQSAwAAAABBxAR/Q9ERP8DAABWUDggGAAAADABAJ0BKgEAAQADADQlpAADcAD++/1QAA==",name:"webp.alpha"},{uri:"data:image/webp;base64,UklGRlIAAABXRUJQVlA4WAoAAAASAAAAAAAAAAAAQU5JTQYAAAD/////AABBTk1GJgAAAAAAAAAAAAAAAAAAAGQAAABWUDhMDQAAAC8AAAAQBxAREYiI/gcA",name:"webp.animation"},{uri:"data:image/webp;base64,UklGRh4AAABXRUJQVlA4TBEAAAAvAAAAAAfQ//73v/+BiOh/AAA=",name:"webp.lossless"}],A=n.shift();e(A.name,A.uri,function(A){if(A&&"load"===A.type)for(var o=0;o<n.length;o++)e(n[o].name,n[o].uri)})}),t(),a(s),delete l.addTest,delete l.addAsyncTest;for(var p=0;p<Modernizr._q.length;p++)Modernizr._q[p]();e.Modernizr=Modernizr}(window,document);
+        </script>
+        <!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>20.07: July 2020 Devblog | SS3D</title>
+<meta name="generator" content="Jekyll v3.8.5" />
+<meta property="og:title" content="20.07: July 2020 Devblog" />
+<meta name="author" content="CosmicCoincidence" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="“The clown’s greatest gift comes in the form of a banana.”" />
+<meta property="og:description" content="“The clown’s greatest gift comes in the form of a banana.”" />
+<link rel="canonical" href="https://ss3d.space/2020/08/05/20.07.html" />
+<meta property="og:url" content="https://ss3d.space/2020/08/05/20.07.html" />
+<meta property="og:site_name" content="SS3D" />
+<meta property="og:image" content="https://ss3d.space/assets/img/art/Bug/Bug_TheLastBrunch.png" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2020-08-05T05:30:00+00:00" />
+<script type="application/ld+json">
+{"dateModified":"2020-08-05T05:30:00+00:00","datePublished":"2020-08-05T05:30:00+00:00","author":{"@type":"Person","name":"CosmicCoincidence"},"description":"“The clown’s greatest gift comes in the form of a banana.”","url":"https://ss3d.space/2020/08/05/20.07.html","mainEntityOfPage":{"@type":"WebPage","@id":"https://ss3d.space/2020/08/05/20.07.html"},"@type":"BlogPosting","image":"https://ss3d.space/assets/img/art/Bug/Bug_TheLastBrunch.png","headline":"20.07: July 2020 Devblog","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+        <link type="application/atom+xml" rel="alternate" href="https://ss3d.space/feed.xml" title="SS3D" />
+        <link rel="stylesheet" type="text/css" href="/assets/css/cookieconsent.min.css" />
+<script src="/assets/js/cookieconsent.min.js"></script>
+<script>
+window.addEventListener("load", function(){
+window.cookieconsent.initialise({
+"palette": {
+    "popup": {
+    "background": "#1e4684",
+    "text": "#dadada"
+    },
+    "button": {
+    "background": "#b83d32",
+    "text": "#ffffff"
+    }
+},
+"theme": "classic",
+"content": {
+    "message": "This website uses cookies for analytics.",
+    "dismiss": "Ok",
+    "href": "/privacy"
+}
+})});
+</script>
+        <!-- Analytics -->
+        
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-140169746-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-140169746-1');
+</script>
+
+        
+    </head>
+    <body class="preload">
+        <div class="nav-background">
+            <nav>
+                <div id="scroll" class="ul-container">
+    <ul class="ul-reset">
+        
+        <li><a onclick="setScroll('/',parentNode.parentNode.parentNode.scrollLeft); return false;" class="" href="/">Home</a></li>
+        
+        <li><a onclick="setScroll('/devblog/',parentNode.parentNode.parentNode.scrollLeft); return false;" class="" href="/devblog/">Devblog</a></li>
+        
+        <li><a onclick="setScroll('/art/',parentNode.parentNode.parentNode.scrollLeft); return false;" class="" href="/art/">Art</a></li>
+        
+        <li><a onclick="setScroll('/faq/',parentNode.parentNode.parentNode.scrollLeft); return false;" class="" href="/faq/">FAQ</a></li>
+        
+        <li><a onclick="setScroll('/about/',parentNode.parentNode.parentNode.scrollLeft); return false;" class="" href="/about/">About</a></li>
+        
+        <li><a onclick="setScroll('/contribute/',parentNode.parentNode.parentNode.scrollLeft); return false;" class="" href="/contribute/">Contribute</a></li>
+        
+    </ul>
+</div>
+            </nav>
+        </div>
+        <div class="body-content">
+            <header class="header">
+    <div class="image">
+        <img src="https://raw.githubusercontent.com/RE-SS3D/SS3D-Art/main/Artwork/Logos/SS3D/SpaceStation3D.png" alt="SPACE STATION 3D">
+    </div>
+</header>
+
+            <main class="post-content">
+                <div>
+  <div class="image">
+    <img src="/assets/img/art/Bug/Bug_TheLastBrunch.png" alt="">
+  </div>
+  
+  <h5><i>Image credit: Bug</i></h5>
+  
+</div>
+
+<h1>20.07: July 2020 Devblog</h1>
+<h5><i>Wednesday, August 5, 2020</i></h5>
+<h5><i>Written by: CosmicCoincidence</i></h5>
+
+<h2>SS3D (Outdated):
+  <u>
+    <a href="https://github.com/RE-SS3D/SS3D/releases/download/0.3.7/RESS3D_0.3.7.zip"> 0.3.7</a>
+  </u>
+</h2>
+
+
+<br>
+<p><em>As they were meeting, the clown took the pie, licked it; then threw it at the crew, and exclaimed, ‘HONK ye all’!</em></p>
+
+<h1 id="july-recap">July Recap</h1>
+
+<p>A little slower this month, but we are still here…</p>
+
+<h2 id="tilemap-layer-restrictions">Tilemap Layer Restrictions</h2>
+
+<p><strong>BroodjeKipcorn</strong> spent more time this month working on the tilemap system. It now has a lot more layer restrictions which prevents objects from being placed on the wrong layers, prevents certain wall-mounts on windows, prevents all wall-mounts on girders, and many other smaller restrictions.</p>
+
+<h2 id="containers">Containers</h2>
+
+<p><strong>Light Velox</strong> reworked our container system, by adding sizes, volumes, filters, &amp; traits. Sizes range from tiny to huge, you can only put items in a container of equal or smaller size. Volumes are the maximum volume the container can hold (the sum of the volume of all items inside), so a container will not accept additional items if the max volume is reached (this can be disabled for containers like the bluespace backpack, allowing an infinite max volume for the container). Finally, filters are used in conjunction with traits to restrict what items can be contained in certain containers. The traits (snacks, alcohol, pills, etc) are attached to items, while filters (food, beverages, medication, etc) are attached to containers, and the filters can be used to specifically accept or refuse linked traits.</p>
+
+<p><strong>CosmicCoincidence</strong> made mobile containers out of the toolbox, medkit, &amp; cardboard box. The toolbox only accepts tools and the medkit only accepts medications (using the filters &amp; traits mentioned above) for now. These smaller mobile containers are obviously special compared to our other containers as they can be carried and even placed inside larger containers like lockers.</p>
+
+<h2 id="material-construction">Material Construction</h2>
+
+<p>We now have basic material construction courtesy of <strong>Alainx277</strong>. For now, the player can use metal sheets to build a wall girder or metal table, use the glass sheets to build a glass table, or use the wood planks to build a wood table.</p>
+
+<video controls="" muted="" poster="/assets/img/posts/20.07.01/Alain_Construction.png" width="580px">
+  <source src="/assets/img/posts/20.07.01/Alain_Construction.mp4" type="video/mp4" />
+</video>
+
+<h2 id="options-menu">Options Menu</h2>
+
+<p>A new options menu added by <strong>Goao</strong> this month (hit ESC to open/close it). There’s not much on this menu yet, but it does make a better home for our round timer and restart button.</p>
+
+<div class="image"><a href="/assets/img/posts/20.07.01/Goao_Menu.png" class="image-link" target="_blank"><img src="/" alt="" srcset="    /assets/resized/Goao_Menu-580x326.png 580w,    /assets/resized/Goao_Menu-290x163.png 290w,    /assets/resized/Goao_Menu-170x96.png 170w,    /assets/resized/Goao_Menu-145x82.png 145w, /assets/img/posts/20.07.01/Goao_Menu.png 1280w" sizes="(max-width: 624px) 100vw, 578px, 580px" /></a></div>
+
+<h2 id="consumption">Consumption</h2>
+
+<p>Also from <strong>Goao</strong> (and with help from <strong>Alainx277</strong> bug fixing), we now have a consumption interaction for eating and drinking. You can feed yourself as well as others!</p>
+
+<video controls="" poster="/assets/img/posts/20.07.01/Consumption.png" width="580px">
+  <source src="/assets/img/posts/20.07.01/Consumption.mp4" type="video/mp4" />
+</video>
+
+<h2 id="details">Details</h2>
+
+<p><strong>Seteron:</strong></p>
+<ul>
+  <li>updated the airlocks to use our newer airlock models, and also added animations &amp; lights to them.</li>
+  <li>improved the appearance of our opaque glass material.</li>
+</ul>
+
+<p><strong>CosmicCoincidence:</strong></p>
+<ul>
+  <li>added basic floor overlays.</li>
+  <li>added cigarettes, a lighter, &amp; the cigarette vendor.</li>
+  <li>added snacks (cup ramen, twinkie, 4no raisins, donk pocket) &amp; the snack vendor.</li>
+  <li>added many beverages (booze, juice, milk) along with substances for each, &amp; the booze vendor.</li>
+  <li>added more kitchen utensils (frying pan, spatula, whisk, coffee mugs) &amp; the dinnerware vendor.</li>
+  <li>added a new table type (poker table), and added table frames for all table types.</li>
+  <li>added more furniture &amp; wall-mounts (air alarm, emergency lights, SMES, solar panels, sink, mirror, toilet, vent, scrubber).</li>
+  <li>added some missing (forgotten) wire meshes, now accounting for all orientations.</li>
+  <li>expanded the map, adding most of the objects mentioned above, a new library, a new bathroom, &amp; a pseudo atmospheric pipe network.</li>
+</ul>
+
+<h2 id="fixes">Fixes</h2>
+
+<p><strong>Alainx277:</strong></p>
+<ul>
+  <li>fixed a bug allowing the player to build tables on the same tile as the player.</li>
+  <li>fixed the cell charger not working.</li>
+  <li>fixed the interaction range to check horizontal &amp; vertical distances separately.</li>
+  <li>fixed a bug with the ragdolls that prevented the player from standing back up sometimes.</li>
+  <li>fixed the player’s hand slots by serializing the hash fields on the item filters.</li>
+  <li>fixed an error with the tilemap adjacency connector which caused tiles not to load sometimes.</li>
+  <li>fixed a bug with toggleable items inconsistently changing their states after being dropped and then picked back up.</li>
+  <li>improved FOV performance by using batched raycasts and native mesh functions.</li>
+  <li>changed sounds to be relative to the camera orientation.</li>
+</ul>
+
+<p><strong>Seteron:</strong></p>
+<ul>
+  <li>fixed FOV so it is localized to the player.</li>
+  <li>fixed the walls/windows rigid body settings, reducing tons of unnecessary physics calculations.</li>
+</ul>
+
+<p><strong>CosmicCoincidence:</strong></p>
+<ul>
+  <li>fixed the examine function not working on wall-mounts, computer consoles, &amp; airlocks.</li>
+  <li>adjusted object names and IDs on nearly all objects for proper identification.</li>
+  <li>converted most of the furniture objects to fixture types.</li>
+  <li>fixed a bug with some of the glass table connections having inverted materials.</li>
+</ul>
+
+<h2 id="models">Models</h2>
+
+<p>A new floor tile item by <strong>CosmicCoincidence</strong>, which is UV unwrapped in a way to use the floor tile textures we already have.</p>
+
+<div class="image"><a href="/assets/img/posts/20.07.01/Cosmic_Tiles.png" class="image-link" target="_blank"><img src="/" alt="" srcset="    /assets/resized/Cosmic_Tiles-580x435.png 580w,    /assets/resized/Cosmic_Tiles-290x218.png 290w,    /assets/resized/Cosmic_Tiles-170x128.png 170w,    /assets/resized/Cosmic_Tiles-145x109.png 145w, /assets/img/posts/20.07.01/Cosmic_Tiles.png 800w" sizes="(max-width: 624px) 100vw, 578px, 580px" /></a></div>
+
+<h2 id="graphics">Graphics</h2>
+
+<p>New this month, <strong>NazarDoe</strong> added a bunch of missing symbols to our graffiti set, some new warning lines, and a set of amazing runes!</p>
+
+<div class="horizontal-3">
+
+  <div class="image"><a href="/assets/img/posts/20.07.01/NazarDoe_Graffiti.png" target="_blank"><img src="/" alt="" srcset="    /assets/resized/NazarDoe_Graffiti-580x435.png 580w,    /assets/resized/NazarDoe_Graffiti-290x218.png 290w,    /assets/resized/NazarDoe_Graffiti-170x128.png 170w,    /assets/resized/NazarDoe_Graffiti-145x109.png 145w, /assets/img/posts/20.07.01/NazarDoe_Graffiti.png 800w" sizes="(max-width: 624px) 50vw, 290px" /></a></div>
+
+  <div class="image"><a href="/assets/img/posts/20.07.01/NazarDoe_WarningLines.png" target="_blank"><img src="/" alt="" srcset="    /assets/resized/NazarDoe_WarningLines-580x435.png 580w,    /assets/resized/NazarDoe_WarningLines-290x218.png 290w,    /assets/resized/NazarDoe_WarningLines-170x128.png 170w,    /assets/resized/NazarDoe_WarningLines-145x109.png 145w, /assets/img/posts/20.07.01/NazarDoe_WarningLines.png 800w" sizes="(max-width: 624px) 50vw, 290px" /></a></div>
+
+  <div class="image"><a href="/assets/img/posts/20.07.01/NazarDoe_Runes.png" target="_blank"><img src="/" alt="" srcset="    /assets/resized/NazarDoe_Runes-580x435.png 580w,    /assets/resized/NazarDoe_Runes-290x218.png 290w,    /assets/resized/NazarDoe_Runes-170x128.png 170w,    /assets/resized/NazarDoe_Runes-145x109.png 145w, /assets/img/posts/20.07.01/NazarDoe_Runes.png 800w" sizes="(max-width: 624px) 50vw, 290px" /></a></div>
+</div>
+
+<p>More interaction icons from <strong>Konstantin3001</strong>, as well as some new thermometers for the UI.</p>
+
+<div class="horizontal-2">
+
+  <div class="image"><a href="/assets/img/posts/20.07.01/Konstantin_UI.png" target="_blank"><img src="/" alt="" srcset="    /assets/resized/Konstantin_UI-580x435.png 580w,    /assets/resized/Konstantin_UI-290x218.png 290w,    /assets/resized/Konstantin_UI-170x128.png 170w,    /assets/resized/Konstantin_UI-145x109.png 145w, /assets/img/posts/20.07.01/Konstantin_UI.png 800w" sizes="(max-width: 624px) 50vw, 290px" /></a></div>
+
+  <div class="image"><a href="/assets/img/posts/20.07.01/Konstantin_Thermometer.png" target="_blank"><img src="/" alt="" srcset="    /assets/resized/Konstantin_Thermometer-580x435.png 580w,    /assets/resized/Konstantin_Thermometer-290x218.png 290w,    /assets/resized/Konstantin_Thermometer-170x128.png 170w,    /assets/resized/Konstantin_Thermometer-145x109.png 145w, /assets/img/posts/20.07.01/Konstantin_Thermometer.png 800w" sizes="(max-width: 624px) 50vw, 290px" /></a></div>
+</div>
+
+<h2 id="art">Art</h2>
+
+<p>‘The Last Brunch’ is the name of this month’s art piece, as <strong>Bug</strong> decided to continue the theme of recreating classical art with SS3D assets.</p>
+
+<div class="image"><a href="/assets/img/art/Bug/Bug_TheLastBrunch.png" class="image-link" target="_blank"><img src="/" alt="" srcset="    /assets/resized/Bug_TheLastBrunch-580x326.png 580w,    /assets/resized/Bug_TheLastBrunch-290x163.png 290w,    /assets/resized/Bug_TheLastBrunch-170x96.png 170w,    /assets/resized/Bug_TheLastBrunch-145x82.png 145w, /assets/img/art/Bug/Bug_TheLastBrunch.png 1920w" sizes="(max-width: 624px) 100vw, 578px, 580px" /></a></div>
+
+<h3 id="notes">Notes</h3>
+
+<p>Haven’t joined the party yet? Then come visit us on our <a href="https://discord.gg/3ny9tdH" target="_blank">Discord</a>!</p>
+
+
+            </main>
+            <footer>
+                <div class="contact">
+    <ul class="ul-reset social-icons">
+        
+        <li>
+            
+            <a class="social-icon--link" href="https://github.com/RE-SS3D" target="_blank" aria-label="GitHub">
+                <span class="social-icon">
+                    <svg id="b6fd44a9-6022-4bad-9aba-751db567612b" xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 64 62.43"><path class="social-icon-bg" d="M32,.8A32,32,0,0,0,21.88,63.16c1.6.3,2.19-.7,2.19-1.54s0-3.29,0-6c-8.91,1.94-10.78-3.77-10.78-3.77-1.46-3.7-3.56-4.69-3.56-4.69-2.9-2,.22-1.94.22-1.94,3.22.22,4.91,3.29,4.91,3.29,2.85,4.9,7.49,3.48,9.31,2.66a6.88,6.88,0,0,1,2-4.28c-7.11-.8-14.58-3.55-14.58-15.81a12.42,12.42,0,0,1,3.3-8.59,11.5,11.5,0,0,1,.31-8.47s2.68-.86,8.8,3.28a31,31,0,0,1,8-1.07,30.52,30.52,0,0,1,8,1.07c6.11-4.14,8.79-3.28,8.79-3.28a11.52,11.52,0,0,1,.32,8.47,12.37,12.37,0,0,1,3.29,8.59c0,12.29-7.48,15-14.61,15.78C39,47.9,40,49.84,40,52.83c0,4.28,0,7.73,0,8.78,0,.85.57,1.85,2.2,1.53A32,32,0,0,0,32,.79Z" transform="translate(0 -0.79)" fill-rule="evenodd"/></svg></span
+                >
+            </a>
+        </li>
+
+        
+        <li>
+            
+            <a class="social-icon--link" href="https://www.patreon.com/ss3d" target="_blank" aria-label="Patreon">
+                <span class="social-icon">
+                    <svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" version="1.1" x="0px" y="0px" width="100%" viewBox="0 0 122.88 122.88" style="enable-background:new 0 0 122.88 122.88" xml:space="preserve"><g><path class="social-icon-bg" d="M 0 0 L 0 122.88086 L 122.88086 122.88086 L 122.88086 0 L 0 0 z M 30.960938 32.179688 L 41.679688 32.179688 L 41.679688 90.699219 L 30.960938 90.699219 L 30.960938 32.179688 z M 70.039062 32.179688 C 82.109062 32.179688 91.919922 42.040391 91.919922 54.150391 C 91.919922 66.220391 82.109063 76.050781 70.039062 76.050781 C 57.939063 76.050781 48.089844 66.230391 48.089844 54.150391 C 48.089844 42.030391 57.939062 32.179688 70.039062 32.179688 z "/></g></svg>
+</span
+                >
+            </a>
+        </li>
+
+        
+        <li>
+            
+            <a class="social-icon--link" href="https://discord.gg/3ny9tdH" target="_blank" aria-label="Discord">
+                <span class="social-icon">
+                    
+<svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 294334 333333" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeSpeed" fill-rule="evenodd" clip-rule="evenodd"><g id="Layer_x0020_1"><g id="_489768256"><path class="social-icon-bg" d="M178012 139855c-9581 0-17146 8237-17146 18491s7733 18491 17146 18491c9581 0 17146-8237 17146-18491s-7733-18491-17146-18491zm-61354 0c-9581 0-17146 8237-17146 18491s7733 18491 17146 18491c9581 0 17146-8237 17146-18491 168-10254-7564-18491-17146-18491z"/><path class="social-icon-bg" d="M259706 0H34459C15465 0 0 15465 0 34459v225247c0 18995 15465 34459 34459 34459h190620l-8909-30761 21516 19835 20339 18659 36309 31434V34458C294166 15464 278701-1 259706-1zm-64885 217683s-6052-7228-11094-13448c22020-6219 30425-19835 30425-19835-6892 4539-13448 7733-19331 9918-8405 3530-16474 5715-24374 7228-16137 3026-30929 2185-43537-168-9581-1849-17818-4370-24710-7228-3866-1513-8068-3362-12271-5715-504-336-1009-504-1513-840-336-168-504-337-672-337-3026-1681-4707-2857-4707-2857s8068 13280 29417 19667c-5043 6388-11263 13784-11263 13784-37149-1177-51269-25383-51269-25383 0-53622 24205-97159 24205-97159 24206-17986 47067-17482 47067-17482l1681 2017c-30257 8573-44041 21853-44041 21853s3698-2017 9918-4707c17987-7901 32274-9918 38158-10590 1009-168 1849-336 2857-336 10254-1345 21853-1681 33955-337 15969 1849 33115 6556 50596 15969 0 0-13280-12607-41855-21180l2354-2689s23029-504 47066 17482c0 0 24206 43537 24206 97159 0-168-14120 24038-51269 25215z"/></g></g></svg></span
+                >
+            </a>
+        </li>
+
+        
+        <li>
+            
+            <a class="social-icon--link" href="https://www.youtube.com/@spacestation3d" target="_blank" aria-label="YouTube">
+                <span class="social-icon">
+                    
+<svg xmlns="http://www.w3.org/2000/svg"  width="100%" viewBox="0 0 333333 333333" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd"><path class="social-icon-bg" d="M329930 100020s-3254-22976-13269-33065c-12691-13269-26901-13354-33397-14124-46609-3396-116614-3396-116614-3396h-122s-69973 0-116608 3396c-6522 793-20712 848-33397 14124C6501 77044 3316 100020 3316 100020S-1 126982-1 154001v25265c0 26962 3315 53979 3315 53979s3254 22976 13207 33082c12685 13269 29356 12838 36798 14254 26685 2547 113354 3315 113354 3315s70065-124 116675-3457c6522-770 20706-848 33397-14124 10021-10089 13269-33090 13269-33090s3319-26962 3319-53979v-25263c-67-26962-3384-53979-3384-53979l-18 18-2-2zM132123 209917v-93681l90046 46997-90046 46684z"/></svg></span
+                >
+            </a>
+        </li>
+
+        
+        <li>
+            
+            <a class="social-icon--link" href="https://reddit.com/r/RESS3D" target="_blank" aria-label="Reddit">
+                <span class="social-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 24 24"><path class="social-icon-bg" d="M14.238 15.348c.085.084.085.221 0 .306-.465.462-1.194.687-2.231.687l-.008-.002-.008.002c-1.036 0-1.766-.225-2.231-.688-.085-.084-.085-.221 0-.305.084-.084.222-.084.307 0 .379.377 1.008.561 1.924.561l.008.002.008-.002c.915 0 1.544-.184 1.924-.561.085-.084.223-.084.307 0zm-3.44-2.418c0-.507-.414-.919-.922-.919-.509 0-.923.412-.923.919 0 .506.414.918.923.918.508.001.922-.411.922-.918zm13.202-.93c0 6.627-5.373 12-12 12s-12-5.373-12-12 5.373-12 12-12 12 5.373 12 12zm-5-.129c0-.851-.695-1.543-1.55-1.543-.417 0-.795.167-1.074.435-1.056-.695-2.485-1.137-4.066-1.194l.865-2.724 2.343.549-.003.034c0 .696.569 1.262 1.268 1.262.699 0 1.267-.566 1.267-1.262s-.568-1.262-1.267-1.262c-.537 0-.994.335-1.179.804l-2.525-.592c-.11-.027-.223.037-.257.145l-.965 3.038c-1.656.02-3.155.466-4.258 1.181-.277-.255-.644-.415-1.05-.415-.854.001-1.549.693-1.549 1.544 0 .566.311 1.056.768 1.325-.03.164-.05.331-.05.5 0 2.281 2.805 4.137 6.253 4.137s6.253-1.856 6.253-4.137c0-.16-.017-.317-.044-.472.486-.261.82-.766.82-1.353zm-4.872.141c-.509 0-.922.412-.922.919 0 .506.414.918.922.918s.922-.412.922-.918c0-.507-.413-.919-.922-.919z"/></svg></span
+                >
+            </a>
+        </li>
+
+        
+        <li>
+            
+            <a class="social-icon--link" href="https://twitter.com/SpaceStation3D" target="_blank" aria-label="Twitter">
+                <span class="social-icon">
+                    <svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 48 48" version="1.1" width="100%" viewBox="0 0 48 48" xml:space="preserve"><g><path class="social-icon-bg" d="m 36.8,15.4 c -0.9,0.5 -2,0.8 -3,0.9 1.1,-0.7 1.9,-1.8 2.3,-3.1 -1,0.6 -2.1,1.1 -3.4,1.4 -1,-1.1 -2.3,-1.8 -3.8,-1.8 -2.9,0 -5.3,2.5 -5.3,5.7 0,0.4 0,0.9 0.1,1.3 -4.4,-0.2 -8.3,-2.5 -10.9,-5.9 -0.5,0.8 -0.7,1.8 -0.7,2.9 0,2 0.9,3.7 2.3,4.7 -0.9,0 -1.7,-0.3 -2.4,-0.7 0,0 0,0.1 0,0.1 0,2.7 1.8,5 4.2,5.6 -0.4,0.1 -0.9,0.2 -1.4,0.2 -0.3,0 -0.7,0 -1,-0.1 0.7,2.3 2.6,3.9 4.9,3.9 -1.8,1.5 -4.1,2.4 -6.5,2.4 -0.4,0 -0.8,0 -1.3,-0.1 2.3,1.6 5.1,2.6 8.1,2.6 9.7,0 15,-8.6 15,-16.1 0,-0.2 0,-0.5 0,-0.7 1.2,-1 2.1,-2 2.8,-3.2 z M 48,24 A 24,24 0 0 1 24,48 24,24 0 0 1 0,24 24,24 0 0 1 24,0 24,24 0 0 1 48,24 Z" /></g></svg>
+</span
+                >
+            </a>
+        </li>
+
+        
+    </ul>
+    <ul class="ul-reset legal-list">
+        <li>
+            <h5><a href="/privacy">Privacy Policy</a></h5>
+        </li>
+        <li>
+            <h5><a type="application/atom+xml" href="/feed.xml">Atom (RSS)</a></h5>
+        </li>
+    </ul>
+    <div id="page-counter">
+        <span class="page-views"></span>
+    </div>
+</div>
+
+            </footer>
+        </div>
+        <script>
+            
+            // Fix flashing buttons by only allowing the css animations to play after a slight delay.
+            setTimeout(function() {
+                document.getElementsByTagName('body')[0].classList.remove('preload');
+            }, 50);
+
+            //theme toggle
+            //identify the toggle switch HTML element
+            const toggleSwitch = document.querySelector('#theme-switch input[type="checkbox"]');
+    
+            //function that changes the theme, and sets a localStorage variable to track the theme between page loads
+            function switchTheme(e) {
+                if (e.target.checked) {
+                    localStorage.setItem('theme', 'light');
+                    document.documentElement.setAttribute('data-theme', 'light');
+                    toggleSwitch.checked = true;
+                } else {
+                    localStorage.setItem('theme', 'dark');
+                    document.documentElement.setAttribute('data-theme', 'dark');
+                    toggleSwitch.checked = false;
+                }    
+            }
+    
+            //listener for changing themes
+            toggleSwitch.addEventListener('change', switchTheme, false);
+    
+            //pre-check the dark-theme checkbox if dark-theme is set
+            if (document.documentElement.getAttribute("data-theme") == "light"){
+                toggleSwitch.checked = true;
+            }
+        </script>
+        <script>
+
+            // changes slide show slides and title
+            var slideIndex = 1;
+            showSlides(slideIndex);
+            
+            function plusSlides(n) {
+                showSlides(slideIndex += n);
+            }
+            
+            function currentSlide(n) {
+                showSlides(slideIndex = n);
+            }
+            
+            function showSlides(n) {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                var dots = document.getElementsByClassName("thumbs");
+                var titleText = document.getElementById("title");
+                if (n > slides.length) {
+                    slideIndex = 1;
+                    showRows(rowIndex = 1);
+                }
+                if (n < 1) {
+                    slideIndex = slides.length;
+  	                showRows(rowIndex = -1);
+                }
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                showRows(rowIndex = Math.floor((n-1)/6) + 1) 
+                slides[slideIndex-1].style.display = "block";
+                dots[slideIndex-1].className += " active";
+                titleText.innerHTML = dots[slideIndex-1].alt;
+            }
+            
+            // changes slide show rows
+            var rowIndex = 1;
+            showRows(rowIndex);
+
+            function plusRows(n) {
+                showRows(rowIndex += n);
+            }
+
+            function currentRow(n) {
+            showRows(rowIndex = n);
+            }
+
+            function showRows(n) {
+                var i;
+                var rows = document.getElementsByClassName("myRows");
+                var dots = document.getElementsByClassName("thumbs");
+                if (n > rows.length) {rowIndex = 1}
+                if (n < 1) {rowIndex = rows.length}
+                for (i = 0; i < rows.length; i++) {
+                    rows[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                rows[rowIndex-1].style.display = "block";
+                dots[rowIndex-1].className += " active";
+            }
+        </script>
+        <script>
+            // Check if a "pageCounter" cookie already exists
+            var pageCounter = parseInt(getCookie("pageCounter")) || 0;
+            
+            // Check if a "visitorId" cookie already exists
+            var visitorId = getCookie("visitorId") || generateVisitorId();
+            
+            // Increment the page counter and set the "pageCounter" cookie
+            pageCounter++;
+            setCookie("pageCounter", pageCounter, 365);
+            
+            // Set the "visitorId" cookie if it doesn't already exist
+            if (!getCookie("visitorId")) {
+              setCookie("visitorId", visitorId, 365);
+            }
+            
+            // Display the value of the page counter and visitor ID in the "page-counter" element
+            document.querySelector("#page-counter .unique-visitors").innerHTML = visitorId;
+            document.querySelector("#page-counter .page-views").innerHTML = pageCounter;
+            
+            // Function to generate a unique visitor ID
+            function generateVisitorId() {
+              return Math.random().toString(36).substring(2, 15) + Math.random().toString(36).substring(2, 15);
+            }
+            
+            // Function to set a cookie
+            function setCookie(name, value, days) {
+              var expires = "";
+              if (days) {
+                var date = new Date();
+                date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+                expires = "; expires=" + date.toUTCString();
+              }
+              document.cookie = name + "=" + (value || "") + expires + "; path=/";
+            }
+            
+            // Function to get the value of a cookie
+            function getCookie(name) {
+              var nameEQ = name + "=";
+              var ca = document.cookie.split(';');
+              for (var i = 0; i < ca.length; i++) {
+                var c = ca[i];
+                while (c.charAt(0) == ' ') c = c.substring(1, c.length);
+                if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length, c.length);
+              }
+              return null;
+            }
+          </script>
+    </body>
+</html>
