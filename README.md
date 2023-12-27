@@ -1,12 +1,12 @@
-<h3 align="center"><img src="https://raw.githubusercontent.com/RE-SS3D/SS3D-Art/main/Artwork/Banners/BorderedBanners/SS3DBanner3.png" alt="SS3D Banner">Website repository for <a href="https://ss3d.space/">Space Station 3D</a>!</h3>
+<h3 align="center"><img src="https://raw.githubusercontent.com/RE-SS3D/SS3D-Art/main/Artwork/Banners/BorderedBanners/SS3DBanner3.png" alt="SS3D Banner">OLD (archived) website repository for <a href="https://ss3d.space/">Space Station 3D</a>!</h3>
 
 <br>
 
-<h3>Located at:
-<a href="https://ss3d.space/"><img src="https://img.shields.io/website?down_color=red&down_message=offline&label=ss3d.space&up_color=green&style=plastic&up_message=online&url=https%3A%2F%2Fss3d.space" alt="website status" style="vertical-align:middle"></a>
-<a href="https://github.com/RE-SS3D/SS3D-Website"><img src="https://img.shields.io/github/repo-size/RE-SS3D/SS3D-Website?color=gold&style=plastic" alt="repo size" align="right"></a>
-<a href="https://github.com/RE-SS3D/SS3D-Website/blob/release/.github/workflows/build.yml"><img src="https://img.shields.io/github/actions/workflow/status/RE-SS3D/SS3D-Website/build.yml?style=plastic" alt="build status" align="right"></a>
+<a href="https://github.com/RE-SS3D/SS3D-WebsiteOLD"><img src="https://img.shields.io/github/repo-size/RE-SS3D/SS3D-WebsiteOLD?color=gold&style=plastic" alt="repo size" align="right"></a>
+<a href="https://github.com/RE-SS3D/SS3D-WebsiteOLD/blob/release/.github/workflows/build.yml"><img src="https://img.shields.io/github/actions/workflow/status/RE-SS3D/SS3D-WebsiteOLD/build.yml?style=plastic" alt="build status" align="right"></a>
 <h3>
+
+**THIS REPOSITORY IS NO LONGER BEING MAINTAINED!! WE HAVE MOVED THE WEBSITE TO A NEW REPOSITORY LOCATED AT [github.com/RE-SS3D/SS3D-Website](https://github.com/RE-SS3D/SS3D-Website/).**
 
 ## Requirements
 
@@ -21,7 +21,7 @@ Linux is the simplest as it's what these technologies are designed for. Especial
 
     sudo apt install libmagickwand-dev
     gem install jekyll bundler rmagick
-    git clone https://github.com/RE-SS3D/SS3D-Website
+    git clone <this repo>
     cd Website
     bundle
 
